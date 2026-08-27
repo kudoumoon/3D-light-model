@@ -1,0 +1,41 @@
+{
+  "provider": "moge2",
+  "model": "Ruicheng/moge-2-vits-normal",
+  "input": "third_party/Matrix-Game/Matrix-Game-2/demo_images/temple_run/0000.png",
+  "height": 405,
+  "width": 640,
+  "num_tokens": 1200,
+  "model_load_ms": 1393.028,
+  "warmup_runs": 1,
+  "timed_runs": 3,
+  "inference_ms_all": [
+    59.302,
+    59.654,
+    58.105
+  ],
+  "inference_ms_mean": 59.02,
+  "inference_ms_median": 59.302,
+  "peak_allocated_vram_mb": 503.2,
+  "valid_ratio": 0.495505,
+  "depth_median": 10.02186,
+  "depth_p02": 4.53321,
+  "depth_p98": 22.73609,
+  "pointcloud_vertices": 32214,
+  "intrinsics_normalized": [
+    [
+      1.3392078876495361,
+      0.0,
+      0.5
+    ],
+    [
+      0.0,
+      2.116279125213623,
+      0.5
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

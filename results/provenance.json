@@ -1,0 +1,234 @@
+{
+  "experiment_date": "2026-08-16",
+  "export_date": "2026-08-28",
+  "upstream_commits": {
+    "microsoft/MoGe": "925b8ed835a7a9cdb7578ba15c658a0afc969030",
+    "SkyworkAI/Matrix-Game": "71c3cd7f741311f8100f6cf9cde942b6c1378d11"
+  },
+  "files": [
+    {
+      "source_relative": "results/gta_0000_bench/metadata.json",
+      "published": "results/recorded/gta_0000_bench/metadata.json",
+      "source_sha256": "ee381294dba107b62a18d00fb0ec10c6fad675f371dd926b91a1961555ae48e0",
+      "published_sha256": "a527dcd842bff0d3d5404650865d76f3c47d92484468076d75fbcf3a26ebbb1f",
+      "transformation": "JSON formatting and machine-local path relativization only; numeric values unchanged"
+    },
+    {
+      "source_relative": "results/temple_0000_bench/metadata.json",
+      "published": "results/recorded/temple_0000_bench/metadata.json",
+      "source_sha256": "1164a75bcf642955ef470bd577f7a0948c3083766da4f9359308982da801fb33",
+      "published_sha256": "7bb2126f3f8cf84bcdd6634e700d428bb22165b5cd2d55acf44b338019cb8012",
+      "transformation": "JSON formatting and machine-local path relativization only; numeric values unchanged"
+    },
+    {
+      "source_relative": "results/universal_0003_bench/metadata.json",
+      "published": "results/recorded/universal_0003_bench/metadata.json",
+      "source_sha256": "db9a67a55e4f2e845ecc1929fe201c993f31cc01c573d3270601d45f20c26670",
+      "published_sha256": "4956e121d99db71d8e7dfb8f51711043898c4e7606a13b925826a6661fda8a2f",
+      "transformation": "JSON formatting and machine-local path relativization only; numeric values unchanged"
+    },
+    {
+      "source_relative": "results/gta_0000_yaw2/reprojection.json",
+      "published": "results/recorded/gta_0000_yaw2/reprojection.json",
+      "source_sha256": "f5a3ebfffa28360124b34768fdadf4dd9ae8459cc9a547ba085075bd40695ad3",
+      "published_sha256": "70f0ea551f7877e57a9c1ef07c875b84238c474c92d7d70402ec0e7fc5d8e5f2",
+      "transformation": "JSON formatting and machine-local path relativization only; numeric values unchanged"
+    },
+    {
+      "source_relative": "results/gta_0000_yaw5/reprojection.json",
+      "published": "results/recorded/gta_0000_yaw5/reprojection.json",
+      "source_sha256": "315160e341530feaf6dfb83cf96c58f5e5dacdc264094457edb543e21441408a",
+      "published_sha256": "3a5f587b56d7ca50af9da0f9e3c24ab23533b6e7611a47bc1c69e349732bade8",
+      "transformation": "JSON formatting and machine-local path relativization only; numeric values unchanged"
+    },
+    {
+      "source_relative": "results/gta_0000_yaw10/reprojection.json",
+      "published": "results/recorded/gta_0000_yaw10/reprojection.json",
+      "source_sha256": "66ee8f27c5f51d57a053eb53c04e332e3ef5735f3b97904619f73233bc5c2ec3",
+      "published_sha256": "65adf88985e670192379552c38712d1014f356a6fb00209b535ca29a6f3ce8c1",
+      "transformation": "JSON formatting and machine-local path relativization only; numeric values unchanged"
+    },
+    {
+      "source_relative": "results/gta_0000_yaw5_cuda/reprojection_cuda.json",
+      "published": "results/recorded/gta_0000_yaw5_cuda/reprojection_cuda.json",
+      "source_sha256": "b760630db393e15455ee113851ec9eaed677fe0d0361e19199d4148a0b83959a",
+      "published_sha256": "ebccc61473336637de7df68cfdb8b5350a8e535be9e24b6360a668f1f30fdbfe",
+      "transformation": "JSON formatting and machine-local path relativization only; numeric values unchanged"
+    },
+    {
+      "source_relative": "results/temple_yaw2/reprojection.json",
+      "published": "results/recorded/temple_yaw2/reprojection.json",
+      "source_sha256": "a9fb22cea2d2a3478aecc875345c51e238c1160db1243c0b47ab36f08b50411a",
+      "published_sha256": "ea97f1d58038e61d9ccc4c256999d2e57161668a3efeecd2b92e69989ac41c5a",
+      "transformation": "JSON formatting and machine-local path relativization only; numeric values unchanged"
+    },
+    {
+      "source_relative": "results/temple_yaw5/reprojection.json",
+      "published": "results/recorded/temple_yaw5/reprojection.json",
+      "source_sha256": "dc9537c84dcb7c32ff5b083b0b7ef2349d2c7be0a7d352f00f53134982a4411d",
+      "published_sha256": "700ae5ae6dde8e44cdbe5a211e69ab68a64bd721bb2dff7d2db9b99649c52e71",
+      "transformation": "JSON formatting and machine-local path relativization only; numeric values unchanged"
+    },
+    {
+      "source_relative": "results/temple_yaw10/reprojection.json",
+      "published": "results/recorded/temple_yaw10/reprojection.json",
+      "source_sha256": "9146ee765f04e97916f7ecd784a5d41e2e88aabbfd04e7820f0af67b3200d678",
+      "published_sha256": "6ddee216371057248f07ca3fac607e2af705d4c2aebf23e202a9b279a8ce8d95",
+      "transformation": "JSON formatting and machine-local path relativization only; numeric values unchanged"
+    },
+    {
+      "source_relative": "results/temple_yaw5_cuda/reprojection_cuda.json",
+      "published": "results/recorded/temple_yaw5_cuda/reprojection_cuda.json",
+      "source_sha256": "c727003c6c6d2d7d340e44dfbe9881ceddf8a6f3fb90956e16f406ac07e076c7",
+      "published_sha256": "18cdcc4ae2e47b2f09cf2a4477b80ef30bf6b5b54e3cea46132d8593a9fd40b0",
+      "transformation": "JSON formatting and machine-local path relativization only; numeric values unchanged"
+    },
+    {
+      "source_relative": "results/universal_yaw2/reprojection.json",
+      "published": "results/recorded/universal_yaw2/reprojection.json",
+      "source_sha256": "2b69245fa996d36302b40f4edb9343d6f7b77c65f33f4c104fa664d3ba27a1df",
+      "published_sha256": "07c4a88e75f4bbb6fc1e78dab773eefad28431e09acb1c23ac75223be331b7da",
+      "transformation": "JSON formatting and machine-local path relativization only; numeric values unchanged"
+    },
+    {
+      "source_relative": "results/universal_yaw5/reprojection.json",
+      "published": "results/recorded/universal_yaw5/reprojection.json",
+      "source_sha256": "fcb4c3bd82b042f6aff3ee66370744c104b26d16f8343b0fe69e46088250b2d6",
+      "published_sha256": "d9448c96ccf7c92807475f9b6fdcacf4ce30084b4695e8fed12e0abf97d6d230",
+      "transformation": "JSON formatting and machine-local path relativization only; numeric values unchanged"
+    },
+    {
+      "source_relative": "results/universal_yaw10/reprojection.json",
+      "published": "results/recorded/universal_yaw10/reprojection.json",
+      "source_sha256": "904a4ca35391ef843ee532517bf0711a63572931912222ca3a07441bf4235507",
+      "published_sha256": "dcff41904de13c9f80b3c03ca5b087085b5de7587242712d8a0b8f56eae10e2b",
+      "transformation": "JSON formatting and machine-local path relativization only; numeric values unchanged"
+    },
+    {
+      "source_relative": "results/universal_yaw5_cuda/reprojection_cuda.json",
+      "published": "results/recorded/universal_yaw5_cuda/reprojection_cuda.json",
+      "source_sha256": "f519d518f51d69ecf559a4427d6a27c50dfb909403e18c86d28129c881930932",
+      "published_sha256": "3b54d2bf51a33857797fec603053084689e15bb4453c9dd6aa64a138e03087bd",
+      "transformation": "JSON formatting and machine-local path relativization only; numeric values unchanged"
+    },
+    {
+      "source_relative": "results/gta_0000_right/reprojection.json",
+      "published": "results/recorded/gta_0000_right/reprojection.json",
+      "source_sha256": "643c3cbd3be4e979057f18ff96234e19057b7cfb3eaaf569b2a46abaa27c77d5",
+      "published_sha256": "310c65c2dd30230752d3512aa7e5b8a63cb6b0459fd7312365ceb97882435f2c",
+      "transformation": "JSON formatting and machine-local path relativization only; numeric values unchanged"
+    },
+    {
+      "source_relative": "results/active_dit_bench/active_dit_benchmark.json",
+      "published": "results/recorded/active_dit_bench/active_dit_benchmark.json",
+      "source_sha256": "a61fa6c8f0b348f5efa3ee20e29a5b53aa3184c19b641ac9dfe36d532eb5e11e",
+      "published_sha256": "3bf467f1ec14b2e7f9dc9e4e8ce80399faeceecccca8f40a2ca2ca8c25e858f9",
+      "transformation": "JSON formatting and machine-local path relativization only; numeric values unchanged"
+    },
+    {
+      "source_relative": "results/active_dit_bench_large/active_dit_benchmark.json",
+      "published": "results/recorded/active_dit_bench_large/active_dit_benchmark.json",
+      "source_sha256": "5453d2e289f2ac964710c13c03fb29f82110ef70c943dc9b3564482170d855c9",
+      "published_sha256": "08de0509aac3ce8fefcdceef86e5f984324ccd145a38458d3bbef7600bd12671",
+      "transformation": "JSON formatting and machine-local path relativization only; numeric values unchanged"
+    },
+    {
+      "source_relative": "results/matrix_game2_gta_target_eval/summary.json",
+      "published": "results/recorded/matrix_game2_gta_target_eval/summary.json",
+      "source_sha256": "ee551e371871b4f4766ac9f3efb1e25686f3ee2c291f9cc66dad2b780702febd",
+      "published_sha256": "7bafcb588e8df7dd6bb833d84581cef42433682ac37b684a854ada495bdb4e03",
+      "transformation": "JSON formatting and machine-local path relativization only; numeric values unchanged"
+    },
+    {
+      "source_relative": "results/matrix_game2_gta_turn_target_eval/summary.json",
+      "published": "results/recorded/matrix_game2_gta_turn_target_eval/summary.json",
+      "source_sha256": "efe6334c9dee00b96b92a68aebccae4f63fb6f2cdfb8fce29332a4d187884535",
+      "published_sha256": "53c51bf37020d32739166a918e66c540c2598664dff6505dc4973193c85b4a2a",
+      "transformation": "JSON formatting and machine-local path relativization only; numeric values unchanged"
+    },
+    {
+      "source_relative": "results/matrix_game2_gta_target_eval_k8/summary.json",
+      "published": "results/recorded/matrix_game2_gta_target_eval_k8/summary.json",
+      "source_sha256": "9ec4a6ee59395e82436f912e91eec6040238e1d324b60d93c5531c631c1c067c",
+      "published_sha256": "d1d7c369e24890d908d4cddf8e9f4b82e9290fb2ed2d19f7a48c4e5fb28af34e",
+      "transformation": "JSON formatting and machine-local path relativization only; numeric values unchanged"
+    },
+    {
+      "source_relative": "results/matrix_game2_gta_turn_target_eval_k8/summary.json",
+      "published": "results/recorded/matrix_game2_gta_turn_target_eval_k8/summary.json",
+      "source_sha256": "1779f5fca087163b9f3cceec7ed6fd1f9dcbc6b28ccf6d0f541598f9d03cadf0",
+      "published_sha256": "42ba5a1511bea17b51df96fb3870e2170ce5f1bc1a0e79ac11ca23234483d390",
+      "transformation": "JSON formatting and machine-local path relativization only; numeric values unchanged"
+    },
+    {
+      "source_relative": "results/matrix_game2_gta_target_eval_long/summary.json",
+      "published": "results/recorded/matrix_game2_gta_target_eval_long/summary.json",
+      "source_sha256": "a854cb5d590bebcf2f7fcb093f52f54dcb39d67e269cdec68f37ab0cfea8651d",
+      "published_sha256": "afc65ef5000b4a19250c86a7b5058400ed08a5bbaa2531dda8da071411b69270",
+      "transformation": "JSON formatting and machine-local path relativization only; numeric values unchanged"
+    },
+    {
+      "source_relative": "results/matrix_game2_gta_turn_target_eval_long/summary.json",
+      "published": "results/recorded/matrix_game2_gta_turn_target_eval_long/summary.json",
+      "source_sha256": "f1cebb1a23871045f7e79fbee705b5c25f85bc5c062c6e0acc7472cea8a24f33",
+      "published_sha256": "53356f1c8fd62bdba42849f2ae4f5bc3abe543640d5351d2234f05776eb0ea09",
+      "transformation": "JSON formatting and machine-local path relativization only; numeric values unchanged"
+    },
+    {
+      "source_relative": "results/speed_gain/speed_gain.json",
+      "published": "results/recorded/speed_gain/speed_gain.json",
+      "source_sha256": "4781364077a962b47a2a98849020f65d44f7d50ecac4caecd8d6c5cc71cb5686",
+      "published_sha256": "140169f7f6e179470e299b0cf95b955638049b4876619d3190925dce12f1a1ec",
+      "transformation": "JSON formatting and machine-local path relativization only; numeric values unchanged"
+    },
+    {
+      "source_relative": "results/target_quality_summary/target_quality_summary.json",
+      "published": "results/recorded/target_quality_summary/target_quality_summary.json",
+      "source_sha256": "dadb19e1f8680499b9ab834ae33c012dd7ca53596b2fb6588f52c478ad64ff9a",
+      "published_sha256": "780f3a39cae1fd2a63181113b2c4014a6f087651f8ada81d747bc8d495a79899",
+      "transformation": "JSON formatting and machine-local path relativization only; numeric values unchanged"
+    },
+    {
+      "source_relative": "outputs/local_geometry_figures/gta_geometry_montage.png",
+      "published": "assets/examples/gta_geometry_montage.png",
+      "source_sha256": "7422afa2985e016ecef8673c2713824013b627a953d61c8bbbb0520fabeb10bf",
+      "published_sha256": "7422afa2985e016ecef8673c2713824013b627a953d61c8bbbb0520fabeb10bf",
+      "transformation": "unchanged; legacy titles may require the adjacent caveats"
+    },
+    {
+      "source_relative": "outputs/local_geometry_figures/temple_geometry_montage.png",
+      "published": "assets/examples/temple_geometry_montage.png",
+      "source_sha256": "1f708fd74f21396548f2e022ece311e6ee1e577e7207d3b19f289d8150e59e88",
+      "published_sha256": "1f708fd74f21396548f2e022ece311e6ee1e577e7207d3b19f289d8150e59e88",
+      "transformation": "unchanged; legacy titles may require the adjacent caveats"
+    },
+    {
+      "source_relative": "outputs/local_geometry_figures/universal_geometry_montage.png",
+      "published": "assets/examples/universal_geometry_montage.png",
+      "source_sha256": "17fba598fcdc1dd0271091bdeed9ac46e7ae649a4ad50e182817148bfc649b1e",
+      "published_sha256": "17fba598fcdc1dd0271091bdeed9ac46e7ae649a4ad50e182817148bfc649b1e",
+      "transformation": "unchanged; legacy titles may require the adjacent caveats"
+    },
+    {
+      "source_relative": "outputs/local_geometry_figures/gta_pointcloud.png",
+      "published": "assets/examples/gta_pointcloud.png",
+      "source_sha256": "17e6458311ffdd541930fc7cee0fd081560469bdf0fcbe23272a856cf73cadbd",
+      "published_sha256": "17e6458311ffdd541930fc7cee0fd081560469bdf0fcbe23272a856cf73cadbd",
+      "transformation": "unchanged; legacy titles may require the adjacent caveats"
+    },
+    {
+      "source_relative": "outputs/target_quality_figures/straight_0030_to_0038_montage.png",
+      "published": "assets/examples/straight_0030_to_0038_montage.png",
+      "source_sha256": "f1ffd09c40cf6788edb4cacba5006eacc6c200a4419b6eb528ea95653acf76ad",
+      "published_sha256": "f1ffd09c40cf6788edb4cacba5006eacc6c200a4419b6eb528ea95653acf76ad",
+      "transformation": "unchanged; legacy titles may require the adjacent caveats"
+    },
+    {
+      "source_relative": "outputs/target_quality_figures/turn_0090_to_0093_montage.png",
+      "published": "assets/examples/transition_0090_to_0093_montage.png",
+      "source_sha256": "83913c0ee270b02d3fcbe63421f7fa678806ed508d4ec4b983095fd13bed7a7c",
+      "published_sha256": "83913c0ee270b02d3fcbe63421f7fa678806ed508d4ec4b983095fd13bed7a7c",
+      "transformation": "unchanged; legacy titles may require the adjacent caveats"
+    }
+  ]
+}

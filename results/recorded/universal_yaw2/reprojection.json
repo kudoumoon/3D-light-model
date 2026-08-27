@@ -1,0 +1,13 @@
+{
+  "geometry": "results/universal_0003_bench/geometry.npz",
+  "camera_translation_right_down_forward": [
+    0.0,
+    0.0,
+    0.10000000149011612
+  ],
+  "yaw_deg": 2.0,
+  "pitch_deg": 0.0,
+  "splat_radius": 1,
+  "coverage_ratio": 0.767323,
+  "hole_ratio": 0.232677
+}

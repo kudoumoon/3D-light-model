@@ -1,0 +1,821 @@
+{
+  "rows": [
+    {
+      "source_frame": 0,
+      "target_frame": 15,
+      "delta_frames": 15,
+      "resolution": [
+        640,
+        294
+      ],
+      "sift_source": 1589,
+      "sift_target": 1659,
+      "ratio_matches": 674,
+      "valid_3d2d_matches": 667,
+      "pnp_inliers": 413,
+      "pnp_inlier_ratio": 0.6191904047976012,
+      "pnp_reprojection_px_median": 0.6549593806266785,
+      "pnp_reprojection_px_p95": 1.6456741094589233,
+      "pnp_refine_lm_accepted": true,
+      "rotation_angle_deg": 0.05790986676168461,
+      "translation_norm_predicted_metric": 0.008364568374293233,
+      "camera_center_source": [
+        -0.0037449239753186703,
+        0.0001121929963119328,
+        -0.007478566840291023
+      ],
+      "coverage_ratio": 0.9675382653061224,
+      "copy_psnr_full": 23.49828538252006,
+      "copy_psnr_on_warp_coverage": 23.367357696160642,
+      "warp_psnr_on_coverage": 21.053865125500877,
+      "copy_mae_on_coverage": 0.037605516612529755,
+      "warp_mae_on_coverage": 0.05054062232375145,
+      "safe_pixel_fraction_of_full": {
+        "10": 0.6255792942176871,
+        "20": 0.796577380952381,
+        "30": 0.8647799744897959,
+        "40": 0.9003295068027211
+      },
+      "safe_pixel_fraction_of_covered": {
+        "10": 0.6465680135345945,
+        "20": 0.8233032320435919,
+        "30": 0.8937940808120757,
+        "40": 0.9305363302792609
+      },
+      "copy_safe_pixel_fraction_of_full": {
+        "10": 0.7443930697278912,
+        "20": 0.8805059523809524,
+        "30": 0.9316379676870749,
+        "40": 0.9554900085034014
+      },
+      "copy_safe_pixel_fraction_on_warp_coverage": {
+        "10": 0.7363830114472788,
+        "20": 0.8768593588645003,
+        "30": 0.9296080240810318,
+        "40": 0.9541394766330499
+      },
+      "oracle_best_copy_or_warp_safe_fraction_of_full": {
+        "10": 0.7821215986394557,
+        "20": 0.9012383078231293,
+        "30": 0.9439785289115646,
+        "40": 0.9633131377551021
+      },
+      "warp_better_than_copy_fraction_on_coverage": 0.29725572913233583,
+      "safe_tile_fraction_of_full": {
+        "10": 0.4986842105263158,
+        "20": 0.7355263157894737,
+        "30": 0.8671052631578947,
+        "40": 0.9210526315789473
+      },
+      "copy_safe_tile_fraction_of_full": {
+        "10": 0.7157894736842105,
+        "20": 0.8802631578947369,
+        "30": 0.9473684210526315,
+        "40": 0.9763157894736842
+      },
+      "oracle_best_copy_or_warp_safe_tile_fraction_of_full": {
+        "10": 0.7618421052631579,
+        "20": 0.9171052631578948,
+        "30": 0.9657894736842105,
+        "40": 0.9789473684210527
+      },
+      "tile_size": 16
+    },
+    {
+      "source_frame": 0,
+      "target_frame": 30,
+      "delta_frames": 30,
+      "resolution": [
+        640,
+        294
+      ],
+      "sift_source": 1589,
+      "sift_target": 1596,
+      "ratio_matches": 437,
+      "valid_3d2d_matches": 435,
+      "pnp_inliers": 316,
+      "pnp_inlier_ratio": 0.7264367816091954,
+      "pnp_reprojection_px_median": 0.7211624383926392,
+      "pnp_reprojection_px_p95": 2.258077383041382,
+      "pnp_refine_lm_accepted": true,
+      "rotation_angle_deg": 0.08927235990374029,
+      "translation_norm_predicted_metric": 0.004871331483120105,
+      "camera_center_source": [
+        -0.0021531949751079082,
+        0.001398269203491509,
+        0.004139862488955259
+      ],
+      "coverage_ratio": 0.9675382653061224,
+      "copy_psnr_full": 20.054011961277762,
+      "copy_psnr_on_warp_coverage": 19.922849131772416,
+      "warp_psnr_on_coverage": 18.925927182834833,
+      "copy_mae_on_coverage": 0.055304281413555145,
+      "warp_mae_on_coverage": 0.06500578671693802,
+      "safe_pixel_fraction_of_full": {
+        "10": 0.5789487670068028,
+        "20": 0.747454294217687,
+        "30": 0.8159119897959184,
+        "40": 0.8553465136054422
+      },
+      "safe_pixel_fraction_of_covered": {
+        "10": 0.5983729923318613,
+        "20": 0.7725320238173708,
+        "30": 0.843286533517896,
+        "40": 0.8840441192626283
+      },
+      "copy_safe_pixel_fraction_of_full": {
+        "10": 0.6738998724489796,
+        "20": 0.8204347363945578,
+        "30": 0.8765412414965986,
+        "40": 0.9069568452380953
+      },
+      "copy_safe_pixel_fraction_on_warp_coverage": {
+        "10": 0.6641509019401051,
+        "20": 0.8150912925977193,
+        "30": 0.8729044448838793,
+        "40": 0.9041757300112055
+      },
+      "oracle_best_copy_or_warp_safe_fraction_of_full": {
+        "10": 0.7189147534013606,
+        "20": 0.846827168367347,
+        "30": 0.8933939200680272,
+        "40": 0.9190210459183673
+      },
+      "warp_better_than_copy_fraction_on_coverage": 0.3425394942104454,
+      "safe_tile_fraction_of_full": {
+        "10": 0.4342105263157895,
+        "20": 0.6947368421052632,
+        "30": 0.8157894736842105,
+        "40": 0.8776315789473684
+      },
+      "copy_safe_tile_fraction_of_full": {
+        "10": 0.6355263157894737,
+        "20": 0.8144736842105263,
+        "30": 0.8907894736842106,
+        "40": 0.9381578947368421
+      },
+      "oracle_best_copy_or_warp_safe_tile_fraction_of_full": {
+        "10": 0.6802631578947368,
+        "20": 0.8592105263157894,
+        "30": 0.9052631578947369,
+        "40": 0.9447368421052632
+      },
+      "tile_size": 16
+    },
+    {
+      "source_frame": 15,
+      "target_frame": 30,
+      "delta_frames": 15,
+      "resolution": [
+        640,
+        294
+      ],
+      "sift_source": 1659,
+      "sift_target": 1596,
+      "ratio_matches": 624,
+      "valid_3d2d_matches": 623,
+      "pnp_inliers": 492,
+      "pnp_inlier_ratio": 0.7897271268057785,
+      "pnp_reprojection_px_median": 0.6710570454597473,
+      "pnp_reprojection_px_p95": 2.206923484802246,
+      "pnp_refine_lm_accepted": true,
+      "rotation_angle_deg": 0.11075960181380128,
+      "translation_norm_predicted_metric": 0.012537769874848496,
+      "camera_center_source": [
+        -0.012312605045735836,
+        0.0002429961896268651,
+        0.0023529522586613894
+      ],
+      "coverage_ratio": 0.9804209183673469,
+      "copy_psnr_full": 21.590534850029176,
+      "copy_psnr_on_warp_coverage": 21.516692194059985,
+      "warp_psnr_on_coverage": 20.14384986685353,
+      "copy_mae_on_coverage": 0.04324233531951904,
+      "warp_mae_on_coverage": 0.05527954176068306,
+      "safe_pixel_fraction_of_full": {
+        "10": 0.6312765731292517,
+        "20": 0.7883237670068027,
+        "30": 0.8534598214285715,
+        "40": 0.8921130952380952
+      },
+      "safe_pixel_fraction_of_covered": {
+        "10": 0.6438832151607797,
+        "20": 0.8040666536568443,
+        "30": 0.8705034801274962,
+        "40": 0.9099286628070861
+      },
+      "copy_safe_pixel_fraction_of_full": {
+        "10": 0.733094175170068,
+        "20": 0.8558407738095238,
+        "30": 0.9040497448979592,
+        "40": 0.9319249574829932
+      },
+      "copy_safe_pixel_fraction_on_warp_coverage": {
+        "10": 0.728436219345606,
+        "20": 0.8534064051692362,
+        "30": 0.9024480149179297,
+        "40": 0.930809427784644
+      },
+      "oracle_best_copy_or_warp_safe_fraction_of_full": {
+        "10": 0.7714019982993198,
+        "20": 0.8764615221088435,
+        "30": 0.917139668367347,
+        "40": 0.9411139455782312
+      },
+      "warp_better_than_copy_fraction_on_coverage": 0.2908074763112817,
+      "safe_tile_fraction_of_full": {
+        "10": 0.49078947368421055,
+        "20": 0.7407894736842106,
+        "30": 0.8644736842105263,
+        "40": 0.9144736842105263
+      },
+      "copy_safe_tile_fraction_of_full": {
+        "10": 0.7118421052631579,
+        "20": 0.8578947368421053,
+        "30": 0.9236842105263158,
+        "40": 0.95
+      },
+      "oracle_best_copy_or_warp_safe_tile_fraction_of_full": {
+        "10": 0.7486842105263158,
+        "20": 0.8789473684210526,
+        "30": 0.9342105263157895,
+        "40": 0.9605263157894737
+      },
+      "tile_size": 16
+    },
+    {
+      "source_frame": 30,
+      "target_frame": 45,
+      "delta_frames": 15,
+      "resolution": [
+        640,
+        294
+      ],
+      "sift_source": 1596,
+      "sift_target": 1526,
+      "ratio_matches": 708,
+      "valid_3d2d_matches": 706,
+      "pnp_inliers": 594,
+      "pnp_inlier_ratio": 0.8413597733711048,
+      "pnp_reprojection_px_median": 0.5086018443107605,
+      "pnp_reprojection_px_p95": 2.1408028602600098,
+      "pnp_refine_lm_accepted": true,
+      "rotation_angle_deg": 0.027097710026000733,
+      "translation_norm_predicted_metric": 0.0030874259872242693,
+      "camera_center_source": [
+        -0.002848084317520261,
+        -0.0007917218608781695,
+        0.0008909503230825067
+      ],
+      "coverage_ratio": 0.9835087159863946,
+      "copy_psnr_full": 22.818258171902997,
+      "copy_psnr_on_warp_coverage": 22.758142420872225,
+      "warp_psnr_on_coverage": 21.068192155964024,
+      "copy_mae_on_coverage": 0.03521884232759476,
+      "warp_mae_on_coverage": 0.04863305762410164,
+      "safe_pixel_fraction_of_full": {
+        "10": 0.6722789115646258,
+        "20": 0.8168207908163265,
+        "30": 0.8759194302721088,
+        "40": 0.9096991921768708
+      },
+      "safe_pixel_fraction_of_covered": {
+        "10": 0.683551554385946,
+        "20": 0.8305170839254932,
+        "30": 0.8906066779424717,
+        "40": 0.9249528523644066
+      },
+      "copy_safe_pixel_fraction_of_full": {
+        "10": 0.7833014455782313,
+        "20": 0.883014455782313,
+        "30": 0.9224808673469388,
+        "40": 0.9448394982993197
+      },
+      "copy_safe_pixel_fraction_on_warp_coverage": {
+        "10": 0.7802406826004961,
+        "20": 0.8813987041830355,
+        "30": 0.9214404210594573,
+        "40": 0.9440820936252073
+      },
+      "oracle_best_copy_or_warp_safe_fraction_of_full": {
+        "10": 0.8146471088435374,
+        "20": 0.900515518707483,
+        "30": 0.9332270408163266,
+        "40": 0.9521630527210885
+      },
+      "warp_better_than_copy_fraction_on_coverage": 0.2629946448931951,
+      "safe_tile_fraction_of_full": {
+        "10": 0.5289473684210526,
+        "20": 0.7894736842105263,
+        "30": 0.906578947368421,
+        "40": 0.9342105263157895
+      },
+      "copy_safe_tile_fraction_of_full": {
+        "10": 0.7342105263157894,
+        "20": 0.8842105263157894,
+        "30": 0.9473684210526315,
+        "40": 0.9671052631578947
+      },
+      "oracle_best_copy_or_warp_safe_tile_fraction_of_full": {
+        "10": 0.7736842105263158,
+        "20": 0.9092105263157895,
+        "30": 0.9565789473684211,
+        "40": 0.9710526315789474
+      },
+      "tile_size": 16
+    },
+    {
+      "source_frame": 30,
+      "target_frame": 60,
+      "delta_frames": 30,
+      "resolution": [
+        640,
+        294
+      ],
+      "sift_source": 1596,
+      "sift_target": 1080,
+      "ratio_matches": 266,
+      "valid_3d2d_matches": 265,
+      "pnp_inliers": 209,
+      "pnp_inlier_ratio": 0.7886792452830189,
+      "pnp_reprojection_px_median": 0.5673539638519287,
+      "pnp_reprojection_px_p95": 1.868110179901123,
+      "pnp_refine_lm_accepted": true,
+      "rotation_angle_deg": 0.1820305875743838,
+      "translation_norm_predicted_metric": 0.021742068079780557,
+      "camera_center_source": [
+        -0.006090096663683653,
+        -0.01942942664027214,
+        -0.007624021731317043
+      ],
+      "coverage_ratio": 0.9868622448979592,
+      "copy_psnr_full": 16.406965119322173,
+      "copy_psnr_on_warp_coverage": 16.49597459989207,
+      "warp_psnr_on_coverage": 16.065118461071787,
+      "copy_mae_on_coverage": 0.08889400959014893,
+      "warp_mae_on_coverage": 0.0973442867398262,
+      "safe_pixel_fraction_of_full": {
+        "10": 0.4603050595238095,
+        "20": 0.6476828231292517,
+        "30": 0.7252444727891156,
+        "40": 0.7784438775510204
+      },
+      "safe_pixel_fraction_of_covered": {
+        "10": 0.4664329412778424,
+        "20": 0.6563052001206324,
+        "30": 0.7348994011460084,
+        "40": 0.7888070311490242
+      },
+      "copy_safe_pixel_fraction_of_full": {
+        "10": 0.51921768707483,
+        "20": 0.6903220663265306,
+        "30": 0.7613360969387755,
+        "40": 0.806765518707483
+      },
+      "copy_safe_pixel_fraction_on_warp_coverage": {
+        "10": 0.5202328637284046,
+        "20": 0.6925757184093748,
+        "30": 0.7627148765671449,
+        "40": 0.8085552108913877
+      },
+      "oracle_best_copy_or_warp_safe_fraction_of_full": {
+        "10": 0.5679209183673469,
+        "20": 0.7295227465986395,
+        "30": 0.7948767006802722,
+        "40": 0.8345344387755103
+      },
+      "warp_better_than_copy_fraction_on_coverage": 0.3668788505450002,
+      "safe_tile_fraction_of_full": {
+        "10": 0.30526315789473685,
+        "20": 0.5394736842105263,
+        "30": 0.7052631578947368,
+        "40": 0.7973684210526316
+      },
+      "copy_safe_tile_fraction_of_full": {
+        "10": 0.4381578947368421,
+        "20": 0.6513157894736842,
+        "30": 0.7421052631578947,
+        "40": 0.825
+      },
+      "oracle_best_copy_or_warp_safe_tile_fraction_of_full": {
+        "10": 0.4921052631578947,
+        "20": 0.6947368421052632,
+        "30": 0.7947368421052632,
+        "40": 0.8552631578947368
+      },
+      "tile_size": 16
+    },
+    {
+      "source_frame": 45,
+      "target_frame": 60,
+      "delta_frames": 15,
+      "resolution": [
+        640,
+        294
+      ],
+      "sift_source": 1526,
+      "sift_target": 1080,
+      "ratio_matches": 284,
+      "valid_3d2d_matches": 284,
+      "pnp_inliers": 219,
+      "pnp_inlier_ratio": 0.7711267605633803,
+      "pnp_reprojection_px_median": 0.5527708530426025,
+      "pnp_reprojection_px_p95": 1.7990446090698242,
+      "pnp_refine_lm_accepted": true,
+      "rotation_angle_deg": 0.11812572815707797,
+      "translation_norm_predicted_metric": 0.015252701152723005,
+      "camera_center_source": [
+        -0.004215257707983255,
+        -0.013822533190250397,
+        -0.004879966378211975
+      ],
+      "coverage_ratio": 0.9854963860544218,
+      "copy_psnr_full": 16.917360128429696,
+      "copy_psnr_on_warp_coverage": 17.03869447690029,
+      "warp_psnr_on_coverage": 16.59681342840017,
+      "copy_mae_on_coverage": 0.08327805995941162,
+      "warp_mae_on_coverage": 0.0911802276968956,
+      "safe_pixel_fraction_of_full": {
+        "10": 0.48249893707482994,
+        "20": 0.6593537414965986,
+        "30": 0.7368090986394558,
+        "40": 0.788828656462585
+      },
+      "safe_pixel_fraction_of_covered": {
+        "10": 0.4895999050859889,
+        "20": 0.6690574930836807,
+        "30": 0.7476527657187849,
+        "40": 0.8004378987332216
+      },
+      "copy_safe_pixel_fraction_of_full": {
+        "10": 0.5407738095238095,
+        "20": 0.6965401785714286,
+        "30": 0.7683460884353741,
+        "40": 0.8137595663265306
+      },
+      "copy_safe_pixel_fraction_on_warp_coverage": {
+        "10": 0.5425468233466896,
+        "20": 0.6990632634241308,
+        "30": 0.7701570934741224,
+        "40": 0.8159908537407445
+      },
+      "oracle_best_copy_or_warp_safe_fraction_of_full": {
+        "10": 0.5861819727891157,
+        "20": 0.7332323554421769,
+        "30": 0.7970503826530613,
+        "40": 0.8371226615646259
+      },
+      "warp_better_than_copy_fraction_on_coverage": 0.34967184559216097,
+      "safe_tile_fraction_of_full": {
+        "10": 0.33026315789473687,
+        "20": 0.5526315789473685,
+        "30": 0.7052631578947368,
+        "40": 0.8078947368421052
+      },
+      "copy_safe_tile_fraction_of_full": {
+        "10": 0.45789473684210524,
+        "20": 0.6513157894736842,
+        "30": 0.7486842105263158,
+        "40": 0.8381578947368421
+      },
+      "oracle_best_copy_or_warp_safe_tile_fraction_of_full": {
+        "10": 0.5118421052631579,
+        "20": 0.6934210526315789,
+        "30": 0.7973684210526316,
+        "40": 0.8578947368421053
+      },
+      "tile_size": 16
+    },
+    {
+      "source_frame": 45,
+      "target_frame": 75,
+      "delta_frames": 30,
+      "resolution": [
+        640,
+        294
+      ],
+      "sift_source": 1526,
+      "sift_target": 1061,
+      "ratio_matches": 234,
+      "valid_3d2d_matches": 234,
+      "pnp_inliers": 190,
+      "pnp_inlier_ratio": 0.811965811965812,
+      "pnp_reprojection_px_median": 0.6210201978683472,
+      "pnp_reprojection_px_p95": 2.028517007827759,
+      "pnp_refine_lm_accepted": true,
+      "rotation_angle_deg": 0.10459547905008836,
+      "translation_norm_predicted_metric": 0.011526240975773478,
+      "camera_center_source": [
+        -0.008088216185569763,
+        0.0024717524647712708,
+        -0.007831056602299213
+      ],
+      "coverage_ratio": 0.9819993622448979,
+      "copy_psnr_full": 15.715608277974091,
+      "copy_psnr_on_warp_coverage": 15.76255959497285,
+      "warp_psnr_on_coverage": 15.481001512257366,
+      "copy_mae_on_coverage": 0.10289844870567322,
+      "warp_mae_on_coverage": 0.10909496992826462,
+      "safe_pixel_fraction_of_full": {
+        "10": 0.3936437074829932,
+        "20": 0.5748618197278912,
+        "30": 0.6717261904761904,
+        "40": 0.7376806972789116
+      },
+      "safe_pixel_fraction_of_covered": {
+        "10": 0.4008594329258063,
+        "20": 0.5853993819443317,
+        "30": 0.6840393347512894,
+        "40": 0.7512028272528996
+      },
+      "copy_safe_pixel_fraction_of_full": {
+        "10": 0.43964179421768707,
+        "20": 0.60578231292517,
+        "30": 0.6968962585034013,
+        "40": 0.7615858843537415
+      },
+      "copy_safe_pixel_fraction_on_warp_coverage": {
+        "10": 0.4435875371401666,
+        "20": 0.6106195169207622,
+        "30": 0.7011684607599595,
+        "40": 0.7646084655225601
+      },
+      "oracle_best_copy_or_warp_safe_fraction_of_full": {
+        "10": 0.4644504676870748,
+        "20": 0.6274128401360545,
+        "30": 0.7150988520408164,
+        "40": 0.7765571853741496
+      },
+      "warp_better_than_copy_fraction_on_coverage": 0.3352979060793514,
+      "safe_tile_fraction_of_full": {
+        "10": 0.24868421052631579,
+        "20": 0.4842105263157895,
+        "30": 0.6236842105263158,
+        "40": 0.7618421052631579
+      },
+      "copy_safe_tile_fraction_of_full": {
+        "10": 0.35789473684210527,
+        "20": 0.5578947368421052,
+        "30": 0.6776315789473685,
+        "40": 0.7934210526315789
+      },
+      "oracle_best_copy_or_warp_safe_tile_fraction_of_full": {
+        "10": 0.39342105263157895,
+        "20": 0.5789473684210527,
+        "30": 0.7026315789473684,
+        "40": 0.8052631578947368
+      },
+      "tile_size": 16
+    },
+    {
+      "source_frame": 60,
+      "target_frame": 75,
+      "delta_frames": 15,
+      "resolution": [
+        640,
+        294
+      ],
+      "sift_source": 1080,
+      "sift_target": 1061,
+      "ratio_matches": 345,
+      "valid_3d2d_matches": 343,
+      "pnp_inliers": 242,
+      "pnp_inlier_ratio": 0.7055393586005831,
+      "pnp_reprojection_px_median": 0.4903251528739929,
+      "pnp_reprojection_px_p95": 1.392482876777649,
+      "pnp_refine_lm_accepted": true,
+      "rotation_angle_deg": 0.05984525857988212,
+      "translation_norm_predicted_metric": 0.005711750728527839,
+      "camera_center_source": [
+        -0.002631851937621832,
+        0.003844939637929201,
+        0.0033036177046597004
+      ],
+      "coverage_ratio": 0.9628560799319728,
+      "copy_psnr_full": 16.60384892892599,
+      "copy_psnr_on_warp_coverage": 16.714788908804834,
+      "warp_psnr_on_coverage": 16.338571714010065,
+      "copy_mae_on_coverage": 0.08581579476594925,
+      "warp_mae_on_coverage": 0.09376528859138489,
+      "safe_pixel_fraction_of_full": {
+        "10": 0.4702434098639456,
+        "20": 0.6310905612244898,
+        "30": 0.704203869047619,
+        "40": 0.7547459608843538
+      },
+      "safe_pixel_fraction_of_covered": {
+        "10": 0.48838390250095215,
+        "20": 0.655436024529312,
+        "30": 0.731369810841691,
+        "40": 0.7838616555629764
+      },
+      "copy_safe_pixel_fraction_of_full": {
+        "10": 0.5376222363945579,
+        "20": 0.6763977465986395,
+        "30": 0.7466730442176871,
+        "40": 0.7963329081632653
+      },
+      "copy_safe_pixel_fraction_on_warp_coverage": {
+        "10": 0.5457385563914755,
+        "20": 0.6839891594129304,
+        "30": 0.7511191084665868,
+        "40": 0.7980140309431422
+      },
+      "oracle_best_copy_or_warp_safe_fraction_of_full": {
+        "10": 0.5621545493197279,
+        "20": 0.6944409013605443,
+        "30": 0.7603741496598639,
+        "40": 0.8083067602040817
+      },
+      "warp_better_than_copy_fraction_on_coverage": 0.3272764404899239,
+      "safe_tile_fraction_of_full": {
+        "10": 0.33289473684210524,
+        "20": 0.5407894736842105,
+        "30": 0.6789473684210526,
+        "40": 0.7855263157894737
+      },
+      "copy_safe_tile_fraction_of_full": {
+        "10": 0.46710526315789475,
+        "20": 0.625,
+        "30": 0.7368421052631579,
+        "40": 0.8144736842105263
+      },
+      "oracle_best_copy_or_warp_safe_tile_fraction_of_full": {
+        "10": 0.4934210526315789,
+        "20": 0.6486842105263158,
+        "30": 0.7552631578947369,
+        "40": 0.8460526315789474
+      },
+      "tile_size": 16
+    },
+    {
+      "source_frame": 60,
+      "target_frame": 90,
+      "delta_frames": 30,
+      "resolution": [
+        640,
+        294
+      ],
+      "sift_source": 1080,
+      "sift_target": 654,
+      "ratio_matches": 112,
+      "valid_3d2d_matches": 112,
+      "pnp_inliers": 56,
+      "pnp_inlier_ratio": 0.5,
+      "pnp_reprojection_px_median": 0.9462705254554749,
+      "pnp_reprojection_px_p95": 2.368633270263672,
+      "pnp_refine_lm_accepted": true,
+      "rotation_angle_deg": 0.7620813331834607,
+      "translation_norm_predicted_metric": 0.13378097555997276,
+      "camera_center_source": [
+        0.06026465818285942,
+        0.0010380297899246216,
+        -0.11943383514881134
+      ],
+      "coverage_ratio": 0.9372555272108843,
+      "copy_psnr_full": 14.152022240510671,
+      "copy_psnr_on_warp_coverage": 14.532343410850356,
+      "warp_psnr_on_coverage": 15.026819433968353,
+      "copy_mae_on_coverage": 0.12751071155071259,
+      "warp_mae_on_coverage": 0.11830288916826248,
+      "safe_pixel_fraction_of_full": {
+        "10": 0.3094440901360544,
+        "20": 0.5095344387755102,
+        "30": 0.6080676020408163,
+        "40": 0.6774606717687075
+      },
+      "safe_pixel_fraction_of_covered": {
+        "10": 0.3301597922360706,
+        "20": 0.5436451682411513,
+        "30": 0.6487746237681028,
+        "40": 0.7228132052576068
+      },
+      "copy_safe_pixel_fraction_of_full": {
+        "10": 0.2883078231292517,
+        "20": 0.5044961734693878,
+        "30": 0.6115911989795918,
+        "40": 0.6863201530612245
+      },
+      "copy_safe_pixel_fraction_on_warp_coverage": {
+        "10": 0.2905689692323395,
+        "20": 0.5116130056590721,
+        "30": 0.6199065515950871,
+        "40": 0.6969561223448292
+      },
+      "oracle_best_copy_or_warp_safe_fraction_of_full": {
+        "10": 0.39284119897959185,
+        "20": 0.5982355442176871,
+        "30": 0.6931972789115646,
+        "40": 0.7577752976190476
+      },
+      "warp_better_than_copy_fraction_on_coverage": 0.5153271261213241,
+      "safe_tile_fraction_of_full": {
+        "10": 0.16052631578947368,
+        "20": 0.4144736842105263,
+        "30": 0.5381578947368421,
+        "40": 0.6407894736842106
+      },
+      "copy_safe_tile_fraction_of_full": {
+        "10": 0.11710526315789474,
+        "20": 0.3894736842105263,
+        "30": 0.5355263157894737,
+        "40": 0.6578947368421053
+      },
+      "oracle_best_copy_or_warp_safe_tile_fraction_of_full": {
+        "10": 0.25921052631578945,
+        "20": 0.5157894736842106,
+        "30": 0.6552631578947369,
+        "40": 0.7684210526315789
+      },
+      "tile_size": 16
+    },
+    {
+      "source_frame": 75,
+      "target_frame": 90,
+      "delta_frames": 15,
+      "resolution": [
+        640,
+        294
+      ],
+      "sift_source": 1061,
+      "sift_target": 654,
+      "ratio_matches": 139,
+      "valid_3d2d_matches": 138,
+      "pnp_inliers": 68,
+      "pnp_inlier_ratio": 0.4927536231884058,
+      "pnp_reprojection_px_median": 1.0625216960906982,
+      "pnp_reprojection_px_p95": 2.1229794025421143,
+      "pnp_refine_lm_accepted": true,
+      "rotation_angle_deg": 0.6426518151516997,
+      "translation_norm_predicted_metric": 0.17870499408119822,
+      "camera_center_source": [
+        0.05901727080345154,
+        -0.008832715451717377,
+        -0.1684470921754837
+      ],
+      "coverage_ratio": 0.8997236394557823,
+      "copy_psnr_full": 14.745645087795529,
+      "copy_psnr_on_warp_coverage": 15.25655361408148,
+      "warp_psnr_on_coverage": 15.88432361615956,
+      "copy_mae_on_coverage": 0.11145557463169098,
+      "warp_mae_on_coverage": 0.10222797840833664,
+      "safe_pixel_fraction_of_full": {
+        "10": 0.3739105017006803,
+        "20": 0.5521045918367347,
+        "30": 0.6376966411564626,
+        "40": 0.6974330357142857
+      },
+      "safe_pixel_fraction_of_covered": {
+        "10": 0.41558372516125985,
+        "20": 0.613637974623727,
+        "30": 0.708769463412329,
+        "40": 0.7751636226165441
+      },
+      "copy_safe_pixel_fraction_of_full": {
+        "10": 0.37762542517006803,
+        "20": 0.5728050595238096,
+        "30": 0.6734587585034013,
+        "40": 0.7402529761904761
+      },
+      "copy_safe_pixel_fraction_on_warp_coverage": {
+        "10": 0.38356803629232333,
+        "20": 0.5838610211941497,
+        "30": 0.6836058407957848,
+        "40": 0.7534201261725303
+      },
+      "oracle_best_copy_or_warp_safe_fraction_of_full": {
+        "10": 0.47686011904761905,
+        "20": 0.6679740646258503,
+        "30": 0.7555803571428571,
+        "40": 0.8120854591836735
+      },
+      "warp_better_than_copy_fraction_on_coverage": 0.5117902795170475,
+      "safe_tile_fraction_of_full": {
+        "10": 0.23157894736842105,
+        "20": 0.4710526315789474,
+        "30": 0.5710526315789474,
+        "40": 0.6763157894736842
+      },
+      "copy_safe_tile_fraction_of_full": {
+        "10": 0.2131578947368421,
+        "20": 0.4644736842105263,
+        "30": 0.6157894736842106,
+        "40": 0.7065789473684211
+      },
+      "oracle_best_copy_or_warp_safe_tile_fraction_of_full": {
+        "10": 0.3631578947368421,
+        "20": 0.5855263157894737,
+        "30": 0.7144736842105263,
+        "40": 0.8157894736842105
+      },
+      "tile_size": 16
+    }
+  ],
+  "failures": [
+    {
+      "source": 15,
+      "target": 45,
+      "error": "RuntimeError('PnP pose rejected: median reprojection error 825.85px')"
+    }
+  ]
+}

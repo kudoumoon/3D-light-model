@@ -1,0 +1,41 @@
+{
+  "provider": "moge2",
+  "model": "Ruicheng/moge-2-vits-normal",
+  "input": "third_party/Matrix-Game/Matrix-Game-2/demo_images/gta_drive/0000.png",
+  "height": 326,
+  "width": 640,
+  "num_tokens": 1200,
+  "model_load_ms": 1584.617,
+  "warmup_runs": 1,
+  "timed_runs": 3,
+  "inference_ms_all": [
+    58.606,
+    57.794,
+    58.72
+  ],
+  "inference_ms_mean": 58.373,
+  "inference_ms_median": 58.606,
+  "peak_allocated_vram_mb": 497.0,
+  "valid_ratio": 0.962989,
+  "depth_median": 15.3758,
+  "depth_p02": 3.42856,
+  "depth_p98": 777.90637,
+  "pointcloud_vertices": 50196,
+  "intrinsics_normalized": [
+    [
+      0.6100600957870483,
+      0.0,
+      0.5
+    ],
+    [
+      0.0,
+      1.1976640224456787,
+      0.5
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

@@ -1,0 +1,9 @@
+-r requirements-analysis.txt
+pillow>=10
+huggingface-hub>=0.25
+click>=8
+scipy>=1.13
+trimesh>=4.5
+tqdm>=4.66
+# Install CUDA torch/torchvision separately; then install the pinned MoGe checkout.
+# See docs/REPRODUCE.md. Model weights are downloaded by MoGe on first inference.

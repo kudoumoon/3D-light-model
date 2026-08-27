@@ -1,0 +1,251 @@
+{
+  "scope": "Official Matrix-Game 2 demo montage crops; target-assisted PnP and route selection are offline oracles, not runtime inputs.",
+  "pair_count": 26,
+  "summaries": {
+    "Straight / W": {
+      "pairs": 13,
+      "failures": [],
+      "coverage_mean": 0.8073783359497645,
+      "copy_psnr_coverage_mean": 29.39881794691585,
+      "warp_psnr_coverage_mean": 24.913866888164385,
+      "warp_better_pixel_fraction_mean": 0.18166946444392343,
+      "rotation_angle_deg_mean": 0.021363373324643446,
+      "pnp_inliers_mean": 338.3076923076923,
+      "pnp_reprojection_px_median_mean": 0.47772462322161746,
+      "safe_tile_fraction": {
+        "Copy": {
+          "10": 0.9055668016194331,
+          "20": 0.9808704453441296,
+          "30": 0.9925101214574898,
+          "40": 0.9978744939271255
+        },
+        "3D warp": {
+          "10": 0.564676113360324,
+          "20": 0.7324898785425102,
+          "30": 0.772165991902834,
+          "40": 0.7760121457489877
+        },
+        "Oracle best(copy, warp)": {
+          "10": 0.9359311740890688,
+          "20": 0.9898785425101213,
+          "30": 0.9969635627530364,
+          "40": 0.9995951417004048
+        }
+      }
+    },
+    "Turning / W+A": {
+      "pairs": 13,
+      "failures": [],
+      "coverage_mean": 0.9534847592883308,
+      "copy_psnr_coverage_mean": 24.70695440680216,
+      "warp_psnr_coverage_mean": 22.93547523064619,
+      "warp_better_pixel_fraction_mean": 0.3033400765632313,
+      "rotation_angle_deg_mean": 0.5656623762902242,
+      "pnp_inliers_mean": 705.1538461538462,
+      "pnp_reprojection_px_median_mean": 0.7407444004829113,
+      "safe_tile_fraction": {
+        "Copy": {
+          "10": 0.7592105263157893,
+          "20": 0.8838056680161943,
+          "30": 0.9465587044534411,
+          "40": 0.9708502024291499
+        },
+        "3D warp": {
+          "10": 0.6044534412955465,
+          "20": 0.8177125506072874,
+          "30": 0.8907894736842106,
+          "40": 0.9110323886639677
+        },
+        "Oracle best(copy, warp)": {
+          "10": 0.8682186234817814,
+          "20": 0.9665991902834008,
+          "30": 0.9904858299595141,
+          "40": 0.9957489878542509
+        }
+      }
+    }
+  },
+  "k8_summaries": {
+    "Straight / W": {
+      "pairs": 6,
+      "copy_psnr_coverage_mean": 29.308480725978665,
+      "warp_psnr_coverage_mean": 24.71763621652629,
+      "warp_better_pixel_fraction_mean": 0.21506554044953252,
+      "safe_tile_fraction": {
+        "Copy": 0.9918859649122808,
+        "3D warp": 0.7429824561403509,
+        "Oracle best(copy, warp)": 0.9953947368421053
+      }
+    },
+    "Turning / W+A": {
+      "pairs": 6,
+      "copy_psnr_coverage_mean": 22.47794945035949,
+      "warp_psnr_coverage_mean": 20.761676850513116,
+      "warp_better_pixel_fraction_mean": 0.2675772121790752,
+      "safe_tile_fraction": {
+        "Copy": 0.850438596491228,
+        "3D warp": 0.7449561403508772,
+        "Oracle best(copy, warp)": 0.875657894736842
+      }
+    }
+  },
+  "temporal_summary": {
+    "Straight / W": {
+      "3": {
+        "pairs": 7,
+        "time_sec": 0.1,
+        "copy_psnr": 29.279154204914736,
+        "warp_psnr": 24.99265756850349,
+        "copy_safe_tile20": 0.9759398496240602,
+        "warp_safe_tile20": 0.7278195488721805,
+        "best_safe_tile20": 0.9906015037593986
+      },
+      "6": {
+        "pairs": 6,
+        "time_sec": 0.2,
+        "copy_psnr": 29.538425645917155,
+        "warp_psnr": 24.821944427768774,
+        "copy_safe_tile20": 0.9866228070175439,
+        "warp_safe_tile20": 0.7379385964912281,
+        "best_safe_tile20": 0.9890350877192984
+      },
+      "8": {
+        "pairs": 6,
+        "time_sec": 0.26666666666666666,
+        "copy_psnr": 29.308480725978665,
+        "warp_psnr": 24.71763621652629,
+        "copy_safe_tile20": 0.9918859649122808,
+        "warp_safe_tile20": 0.7429824561403509,
+        "best_safe_tile20": 0.9953947368421053
+      },
+      "15": {
+        "pairs": 6,
+        "time_sec": 0.5,
+        "copy_psnr": 26.209021626480652,
+        "warp_psnr": 23.713555583271557,
+        "copy_safe_tile20": 0.9497807017543861,
+        "warp_safe_tile20": 0.7041666666666666,
+        "best_safe_tile20": 0.9640350877192984
+      },
+      "30": {
+        "pairs": 5,
+        "time_sec": 1.0,
+        "copy_psnr": 24.28783147077106,
+        "warp_psnr": 22.802034224346055,
+        "copy_safe_tile20": 0.9144736842105263,
+        "warp_safe_tile20": 0.6786842105263158,
+        "best_safe_tile20": 0.9363157894736842
+      }
+    },
+    "Turning / W+A": {
+      "3": {
+        "pairs": 7,
+        "time_sec": 0.1,
+        "copy_psnr": 25.01899225513031,
+        "warp_psnr": 23.59683906475732,
+        "copy_safe_tile20": 0.8772556390977444,
+        "warp_safe_tile20": 0.8330827067669173,
+        "best_safe_tile20": 0.9755639097744361
+      },
+      "6": {
+        "pairs": 6,
+        "time_sec": 0.2,
+        "copy_psnr": 24.342910250419322,
+        "warp_psnr": 22.163884090849876,
+        "copy_safe_tile20": 0.8914473684210525,
+        "warp_safe_tile20": 0.799780701754386,
+        "best_safe_tile20": 0.956140350877193
+      },
+      "8": {
+        "pairs": 6,
+        "time_sec": 0.26666666666666666,
+        "copy_psnr": 22.47794945035949,
+        "warp_psnr": 20.761676850513116,
+        "copy_safe_tile20": 0.850438596491228,
+        "warp_safe_tile20": 0.7449561403508772,
+        "best_safe_tile20": 0.875657894736842
+      },
+      "15": {
+        "pairs": 6,
+        "time_sec": 0.5,
+        "copy_psnr": 19.44203821847991,
+        "warp_psnr": 18.514269317814705,
+        "copy_safe_tile20": 0.7271929824561404,
+        "warp_safe_tile20": 0.6383771929824563,
+        "best_safe_tile20": 0.7721491228070175
+      },
+      "30": {
+        "pairs": 4,
+        "time_sec": 1.0,
+        "copy_psnr": 16.678431684371922,
+        "warp_psnr": 16.374716647533084,
+        "copy_safe_tile20": 0.6032894736842105,
+        "warp_safe_tile20": 0.5332236842105263,
+        "best_safe_tile20": 0.6621710526315789
+      }
+    }
+  },
+  "speed_accounting": {
+    "exact_interval": 8,
+    "tile_threshold_rgb_mae_255": 20,
+    "four_step_proxy_ms": 190.144,
+    "geometry_ms": 58.606,
+    "warp_ms": 3.693,
+    "rows": [
+      {
+        "track": "Straight / W",
+        "method": "Copy",
+        "threshold_rgb_mae_255": 20,
+        "safe_tile_fraction_f0": 0.991886,
+        "regenerate_fraction_f4": 0.008114,
+        "average_ms_proxy": 26.347,
+        "speedup_proxy": 7.217
+      },
+      {
+        "track": "Straight / W",
+        "method": "3D warp",
+        "threshold_rgb_mae_255": 20,
+        "safe_tile_fraction_f0": 0.742982,
+        "regenerate_fraction_f4": 0.257018,
+        "average_ms_proxy": 80.515,
+        "speedup_proxy": 2.362
+      },
+      {
+        "track": "Straight / W",
+        "method": "Oracle best(copy, warp)",
+        "threshold_rgb_mae_255": 20,
+        "safe_tile_fraction_f0": 0.995395,
+        "regenerate_fraction_f4": 0.004605,
+        "average_ms_proxy": 35.789,
+        "speedup_proxy": 5.313
+      },
+      {
+        "track": "Turning / W+A",
+        "method": "Copy",
+        "threshold_rgb_mae_255": 20,
+        "safe_tile_fraction_f0": 0.850439,
+        "regenerate_fraction_f4": 0.149561,
+        "average_ms_proxy": 64.546,
+        "speedup_proxy": 2.946
+      },
+      {
+        "track": "Turning / W+A",
+        "method": "3D warp",
+        "threshold_rgb_mae_255": 20,
+        "safe_tile_fraction_f0": 0.744956,
+        "regenerate_fraction_f4": 0.255044,
+        "average_ms_proxy": 80.2,
+        "speedup_proxy": 2.371
+      },
+      {
+        "track": "Turning / W+A",
+        "method": "Oracle best(copy, warp)",
+        "threshold_rgb_mae_255": 20,
+        "safe_tile_fraction_f0": 0.875658,
+        "regenerate_fraction_f4": 0.124342,
+        "average_ms_proxy": 73.845,
+        "speedup_proxy": 2.575
+      }
+    ]
+  }
+}

@@ -1,0 +1,656 @@
+{
+  "experiment_date": "2026-08-16",
+  "audit_date": "2026-08-28",
+  "scope": "Component measurements and offline diagnostics; no real AR-DiT end-to-end speedup measured",
+  "geometry": [
+    {
+      "scene": "GTA driving",
+      "resolution": [
+        640,
+        326
+      ],
+      "geometry_ms_median": 58.606,
+      "geometry_ms_mean": 58.373,
+      "valid_ratio": 0.962989,
+      "peak_allocated_vram_mb": 497.0,
+      "warp_ms_median": 3.693,
+      "upload_plus_warp_ms_median": 4.052,
+      "coverage_yaw5": 0.889686,
+      "coverage_by_yaw": {
+        "2": 0.939777,
+        "5": 0.889686,
+        "10": 0.809806
+      }
+    },
+    {
+      "scene": "Temple Run",
+      "resolution": [
+        640,
+        405
+      ],
+      "geometry_ms_median": 59.302,
+      "geometry_ms_mean": 59.02,
+      "valid_ratio": 0.495505,
+      "peak_allocated_vram_mb": 503.2,
+      "warp_ms_median": 2.62,
+      "upload_plus_warp_ms_median": 3.135,
+      "coverage_yaw5": 0.458546,
+      "coverage_by_yaw": {
+        "2": 0.481601,
+        "5": 0.458546,
+        "10": 0.411134
+      }
+    },
+    {
+      "scene": "Universal street",
+      "resolution": [
+        640,
+        358
+      ],
+      "geometry_ms_median": 60.385,
+      "geometry_ms_mean": 60.02,
+      "valid_ratio": 0.795614,
+      "peak_allocated_vram_mb": 488.6,
+      "warp_ms_median": 4.479,
+      "upload_plus_warp_ms_median": 3.519,
+      "coverage_yaw5": 0.708703,
+      "coverage_by_yaw": {
+        "2": 0.767323,
+        "5": 0.708703,
+        "10": 0.623289
+      }
+    }
+  ],
+  "cpu_cuda": {
+    "cpu_numpy_ms_median": 212.207,
+    "cuda_resident_ms_median": 3.693,
+    "h2d_cuda_ms_median": 4.052,
+    "kernel_speedup": 57.46195505009477
+  },
+  "quality": {
+    "all_recorded": {
+      "straight": {
+        "short": {
+          "pairs": 13,
+          "coverage_mean": 0.8073783359497645,
+          "copy_psnr_coverage_mean": 29.39881794691585,
+          "warp_psnr_coverage_mean": 24.913866888164392,
+          "warp_better_pixel_fraction_mean": 0.1816694644439234,
+          "tile_pass_fraction": {
+            "Copy": {
+              "10": 0.9055668016194331,
+              "20": 0.9808704453441296,
+              "30": 0.9925101214574898,
+              "40": 0.9978744939271256
+            },
+            "3D warp": {
+              "10": 0.5646761133603239,
+              "20": 0.7324898785425101,
+              "30": 0.772165991902834,
+              "40": 0.7760121457489878
+            },
+            "Tile-choice oracle": {
+              "10": 0.9120445344129554,
+              "20": 0.9842105263157895,
+              "30": 0.9933198380566802,
+              "40": 0.9979757085020243
+            },
+            "Pixel-min oracle (legacy)": {
+              "10": 0.9359311740890688,
+              "20": 0.9898785425101215,
+              "30": 0.9969635627530364,
+              "40": 0.9995951417004049
+            }
+          }
+        },
+        "gap8": {
+          "pairs": 6,
+          "coverage_mean": 0.8120704010770975,
+          "copy_psnr_coverage_mean": 29.30848072597866,
+          "warp_psnr_coverage_mean": 24.717636216526294,
+          "warp_better_pixel_fraction_mean": 0.21506554044953252,
+          "tile_pass_fraction": {
+            "Copy": {
+              "10": 0.8885964912280702,
+              "20": 0.9918859649122808,
+              "30": 0.9973684210526317,
+              "40": 0.999561403508772
+            },
+            "3D warp": {
+              "10": 0.531140350877193,
+              "20": 0.7429824561403509,
+              "30": 0.7846491228070176,
+              "40": 0.7872807017543859
+            },
+            "Tile-choice oracle": {
+              "10": 0.8914473684210527,
+              "20": 0.9929824561403509,
+              "30": 0.9975877192982456,
+              "40": 0.999561403508772
+            },
+            "Pixel-min oracle (legacy)": {
+              "10": 0.9153508771929825,
+              "20": 0.9953947368421052,
+              "30": 0.9982456140350877,
+              "40": 0.999561403508772
+            }
+          }
+        },
+        "long": {
+          "pairs": 11,
+          "coverage_mean": 0.8133522727272727,
+          "copy_psnr_coverage_mean": 25.33575337388538,
+          "warp_psnr_coverage_mean": 23.299227692850874,
+          "warp_better_pixel_fraction_mean": 0.29384481082902697,
+          "tile_pass_fraction": {
+            "Copy": {
+              "10": 0.7482057416267943,
+              "20": 0.933732057416268,
+              "30": 0.970933014354067,
+              "40": 0.9832535885167464
+            },
+            "3D warp": {
+              "10": 0.4395933014354067,
+              "20": 0.6925837320574163,
+              "30": 0.759688995215311,
+              "40": 0.7717703349282297
+            },
+            "Tile-choice oracle": {
+              "10": 0.7604066985645933,
+              "20": 0.9430622009569378,
+              "30": 0.9751196172248804,
+              "40": 0.9842105263157895
+            },
+            "Pixel-min oracle (legacy)": {
+              "10": 0.7941387559808613,
+              "20": 0.9514354066985646,
+              "30": 0.9842105263157895,
+              "40": 0.9937799043062201
+            }
+          }
+        }
+      },
+      "turning": {
+        "short": {
+          "pairs": 13,
+          "coverage_mean": 0.9534847592883308,
+          "copy_psnr_coverage_mean": 24.70695440680216,
+          "warp_psnr_coverage_mean": 22.935475230646194,
+          "warp_better_pixel_fraction_mean": 0.3033400765632313,
+          "tile_pass_fraction": {
+            "Copy": {
+              "10": 0.7592105263157894,
+              "20": 0.8838056680161943,
+              "30": 0.9465587044534413,
+              "40": 0.9708502024291498
+            },
+            "3D warp": {
+              "10": 0.6044534412955466,
+              "20": 0.8177125506072874,
+              "30": 0.8907894736842106,
+              "40": 0.9110323886639676
+            },
+            "Tile-choice oracle": {
+              "10": 0.8244939271255061,
+              "20": 0.9441295546558705,
+              "30": 0.9819838056680162,
+              "40": 0.9908906882591093
+            },
+            "Pixel-min oracle (legacy)": {
+              "10": 0.8682186234817814,
+              "20": 0.9665991902834008,
+              "30": 0.9904858299595142,
+              "40": 0.995748987854251
+            }
+          }
+        },
+        "gap8": {
+          "pairs": 6,
+          "coverage_mean": 0.965875673185941,
+          "copy_psnr_coverage_mean": 22.477949450359485,
+          "warp_psnr_coverage_mean": 20.76167685051312,
+          "warp_better_pixel_fraction_mean": 0.2675772121790752,
+          "tile_pass_fraction": {
+            "Copy": {
+              "10": 0.6918859649122807,
+              "20": 0.8504385964912281,
+              "30": 0.9190789473684211,
+              "40": 0.950657894736842
+            },
+            "3D warp": {
+              "10": 0.5074561403508772,
+              "20": 0.7449561403508772,
+              "30": 0.8607456140350878,
+              "40": 0.9024122807017544
+            },
+            "Tile-choice oracle": {
+              "10": 0.6971491228070176,
+              "20": 0.8567982456140351,
+              "30": 0.9234649122807017,
+              "40": 0.9532894736842106
+            },
+            "Pixel-min oracle (legacy)": {
+              "10": 0.7267543859649123,
+              "20": 0.8756578947368421,
+              "30": 0.9322368421052631,
+              "40": 0.9592105263157895
+            }
+          }
+        },
+        "long": {
+          "pairs": 10,
+          "coverage_mean": 0.9653199404761904,
+          "copy_psnr_coverage_mean": 18.336595604836713,
+          "warp_psnr_coverage_mean": 17.658448249702058,
+          "warp_better_pixel_fraction_mean": 0.3599839792892066,
+          "tile_pass_fraction": {
+            "Copy": {
+              "10": 0.48486842105263156,
+              "20": 0.6776315789473684,
+              "30": 0.776578947368421,
+              "40": 0.8467105263157895
+            },
+            "3D warp": {
+              "10": 0.35618421052631577,
+              "20": 0.5963157894736842,
+              "30": 0.7276315789473684,
+              "40": 0.8117105263157894
+            },
+            "Tile-choice oracle": {
+              "10": 0.5055263157894737,
+              "20": 0.6960526315789474,
+              "30": 0.7923684210526316,
+              "40": 0.8589473684210527
+            },
+            "Pixel-min oracle (legacy)": {
+              "10": 0.5477631578947368,
+              "20": 0.7281578947368421,
+              "30": 0.8181578947368421,
+              "40": 0.8803947368421052
+            }
+          }
+        }
+      }
+    },
+    "exclude_transition_risk": {
+      "straight": {
+        "short": {
+          "pairs": 12,
+          "coverage_mean": 0.8120774872448979,
+          "copy_psnr_coverage_mean": 30.1534905690704,
+          "warp_psnr_coverage_mean": 24.963256956299652,
+          "warp_better_pixel_fraction_mean": 0.16876719640076002,
+          "tile_pass_fraction": {
+            "Copy": {
+              "10": 0.9207236842105263,
+              "20": 0.9879385964912281,
+              "30": 0.9968201754385965,
+              "40": 0.9993421052631579
+            },
+            "3D warp": {
+              "10": 0.5699561403508772,
+              "20": 0.7417763157894737,
+              "30": 0.7830043859649123,
+              "40": 0.7867324561403509
+            },
+            "Tile-choice oracle": {
+              "10": 0.9231359649122807,
+              "20": 0.9888157894736842,
+              "30": 0.9968201754385965,
+              "40": 0.9993421052631579
+            },
+            "Pixel-min oracle (legacy)": {
+              "10": 0.9348684210526316,
+              "20": 0.9906798245614036,
+              "30": 0.9976973684210526,
+              "40": 0.999671052631579
+            }
+          }
+        },
+        "gap8": {
+          "pairs": 6,
+          "coverage_mean": 0.8120704010770975,
+          "copy_psnr_coverage_mean": 29.30848072597866,
+          "warp_psnr_coverage_mean": 24.717636216526294,
+          "warp_better_pixel_fraction_mean": 0.21506554044953252,
+          "tile_pass_fraction": {
+            "Copy": {
+              "10": 0.8885964912280702,
+              "20": 0.9918859649122808,
+              "30": 0.9973684210526317,
+              "40": 0.999561403508772
+            },
+            "3D warp": {
+              "10": 0.531140350877193,
+              "20": 0.7429824561403509,
+              "30": 0.7846491228070176,
+              "40": 0.7872807017543859
+            },
+            "Tile-choice oracle": {
+              "10": 0.8914473684210527,
+              "20": 0.9929824561403509,
+              "30": 0.9975877192982456,
+              "40": 0.999561403508772
+            },
+            "Pixel-min oracle (legacy)": {
+              "10": 0.9153508771929825,
+              "20": 0.9953947368421052,
+              "30": 0.9982456140350877,
+              "40": 0.999561403508772
+            }
+          }
+        },
+        "long": {
+          "pairs": 9,
+          "coverage_mean": 0.831125992063492,
+          "copy_psnr_coverage_mean": 26.495542316183048,
+          "warp_psnr_coverage_mean": 23.61851241775231,
+          "warp_better_pixel_fraction_mean": 0.26933380508615035,
+          "tile_pass_fraction": {
+            "Copy": {
+              "10": 0.7758771929824562,
+              "20": 0.9587719298245614,
+              "30": 0.9915204678362572,
+              "40": 0.9980994152046784
+            },
+            "3D warp": {
+              "10": 0.45555555555555555,
+              "20": 0.7153508771929825,
+              "30": 0.7880116959064327,
+              "40": 0.7995614035087719
+            },
+            "Tile-choice oracle": {
+              "10": 0.7805555555555556,
+              "20": 0.960233918128655,
+              "30": 0.992251461988304,
+              "40": 0.9980994152046784
+            },
+            "Pixel-min oracle (legacy)": {
+              "10": 0.8090643274853802,
+              "20": 0.9659356725146199,
+              "30": 0.9935672514619883,
+              "40": 0.9985380116959065
+            }
+          }
+        }
+      },
+      "turning": {
+        "short": {
+          "pairs": 12,
+          "coverage_mean": 0.959375,
+          "copy_psnr_coverage_mean": 25.442411724182257,
+          "warp_psnr_coverage_mean": 22.85815729765667,
+          "warp_better_pixel_fraction_mean": 0.26583195606219445,
+          "tile_pass_fraction": {
+            "Copy": {
+              "10": 0.7959429824561404,
+              "20": 0.912061403508772,
+              "30": 0.9650219298245614,
+              "40": 0.9835526315789473
+            },
+            "3D warp": {
+              "10": 0.6047149122807017,
+              "20": 0.8229166666666666,
+              "30": 0.899780701754386,
+              "40": 0.9214912280701755
+            },
+            "Tile-choice oracle": {
+              "10": 0.8366228070175439,
+              "20": 0.9519736842105263,
+              "30": 0.9864035087719298,
+              "40": 0.9948464912280702
+            },
+            "Pixel-min oracle (legacy)": {
+              "10": 0.875,
+              "20": 0.9698464912280702,
+              "30": 0.9933114035087719,
+              "40": 0.9976973684210526
+            }
+          }
+        },
+        "gap8": {
+          "pairs": 6,
+          "coverage_mean": 0.965875673185941,
+          "copy_psnr_coverage_mean": 22.477949450359485,
+          "warp_psnr_coverage_mean": 20.76167685051312,
+          "warp_better_pixel_fraction_mean": 0.2675772121790752,
+          "tile_pass_fraction": {
+            "Copy": {
+              "10": 0.6918859649122807,
+              "20": 0.8504385964912281,
+              "30": 0.9190789473684211,
+              "40": 0.950657894736842
+            },
+            "3D warp": {
+              "10": 0.5074561403508772,
+              "20": 0.7449561403508772,
+              "30": 0.8607456140350878,
+              "40": 0.9024122807017544
+            },
+            "Tile-choice oracle": {
+              "10": 0.6971491228070176,
+              "20": 0.8567982456140351,
+              "30": 0.9234649122807017,
+              "40": 0.9532894736842106
+            },
+            "Pixel-min oracle (legacy)": {
+              "10": 0.7267543859649123,
+              "20": 0.8756578947368421,
+              "30": 0.9322368421052631,
+              "40": 0.9592105263157895
+            }
+          }
+        },
+        "long": {
+          "pairs": 8,
+          "coverage_mean": 0.9770275297619048,
+          "copy_psnr_coverage_mean": 19.197132377929414,
+          "warp_psnr_coverage_mean": 18.20916743086158,
+          "warp_better_pixel_fraction_mean": 0.3215902984067118,
+          "tile_pass_fraction": {
+            "Copy": {
+              "10": 0.5648026315789474,
+              "20": 0.7402960526315789,
+              "30": 0.8268092105263158,
+              "40": 0.887828947368421
+            },
+            "3D warp": {
+              "10": 0.3962171052631579,
+              "20": 0.6347039473684211,
+              "30": 0.7708881578947369,
+              "40": 0.85
+            },
+            "Tile-choice oracle": {
+              "10": 0.5728618421052631,
+              "20": 0.7457236842105264,
+              "30": 0.834703947368421,
+              "40": 0.8919407894736842
+            },
+            "Pixel-min oracle (legacy)": {
+              "10": 0.606907894736842,
+              "20": 0.7725328947368421,
+              "30": 0.8514802631578947,
+              "40": 0.9024671052631579
+            }
+          }
+        }
+      }
+    }
+  },
+  "valid_pairs": 59,
+  "failed_pairs": 1,
+  "transition_risk_pairs": 6,
+  "speed_ledger": {
+    "warning": "Accounting only: target-dependent routes, proxy DiT, gap-8 rates used at every non-anchor age, tile/token mapping assumed, VAE/router/KV-build/display excluded. Floor is a sensitivity assumption, not a proven bound.",
+    "interval": 8,
+    "threshold_rgb_mae_255": 20,
+    "rows": [
+      {
+        "track": "straight",
+        "method": "Copy",
+        "policy": "floor",
+        "f0_tile_pass_fraction": 0.9918859649122808,
+        "baseline_ms_proxy": 190.144,
+        "average_ms_proxy": 63.496500000000005,
+        "speedup_proxy": 2.9945587552069797
+      },
+      {
+        "track": "straight",
+        "method": "Copy",
+        "policy": "legacy_linear",
+        "f0_tile_pass_fraction": 0.9918859649122808,
+        "baseline_ms_proxy": 190.144,
+        "average_ms_proxy": 26.34686754385963,
+        "speedup_proxy": 7.216949023767903
+      },
+      {
+        "track": "straight",
+        "method": "3D warp",
+        "policy": "floor",
+        "f0_tile_pass_fraction": 0.7429824561403509,
+        "baseline_ms_proxy": 190.144,
+        "average_ms_proxy": 80.51531271929825,
+        "speedup_proxy": 2.3615880455299467
+      },
+      {
+        "track": "straight",
+        "method": "3D warp",
+        "policy": "legacy_linear",
+        "f0_tile_pass_fraction": 0.7429824561403509,
+        "baseline_ms_proxy": 190.144,
+        "average_ms_proxy": 80.51531271929825,
+        "speedup_proxy": 2.3615880455299467
+      },
+      {
+        "track": "straight",
+        "method": "Tile-choice oracle",
+        "policy": "floor",
+        "f0_tile_pass_fraction": 0.9929824561403509,
+        "baseline_ms_proxy": 190.144,
+        "average_ms_proxy": 74.05362500000001,
+        "speedup_proxy": 2.567652832660116
+      },
+      {
+        "track": "straight",
+        "method": "Tile-choice oracle",
+        "policy": "legacy_linear",
+        "f0_tile_pass_fraction": 0.9929824561403509,
+        "baseline_ms_proxy": 190.144,
+        "average_ms_proxy": 36.55549692982457,
+        "speedup_proxy": 5.201515940681059
+      },
+      {
+        "track": "straight",
+        "method": "Pixel-min oracle (legacy)",
+        "policy": "floor",
+        "f0_tile_pass_fraction": 0.9953947368421052,
+        "baseline_ms_proxy": 190.144,
+        "average_ms_proxy": 74.05362500000001,
+        "speedup_proxy": 2.567652832660116
+      },
+      {
+        "track": "straight",
+        "method": "Pixel-min oracle (legacy)",
+        "policy": "legacy_linear",
+        "f0_tile_pass_fraction": 0.9953947368421052,
+        "baseline_ms_proxy": 190.144,
+        "average_ms_proxy": 35.78880657894738,
+        "speedup_proxy": 5.312946090576025
+      },
+      {
+        "track": "turning",
+        "method": "Copy",
+        "policy": "floor",
+        "f0_tile_pass_fraction": 0.8504385964912281,
+        "baseline_ms_proxy": 190.144,
+        "average_ms_proxy": 64.5459596491228,
+        "speedup_proxy": 2.945869904694865
+      },
+      {
+        "track": "turning",
+        "method": "Copy",
+        "policy": "legacy_linear",
+        "f0_tile_pass_fraction": 0.8504385964912281,
+        "baseline_ms_proxy": 190.144,
+        "average_ms_proxy": 64.5459596491228,
+        "speedup_proxy": 2.945869904694865
+      },
+      {
+        "track": "turning",
+        "method": "3D warp",
+        "policy": "floor",
+        "f0_tile_pass_fraction": 0.7449561403508772,
+        "baseline_ms_proxy": 190.144,
+        "average_ms_proxy": 80.20011929824561,
+        "speedup_proxy": 2.370869291265
+      },
+      {
+        "track": "turning",
+        "method": "3D warp",
+        "policy": "legacy_linear",
+        "f0_tile_pass_fraction": 0.7449561403508772,
+        "baseline_ms_proxy": 190.144,
+        "average_ms_proxy": 80.20011929824561,
+        "speedup_proxy": 2.370869291265
+      },
+      {
+        "track": "turning",
+        "method": "Tile-choice oracle",
+        "policy": "floor",
+        "f0_tile_pass_fraction": 0.8567982456140351,
+        "baseline_ms_proxy": 190.144,
+        "average_ms_proxy": 74.83134956140351,
+        "speedup_proxy": 2.5409671362932684
+      },
+      {
+        "track": "turning",
+        "method": "Tile-choice oracle",
+        "policy": "legacy_linear",
+        "f0_tile_pass_fraction": 0.8567982456140351,
+        "baseline_ms_proxy": 190.144,
+        "average_ms_proxy": 74.83134956140351,
+        "speedup_proxy": 2.5409671362932684
+      },
+      {
+        "track": "turning",
+        "method": "Pixel-min oracle (legacy)",
+        "policy": "floor",
+        "f0_tile_pass_fraction": 0.8756578947368421,
+        "baseline_ms_proxy": 190.144,
+        "average_ms_proxy": 74.05362500000001,
+        "speedup_proxy": 2.567652832660116
+      },
+      {
+        "track": "turning",
+        "method": "Pixel-min oracle (legacy)",
+        "policy": "legacy_linear",
+        "f0_tile_pass_fraction": 0.8756578947368421,
+        "baseline_ms_proxy": 190.144,
+        "average_ms_proxy": 73.84452763157896,
+        "speedup_proxy": 2.5749233707425954
+      }
+    ]
+  },
+  "validation": {
+    "timing_medians_checked": [
+      "gta_0000_bench",
+      "gta_0000",
+      "temple_0000_bench",
+      "temple",
+      "universal_0003_bench",
+      "universal",
+      "large:1.0",
+      "large:0.75",
+      "large:0.5",
+      "large:0.25",
+      "large:0.125",
+      "small:1.0",
+      "small:0.75",
+      "small:0.5",
+      "small:0.25",
+      "small:0.125",
+      "small:0.0625"
+    ],
+    "unique_pairs": true
+  }
+}
