@@ -8,6 +8,8 @@
 
 本仓库保存 2026-08-16 在 RTX 4060 Laptop 8 GB 上完成的实验，以及 2026-08-28 的结果整理和方法审计。目标是判断：在 Matrix-Game 类自回归游戏生成中，能否用几何复用减少昂贵的生成计算，同时控制画质和交互延迟。
 
+2026-08-28 新增：[MoGe-3 参照选择与 H100 实验报告](docs/MOGE3_REFERENCE_AND_H100_PLAN.md)。后续论文叙事建议以 MoGe-3 作为高质量几何参照和离线教师，MoGe-2 Small / Copy / Homography 作为必须击败的实时基线。
+
 English: A reproducible geometry/reprojection feasibility study for accelerating interactive video world models. The repository contains measured geometry and CUDA-warp components, offline target-frame diagnostics, and explicitly labeled DiT-like proxy accounting. It is **not** a complete game generator or a demonstrated end-to-end acceleration system.
 
 ## 已完成什么
@@ -98,6 +100,7 @@ python reproject_torch.py --geometry runs/gta/geometry.npz --output runs/gta_yaw
 | [复现步骤](docs/REPRODUCE.md) | 环境、版本、数据裁剪、运行命令 |
 | [结论与研究路线](docs/FINDINGS.md) | Fact / Inference / Hypothesis / Risk / Experiment |
 | [发布审计](docs/AUDIT.md) | Oracle 命名、外推、转场风险及证据边界 |
+| [MoGe-3 参照与 H100 计划](docs/MOGE3_REFERENCE_AND_H100_PLAN.md) | 是否以 MoGe-3 为参照、论文技术骨架、H100 实验矩阵 |
 | [组会速览](docs/GROUP_MEETING.md) | 可以直接用于汇报的结论与下一步 |
 | [第三方来源](THIRD_PARTY_NOTICES.md) | 代码、权重、展示视频与图像来源 |
 | [贡献说明](CONTRIBUTING.md) | 新实验的记录要求 |
@@ -118,6 +121,8 @@ assets/                      # 可再生图表与少量研究示例
 archive/                     # 历史脚本，仅追溯，不建议用于新结论
 tools/ tests/ docs/
 ```
+
+后续 H100 几何 A/B 可从 `tools/benchmark_geometry_versions.py` 开始；它要求远程权重固定 `--revision`，并保存权重哈希、时延、显存和统一 `geometry.npz` 输出。
 
 ## 许可与引用
 
