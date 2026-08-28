@@ -1,0 +1,58 @@
+{
+  "num_samples": 6,
+  "teacher_coverage_mean": 0.8333828333333333,
+  "student_coverage_mean": 0.7769713333333333,
+  "coverage_gap_mean": -0.0564115,
+  "teacher_warp_ms_median_mean": 1.1198333333333335,
+  "student_warp_ms_median_mean": 1.0735,
+  "rows": [
+    {
+      "sample_id": "straight__frames__frame_0075",
+      "teacher_coverage": 0.786074,
+      "student_coverage": 0.710272,
+      "coverage_gap": -0.075802,
+      "teacher_warp_ms_median": 1.097,
+      "student_warp_ms_median": 1.106
+    },
+    {
+      "sample_id": "straight__frames__frame_0084",
+      "teacher_coverage": 0.785334,
+      "student_coverage": 0.719682,
+      "coverage_gap": -0.065652,
+      "teacher_warp_ms_median": 1.015,
+      "student_warp_ms_median": 0.997
+    },
+    {
+      "sample_id": "straight__frames__frame_0093",
+      "teacher_coverage": 0.779711,
+      "student_coverage": 0.667244,
+      "coverage_gap": -0.112467,
+      "teacher_warp_ms_median": 1.094,
+      "student_warp_ms_median": 1.121
+    },
+    {
+      "sample_id": "turning__frames__frame_0075",
+      "teacher_coverage": 0.880401,
+      "student_coverage": 0.866536,
+      "coverage_gap": -0.013865,
+      "teacher_warp_ms_median": 1.43,
+      "student_warp_ms_median": 1.079
+    },
+    {
+      "sample_id": "turning__frames__frame_0084",
+      "teacher_coverage": 0.878152,
+      "student_coverage": 0.857244,
+      "coverage_gap": -0.020908,
+      "teacher_warp_ms_median": 1.072,
+      "student_warp_ms_median": 1.15
+    },
+    {
+      "sample_id": "turning__frames__frame_0093",
+      "teacher_coverage": 0.890625,
+      "student_coverage": 0.84085,
+      "coverage_gap": -0.049775,
+      "teacher_warp_ms_median": 1.011,
+      "student_warp_ms_median": 0.988
+    }
+  ]
+}

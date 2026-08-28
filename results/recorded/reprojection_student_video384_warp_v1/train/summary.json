@@ -1,0 +1,199 @@
+{
+  "run_dir": "runs/reprojection_student/student_video384_warp_v1_width48",
+  "train_samples": 150,
+  "val_samples": 38,
+  "best_val_loss": 0.2778591423442489,
+  "last_epoch": 80,
+  "val_exports": [
+    {
+      "sample_id": "straight__frames__frame_0075",
+      "scene": "straight",
+      "geometry": "predictions/straight__frames__frame_0075/geometry.npz"
+    },
+    {
+      "sample_id": "straight__frames__frame_0076",
+      "scene": "straight",
+      "geometry": "predictions/straight__frames__frame_0076/geometry.npz"
+    },
+    {
+      "sample_id": "straight__frames__frame_0077",
+      "scene": "straight",
+      "geometry": "predictions/straight__frames__frame_0077/geometry.npz"
+    },
+    {
+      "sample_id": "straight__frames__frame_0078",
+      "scene": "straight",
+      "geometry": "predictions/straight__frames__frame_0078/geometry.npz"
+    },
+    {
+      "sample_id": "straight__frames__frame_0079",
+      "scene": "straight",
+      "geometry": "predictions/straight__frames__frame_0079/geometry.npz"
+    },
+    {
+      "sample_id": "straight__frames__frame_0080",
+      "scene": "straight",
+      "geometry": "predictions/straight__frames__frame_0080/geometry.npz"
+    },
+    {
+      "sample_id": "straight__frames__frame_0081",
+      "scene": "straight",
+      "geometry": "predictions/straight__frames__frame_0081/geometry.npz"
+    },
+    {
+      "sample_id": "straight__frames__frame_0082",
+      "scene": "straight",
+      "geometry": "predictions/straight__frames__frame_0082/geometry.npz"
+    },
+    {
+      "sample_id": "straight__frames__frame_0083",
+      "scene": "straight",
+      "geometry": "predictions/straight__frames__frame_0083/geometry.npz"
+    },
+    {
+      "sample_id": "straight__frames__frame_0084",
+      "scene": "straight",
+      "geometry": "predictions/straight__frames__frame_0084/geometry.npz"
+    },
+    {
+      "sample_id": "straight__frames__frame_0085",
+      "scene": "straight",
+      "geometry": "predictions/straight__frames__frame_0085/geometry.npz"
+    },
+    {
+      "sample_id": "straight__frames__frame_0086",
+      "scene": "straight",
+      "geometry": "predictions/straight__frames__frame_0086/geometry.npz"
+    },
+    {
+      "sample_id": "straight__frames__frame_0087",
+      "scene": "straight",
+      "geometry": "predictions/straight__frames__frame_0087/geometry.npz"
+    },
+    {
+      "sample_id": "straight__frames__frame_0088",
+      "scene": "straight",
+      "geometry": "predictions/straight__frames__frame_0088/geometry.npz"
+    },
+    {
+      "sample_id": "straight__frames__frame_0089",
+      "scene": "straight",
+      "geometry": "predictions/straight__frames__frame_0089/geometry.npz"
+    },
+    {
+      "sample_id": "straight__frames__frame_0090",
+      "scene": "straight",
+      "geometry": "predictions/straight__frames__frame_0090/geometry.npz"
+    },
+    {
+      "sample_id": "straight__frames__frame_0091",
+      "scene": "straight",
+      "geometry": "predictions/straight__frames__frame_0091/geometry.npz"
+    },
+    {
+      "sample_id": "straight__frames__frame_0092",
+      "scene": "straight",
+      "geometry": "predictions/straight__frames__frame_0092/geometry.npz"
+    },
+    {
+      "sample_id": "straight__frames__frame_0093",
+      "scene": "straight",
+      "geometry": "predictions/straight__frames__frame_0093/geometry.npz"
+    },
+    {
+      "sample_id": "turning__frames__frame_0075",
+      "scene": "turning",
+      "geometry": "predictions/turning__frames__frame_0075/geometry.npz"
+    },
+    {
+      "sample_id": "turning__frames__frame_0076",
+      "scene": "turning",
+      "geometry": "predictions/turning__frames__frame_0076/geometry.npz"
+    },
+    {
+      "sample_id": "turning__frames__frame_0077",
+      "scene": "turning",
+      "geometry": "predictions/turning__frames__frame_0077/geometry.npz"
+    },
+    {
+      "sample_id": "turning__frames__frame_0078",
+      "scene": "turning",
+      "geometry": "predictions/turning__frames__frame_0078/geometry.npz"
+    },
+    {
+      "sample_id": "turning__frames__frame_0079",
+      "scene": "turning",
+      "geometry": "predictions/turning__frames__frame_0079/geometry.npz"
+    },
+    {
+      "sample_id": "turning__frames__frame_0080",
+      "scene": "turning",
+      "geometry": "predictions/turning__frames__frame_0080/geometry.npz"
+    },
+    {
+      "sample_id": "turning__frames__frame_0081",
+      "scene": "turning",
+      "geometry": "predictions/turning__frames__frame_0081/geometry.npz"
+    },
+    {
+      "sample_id": "turning__frames__frame_0082",
+      "scene": "turning",
+      "geometry": "predictions/turning__frames__frame_0082/geometry.npz"
+    },
+    {
+      "sample_id": "turning__frames__frame_0083",
+      "scene": "turning",
+      "geometry": "predictions/turning__frames__frame_0083/geometry.npz"
+    },
+    {
+      "sample_id": "turning__frames__frame_0084",
+      "scene": "turning",
+      "geometry": "predictions/turning__frames__frame_0084/geometry.npz"
+    },
+    {
+      "sample_id": "turning__frames__frame_0085",
+      "scene": "turning",
+      "geometry": "predictions/turning__frames__frame_0085/geometry.npz"
+    },
+    {
+      "sample_id": "turning__frames__frame_0086",
+      "scene": "turning",
+      "geometry": "predictions/turning__frames__frame_0086/geometry.npz"
+    },
+    {
+      "sample_id": "turning__frames__frame_0087",
+      "scene": "turning",
+      "geometry": "predictions/turning__frames__frame_0087/geometry.npz"
+    },
+    {
+      "sample_id": "turning__frames__frame_0088",
+      "scene": "turning",
+      "geometry": "predictions/turning__frames__frame_0088/geometry.npz"
+    },
+    {
+      "sample_id": "turning__frames__frame_0089",
+      "scene": "turning",
+      "geometry": "predictions/turning__frames__frame_0089/geometry.npz"
+    },
+    {
+      "sample_id": "turning__frames__frame_0090",
+      "scene": "turning",
+      "geometry": "predictions/turning__frames__frame_0090/geometry.npz"
+    },
+    {
+      "sample_id": "turning__frames__frame_0091",
+      "scene": "turning",
+      "geometry": "predictions/turning__frames__frame_0091/geometry.npz"
+    },
+    {
+      "sample_id": "turning__frames__frame_0092",
+      "scene": "turning",
+      "geometry": "predictions/turning__frames__frame_0092/geometry.npz"
+    },
+    {
+      "sample_id": "turning__frames__frame_0093",
+      "scene": "turning",
+      "geometry": "predictions/turning__frames__frame_0093/geometry.npz"
+    }
+  ]
+}

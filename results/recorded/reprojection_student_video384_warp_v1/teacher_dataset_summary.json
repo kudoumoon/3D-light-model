@@ -1,0 +1,10 @@
+{
+  "num_samples": 188,
+  "max_size": 384,
+  "num_tokens": 1200,
+  "refine_steps": 0,
+  "valid_mean": 0.9227023392166345,
+  "valid_min": 0.8576586174242424,
+  "valid_max": 0.9862689393939394,
+  "teacher_ms_mean": 27.331324468085075
+}
