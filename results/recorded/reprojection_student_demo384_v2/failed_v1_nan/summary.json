@@ -1,0 +1,34 @@
+{
+  "run_dir": "runs/reprojection_student/student_demo384_v1",
+  "train_samples": 24,
+  "val_samples": 5,
+  "best_val_loss": Infinity,
+  "last_epoch": 60,
+  "val_exports": [
+    {
+      "sample_id": "gta_drive__0005",
+      "scene": "gta_drive",
+      "geometry": "predictions/gta_drive__0005/geometry.npz"
+    },
+    {
+      "sample_id": "temple_run__0005",
+      "scene": "temple_run",
+      "geometry": "predictions/temple_run__0005/geometry.npz"
+    },
+    {
+      "sample_id": "universal__0014",
+      "scene": "universal",
+      "geometry": "predictions/universal__0014/geometry.npz"
+    },
+    {
+      "sample_id": "universal__0015",
+      "scene": "universal",
+      "geometry": "predictions/universal__0015/geometry.npz"
+    },
+    {
+      "sample_id": "universal__0016",
+      "scene": "universal",
+      "geometry": "predictions/universal__0016/geometry.npz"
+    }
+  ]
+}

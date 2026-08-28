@@ -1,0 +1,38 @@
+{
+  "num_samples": 5,
+  "loss": 0.34898224771022796,
+  "point": 0.22051244974136353,
+  "mask": 0.1706463634967804,
+  "normal": 0.21957264244556426,
+  "edge": 0.05437406450510025,
+  "projection": 0.026488058269023895,
+  "inference_ms_median_mean": 2.0757880120072514,
+  "inference_ms_p95_mean": 2.088130690390244,
+  "predictions": [
+    {
+      "sample_id": "gta_drive__0005",
+      "scene": "gta_drive",
+      "geometry": "predictions/gta_drive__0005/geometry.npz"
+    },
+    {
+      "sample_id": "temple_run__0005",
+      "scene": "temple_run",
+      "geometry": "predictions/temple_run__0005/geometry.npz"
+    },
+    {
+      "sample_id": "universal__0014",
+      "scene": "universal",
+      "geometry": "predictions/universal__0014/geometry.npz"
+    },
+    {
+      "sample_id": "universal__0015",
+      "scene": "universal",
+      "geometry": "predictions/universal__0015/geometry.npz"
+    },
+    {
+      "sample_id": "universal__0016",
+      "scene": "universal",
+      "geometry": "predictions/universal__0016/geometry.npz"
+    }
+  ]
+}

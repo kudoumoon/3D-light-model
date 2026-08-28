@@ -1,0 +1,9 @@
+{
+  "teacher": "runs/teacher_moge3_demo_384",
+  "checkpoint": "runs/reprojection_student/student_demo384_v2_zpos/checkpoints/best.pt",
+  "split": "val",
+  "checkpoint_epoch": 26,
+  "checkpoint_val_loss": 0.3489267319440842,
+  "warmup": 20,
+  "repeat": 100
+}

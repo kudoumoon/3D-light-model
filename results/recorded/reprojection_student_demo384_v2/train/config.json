@@ -1,0 +1,19 @@
+{
+  "teacher": "runs/teacher_moge3_demo_384",
+  "output": "runs/reprojection_student",
+  "epochs": 60,
+  "lr": 0.0003,
+  "width": 32,
+  "seed": 20260828,
+  "device": "cuda",
+  "name": "student_demo384_v2_zpos",
+  "run_name": "student_demo384_v2_zpos",
+  "loss_weights": {
+    "point": 1.0,
+    "mask": 0.25,
+    "normal": 0.1,
+    "edge": 0.2,
+    "projection": 2.0
+  },
+  "note": "Tiny demo-image prototype; validates training loop and logging, not final generalization."
+}
