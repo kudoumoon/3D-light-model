@@ -1,0 +1,9 @@
+{
+  "teacher": "runs/teacher_moge3_video384_v4",
+  "checkpoint": "runs/reprojection_student/student_video384_warp_v4b_proj5_width64/checkpoints/best.pt",
+  "split": "val",
+  "checkpoint_epoch": 61,
+  "checkpoint_val_loss": 0.14759159180545067,
+  "warmup": 20,
+  "repeat": 100
+}

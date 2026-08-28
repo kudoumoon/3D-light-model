@@ -1,0 +1,106 @@
+{
+  "num_samples": 12,
+  "teacher_coverage_mean": 0.9359045833333334,
+  "student_coverage_mean": 0.8083935833333332,
+  "coverage_gap_mean": -0.127511,
+  "teacher_warp_ms_median_mean": 5.5196666666666685,
+  "student_warp_ms_median_mean": 5.760083333333334,
+  "rows": [
+    {
+      "sample_id": "game2_left__frames__frame_0240",
+      "teacher_coverage": 0.927083,
+      "student_coverage": 0.88188,
+      "coverage_gap": -0.045203,
+      "teacher_warp_ms_median": 1.113,
+      "student_warp_ms_median": 1.137
+    },
+    {
+      "sample_id": "game2_left__frames__frame_0297",
+      "teacher_coverage": 0.971354,
+      "student_coverage": 0.788663,
+      "coverage_gap": -0.182691,
+      "teacher_warp_ms_median": 28.055,
+      "student_warp_ms_median": 0.986
+    },
+    {
+      "sample_id": "game2_mid__frames__frame_0240",
+      "teacher_coverage": 0.898438,
+      "student_coverage": 0.785822,
+      "coverage_gap": -0.112616,
+      "teacher_warp_ms_median": 27.907,
+      "student_warp_ms_median": 1.137
+    },
+    {
+      "sample_id": "game2_mid__frames__frame_0297",
+      "teacher_coverage": 0.914492,
+      "student_coverage": 0.578717,
+      "coverage_gap": -0.335775,
+      "teacher_warp_ms_median": 1.019,
+      "student_warp_ms_median": 1.449
+    },
+    {
+      "sample_id": "game2_right__frames__frame_0240",
+      "teacher_coverage": 0.940104,
+      "student_coverage": 0.929643,
+      "coverage_gap": -0.010461,
+      "teacher_warp_ms_median": 1.02,
+      "student_warp_ms_median": 1.334
+    },
+    {
+      "sample_id": "game2_right__frames__frame_0297",
+      "teacher_coverage": 0.921875,
+      "student_coverage": 0.818478,
+      "coverage_gap": -0.103397,
+      "teacher_warp_ms_median": 1.01,
+      "student_warp_ms_median": 1.351
+    },
+    {
+      "sample_id": "game3_left__frames__frame_0360",
+      "teacher_coverage": 0.96833,
+      "student_coverage": 0.797381,
+      "coverage_gap": -0.170949,
+      "teacher_warp_ms_median": 1.027,
+      "student_warp_ms_median": 1.116
+    },
+    {
+      "sample_id": "game3_left__frames__frame_0448",
+      "teacher_coverage": 0.934216,
+      "student_coverage": 0.755382,
+      "coverage_gap": -0.178834,
+      "teacher_warp_ms_median": 1.006,
+      "student_warp_ms_median": 28.596
+    },
+    {
+      "sample_id": "game3_mid__frames__frame_0360",
+      "teacher_coverage": 0.948163,
+      "student_coverage": 0.941725,
+      "coverage_gap": -0.006438,
+      "teacher_warp_ms_median": 0.987,
+      "student_warp_ms_median": 1.109
+    },
+    {
+      "sample_id": "game3_mid__frames__frame_0448",
+      "teacher_coverage": 0.924479,
+      "student_coverage": 0.883492,
+      "coverage_gap": -0.040987,
+      "teacher_warp_ms_median": 0.998,
+      "student_warp_ms_median": 1.107
+    },
+    {
+      "sample_id": "game3_right__frames__frame_0360",
+      "teacher_coverage": 0.963542,
+      "student_coverage": 0.715784,
+      "coverage_gap": -0.247758,
+      "teacher_warp_ms_median": 1.102,
+      "student_warp_ms_median": 28.62
+    },
+    {
+      "sample_id": "game3_right__frames__frame_0448",
+      "teacher_coverage": 0.918779,
+      "student_coverage": 0.823756,
+      "coverage_gap": -0.095023,
+      "teacher_warp_ms_median": 0.992,
+      "student_warp_ms_median": 1.179
+    }
+  ]
+}

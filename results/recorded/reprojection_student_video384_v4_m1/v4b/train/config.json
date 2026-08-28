@@ -1,0 +1,26 @@
+{
+  "teacher": "runs/teacher_moge3_video384_v4",
+  "output": "runs/reprojection_student",
+  "epochs": 70,
+  "lr": 0.00015,
+  "width": 64,
+  "point_weight": 1.0,
+  "mask_weight": 0.25,
+  "normal_weight": 0.1,
+  "edge_weight": 0.2,
+  "projection_weight": 5.0,
+  "warp_weight": 0.25,
+  "seed": 20260828,
+  "device": "cuda",
+  "name": "student_video384_warp_v4b_proj5_width64",
+  "run_name": "student_video384_warp_v4b_proj5_width64",
+  "loss_weights": {
+    "point": 1.0,
+    "mask": 0.25,
+    "normal": 0.1,
+    "edge": 0.2,
+    "projection": 5.0,
+    "warp": 0.25
+  },
+  "note": "Video-scale v3 student. Adds projected-valid warp-confidence supervision for reprojection."
+}

@@ -1,0 +1,654 @@
+{
+  "run_dir": "runs/reprojection_student/student_video384_warp_v4b_proj5_width64",
+  "train_samples": 510,
+  "val_samples": 129,
+  "best_val_loss": 0.14759159180545067,
+  "last_epoch": 70,
+  "val_exports": [
+    {
+      "sample_id": "game2_left__frames__frame_0240",
+      "scene": "game2_left",
+      "geometry": "predictions/game2_left__frames__frame_0240/geometry.npz"
+    },
+    {
+      "sample_id": "game2_left__frames__frame_0243",
+      "scene": "game2_left",
+      "geometry": "predictions/game2_left__frames__frame_0243/geometry.npz"
+    },
+    {
+      "sample_id": "game2_left__frames__frame_0246",
+      "scene": "game2_left",
+      "geometry": "predictions/game2_left__frames__frame_0246/geometry.npz"
+    },
+    {
+      "sample_id": "game2_left__frames__frame_0249",
+      "scene": "game2_left",
+      "geometry": "predictions/game2_left__frames__frame_0249/geometry.npz"
+    },
+    {
+      "sample_id": "game2_left__frames__frame_0252",
+      "scene": "game2_left",
+      "geometry": "predictions/game2_left__frames__frame_0252/geometry.npz"
+    },
+    {
+      "sample_id": "game2_left__frames__frame_0255",
+      "scene": "game2_left",
+      "geometry": "predictions/game2_left__frames__frame_0255/geometry.npz"
+    },
+    {
+      "sample_id": "game2_left__frames__frame_0258",
+      "scene": "game2_left",
+      "geometry": "predictions/game2_left__frames__frame_0258/geometry.npz"
+    },
+    {
+      "sample_id": "game2_left__frames__frame_0261",
+      "scene": "game2_left",
+      "geometry": "predictions/game2_left__frames__frame_0261/geometry.npz"
+    },
+    {
+      "sample_id": "game2_left__frames__frame_0264",
+      "scene": "game2_left",
+      "geometry": "predictions/game2_left__frames__frame_0264/geometry.npz"
+    },
+    {
+      "sample_id": "game2_left__frames__frame_0267",
+      "scene": "game2_left",
+      "geometry": "predictions/game2_left__frames__frame_0267/geometry.npz"
+    },
+    {
+      "sample_id": "game2_left__frames__frame_0270",
+      "scene": "game2_left",
+      "geometry": "predictions/game2_left__frames__frame_0270/geometry.npz"
+    },
+    {
+      "sample_id": "game2_left__frames__frame_0273",
+      "scene": "game2_left",
+      "geometry": "predictions/game2_left__frames__frame_0273/geometry.npz"
+    },
+    {
+      "sample_id": "game2_left__frames__frame_0276",
+      "scene": "game2_left",
+      "geometry": "predictions/game2_left__frames__frame_0276/geometry.npz"
+    },
+    {
+      "sample_id": "game2_left__frames__frame_0279",
+      "scene": "game2_left",
+      "geometry": "predictions/game2_left__frames__frame_0279/geometry.npz"
+    },
+    {
+      "sample_id": "game2_left__frames__frame_0282",
+      "scene": "game2_left",
+      "geometry": "predictions/game2_left__frames__frame_0282/geometry.npz"
+    },
+    {
+      "sample_id": "game2_left__frames__frame_0285",
+      "scene": "game2_left",
+      "geometry": "predictions/game2_left__frames__frame_0285/geometry.npz"
+    },
+    {
+      "sample_id": "game2_left__frames__frame_0288",
+      "scene": "game2_left",
+      "geometry": "predictions/game2_left__frames__frame_0288/geometry.npz"
+    },
+    {
+      "sample_id": "game2_left__frames__frame_0291",
+      "scene": "game2_left",
+      "geometry": "predictions/game2_left__frames__frame_0291/geometry.npz"
+    },
+    {
+      "sample_id": "game2_left__frames__frame_0294",
+      "scene": "game2_left",
+      "geometry": "predictions/game2_left__frames__frame_0294/geometry.npz"
+    },
+    {
+      "sample_id": "game2_left__frames__frame_0297",
+      "scene": "game2_left",
+      "geometry": "predictions/game2_left__frames__frame_0297/geometry.npz"
+    },
+    {
+      "sample_id": "game2_mid__frames__frame_0240",
+      "scene": "game2_mid",
+      "geometry": "predictions/game2_mid__frames__frame_0240/geometry.npz"
+    },
+    {
+      "sample_id": "game2_mid__frames__frame_0243",
+      "scene": "game2_mid",
+      "geometry": "predictions/game2_mid__frames__frame_0243/geometry.npz"
+    },
+    {
+      "sample_id": "game2_mid__frames__frame_0246",
+      "scene": "game2_mid",
+      "geometry": "predictions/game2_mid__frames__frame_0246/geometry.npz"
+    },
+    {
+      "sample_id": "game2_mid__frames__frame_0249",
+      "scene": "game2_mid",
+      "geometry": "predictions/game2_mid__frames__frame_0249/geometry.npz"
+    },
+    {
+      "sample_id": "game2_mid__frames__frame_0252",
+      "scene": "game2_mid",
+      "geometry": "predictions/game2_mid__frames__frame_0252/geometry.npz"
+    },
+    {
+      "sample_id": "game2_mid__frames__frame_0255",
+      "scene": "game2_mid",
+      "geometry": "predictions/game2_mid__frames__frame_0255/geometry.npz"
+    },
+    {
+      "sample_id": "game2_mid__frames__frame_0258",
+      "scene": "game2_mid",
+      "geometry": "predictions/game2_mid__frames__frame_0258/geometry.npz"
+    },
+    {
+      "sample_id": "game2_mid__frames__frame_0261",
+      "scene": "game2_mid",
+      "geometry": "predictions/game2_mid__frames__frame_0261/geometry.npz"
+    },
+    {
+      "sample_id": "game2_mid__frames__frame_0264",
+      "scene": "game2_mid",
+      "geometry": "predictions/game2_mid__frames__frame_0264/geometry.npz"
+    },
+    {
+      "sample_id": "game2_mid__frames__frame_0267",
+      "scene": "game2_mid",
+      "geometry": "predictions/game2_mid__frames__frame_0267/geometry.npz"
+    },
+    {
+      "sample_id": "game2_mid__frames__frame_0270",
+      "scene": "game2_mid",
+      "geometry": "predictions/game2_mid__frames__frame_0270/geometry.npz"
+    },
+    {
+      "sample_id": "game2_mid__frames__frame_0273",
+      "scene": "game2_mid",
+      "geometry": "predictions/game2_mid__frames__frame_0273/geometry.npz"
+    },
+    {
+      "sample_id": "game2_mid__frames__frame_0276",
+      "scene": "game2_mid",
+      "geometry": "predictions/game2_mid__frames__frame_0276/geometry.npz"
+    },
+    {
+      "sample_id": "game2_mid__frames__frame_0279",
+      "scene": "game2_mid",
+      "geometry": "predictions/game2_mid__frames__frame_0279/geometry.npz"
+    },
+    {
+      "sample_id": "game2_mid__frames__frame_0282",
+      "scene": "game2_mid",
+      "geometry": "predictions/game2_mid__frames__frame_0282/geometry.npz"
+    },
+    {
+      "sample_id": "game2_mid__frames__frame_0285",
+      "scene": "game2_mid",
+      "geometry": "predictions/game2_mid__frames__frame_0285/geometry.npz"
+    },
+    {
+      "sample_id": "game2_mid__frames__frame_0288",
+      "scene": "game2_mid",
+      "geometry": "predictions/game2_mid__frames__frame_0288/geometry.npz"
+    },
+    {
+      "sample_id": "game2_mid__frames__frame_0291",
+      "scene": "game2_mid",
+      "geometry": "predictions/game2_mid__frames__frame_0291/geometry.npz"
+    },
+    {
+      "sample_id": "game2_mid__frames__frame_0294",
+      "scene": "game2_mid",
+      "geometry": "predictions/game2_mid__frames__frame_0294/geometry.npz"
+    },
+    {
+      "sample_id": "game2_mid__frames__frame_0297",
+      "scene": "game2_mid",
+      "geometry": "predictions/game2_mid__frames__frame_0297/geometry.npz"
+    },
+    {
+      "sample_id": "game2_right__frames__frame_0240",
+      "scene": "game2_right",
+      "geometry": "predictions/game2_right__frames__frame_0240/geometry.npz"
+    },
+    {
+      "sample_id": "game2_right__frames__frame_0243",
+      "scene": "game2_right",
+      "geometry": "predictions/game2_right__frames__frame_0243/geometry.npz"
+    },
+    {
+      "sample_id": "game2_right__frames__frame_0246",
+      "scene": "game2_right",
+      "geometry": "predictions/game2_right__frames__frame_0246/geometry.npz"
+    },
+    {
+      "sample_id": "game2_right__frames__frame_0249",
+      "scene": "game2_right",
+      "geometry": "predictions/game2_right__frames__frame_0249/geometry.npz"
+    },
+    {
+      "sample_id": "game2_right__frames__frame_0252",
+      "scene": "game2_right",
+      "geometry": "predictions/game2_right__frames__frame_0252/geometry.npz"
+    },
+    {
+      "sample_id": "game2_right__frames__frame_0255",
+      "scene": "game2_right",
+      "geometry": "predictions/game2_right__frames__frame_0255/geometry.npz"
+    },
+    {
+      "sample_id": "game2_right__frames__frame_0258",
+      "scene": "game2_right",
+      "geometry": "predictions/game2_right__frames__frame_0258/geometry.npz"
+    },
+    {
+      "sample_id": "game2_right__frames__frame_0261",
+      "scene": "game2_right",
+      "geometry": "predictions/game2_right__frames__frame_0261/geometry.npz"
+    },
+    {
+      "sample_id": "game2_right__frames__frame_0264",
+      "scene": "game2_right",
+      "geometry": "predictions/game2_right__frames__frame_0264/geometry.npz"
+    },
+    {
+      "sample_id": "game2_right__frames__frame_0267",
+      "scene": "game2_right",
+      "geometry": "predictions/game2_right__frames__frame_0267/geometry.npz"
+    },
+    {
+      "sample_id": "game2_right__frames__frame_0270",
+      "scene": "game2_right",
+      "geometry": "predictions/game2_right__frames__frame_0270/geometry.npz"
+    },
+    {
+      "sample_id": "game2_right__frames__frame_0273",
+      "scene": "game2_right",
+      "geometry": "predictions/game2_right__frames__frame_0273/geometry.npz"
+    },
+    {
+      "sample_id": "game2_right__frames__frame_0276",
+      "scene": "game2_right",
+      "geometry": "predictions/game2_right__frames__frame_0276/geometry.npz"
+    },
+    {
+      "sample_id": "game2_right__frames__frame_0279",
+      "scene": "game2_right",
+      "geometry": "predictions/game2_right__frames__frame_0279/geometry.npz"
+    },
+    {
+      "sample_id": "game2_right__frames__frame_0282",
+      "scene": "game2_right",
+      "geometry": "predictions/game2_right__frames__frame_0282/geometry.npz"
+    },
+    {
+      "sample_id": "game2_right__frames__frame_0285",
+      "scene": "game2_right",
+      "geometry": "predictions/game2_right__frames__frame_0285/geometry.npz"
+    },
+    {
+      "sample_id": "game2_right__frames__frame_0288",
+      "scene": "game2_right",
+      "geometry": "predictions/game2_right__frames__frame_0288/geometry.npz"
+    },
+    {
+      "sample_id": "game2_right__frames__frame_0291",
+      "scene": "game2_right",
+      "geometry": "predictions/game2_right__frames__frame_0291/geometry.npz"
+    },
+    {
+      "sample_id": "game2_right__frames__frame_0294",
+      "scene": "game2_right",
+      "geometry": "predictions/game2_right__frames__frame_0294/geometry.npz"
+    },
+    {
+      "sample_id": "game2_right__frames__frame_0297",
+      "scene": "game2_right",
+      "geometry": "predictions/game2_right__frames__frame_0297/geometry.npz"
+    },
+    {
+      "sample_id": "game3_left__frames__frame_0360",
+      "scene": "game3_left",
+      "geometry": "predictions/game3_left__frames__frame_0360/geometry.npz"
+    },
+    {
+      "sample_id": "game3_left__frames__frame_0364",
+      "scene": "game3_left",
+      "geometry": "predictions/game3_left__frames__frame_0364/geometry.npz"
+    },
+    {
+      "sample_id": "game3_left__frames__frame_0368",
+      "scene": "game3_left",
+      "geometry": "predictions/game3_left__frames__frame_0368/geometry.npz"
+    },
+    {
+      "sample_id": "game3_left__frames__frame_0372",
+      "scene": "game3_left",
+      "geometry": "predictions/game3_left__frames__frame_0372/geometry.npz"
+    },
+    {
+      "sample_id": "game3_left__frames__frame_0376",
+      "scene": "game3_left",
+      "geometry": "predictions/game3_left__frames__frame_0376/geometry.npz"
+    },
+    {
+      "sample_id": "game3_left__frames__frame_0380",
+      "scene": "game3_left",
+      "geometry": "predictions/game3_left__frames__frame_0380/geometry.npz"
+    },
+    {
+      "sample_id": "game3_left__frames__frame_0384",
+      "scene": "game3_left",
+      "geometry": "predictions/game3_left__frames__frame_0384/geometry.npz"
+    },
+    {
+      "sample_id": "game3_left__frames__frame_0388",
+      "scene": "game3_left",
+      "geometry": "predictions/game3_left__frames__frame_0388/geometry.npz"
+    },
+    {
+      "sample_id": "game3_left__frames__frame_0392",
+      "scene": "game3_left",
+      "geometry": "predictions/game3_left__frames__frame_0392/geometry.npz"
+    },
+    {
+      "sample_id": "game3_left__frames__frame_0396",
+      "scene": "game3_left",
+      "geometry": "predictions/game3_left__frames__frame_0396/geometry.npz"
+    },
+    {
+      "sample_id": "game3_left__frames__frame_0400",
+      "scene": "game3_left",
+      "geometry": "predictions/game3_left__frames__frame_0400/geometry.npz"
+    },
+    {
+      "sample_id": "game3_left__frames__frame_0404",
+      "scene": "game3_left",
+      "geometry": "predictions/game3_left__frames__frame_0404/geometry.npz"
+    },
+    {
+      "sample_id": "game3_left__frames__frame_0408",
+      "scene": "game3_left",
+      "geometry": "predictions/game3_left__frames__frame_0408/geometry.npz"
+    },
+    {
+      "sample_id": "game3_left__frames__frame_0412",
+      "scene": "game3_left",
+      "geometry": "predictions/game3_left__frames__frame_0412/geometry.npz"
+    },
+    {
+      "sample_id": "game3_left__frames__frame_0416",
+      "scene": "game3_left",
+      "geometry": "predictions/game3_left__frames__frame_0416/geometry.npz"
+    },
+    {
+      "sample_id": "game3_left__frames__frame_0420",
+      "scene": "game3_left",
+      "geometry": "predictions/game3_left__frames__frame_0420/geometry.npz"
+    },
+    {
+      "sample_id": "game3_left__frames__frame_0424",
+      "scene": "game3_left",
+      "geometry": "predictions/game3_left__frames__frame_0424/geometry.npz"
+    },
+    {
+      "sample_id": "game3_left__frames__frame_0428",
+      "scene": "game3_left",
+      "geometry": "predictions/game3_left__frames__frame_0428/geometry.npz"
+    },
+    {
+      "sample_id": "game3_left__frames__frame_0432",
+      "scene": "game3_left",
+      "geometry": "predictions/game3_left__frames__frame_0432/geometry.npz"
+    },
+    {
+      "sample_id": "game3_left__frames__frame_0436",
+      "scene": "game3_left",
+      "geometry": "predictions/game3_left__frames__frame_0436/geometry.npz"
+    },
+    {
+      "sample_id": "game3_left__frames__frame_0440",
+      "scene": "game3_left",
+      "geometry": "predictions/game3_left__frames__frame_0440/geometry.npz"
+    },
+    {
+      "sample_id": "game3_left__frames__frame_0444",
+      "scene": "game3_left",
+      "geometry": "predictions/game3_left__frames__frame_0444/geometry.npz"
+    },
+    {
+      "sample_id": "game3_left__frames__frame_0448",
+      "scene": "game3_left",
+      "geometry": "predictions/game3_left__frames__frame_0448/geometry.npz"
+    },
+    {
+      "sample_id": "game3_mid__frames__frame_0360",
+      "scene": "game3_mid",
+      "geometry": "predictions/game3_mid__frames__frame_0360/geometry.npz"
+    },
+    {
+      "sample_id": "game3_mid__frames__frame_0364",
+      "scene": "game3_mid",
+      "geometry": "predictions/game3_mid__frames__frame_0364/geometry.npz"
+    },
+    {
+      "sample_id": "game3_mid__frames__frame_0368",
+      "scene": "game3_mid",
+      "geometry": "predictions/game3_mid__frames__frame_0368/geometry.npz"
+    },
+    {
+      "sample_id": "game3_mid__frames__frame_0372",
+      "scene": "game3_mid",
+      "geometry": "predictions/game3_mid__frames__frame_0372/geometry.npz"
+    },
+    {
+      "sample_id": "game3_mid__frames__frame_0376",
+      "scene": "game3_mid",
+      "geometry": "predictions/game3_mid__frames__frame_0376/geometry.npz"
+    },
+    {
+      "sample_id": "game3_mid__frames__frame_0380",
+      "scene": "game3_mid",
+      "geometry": "predictions/game3_mid__frames__frame_0380/geometry.npz"
+    },
+    {
+      "sample_id": "game3_mid__frames__frame_0384",
+      "scene": "game3_mid",
+      "geometry": "predictions/game3_mid__frames__frame_0384/geometry.npz"
+    },
+    {
+      "sample_id": "game3_mid__frames__frame_0388",
+      "scene": "game3_mid",
+      "geometry": "predictions/game3_mid__frames__frame_0388/geometry.npz"
+    },
+    {
+      "sample_id": "game3_mid__frames__frame_0392",
+      "scene": "game3_mid",
+      "geometry": "predictions/game3_mid__frames__frame_0392/geometry.npz"
+    },
+    {
+      "sample_id": "game3_mid__frames__frame_0396",
+      "scene": "game3_mid",
+      "geometry": "predictions/game3_mid__frames__frame_0396/geometry.npz"
+    },
+    {
+      "sample_id": "game3_mid__frames__frame_0400",
+      "scene": "game3_mid",
+      "geometry": "predictions/game3_mid__frames__frame_0400/geometry.npz"
+    },
+    {
+      "sample_id": "game3_mid__frames__frame_0404",
+      "scene": "game3_mid",
+      "geometry": "predictions/game3_mid__frames__frame_0404/geometry.npz"
+    },
+    {
+      "sample_id": "game3_mid__frames__frame_0408",
+      "scene": "game3_mid",
+      "geometry": "predictions/game3_mid__frames__frame_0408/geometry.npz"
+    },
+    {
+      "sample_id": "game3_mid__frames__frame_0412",
+      "scene": "game3_mid",
+      "geometry": "predictions/game3_mid__frames__frame_0412/geometry.npz"
+    },
+    {
+      "sample_id": "game3_mid__frames__frame_0416",
+      "scene": "game3_mid",
+      "geometry": "predictions/game3_mid__frames__frame_0416/geometry.npz"
+    },
+    {
+      "sample_id": "game3_mid__frames__frame_0420",
+      "scene": "game3_mid",
+      "geometry": "predictions/game3_mid__frames__frame_0420/geometry.npz"
+    },
+    {
+      "sample_id": "game3_mid__frames__frame_0424",
+      "scene": "game3_mid",
+      "geometry": "predictions/game3_mid__frames__frame_0424/geometry.npz"
+    },
+    {
+      "sample_id": "game3_mid__frames__frame_0428",
+      "scene": "game3_mid",
+      "geometry": "predictions/game3_mid__frames__frame_0428/geometry.npz"
+    },
+    {
+      "sample_id": "game3_mid__frames__frame_0432",
+      "scene": "game3_mid",
+      "geometry": "predictions/game3_mid__frames__frame_0432/geometry.npz"
+    },
+    {
+      "sample_id": "game3_mid__frames__frame_0436",
+      "scene": "game3_mid",
+      "geometry": "predictions/game3_mid__frames__frame_0436/geometry.npz"
+    },
+    {
+      "sample_id": "game3_mid__frames__frame_0440",
+      "scene": "game3_mid",
+      "geometry": "predictions/game3_mid__frames__frame_0440/geometry.npz"
+    },
+    {
+      "sample_id": "game3_mid__frames__frame_0444",
+      "scene": "game3_mid",
+      "geometry": "predictions/game3_mid__frames__frame_0444/geometry.npz"
+    },
+    {
+      "sample_id": "game3_mid__frames__frame_0448",
+      "scene": "game3_mid",
+      "geometry": "predictions/game3_mid__frames__frame_0448/geometry.npz"
+    },
+    {
+      "sample_id": "game3_right__frames__frame_0360",
+      "scene": "game3_right",
+      "geometry": "predictions/game3_right__frames__frame_0360/geometry.npz"
+    },
+    {
+      "sample_id": "game3_right__frames__frame_0364",
+      "scene": "game3_right",
+      "geometry": "predictions/game3_right__frames__frame_0364/geometry.npz"
+    },
+    {
+      "sample_id": "game3_right__frames__frame_0368",
+      "scene": "game3_right",
+      "geometry": "predictions/game3_right__frames__frame_0368/geometry.npz"
+    },
+    {
+      "sample_id": "game3_right__frames__frame_0372",
+      "scene": "game3_right",
+      "geometry": "predictions/game3_right__frames__frame_0372/geometry.npz"
+    },
+    {
+      "sample_id": "game3_right__frames__frame_0376",
+      "scene": "game3_right",
+      "geometry": "predictions/game3_right__frames__frame_0376/geometry.npz"
+    },
+    {
+      "sample_id": "game3_right__frames__frame_0380",
+      "scene": "game3_right",
+      "geometry": "predictions/game3_right__frames__frame_0380/geometry.npz"
+    },
+    {
+      "sample_id": "game3_right__frames__frame_0384",
+      "scene": "game3_right",
+      "geometry": "predictions/game3_right__frames__frame_0384/geometry.npz"
+    },
+    {
+      "sample_id": "game3_right__frames__frame_0388",
+      "scene": "game3_right",
+      "geometry": "predictions/game3_right__frames__frame_0388/geometry.npz"
+    },
+    {
+      "sample_id": "game3_right__frames__frame_0392",
+      "scene": "game3_right",
+      "geometry": "predictions/game3_right__frames__frame_0392/geometry.npz"
+    },
+    {
+      "sample_id": "game3_right__frames__frame_0396",
+      "scene": "game3_right",
+      "geometry": "predictions/game3_right__frames__frame_0396/geometry.npz"
+    },
+    {
+      "sample_id": "game3_right__frames__frame_0400",
+      "scene": "game3_right",
+      "geometry": "predictions/game3_right__frames__frame_0400/geometry.npz"
+    },
+    {
+      "sample_id": "game3_right__frames__frame_0404",
+      "scene": "game3_right",
+      "geometry": "predictions/game3_right__frames__frame_0404/geometry.npz"
+    },
+    {
+      "sample_id": "game3_right__frames__frame_0408",
+      "scene": "game3_right",
+      "geometry": "predictions/game3_right__frames__frame_0408/geometry.npz"
+    },
+    {
+      "sample_id": "game3_right__frames__frame_0412",
+      "scene": "game3_right",
+      "geometry": "predictions/game3_right__frames__frame_0412/geometry.npz"
+    },
+    {
+      "sample_id": "game3_right__frames__frame_0416",
+      "scene": "game3_right",
+      "geometry": "predictions/game3_right__frames__frame_0416/geometry.npz"
+    },
+    {
+      "sample_id": "game3_right__frames__frame_0420",
+      "scene": "game3_right",
+      "geometry": "predictions/game3_right__frames__frame_0420/geometry.npz"
+    },
+    {
+      "sample_id": "game3_right__frames__frame_0424",
+      "scene": "game3_right",
+      "geometry": "predictions/game3_right__frames__frame_0424/geometry.npz"
+    },
+    {
+      "sample_id": "game3_right__frames__frame_0428",
+      "scene": "game3_right",
+      "geometry": "predictions/game3_right__frames__frame_0428/geometry.npz"
+    },
+    {
+      "sample_id": "game3_right__frames__frame_0432",
+      "scene": "game3_right",
+      "geometry": "predictions/game3_right__frames__frame_0432/geometry.npz"
+    },
+    {
+      "sample_id": "game3_right__frames__frame_0436",
+      "scene": "game3_right",
+      "geometry": "predictions/game3_right__frames__frame_0436/geometry.npz"
+    },
+    {
+      "sample_id": "game3_right__frames__frame_0440",
+      "scene": "game3_right",
+      "geometry": "predictions/game3_right__frames__frame_0440/geometry.npz"
+    },
+    {
+      "sample_id": "game3_right__frames__frame_0444",
+      "scene": "game3_right",
+      "geometry": "predictions/game3_right__frames__frame_0444/geometry.npz"
+    },
+    {
+      "sample_id": "game3_right__frames__frame_0448",
+      "scene": "game3_right",
+      "geometry": "predictions/game3_right__frames__frame_0448/geometry.npz"
+    }
+  ]
+}

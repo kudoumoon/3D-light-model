@@ -244,6 +244,12 @@ def main() -> None:
     parser.add_argument("--epochs", type=int, default=80)
     parser.add_argument("--lr", type=float, default=2e-4)
     parser.add_argument("--width", type=int, default=48)
+    parser.add_argument("--point-weight", type=float, default=1.0)
+    parser.add_argument("--mask-weight", type=float, default=0.25)
+    parser.add_argument("--normal-weight", type=float, default=0.10)
+    parser.add_argument("--edge-weight", type=float, default=0.20)
+    parser.add_argument("--projection-weight", type=float, default=2.0)
+    parser.add_argument("--warp-weight", type=float, default=0.50)
     parser.add_argument("--seed", type=int, default=20260828)
     parser.add_argument("--device", default="cuda")
     parser.add_argument("--name", default=None)
@@ -260,7 +266,14 @@ def main() -> None:
 
     config = {key: (value.as_posix() if isinstance(value, Path) else value) for key, value in vars(args).items()} | {
         "run_name": run_name,
-        "loss_weights": {"point": 1.0, "mask": 0.25, "normal": 0.10, "edge": 0.20, "projection": 2.0, "warp": 0.50},
+        "loss_weights": {
+            "point": args.point_weight,
+            "mask": args.mask_weight,
+            "normal": args.normal_weight,
+            "edge": args.edge_weight,
+            "projection": args.projection_weight,
+            "warp": args.warp_weight,
+        },
         "note": "Video-scale v3 student. Adds projected-valid warp-confidence supervision for reprojection.",
     }
     (run_dir / "config.json").write_text(json.dumps(config, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

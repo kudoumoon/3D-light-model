@@ -1,0 +1,20 @@
+{
+  "v4": {
+    "loss": 0.203481458705063,
+    "projection": 0.009258094091192177,
+    "inference_ms": 8.066061944628583,
+    "selected_coverage": 0.7587576666666668,
+    "selected_gap": -0.17714691666666668
+  },
+  "v4b": {
+    "loss": 0.15045740949206574,
+    "projection": 0.009500072498322111,
+    "inference_ms": 4.828828403657634,
+    "selected_coverage": 0.8083935833333332,
+    "selected_gap": -0.127511
+  },
+  "deltas": {
+    "coverage_abs_gain": 0.049636,
+    "loss_drop": 0.053024
+  }
+}
