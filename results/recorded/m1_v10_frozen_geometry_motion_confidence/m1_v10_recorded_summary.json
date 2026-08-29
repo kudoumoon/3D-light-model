@@ -1,0 +1,53 @@
+{
+  "selected_model": "M1-v10 frozen-geometry motion-conditioned confidence",
+  "base_geometry_checkpoint": "runs/reprojection_student/student_video384_tvod_v7_2k_occ075_width64_lr15/checkpoints/best.pt",
+  "motion_confidence_checkpoint": "runs/reprojection_student/student_video384_tvod_v10_frozengeom_motionconf_width64_lr1e4/checkpoints/best.pt",
+  "teacher_latency_ms": 25.263,
+  "geometry_only_latency_ms_v7": 7.594,
+  "v10_single_motion_latency_ms_retest_median": 10.55768,
+  "v10_full_eval_latency_ms_recorded": 19.566768646240234,
+  "geometry_speedup_vs_teacher": 3.326705293652884,
+  "v10_confidence_speedup_vs_teacher_retest": 2.392855248501565,
+  "v7": {
+    "loss": 0.16219811696807543,
+    "point": 0.005280851812722782,
+    "projection": 0.010421369211903463,
+    "coverage_gap_mean": -0.057653275,
+    "coverage_gap_min": -0.20011999999999996,
+    "auc_global": 0.8138648285904971,
+    "ece": 0.06243431219859004,
+    "thr08_valid_rate": 0.9017028212547302,
+    "thr08_kept_ratio": 0.6707293717944709
+  },
+  "v9_joint_finetune": {
+    "loss": 0.12850421990454197,
+    "point": 0.004864847718039527,
+    "projection": 0.009735697893891483,
+    "auc_global": 0.9547070165948481,
+    "ece": 0.019752409406936972,
+    "note": "Joint finetuning improved confidence but degraded bare coverage in early reprojection checks; not selected as final M1."
+  },
+  "v10": {
+    "loss": 0.22060843217372894,
+    "point": 0.005280851812722782,
+    "projection": 0.010543417957300941,
+    "coverage_gap_mean": -0.057653275,
+    "coverage_gap_min": -0.20011999999999996,
+    "auc_global": 0.9525235500035424,
+    "ece": 0.022145176602550897,
+    "thr08_valid_rate": 0.9596526026725769,
+    "thr08_kept_ratio": 0.7488817954820771,
+    "trainable_motion_head_parameters": 38273,
+    "frozen_base_parameters": 3067271
+  },
+  "a_conference_assessment": {
+    "current_score_estimate": 84,
+    "oral_ready": false,
+    "main_blockers": [
+      "cross-dataset real-world validation missing",
+      "hard-case coverage gap remains near -0.20",
+      "downstream DiT/reprojection closed-loop not yet measured",
+      "latency overhead of motion confidence head needs optimization"
+    ]
+  }
+}

@@ -253,6 +253,64 @@ def average(rows: list[dict]) -> dict:
     return {key: float(np.mean([row[key] for row in rows])) for key in rows[0]}
 
 
+def load_reprojection_student_init(
+    model: MotionConditionedReprojectionStudent,
+    checkpoint: Path,
+    device: torch.device,
+) -> dict[str, int | str]:
+    """Initialize shared geometry layers from a TVOD ReprojectionStudentWarp checkpoint.
+
+    The old checkpoint has an 8-channel head:
+    points xyz, source mask, unconditional warp, normal xyz.  The motion model
+    has a 7-channel geometry head: points xyz, source mask, normal xyz.  The
+    motion-conditioned warp head is intentionally left randomly initialized.
+    """
+
+    state = torch.load(checkpoint, map_location=device, weights_only=False)
+    old = state["model"]
+    new = model.state_dict()
+    copied = 0
+    skipped = 0
+    for key, value in old.items():
+        if key.startswith("head."):
+            continue
+        if key in new and tuple(new[key].shape) == tuple(value.shape):
+            new[key] = value
+            copied += 1
+        else:
+            skipped += 1
+    if "head.weight" in old and "geometry_head.weight" in new:
+        source_rows = torch.tensor([0, 1, 2, 3, 5, 6, 7], dtype=torch.long, device=old["head.weight"].device)
+        if old["head.weight"].shape[1:] == new["geometry_head.weight"].shape[1:]:
+            new["geometry_head.weight"] = old["head.weight"].index_select(0, source_rows)
+            new["geometry_head.bias"] = old["head.bias"].index_select(0, source_rows)
+            copied += 2
+        else:
+            skipped += 2
+    model.load_state_dict(new)
+    return {"checkpoint": checkpoint.as_posix(), "copied_tensors": copied, "skipped_tensors": skipped}
+
+
+def freeze_base_geometry(model: MotionConditionedReprojectionStudent) -> dict[str, int]:
+    """Freeze v7-initialized geometry layers and train only motion confidence.
+
+    This keeps point map / source mask / normal behavior identical to the
+    delivered TVOD geometry model while learning a target-motion-specific
+    reprojection reliability head.
+    """
+
+    frozen = 0
+    trainable = 0
+    for name, parameter in model.named_parameters():
+        keep_trainable = name.startswith("motion_head.")
+        parameter.requires_grad_(keep_trainable)
+        if keep_trainable:
+            trainable += parameter.numel()
+        else:
+            frozen += parameter.numel()
+    return {"frozen_parameters": frozen, "trainable_parameters": trainable}
+
+
 @torch.inference_mode()
 def export_prediction(model: nn.Module, sample: dict, device: torch.device, out_dir: Path) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -310,6 +368,8 @@ def main() -> None:
     parser.add_argument("--projection-weight", type=float, default=5.0)
     parser.add_argument("--warp-weight", type=float, default=0.25)
     parser.add_argument("--occupancy-weight", type=float, default=0.75)
+    parser.add_argument("--init-reprojection-checkpoint", type=Path, default=None)
+    parser.add_argument("--freeze-base-geometry", action="store_true")
     parser.add_argument("--seed", type=int, default=20260829)
     parser.add_argument("--device", default="cuda")
     parser.add_argument("--name", default=None)
@@ -341,7 +401,21 @@ def main() -> None:
     train_set = TeacherDataset(args.teacher, "train")
     val_set = TeacherDataset(args.teacher, "val")
     model = MotionConditionedReprojectionStudent(width=args.width).to(device)
-    optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=1e-4)
+    init_report = None
+    if args.init_reprojection_checkpoint is not None:
+        init_report = load_reprojection_student_init(model, args.init_reprojection_checkpoint, device)
+        (run_dir / "init_report.json").write_text(
+            json.dumps(init_report, indent=2, ensure_ascii=False) + "\n",
+            encoding="utf-8",
+        )
+    freeze_report = None
+    if args.freeze_base_geometry:
+        freeze_report = freeze_base_geometry(model)
+        (run_dir / "freeze_report.json").write_text(
+            json.dumps(freeze_report, indent=2, ensure_ascii=False) + "\n",
+            encoding="utf-8",
+        )
+    optimizer = torch.optim.AdamW((p for p in model.parameters() if p.requires_grad), lr=args.lr, weight_decay=1e-4)
     best_val = float("inf")
     metrics_path = run_dir / "metrics.jsonl"
 
@@ -388,6 +462,8 @@ def main() -> None:
         "val_samples": len(val_set),
         "best_val_loss": best_val,
         "last_epoch": args.epochs,
+        "init_report": init_report,
+        "freeze_report": freeze_report,
         "val_exports": val_exports,
     }
     (run_dir / "summary.json").write_text(json.dumps(summary, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
