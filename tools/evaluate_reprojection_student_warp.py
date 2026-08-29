@@ -110,6 +110,7 @@ def main() -> None:
         "edge": mean(rows, "edge"),
         "projection": mean(rows, "projection"),
         "warp": mean(rows, "warp"),
+        "occupancy": mean(rows, "occupancy"),
         "warp_target_mean": mean(rows, "warp_target_mean"),
         "inference_ms_median_mean": mean(rows, "inference_ms_median"),
         "inference_ms_p95_mean": mean(rows, "inference_ms_p95"),

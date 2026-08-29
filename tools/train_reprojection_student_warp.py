@@ -159,6 +159,51 @@ def gradient_loss(pred_z: torch.Tensor, target_z: torch.Tensor, valid: torch.Ten
     return (dx.abs() * mask_x).sum() / mask_x.sum().clamp_min(1.0) + (dy.abs() * mask_y).sum() / mask_y.sum().clamp_min(1.0)
 
 
+
+def target_view_occupancy(
+    coords: torch.Tensor,
+    valid: torch.Tensor,
+    grid_h: int = 32,
+    grid_w: int = 64,
+) -> torch.Tensor:
+    """Approximate target-view coverage for reprojection-friendly training.
+
+    ``coords`` stores normalized target-camera pixel coordinates in [0, 1].
+    The downstream renderer is a forward splat; during training we use a cheap
+    differentiable proxy by splatting each source pixel into a coarse target
+    grid with bilinear weights.  This makes the loss sensitive to target-view
+    holes and over-/under-coverage instead of only matching per-source 3D
+    coordinates.
+    """
+
+    batch = coords.shape[0]
+    u = coords[:, :, 0].reshape(batch, -1)
+    v = coords[:, :, 1].reshape(batch, -1)
+    mask = valid.reshape(batch, -1).clamp(0.0, 1.0)
+    inside = (u >= 0.0) & (u <= 1.0) & (v >= 0.0) & (v <= 1.0)
+    mask = mask * inside.float()
+
+    x = (u.clamp(0.0, 1.0) * (grid_w - 1)).clamp(0.0, grid_w - 1)
+    y = (v.clamp(0.0, 1.0) * (grid_h - 1)).clamp(0.0, grid_h - 1)
+    x0 = x.floor().long()
+    y0 = y.floor().long()
+    x1 = (x0 + 1).clamp(max=grid_w - 1)
+    y1 = (y0 + 1).clamp(max=grid_h - 1)
+    wx = x - x0.float()
+    wy = y - y0.float()
+
+    occ = torch.zeros(batch, grid_h * grid_w, dtype=coords.dtype, device=coords.device)
+    for xi, yi, weight in (
+        (x0, y0, (1.0 - wx) * (1.0 - wy)),
+        (x1, y0, wx * (1.0 - wy)),
+        (x0, y1, (1.0 - wx) * wy),
+        (x1, y1, wx * wy),
+    ):
+        index = yi * grid_w + xi
+        occ.scatter_add_(1, index, mask * weight)
+    return (1.0 - torch.exp(-occ)).reshape(batch, 1, grid_h, grid_w)
+
+
 def compute_loss(model: nn.Module, sample: dict, device: torch.device, weights: dict[str, float]) -> tuple[torch.Tensor, dict]:
     image = sample["image"].unsqueeze(0).to(device)
     target_scaled = sample["points_scaled"].unsqueeze(0).to(device)
@@ -182,6 +227,9 @@ def compute_loss(model: nn.Module, sample: dict, device: torch.device, weights: 
     warp_target = warp_target * valid
     proj = (F.smooth_l1_loss(flow_pred, flow_teacher, reduction="none") * valid.unsqueeze(2)).sum() / (valid.sum() * 2).clamp_min(1.0)
     warp = F.binary_cross_entropy_with_logits(pred["warp_logits"], warp_target)
+    occ_pred = target_view_occupancy(flow_pred, valid)
+    occ_teacher = target_view_occupancy(flow_teacher, warp_target)
+    occupancy = F.smooth_l1_loss(occ_pred, occ_teacher)
     total = (
         weights["point"] * point
         + weights["mask"] * mask
@@ -189,6 +237,7 @@ def compute_loss(model: nn.Module, sample: dict, device: torch.device, weights: 
         + weights["edge"] * edge
         + weights["projection"] * proj
         + weights["warp"] * warp
+        + weights.get("occupancy", 0.0) * occupancy
     )
     return total, {
         "loss": float(total.detach().cpu()),
@@ -198,6 +247,7 @@ def compute_loss(model: nn.Module, sample: dict, device: torch.device, weights: 
         "edge": float(edge.detach().cpu()),
         "projection": float(proj.detach().cpu()),
         "warp": float(warp.detach().cpu()),
+        "occupancy": float(occupancy.detach().cpu()),
         "warp_target_mean": float(warp_target.detach().mean().cpu()),
     }
 
@@ -250,6 +300,7 @@ def main() -> None:
     parser.add_argument("--edge-weight", type=float, default=0.20)
     parser.add_argument("--projection-weight", type=float, default=2.0)
     parser.add_argument("--warp-weight", type=float, default=0.50)
+    parser.add_argument("--occupancy-weight", type=float, default=0.0)
     parser.add_argument("--seed", type=int, default=20260828)
     parser.add_argument("--device", default="cuda")
     parser.add_argument("--name", default=None)
@@ -273,8 +324,9 @@ def main() -> None:
             "edge": args.edge_weight,
             "projection": args.projection_weight,
             "warp": args.warp_weight,
+            "occupancy": args.occupancy_weight,
         },
-        "note": "Video-scale v3 student. Adds projected-valid warp-confidence supervision for reprojection.",
+        "note": "Video-scale v3 student. Adds projected-valid warp-confidence and target-view occupancy distillation for reprojection.",
     }
     (run_dir / "config.json").write_text(json.dumps(config, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     train_set = TeacherDataset(args.teacher, "train")
