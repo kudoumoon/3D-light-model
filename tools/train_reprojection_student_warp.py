@@ -256,6 +256,27 @@ def average(rows: list[dict]) -> dict:
     return {key: float(np.mean([row[key] for row in rows])) for key in rows[0]}
 
 
+def load_scene_weights(path: Path | None, strength: float, cap: float) -> dict[str, float]:
+    """Build training scene weights from a reprojection summary.
+
+    The summary is produced on the validation split, so we do not upsample the
+    exact validation frame ids.  Instead, we convert by-scene reprojection
+    deficits into scene-level weights and apply them only to training records.
+    This targets hard geometry regimes without leaking validation samples.
+    """
+
+    if path is None:
+        return {}
+    summary = json.loads(path.read_text(encoding="utf-8"))
+    by_scene = summary.get("by_scene", {})
+    scene_weights: dict[str, float] = {}
+    for scene, row in by_scene.items():
+        gap = float(row.get("coverage_gap_mean", 0.0))
+        deficit = max(0.0, -gap)
+        scene_weights[scene] = min(cap, 1.0 + strength * deficit)
+    return scene_weights
+
+
 @torch.inference_mode()
 def export_prediction(model: nn.Module, sample: dict, device: torch.device, out_dir: Path) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -301,6 +322,10 @@ def main() -> None:
     parser.add_argument("--projection-weight", type=float, default=2.0)
     parser.add_argument("--warp-weight", type=float, default=0.50)
     parser.add_argument("--occupancy-weight", type=float, default=0.0)
+    parser.add_argument("--hardcase-summary", type=Path, default=None)
+    parser.add_argument("--hardcase-strength", type=float, default=4.0)
+    parser.add_argument("--hardcase-cap", type=float, default=1.8)
+    parser.add_argument("--init-checkpoint", type=Path, default=None)
     parser.add_argument("--seed", type=int, default=20260828)
     parser.add_argument("--device", default="cuda")
     parser.add_argument("--name", default=None)
@@ -332,9 +357,18 @@ def main() -> None:
     train_set = TeacherDataset(args.teacher, "train")
     val_set = TeacherDataset(args.teacher, "val")
     model = ReprojectionStudentWarp(width=args.width).to(device)
+    if args.init_checkpoint is not None:
+        state = torch.load(args.init_checkpoint, map_location=device, weights_only=False)
+        model.load_state_dict(state["model"])
     optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=1e-4)
     best_val = float("inf")
     metrics_path = run_dir / "metrics.jsonl"
+    scene_weights = load_scene_weights(args.hardcase_summary, args.hardcase_strength, args.hardcase_cap)
+    if scene_weights:
+        (run_dir / "scene_weights.json").write_text(
+            json.dumps(scene_weights, indent=2, ensure_ascii=False) + "\n",
+            encoding="utf-8",
+        )
 
     for epoch in range(1, args.epochs + 1):
         model.train()
@@ -344,6 +378,9 @@ def main() -> None:
         for index in train_order:
             sample = train_set[index]
             loss, metrics = compute_loss(model, sample, device, config["loss_weights"])
+            sample_weight = float(scene_weights.get(str(sample["scene"]), 1.0))
+            loss = loss * sample_weight
+            metrics["sample_weight"] = sample_weight
             optimizer.zero_grad(set_to_none=True)
             loss.backward()
             torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
