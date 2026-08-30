@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="460" viewBox="0 0 980 460">
+<rect width="100%" height="100%" fill="white"/>
+<text x="490.0" y="30" text-anchor="middle" font-family="Arial" font-size="22">M1 hard-case coverage gap by scene</text>
+<line x1="80" y1="60" x2="80" y2="350" stroke="#333"/>
+<line x1="80" y1="32.83509583363253" x2="950" y2="32.83509583363253" stroke="#333"/>
+<text x="20" y="205.0" transform="rotate(-90 20 205.0)" font-family="Arial" font-size="14">coverage gap</text>
+<line x1="80" y1="350.0" x2="950" y2="350.0" stroke="#eee"/>
+<text x="72" y="354.0" text-anchor="end" font-family="Arial" font-size="12">-0.110</text>
+<line x1="80" y1="277.5" x2="950" y2="277.5" stroke="#eee"/>
+<text x="72" y="281.5" text-anchor="end" font-family="Arial" font-size="12">-0.085</text>
+<line x1="80" y1="205.0" x2="950" y2="205.0" stroke="#eee"/>
+<text x="72" y="209.0" text-anchor="end" font-family="Arial" font-size="12">-0.060</text>
+<line x1="80" y1="132.5" x2="950" y2="132.5" stroke="#eee"/>
+<text x="72" y="136.5" text-anchor="end" font-family="Arial" font-size="12">-0.035</text>
+<line x1="80" y1="60.0" x2="950" y2="60.0" stroke="#eee"/>
+<text x="72" y="64.0" text-anchor="end" font-family="Arial" font-size="12">-0.009</text>
+<text x="123.5" y="405" text-anchor="end" transform="rotate(-30 123.5 405)" font-family="Arial" font-size="12">game2_mid_left</text>
+<rect x="101.8" y="32.8" width="35.7" height="317.2" fill="#c0392b"/>
+<text x="119.6" y="345.0" text-anchor="middle" font-family="Arial" font-size="10">-0.110</text>
+<text x="210.5" y="405" text-anchor="end" transform="rotate(-30 210.5 405)" font-family="Arial" font-size="12">game3_left</text>
+<rect x="188.8" y="32.8" width="35.7" height="243.4" fill="#c0392b"/>
+<text x="206.6" y="271.3" text-anchor="middle" font-family="Arial" font-size="10">-0.085</text>
+<text x="297.5" y="405" text-anchor="end" transform="rotate(-30 297.5 405)" font-family="Arial" font-size="12">game2_right</text>
+<rect x="275.8" y="32.8" width="35.7" height="229.4" fill="#c0392b"/>
+<text x="293.6" y="257.3" text-anchor="middle" font-family="Arial" font-size="10">-0.080</text>
+<text x="384.5" y="405" text-anchor="end" transform="rotate(-30 384.5 405)" font-family="Arial" font-size="12">game2_center</text>
+<rect x="362.8" y="32.8" width="35.7" height="198.3" fill="#c0392b"/>
+<text x="380.6" y="226.2" text-anchor="middle" font-family="Arial" font-size="10">-0.069</text>
+<text x="471.5" y="405" text-anchor="end" transform="rotate(-30 471.5 405)" font-family="Arial" font-size="12">game3_center</text>
+<rect x="449.8" y="32.8" width="35.7" height="187.5" fill="#c0392b"/>
+<text x="467.6" y="215.3" text-anchor="middle" font-family="Arial" font-size="10">-0.065</text>
+<text x="558.5" y="405" text-anchor="end" transform="rotate(-30 558.5 405)" font-family="Arial" font-size="12">game3_mid_left</text>
+<rect x="536.8" y="32.8" width="35.7" height="138.5" fill="#c0392b"/>
+<text x="554.6" y="166.3" text-anchor="middle" font-family="Arial" font-size="10">-0.048</text>
+<text x="645.5" y="405" text-anchor="end" transform="rotate(-30 645.5 405)" font-family="Arial" font-size="12">game2_left</text>
+<rect x="623.8" y="32.8" width="35.7" height="114.9" fill="#c0392b"/>
+<text x="641.6" y="142.8" text-anchor="middle" font-family="Arial" font-size="10">-0.040</text>
+<text x="732.5" y="405" text-anchor="end" transform="rotate(-30 732.5 405)" font-family="Arial" font-size="12">game2_mid_right</text>
+<rect x="710.8" y="32.8" width="35.7" height="111.6" fill="#c0392b"/>
+<text x="728.6" y="139.4" text-anchor="middle" font-family="Arial" font-size="10">-0.039</text>
+<text x="819.5" y="405" text-anchor="end" transform="rotate(-30 819.5 405)" font-family="Arial" font-size="12">game3_mid_right</text>
+<rect x="797.8" y="32.8" width="35.7" height="87.9" fill="#c0392b"/>
+<text x="815.6" y="115.7" text-anchor="middle" font-family="Arial" font-size="10">-0.031</text>
+<text x="906.5" y="405" text-anchor="end" transform="rotate(-30 906.5 405)" font-family="Arial" font-size="12">game3_right</text>
+<rect x="884.8" y="32.8" width="35.7" height="27.2" fill="#c0392b"/>
+<text x="902.6" y="55.0" text-anchor="middle" font-family="Arial" font-size="10">-0.009</text>
+<rect x="730" y="60" width="14" height="14" fill="#c0392b"/>
+<text x="750" y="72" font-family="Arial" font-size="13">student - teacher coverage</text>
+</svg>

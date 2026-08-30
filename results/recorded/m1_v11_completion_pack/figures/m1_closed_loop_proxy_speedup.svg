@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="460" viewBox="0 0 980 460">
+<rect width="100%" height="100%" fill="white"/>
+<text x="490.0" y="30" text-anchor="middle" font-family="Arial" font-size="22">Closed-loop proxy: safe reprojection tiles reduce active DiT tokens</text>
+<line x1="80" y1="60" x2="80" y2="350" stroke="#333"/>
+<line x1="80" y1="350.0" x2="950" y2="350.0" stroke="#333"/>
+<text x="20" y="205.0" transform="rotate(-90 20 205.0)" font-family="Arial" font-size="14">speedup / ratio</text>
+<line x1="80" y1="350.0" x2="950" y2="350.0" stroke="#eee"/>
+<text x="72" y="354.0" text-anchor="end" font-family="Arial" font-size="12">0.000</text>
+<line x1="80" y1="277.5" x2="950" y2="277.5" stroke="#eee"/>
+<text x="72" y="281.5" text-anchor="end" font-family="Arial" font-size="12">0.923</text>
+<line x1="80" y1="205.0" x2="950" y2="205.0" stroke="#eee"/>
+<text x="72" y="209.0" text-anchor="end" font-family="Arial" font-size="12">1.846</text>
+<line x1="80" y1="132.5" x2="950" y2="132.5" stroke="#eee"/>
+<text x="72" y="136.5" text-anchor="end" font-family="Arial" font-size="12">2.769</text>
+<line x1="80" y1="60.0" x2="950" y2="60.0" stroke="#eee"/>
+<text x="72" y="64.0" text-anchor="end" font-family="Arial" font-size="12">3.692</text>
+<text x="188.8" y="405" text-anchor="end" transform="rotate(-30 188.8 405)" font-family="Arial" font-size="12">matrix_game2_gta_target_eval</text>
+<rect x="116.2" y="196.2" width="59.4" height="153.8" fill="#2980b9"/>
+<text x="146.0" y="191.2" text-anchor="middle" font-family="Arial" font-size="10">1.958</text>
+<rect x="188.8" y="320.2" width="59.4" height="29.8" fill="#e67e22"/>
+<text x="218.5" y="315.2" text-anchor="middle" font-family="Arial" font-size="10">0.379</text>
+<text x="406.2" y="405" text-anchor="end" transform="rotate(-30 406.2 405)" font-family="Arial" font-size="12">matrix_game2_gta_target_eval_long</text>
+<rect x="333.8" y="196.2" width="59.4" height="153.8" fill="#2980b9"/>
+<text x="363.5" y="191.2" text-anchor="middle" font-family="Arial" font-size="10">1.958</text>
+<rect x="406.2" y="317.8" width="59.4" height="32.2" fill="#e67e22"/>
+<text x="436.0" y="312.8" text-anchor="middle" font-family="Arial" font-size="10">0.410</text>
+<text x="623.8" y="405" text-anchor="end" transform="rotate(-30 623.8 405)" font-family="Arial" font-size="12">matrix_game2_gta_turn_target_eval</text>
+<rect x="551.2" y="60.0" width="59.4" height="290.0" fill="#2980b9"/>
+<text x="581.0" y="55.0" text-anchor="middle" font-family="Arial" font-size="10">3.692</text>
+<rect x="623.8" y="332.4" width="59.4" height="17.6" fill="#e67e22"/>
+<text x="653.5" y="327.4" text-anchor="middle" font-family="Arial" font-size="10">0.224</text>
+<text x="841.2" y="405" text-anchor="end" transform="rotate(-30 841.2 405)" font-family="Arial" font-size="12">matrix_game2_gta_turn_target_eval_long</text>
+<rect x="768.8" y="196.2" width="59.4" height="153.8" fill="#2980b9"/>
+<text x="798.5" y="191.2" text-anchor="middle" font-family="Arial" font-size="10">1.958</text>
+<rect x="841.2" y="306.2" width="59.4" height="43.8" fill="#e67e22"/>
+<text x="871.0" y="301.2" text-anchor="middle" font-family="Arial" font-size="10">0.557</text>
+<rect x="730" y="60" width="14" height="14" fill="#2980b9"/>
+<text x="750" y="72" font-family="Arial" font-size="13">estimated DiT speedup</text>
+<rect x="730" y="82" width="14" height="14" fill="#e67e22"/>
+<text x="750" y="94" font-family="Arial" font-size="13">active token ratio</text>
+</svg>

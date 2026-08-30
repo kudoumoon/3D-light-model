@@ -1,0 +1,8 @@
+[
+  {
+    "run_name": "student_video384_tvod_v11_hardcoverage_cons_lr8e5",
+    "status": "aborted_before_training_metrics",
+    "reason": "GPU1 became occupied by another /data/zirui self_forcing job immediately after queue launch; stopped our PID 3118819 to obey no-GPU-preemption rule.",
+    "included_in_metrics": false
+  }
+]

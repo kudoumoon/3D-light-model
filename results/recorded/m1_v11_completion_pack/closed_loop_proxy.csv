@@ -1,0 +1,5 @@
+estimated_active_ratio,nearest_active_dit_speedup,num_pairs,safe_tile_fraction_20,source,split,warp_better_than_copy_fraction
+0.3789473684210526,1.958,1,0.6210526315789474,/root/yuetao_he/World-model/3D-light-model/results/recorded/matrix_game2_gta_target_eval/summary.json,high_motion,0.3364966809618841
+0.40986842105263155,1.958,2,0.5901315789473685,/root/yuetao_he/World-model/3D-light-model/results/recorded/matrix_game2_gta_target_eval_long/summary.json,high_motion,0.4041443366719717
+0.2243421052631579,3.692,6,0.7756578947368421,/root/yuetao_he/World-model/3D-light-model/results/recorded/matrix_game2_gta_turn_target_eval/summary.json,high_motion,0.4621283056626872
+0.5572368421052631,1.958,2,0.44276315789473686,/root/yuetao_he/World-model/3D-light-model/results/recorded/matrix_game2_gta_turn_target_eval_long/summary.json,high_motion,0.5135587028191858

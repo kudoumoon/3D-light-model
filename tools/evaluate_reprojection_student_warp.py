@@ -30,7 +30,7 @@ def main() -> None:
     parser.add_argument("--teacher", type=Path, default=ROOT / "runs/teacher_moge3_video_384")
     parser.add_argument("--checkpoint", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
-    parser.add_argument("--split", choices=["train", "val"], default="val")
+    parser.add_argument("--split", choices=["train", "val", "all"], default="val")
     parser.add_argument("--warmup", type=int, default=20)
     parser.add_argument("--repeat", type=int, default=100)
     parser.add_argument("--device", default="cuda")

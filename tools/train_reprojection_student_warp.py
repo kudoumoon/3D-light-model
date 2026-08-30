@@ -89,6 +89,8 @@ class TeacherDataset(Dataset):
                 selected.extend(records[:-holdout])
             elif split == "val":
                 selected.extend(records[-holdout:])
+            elif split == "all":
+                selected.extend(records)
             else:
                 raise ValueError(split)
         self.root = root
@@ -159,6 +161,19 @@ def gradient_loss(pred_z: torch.Tensor, target_z: torch.Tensor, valid: torch.Ten
     return (dx.abs() * mask_x).sum() / mask_x.sum().clamp_min(1.0) + (dy.abs() * mask_y).sum() / mask_y.sum().clamp_min(1.0)
 
 
+def depth_edge_weight(target_z: torch.Tensor, valid: torch.Tensor, strength: float) -> torch.Tensor:
+    """Upweight depth-discontinuity pixels that often create reprojection holes."""
+
+    if strength <= 0.0:
+        return torch.ones_like(valid)
+    dz_x = F.pad((target_z[..., :, 1:] - target_z[..., :, :-1]).abs(), (0, 1, 0, 0))
+    dz_y = F.pad((target_z[..., 1:, :] - target_z[..., :-1, :]).abs(), (0, 0, 0, 1))
+    edge = (dz_x + dz_y) * valid
+    denom = edge.flatten(1).quantile(0.95, dim=1).view(-1, 1, 1, 1).clamp_min(1e-6)
+    edge = (edge / denom).clamp(0.0, 1.0)
+    return 1.0 + strength * edge
+
+
 
 def target_view_occupancy(
     coords: torch.Tensor,
@@ -217,6 +232,10 @@ def compute_loss(model: nn.Module, sample: dict, device: torch.device, weights: 
     pred_scaled = pred["points_scaled"]
     pred_points = pred_scaled * scale
     point = (F.smooth_l1_loss(pred_scaled, target_scaled, reduction="none") * valid).sum() / (valid.sum() * 3).clamp_min(1.0)
+    hard_weight = depth_edge_weight(target_scaled[:, 2:3], valid, weights.get("depth_edge_point", 0.0))
+    edge_point = (
+        F.smooth_l1_loss(pred_scaled, target_scaled, reduction="none") * valid * hard_weight
+    ).sum() / ((valid * hard_weight).sum() * 3).clamp_min(1.0)
     mask = F.binary_cross_entropy_with_logits(pred["mask_logits"], valid)
     normal = ((1.0 - (pred["normal"] * target_normal).sum(dim=1, keepdim=True).clamp(-1, 1)) * valid).sum() / valid.sum().clamp_min(1.0)
     edge = gradient_loss(pred_scaled[:, 2:3], target_scaled[:, 2:3], valid)
@@ -230,14 +249,17 @@ def compute_loss(model: nn.Module, sample: dict, device: torch.device, weights: 
     occ_pred = target_view_occupancy(flow_pred, valid)
     occ_teacher = target_view_occupancy(flow_teacher, warp_target)
     occupancy = F.smooth_l1_loss(occ_pred, occ_teacher)
+    coverage_deficit = F.relu(occ_teacher.detach() - occ_pred).mean()
     total = (
         weights["point"] * point
+        + weights.get("depth_edge_point", 0.0) * edge_point
         + weights["mask"] * mask
         + weights["normal"] * normal
         + weights["edge"] * edge
         + weights["projection"] * proj
         + weights["warp"] * warp
         + weights.get("occupancy", 0.0) * occupancy
+        + weights.get("coverage_deficit", 0.0) * coverage_deficit
     )
     return total, {
         "loss": float(total.detach().cpu()),
@@ -248,6 +270,8 @@ def compute_loss(model: nn.Module, sample: dict, device: torch.device, weights: 
         "projection": float(proj.detach().cpu()),
         "warp": float(warp.detach().cpu()),
         "occupancy": float(occupancy.detach().cpu()),
+        "coverage_deficit": float(coverage_deficit.detach().cpu()),
+        "edge_point": float(edge_point.detach().cpu()),
         "warp_target_mean": float(warp_target.detach().mean().cpu()),
     }
 
@@ -322,6 +346,8 @@ def main() -> None:
     parser.add_argument("--projection-weight", type=float, default=2.0)
     parser.add_argument("--warp-weight", type=float, default=0.50)
     parser.add_argument("--occupancy-weight", type=float, default=0.0)
+    parser.add_argument("--coverage-deficit-weight", type=float, default=0.0)
+    parser.add_argument("--depth-edge-point-weight", type=float, default=0.0)
     parser.add_argument("--hardcase-summary", type=Path, default=None)
     parser.add_argument("--hardcase-strength", type=float, default=4.0)
     parser.add_argument("--hardcase-cap", type=float, default=1.8)
@@ -350,8 +376,10 @@ def main() -> None:
             "projection": args.projection_weight,
             "warp": args.warp_weight,
             "occupancy": args.occupancy_weight,
+            "coverage_deficit": args.coverage_deficit_weight,
+            "depth_edge_point": args.depth_edge_point_weight,
         },
-        "note": "Video-scale v3 student. Adds projected-valid warp-confidence and target-view occupancy distillation for reprojection.",
+        "note": "Video-scale v3 student. Adds projected-valid warp-confidence, target-view occupancy distillation, and optional hard-case coverage-deficit/depth-edge losses for reprojection.",
     }
     (run_dir / "config.json").write_text(json.dumps(config, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     train_set = TeacherDataset(args.teacher, "train")

@@ -1,0 +1,537 @@
+{
+  "cross_domain": {
+    "num_domains": 1,
+    "num_samples_total": 5,
+    "by_domain": [
+      {
+        "domain": "matrixgame2_demo_recorded",
+        "source": "/root/yuetao_he/World-model/3D-light-model/results/recorded/reprojection_student_demo384_v2/eval_best",
+        "num_samples": 5,
+        "loss": 0.34898224771022796,
+        "point": 0.22051244974136353,
+        "projection": 0.026488058269023895,
+        "inference_ms_median_mean": 2.0757880120072514,
+        "by_scene": [
+          {
+            "domain": "matrixgame2_demo_recorded",
+            "scene": "gta_drive",
+            "num_samples": 1,
+            "loss": 0.6161439418792725,
+            "point": 0.46181783080101013,
+            "projection": 0.03286406397819519,
+            "inference_ms_median": 2.0337895257398486
+          },
+          {
+            "domain": "matrixgame2_demo_recorded",
+            "scene": "temple_run",
+            "num_samples": 1,
+            "loss": 0.19028134644031525,
+            "point": 0.06674948334693909,
+            "projection": 0.026843314990401268,
+            "inference_ms_median": 2.234660991234705
+          },
+          {
+            "domain": "matrixgame2_demo_recorded",
+            "scene": "universal",
+            "num_samples": 3,
+            "loss": 0.312828650077184,
+            "point": 0.19133164485295615,
+            "projection": 0.02424430412550767,
+            "inference_ms_median": 2.0368298476872346
+          }
+        ]
+      }
+    ],
+    "by_scene": [
+      {
+        "domain": "matrixgame2_demo_recorded",
+        "scene": "gta_drive",
+        "num_samples": 1,
+        "loss": 0.6161439418792725,
+        "point": 0.46181783080101013,
+        "projection": 0.03286406397819519,
+        "inference_ms_median": 2.0337895257398486
+      },
+      {
+        "domain": "matrixgame2_demo_recorded",
+        "scene": "temple_run",
+        "num_samples": 1,
+        "loss": 0.19028134644031525,
+        "point": 0.06674948334693909,
+        "projection": 0.026843314990401268,
+        "inference_ms_median": 2.234660991234705
+      },
+      {
+        "domain": "matrixgame2_demo_recorded",
+        "scene": "universal",
+        "num_samples": 3,
+        "loss": 0.312828650077184,
+        "point": 0.19133164485295615,
+        "projection": 0.02424430412550767,
+        "inference_ms_median": 2.0368298476872346
+      }
+    ],
+    "missing_for_paper": [
+      "cross-domain validation has fewer than 90 total samples; target is >=30 per domain for paper-grade evidence"
+    ]
+  },
+  "hard_cases": {
+    "source": "results/recorded/m1_v10_frozen_geometry_motion_confidence/v10_reproj_summary.json",
+    "num_cases": 120,
+    "coverage_gap_mean": -0.057653275,
+    "coverage_gap_min": -0.20011999999999996,
+    "yaw10_coverage_gap_mean": -0.05150508333333333,
+    "worst_scene": {
+      "scene": "game2_mid_left",
+      "num_cases": 12,
+      "student_coverage_mean": 0.7191326666666668,
+      "teacher_coverage_mean": 0.8295599166666667,
+      "coverage_gap_mean": -0.11042724999999998,
+      "coverage_gap_min": -0.20011999999999996
+    },
+    "by_scene_ranked": [
+      {
+        "scene": "game2_mid_left",
+        "num_cases": 12,
+        "student_coverage_mean": 0.7191326666666668,
+        "teacher_coverage_mean": 0.8295599166666667,
+        "coverage_gap_mean": -0.11042724999999998,
+        "coverage_gap_min": -0.20011999999999996
+      },
+      {
+        "scene": "game3_left",
+        "num_cases": 12,
+        "student_coverage_mean": 0.7686717500000001,
+        "teacher_coverage_mean": 0.85343125,
+        "coverage_gap_mean": -0.08475949999999999,
+        "coverage_gap_min": -0.13155700000000004
+      },
+      {
+        "scene": "game2_right",
+        "num_cases": 12,
+        "student_coverage_mean": 0.7537835833333334,
+        "teacher_coverage_mean": 0.8336623333333333,
+        "coverage_gap_mean": -0.07987874999999998,
+        "coverage_gap_min": -0.11311899999999997
+      },
+      {
+        "scene": "game2_center",
+        "num_cases": 12,
+        "student_coverage_mean": 0.7657538333333332,
+        "teacher_coverage_mean": 0.8348067499999999,
+        "coverage_gap_mean": -0.06905291666666667,
+        "coverage_gap_min": -0.08443899999999993
+      },
+      {
+        "scene": "game3_center",
+        "num_cases": 12,
+        "student_coverage_mean": 0.7675283333333334,
+        "teacher_coverage_mean": 0.8327985833333332,
+        "coverage_gap_mean": -0.06527024999999999,
+        "coverage_gap_min": -0.08886700000000003
+      },
+      {
+        "scene": "game3_mid_left",
+        "num_cases": 12,
+        "student_coverage_mean": 0.7880509166666667,
+        "teacher_coverage_mean": 0.83627475,
+        "coverage_gap_mean": -0.048223833333333355,
+        "coverage_gap_min": -0.08294699999999999
+      },
+      {
+        "scene": "game2_left",
+        "num_cases": 12,
+        "student_coverage_mean": 0.7158519166666667,
+        "teacher_coverage_mean": 0.7558650833333332,
+        "coverage_gap_mean": -0.04001316666666668,
+        "coverage_gap_min": -0.09073200000000003
+      },
+      {
+        "scene": "game2_mid_right",
+        "num_cases": 12,
+        "student_coverage_mean": 0.7794129166666667,
+        "teacher_coverage_mean": 0.81827,
+        "coverage_gap_mean": -0.03885708333333335,
+        "coverage_gap_min": -0.07622600000000002
+      },
+      {
+        "scene": "game3_mid_right",
+        "num_cases": 12,
+        "student_coverage_mean": 0.8229625833333333,
+        "teacher_coverage_mean": 0.8535545833333332,
+        "coverage_gap_mean": -0.03059200000000002,
+        "coverage_gap_min": -0.10599700000000001
+      },
+      {
+        "scene": "game3_right",
+        "num_cases": 12,
+        "student_coverage_mean": 0.8468906666666666,
+        "teacher_coverage_mean": 0.8563486666666668,
+        "coverage_gap_mean": -0.009457999999999994,
+        "coverage_gap_min": -0.02486199999999994
+      }
+    ],
+    "worst_cases": [
+      {
+        "sample_id": "game2_mid_left__frames__frame_000300",
+        "scene": "game2_mid_left",
+        "motion": "yaw_m5_fwd10",
+        "yaw": -5.0,
+        "forward": 0.1,
+        "teacher_coverage": 0.911458,
+        "student_coverage": 0.711338,
+        "coverage_gap": -0.20011999999999996,
+        "teacher_reproject_ms": 4.326,
+        "student_reproject_ms": 4.353
+      },
+      {
+        "sample_id": "game2_mid_left__frames__frame_000300",
+        "scene": "game2_mid_left",
+        "motion": "yaw_p5_fwd10",
+        "yaw": 5.0,
+        "forward": 0.1,
+        "teacher_coverage": 0.911418,
+        "student_coverage": 0.715841,
+        "coverage_gap": -0.195577,
+        "teacher_reproject_ms": 3.976,
+        "student_reproject_ms": 6.317
+      },
+      {
+        "sample_id": "game2_mid_left__frames__frame_000300",
+        "scene": "game2_mid_left",
+        "motion": "yaw_p10_fwd10",
+        "yaw": 10.0,
+        "forward": 0.1,
+        "teacher_coverage": 0.801276,
+        "student_coverage": 0.625644,
+        "coverage_gap": -0.175632,
+        "teacher_reproject_ms": 4.014,
+        "student_reproject_ms": 4.047
+      },
+      {
+        "sample_id": "game2_mid_left__frames__frame_000300",
+        "scene": "game2_mid_left",
+        "motion": "yaw_m10_fwd10",
+        "yaw": -10.0,
+        "forward": 0.1,
+        "teacher_coverage": 0.801724,
+        "student_coverage": 0.632317,
+        "coverage_gap": -0.16940699999999997,
+        "teacher_reproject_ms": 4.284,
+        "student_reproject_ms": 4.3
+      },
+      {
+        "sample_id": "game3_left__frames__frame_000448",
+        "scene": "game3_left",
+        "motion": "yaw_m5_fwd10",
+        "yaw": -5.0,
+        "forward": 0.1,
+        "teacher_coverage": 0.913506,
+        "student_coverage": 0.781949,
+        "coverage_gap": -0.13155700000000004,
+        "teacher_reproject_ms": 4.316,
+        "student_reproject_ms": 4.318
+      },
+      {
+        "sample_id": "game3_left__frames__frame_000448",
+        "scene": "game3_left",
+        "motion": "yaw_p5_fwd10",
+        "yaw": 5.0,
+        "forward": 0.1,
+        "teacher_coverage": 0.913947,
+        "student_coverage": 0.79459,
+        "coverage_gap": -0.11935699999999994,
+        "teacher_reproject_ms": 4.14,
+        "student_reproject_ms": 4.35
+      },
+      {
+        "sample_id": "game3_left__frames__frame_000448",
+        "scene": "game3_left",
+        "motion": "yaw_m10_fwd10",
+        "yaw": -10.0,
+        "forward": 0.1,
+        "teacher_coverage": 0.812391,
+        "student_coverage": 0.695136,
+        "coverage_gap": -0.117255,
+        "teacher_reproject_ms": 4.08,
+        "student_reproject_ms": 4.111
+      },
+      {
+        "sample_id": "game2_right__frames__frame_000300",
+        "scene": "game2_right",
+        "motion": "yaw_m5_fwd10",
+        "yaw": -5.0,
+        "forward": 0.1,
+        "teacher_coverage": 0.902005,
+        "student_coverage": 0.788886,
+        "coverage_gap": -0.11311899999999997,
+        "teacher_reproject_ms": 4.307,
+        "student_reproject_ms": 4.313
+      },
+      {
+        "sample_id": "game2_right__frames__frame_000300",
+        "scene": "game2_right",
+        "motion": "yaw_p5_fwd10",
+        "yaw": 5.0,
+        "forward": 0.1,
+        "teacher_coverage": 0.901008,
+        "student_coverage": 0.788154,
+        "coverage_gap": -0.11285400000000001,
+        "teacher_reproject_ms": 4.317,
+        "student_reproject_ms": 3.983
+      },
+      {
+        "sample_id": "game3_mid_right__frames__frame_000360",
+        "scene": "game3_mid_right",
+        "motion": "yaw_p5_fwd10",
+        "yaw": 5.0,
+        "forward": 0.1,
+        "teacher_coverage": 0.901828,
+        "student_coverage": 0.795831,
+        "coverage_gap": -0.10599700000000001,
+        "teacher_reproject_ms": 4.141,
+        "student_reproject_ms": 3.961
+      }
+    ],
+    "repair_target": {
+      "primary": "reduce coverage_gap_min from -0.200 toward >= -0.120 without increasing point/projection loss",
+      "secondary": "improve game2_mid_left/game3_left coverage while preserving v10 confidence AUC/ECE"
+    }
+  },
+  "hardcase_candidates": {
+    "selection_rule": "maximize worst-case coverage gap first, then mean coverage gap, while monitoring projection loss",
+    "num_candidates": 0,
+    "selected_candidate": null,
+    "rows": []
+  },
+  "downstream": {
+    "target_pair_summaries": [
+      {
+        "path": "/root/yuetao_he/World-model/3D-light-model/results/recorded/matrix_game2_gta_target_eval/summary.json",
+        "num_pairs": 13,
+        "failures": 0,
+        "pnp_inlier_ratio_mean": 0.8679533498838928,
+        "pnp_reprojection_px_median_mean": 0.47772462322161746,
+        "coverage_ratio_mean": 0.8073783359497645,
+        "warp_better_than_copy_fraction_mean": 0.1816694644439234,
+        "copy_psnr_full_mean": 30.264116965398618,
+        "warp_psnr_on_coverage_mean": 24.913866888164392,
+        "low_motion": {
+          "num_pairs": 12,
+          "copy_psnr_full_mean": 30.991291326160177,
+          "warp_psnr_on_coverage_mean": 24.963256956299652,
+          "warp_better_than_copy_fraction_mean": 0.16876719640076002,
+          "safe_tile_fraction_20_mean": 0.7417763157894737,
+          "copy_safe_tile_fraction_20_mean": 0.9879385964912281,
+          "oracle_safe_tile_fraction_20_mean": 0.9906798245614036
+        },
+        "high_motion": {
+          "num_pairs": 1,
+          "copy_psnr_full_mean": 21.53802463625992,
+          "warp_psnr_on_coverage_mean": 24.321186070541234,
+          "warp_better_than_copy_fraction_mean": 0.3364966809618841,
+          "safe_tile_fraction_20_mean": 0.6210526315789474,
+          "copy_safe_tile_fraction_20_mean": 0.8960526315789473,
+          "oracle_safe_tile_fraction_20_mean": 0.9802631578947368
+        }
+      },
+      {
+        "path": "/root/yuetao_he/World-model/3D-light-model/results/recorded/matrix_game2_gta_target_eval_k8/summary.json",
+        "num_pairs": 6,
+        "failures": 0,
+        "pnp_inlier_ratio_mean": 0.8522607386994204,
+        "pnp_reprojection_px_median_mean": 0.5222993890444437,
+        "coverage_ratio_mean": 0.8120704010770975,
+        "warp_better_than_copy_fraction_mean": 0.21506554044953252,
+        "copy_psnr_full_mean": 30.076885187719625,
+        "warp_psnr_on_coverage_mean": 24.717636216526294,
+        "low_motion": {
+          "num_pairs": 6,
+          "copy_psnr_full_mean": 30.076885187719625,
+          "warp_psnr_on_coverage_mean": 24.717636216526294,
+          "warp_better_than_copy_fraction_mean": 0.21506554044953252,
+          "safe_tile_fraction_20_mean": 0.7429824561403509,
+          "copy_safe_tile_fraction_20_mean": 0.9918859649122808,
+          "oracle_safe_tile_fraction_20_mean": 0.9953947368421052
+        }
+      },
+      {
+        "path": "/root/yuetao_he/World-model/3D-light-model/results/recorded/matrix_game2_gta_target_eval_long/summary.json",
+        "num_pairs": 11,
+        "failures": 0,
+        "pnp_inlier_ratio_mean": 0.7396754158170398,
+        "pnp_reprojection_px_median_mean": 0.7558949806473472,
+        "coverage_ratio_mean": 0.8133522727272727,
+        "warp_better_than_copy_fraction_mean": 0.29384481082902697,
+        "copy_psnr_full_mean": 25.745594270875518,
+        "warp_psnr_on_coverage_mean": 23.299227692850874,
+        "low_motion": {
+          "num_pairs": 9,
+          "copy_psnr_full_mean": 27.14353578600896,
+          "warp_psnr_on_coverage_mean": 23.61851241775231,
+          "warp_better_than_copy_fraction_mean": 0.26933380508615035,
+          "safe_tile_fraction_20_mean": 0.7153508771929825,
+          "copy_safe_tile_fraction_20_mean": 0.9587719298245614,
+          "oracle_safe_tile_fraction_20_mean": 0.9659356725146199
+        },
+        "high_motion": {
+          "num_pairs": 2,
+          "copy_psnr_full_mean": 19.45485745277502,
+          "warp_psnr_on_coverage_mean": 21.86244643079441,
+          "warp_better_than_copy_fraction_mean": 0.4041443366719717,
+          "safe_tile_fraction_20_mean": 0.5901315789473685,
+          "copy_safe_tile_fraction_20_mean": 0.8210526315789474,
+          "oracle_safe_tile_fraction_20_mean": 0.8861842105263158
+        }
+      },
+      {
+        "path": "/root/yuetao_he/World-model/3D-light-model/results/recorded/matrix_game2_gta_turn_target_eval/summary.json",
+        "num_pairs": 13,
+        "failures": 0,
+        "pnp_inlier_ratio_mean": 0.8097133725413942,
+        "pnp_reprojection_px_median_mean": 0.7407444004829113,
+        "coverage_ratio_mean": 0.9534847592883308,
+        "warp_better_than_copy_fraction_mean": 0.3033400765632313,
+        "copy_psnr_full_mean": 24.752182558175672,
+        "warp_psnr_on_coverage_mean": 22.935475230646194,
+        "low_motion": {
+          "num_pairs": 7,
+          "copy_psnr_full_mean": 27.694910166259472,
+          "warp_psnr_on_coverage_mean": 23.508433711839327,
+          "warp_better_than_copy_fraction_mean": 0.16723588019226912,
+          "safe_tile_fraction_20_mean": 0.8537593984962406,
+          "copy_safe_tile_fraction_20_mean": 0.9554511278195489,
+          "oracle_safe_tile_fraction_20_mean": 0.9704887218045113
+        },
+        "high_motion": {
+          "num_pairs": 6,
+          "copy_psnr_full_mean": 21.319000348744574,
+          "warp_psnr_on_coverage_mean": 22.2670236692542,
+          "warp_better_than_copy_fraction_mean": 0.4621283056626872,
+          "safe_tile_fraction_20_mean": 0.7756578947368421,
+          "copy_safe_tile_fraction_20_mean": 0.800219298245614,
+          "oracle_safe_tile_fraction_20_mean": 0.9620614035087719
+        }
+      },
+      {
+        "path": "/root/yuetao_he/World-model/3D-light-model/results/recorded/matrix_game2_gta_turn_target_eval_k8/summary.json",
+        "num_pairs": 6,
+        "failures": 0,
+        "pnp_inlier_ratio_mean": 0.7692943926408267,
+        "pnp_reprojection_px_median_mean": 0.5535011341174444,
+        "coverage_ratio_mean": 0.965875673185941,
+        "warp_better_than_copy_fraction_mean": 0.2675772121790752,
+        "copy_psnr_full_mean": 22.490385693272103,
+        "warp_psnr_on_coverage_mean": 20.76167685051312,
+        "low_motion": {
+          "num_pairs": 6,
+          "copy_psnr_full_mean": 22.490385693272103,
+          "warp_psnr_on_coverage_mean": 20.76167685051312,
+          "warp_better_than_copy_fraction_mean": 0.2675772121790752,
+          "safe_tile_fraction_20_mean": 0.7449561403508772,
+          "copy_safe_tile_fraction_20_mean": 0.8504385964912281,
+          "oracle_safe_tile_fraction_20_mean": 0.8756578947368421
+        }
+      },
+      {
+        "path": "/root/yuetao_he/World-model/3D-light-model/results/recorded/matrix_game2_gta_turn_target_eval_long/summary.json",
+        "num_pairs": 10,
+        "failures": 1,
+        "pnp_inlier_ratio_mean": 0.704677888618488,
+        "pnp_reprojection_px_median_mean": 0.679604309797287,
+        "coverage_ratio_mean": 0.9653199404761904,
+        "warp_better_than_copy_fraction_mean": 0.3599839792892066,
+        "copy_psnr_full_mean": 18.250254014868815,
+        "warp_psnr_on_coverage_mean": 17.658448249702058,
+        "low_motion": {
+          "num_pairs": 8,
+          "copy_psnr_full_mean": 19.200609102547745,
+          "warp_psnr_on_coverage_mean": 18.20916743086158,
+          "warp_better_than_copy_fraction_mean": 0.3215902984067118,
+          "safe_tile_fraction_20_mean": 0.6347039473684211,
+          "copy_safe_tile_fraction_20_mean": 0.7402960526315789,
+          "oracle_safe_tile_fraction_20_mean": 0.7725328947368421
+        },
+        "high_motion": {
+          "num_pairs": 2,
+          "copy_psnr_full_mean": 14.4488336641531,
+          "warp_psnr_on_coverage_mean": 15.455571525063956,
+          "warp_better_than_copy_fraction_mean": 0.5135587028191858,
+          "safe_tile_fraction_20_mean": 0.44276315789473686,
+          "copy_safe_tile_fraction_20_mean": 0.4269736842105263,
+          "oracle_safe_tile_fraction_20_mean": 0.5506578947368421
+        }
+      }
+    ],
+    "active_dit_benchmark_large": {
+      "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "tokens": 4096,
+      "rows": [
+        {
+          "active_ratio": 1.0,
+          "median_ms": 47.536,
+          "speedup_vs_full": 1.0
+        },
+        {
+          "active_ratio": 0.75,
+          "median_ms": 36.001,
+          "speedup_vs_full": 1.32
+        },
+        {
+          "active_ratio": 0.5,
+          "median_ms": 24.284,
+          "speedup_vs_full": 1.958
+        },
+        {
+          "active_ratio": 0.25,
+          "median_ms": 12.877,
+          "speedup_vs_full": 3.692
+        },
+        {
+          "active_ratio": 0.125,
+          "median_ms": 11.351,
+          "speedup_vs_full": 4.188
+        }
+      ]
+    },
+    "closed_loop_proxy": [
+      {
+        "source": "/root/yuetao_he/World-model/3D-light-model/results/recorded/matrix_game2_gta_target_eval/summary.json",
+        "split": "high_motion",
+        "num_pairs": 1,
+        "safe_tile_fraction_20": 0.6210526315789474,
+        "estimated_active_ratio": 0.3789473684210526,
+        "nearest_active_dit_speedup": 1.958,
+        "warp_better_than_copy_fraction": 0.3364966809618841
+      },
+      {
+        "source": "/root/yuetao_he/World-model/3D-light-model/results/recorded/matrix_game2_gta_target_eval_long/summary.json",
+        "split": "high_motion",
+        "num_pairs": 2,
+        "safe_tile_fraction_20": 0.5901315789473685,
+        "estimated_active_ratio": 0.40986842105263155,
+        "nearest_active_dit_speedup": 1.958,
+        "warp_better_than_copy_fraction": 0.4041443366719717
+      },
+      {
+        "source": "/root/yuetao_he/World-model/3D-light-model/results/recorded/matrix_game2_gta_turn_target_eval/summary.json",
+        "split": "high_motion",
+        "num_pairs": 6,
+        "safe_tile_fraction_20": 0.7756578947368421,
+        "estimated_active_ratio": 0.2243421052631579,
+        "nearest_active_dit_speedup": 3.692,
+        "warp_better_than_copy_fraction": 0.4621283056626872
+      },
+      {
+        "source": "/root/yuetao_he/World-model/3D-light-model/results/recorded/matrix_game2_gta_turn_target_eval_long/summary.json",
+        "split": "high_motion",
+        "num_pairs": 2,
+        "safe_tile_fraction_20": 0.44276315789473686,
+        "estimated_active_ratio": 0.5572368421052631,
+        "nearest_active_dit_speedup": 1.958,
+        "warp_better_than_copy_fraction": 0.5135587028191858
+      }
+    ],
+    "interpretation": "Use confidence/warp-safe tiles to skip reusable regions and route only unsafe regions to the expensive DiT path; this is a proxy until integrated end-to-end with the downstream renderer."
+  }
+}
