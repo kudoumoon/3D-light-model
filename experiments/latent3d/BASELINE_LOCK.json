@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "purpose": "Immutable pre-Latent3D reference; v7 and v10 are not modified by this experiment family.",
+  "repository_commit": "c7294e2",
+  "teacher": "MoGe-3 offline geometry teacher",
+  "v7": {
+    "checkpoint": "runs/reprojection_student/student_video384_tvod_v7_2k_occ075_width64_lr15/checkpoints/best.pt",
+    "sha256": "8b3233224fd3a82b125e6235f59e22664f1abc08476072f49ad74c6c6a1ea601",
+    "latency_ms": 7.594,
+    "speedup_vs_teacher": 3.326705293652884,
+    "point_loss": 0.005280851812722782,
+    "projection_loss": 0.010421369211903463,
+    "coverage_gap_mean": -0.057653275,
+    "coverage_gap_min": -0.20011999999999996
+  },
+  "v10": {
+    "checkpoint": "runs/reprojection_student/student_video384_tvod_v10_frozengeom_motionconf_width64_lr1e4/checkpoints/best.pt",
+    "sha256": "1f9fc5ae3c74451ba5a4eb8a80d714c96c933cf4cc6431bf228cae7a2d63b13b",
+    "motion_confidence_latency_ms": 10.55768,
+    "speedup_vs_teacher": 2.392855248501565,
+    "auc_global": 0.9525235500035424,
+    "ece": 0.022145176602550897,
+    "threshold_0_8_kept_ratio": 0.7488817954820771,
+    "threshold_0_8_projected_valid_rate": 0.9596526026725769
+  }
+}
