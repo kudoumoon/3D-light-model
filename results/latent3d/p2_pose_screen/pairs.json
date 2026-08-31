@@ -1,0 +1,823 @@
+{
+  "pairs": [
+    {
+      "source": "game2_center__frames__frame_000000",
+      "target": "game2_center__frames__frame_000008",
+      "scene": "game2_center",
+      "matches": 619,
+      "correspondences": 596,
+      "ok": true,
+      "inliers": 474,
+      "inlier_ratio": 0.7953020134228188,
+      "median_reprojection_px": 0.4323659887658582,
+      "rvec": [
+        0.005861882127285621,
+        0.003066202687489752,
+        0.0006607946767502811
+      ],
+      "tvec": [
+        -0.012657222876159974,
+        0.012039284172101983,
+        0.003723135811674716
+      ]
+    },
+    {
+      "source": "game2_center__frames__frame_000060",
+      "target": "game2_center__frames__frame_000068",
+      "scene": "game2_center",
+      "matches": 522,
+      "correspondences": 518,
+      "ok": true,
+      "inliers": 419,
+      "inlier_ratio": 0.8088803088803089,
+      "median_reprojection_px": 0.4701544643295016,
+      "rvec": [
+        0.012647727097437939,
+        0.012081401154374833,
+        0.0011382805745159146
+      ],
+      "tvec": [
+        -0.026465796761982786,
+        0.021444138791253314,
+        0.003494879418062702
+      ]
+    },
+    {
+      "source": "game2_center__frames__frame_000120",
+      "target": "game2_center__frames__frame_000128",
+      "scene": "game2_center",
+      "matches": 515,
+      "correspondences": 515,
+      "ok": true,
+      "inliers": 217,
+      "inlier_ratio": 0.42135922330097086,
+      "median_reprojection_px": 0.5487098702731935,
+      "rvec": [
+        0.08428368420428872,
+        -0.003084061390577423,
+        -0.00035209053378953964
+      ],
+      "tvec": [
+        0.002689074630567119,
+        0.09915570318713897,
+        0.023890456807696525
+      ]
+    },
+    {
+      "source": "game2_center__frames__frame_000180",
+      "target": "game2_center__frames__frame_000188",
+      "scene": "game2_center",
+      "matches": 925,
+      "correspondences": 925,
+      "ok": true,
+      "inliers": 781,
+      "inlier_ratio": 0.8443243243243244,
+      "median_reprojection_px": 0.4742231612730907,
+      "rvec": [
+        -0.0016265977621657895,
+        -0.002463064386497664,
+        -0.00029823920072375343
+      ],
+      "tvec": [
+        0.004452259390418376,
+        -0.00819934099775238,
+        0.0009020506861197042
+      ]
+    },
+    {
+      "source": "game2_center__frames__frame_000240",
+      "target": "game2_center__frames__frame_000248",
+      "scene": "game2_center",
+      "matches": 1013,
+      "correspondences": 1013,
+      "ok": true,
+      "inliers": 841,
+      "inlier_ratio": 0.8302073050345509,
+      "median_reprojection_px": 0.43414432248454443,
+      "rvec": [
+        0.0020736144780661965,
+        0.002468483378164282,
+        0.000336721371243075
+      ],
+      "tvec": [
+        -0.009835345255193785,
+        0.003519849840798811,
+        0.0011386406680577998
+      ]
+    },
+    {
+      "source": "game2_left__frames__frame_000000",
+      "target": "game2_left__frames__frame_000008",
+      "scene": "game2_left",
+      "matches": 640,
+      "correspondences": 609,
+      "ok": true,
+      "inliers": 521,
+      "inlier_ratio": 0.8555008210180624,
+      "median_reprojection_px": 0.44279017467864173,
+      "rvec": [
+        0.0011876412011613189,
+        -0.0004778210760817333,
+        5.920746250101232e-05
+      ],
+      "tvec": [
+        -0.0030519655794024048,
+        0.0005075350548814916,
+        -0.0001437547631306657
+      ]
+    },
+    {
+      "source": "game2_left__frames__frame_000060",
+      "target": "game2_left__frames__frame_000068",
+      "scene": "game2_left",
+      "matches": 547,
+      "correspondences": 530,
+      "ok": true,
+      "inliers": 442,
+      "inlier_ratio": 0.8339622641509434,
+      "median_reprojection_px": 0.4049496785558156,
+      "rvec": [
+        -0.002048681594153962,
+        -0.004817327115863074,
+        -0.00023722497778589353
+      ],
+      "tvec": [
+        0.007750683839238812,
+        -0.006100361028205131,
+        -0.0007495434756288333
+      ]
+    },
+    {
+      "source": "game2_left__frames__frame_000120",
+      "target": "game2_left__frames__frame_000128",
+      "scene": "game2_left",
+      "matches": 522,
+      "correspondences": 522,
+      "ok": true,
+      "inliers": 334,
+      "inlier_ratio": 0.6398467432950191,
+      "median_reprojection_px": 0.5266099978073295,
+      "rvec": [
+        0.009434716997640421,
+        -0.0010077297688069473,
+        0.00019986459617345976
+      ],
+      "tvec": [
+        0.031199408498179718,
+        0.01568976149519983,
+        0.1191636037222843
+      ]
+    },
+    {
+      "source": "game2_left__frames__frame_000180",
+      "target": "game2_left__frames__frame_000188",
+      "scene": "game2_left",
+      "matches": 940,
+      "correspondences": 940,
+      "ok": true,
+      "inliers": 792,
+      "inlier_ratio": 0.8425531914893617,
+      "median_reprojection_px": 0.462383859439348,
+      "rvec": [
+        -0.0030246507911209208,
+        -0.0015447599396416123,
+        6.579289501226601e-05
+      ],
+      "tvec": [
+        0.0029927303246947076,
+        -0.015336432730458593,
+        0.0004888536294180845
+      ]
+    },
+    {
+      "source": "game2_left__frames__frame_000240",
+      "target": "game2_left__frames__frame_000248",
+      "scene": "game2_left",
+      "matches": 1048,
+      "correspondences": 1048,
+      "ok": true,
+      "inliers": 794,
+      "inlier_ratio": 0.7576335877862596,
+      "median_reprojection_px": 0.4529777419554607,
+      "rvec": [
+        -0.0032472923435236532,
+        0.0008729981906781985,
+        -7.043099270006398e-05
+      ],
+      "tvec": [
+        -0.011657060400862855,
+        -0.031239391778073833,
+        -0.001267963723272203
+      ]
+    },
+    {
+      "source": "game2_mid_left__frames__frame_000000",
+      "target": "game2_mid_left__frames__frame_000008",
+      "scene": "game2_mid_left",
+      "matches": 600,
+      "correspondences": 570,
+      "ok": true,
+      "inliers": 485,
+      "inlier_ratio": 0.8508771929824561,
+      "median_reprojection_px": 0.45879295902862954,
+      "rvec": [
+        0.0009423001444010147,
+        0.002060497819625315,
+        0.00045199572326362473
+      ],
+      "tvec": [
+        -0.012160311763707493,
+        -0.00035222045451183126,
+        -0.004235983991327075
+      ]
+    },
+    {
+      "source": "game2_mid_left__frames__frame_000060",
+      "target": "game2_mid_left__frames__frame_000068",
+      "scene": "game2_mid_left",
+      "matches": 531,
+      "correspondences": 509,
+      "ok": true,
+      "inliers": 425,
+      "inlier_ratio": 0.8349705304518664,
+      "median_reprojection_px": 0.43280352214823825,
+      "rvec": [
+        -0.0006671727300609367,
+        0.001997083579746575,
+        0.0005942847203258506
+      ],
+      "tvec": [
+        -0.008938906825660078,
+        -0.005064166897807254,
+        -0.0003939542486577352
+      ]
+    },
+    {
+      "source": "game2_mid_left__frames__frame_000120",
+      "target": "game2_mid_left__frames__frame_000128",
+      "scene": "game2_mid_left",
+      "matches": 459,
+      "correspondences": 459,
+      "ok": true,
+      "inliers": 260,
+      "inlier_ratio": 0.5664488017429193,
+      "median_reprojection_px": 0.5664338702616487,
+      "rvec": [
+        0.014502056874572877,
+        0.0054746236917139505,
+        0.000451454868763587
+      ],
+      "tvec": [
+        0.006214789261361486,
+        0.026136812806779097,
+        0.1207255912287899
+      ]
+    },
+    {
+      "source": "game2_mid_left__frames__frame_000180",
+      "target": "game2_mid_left__frames__frame_000188",
+      "scene": "game2_mid_left",
+      "matches": 963,
+      "correspondences": 963,
+      "ok": true,
+      "inliers": 795,
+      "inlier_ratio": 0.8255451713395638,
+      "median_reprojection_px": 0.46547497044252356,
+      "rvec": [
+        -0.001312655203129,
+        0.00550799406585104,
+        0.00019463209672490513
+      ],
+      "tvec": [
+        -0.021175083285473885,
+        -0.0069192195070989365,
+        -0.0007887586325585616
+      ]
+    },
+    {
+      "source": "game2_mid_left__frames__frame_000240",
+      "target": "game2_mid_left__frames__frame_000248",
+      "scene": "game2_mid_left",
+      "matches": 1010,
+      "correspondences": 1010,
+      "ok": true,
+      "inliers": 821,
+      "inlier_ratio": 0.8128712871287128,
+      "median_reprojection_px": 0.7348472924568373,
+      "rvec": [
+        -0.022626765482540986,
+        0.003932250874121721,
+        9.951305141994492e-05
+      ],
+      "tvec": [
+        -0.018111309923681818,
+        -0.08310512341727291,
+        -0.006016479379408857
+      ]
+    },
+    {
+      "source": "game3_center__frames__frame_000000",
+      "target": "game3_center__frames__frame_000008",
+      "scene": "game3_center",
+      "matches": 395,
+      "correspondences": 386,
+      "ok": true,
+      "inliers": 255,
+      "inlier_ratio": 0.6606217616580311,
+      "median_reprojection_px": 0.6248421078877174,
+      "rvec": [
+        -0.018131686991057303,
+        -0.005068348590696946,
+        -0.001003102897007737
+      ],
+      "tvec": [
+        0.018210975145641684,
+        -0.08257376283752377,
+        -0.00032197079808859996
+      ]
+    },
+    {
+      "source": "game3_center__frames__frame_000060",
+      "target": "game3_center__frames__frame_000068",
+      "scene": "game3_center",
+      "matches": 388,
+      "correspondences": 388,
+      "ok": true,
+      "inliers": 258,
+      "inlier_ratio": 0.6649484536082474,
+      "median_reprojection_px": 0.4709597312044769,
+      "rvec": [
+        0.0070334800876631675,
+        0.004086188086452304,
+        0.00025710567358624883
+      ],
+      "tvec": [
+        -0.014718113745249256,
+        0.011033199188749954,
+        0.0029360158346909415
+      ]
+    },
+    {
+      "source": "game3_center__frames__frame_000120",
+      "target": "game3_center__frames__frame_000128",
+      "scene": "game3_center",
+      "matches": 391,
+      "correspondences": 387,
+      "ok": true,
+      "inliers": 315,
+      "inlier_ratio": 0.813953488372093,
+      "median_reprojection_px": 0.8230098020788543,
+      "rvec": [
+        0.029440747660093157,
+        -0.00017811533327676842,
+        -0.000440790104377513
+      ],
+      "tvec": [
+        -0.004419758756925775,
+        0.09228834542405961,
+        0.02696037748361313
+      ]
+    },
+    {
+      "source": "game3_center__frames__frame_000180",
+      "target": "game3_center__frames__frame_000188",
+      "scene": "game3_center",
+      "matches": 511,
+      "correspondences": 505,
+      "ok": true,
+      "inliers": 337,
+      "inlier_ratio": 0.6673267326732674,
+      "median_reprojection_px": 1.0350135206618813,
+      "rvec": [
+        0.003958529665049617,
+        0.0063829424200358776,
+        -0.002903199244687664
+      ],
+      "tvec": [
+        -0.03230144005493499,
+        0.0073153988914207435,
+        0.04487230039802581
+      ]
+    },
+    {
+      "source": "game3_center__frames__frame_000240",
+      "target": "game3_center__frames__frame_000248",
+      "scene": "game3_center",
+      "matches": 515,
+      "correspondences": 498,
+      "ok": true,
+      "inliers": 340,
+      "inlier_ratio": 0.6827309236947792,
+      "median_reprojection_px": 1.2925994279315876,
+      "rvec": [
+        -0.00945745596870939,
+        0.0031523118042191926,
+        -0.0012290242460536382
+      ],
+      "tvec": [
+        -0.023228672787202073,
+        -0.04967369271425215,
+        0.05658897592237189
+      ]
+    },
+    {
+      "source": "game3_center__frames__frame_000300",
+      "target": "game3_center__frames__frame_000308",
+      "scene": "game3_center",
+      "matches": 359,
+      "correspondences": 353,
+      "ok": true,
+      "inliers": 195,
+      "inlier_ratio": 0.5524079320113314,
+      "median_reprojection_px": 1.1741066534194575,
+      "rvec": [
+        -0.03077757101964375,
+        0.010032203520261124,
+        -0.0025852442009344657
+      ],
+      "tvec": [
+        -0.05282732953728904,
+        -0.12229944270495693,
+        0.03871532604107797
+      ]
+    },
+    {
+      "source": "game3_center__frames__frame_000360",
+      "target": "game3_center__frames__frame_000368",
+      "scene": "game3_center",
+      "matches": 423,
+      "correspondences": 399,
+      "ok": true,
+      "inliers": 230,
+      "inlier_ratio": 0.5764411027568922,
+      "median_reprojection_px": 0.9401047118866502,
+      "rvec": [
+        -0.013978881628688518,
+        0.010827079555083592,
+        -6.121842321533026e-05
+      ],
+      "tvec": [
+        -0.0325385388189057,
+        -0.04092493842398897,
+        0.02375348193953064
+      ]
+    },
+    {
+      "source": "game3_center__frames__frame_000420",
+      "target": "game3_center__frames__frame_000428",
+      "scene": "game3_center",
+      "matches": 474,
+      "correspondences": 474,
+      "ok": true,
+      "inliers": 251,
+      "inlier_ratio": 0.5295358649789029,
+      "median_reprojection_px": 0.5941631376201022,
+      "rvec": [
+        0.08046965569118048,
+        0.004449743003523328,
+        0.0008873300611349036
+      ],
+      "tvec": [
+        -0.015942024100398397,
+        0.210422277511938,
+        0.00628309832737628
+      ]
+    },
+    {
+      "source": "game3_left__frames__frame_000000",
+      "target": "game3_left__frames__frame_000008",
+      "scene": "game3_left",
+      "matches": 412,
+      "correspondences": 391,
+      "ok": true,
+      "inliers": 283,
+      "inlier_ratio": 0.7237851662404092,
+      "median_reprojection_px": 0.664609523344993,
+      "rvec": [
+        0.0013690543995856462,
+        0.00031138805220695215,
+        -0.0017736856902988794
+      ],
+      "tvec": [
+        -0.01738775547880178,
+        -0.0008476991578943993,
+        -0.024445414438456936
+      ]
+    },
+    {
+      "source": "game3_left__frames__frame_000060",
+      "target": "game3_left__frames__frame_000068",
+      "scene": "game3_left",
+      "matches": 445,
+      "correspondences": 443,
+      "ok": true,
+      "inliers": 319,
+      "inlier_ratio": 0.7200902934537246,
+      "median_reprojection_px": 0.9135641392335792,
+      "rvec": [
+        -0.0018985531744765253,
+        -0.0026866328751868557,
+        -0.00025835238887428135
+      ],
+      "tvec": [
+        0.01929819815561669,
+        -0.019524859135674005,
+        0.03826868833973407
+      ]
+    },
+    {
+      "source": "game3_left__frames__frame_000120",
+      "target": "game3_left__frames__frame_000128",
+      "scene": "game3_left",
+      "matches": 438,
+      "correspondences": 426,
+      "ok": true,
+      "inliers": 282,
+      "inlier_ratio": 0.6619718309859155,
+      "median_reprojection_px": 3.150246692125891,
+      "rvec": [
+        -0.033803336818951465,
+        0.060706565929877526,
+        -0.0004138406544106037
+      ],
+      "tvec": [
+        -0.19203000880354848,
+        -0.13264078757269038,
+        0.07828366461680325
+      ]
+    },
+    {
+      "source": "game3_left__frames__frame_000180",
+      "target": "game3_left__frames__frame_000188",
+      "scene": "game3_left",
+      "matches": 482,
+      "correspondences": 479,
+      "ok": true,
+      "inliers": 250,
+      "inlier_ratio": 0.5219206680584552,
+      "median_reprojection_px": 1.1202506576512716,
+      "rvec": [
+        -0.011458648721004105,
+        0.010582758511546607,
+        -0.004233366547658109
+      ],
+      "tvec": [
+        -0.02211623884332381,
+        -0.041750886969478485,
+        0.060532997898092855
+      ]
+    },
+    {
+      "source": "game3_left__frames__frame_000240",
+      "target": "game3_left__frames__frame_000248",
+      "scene": "game3_left",
+      "matches": 538,
+      "correspondences": 537,
+      "ok": true,
+      "inliers": 316,
+      "inlier_ratio": 0.5884543761638734,
+      "median_reprojection_px": 0.8678156270969997,
+      "rvec": [
+        0.005235724096043169,
+        0.018982705614937378,
+        -0.00400797766885763
+      ],
+      "tvec": [
+        -0.03854318154372424,
+        0.01620289486842358,
+        0.05976453175790564
+      ]
+    },
+    {
+      "source": "game3_left__frames__frame_000300",
+      "target": "game3_left__frames__frame_000308",
+      "scene": "game3_left",
+      "matches": 436,
+      "correspondences": 436,
+      "ok": true,
+      "inliers": 205,
+      "inlier_ratio": 0.4701834862385321,
+      "median_reprojection_px": 0.8097167994111537,
+      "rvec": [
+        0.02966857294101055,
+        0.015255557039915796,
+        -0.001950704440126487
+      ],
+      "tvec": [
+        -0.05673878472657196,
+        0.133169548162426,
+        0.09338352839338704
+      ]
+    },
+    {
+      "source": "game3_left__frames__frame_000360",
+      "target": "game3_left__frames__frame_000368",
+      "scene": "game3_left",
+      "matches": 506,
+      "correspondences": 506,
+      "ok": true,
+      "inliers": 335,
+      "inlier_ratio": 0.6620553359683794,
+      "median_reprojection_px": 0.9728117679882466,
+      "rvec": [
+        0.012718475550141606,
+        0.010637556526035413,
+        0.0016465735241194203
+      ],
+      "tvec": [
+        -0.021194422666875504,
+        0.039818785841774534,
+        0.07308604368118532
+      ]
+    },
+    {
+      "source": "game3_left__frames__frame_000420",
+      "target": "game3_left__frames__frame_000428",
+      "scene": "game3_left",
+      "matches": 550,
+      "correspondences": 550,
+      "ok": true,
+      "inliers": 267,
+      "inlier_ratio": 0.48545454545454547,
+      "median_reprojection_px": 2.1242903619553477,
+      "rvec": [
+        0.07461367094420752,
+        0.08558104564441428,
+        -0.009391654737760676
+      ],
+      "tvec": [
+        -0.2975987888243372,
+        0.24760051170325775,
+        0.06117459176780127
+      ]
+    },
+    {
+      "source": "game3_mid_right__frames__frame_000000",
+      "target": "game3_mid_right__frames__frame_000008",
+      "scene": "game3_mid_right",
+      "matches": 375,
+      "correspondences": 367,
+      "ok": true,
+      "inliers": 222,
+      "inlier_ratio": 0.6049046321525886,
+      "median_reprojection_px": 0.6183900129963131,
+      "rvec": [
+        0.006822228508784812,
+        -0.007718139195038471,
+        0.0025737514603048173
+      ],
+      "tvec": [
+        0.03598987763270772,
+        0.02787410499849008,
+        -0.007163015343197188
+      ]
+    },
+    {
+      "source": "game3_mid_right__frames__frame_000060",
+      "target": "game3_mid_right__frames__frame_000068",
+      "scene": "game3_mid_right",
+      "matches": 328,
+      "correspondences": 328,
+      "ok": true,
+      "inliers": 217,
+      "inlier_ratio": 0.6615853658536586,
+      "median_reprojection_px": 0.5599317354111284,
+      "rvec": [
+        -0.000905981787184925,
+        -0.00044557038814385745,
+        -0.0005718642714397809
+      ],
+      "tvec": [
+        -0.010273690612509212,
+        -0.009153035776966328,
+        0.011796046577179808
+      ]
+    },
+    {
+      "source": "game3_mid_right__frames__frame_000120",
+      "target": "game3_mid_right__frames__frame_000128",
+      "scene": "game3_mid_right",
+      "matches": 365,
+      "correspondences": 364,
+      "ok": true,
+      "inliers": 311,
+      "inlier_ratio": 0.8543956043956044,
+      "median_reprojection_px": 0.7976481886222488,
+      "rvec": [
+        0.003309498884611608,
+        0.0068214082764202905,
+        -0.002780526930367062
+      ],
+      "tvec": [
+        -0.038775583228316035,
+        0.0024992327318457686,
+        0.0293475461346846
+      ]
+    },
+    {
+      "source": "game3_mid_right__frames__frame_000180",
+      "target": "game3_mid_right__frames__frame_000188",
+      "scene": "game3_mid_right",
+      "matches": 436,
+      "correspondences": 436,
+      "ok": true,
+      "inliers": 325,
+      "inlier_ratio": 0.7454128440366973,
+      "median_reprojection_px": 0.8803338523426573,
+      "rvec": [
+        0.015159266995657604,
+        -0.009008799235272353,
+        0.002954313339349221
+      ],
+      "tvec": [
+        0.01685519053963863,
+        0.04174968808647436,
+        0.03332778248540702
+      ]
+    },
+    {
+      "source": "game3_mid_right__frames__frame_000240",
+      "target": "game3_mid_right__frames__frame_000248",
+      "scene": "game3_mid_right",
+      "matches": 391,
+      "correspondences": 390,
+      "ok": true,
+      "inliers": 283,
+      "inlier_ratio": 0.7256410256410256,
+      "median_reprojection_px": 1.7458134262061062,
+      "rvec": [
+        0.007208449796522139,
+        0.03349545053276631,
+        -0.0015729772955938263
+      ],
+      "tvec": [
+        -0.1283757210778379,
+        0.01817272523338674,
+        0.03051334514342452
+      ]
+    },
+    {
+      "source": "game3_mid_right__frames__frame_000300",
+      "target": "game3_mid_right__frames__frame_000308",
+      "scene": "game3_mid_right",
+      "matches": 300,
+      "correspondences": 298,
+      "ok": true,
+      "inliers": 168,
+      "inlier_ratio": 0.5637583892617449,
+      "median_reprojection_px": 1.5354170838355978,
+      "rvec": [
+        0.01393620095045428,
+        0.021160332240402892,
+        -0.0009533077099124331
+      ],
+      "tvec": [
+        -0.083744540325554,
+        0.034316944945330476,
+        0.03896361493588785
+      ]
+    },
+    {
+      "source": "game3_mid_right__frames__frame_000360",
+      "target": "game3_mid_right__frames__frame_000368",
+      "scene": "game3_mid_right",
+      "matches": 387,
+      "correspondences": 382,
+      "ok": true,
+      "inliers": 220,
+      "inlier_ratio": 0.5759162303664922,
+      "median_reprojection_px": 3.0794116976891566,
+      "rvec": [
+        0.17417457844301848,
+        -4.962257761933065e-05,
+        -0.0037619696868348893
+      ],
+      "tvec": [
+        -0.017943487097586697,
+        0.42669934807637305,
+        0.06861611553811864
+      ]
+    },
+    {
+      "source": "game3_mid_right__frames__frame_000420",
+      "target": "game3_mid_right__frames__frame_000428",
+      "scene": "game3_mid_right",
+      "matches": 485,
+      "correspondences": 485,
+      "ok": true,
+      "inliers": 220,
+      "inlier_ratio": 0.4536082474226804,
+      "median_reprojection_px": 0.8892712347671543,
+      "rvec": [
+        0.021455577158606284,
+        -0.008104612778970049,
+        0.0027567129009035533
+      ],
+      "tvec": [
+        0.004212992267827176,
+        0.062444504764980965,
+        0.06500368756223418
+      ]
+    }
+  ]
+}

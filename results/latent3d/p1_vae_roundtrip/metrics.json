@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "stage": "P1",
+  "repository_commit": "e2a44f3",
+  "vae_checkpoint": "/root/wenbiao_zhao/minWM/ckpts/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth",
+  "vae_sha256": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+  "input_image": "/root/yuetao_he/World-model/3D-light-model/third_party/Matrix-Game/Matrix-Game-2/demo_images/gta_drive/0000.png",
+  "input_shape": [
+    1,
+    3,
+    1,
+    352,
+    640
+  ],
+  "latent_shape": [
+    1,
+    16,
+    1,
+    44,
+    80
+  ],
+  "reconstruction_shape": [
+    1,
+    3,
+    1,
+    352,
+    640
+  ],
+  "spatial_downsample": 8,
+  "temporal_downsample": 4,
+  "latent_channels": 16,
+  "dtype": "bfloat16",
+  "normalization": "RGB transformed to [-1,1]; WanVAE applies per-channel affine scaling internally",
+  "elapsed_encode_decode_ms": 429.66193601023406,
+  "reconstruction_mse": 0.0009301615064032376,
+  "reconstruction_psnr": 30.314416885375977,
+  "reconstruction_global_ssim": 0.9974284768104553,
+  "peak_cuda_allocated_bytes": 1168094720,
+  "gpu_name": "NVIDIA H100 80GB HBM3"
+}

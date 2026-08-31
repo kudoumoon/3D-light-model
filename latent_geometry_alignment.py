@@ -47,6 +47,8 @@ def align_depth_to_latent(
     scale_h, scale_w = in_height // out_height, in_width // out_width
     patches = depth.view(batch, 1, out_height, scale_h, out_width, scale_w).permute(0, 1, 2, 4, 3, 5).reshape(batch, 1, out_height, out_width, -1)
     support = valid.view(batch, 1, out_height, scale_h, out_width, scale_w).permute(0, 1, 2, 4, 3, 5).reshape_as(patches).bool()
+    # Invalid teacher pixels must not leak NaNs through masked reductions.
+    patches = torch.where(support, torch.nan_to_num(patches), torch.zeros_like(patches))
     output_valid = support.any(dim=-1).to(depth.dtype)
     if method == "center":
         centre = patches.shape[-1] // 2

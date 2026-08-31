@@ -48,6 +48,14 @@ def forward_splat_latent(
         raise ValueError("valid must be [B, 1, H, W]")
     if depth_temperature <= 0:
         raise ValueError("depth_temperature must be positive")
+    # Scatter accumulation is carried out in fp32 even when Wan latents are
+    # bf16. Geometry weights and z-buffer terms would otherwise create a
+    # mixed-dtype scatter operation.
+    features = features.float()
+    points = points.float()
+    valid = valid.float()
+    intrinsics = intrinsics.float()
+    source_to_target = source_to_target.float()
     batch, channels, height, width = features.shape
     xyz = points.flatten(2).transpose(1, 2)
     rotation = source_to_target[:, :3, :3]
@@ -59,8 +67,12 @@ def forward_splat_latent(
     inside = (z > eps) & (u >= 0) & (u <= 1) & (v >= 0) & (v <= 1)
     support = valid.flatten(1).clamp(0, 1) * inside.to(features.dtype)
     # Normalized coordinates refer to cell centres: u=(x+0.5)/W.
-    x = u.clamp(0, 1) * width - 0.5
-    y = v.clamp(0, 1) * height - 0.5
+    # Invalid geometry has zero support, but scatter still requires every
+    # temporary index to be legal. Replace only its indexing coordinates.
+    u_index = torch.nan_to_num(u, nan=0.5, posinf=1.0, neginf=0.0)
+    v_index = torch.nan_to_num(v, nan=0.5, posinf=1.0, neginf=0.0)
+    x = (u_index.clamp(0, 1) * width - 0.5).clamp(0, width - 1)
+    y = (v_index.clamp(0, 1) * height - 0.5).clamp(0, height - 1)
     x0, y0 = x.floor().long(), y.floor().long()
     x1, y1 = (x0 + 1).clamp(max=width - 1), (y0 + 1).clamp(max=height - 1)
     wx, wy = x - x0.to(x), y - y0.to(y)
