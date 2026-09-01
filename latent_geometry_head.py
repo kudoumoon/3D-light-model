@@ -7,7 +7,7 @@ camera intrinsics, keeping the output compatible with projective warping.
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from typing import Literal
 
 import torch
@@ -29,7 +29,7 @@ class LatentGeometryOutput:
     latent_depth: torch.Tensor
     latent_points: torch.Tensor
     latent_valid_logits: torch.Tensor
-    latent_confidence_logits: torch.Tensor
+    latent_confidence_logits: torch.Tensor | None
     intrinsics: torch.Tensor
     spatial_downsample: int
     temporal_downsample: int
@@ -41,7 +41,17 @@ class LatentGeometryOutput:
 
     @property
     def latent_confidence(self) -> torch.Tensor:
+        if self.latent_confidence_logits is None:
+            raise RuntimeError(
+                "motion-conditioned confidence is not attached; run the frozen-geometry confidence head first"
+            )
         return torch.sigmoid(self.latent_confidence_logits)
+
+    def with_confidence(self, logits: torch.Tensor) -> "LatentGeometryOutput":
+        expected = (self.latent_depth.shape[0], 1, *self.latent_depth.shape[-2:])
+        if logits.shape != expected:
+            raise ValueError(f"confidence logits must have shape {expected}")
+        return replace(self, latent_confidence_logits=logits)
 
 
 class _Block(nn.Module):
@@ -96,8 +106,8 @@ class LatentGeometryHead(nn.Module):
     """A compact head operating directly on frozen VAE latents.
 
     It has no RGB encoder and does not alter the VAE.  A single head predicts
-    only latent-grid depth and valid support; confidence is initialized here for
-    convenience but should be replaced by the separately trained motion head.
+    only latent-grid depth and valid support. Motion-conditioned confidence is
+    attached only after geometry training through an independent frozen-geometry head.
     """
 
     def __init__(
@@ -114,7 +124,6 @@ class LatentGeometryHead(nn.Module):
         self.stem = nn.Conv2d(latent_channels, width, 3, padding=1)
         self.blocks = nn.Sequential(*[_Block(width) for _ in range(blocks)])
         self.geometry = nn.Conv2d(width, 2, 1)
-        self.confidence = nn.Conv2d(width, 1, 1)
         self.spatial_downsample = spatial_downsample
         self.temporal_downsample = temporal_downsample
 
@@ -131,7 +140,7 @@ class LatentGeometryHead(nn.Module):
             latent_depth=depth,
             latent_points=points_from_depth(depth, intrinsics),
             latent_valid_logits=valid_logits,
-            latent_confidence_logits=self.confidence(feature),
+            latent_confidence_logits=None,
             intrinsics=intrinsics,
             spatial_downsample=self.spatial_downsample,
             temporal_downsample=self.temporal_downsample,

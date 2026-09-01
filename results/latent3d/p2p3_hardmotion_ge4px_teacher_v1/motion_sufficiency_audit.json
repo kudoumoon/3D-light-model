@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "metrics": "results/latent3d/p2p3_hardmotion_ge4px_teacher_v1/metrics.json",
+  "pose_manifest": "results/latent3d/p2_pose_screen_measurable_motion_v1/selected_ge4px.json",
+  "spatial_downsample": 8.0,
+  "joined_row_count": 45,
+  "missing_pair_rows": [],
+  "unique_pair_count": 9,
+  "motion_sufficiency": {
+    "median_projected_displacement_px_median": 18.586778115544575,
+    "median_projected_displacement_px_mean": 15.271884535013372,
+    "pairs_ge_1px": 9,
+    "pairs_ge_4px": 9,
+    "pairs_ge_one_latent_cell": 5,
+    "sufficient_for_camera_motion_claim": false,
+    "minimum_requested_meaningful_pairs": 20
+  },
+  "evidence_status": "motion_insufficient_do_not_generalize_to_camera_motion",
+  "aggregates": {
+    "average": {
+      "all": {
+        "pair_count": 9,
+        "valid_l1_delta_mean": -0.058457972274886236,
+        "valid_l1_win_rate": 1.0,
+        "composite_psnr_delta_mean": 0.6161633332570394,
+        "composite_psnr_delta_median": 0.5806312561035156,
+        "composite_psnr_win_rate": 0.8888888888888888
+      },
+      "motion_bins": {
+        "meaningful_ge4": {
+          "pair_count": 9,
+          "valid_l1_delta_mean": -0.058457972274886236,
+          "valid_l1_win_rate": 1.0,
+          "composite_psnr_delta_mean": 0.6161633332570394,
+          "composite_psnr_delta_median": 0.5806312561035156,
+          "composite_psnr_win_rate": 0.8888888888888888,
+          "median_projected_displacement_px_mean": 15.271884535013372
+        }
+      }
+    },
+    "center": {
+      "all": {
+        "pair_count": 9,
+        "valid_l1_delta_mean": -0.05817533532778422,
+        "valid_l1_win_rate": 1.0,
+        "composite_psnr_delta_mean": 0.6045746008555094,
+        "composite_psnr_delta_median": 0.5802788734436035,
+        "composite_psnr_win_rate": 0.8888888888888888
+      },
+      "motion_bins": {
+        "meaningful_ge4": {
+          "pair_count": 9,
+          "valid_l1_delta_mean": -0.05817533532778422,
+          "valid_l1_win_rate": 1.0,
+          "composite_psnr_delta_mean": 0.6045746008555094,
+          "composite_psnr_delta_median": 0.5802788734436035,
+          "composite_psnr_win_rate": 0.8888888888888888,
+          "median_projected_displacement_px_mean": 15.271884535013372
+        }
+      }
+    },
+    "median": {
+      "all": {
+        "pair_count": 9,
+        "valid_l1_delta_mean": -0.058453884389665395,
+        "valid_l1_win_rate": 1.0,
+        "composite_psnr_delta_mean": 0.6158447000715468,
+        "composite_psnr_delta_median": 0.5793347358703613,
+        "composite_psnr_win_rate": 0.8888888888888888
+      },
+      "motion_bins": {
+        "meaningful_ge4": {
+          "pair_count": 9,
+          "valid_l1_delta_mean": -0.058453884389665395,
+          "valid_l1_win_rate": 1.0,
+          "composite_psnr_delta_mean": 0.6158447000715468,
+          "composite_psnr_delta_median": 0.5793347358703613,
+          "composite_psnr_win_rate": 0.8888888888888888,
+          "median_projected_displacement_px_mean": 15.271884535013372
+        }
+      }
+    },
+    "minimum": {
+      "all": {
+        "pair_count": 9,
+        "valid_l1_delta_mean": -0.05841243598196241,
+        "valid_l1_win_rate": 1.0,
+        "composite_psnr_delta_mean": 0.6195198959774442,
+        "composite_psnr_delta_median": 0.582244873046875,
+        "composite_psnr_win_rate": 0.8888888888888888
+      },
+      "motion_bins": {
+        "meaningful_ge4": {
+          "pair_count": 9,
+          "valid_l1_delta_mean": -0.05841243598196241,
+          "valid_l1_win_rate": 1.0,
+          "composite_psnr_delta_mean": 0.6195198959774442,
+          "composite_psnr_delta_median": 0.582244873046875,
+          "composite_psnr_win_rate": 0.8888888888888888,
+          "median_projected_displacement_px_mean": 15.271884535013372
+        }
+      }
+    },
+    "native_point_average": {
+      "all": {
+        "pair_count": 9,
+        "valid_l1_delta_mean": -0.05743800765938229,
+        "valid_l1_win_rate": 1.0,
+        "composite_psnr_delta_mean": 0.6105656888749864,
+        "composite_psnr_delta_median": 0.5743017196655273,
+        "composite_psnr_win_rate": 0.8888888888888888
+      },
+      "motion_bins": {
+        "meaningful_ge4": {
+          "pair_count": 9,
+          "valid_l1_delta_mean": -0.05743800765938229,
+          "valid_l1_win_rate": 1.0,
+          "composite_psnr_delta_mean": 0.6105656888749864,
+          "composite_psnr_delta_median": 0.5743017196655273,
+          "composite_psnr_win_rate": 0.8888888888888888,
+          "median_projected_displacement_px_mean": 15.271884535013372
+        }
+      }
+    }
+  }
+}

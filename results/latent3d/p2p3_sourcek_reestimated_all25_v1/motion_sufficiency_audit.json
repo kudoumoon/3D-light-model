@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "metrics": "results/latent3d/p2p3_sourcek_reestimated_all25_v1/metrics.json",
+  "pose_manifest": "results/latent3d/p2_pose_screen_sourcek_reestimated_v1/pairs.json",
+  "spatial_downsample": 8.0,
+  "joined_row_count": 110,
+  "missing_pair_rows": [],
+  "unique_pair_count": 22,
+  "motion_sufficiency": {
+    "median_projected_displacement_px_median": 0.4052106379502278,
+    "median_projected_displacement_px_mean": 1.2282612253929108,
+    "pairs_ge_1px": 7,
+    "pairs_ge_4px": 1,
+    "pairs_ge_one_latent_cell": 1,
+    "sufficient_for_camera_motion_claim": false,
+    "minimum_requested_meaningful_pairs": 20
+  },
+  "evidence_status": "motion_insufficient_do_not_generalize_to_camera_motion",
+  "aggregates": {
+    "average": {
+      "all": {
+        "pair_count": 22,
+        "valid_l1_delta_mean": -0.0055192421105774965,
+        "valid_l1_win_rate": 0.7272727272727273,
+        "composite_psnr_delta_mean": -0.03374017368663441,
+        "composite_psnr_delta_median": 0.059332847595214844,
+        "composite_psnr_win_rate": 0.5909090909090909
+      },
+      "motion_bins": {
+        "subpixel_lt1": {
+          "pair_count": 15,
+          "valid_l1_delta_mean": 0.0008317435781160991,
+          "valid_l1_win_rate": 0.6,
+          "composite_psnr_delta_mean": -0.12331441243489584,
+          "composite_psnr_delta_median": 0.05576133728027344,
+          "composite_psnr_win_rate": 0.6,
+          "median_projected_displacement_px_mean": 0.2658980813777326
+        },
+        "small_1to4": {
+          "pair_count": 6,
+          "valid_l1_delta_mean": -0.009740581115086874,
+          "valid_l1_win_rate": 1.0,
+          "composite_psnr_delta_mean": 0.09216451644897461,
+          "composite_psnr_delta_median": 0.1247720718383789,
+          "composite_psnr_win_rate": 0.5,
+          "median_projected_displacement_px_mean": 1.812309057620598
+        },
+        "meaningful_ge4": {
+          "pair_count": 1,
+          "valid_l1_delta_mean": -0.07545599341392517,
+          "valid_l1_win_rate": 1.0,
+          "composite_psnr_delta_mean": 0.5544452667236328,
+          "composite_psnr_delta_median": 0.5544452667236328,
+          "composite_psnr_win_rate": 1.0,
+          "median_projected_displacement_px_mean": 12.159421392254462
+        }
+      }
+    },
+    "center": {
+      "all": {
+        "pair_count": 22,
+        "valid_l1_delta_mean": -0.005130188370292837,
+        "valid_l1_win_rate": 0.6363636363636364,
+        "composite_psnr_delta_mean": -0.11265902085737749,
+        "composite_psnr_delta_median": 0.026777267456054688,
+        "composite_psnr_win_rate": 0.5454545454545454
+      },
+      "motion_bins": {
+        "subpixel_lt1": {
+          "pair_count": 15,
+          "valid_l1_delta_mean": 0.0012865747014681498,
+          "valid_l1_win_rate": 0.4666666666666667,
+          "composite_psnr_delta_mean": -0.2293484369913737,
+          "composite_psnr_delta_median": 0.0048198699951171875,
+          "composite_psnr_win_rate": 0.5333333333333333,
+          "median_projected_displacement_px_mean": 0.2658980813777326
+        },
+        "small_1to4": {
+          "pair_count": 6,
+          "valid_l1_delta_mean": -0.009449626008669535,
+          "valid_l1_win_rate": 1.0,
+          "composite_psnr_delta_mean": 0.0677642822265625,
+          "composite_psnr_delta_median": 0.04776430130004883,
+          "composite_psnr_win_rate": 0.5,
+          "median_projected_displacement_px_mean": 1.812309057620598
+        },
+        "meaningful_ge4": {
+          "pair_count": 1,
+          "valid_l1_delta_mean": -0.07546500861644745,
+          "valid_l1_win_rate": 1.0,
+          "composite_psnr_delta_mean": 0.5551424026489258,
+          "composite_psnr_delta_median": 0.5551424026489258,
+          "composite_psnr_win_rate": 1.0,
+          "median_projected_displacement_px_mean": 12.159421392254462
+        }
+      }
+    },
+    "median": {
+      "all": {
+        "pair_count": 22,
+        "valid_l1_delta_mean": -0.005371359938924963,
+        "valid_l1_win_rate": 0.7272727272727273,
+        "composite_psnr_delta_mean": -0.03917104547674006,
+        "composite_psnr_delta_median": 0.059187889099121094,
+        "composite_psnr_win_rate": 0.5909090909090909
+      },
+      "motion_bins": {
+        "subpixel_lt1": {
+          "pair_count": 15,
+          "valid_l1_delta_mean": 0.0009281595547993977,
+          "valid_l1_win_rate": 0.6,
+          "composite_psnr_delta_mean": -0.12619222005208333,
+          "composite_psnr_delta_median": 0.05591011047363281,
+          "composite_psnr_win_rate": 0.6,
+          "median_projected_displacement_px_mean": 0.2658980813777326
+        },
+        "small_1to4": {
+          "pair_count": 6,
+          "valid_l1_delta_mean": -0.009439331789811453,
+          "valid_l1_win_rate": 1.0,
+          "composite_psnr_delta_mean": 0.07933998107910156,
+          "composite_psnr_delta_median": 0.08714914321899414,
+          "composite_psnr_win_rate": 0.5,
+          "median_projected_displacement_px_mean": 1.812309057620598
+        },
+        "meaningful_ge4": {
+          "pair_count": 1,
+          "valid_l1_delta_mean": -0.07545632123947144,
+          "valid_l1_win_rate": 1.0,
+          "composite_psnr_delta_mean": 0.5550804138183594,
+          "composite_psnr_delta_median": 0.5550804138183594,
+          "composite_psnr_win_rate": 1.0,
+          "median_projected_displacement_px_mean": 12.159421392254462
+        }
+      }
+    },
+    "minimum": {
+      "all": {
+        "pair_count": 22,
+        "valid_l1_delta_mean": -0.005339605564420874,
+        "valid_l1_win_rate": 0.7272727272727273,
+        "composite_psnr_delta_mean": -0.044811552221124824,
+        "composite_psnr_delta_median": 0.058359622955322266,
+        "composite_psnr_win_rate": 0.5909090909090909
+      },
+      "motion_bins": {
+        "subpixel_lt1": {
+          "pair_count": 15,
+          "valid_l1_delta_mean": 0.0009623050689697265,
+          "valid_l1_win_rate": 0.6,
+          "composite_psnr_delta_mean": -0.13350098927815754,
+          "composite_psnr_delta_median": 0.05399799346923828,
+          "composite_psnr_win_rate": 0.6,
+          "median_projected_displacement_px_mean": 0.2658980813777326
+        },
+        "small_1to4": {
+          "pair_count": 6,
+          "valid_l1_delta_mean": -0.009413381417592367,
+          "valid_l1_win_rate": 1.0,
+          "composite_psnr_delta_mean": 0.07729482650756836,
+          "composite_psnr_delta_median": 0.08061075210571289,
+          "composite_psnr_win_rate": 0.5,
+          "median_projected_displacement_px_mean": 1.812309057620598
+        },
+        "meaningful_ge4": {
+          "pair_count": 1,
+          "valid_l1_delta_mean": -0.07542560994625092,
+          "valid_l1_win_rate": 1.0,
+          "composite_psnr_delta_mean": 0.552891731262207,
+          "composite_psnr_delta_median": 0.552891731262207,
+          "composite_psnr_win_rate": 1.0,
+          "median_projected_displacement_px_mean": 12.159421392254462
+        }
+      }
+    },
+    "native_point_average": {
+      "all": {
+        "pair_count": 22,
+        "valid_l1_delta_mean": -0.006075800819830461,
+        "valid_l1_win_rate": 0.7727272727272727,
+        "composite_psnr_delta_mean": 0.06599131497469815,
+        "composite_psnr_delta_median": 0.06102418899536133,
+        "composite_psnr_win_rate": 0.7727272727272727
+      },
+      "motion_bins": {
+        "subpixel_lt1": {
+          "pair_count": 15,
+          "valid_l1_delta_mean": -0.0001392314831415812,
+          "valid_l1_win_rate": 0.6666666666666666,
+          "composite_psnr_delta_mean": 0.020273462931315104,
+          "composite_psnr_delta_median": 0.04923057556152344,
+          "composite_psnr_win_rate": 0.8666666666666667,
+          "median_projected_displacement_px_mean": 0.2658980813777326
+        },
+        "small_1to4": {
+          "pair_count": 6,
+          "valid_l1_delta_mean": -0.009416458507378897,
+          "valid_l1_win_rate": 1.0,
+          "composite_psnr_delta_mean": 0.10243384043375652,
+          "composite_psnr_delta_median": 0.18366622924804688,
+          "composite_psnr_win_rate": 0.5,
+          "median_projected_displacement_px_mean": 1.812309057620598
+        },
+        "meaningful_ge4": {
+          "pair_count": 1,
+          "valid_l1_delta_mean": -0.07508039474487305,
+          "valid_l1_win_rate": 1.0,
+          "composite_psnr_delta_mean": 0.5331039428710938,
+          "composite_psnr_delta_median": 0.5331039428710938,
+          "composite_psnr_win_rate": 1.0,
+          "median_projected_displacement_px_mean": 12.159421392254462
+        }
+      }
+    }
+  }
+}

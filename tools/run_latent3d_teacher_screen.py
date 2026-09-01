@@ -9,6 +9,8 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import math
+import subprocess
 import sys
 from pathlib import Path
 
@@ -26,7 +28,7 @@ sys.path.insert(0, str(VAE_SOURCE))
 
 from latent_geometry_alignment import align_depth_to_latent
 from latent_geometry_head import points_from_depth
-from latent_reprojection_loss import forward_splat_latent, latent_reprojection_loss
+from latent_reprojection_loss import compare_warp_to_copy, forward_splat_latent, latent_reprojection_loss
 from vae import WanVAE
 
 
@@ -41,6 +43,16 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--min-inlier-ratio", type=float, default=0.6)
     parser.add_argument("--max-median-reprojection-px", type=float, default=1.5)
     return parser.parse_args()
+
+
+def repository_state() -> dict[str, str | bool]:
+    commit = subprocess.run(
+        ["git", "rev-parse", "HEAD"], cwd=ROOT, check=True, capture_output=True, text=True
+    ).stdout.strip()
+    status = subprocess.run(
+        ["git", "status", "--short"], cwd=ROOT, check=True, capture_output=True, text=True
+    ).stdout.strip()
+    return {"commit": commit, "dirty": bool(status)}
 
 
 def sha256(path: Path) -> str:
@@ -92,6 +104,14 @@ def transform_geometry(
     return depth_out, valid_out, torch.from_numpy(normalized)[None]
 
 
+def transform_points(points: np.ndarray, crop: tuple[int, int, int, int]) -> torch.Tensor:
+    """Apply the VAE image transform to native teacher point coordinates."""
+    left, top, crop_width, crop_height = crop
+    values = torch.from_numpy(points[top:top + crop_height, left:left + crop_width]).permute(2, 0, 1)[None].float()
+    values = torch.nan_to_num(values)
+    return F.interpolate(values, size=(352, 640), mode="nearest-exact")
+
+
 def global_ssim(first: torch.Tensor, second: torch.Tensor) -> float:
     mean_first, mean_second = first.mean(), second.mean()
     variance_first = first.var(unbiased=False)
@@ -114,7 +134,7 @@ def main() -> None:
     device = torch.device("cuda:0")
     vae = WanVAE(pretrained_path=str(args.vae_checkpoint)).to(device, torch.bfloat16).eval().requires_grad_(False)
     tiler = {"tiled": True, "tile_size": (44, 80), "tile_stride": (23, 38)}
-    methods = ("center", "average", "median", "minimum")
+    methods = ("center", "average", "median", "minimum", "native_point_average")
     rows: list[dict] = []
     for pair in pairs:
         source = np.load(args.teacher_root / records[pair["source"]]["geometry"])
@@ -122,6 +142,7 @@ def main() -> None:
         source_rgb, crop = prepare_rgb(source["rgb"])
         target_rgb, _ = prepare_rgb(target["rgb"])
         depth, valid, intrinsics = transform_geometry(source["depth"], source["mask"].astype(np.float32), source["intrinsics"], crop)
+        native_points = transform_points(source["points"], crop)
         rotation, _ = cv2.Rodrigues(np.asarray(pair["rvec"], dtype=np.float32))
         transform = torch.eye(4).unsqueeze(0)
         transform[0, :3, :3] = torch.from_numpy(rotation)
@@ -135,35 +156,68 @@ def main() -> None:
             target_latent = target_latent_5d[:, :, 0]
             decoded_copy = vae.decode(source_latent.unsqueeze(2), device=device, **tiler).float().to(device)
         for method in methods:
-            aligned_depth, aligned_valid = align_depth_to_latent(depth, valid, (44, 80), method)
-            points = points_from_depth(aligned_depth.to(device), intrinsics.to(device))
+            if method == "native_point_average":
+                point_channels = []
+                for channel in range(3):
+                    pooled, _ = align_depth_to_latent(native_points[:, channel:channel + 1], valid, (44, 80), "average")
+                    point_channels.append(pooled)
+                points = torch.cat(point_channels, dim=1).to(device)
+                aligned_valid = F.max_pool2d(valid, kernel_size=(8, 8), stride=(8, 8))
+            else:
+                aligned_depth, aligned_valid = align_depth_to_latent(depth, valid, (44, 80), method)
+                points = points_from_depth(aligned_depth.to(device), intrinsics.to(device))
             warp = forward_splat_latent(source_latent, points, aligned_valid.to(device), intrinsics.to(device), transform.to(device))
             metrics = latent_reprojection_loss(warp, target_latent)
+            comparison = compare_warp_to_copy(warp, source_latent, target_latent)
             with torch.inference_mode():
                 decoded_warp = vae.decode(warp.latent.to(torch.bfloat16).unsqueeze(2), device=device, **tiler).float().to(device)
+                decoded_composite = vae.decode(
+                    comparison["composite"].to(torch.bfloat16).unsqueeze(2), device=device, **tiler
+                ).float().to(device)
             target_rgb_device = target_rgb.to(device)
             copy_mse = (decoded_copy - target_rgb_device).square().mean()
             warp_mse = (decoded_warp - target_rgb_device).square().mean()
+            composite_mse = (decoded_composite - target_rgb_device).square().mean()
+            rotation_degrees = float(np.linalg.norm(np.asarray(pair["rvec"], dtype=np.float64)) * 180.0 / math.pi)
+            translation_norm = float(np.linalg.norm(np.asarray(pair["tvec"], dtype=np.float64)))
             rows.append({
                 "pair": {key: pair[key] for key in ("source", "target", "scene", "inliers", "inlier_ratio", "median_reprojection_px")},
                 "alignment": method,
-                "warp_latent_l1": float(metrics["l1"]),
-                "warp_latent_cosine_loss": float(metrics["cosine"]),
-                "warp_latent_cosine_similarity": float(1.0 - metrics["cosine"]),
-                "copy_latent_l1": float((source_latent - target_latent).abs().mean()),
-                "copy_latent_l2": float((source_latent - target_latent).square().mean().sqrt()),
-                "copy_latent_cosine_similarity": float(F.cosine_similarity(source_latent, target_latent, dim=1).mean()),
-                "latent_coverage": float(metrics["coverage"]),
-                "latent_hole_ratio": float(metrics["hole_ratio"]),
+                "rotation_degrees": rotation_degrees,
+                "translation_norm_teacher_units": translation_norm,
+                "warp_latent_l1_valid": float(comparison["warp_valid_l1"]),
+                "copy_latent_l1_same_valid": float(comparison["copy_valid_l1"]),
+                "warp_latent_cosine_similarity_valid": float(comparison["warp_valid_cosine_similarity"]),
+                "copy_latent_cosine_similarity_same_valid": float(comparison["copy_valid_cosine_similarity"]),
+                "warp_latent_l1_full_zero_holes": float(comparison["warp_full_l1"]),
+                "copy_latent_l1_full": float(comparison["copy_full_l1"]),
+                "composite_latent_l1_full": float(comparison["composite_full_l1"]),
+                "latent_coverage_binary": float(comparison["coverage"]),
+                "latent_hole_ratio_binary": float(comparison["hole_ratio"]),
+                "latent_support_mass_mean": float(metrics["support_mass_mean"]),
                 "decoded_warp_psnr": float(-10 * torch.log10(warp_mse.clamp_min(1e-12))),
                 "decoded_copy_psnr": float(-10 * torch.log10(copy_mse.clamp_min(1e-12))),
+                "decoded_composite_psnr": float(-10 * torch.log10(composite_mse.clamp_min(1e-12))),
                 "decoded_warp_global_ssim": global_ssim(decoded_warp, target_rgb_device),
                 "decoded_copy_global_ssim": global_ssim(decoded_copy, target_rgb_device),
+                "decoded_composite_global_ssim": global_ssim(decoded_composite, target_rgb_device),
                 "decoded_lpips": None,
                 "lpips_status": "not measured: package unavailable in the experiment environment",
             })
     args.output.mkdir(parents=True, exist_ok=True)
-    report = {"schema_version": 1, "stage": "P2/P3 estimated-pose screening", "pose_status": "estimated by MoGe-point-assisted SIFT + PnP-RANSAC; not ground truth", "repository_commit": "e2a44f3", "vae_checkpoint": str(args.vae_checkpoint.resolve()), "vae_sha256": sha256(args.vae_checkpoint), "methods": list(methods), "pair_count": len(pairs), "rows": rows}
+    report = {
+        "schema_version": 2,
+        "stage": "P2/P3 estimated-pose screening",
+        "pose_status": "estimated by MoGe-point-assisted SIFT + PnP-RANSAC; not ground truth",
+        "metric_protocol": "Warp and Copy valid metrics use the identical binary projected-valid mask; full and M1-only composite metrics are reported separately.",
+        "renderer": "bilinear forward splat with target-cell local soft z-buffer",
+        "repository": repository_state(),
+        "vae_checkpoint": str(args.vae_checkpoint.resolve()),
+        "vae_sha256": sha256(args.vae_checkpoint),
+        "methods": list(methods),
+        "pair_count": len(pairs),
+        "rows": rows,
+    }
     (args.output / "metrics.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
     print(json.dumps({"pair_count": len(pairs), "row_count": len(rows)}, indent=2))
 

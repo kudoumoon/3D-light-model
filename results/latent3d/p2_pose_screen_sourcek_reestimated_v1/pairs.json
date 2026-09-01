@@ -1,0 +1,985 @@
+{
+  "schema_version": 1,
+  "stage": "deterministic source-K pose re-estimation",
+  "created_at": "2026-09-01T10:18:56.576697+00:00",
+  "repository_commit": "b76162efb8fa07bf4d5f3023d66ead9fc2c14830",
+  "source_pairs": "/root/yuetao_he/World-model/3D-light-model/results/latent3d/p2_pose_screen/pairs.json",
+  "pair_count": 25,
+  "pairs": [
+    {
+      "source": "game2_center__frames__frame_000000",
+      "target": "game2_center__frames__frame_000008",
+      "scene": "game2_center",
+      "matches": 761,
+      "correspondences": 721,
+      "ok": true,
+      "inliers": 593,
+      "inlier_ratio": 0.8224687933425797,
+      "median_reprojection_px": 0.5126055479049683,
+      "p95_reprojection_px": 2.2927024364471436,
+      "rvec": [
+        0.007480229592809227,
+        0.006057200234695365,
+        0.0008304533868234111
+      ],
+      "tvec": [
+        -0.016668008640408516,
+        0.01991070620715618,
+        0.004912100732326508
+      ],
+      "intrinsics_mode": "source_frame_normalized_K_converted_to_pixel_K",
+      "opencv_rng_seed": 7,
+      "previous_pose": {
+        "rvec": [
+          0.005861882127285621,
+          0.003066202687489752,
+          0.0006607946767502811
+        ],
+        "tvec": [
+          -0.012657222876159974,
+          0.012039284172101983,
+          0.003723135811674716
+        ],
+        "median_reprojection_px": 0.4323659887658582
+      },
+      "dense_projected_displacement_px_median": 0.43605112521332023,
+      "dense_projected_displacement_px_p95": 1.369747835757087
+    },
+    {
+      "source": "game2_center__frames__frame_000060",
+      "target": "game2_center__frames__frame_000068",
+      "scene": "game2_center",
+      "matches": 650,
+      "correspondences": 641,
+      "ok": true,
+      "inliers": 509,
+      "inlier_ratio": 0.7940717628705148,
+      "median_reprojection_px": 0.4467376470565796,
+      "p95_reprojection_px": 1.4984490871429443,
+      "rvec": [
+        0.005274455727767928,
+        0.00267489581348894,
+        0.0013588039262665767
+      ],
+      "tvec": [
+        -0.005615364760160446,
+        0.00972506869584322,
+        0.003087990917265415
+      ],
+      "intrinsics_mode": "source_frame_normalized_K_converted_to_pixel_K",
+      "opencv_rng_seed": 7,
+      "previous_pose": {
+        "rvec": [
+          0.012647727097437939,
+          0.012081401154374833,
+          0.0011382805745159146
+        ],
+        "tvec": [
+          -0.026465796761982786,
+          0.021444138791253314,
+          0.003494879418062702
+        ],
+        "median_reprojection_px": 0.4701544643295016
+      },
+      "dense_projected_displacement_px_median": 0.29790941813613436,
+      "dense_projected_displacement_px_p95": 0.9367287542609031
+    },
+    {
+      "source": "game2_center__frames__frame_000180",
+      "target": "game2_center__frames__frame_000188",
+      "scene": "game2_center",
+      "matches": 1072,
+      "correspondences": 1072,
+      "ok": true,
+      "inliers": 923,
+      "inlier_ratio": 0.8610074626865671,
+      "median_reprojection_px": 0.4975314438343048,
+      "p95_reprojection_px": 1.9531545639038086,
+      "rvec": [
+        4.304277103497285e-05,
+        -0.0012762436158388825,
+        -0.00010957910982633271
+      ],
+      "tvec": [
+        0.003926608711481094,
+        -0.00013424998905975372,
+        -0.00018227471446152776
+      ],
+      "intrinsics_mode": "source_frame_normalized_K_converted_to_pixel_K",
+      "opencv_rng_seed": 7,
+      "previous_pose": {
+        "rvec": [
+          -0.0016265977621657895,
+          -0.002463064386497664,
+          -0.00029823920072375343
+        ],
+        "tvec": [
+          0.004452259390418376,
+          -0.00819934099775238,
+          0.0009020506861197042
+        ],
+        "median_reprojection_px": 0.4742231612730907
+      },
+      "dense_projected_displacement_px_median": 0.06089022021833698,
+      "dense_projected_displacement_px_p95": 0.11151299791025096
+    },
+    {
+      "source": "game2_center__frames__frame_000240",
+      "target": "game2_center__frames__frame_000248",
+      "scene": "game2_center",
+      "matches": 1163,
+      "correspondences": 1163,
+      "ok": true,
+      "inliers": 976,
+      "inlier_ratio": 0.8392089423903697,
+      "median_reprojection_px": 0.4599347412586212,
+      "p95_reprojection_px": 1.9274332523345947,
+      "rvec": [
+        -0.0011007967513984207,
+        0.0031484733718125913,
+        0.00032571756789607836
+      ],
+      "tvec": [
+        -0.00927247479557991,
+        -0.002652274677529931,
+        0.0010132873430848122
+      ],
+      "intrinsics_mode": "source_frame_normalized_K_converted_to_pixel_K",
+      "opencv_rng_seed": 7,
+      "previous_pose": {
+        "rvec": [
+          0.0020736144780661965,
+          0.002468483378164282,
+          0.000336721371243075
+        ],
+        "tvec": [
+          -0.009835345255193785,
+          0.003519849840798811,
+          0.0011386406680577998
+        ],
+        "median_reprojection_px": 0.43414432248454443
+      },
+      "dense_projected_displacement_px_median": 0.14189855777579635,
+      "dense_projected_displacement_px_p95": 0.30300651728226835
+    },
+    {
+      "source": "game2_left__frames__frame_000000",
+      "target": "game2_left__frames__frame_000008",
+      "scene": "game2_left",
+      "matches": 839,
+      "correspondences": 759,
+      "ok": true,
+      "inliers": 632,
+      "inlier_ratio": 0.8326745718050066,
+      "median_reprojection_px": 0.45210912823677063,
+      "p95_reprojection_px": 1.0704541206359863,
+      "rvec": [
+        0.000695018662999489,
+        -0.0002588076759026491,
+        1.8698401719439563e-05
+      ],
+      "tvec": [
+        0.0010126447305083275,
+        0.0029052719473838806,
+        0.00022562754747923464
+      ],
+      "intrinsics_mode": "source_frame_normalized_K_converted_to_pixel_K",
+      "opencv_rng_seed": 7,
+      "previous_pose": {
+        "rvec": [
+          0.0011876412011613189,
+          -0.0004778210760817333,
+          5.920746250101232e-05
+        ],
+        "tvec": [
+          -0.0030519655794024048,
+          0.0005075350548814916,
+          -0.0001437547631306657
+        ],
+        "median_reprojection_px": 0.44279017467864173
+      },
+      "dense_projected_displacement_px_median": 0.052041705701951824,
+      "dense_projected_displacement_px_p95": 0.09083427817062217
+    },
+    {
+      "source": "game2_left__frames__frame_000060",
+      "target": "game2_left__frames__frame_000068",
+      "scene": "game2_left",
+      "matches": 705,
+      "correspondences": 664,
+      "ok": true,
+      "inliers": 542,
+      "inlier_ratio": 0.8162650602409639,
+      "median_reprojection_px": 0.4300778806209564,
+      "p95_reprojection_px": 1.2874096632003784,
+      "rvec": [
+        0.0038894213476210033,
+        -0.0015067851069517069,
+        -0.00014133768287221895
+      ],
+      "tvec": [
+        0.003228581976145506,
+        0.007784718181937933,
+        0.00027294919709675014
+      ],
+      "intrinsics_mode": "source_frame_normalized_K_converted_to_pixel_K",
+      "opencv_rng_seed": 7,
+      "previous_pose": {
+        "rvec": [
+          -0.002048681594153962,
+          -0.004817327115863074,
+          -0.00023722497778589353
+        ],
+        "tvec": [
+          0.007750683839238812,
+          -0.006100361028205131,
+          -0.0007495434756288333
+        ],
+        "median_reprojection_px": 0.4049496785558156
+      },
+      "dense_projected_displacement_px_median": 0.11397230618136267,
+      "dense_projected_displacement_px_p95": 0.30013287213384077
+    },
+    {
+      "source": "game2_left__frames__frame_000120",
+      "target": "game2_left__frames__frame_000128",
+      "scene": "game2_left",
+      "matches": 648,
+      "correspondences": 648,
+      "ok": true,
+      "inliers": 433,
+      "inlier_ratio": 0.6682098765432098,
+      "median_reprojection_px": 0.5636261701583862,
+      "p95_reprojection_px": 2.0098154544830322,
+      "rvec": [
+        0.005431003576860782,
+        0.005652056026483234,
+        0.0003452663531720106
+      ],
+      "tvec": [
+        0.020481612533330917,
+        0.010032862424850464,
+        0.11778818815946579
+      ],
+      "intrinsics_mode": "source_frame_normalized_K_converted_to_pixel_K",
+      "opencv_rng_seed": 7,
+      "previous_pose": {
+        "rvec": [
+          0.009434716997640421,
+          -0.0010077297688069473,
+          0.00019986459617345976
+        ],
+        "tvec": [
+          0.031199408498179718,
+          0.01568976149519983,
+          0.1191636037222843
+        ],
+        "median_reprojection_px": 0.5266099978073295
+      },
+      "dense_projected_displacement_px_median": 12.159421392254462,
+      "dense_projected_displacement_px_p95": 21.891016272543425
+    },
+    {
+      "source": "game2_left__frames__frame_000180",
+      "target": "game2_left__frames__frame_000188",
+      "scene": "game2_left",
+      "matches": 1106,
+      "correspondences": 1106,
+      "ok": true,
+      "inliers": 942,
+      "inlier_ratio": 0.8517179023508138,
+      "median_reprojection_px": 0.4935016930103302,
+      "p95_reprojection_px": 1.8960756063461304,
+      "rvec": [
+        -0.0014683070143501561,
+        0.0014766160385637239,
+        0.0003140096076278955
+      ],
+      "tvec": [
+        -0.006023550871759653,
+        -0.006089192349463701,
+        -0.001664406037889421
+      ],
+      "intrinsics_mode": "source_frame_normalized_K_converted_to_pixel_K",
+      "opencv_rng_seed": 7,
+      "previous_pose": {
+        "rvec": [
+          -0.0030246507911209208,
+          -0.0015447599396416123,
+          6.579289501226601e-05
+        ],
+        "tvec": [
+          0.0029927303246947076,
+          -0.015336432730458593,
+          0.0004888536294180845
+        ],
+        "median_reprojection_px": 0.462383859439348
+      },
+      "dense_projected_displacement_px_median": 0.09340033388372565,
+      "dense_projected_displacement_px_p95": 0.17292887028896123
+    },
+    {
+      "source": "game2_left__frames__frame_000240",
+      "target": "game2_left__frames__frame_000248",
+      "scene": "game2_left",
+      "matches": 1212,
+      "correspondences": 1212,
+      "ok": true,
+      "inliers": 960,
+      "inlier_ratio": 0.7920792079207921,
+      "median_reprojection_px": 0.5015655755996704,
+      "p95_reprojection_px": 2.1417593955993652,
+      "rvec": [
+        -0.0011318498500032174,
+        0.00012832152240996057,
+        -0.0001993821254558087
+      ],
+      "tvec": [
+        -0.00047454910236410797,
+        -0.007931952364742756,
+        0.0005695073632523417
+      ],
+      "intrinsics_mode": "source_frame_normalized_K_converted_to_pixel_K",
+      "opencv_rng_seed": 7,
+      "previous_pose": {
+        "rvec": [
+          -0.0032472923435236532,
+          0.0008729981906781985,
+          -7.043099270006398e-05
+        ],
+        "tvec": [
+          -0.011657060400862855,
+          -0.031239391778073833,
+          -0.001267963723272203
+        ],
+        "median_reprojection_px": 0.4529777419554607
+      },
+      "dense_projected_displacement_px_median": 0.16642513817164992,
+      "dense_projected_displacement_px_p95": 0.21389644999052065
+    },
+    {
+      "source": "game2_mid_left__frames__frame_000000",
+      "target": "game2_mid_left__frames__frame_000008",
+      "scene": "game2_mid_left",
+      "matches": 776,
+      "correspondences": 717,
+      "ok": true,
+      "inliers": 604,
+      "inlier_ratio": 0.8423988842398884,
+      "median_reprojection_px": 0.5168993473052979,
+      "p95_reprojection_px": 1.7972724437713623,
+      "rvec": [
+        0.0017014512436424169,
+        0.0059578369325083095,
+        0.0007337678258991382
+      ],
+      "tvec": [
+        -0.023168835788965225,
+        0.007083228323608637,
+        -0.005869744811207056
+      ],
+      "intrinsics_mode": "source_frame_normalized_K_converted_to_pixel_K",
+      "opencv_rng_seed": 7,
+      "previous_pose": {
+        "rvec": [
+          0.0009423001444010147,
+          0.002060497819625315,
+          0.00045199572326362473
+        ],
+        "tvec": [
+          -0.012160311763707493,
+          -0.00035222045451183126,
+          -0.004235983991327075
+        ],
+        "median_reprojection_px": 0.45879295902862954
+      },
+      "dense_projected_displacement_px_median": 0.37437015068713536,
+      "dense_projected_displacement_px_p95": 0.9294528134211959
+    },
+    {
+      "source": "game2_mid_left__frames__frame_000060",
+      "target": "game2_mid_left__frames__frame_000068",
+      "scene": "game2_mid_left",
+      "matches": 687,
+      "correspondences": 641,
+      "ok": true,
+      "inliers": 514,
+      "inlier_ratio": 0.8018720748829953,
+      "median_reprojection_px": 0.4442324638366699,
+      "p95_reprojection_px": 1.0089490413665771,
+      "rvec": [
+        -0.0011768229568324734,
+        0.0002358635532330055,
+        0.0003315879284697037
+      ],
+      "tvec": [
+        -0.0003231150330975652,
+        -0.0031802819576114416,
+        0.0006642510998062789
+      ],
+      "intrinsics_mode": "source_frame_normalized_K_converted_to_pixel_K",
+      "opencv_rng_seed": 7,
+      "previous_pose": {
+        "rvec": [
+          -0.0006671727300609367,
+          0.001997083579746575,
+          0.0005942847203258506
+        ],
+        "tvec": [
+          -0.008938906825660078,
+          -0.005064166897807254,
+          -0.0003939542486577352
+        ],
+        "median_reprojection_px": 0.43280352214823825
+      },
+      "dense_projected_displacement_px_median": 0.08134187526161957,
+      "dense_projected_displacement_px_p95": 0.17311130513266593
+    },
+    {
+      "source": "game2_mid_left__frames__frame_000180",
+      "target": "game2_mid_left__frames__frame_000188",
+      "scene": "game2_mid_left",
+      "matches": 1090,
+      "correspondences": 1090,
+      "ok": true,
+      "inliers": 935,
+      "inlier_ratio": 0.8577981651376146,
+      "median_reprojection_px": 0.47416290640830994,
+      "p95_reprojection_px": 1.8441221714019775,
+      "rvec": [
+        -0.004797062444407041,
+        0.00038248908876544504,
+        0.00011251239631123968
+      ],
+      "tvec": [
+        -0.0011328619439154863,
+        -0.015710020437836647,
+        -0.0012841607676818967
+      ],
+      "intrinsics_mode": "source_frame_normalized_K_converted_to_pixel_K",
+      "opencv_rng_seed": 7,
+      "previous_pose": {
+        "rvec": [
+          -0.001312655203129,
+          0.00550799406585104,
+          0.00019463209672490513
+        ],
+        "tvec": [
+          -0.021175083285473885,
+          -0.0069192195070989365,
+          -0.0007887586325585616
+        ],
+        "median_reprojection_px": 0.46547497044252356
+      },
+      "dense_projected_displacement_px_median": 0.11756087181823749,
+      "dense_projected_displacement_px_p95": 0.28118624950527077
+    },
+    {
+      "source": "game2_mid_left__frames__frame_000240",
+      "target": "game2_mid_left__frames__frame_000248",
+      "scene": "game2_mid_left",
+      "matches": 1157,
+      "correspondences": 1157,
+      "ok": true,
+      "inliers": 969,
+      "inlier_ratio": 0.8375108038029386,
+      "median_reprojection_px": 0.4818546772003174,
+      "p95_reprojection_px": 2.1570675373077393,
+      "rvec": [
+        -0.0016524525223617977,
+        -0.0002910070339019855,
+        -0.0004136589230232863
+      ],
+      "tvec": [
+        0.0007354411063715816,
+        -0.00508415512740612,
+        0.0006313143530860543
+      ],
+      "intrinsics_mode": "source_frame_normalized_K_converted_to_pixel_K",
+      "opencv_rng_seed": 7,
+      "previous_pose": {
+        "rvec": [
+          -0.022626765482540986,
+          0.003932250874121721,
+          9.951305141994492e-05
+        ],
+        "tvec": [
+          -0.018111309923681818,
+          -0.08310512341727291,
+          -0.006016479379408857
+        ],
+        "median_reprojection_px": 0.7348472924568373
+      },
+      "dense_projected_displacement_px_median": 0.1292686128604551,
+      "dense_projected_displacement_px_p95": 0.2515107732297984
+    },
+    {
+      "source": "game3_center__frames__frame_000000",
+      "target": "game3_center__frames__frame_000008",
+      "scene": "game3_center",
+      "matches": 502,
+      "correspondences": 491,
+      "ok": true,
+      "inliers": 293,
+      "inlier_ratio": 0.5967413441955194,
+      "median_reprojection_px": 0.6594946384429932,
+      "p95_reprojection_px": 2.181523084640503,
+      "rvec": [
+        -0.01742853583482519,
+        -0.013456197804113786,
+        0.0026210956233636926
+      ],
+      "tvec": [
+        0.05715165659785271,
+        -0.06605155020952225,
+        0.006560705602169037
+      ],
+      "intrinsics_mode": "source_frame_normalized_K_converted_to_pixel_K",
+      "opencv_rng_seed": 7,
+      "previous_pose": {
+        "rvec": [
+          -0.018131686991057303,
+          -0.005068348590696946,
+          -0.001003102897007737
+        ],
+        "tvec": [
+          0.018210975145641684,
+          -0.08257376283752377,
+          -0.00032197079808859996
+        ],
+        "median_reprojection_px": 0.6248421078877174
+      },
+      "dense_projected_displacement_px_median": 0.8728131657757322,
+      "dense_projected_displacement_px_p95": 3.7149448130658125
+    },
+    {
+      "source": "game3_center__frames__frame_000060",
+      "target": "game3_center__frames__frame_000068",
+      "scene": "game3_center",
+      "matches": 507,
+      "correspondences": 507,
+      "ok": true,
+      "inliers": 306,
+      "inlier_ratio": 0.6035502958579881,
+      "median_reprojection_px": 0.5338728427886963,
+      "p95_reprojection_px": 2.0503556728363037,
+      "rvec": [
+        0.0063179787014025005,
+        0.005678436640751837,
+        -0.0010707674924248633
+      ],
+      "tvec": [
+        -0.015441153198480606,
+        0.012517641298472881,
+        0.0029320884495973587
+      ],
+      "intrinsics_mode": "source_frame_normalized_K_converted_to_pixel_K",
+      "opencv_rng_seed": 7,
+      "previous_pose": {
+        "rvec": [
+          0.0070334800876631675,
+          0.004086188086452304,
+          0.00025710567358624883
+        ],
+        "tvec": [
+          -0.014718113745249256,
+          0.011033199188749954,
+          0.0029360158346909415
+        ],
+        "median_reprojection_px": 0.4709597312044769
+      },
+      "dense_projected_displacement_px_median": 0.5477945516220654,
+      "dense_projected_displacement_px_p95": 1.3187157167792254
+    },
+    {
+      "source": "game3_center__frames__frame_000120",
+      "target": "game3_center__frames__frame_000128",
+      "scene": "game3_center",
+      "matches": 461,
+      "correspondences": 454,
+      "ok": true,
+      "inliers": 367,
+      "inlier_ratio": 0.8083700440528634,
+      "median_reprojection_px": 0.8518423438072205,
+      "p95_reprojection_px": 1.7865947484970093,
+      "rvec": [
+        0.011712752976241152,
+        -0.00030153056671487733,
+        -0.0005854439164445402
+      ],
+      "tvec": [
+        0.0006767674931325018,
+        0.036047518253326416,
+        0.02332438714802265
+      ],
+      "intrinsics_mode": "source_frame_normalized_K_converted_to_pixel_K",
+      "opencv_rng_seed": 7,
+      "previous_pose": {
+        "rvec": [
+          0.029440747660093157,
+          -0.00017811533327676842,
+          -0.000440790104377513
+        ],
+        "tvec": [
+          -0.004419758756925775,
+          0.09228834542405961,
+          0.02696037748361313
+        ],
+        "median_reprojection_px": 0.8230098020788543
+      },
+      "dense_projected_displacement_px_median": 0.7825722710677748,
+      "dense_projected_displacement_px_p95": 2.6350343731744177
+    },
+    {
+      "source": "game3_center__frames__frame_000180",
+      "target": "game3_center__frames__frame_000188",
+      "scene": "game3_center",
+      "matches": 623,
+      "correspondences": 612,
+      "ok": true,
+      "inliers": 442,
+      "inlier_ratio": 0.7222222222222222,
+      "median_reprojection_px": 1.1308295726776123,
+      "p95_reprojection_px": 2.4352452754974365,
+      "rvec": [
+        0.00917380333351953,
+        0.01213920252684462,
+        -0.0020964868790091192
+      ],
+      "tvec": [
+        -0.04699280858039856,
+        0.034535765647888184,
+        0.04623277112841606
+      ],
+      "intrinsics_mode": "source_frame_normalized_K_converted_to_pixel_K",
+      "opencv_rng_seed": 7,
+      "previous_pose": {
+        "rvec": [
+          0.003958529665049617,
+          0.0063829424200358776,
+          -0.002903199244687664
+        ],
+        "tvec": [
+          -0.03230144005493499,
+          0.0073153988914207435,
+          0.04487230039802581
+        ],
+        "median_reprojection_px": 1.0350135206618813
+      },
+      "dense_projected_displacement_px_median": 1.4057719613537196,
+      "dense_projected_displacement_px_p95": 3.420526425613941
+    },
+    {
+      "source": "game3_center__frames__frame_000240",
+      "target": "game3_center__frames__frame_000248",
+      "scene": "game3_center",
+      "matches": 601,
+      "correspondences": 569,
+      "ok": true,
+      "inliers": 412,
+      "inlier_ratio": 0.7240773286467487,
+      "median_reprojection_px": 1.018082857131958,
+      "p95_reprojection_px": 2.2096564769744873,
+      "rvec": [
+        0.0004522530340120997,
+        -0.0007401664113024202,
+        8.734884774378879e-05
+      ],
+      "tvec": [
+        0.0012395023368299007,
+        0.0018861920107156038,
+        0.05180772766470909
+      ],
+      "intrinsics_mode": "source_frame_normalized_K_converted_to_pixel_K",
+      "opencv_rng_seed": 7,
+      "previous_pose": {
+        "rvec": [
+          -0.00945745596870939,
+          0.0031523118042191926,
+          -0.0012290242460536382
+        ],
+        "tvec": [
+          -0.023228672787202073,
+          -0.04967369271425215,
+          0.05658897592237189
+        ],
+        "median_reprojection_px": 1.2925994279315876
+      },
+      "dense_projected_displacement_px_median": 1.9497935549149013,
+      "dense_projected_displacement_px_p95": 3.102540551163251
+    },
+    {
+      "source": "game3_left__frames__frame_000000",
+      "target": "game3_left__frames__frame_000008",
+      "scene": "game3_left",
+      "matches": 521,
+      "correspondences": 493,
+      "ok": true,
+      "inliers": 347,
+      "inlier_ratio": 0.7038539553752535,
+      "median_reprojection_px": 0.7242350578308105,
+      "p95_reprojection_px": 2.0265250205993652,
+      "rvec": [
+        -0.0008586914572109939,
+        0.002119096791091019,
+        -0.0013988795691893179
+      ],
+      "tvec": [
+        -0.008816387504339218,
+        0.0029154617805033922,
+        0.003447621827945113
+      ],
+      "intrinsics_mode": "source_frame_normalized_K_converted_to_pixel_K",
+      "opencv_rng_seed": 7,
+      "previous_pose": {
+        "rvec": [
+          0.0013690543995856462,
+          0.00031138805220695215,
+          -0.0017736856902988794
+        ],
+        "tvec": [
+          -0.01738775547880178,
+          -0.0008476991578943993,
+          -0.024445414438456936
+        ],
+        "median_reprojection_px": 0.664609523344993
+      },
+      "dense_projected_displacement_px_median": 0.5929740820664227,
+      "dense_projected_displacement_px_p95": 0.9057679501152804
+    },
+    {
+      "source": "game3_left__frames__frame_000060",
+      "target": "game3_left__frames__frame_000068",
+      "scene": "game3_left",
+      "matches": 551,
+      "correspondences": 546,
+      "ok": true,
+      "inliers": 398,
+      "inlier_ratio": 0.7289377289377289,
+      "median_reprojection_px": 0.6580767631530762,
+      "p95_reprojection_px": 2.0815815925598145,
+      "rvec": [
+        -0.0010666819572776485,
+        0.012306629846949937,
+        -0.0016894457027287748
+      ],
+      "tvec": [
+        -0.0547618642449379,
+        -0.0058372593484818935,
+        0.038469258695840836
+      ],
+      "intrinsics_mode": "source_frame_normalized_K_converted_to_pixel_K",
+      "opencv_rng_seed": 7,
+      "previous_pose": {
+        "rvec": [
+          -0.0018985531744765253,
+          -0.0026866328751868557,
+          -0.00025835238887428135
+        ],
+        "tvec": [
+          0.01929819815561669,
+          -0.019524859135674005,
+          0.03826868833973407
+        ],
+        "median_reprojection_px": 0.9135641392335792
+      },
+      "dense_projected_displacement_px_median": 1.1681794391944975,
+      "dense_projected_displacement_px_p95": 2.95302558251773
+    },
+    {
+      "source": "game3_left__frames__frame_000360",
+      "target": "game3_left__frames__frame_000368",
+      "scene": "game3_left",
+      "matches": 590,
+      "correspondences": 590,
+      "ok": true,
+      "inliers": 436,
+      "inlier_ratio": 0.7389830508474576,
+      "median_reprojection_px": 1.0051604509353638,
+      "p95_reprojection_px": 2.5852489471435547,
+      "rvec": [
+        0.008852599162688879,
+        0.006831575907318073,
+        0.0007560066731768161
+      ],
+      "tvec": [
+        -0.0074965087696909904,
+        0.028879672288894653,
+        0.06850782036781311
+      ],
+      "intrinsics_mode": "source_frame_normalized_K_converted_to_pixel_K",
+      "opencv_rng_seed": 7,
+      "previous_pose": {
+        "rvec": [
+          0.012718475550141606,
+          0.010637556526035413,
+          0.0016465735241194203
+        ],
+        "tvec": [
+          -0.021194422666875504,
+          0.039818785841774534,
+          0.07308604368118532
+        ],
+        "median_reprojection_px": 0.9728117679882466
+      },
+      "dense_projected_displacement_px_median": 3.3381273358508126,
+      "dense_projected_displacement_px_p95": 6.6629556820850775
+    },
+    {
+      "source": "game3_mid_right__frames__frame_000000",
+      "target": "game3_mid_right__frames__frame_000008",
+      "scene": "game3_mid_right",
+      "matches": 480,
+      "correspondences": 471,
+      "ok": true,
+      "inliers": 270,
+      "inlier_ratio": 0.5732484076433121,
+      "median_reprojection_px": 0.6296760439872742,
+      "p95_reprojection_px": 1.833548903465271,
+      "rvec": [
+        0.003550920818285808,
+        -0.005175555770210603,
+        0.002232062721025579
+      ],
+      "tvec": [
+        0.02894444763660431,
+        0.019308649003505707,
+        -0.006909920834004879
+      ],
+      "intrinsics_mode": "source_frame_normalized_K_converted_to_pixel_K",
+      "opencv_rng_seed": 7,
+      "previous_pose": {
+        "rvec": [
+          0.006822228508784812,
+          -0.007718139195038471,
+          0.0025737514603048173
+        ],
+        "tvec": [
+          0.03598987763270772,
+          0.02787410499849008,
+          -0.007163015343197188
+        ],
+        "median_reprojection_px": 0.6183900129963131
+      },
+      "dense_projected_displacement_px_median": 0.509408473316614,
+      "dense_projected_displacement_px_p95": 1.027290219404849
+    },
+    {
+      "source": "game3_mid_right__frames__frame_000060",
+      "target": "game3_mid_right__frames__frame_000068",
+      "scene": "game3_mid_right",
+      "matches": 453,
+      "correspondences": 453,
+      "ok": true,
+      "inliers": 271,
+      "inlier_ratio": 0.5982339955849889,
+      "median_reprojection_px": 0.6214852929115295,
+      "p95_reprojection_px": 2.0630414485931396,
+      "rvec": [
+        0.0030631533145076806,
+        -0.0030758130867486228,
+        -0.00029578851274328154
+      ],
+      "tvec": [
+        0.002474490785971284,
+        0.006799058523029089,
+        0.010141282342374325
+      ],
+      "intrinsics_mode": "source_frame_normalized_K_converted_to_pixel_K",
+      "opencv_rng_seed": 7,
+      "previous_pose": {
+        "rvec": [
+          -0.000905981787184925,
+          -0.00044557038814385745,
+          -0.0005718642714397809
+        ],
+        "tvec": [
+          -0.010273690612509212,
+          -0.009153035776966328,
+          0.011796046577179808
+        ],
+        "median_reprojection_px": 0.5599317354111284
+      },
+      "dense_projected_displacement_px_median": 0.764287948891616,
+      "dense_projected_displacement_px_p95": 1.823517585248855
+    },
+    {
+      "source": "game3_mid_right__frames__frame_000120",
+      "target": "game3_mid_right__frames__frame_000128",
+      "scene": "game3_mid_right",
+      "matches": 445,
+      "correspondences": 444,
+      "ok": true,
+      "inliers": 354,
+      "inlier_ratio": 0.7972972972972973,
+      "median_reprojection_px": 0.6761367917060852,
+      "p95_reprojection_px": 1.8508152961730957,
+      "rvec": [
+        0.0009253383954550909,
+        -0.0051578745808689395,
+        -0.0009552779242142769
+      ],
+      "tvec": [
+        0.011418418027460575,
+        -0.0003633481392171234,
+        0.027414754033088684
+      ],
+      "intrinsics_mode": "source_frame_normalized_K_converted_to_pixel_K",
+      "opencv_rng_seed": 7,
+      "previous_pose": {
+        "rvec": [
+          0.003309498884611608,
+          0.0068214082764202905,
+          -0.002780526930367062
+        ],
+        "tvec": [
+          -0.038775583228316035,
+          0.0024992327318457686,
+          0.0293475461346846
+        ],
+        "median_reprojection_px": 0.7976481886222488
+      },
+      "dense_projected_displacement_px_median": 1.2754507386556158,
+      "dense_projected_displacement_px_p95": 2.8242506900056297
+    },
+    {
+      "source": "game3_mid_right__frames__frame_000180",
+      "target": "game3_mid_right__frames__frame_000188",
+      "scene": "game3_mid_right",
+      "matches": 539,
+      "correspondences": 538,
+      "ok": true,
+      "inliers": 386,
+      "inlier_ratio": 0.7174721189591078,
+      "median_reprojection_px": 0.9107787609100342,
+      "p95_reprojection_px": 2.1791021823883057,
+      "rvec": [
+        0.007396691803105934,
+        -0.0019974795738043655,
+        0.0001610058585646424
+      ],
+      "tvec": [
+        -0.0022837240248918533,
+        0.021158166229724884,
+        0.03304407373070717
+      ],
+      "intrinsics_mode": "source_frame_normalized_K_converted_to_pixel_K",
+      "opencv_rng_seed": 7,
+      "previous_pose": {
+        "rvec": [
+          0.015159266995657604,
+          -0.009008799235272353,
+          0.002954313339349221
+        ],
+        "tvec": [
+          0.01685519053963863,
+          0.04174968808647436,
+          0.03332778248540702
+        ],
+        "median_reprojection_px": 0.8803338523426573
+      },
+      "dense_projected_displacement_px_median": 1.7365313157540412,
+      "dense_projected_displacement_px_p95": 3.582832918281854
+    }
+  ]
+}

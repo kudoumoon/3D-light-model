@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "stage": "M1-to-M2 read-only controlled bridge",
+  "created_at": "2026-09-01T10:19:32.354044+00:00",
+  "m2_repository": "/tmp/Reprojection-WM",
+  "m2_state_before_and_after": {
+    "commit": "49fc1bb804a9c166170dc5fda126e2ac7377870d",
+    "dirty": false,
+    "status": ""
+  },
+  "m2_module": "/tmp/Reprojection-WM/geosparse/geometry.py",
+  "m1_bridge": {
+    "contract": "geometry_aligned_latent_3d_to_reprojection_wm_v1",
+    "latent_grid_hw": [
+      44,
+      80
+    ],
+    "spatial_downsample": 8,
+    "temporal_downsample": 4,
+    "source_coordinate_convention": "camera_xyz_normalized_intrinsics",
+    "export_coordinate_convention": "opencv_x_right_y_down_z_forward_normalized_intrinsics",
+    "valid_threshold": 0.5,
+    "valid_fraction": 1.0,
+    "motion_confidence_status": "preserved_but_current_m2_geometry_pose_candidate_does_not_consume_it",
+    "temporal_scope": "single spatial geometry frame; M2 owns chunk horizons"
+  },
+  "vae_checkpoint": "/root/wenbiao_zhao/minWM/ckpts/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth",
+  "vae_sha256": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "temporal_limit": "each target latent is encoded independently; this isolates the spatial M1/M2 interface and is not a causal 3-frame Video-VAE rollout",
+  "rows": [
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "scenario": "horizontal_integer_cells",
+      "target_pixel_shift_at_h12": [
+        24,
+        0
+      ],
+      "copy_latent_l1_full": 0.2421875,
+      "m1_renderer_latent_l1_full": 0.015097791329026222,
+      "m2_renderer_latent_l1_full": 0.015097632072865963,
+      "m2_visible_token_fraction": 0.9833333333333333,
+      "m2_confidence_mean": 0.9750000238418579,
+      "horizons": [
+        {
+          "rgb_horizon": 4,
+          "copy_decoded_psnr": 5.846441268920898,
+          "m1_renderer_decoded_psnr": 24.02346420288086,
+          "m2_renderer_decoded_psnr": 24.02346420288086
+        },
+        {
+          "rgb_horizon": 8,
+          "copy_decoded_psnr": 5.857324123382568,
+          "m1_renderer_decoded_psnr": 22.147804260253906,
+          "m2_renderer_decoded_psnr": 22.147804260253906
+        },
+        {
+          "rgb_horizon": 12,
+          "copy_decoded_psnr": 5.770425796508789,
+          "m1_renderer_decoded_psnr": 20.75051498413086,
+          "m2_renderer_decoded_psnr": 20.75051498413086
+        }
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "scenario": "horizontal_half_cells",
+      "target_pixel_shift_at_h12": [
+        12,
+        0
+      ],
+      "copy_latent_l1_full": 0.197265625,
+      "m1_renderer_latent_l1_full": 0.08275558799505234,
+      "m2_renderer_latent_l1_full": 0.11706457287073135,
+      "m2_visible_token_fraction": 0.9916666666666667,
+      "m2_confidence_mean": 0.7583333253860474,
+      "horizons": [
+        {
+          "rgb_horizon": 4,
+          "copy_decoded_psnr": 8.506916046142578,
+          "m1_renderer_decoded_psnr": 11.591745376586914,
+          "m2_renderer_decoded_psnr": 9.193361282348633
+        },
+        {
+          "rgb_horizon": 8,
+          "copy_decoded_psnr": 5.846441268920898,
+          "m1_renderer_decoded_psnr": 24.02346420288086,
+          "m2_renderer_decoded_psnr": 24.02346420288086
+        },
+        {
+          "rgb_horizon": 12,
+          "copy_decoded_psnr": 5.660476207733154,
+          "m1_renderer_decoded_psnr": 11.474214553833008,
+          "m2_renderer_decoded_psnr": 7.457244396209717
+        }
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "scenario": "vertical_half_cells",
+      "target_pixel_shift_at_h12": [
+        0,
+        12
+      ],
+      "copy_latent_l1_full": 0.23828125,
+      "m1_renderer_latent_l1_full": 0.1143033504486084,
+      "m2_renderer_latent_l1_full": 0.1491096168756485,
+      "m2_visible_token_fraction": 1.0,
+      "m2_confidence_mean": 0.75,
+      "horizons": [
+        {
+          "rgb_horizon": 4,
+          "copy_decoded_psnr": 7.615041255950928,
+          "m1_renderer_decoded_psnr": 9.678436279296875,
+          "m2_renderer_decoded_psnr": 7.893929481506348
+        },
+        {
+          "rgb_horizon": 8,
+          "copy_decoded_psnr": 5.901572227478027,
+          "m1_renderer_decoded_psnr": 21.073421478271484,
+          "m2_renderer_decoded_psnr": 21.073421478271484
+        },
+        {
+          "rgb_horizon": 12,
+          "copy_decoded_psnr": 5.419332504272461,
+          "m1_renderer_decoded_psnr": 9.464159965515137,
+          "m2_renderer_decoded_psnr": 7.116098403930664
+        }
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "scenario": "horizontal_integer_cells",
+      "target_pixel_shift_at_h12": [
+        24,
+        0
+      ],
+      "copy_latent_l1_full": 0.255859375,
+      "m1_renderer_latent_l1_full": 0.01725860685110092,
+      "m2_renderer_latent_l1_full": 0.017258428037166595,
+      "m2_visible_token_fraction": 0.9833333333333333,
+      "m2_confidence_mean": 0.9750000238418579,
+      "horizons": [
+        {
+          "rgb_horizon": 4,
+          "copy_decoded_psnr": 6.563665390014648,
+          "m1_renderer_decoded_psnr": 21.309810638427734,
+          "m2_renderer_decoded_psnr": 21.309810638427734
+        },
+        {
+          "rgb_horizon": 8,
+          "copy_decoded_psnr": 5.519473075866699,
+          "m1_renderer_decoded_psnr": 18.695566177368164,
+          "m2_renderer_decoded_psnr": 18.695566177368164
+        },
+        {
+          "rgb_horizon": 12,
+          "copy_decoded_psnr": 5.354953289031982,
+          "m1_renderer_decoded_psnr": 17.182279586791992,
+          "m2_renderer_decoded_psnr": 17.182279586791992
+        }
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "scenario": "horizontal_half_cells",
+      "target_pixel_shift_at_h12": [
+        12,
+        0
+      ],
+      "copy_latent_l1_full": 0.203125,
+      "m1_renderer_latent_l1_full": 0.08440931886434555,
+      "m2_renderer_latent_l1_full": 0.12003029882907867,
+      "m2_visible_token_fraction": 0.9916666666666667,
+      "m2_confidence_mean": 0.7583333253860474,
+      "horizons": [
+        {
+          "rgb_horizon": 4,
+          "copy_decoded_psnr": 9.144136428833008,
+          "m1_renderer_decoded_psnr": 12.287713050842285,
+          "m2_renderer_decoded_psnr": 9.742620468139648
+        },
+        {
+          "rgb_horizon": 8,
+          "copy_decoded_psnr": 6.563665390014648,
+          "m1_renderer_decoded_psnr": 21.309810638427734,
+          "m2_renderer_decoded_psnr": 21.309810638427734
+        },
+        {
+          "rgb_horizon": 12,
+          "copy_decoded_psnr": 5.566873550415039,
+          "m1_renderer_decoded_psnr": 11.951835632324219,
+          "m2_renderer_decoded_psnr": 8.024017333984375
+        }
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "scenario": "vertical_half_cells",
+      "target_pixel_shift_at_h12": [
+        0,
+        12
+      ],
+      "copy_latent_l1_full": 0.271484375,
+      "m1_renderer_latent_l1_full": 0.12852533161640167,
+      "m2_renderer_latent_l1_full": 0.16940313577651978,
+      "m2_visible_token_fraction": 1.0,
+      "m2_confidence_mean": 0.75,
+      "horizons": [
+        {
+          "rgb_horizon": 4,
+          "copy_decoded_psnr": 6.177725315093994,
+          "m1_renderer_decoded_psnr": 8.01895523071289,
+          "m2_renderer_decoded_psnr": 6.8786773681640625
+        },
+        {
+          "rgb_horizon": 8,
+          "copy_decoded_psnr": 4.936898231506348,
+          "m1_renderer_decoded_psnr": 20.52166748046875,
+          "m2_renderer_decoded_psnr": 20.52166748046875
+        },
+        {
+          "rgb_horizon": 12,
+          "copy_decoded_psnr": 4.008322238922119,
+          "m1_renderer_decoded_psnr": 7.892213344573975,
+          "m2_renderer_decoded_psnr": 5.342097282409668
+        }
+      ]
+    }
+  ]
+}

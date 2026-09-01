@@ -1,0 +1,3019 @@
+{
+  "schema_version": 1,
+  "stage": "RGB intrinsics and PnP sensitivity ablation",
+  "created_at": "2026-09-01T10:08:57.173712+00:00",
+  "repository": {
+    "commit": "b76162efb8fa07bf4d5f3023d66ead9fc2c14830",
+    "dirty": true
+  },
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "pair_count": 25,
+  "camera_models": [
+    "source_frame_k",
+    "target_frame_k_noncausal",
+    "scene_pair_median_k"
+  ],
+  "metric_protocol": "Warp and Copy L1 use exactly the same projected-valid mask; holes use source Copy only for the composite PSNR.",
+  "rows": [
+    {
+      "pair": {
+        "scene": "game2_center",
+        "source": "game2_center__frames__frame_000000",
+        "target": "game2_center__frames__frame_000008"
+      },
+      "camera_model": "source_frame_k",
+      "source_keypoints": 2036,
+      "target_keypoints": 2045,
+      "ratio_matches": 761,
+      "valid_correspondences": 721,
+      "inliers": 593,
+      "inlier_ratio": 0.8224687933425797,
+      "median_reprojection_px": 0.5126055479049683,
+      "p95_reprojection_px": 2.2927024364471436,
+      "translation_norm_teacher_units": 0.026427023112773895,
+      "rotation_degrees": 0.5532006621360779,
+      "coverage": 0.892991840839386,
+      "warp_rgb_l1_valid": 0.06646978110074997,
+      "copy_rgb_l1_same_valid": 0.06342020630836487,
+      "copy_psnr_full": 18.462411880493164,
+      "composite_psnr_full": 18.190265655517578,
+      "intrinsics_normalized": [
+        [
+          0.938899576663971,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.938899576663971,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_center",
+        "source": "game2_center__frames__frame_000000",
+        "target": "game2_center__frames__frame_000008"
+      },
+      "camera_model": "target_frame_k_noncausal",
+      "source_keypoints": 2036,
+      "target_keypoints": 2045,
+      "ratio_matches": 761,
+      "valid_correspondences": 721,
+      "inliers": 581,
+      "inlier_ratio": 0.8058252427184466,
+      "median_reprojection_px": 0.6253593564033508,
+      "p95_reprojection_px": 2.269273519515991,
+      "translation_norm_teacher_units": 0.2718565762042999,
+      "rotation_degrees": 0.22899729013442993,
+      "coverage": 0.8876613974571228,
+      "warp_rgb_l1_valid": 0.07091978937387466,
+      "copy_rgb_l1_same_valid": 0.06299062818288803,
+      "copy_psnr_full": 18.462411880493164,
+      "composite_psnr_full": 17.705366134643555,
+      "intrinsics_normalized": [
+        [
+          1.0315436124801636,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.0315436124801636,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_center",
+        "source": "game2_center__frames__frame_000000",
+        "target": "game2_center__frames__frame_000008"
+      },
+      "camera_model": "scene_pair_median_k",
+      "source_keypoints": 2036,
+      "target_keypoints": 2045,
+      "ratio_matches": 761,
+      "valid_correspondences": 721,
+      "inliers": 564,
+      "inlier_ratio": 0.782246879334258,
+      "median_reprojection_px": 0.873720109462738,
+      "p95_reprojection_px": 2.186526298522949,
+      "translation_norm_teacher_units": 0.476124107837677,
+      "rotation_degrees": 0.6892703771591187,
+      "coverage": 0.87457275390625,
+      "warp_rgb_l1_valid": 0.08771353214979172,
+      "copy_rgb_l1_same_valid": 0.06255122274160385,
+      "copy_psnr_full": 18.462411880493164,
+      "composite_psnr_full": 16.377628326416016,
+      "intrinsics_normalized": [
+        [
+          1.1009819507598877,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.1009819507598877,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_center",
+        "source": "game2_center__frames__frame_000060",
+        "target": "game2_center__frames__frame_000068"
+      },
+      "camera_model": "source_frame_k",
+      "source_keypoints": 1981,
+      "target_keypoints": 1888,
+      "ratio_matches": 650,
+      "valid_correspondences": 641,
+      "inliers": 509,
+      "inlier_ratio": 0.7940717628705148,
+      "median_reprojection_px": 0.4467376470565796,
+      "p95_reprojection_px": 1.4984490871429443,
+      "translation_norm_teacher_units": 0.011646672151982784,
+      "rotation_degrees": 0.34717920422554016,
+      "coverage": 0.94891357421875,
+      "warp_rgb_l1_valid": 0.07566046714782715,
+      "copy_rgb_l1_same_valid": 0.07466322928667068,
+      "copy_psnr_full": 16.73918914794922,
+      "composite_psnr_full": 16.678848266601562,
+      "intrinsics_normalized": [
+        [
+          0.9773116707801819,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.9773116707801819,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_center",
+        "source": "game2_center__frames__frame_000060",
+        "target": "game2_center__frames__frame_000068"
+      },
+      "camera_model": "target_frame_k_noncausal",
+      "source_keypoints": 1981,
+      "target_keypoints": 1888,
+      "ratio_matches": 650,
+      "valid_correspondences": 641,
+      "inliers": 508,
+      "inlier_ratio": 0.7925117004680188,
+      "median_reprojection_px": 0.4820473790168762,
+      "p95_reprojection_px": 1.5294928550720215,
+      "translation_norm_teacher_units": 0.18559154868125916,
+      "rotation_degrees": 0.2755363881587982,
+      "coverage": 0.9468926191329956,
+      "warp_rgb_l1_valid": 0.07553496211767197,
+      "copy_rgb_l1_same_valid": 0.07480350881814957,
+      "copy_psnr_full": 16.73918914794922,
+      "composite_psnr_full": 16.70880889892578,
+      "intrinsics_normalized": [
+        [
+          0.8782588839530945,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.8782588839530945,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_center",
+        "source": "game2_center__frames__frame_000060",
+        "target": "game2_center__frames__frame_000068"
+      },
+      "camera_model": "scene_pair_median_k",
+      "source_keypoints": 1981,
+      "target_keypoints": 1888,
+      "ratio_matches": 650,
+      "valid_correspondences": 641,
+      "inliers": 501,
+      "inlier_ratio": 0.781591263650546,
+      "median_reprojection_px": 0.5448185801506042,
+      "p95_reprojection_px": 1.5601059198379517,
+      "translation_norm_teacher_units": 0.2401072233915329,
+      "rotation_degrees": 0.5760728716850281,
+      "coverage": 0.9423760175704956,
+      "warp_rgb_l1_valid": 0.07945215702056885,
+      "copy_rgb_l1_same_valid": 0.07450078427791595,
+      "copy_psnr_full": 16.73918914794922,
+      "composite_psnr_full": 16.386598587036133,
+      "intrinsics_normalized": [
+        [
+          1.1009819507598877,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.1009819507598877,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_center",
+        "source": "game2_center__frames__frame_000180",
+        "target": "game2_center__frames__frame_000188"
+      },
+      "camera_model": "source_frame_k",
+      "source_keypoints": 2540,
+      "target_keypoints": 2597,
+      "ratio_matches": 1072,
+      "valid_correspondences": 1072,
+      "inliers": 923,
+      "inlier_ratio": 0.8610074626865671,
+      "median_reprojection_px": 0.4975314438343048,
+      "p95_reprojection_px": 1.9531545639038086,
+      "translation_norm_teacher_units": 0.003933128900825977,
+      "rotation_degrees": 0.07401873916387558,
+      "coverage": 1.0,
+      "warp_rgb_l1_valid": 0.04361611232161522,
+      "copy_rgb_l1_same_valid": 0.04361611232161522,
+      "copy_psnr_full": 20.749752044677734,
+      "composite_psnr_full": 20.749752044677734,
+      "intrinsics_normalized": [
+        [
+          1.245850920677185,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.245850920677185,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_center",
+        "source": "game2_center__frames__frame_000180",
+        "target": "game2_center__frames__frame_000188"
+      },
+      "camera_model": "target_frame_k_noncausal",
+      "source_keypoints": 2540,
+      "target_keypoints": 2597,
+      "ratio_matches": 1072,
+      "valid_correspondences": 1072,
+      "inliers": 924,
+      "inlier_ratio": 0.8619402985074627,
+      "median_reprojection_px": 0.5088420510292053,
+      "p95_reprojection_px": 1.9597777128219604,
+      "translation_norm_teacher_units": 0.08113520592451096,
+      "rotation_degrees": 0.09691328555345535,
+      "coverage": 1.0,
+      "warp_rgb_l1_valid": 0.04361611232161522,
+      "copy_rgb_l1_same_valid": 0.04361611232161522,
+      "copy_psnr_full": 20.749752044677734,
+      "composite_psnr_full": 20.749752044677734,
+      "intrinsics_normalized": [
+        [
+          1.2106268405914307,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.2106268405914307,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_center",
+        "source": "game2_center__frames__frame_000180",
+        "target": "game2_center__frames__frame_000188"
+      },
+      "camera_model": "scene_pair_median_k",
+      "source_keypoints": 2540,
+      "target_keypoints": 2597,
+      "ratio_matches": 1072,
+      "valid_correspondences": 1072,
+      "inliers": 922,
+      "inlier_ratio": 0.8600746268656716,
+      "median_reprojection_px": 0.5290595293045044,
+      "p95_reprojection_px": 1.9026297330856323,
+      "translation_norm_teacher_units": 0.33238255977630615,
+      "rotation_degrees": 0.19782349467277527,
+      "coverage": 0.999864399433136,
+      "warp_rgb_l1_valid": 0.04370648041367531,
+      "copy_rgb_l1_same_valid": 0.04361698031425476,
+      "copy_psnr_full": 20.749752044677734,
+      "composite_psnr_full": 20.72099494934082,
+      "intrinsics_normalized": [
+        [
+          1.1009819507598877,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.1009819507598877,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_center",
+        "source": "game2_center__frames__frame_000240",
+        "target": "game2_center__frames__frame_000248"
+      },
+      "camera_model": "source_frame_k",
+      "source_keypoints": 2664,
+      "target_keypoints": 2713,
+      "ratio_matches": 1163,
+      "valid_correspondences": 1163,
+      "inliers": 976,
+      "inlier_ratio": 0.8392089423903697,
+      "median_reprojection_px": 0.4599347412586212,
+      "p95_reprojection_px": 1.9274332523345947,
+      "translation_norm_teacher_units": 0.009697427973151207,
+      "rotation_degrees": 0.19179698824882507,
+      "coverage": 1.0,
+      "warp_rgb_l1_valid": 0.05150407925248146,
+      "copy_rgb_l1_same_valid": 0.05150407925248146,
+      "copy_psnr_full": 19.03146743774414,
+      "composite_psnr_full": 19.03146743774414,
+      "intrinsics_normalized": [
+        [
+          1.1704202890396118,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.1704202890396118,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_center",
+        "source": "game2_center__frames__frame_000240",
+        "target": "game2_center__frames__frame_000248"
+      },
+      "camera_model": "target_frame_k_noncausal",
+      "source_keypoints": 2664,
+      "target_keypoints": 2713,
+      "ratio_matches": 1163,
+      "valid_correspondences": 1163,
+      "inliers": 976,
+      "inlier_ratio": 0.8392089423903697,
+      "median_reprojection_px": 0.4783106744289398,
+      "p95_reprojection_px": 1.9202122688293457,
+      "translation_norm_teacher_units": 0.31358298659324646,
+      "rotation_degrees": 0.24389326572418213,
+      "coverage": 1.0,
+      "warp_rgb_l1_valid": 0.05150407925248146,
+      "copy_rgb_l1_same_valid": 0.05150407925248146,
+      "copy_psnr_full": 19.03146743774414,
+      "composite_psnr_full": 19.03146743774414,
+      "intrinsics_normalized": [
+        [
+          1.3046740293502808,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.3046740293502808,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_center",
+        "source": "game2_center__frames__frame_000240",
+        "target": "game2_center__frames__frame_000248"
+      },
+      "camera_model": "scene_pair_median_k",
+      "source_keypoints": 2664,
+      "target_keypoints": 2713,
+      "ratio_matches": 1163,
+      "valid_correspondences": 1163,
+      "inliers": 975,
+      "inlier_ratio": 0.8383490971625107,
+      "median_reprojection_px": 0.46211540699005127,
+      "p95_reprojection_px": 1.8862773180007935,
+      "translation_norm_teacher_units": 0.16073401272296906,
+      "rotation_degrees": 0.1678587794303894,
+      "coverage": 1.0,
+      "warp_rgb_l1_valid": 0.05150407925248146,
+      "copy_rgb_l1_same_valid": 0.05150407925248146,
+      "copy_psnr_full": 19.03146743774414,
+      "composite_psnr_full": 19.03146743774414,
+      "intrinsics_normalized": [
+        [
+          1.1009819507598877,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.1009819507598877,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_left",
+        "source": "game2_left__frames__frame_000000",
+        "target": "game2_left__frames__frame_000008"
+      },
+      "camera_model": "source_frame_k",
+      "source_keypoints": 1915,
+      "target_keypoints": 1978,
+      "ratio_matches": 839,
+      "valid_correspondences": 759,
+      "inliers": 632,
+      "inlier_ratio": 0.8326745718050066,
+      "median_reprojection_px": 0.45210912823677063,
+      "p95_reprojection_px": 1.0704541206359863,
+      "translation_norm_teacher_units": 0.003084957366809249,
+      "rotation_degrees": 0.03956468030810356,
+      "coverage": 0.8149753212928772,
+      "warp_rgb_l1_valid": 0.048888564109802246,
+      "copy_rgb_l1_same_valid": 0.048888564109802246,
+      "copy_psnr_full": 19.75518035888672,
+      "composite_psnr_full": 19.75518035888672,
+      "intrinsics_normalized": [
+        [
+          1.2637159824371338,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.2637159824371338,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_left",
+        "source": "game2_left__frames__frame_000000",
+        "target": "game2_left__frames__frame_000008"
+      },
+      "camera_model": "target_frame_k_noncausal",
+      "source_keypoints": 1915,
+      "target_keypoints": 1978,
+      "ratio_matches": 839,
+      "valid_correspondences": 759,
+      "inliers": 628,
+      "inlier_ratio": 0.8274044795783926,
+      "median_reprojection_px": 0.4542350769042969,
+      "p95_reprojection_px": 1.063482403755188,
+      "translation_norm_teacher_units": 0.1272992342710495,
+      "rotation_degrees": 0.21306245028972626,
+      "coverage": 0.8125407099723816,
+      "warp_rgb_l1_valid": 0.04900486394762993,
+      "copy_rgb_l1_same_valid": 0.04894305393099785,
+      "copy_psnr_full": 19.75518035888672,
+      "composite_psnr_full": 19.75934410095215,
+      "intrinsics_normalized": [
+        [
+          1.227618932723999,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.227618932723999,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_left",
+        "source": "game2_left__frames__frame_000000",
+        "target": "game2_left__frames__frame_000008"
+      },
+      "camera_model": "scene_pair_median_k",
+      "source_keypoints": 1915,
+      "target_keypoints": 1978,
+      "ratio_matches": 839,
+      "valid_correspondences": 759,
+      "inliers": 631,
+      "inlier_ratio": 0.8313570487483531,
+      "median_reprojection_px": 0.8687748908996582,
+      "p95_reprojection_px": 2.0041801929473877,
+      "translation_norm_teacher_units": 1.1858570575714111,
+      "rotation_degrees": 1.6010777950286865,
+      "coverage": 0.7824503779411316,
+      "warp_rgb_l1_valid": 0.0694715678691864,
+      "copy_rgb_l1_same_valid": 0.04835699498653412,
+      "copy_psnr_full": 19.75518035888672,
+      "composite_psnr_full": 17.785846710205078,
+      "intrinsics_normalized": [
+        [
+          1.6020296812057495,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.6020296812057495,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_left",
+        "source": "game2_left__frames__frame_000060",
+        "target": "game2_left__frames__frame_000068"
+      },
+      "camera_model": "source_frame_k",
+      "source_keypoints": 1713,
+      "target_keypoints": 1700,
+      "ratio_matches": 705,
+      "valid_correspondences": 664,
+      "inliers": 542,
+      "inlier_ratio": 0.8162650602409639,
+      "median_reprojection_px": 0.4300778806209564,
+      "p95_reprojection_px": 1.2874096632003784,
+      "translation_norm_teacher_units": 0.008432086557149887,
+      "rotation_degrees": 0.23903107643127441,
+      "coverage": 0.8251139521598816,
+      "warp_rgb_l1_valid": 0.05366741120815277,
+      "copy_rgb_l1_same_valid": 0.05366741120815277,
+      "copy_psnr_full": 20.209304809570312,
+      "composite_psnr_full": 20.209304809570312,
+      "intrinsics_normalized": [
+        [
+          1.1821496486663818,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.1821496486663818,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_left",
+        "source": "game2_left__frames__frame_000060",
+        "target": "game2_left__frames__frame_000068"
+      },
+      "camera_model": "target_frame_k_noncausal",
+      "source_keypoints": 1713,
+      "target_keypoints": 1700,
+      "ratio_matches": 705,
+      "valid_correspondences": 664,
+      "inliers": 541,
+      "inlier_ratio": 0.8147590361445783,
+      "median_reprojection_px": 0.44136425852775574,
+      "p95_reprojection_px": 1.290597677230835,
+      "translation_norm_teacher_units": 0.07120136171579361,
+      "rotation_degrees": 0.2960752546787262,
+      "coverage": 0.824998676776886,
+      "warp_rgb_l1_valid": 0.05367417261004448,
+      "copy_rgb_l1_same_valid": 0.05367336422204971,
+      "copy_psnr_full": 20.209304809570312,
+      "composite_psnr_full": 20.20929718017578,
+      "intrinsics_normalized": [
+        [
+          1.1390849351882935,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.1390849351882935,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_left",
+        "source": "game2_left__frames__frame_000060",
+        "target": "game2_left__frames__frame_000068"
+      },
+      "camera_model": "scene_pair_median_k",
+      "source_keypoints": 1713,
+      "target_keypoints": 1700,
+      "ratio_matches": 705,
+      "valid_correspondences": 664,
+      "inliers": 524,
+      "inlier_ratio": 0.7891566265060241,
+      "median_reprojection_px": 0.6760100722312927,
+      "p95_reprojection_px": 1.5507557392120361,
+      "translation_norm_teacher_units": 0.6913804411888123,
+      "rotation_degrees": 0.730613648891449,
+      "coverage": 0.805589497089386,
+      "warp_rgb_l1_valid": 0.06134534627199173,
+      "copy_rgb_l1_same_valid": 0.05369556322693825,
+      "copy_psnr_full": 20.209304809570312,
+      "composite_psnr_full": 19.57217788696289,
+      "intrinsics_normalized": [
+        [
+          1.6020296812057495,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.6020296812057495,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_left",
+        "source": "game2_left__frames__frame_000120",
+        "target": "game2_left__frames__frame_000128"
+      },
+      "camera_model": "source_frame_k",
+      "source_keypoints": 1913,
+      "target_keypoints": 2083,
+      "ratio_matches": 648,
+      "valid_correspondences": 648,
+      "inliers": 433,
+      "inlier_ratio": 0.6682098765432098,
+      "median_reprojection_px": 0.5636261701583862,
+      "p95_reprojection_px": 2.0098154544830322,
+      "translation_norm_teacher_units": 0.11997587978839874,
+      "rotation_degrees": 0.44936954975128174,
+      "coverage": 0.8795166015625,
+      "warp_rgb_l1_valid": 0.08332513272762299,
+      "copy_rgb_l1_same_valid": 0.16009144484996796,
+      "copy_psnr_full": 11.939069747924805,
+      "composite_psnr_full": 14.206637382507324,
+      "intrinsics_normalized": [
+        [
+          1.5827641487121582,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.5827641487121582,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_left",
+        "source": "game2_left__frames__frame_000120",
+        "target": "game2_left__frames__frame_000128"
+      },
+      "camera_model": "target_frame_k_noncausal",
+      "source_keypoints": 1913,
+      "target_keypoints": 2083,
+      "ratio_matches": 648,
+      "valid_correspondences": 648,
+      "inliers": 433,
+      "inlier_ratio": 0.6682098765432098,
+      "median_reprojection_px": 0.5651441216468811,
+      "p95_reprojection_px": 2.008838176727295,
+      "translation_norm_teacher_units": 0.2654758095741272,
+      "rotation_degrees": 0.500459611415863,
+      "coverage": 0.879197895526886,
+      "warp_rgb_l1_valid": 0.08328736573457718,
+      "copy_rgb_l1_same_valid": 0.16012579202651978,
+      "copy_psnr_full": 11.939069747924805,
+      "composite_psnr_full": 14.212568283081055,
+      "intrinsics_normalized": [
+        [
+          1.7044010162353516,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.7044010162353516,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_left",
+        "source": "game2_left__frames__frame_000120",
+        "target": "game2_left__frames__frame_000128"
+      },
+      "camera_model": "scene_pair_median_k",
+      "source_keypoints": 1913,
+      "target_keypoints": 2083,
+      "ratio_matches": 648,
+      "valid_correspondences": 648,
+      "inliers": 432,
+      "inlier_ratio": 0.6666666666666666,
+      "median_reprojection_px": 0.5626888275146484,
+      "p95_reprojection_px": 1.9794409275054932,
+      "translation_norm_teacher_units": 0.14304517209529877,
+      "rotation_degrees": 0.4261256456375122,
+      "coverage": 0.8789198398590088,
+      "warp_rgb_l1_valid": 0.08322431892156601,
+      "copy_rgb_l1_same_valid": 0.16010263562202454,
+      "copy_psnr_full": 11.939069747924805,
+      "composite_psnr_full": 14.217076301574707,
+      "intrinsics_normalized": [
+        [
+          1.6020296812057495,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.6020296812057495,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_left",
+        "source": "game2_left__frames__frame_000180",
+        "target": "game2_left__frames__frame_000188"
+      },
+      "camera_model": "source_frame_k",
+      "source_keypoints": 2447,
+      "target_keypoints": 2508,
+      "ratio_matches": 1106,
+      "valid_correspondences": 1106,
+      "inliers": 942,
+      "inlier_ratio": 0.8517179023508138,
+      "median_reprojection_px": 0.4935016930103302,
+      "p95_reprojection_px": 1.8960756063461304,
+      "translation_norm_teacher_units": 0.008725346066057682,
+      "rotation_degrees": 0.11869405955076218,
+      "coverage": 1.0,
+      "warp_rgb_l1_valid": 0.04131852090358734,
+      "copy_rgb_l1_same_valid": 0.04131852090358734,
+      "copy_psnr_full": 21.02786636352539,
+      "composite_psnr_full": 21.02786636352539,
+      "intrinsics_normalized": [
+        [
+          1.6212952136993408,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.6212952136993408,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_left",
+        "source": "game2_left__frames__frame_000180",
+        "target": "game2_left__frames__frame_000188"
+      },
+      "camera_model": "target_frame_k_noncausal",
+      "source_keypoints": 2447,
+      "target_keypoints": 2508,
+      "ratio_matches": 1106,
+      "valid_correspondences": 1106,
+      "inliers": 947,
+      "inlier_ratio": 0.85623869801085,
+      "median_reprojection_px": 0.533070981502533,
+      "p95_reprojection_px": 1.8985172510147095,
+      "translation_norm_teacher_units": 0.9898044466972351,
+      "rotation_degrees": 0.6458899974822998,
+      "coverage": 0.9990302324295044,
+      "warp_rgb_l1_valid": 0.04179247096180916,
+      "copy_rgb_l1_same_valid": 0.04133040830492973,
+      "copy_psnr_full": 21.02786636352539,
+      "composite_psnr_full": 20.919906616210938,
+      "intrinsics_normalized": [
+        [
+          2.037184000015259,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          2.037184000015259,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_left",
+        "source": "game2_left__frames__frame_000180",
+        "target": "game2_left__frames__frame_000188"
+      },
+      "camera_model": "scene_pair_median_k",
+      "source_keypoints": 2447,
+      "target_keypoints": 2508,
+      "ratio_matches": 1106,
+      "valid_correspondences": 1106,
+      "inliers": 941,
+      "inlier_ratio": 0.8508137432188065,
+      "median_reprojection_px": 0.4949354827404022,
+      "p95_reprojection_px": 1.8908287286758423,
+      "translation_norm_teacher_units": 0.04810790345072746,
+      "rotation_degrees": 0.09691328555345535,
+      "coverage": 1.0,
+      "warp_rgb_l1_valid": 0.04131852090358734,
+      "copy_rgb_l1_same_valid": 0.04131852090358734,
+      "copy_psnr_full": 21.02786636352539,
+      "composite_psnr_full": 21.02786636352539,
+      "intrinsics_normalized": [
+        [
+          1.6020296812057495,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.6020296812057495,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_left",
+        "source": "game2_left__frames__frame_000240",
+        "target": "game2_left__frames__frame_000248"
+      },
+      "camera_model": "source_frame_k",
+      "source_keypoints": 2606,
+      "target_keypoints": 2585,
+      "ratio_matches": 1212,
+      "valid_correspondences": 1212,
+      "inliers": 960,
+      "inlier_ratio": 0.7920792079207921,
+      "median_reprojection_px": 0.5015655755996704,
+      "p95_reprojection_px": 2.1417593955993652,
+      "translation_norm_teacher_units": 0.007966517470777035,
+      "rotation_degrees": 0.06852804124355316,
+      "coverage": 0.9999118447303772,
+      "warp_rgb_l1_valid": 0.049868181347846985,
+      "copy_rgb_l1_same_valid": 0.049868181347846985,
+      "copy_psnr_full": 19.5620174407959,
+      "composite_psnr_full": 19.5620174407959,
+      "intrinsics_normalized": [
+        [
+          2.1812148094177246,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          2.1812148094177246,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_left",
+        "source": "game2_left__frames__frame_000240",
+        "target": "game2_left__frames__frame_000248"
+      },
+      "camera_model": "target_frame_k_noncausal",
+      "source_keypoints": 2606,
+      "target_keypoints": 2585,
+      "ratio_matches": 1212,
+      "valid_correspondences": 1212,
+      "inliers": 960,
+      "inlier_ratio": 0.7920792079207921,
+      "median_reprojection_px": 0.49691325426101685,
+      "p95_reprojection_px": 2.1339547634124756,
+      "translation_norm_teacher_units": 0.23383325338363647,
+      "rotation_degrees": 0.0,
+      "coverage": 0.9999118447303772,
+      "warp_rgb_l1_valid": 0.049868181347846985,
+      "copy_rgb_l1_same_valid": 0.049868181347846985,
+      "copy_psnr_full": 19.5620174407959,
+      "composite_psnr_full": 19.5620174407959,
+      "intrinsics_normalized": [
+        [
+          2.118551731109619,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          2.118551731109619,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_left",
+        "source": "game2_left__frames__frame_000240",
+        "target": "game2_left__frames__frame_000248"
+      },
+      "camera_model": "scene_pair_median_k",
+      "source_keypoints": 2606,
+      "target_keypoints": 2585,
+      "ratio_matches": 1212,
+      "valid_correspondences": 1212,
+      "inliers": 962,
+      "inlier_ratio": 0.7937293729372937,
+      "median_reprojection_px": 0.5207493901252747,
+      "p95_reprojection_px": 2.1510682106018066,
+      "translation_norm_teacher_units": 2.1675639152526855,
+      "rotation_degrees": 0.47229820489883423,
+      "coverage": 0.998216450214386,
+      "warp_rgb_l1_valid": 0.050133220851421356,
+      "copy_rgb_l1_same_valid": 0.04990909993648529,
+      "copy_psnr_full": 19.5620174407959,
+      "composite_psnr_full": 19.546855926513672,
+      "intrinsics_normalized": [
+        [
+          1.6020296812057495,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.6020296812057495,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_mid_left",
+        "source": "game2_mid_left__frames__frame_000000",
+        "target": "game2_mid_left__frames__frame_000008"
+      },
+      "camera_model": "source_frame_k",
+      "source_keypoints": 1976,
+      "target_keypoints": 1963,
+      "ratio_matches": 776,
+      "valid_correspondences": 717,
+      "inliers": 604,
+      "inlier_ratio": 0.8423988842398884,
+      "median_reprojection_px": 0.5168993473052979,
+      "p95_reprojection_px": 1.7972724437713623,
+      "translation_norm_teacher_units": 0.024928316473960876,
+      "rotation_degrees": 0.35827401280403137,
+      "coverage": 0.8512641191482544,
+      "warp_rgb_l1_valid": 0.06137092038989067,
+      "copy_rgb_l1_same_valid": 0.05942237004637718,
+      "copy_psnr_full": 18.84229850769043,
+      "composite_psnr_full": 18.6533260345459,
+      "intrinsics_normalized": [
+        [
+          1.2052894830703735,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.2052894830703735,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_mid_left",
+        "source": "game2_mid_left__frames__frame_000000",
+        "target": "game2_mid_left__frames__frame_000008"
+      },
+      "camera_model": "target_frame_k_noncausal",
+      "source_keypoints": 1976,
+      "target_keypoints": 1963,
+      "ratio_matches": 776,
+      "valid_correspondences": 717,
+      "inliers": 602,
+      "inlier_ratio": 0.8396094839609484,
+      "median_reprojection_px": 0.5780219435691833,
+      "p95_reprojection_px": 1.7548956871032715,
+      "translation_norm_teacher_units": 0.15103666484355927,
+      "rotation_degrees": 0.4130682945251465,
+      "coverage": 0.8450859785079956,
+      "warp_rgb_l1_valid": 0.06584625691175461,
+      "copy_rgb_l1_same_valid": 0.05912444368004799,
+      "copy_psnr_full": 18.84229850769043,
+      "composite_psnr_full": 18.182533264160156,
+      "intrinsics_normalized": [
+        [
+          1.160530686378479,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.160530686378479,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_mid_left",
+        "source": "game2_mid_left__frames__frame_000000",
+        "target": "game2_mid_left__frames__frame_000008"
+      },
+      "camera_model": "scene_pair_median_k",
+      "source_keypoints": 1976,
+      "target_keypoints": 1963,
+      "ratio_matches": 776,
+      "valid_correspondences": 717,
+      "inliers": 604,
+      "inlier_ratio": 0.8423988842398884,
+      "median_reprojection_px": 0.5229007005691528,
+      "p95_reprojection_px": 1.8311541080474854,
+      "translation_norm_teacher_units": 0.09534571319818497,
+      "rotation_degrees": 0.3936643600463867,
+      "coverage": 0.8488091230392456,
+      "warp_rgb_l1_valid": 0.06087398901581764,
+      "copy_rgb_l1_same_valid": 0.059341322630643845,
+      "copy_psnr_full": 18.84229850769043,
+      "composite_psnr_full": 18.77356719970703,
+      "intrinsics_normalized": [
+        [
+          1.236053228378296,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.236053228378296,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_mid_left",
+        "source": "game2_mid_left__frames__frame_000060",
+        "target": "game2_mid_left__frames__frame_000068"
+      },
+      "camera_model": "source_frame_k",
+      "source_keypoints": 1833,
+      "target_keypoints": 1763,
+      "ratio_matches": 687,
+      "valid_correspondences": 641,
+      "inliers": 514,
+      "inlier_ratio": 0.8018720748829953,
+      "median_reprojection_px": 0.4442324638366699,
+      "p95_reprojection_px": 1.0089490413665771,
+      "translation_norm_teacher_units": 0.003264938946813345,
+      "rotation_degrees": 0.06852804124355316,
+      "coverage": 0.8490261435508728,
+      "warp_rgb_l1_valid": 0.07364757359027863,
+      "copy_rgb_l1_same_valid": 0.07364757359027863,
+      "copy_psnr_full": 17.135799407958984,
+      "composite_psnr_full": 17.135799407958984,
+      "intrinsics_normalized": [
+        [
+          1.0876916646957397,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.0876916646957397,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_mid_left",
+        "source": "game2_mid_left__frames__frame_000060",
+        "target": "game2_mid_left__frames__frame_000068"
+      },
+      "camera_model": "target_frame_k_noncausal",
+      "source_keypoints": 1833,
+      "target_keypoints": 1763,
+      "ratio_matches": 687,
+      "valid_correspondences": 641,
+      "inliers": 512,
+      "inlier_ratio": 0.7987519500780031,
+      "median_reprojection_px": 0.4947124719619751,
+      "p95_reprojection_px": 1.1890010833740234,
+      "translation_norm_teacher_units": 0.15692675113677979,
+      "rotation_degrees": 0.25944316387176514,
+      "coverage": 0.8412543535232544,
+      "warp_rgb_l1_valid": 0.07635849714279175,
+      "copy_rgb_l1_same_valid": 0.0734298899769783,
+      "copy_psnr_full": 17.135799407958984,
+      "composite_psnr_full": 16.964954376220703,
+      "intrinsics_normalized": [
+        [
+          1.0250827074050903,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.0250827074050903,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_mid_left",
+        "source": "game2_mid_left__frames__frame_000060",
+        "target": "game2_mid_left__frames__frame_000068"
+      },
+      "camera_model": "scene_pair_median_k",
+      "source_keypoints": 1833,
+      "target_keypoints": 1763,
+      "ratio_matches": 687,
+      "valid_correspondences": 641,
+      "inliers": 510,
+      "inlier_ratio": 0.7956318252730109,
+      "median_reprojection_px": 0.7307701110839844,
+      "p95_reprojection_px": 1.620528221130371,
+      "translation_norm_teacher_units": 0.3732905387878418,
+      "rotation_degrees": 0.6318004727363586,
+      "coverage": 0.8303019404411316,
+      "warp_rgb_l1_valid": 0.08183519542217255,
+      "copy_rgb_l1_same_valid": 0.07361198961734772,
+      "copy_psnr_full": 17.135799407958984,
+      "composite_psnr_full": 16.73265838623047,
+      "intrinsics_normalized": [
+        [
+          1.236053228378296,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.236053228378296,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_mid_left",
+        "source": "game2_mid_left__frames__frame_000180",
+        "target": "game2_mid_left__frames__frame_000188"
+      },
+      "camera_model": "source_frame_k",
+      "source_keypoints": 2591,
+      "target_keypoints": 2638,
+      "ratio_matches": 1090,
+      "valid_correspondences": 1090,
+      "inliers": 935,
+      "inlier_ratio": 0.8577981651376146,
+      "median_reprojection_px": 0.47416290640830994,
+      "p95_reprojection_px": 1.8441221714019775,
+      "translation_norm_teacher_units": 0.015803074464201927,
+      "rotation_degrees": 0.2755363881587982,
+      "coverage": 1.0,
+      "warp_rgb_l1_valid": 0.04464704170823097,
+      "copy_rgb_l1_same_valid": 0.04464704170823097,
+      "copy_psnr_full": 20.6646728515625,
+      "composite_psnr_full": 20.6646728515625,
+      "intrinsics_normalized": [
+        [
+          1.4822784662246704,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.4822784662246704,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_mid_left",
+        "source": "game2_mid_left__frames__frame_000180",
+        "target": "game2_mid_left__frames__frame_000188"
+      },
+      "camera_model": "target_frame_k_noncausal",
+      "source_keypoints": 2591,
+      "target_keypoints": 2638,
+      "ratio_matches": 1090,
+      "valid_correspondences": 1090,
+      "inliers": 935,
+      "inlier_ratio": 0.8577981651376146,
+      "median_reprojection_px": 0.47396329045295715,
+      "p95_reprojection_px": 1.8442498445510864,
+      "translation_norm_teacher_units": 0.016146216541528702,
+      "rotation_degrees": 0.2769530415534973,
+      "coverage": 1.0,
+      "warp_rgb_l1_valid": 0.04464704170823097,
+      "copy_rgb_l1_same_valid": 0.04464704170823097,
+      "copy_psnr_full": 20.6646728515625,
+      "composite_psnr_full": 20.6646728515625,
+      "intrinsics_normalized": [
+        [
+          1.4842547178268433,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.4842547178268433,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_mid_left",
+        "source": "game2_mid_left__frames__frame_000180",
+        "target": "game2_mid_left__frames__frame_000188"
+      },
+      "camera_model": "scene_pair_median_k",
+      "source_keypoints": 2591,
+      "target_keypoints": 2638,
+      "ratio_matches": 1090,
+      "valid_correspondences": 1090,
+      "inliers": 934,
+      "inlier_ratio": 0.8568807339449541,
+      "median_reprojection_px": 0.49939537048339844,
+      "p95_reprojection_px": 1.8120925426483154,
+      "translation_norm_teacher_units": 0.5214905738830566,
+      "rotation_degrees": 0.1251145303249359,
+      "coverage": 0.9988674521446228,
+      "warp_rgb_l1_valid": 0.044740788638591766,
+      "copy_rgb_l1_same_valid": 0.04466398060321808,
+      "copy_psnr_full": 20.6646728515625,
+      "composite_psnr_full": 20.65033721923828,
+      "intrinsics_normalized": [
+        [
+          1.236053228378296,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.236053228378296,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_mid_left",
+        "source": "game2_mid_left__frames__frame_000240",
+        "target": "game2_mid_left__frames__frame_000248"
+      },
+      "camera_model": "source_frame_k",
+      "source_keypoints": 2686,
+      "target_keypoints": 2658,
+      "ratio_matches": 1157,
+      "valid_correspondences": 1157,
+      "inliers": 969,
+      "inlier_ratio": 0.8375108038029386,
+      "median_reprojection_px": 0.4818546772003174,
+      "p95_reprojection_px": 2.1570675373077393,
+      "translation_norm_teacher_units": 0.005175718571990728,
+      "rotation_degrees": 0.09691328555345535,
+      "coverage": 1.0,
+      "warp_rgb_l1_valid": 0.05042152851819992,
+      "copy_rgb_l1_same_valid": 0.05042152851819992,
+      "copy_psnr_full": 19.419605255126953,
+      "composite_psnr_full": 19.419605255126953,
+      "intrinsics_normalized": [
+        [
+          1.3199585676193237,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.3199585676193237,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_mid_left",
+        "source": "game2_mid_left__frames__frame_000240",
+        "target": "game2_mid_left__frames__frame_000248"
+      },
+      "camera_model": "target_frame_k_noncausal",
+      "source_keypoints": 2686,
+      "target_keypoints": 2658,
+      "ratio_matches": 1157,
+      "valid_correspondences": 1157,
+      "inliers": 967,
+      "inlier_ratio": 0.8357821953327571,
+      "median_reprojection_px": 0.49435633420944214,
+      "p95_reprojection_px": 1.9626706838607788,
+      "translation_norm_teacher_units": 0.13380371034145355,
+      "rotation_degrees": 0.14803750813007355,
+      "coverage": 1.0,
+      "warp_rgb_l1_valid": 0.05042152851819992,
+      "copy_rgb_l1_same_valid": 0.05042152851819992,
+      "copy_psnr_full": 19.419605255126953,
+      "composite_psnr_full": 19.419605255126953,
+      "intrinsics_normalized": [
+        [
+          1.2668168544769287,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.2668168544769287,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game2_mid_left",
+        "source": "game2_mid_left__frames__frame_000240",
+        "target": "game2_mid_left__frames__frame_000248"
+      },
+      "camera_model": "scene_pair_median_k",
+      "source_keypoints": 2686,
+      "target_keypoints": 2658,
+      "ratio_matches": 1157,
+      "valid_correspondences": 1157,
+      "inliers": 967,
+      "inlier_ratio": 0.8357821953327571,
+      "median_reprojection_px": 0.4908182621002197,
+      "p95_reprojection_px": 2.0690677165985107,
+      "translation_norm_teacher_units": 0.2120894491672516,
+      "rotation_degrees": 0.18974561989307404,
+      "coverage": 1.0,
+      "warp_rgb_l1_valid": 0.05042152851819992,
+      "copy_rgb_l1_same_valid": 0.05042152851819992,
+      "copy_psnr_full": 19.419605255126953,
+      "composite_psnr_full": 19.419605255126953,
+      "intrinsics_normalized": [
+        [
+          1.236053228378296,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.236053228378296,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_center",
+        "source": "game3_center__frames__frame_000000",
+        "target": "game3_center__frames__frame_000008"
+      },
+      "camera_model": "source_frame_k",
+      "source_keypoints": 1982,
+      "target_keypoints": 1900,
+      "ratio_matches": 502,
+      "valid_correspondences": 491,
+      "inliers": 293,
+      "inlier_ratio": 0.5967413441955194,
+      "median_reprojection_px": 0.6594946384429932,
+      "p95_reprojection_px": 2.181523084640503,
+      "translation_norm_teacher_units": 0.08759088069200516,
+      "rotation_degrees": 1.2704157829284668,
+      "coverage": 0.9531453251838684,
+      "warp_rgb_l1_valid": 0.0869511067867279,
+      "copy_rgb_l1_same_valid": 0.08186370134353638,
+      "copy_psnr_full": 16.903186798095703,
+      "composite_psnr_full": 16.38775062561035,
+      "intrinsics_normalized": [
+        [
+          0.7875730991363525,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.7875730991363525,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_center",
+        "source": "game3_center__frames__frame_000000",
+        "target": "game3_center__frames__frame_000008"
+      },
+      "camera_model": "target_frame_k_noncausal",
+      "source_keypoints": 1982,
+      "target_keypoints": 1900,
+      "ratio_matches": 502,
+      "valid_correspondences": 491,
+      "inliers": 273,
+      "inlier_ratio": 0.5560081466395111,
+      "median_reprojection_px": 0.6753581762313843,
+      "p95_reprojection_px": 2.286926746368408,
+      "translation_norm_teacher_units": 0.2401522547006607,
+      "rotation_degrees": 1.1439789533615112,
+      "coverage": 0.9584418535232544,
+      "warp_rgb_l1_valid": 0.08493836224079132,
+      "copy_rgb_l1_same_valid": 0.08176126331090927,
+      "copy_psnr_full": 16.903186798095703,
+      "composite_psnr_full": 16.557743072509766,
+      "intrinsics_normalized": [
+        [
+          0.8361520767211914,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.8361520767211914,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_center",
+        "source": "game3_center__frames__frame_000000",
+        "target": "game3_center__frames__frame_000008"
+      },
+      "camera_model": "scene_pair_median_k",
+      "source_keypoints": 1982,
+      "target_keypoints": 1900,
+      "ratio_matches": 502,
+      "valid_correspondences": 491,
+      "inliers": 247,
+      "inlier_ratio": 0.5030549898167006,
+      "median_reprojection_px": 0.66529780626297,
+      "p95_reprojection_px": 2.688880681991577,
+      "translation_norm_teacher_units": 0.7072054147720337,
+      "rotation_degrees": 0.7370133996009827,
+      "coverage": 0.9335395097732544,
+      "warp_rgb_l1_valid": 0.09434403479099274,
+      "copy_rgb_l1_same_valid": 0.08229118585586548,
+      "copy_psnr_full": 16.903186798095703,
+      "composite_psnr_full": 16.019742965698242,
+      "intrinsics_normalized": [
+        [
+          0.9341450929641724,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.9341450929641724,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_center",
+        "source": "game3_center__frames__frame_000060",
+        "target": "game3_center__frames__frame_000068"
+      },
+      "camera_model": "source_frame_k",
+      "source_keypoints": 1798,
+      "target_keypoints": 1817,
+      "ratio_matches": 507,
+      "valid_correspondences": 507,
+      "inliers": 306,
+      "inlier_ratio": 0.6035502958579881,
+      "median_reprojection_px": 0.5338728427886963,
+      "p95_reprojection_px": 2.0503556728363037,
+      "translation_norm_teacher_units": 0.02009272761642933,
+      "rotation_degrees": 0.49018850922584534,
+      "coverage": 0.9915500283241272,
+      "warp_rgb_l1_valid": 0.07487120479345322,
+      "copy_rgb_l1_same_valid": 0.07656309008598328,
+      "copy_psnr_full": 16.772890090942383,
+      "composite_psnr_full": 16.8504581451416,
+      "intrinsics_normalized": [
+        [
+          0.709610641002655,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.709610641002655,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_center",
+        "source": "game3_center__frames__frame_000060",
+        "target": "game3_center__frames__frame_000068"
+      },
+      "camera_model": "target_frame_k_noncausal",
+      "source_keypoints": 1798,
+      "target_keypoints": 1817,
+      "ratio_matches": 507,
+      "valid_correspondences": 507,
+      "inliers": 307,
+      "inlier_ratio": 0.6055226824457594,
+      "median_reprojection_px": 0.5281170010566711,
+      "p95_reprojection_px": 2.182438373565674,
+      "translation_norm_teacher_units": 0.3983750343322754,
+      "rotation_degrees": 0.17913678288459778,
+      "coverage": 0.9932658076286316,
+      "warp_rgb_l1_valid": 0.07562120258808136,
+      "copy_rgb_l1_same_valid": 0.07683651149272919,
+      "copy_psnr_full": 16.772890090942383,
+      "composite_psnr_full": 16.74167251586914,
+      "intrinsics_normalized": [
+        [
+          0.8411751985549927,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.8411751985549927,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_center",
+        "source": "game3_center__frames__frame_000060",
+        "target": "game3_center__frames__frame_000068"
+      },
+      "camera_model": "scene_pair_median_k",
+      "source_keypoints": 1798,
+      "target_keypoints": 1817,
+      "ratio_matches": 507,
+      "valid_correspondences": 507,
+      "inliers": 311,
+      "inlier_ratio": 0.6134122287968442,
+      "median_reprojection_px": 0.5584928393363953,
+      "p95_reprojection_px": 2.2456138134002686,
+      "translation_norm_teacher_units": 0.6788080930709839,
+      "rotation_degrees": 0.46646198630332947,
+      "coverage": 0.988525390625,
+      "warp_rgb_l1_valid": 0.07615455985069275,
+      "copy_rgb_l1_same_valid": 0.07688123732805252,
+      "copy_psnr_full": 16.772890090942383,
+      "composite_psnr_full": 16.690757751464844,
+      "intrinsics_normalized": [
+        [
+          0.9341450929641724,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.9341450929641724,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_center",
+        "source": "game3_center__frames__frame_000120",
+        "target": "game3_center__frames__frame_000128"
+      },
+      "camera_model": "source_frame_k",
+      "source_keypoints": 1784,
+      "target_keypoints": 1678,
+      "ratio_matches": 461,
+      "valid_correspondences": 454,
+      "inliers": 367,
+      "inlier_ratio": 0.8083700440528634,
+      "median_reprojection_px": 0.8518423438072205,
+      "p95_reprojection_px": 1.7865947484970093,
+      "translation_norm_teacher_units": 0.04294075816869736,
+      "rotation_degrees": 0.6726033687591553,
+      "coverage": 0.9648640751838684,
+      "warp_rgb_l1_valid": 0.08627686649560928,
+      "copy_rgb_l1_same_valid": 0.0836600586771965,
+      "copy_psnr_full": 15.780506134033203,
+      "composite_psnr_full": 15.362042427062988,
+      "intrinsics_normalized": [
+        [
+          0.9619129300117493,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.9619129300117493,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_center",
+        "source": "game3_center__frames__frame_000120",
+        "target": "game3_center__frames__frame_000128"
+      },
+      "camera_model": "target_frame_k_noncausal",
+      "source_keypoints": 1784,
+      "target_keypoints": 1678,
+      "ratio_matches": 461,
+      "valid_correspondences": 454,
+      "inliers": 361,
+      "inlier_ratio": 0.7951541850220264,
+      "median_reprojection_px": 0.8737252950668335,
+      "p95_reprojection_px": 1.9742319583892822,
+      "translation_norm_teacher_units": 0.18529032170772552,
+      "rotation_degrees": 1.5917614698410034,
+      "coverage": 0.9574720859527588,
+      "warp_rgb_l1_valid": 0.092579685151577,
+      "copy_rgb_l1_same_valid": 0.08355644345283508,
+      "copy_psnr_full": 15.780506134033203,
+      "composite_psnr_full": 14.87436294555664,
+      "intrinsics_normalized": [
+        [
+          0.9063772559165955,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.9063772559165955,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_center",
+        "source": "game3_center__frames__frame_000120",
+        "target": "game3_center__frames__frame_000128"
+      },
+      "camera_model": "scene_pair_median_k",
+      "source_keypoints": 1784,
+      "target_keypoints": 1678,
+      "ratio_matches": 461,
+      "valid_correspondences": 454,
+      "inliers": 353,
+      "inlier_ratio": 0.7775330396475771,
+      "median_reprojection_px": 0.8899722099304199,
+      "p95_reprojection_px": 1.789004921913147,
+      "translation_norm_teacher_units": 0.07568404078483582,
+      "rotation_degrees": 0.6685181260108948,
+      "coverage": 0.9640231728553772,
+      "warp_rgb_l1_valid": 0.08959230035543442,
+      "copy_rgb_l1_same_valid": 0.0835641399025917,
+      "copy_psnr_full": 15.780506134033203,
+      "composite_psnr_full": 15.06885051727295,
+      "intrinsics_normalized": [
+        [
+          0.9341450929641724,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.9341450929641724,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_center",
+        "source": "game3_center__frames__frame_000180",
+        "target": "game3_center__frames__frame_000188"
+      },
+      "camera_model": "source_frame_k",
+      "source_keypoints": 1901,
+      "target_keypoints": 1880,
+      "ratio_matches": 623,
+      "valid_correspondences": 612,
+      "inliers": 442,
+      "inlier_ratio": 0.7222222222222222,
+      "median_reprojection_px": 1.1308295726776123,
+      "p95_reprojection_px": 2.4352452754974365,
+      "translation_norm_teacher_units": 0.07442118227481842,
+      "rotation_degrees": 0.8802672028541565,
+      "coverage": 0.9240993857383728,
+      "warp_rgb_l1_valid": 0.09052631258964539,
+      "copy_rgb_l1_same_valid": 0.08433808386325836,
+      "copy_psnr_full": 16.296703338623047,
+      "composite_psnr_full": 15.196891784667969,
+      "intrinsics_normalized": [
+        [
+          1.0505754947662354,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.0505754947662354,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_center",
+        "source": "game3_center__frames__frame_000180",
+        "target": "game3_center__frames__frame_000188"
+      },
+      "camera_model": "target_frame_k_noncausal",
+      "source_keypoints": 1901,
+      "target_keypoints": 1880,
+      "ratio_matches": 623,
+      "valid_correspondences": 612,
+      "inliers": 431,
+      "inlier_ratio": 0.704248366013072,
+      "median_reprojection_px": 1.1160602569580078,
+      "p95_reprojection_px": 2.4450464248657227,
+      "translation_norm_teacher_units": 0.26270902156829834,
+      "rotation_degrees": 0.8983103632926941,
+      "coverage": 0.92034912109375,
+      "warp_rgb_l1_valid": 0.09408009052276611,
+      "copy_rgb_l1_same_valid": 0.08425316214561462,
+      "copy_psnr_full": 16.296703338623047,
+      "composite_psnr_full": 14.977482795715332,
+      "intrinsics_normalized": [
+        [
+          1.1104416847229004,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.1104416847229004,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_center",
+        "source": "game3_center__frames__frame_000180",
+        "target": "game3_center__frames__frame_000188"
+      },
+      "camera_model": "scene_pair_median_k",
+      "source_keypoints": 1901,
+      "target_keypoints": 1880,
+      "ratio_matches": 623,
+      "valid_correspondences": 612,
+      "inliers": 441,
+      "inlier_ratio": 0.7205882352941176,
+      "median_reprojection_px": 1.1923425197601318,
+      "p95_reprojection_px": 2.322507858276367,
+      "translation_norm_teacher_units": 0.3750186264514923,
+      "rotation_degrees": 1.0989609956741333,
+      "coverage": 0.9169514775276184,
+      "warp_rgb_l1_valid": 0.09228238463401794,
+      "copy_rgb_l1_same_valid": 0.08415680378675461,
+      "copy_psnr_full": 16.296703338623047,
+      "composite_psnr_full": 15.07056713104248,
+      "intrinsics_normalized": [
+        [
+          0.9341450929641724,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.9341450929641724,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_center",
+        "source": "game3_center__frames__frame_000240",
+        "target": "game3_center__frames__frame_000248"
+      },
+      "camera_model": "source_frame_k",
+      "source_keypoints": 1869,
+      "target_keypoints": 1882,
+      "ratio_matches": 601,
+      "valid_correspondences": 569,
+      "inliers": 412,
+      "inlier_ratio": 0.7240773286467487,
+      "median_reprojection_px": 1.018082857131958,
+      "p95_reprojection_px": 2.2096564769744873,
+      "translation_norm_teacher_units": 0.0518568679690361,
+      "rotation_degrees": 0.05595290660858154,
+      "coverage": 0.9095798134803772,
+      "warp_rgb_l1_valid": 0.0826067104935646,
+      "copy_rgb_l1_same_valid": 0.08347208052873611,
+      "copy_psnr_full": 16.501035690307617,
+      "composite_psnr_full": 15.906973838806152,
+      "intrinsics_normalized": [
+        [
+          1.0010510683059692,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.0010510683059692,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_center",
+        "source": "game3_center__frames__frame_000240",
+        "target": "game3_center__frames__frame_000248"
+      },
+      "camera_model": "target_frame_k_noncausal",
+      "source_keypoints": 1869,
+      "target_keypoints": 1882,
+      "ratio_matches": 601,
+      "valid_correspondences": 569,
+      "inliers": 427,
+      "inlier_ratio": 0.7504393673110721,
+      "median_reprojection_px": 1.2874724864959717,
+      "p95_reprojection_px": 2.6710524559020996,
+      "translation_norm_teacher_units": 0.6208246946334839,
+      "rotation_degrees": 0.5787838101387024,
+      "coverage": 0.9038289189338684,
+      "warp_rgb_l1_valid": 0.08595099300146103,
+      "copy_rgb_l1_same_valid": 0.08340873569250107,
+      "copy_psnr_full": 16.501035690307617,
+      "composite_psnr_full": 15.648359298706055,
+      "intrinsics_normalized": [
+        [
+          1.1468183994293213,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.1468183994293213,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_center",
+        "source": "game3_center__frames__frame_000240",
+        "target": "game3_center__frames__frame_000248"
+      },
+      "camera_model": "scene_pair_median_k",
+      "source_keypoints": 1869,
+      "target_keypoints": 1882,
+      "ratio_matches": 601,
+      "valid_correspondences": 569,
+      "inliers": 407,
+      "inlier_ratio": 0.7152899824253075,
+      "median_reprojection_px": 1.1711896657943726,
+      "p95_reprojection_px": 2.1633756160736084,
+      "translation_norm_teacher_units": 0.21998880803585052,
+      "rotation_degrees": 0.5403170585632324,
+      "coverage": 0.9117228388786316,
+      "warp_rgb_l1_valid": 0.08971332758665085,
+      "copy_rgb_l1_same_valid": 0.08311634510755539,
+      "copy_psnr_full": 16.501035690307617,
+      "composite_psnr_full": 15.437076568603516,
+      "intrinsics_normalized": [
+        [
+          0.9341450929641724,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.9341450929641724,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_left",
+        "source": "game3_left__frames__frame_000000",
+        "target": "game3_left__frames__frame_000008"
+      },
+      "camera_model": "source_frame_k",
+      "source_keypoints": 2040,
+      "target_keypoints": 2027,
+      "ratio_matches": 521,
+      "valid_correspondences": 493,
+      "inliers": 347,
+      "inlier_ratio": 0.7038539553752535,
+      "median_reprojection_px": 0.7242350578308105,
+      "p95_reprojection_px": 2.0265250205993652,
+      "translation_norm_teacher_units": 0.009905286133289337,
+      "rotation_degrees": 0.1532333791255951,
+      "coverage": 0.9192165732383728,
+      "warp_rgb_l1_valid": 0.0737818032503128,
+      "copy_rgb_l1_same_valid": 0.07455531507730484,
+      "copy_psnr_full": 17.88665771484375,
+      "composite_psnr_full": 17.926523208618164,
+      "intrinsics_normalized": [
+        [
+          0.8395206928253174,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.8395206928253174,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_left",
+        "source": "game3_left__frames__frame_000000",
+        "target": "game3_left__frames__frame_000008"
+      },
+      "camera_model": "target_frame_k_noncausal",
+      "source_keypoints": 2040,
+      "target_keypoints": 2027,
+      "ratio_matches": 521,
+      "valid_correspondences": 493,
+      "inliers": 350,
+      "inlier_ratio": 0.7099391480730223,
+      "median_reprojection_px": 0.7213137149810791,
+      "p95_reprojection_px": 2.115396499633789,
+      "translation_norm_teacher_units": 0.10231882333755493,
+      "rotation_degrees": 0.24389326572418213,
+      "coverage": 0.906236469745636,
+      "warp_rgb_l1_valid": 0.07773584872484207,
+      "copy_rgb_l1_same_valid": 0.0748303011059761,
+      "copy_psnr_full": 17.88665771484375,
+      "composite_psnr_full": 17.516620635986328,
+      "intrinsics_normalized": [
+        [
+          0.8252484202384949,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.8252484202384949,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_left",
+        "source": "game3_left__frames__frame_000000",
+        "target": "game3_left__frames__frame_000008"
+      },
+      "camera_model": "scene_pair_median_k",
+      "source_keypoints": 2040,
+      "target_keypoints": 2027,
+      "ratio_matches": 521,
+      "valid_correspondences": 493,
+      "inliers": 196,
+      "inlier_ratio": 0.3975659229208925,
+      "median_reprojection_px": 1.0614053010940552,
+      "p95_reprojection_px": 2.7062530517578125,
+      "translation_norm_teacher_units": 1.9890494346618652,
+      "rotation_degrees": 1.8066694736480713,
+      "coverage": 0.7287868857383728,
+      "warp_rgb_l1_valid": 0.11194849014282227,
+      "copy_rgb_l1_same_valid": 0.0756019875407219,
+      "copy_psnr_full": 17.88665771484375,
+      "composite_psnr_full": 15.472865104675293,
+      "intrinsics_normalized": [
+        [
+          1.0673093795776367,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.0673093795776367,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_left",
+        "source": "game3_left__frames__frame_000060",
+        "target": "game3_left__frames__frame_000068"
+      },
+      "camera_model": "source_frame_k",
+      "source_keypoints": 2064,
+      "target_keypoints": 1999,
+      "ratio_matches": 551,
+      "valid_correspondences": 546,
+      "inliers": 398,
+      "inlier_ratio": 0.7289377289377289,
+      "median_reprojection_px": 0.6580767631530762,
+      "p95_reprojection_px": 2.0815815925598145,
+      "translation_norm_teacher_units": 0.06717751920223236,
+      "rotation_degrees": 0.7143635153770447,
+      "coverage": 0.9389580488204956,
+      "warp_rgb_l1_valid": 0.07400842010974884,
+      "copy_rgb_l1_same_valid": 0.07926934212446213,
+      "copy_psnr_full": 17.188085556030273,
+      "composite_psnr_full": 17.439481735229492,
+      "intrinsics_normalized": [
+        [
+          1.0776562690734863,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.0776562690734863,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_left",
+        "source": "game3_left__frames__frame_000060",
+        "target": "game3_left__frames__frame_000068"
+      },
+      "camera_model": "target_frame_k_noncausal",
+      "source_keypoints": 2064,
+      "target_keypoints": 1999,
+      "ratio_matches": 551,
+      "valid_correspondences": 546,
+      "inliers": 400,
+      "inlier_ratio": 0.7326007326007326,
+      "median_reprojection_px": 0.6728490591049194,
+      "p95_reprojection_px": 2.2527759075164795,
+      "translation_norm_teacher_units": 0.07163207232952118,
+      "rotation_degrees": 0.655512809753418,
+      "coverage": 0.9402669072151184,
+      "warp_rgb_l1_valid": 0.07453295588493347,
+      "copy_rgb_l1_same_valid": 0.07921314984560013,
+      "copy_psnr_full": 17.188085556030273,
+      "composite_psnr_full": 17.362071990966797,
+      "intrinsics_normalized": [
+        [
+          1.056962490081787,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.056962490081787,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_left",
+        "source": "game3_left__frames__frame_000060",
+        "target": "game3_left__frames__frame_000068"
+      },
+      "camera_model": "scene_pair_median_k",
+      "source_keypoints": 2064,
+      "target_keypoints": 1999,
+      "ratio_matches": 551,
+      "valid_correspondences": 546,
+      "inliers": 399,
+      "inlier_ratio": 0.7307692307692307,
+      "median_reprojection_px": 0.6661384105682373,
+      "p95_reprojection_px": 2.0987117290496826,
+      "translation_norm_teacher_units": 0.05225517228245735,
+      "rotation_degrees": 0.6772422194480896,
+      "coverage": 0.93988037109375,
+      "warp_rgb_l1_valid": 0.07404306530952454,
+      "copy_rgb_l1_same_valid": 0.07923496514558792,
+      "copy_psnr_full": 17.188085556030273,
+      "composite_psnr_full": 17.43268394470215,
+      "intrinsics_normalized": [
+        [
+          1.0673093795776367,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.0673093795776367,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_left",
+        "source": "game3_left__frames__frame_000360",
+        "target": "game3_left__frames__frame_000368"
+      },
+      "camera_model": "source_frame_k",
+      "source_keypoints": 1915,
+      "target_keypoints": 1960,
+      "ratio_matches": 590,
+      "valid_correspondences": 590,
+      "inliers": 436,
+      "inlier_ratio": 0.7389830508474576,
+      "median_reprojection_px": 1.0051604509353638,
+      "p95_reprojection_px": 2.5852489471435547,
+      "translation_norm_teacher_units": 0.07472318410873413,
+      "rotation_degrees": 0.642244279384613,
+      "coverage": 0.9551934003829956,
+      "warp_rgb_l1_valid": 0.10875985771417618,
+      "copy_rgb_l1_same_valid": 0.12800396978855133,
+      "copy_psnr_full": 13.804344177246094,
+      "composite_psnr_full": 14.20496940612793,
+      "intrinsics_normalized": [
+        [
+          1.2014899253845215,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.2014899253845215,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_left",
+        "source": "game3_left__frames__frame_000360",
+        "target": "game3_left__frames__frame_000368"
+      },
+      "camera_model": "target_frame_k_noncausal",
+      "source_keypoints": 1915,
+      "target_keypoints": 1960,
+      "ratio_matches": 590,
+      "valid_correspondences": 590,
+      "inliers": 417,
+      "inlier_ratio": 0.7067796610169491,
+      "median_reprojection_px": 0.9028064608573914,
+      "p95_reprojection_px": 2.631927251815796,
+      "translation_norm_teacher_units": 0.10342489182949066,
+      "rotation_degrees": 0.66910320520401,
+      "coverage": 0.9534980058670044,
+      "warp_rgb_l1_valid": 0.10987158119678497,
+      "copy_rgb_l1_same_valid": 0.12810702621936798,
+      "copy_psnr_full": 13.804344177246094,
+      "composite_psnr_full": 14.056781768798828,
+      "intrinsics_normalized": [
+        [
+          1.137969732284546,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.137969732284546,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_left",
+        "source": "game3_left__frames__frame_000360",
+        "target": "game3_left__frames__frame_000368"
+      },
+      "camera_model": "scene_pair_median_k",
+      "source_keypoints": 1915,
+      "target_keypoints": 1960,
+      "ratio_matches": 590,
+      "valid_correspondences": 590,
+      "inliers": 428,
+      "inlier_ratio": 0.7254237288135593,
+      "median_reprojection_px": 1.0017980337142944,
+      "p95_reprojection_px": 2.474102735519409,
+      "translation_norm_teacher_units": 0.2879585921764374,
+      "rotation_degrees": 1.312240719795227,
+      "coverage": 0.9544474482536316,
+      "warp_rgb_l1_valid": 0.10958307981491089,
+      "copy_rgb_l1_same_valid": 0.12788863480091095,
+      "copy_psnr_full": 13.804344177246094,
+      "composite_psnr_full": 14.149674415588379,
+      "intrinsics_normalized": [
+        [
+          1.0673093795776367,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.0673093795776367,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_mid_right",
+        "source": "game3_mid_right__frames__frame_000000",
+        "target": "game3_mid_right__frames__frame_000008"
+      },
+      "camera_model": "source_frame_k",
+      "source_keypoints": 2134,
+      "target_keypoints": 2056,
+      "ratio_matches": 480,
+      "valid_correspondences": 471,
+      "inliers": 270,
+      "inlier_ratio": 0.5732484076433121,
+      "median_reprojection_px": 0.6296760439872742,
+      "p95_reprojection_px": 1.833548903465271,
+      "translation_norm_teacher_units": 0.035473257303237915,
+      "rotation_degrees": 0.3815486431121826,
+      "coverage": 0.976060688495636,
+      "warp_rgb_l1_valid": 0.09416043013334274,
+      "copy_rgb_l1_same_valid": 0.09022499620914459,
+      "copy_psnr_full": 16.272031784057617,
+      "composite_psnr_full": 15.82756519317627,
+      "intrinsics_normalized": [
+        [
+          0.7952771186828613,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.7952771186828613,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_mid_right",
+        "source": "game3_mid_right__frames__frame_000000",
+        "target": "game3_mid_right__frames__frame_000008"
+      },
+      "camera_model": "target_frame_k_noncausal",
+      "source_keypoints": 2134,
+      "target_keypoints": 2056,
+      "ratio_matches": 480,
+      "valid_correspondences": 471,
+      "inliers": 275,
+      "inlier_ratio": 0.583864118895966,
+      "median_reprojection_px": 0.6985626816749573,
+      "p95_reprojection_px": 1.9242620468139648,
+      "translation_norm_teacher_units": 0.10347482562065125,
+      "rotation_degrees": 0.6875649690628052,
+      "coverage": 0.9636976718902588,
+      "warp_rgb_l1_valid": 0.09850601106882095,
+      "copy_rgb_l1_same_valid": 0.09025080502033234,
+      "copy_psnr_full": 16.272031784057617,
+      "composite_psnr_full": 15.492677688598633,
+      "intrinsics_normalized": [
+        [
+          0.7791061401367188,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.7791061401367188,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_mid_right",
+        "source": "game3_mid_right__frames__frame_000000",
+        "target": "game3_mid_right__frames__frame_000008"
+      },
+      "camera_model": "scene_pair_median_k",
+      "source_keypoints": 2134,
+      "target_keypoints": 2056,
+      "ratio_matches": 480,
+      "valid_correspondences": 471,
+      "inliers": 244,
+      "inlier_ratio": 0.5180467091295117,
+      "median_reprojection_px": 1.506629467010498,
+      "p95_reprojection_px": 2.949859619140625,
+      "translation_norm_teacher_units": 0.5933139324188232,
+      "rotation_degrees": 1.8031998872756958,
+      "coverage": 0.911058247089386,
+      "warp_rgb_l1_valid": 0.11589580029249191,
+      "copy_rgb_l1_same_valid": 0.09149244427680969,
+      "copy_psnr_full": 16.272031784057617,
+      "composite_psnr_full": 14.397945404052734,
+      "intrinsics_normalized": [
+        [
+          0.9123557806015015,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.9123557806015015,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_mid_right",
+        "source": "game3_mid_right__frames__frame_000060",
+        "target": "game3_mid_right__frames__frame_000068"
+      },
+      "camera_model": "source_frame_k",
+      "source_keypoints": 1737,
+      "target_keypoints": 1746,
+      "ratio_matches": 453,
+      "valid_correspondences": 453,
+      "inliers": 271,
+      "inlier_ratio": 0.5982339955849889,
+      "median_reprojection_px": 0.6214852929115295,
+      "p95_reprojection_px": 2.0630414485931396,
+      "translation_norm_teacher_units": 0.012457765638828278,
+      "rotation_degrees": 0.25022920966148376,
+      "coverage": 0.9908244013786316,
+      "warp_rgb_l1_valid": 0.08378114551305771,
+      "copy_rgb_l1_same_valid": 0.08421862125396729,
+      "copy_psnr_full": 15.832155227661133,
+      "composite_psnr_full": 15.756261825561523,
+      "intrinsics_normalized": [
+        [
+          0.71989506483078,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.71989506483078,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_mid_right",
+        "source": "game3_mid_right__frames__frame_000060",
+        "target": "game3_mid_right__frames__frame_000068"
+      },
+      "camera_model": "target_frame_k_noncausal",
+      "source_keypoints": 1737,
+      "target_keypoints": 1746,
+      "ratio_matches": 453,
+      "valid_correspondences": 453,
+      "inliers": 253,
+      "inlier_ratio": 0.5584988962472406,
+      "median_reprojection_px": 0.9978674650192261,
+      "p95_reprojection_px": 2.343553066253662,
+      "translation_norm_teacher_units": 0.8157874941825867,
+      "rotation_degrees": 0.9462603330612183,
+      "coverage": 0.9608222246170044,
+      "warp_rgb_l1_valid": 0.09844326972961426,
+      "copy_rgb_l1_same_valid": 0.0854281485080719,
+      "copy_psnr_full": 15.832155227661133,
+      "composite_psnr_full": 14.583884239196777,
+      "intrinsics_normalized": [
+        [
+          0.9539599418640137,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.9539599418640137,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_mid_right",
+        "source": "game3_mid_right__frames__frame_000060",
+        "target": "game3_mid_right__frames__frame_000068"
+      },
+      "camera_model": "scene_pair_median_k",
+      "source_keypoints": 1737,
+      "target_keypoints": 1746,
+      "ratio_matches": 453,
+      "valid_correspondences": 453,
+      "inliers": 260,
+      "inlier_ratio": 0.5739514348785872,
+      "median_reprojection_px": 0.9380961656570435,
+      "p95_reprojection_px": 2.2385172843933105,
+      "translation_norm_teacher_units": 0.6715677976608276,
+      "rotation_degrees": 0.8430231809616089,
+      "coverage": 0.9658474326133728,
+      "warp_rgb_l1_valid": 0.09762586653232574,
+      "copy_rgb_l1_same_valid": 0.08536803722381592,
+      "copy_psnr_full": 15.832155227661133,
+      "composite_psnr_full": 14.603047370910645,
+      "intrinsics_normalized": [
+        [
+          0.9123557806015015,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.9123557806015015,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_mid_right",
+        "source": "game3_mid_right__frames__frame_000120",
+        "target": "game3_mid_right__frames__frame_000128"
+      },
+      "camera_model": "source_frame_k",
+      "source_keypoints": 1811,
+      "target_keypoints": 1693,
+      "ratio_matches": 445,
+      "valid_correspondences": 444,
+      "inliers": 354,
+      "inlier_ratio": 0.7972972972972973,
+      "median_reprojection_px": 0.6761367917060852,
+      "p95_reprojection_px": 1.8508152961730957,
+      "translation_norm_teacher_units": 0.02969984896481037,
+      "rotation_degrees": 0.305187463760376,
+      "coverage": 0.9811537265777588,
+      "warp_rgb_l1_valid": 0.08696941286325455,
+      "copy_rgb_l1_same_valid": 0.0873405858874321,
+      "copy_psnr_full": 15.661674499511719,
+      "composite_psnr_full": 15.36990737915039,
+      "intrinsics_normalized": [
+        [
+          0.9210777878761292,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.9210777878761292,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_mid_right",
+        "source": "game3_mid_right__frames__frame_000120",
+        "target": "game3_mid_right__frames__frame_000128"
+      },
+      "camera_model": "target_frame_k_noncausal",
+      "source_keypoints": 1811,
+      "target_keypoints": 1693,
+      "ratio_matches": 445,
+      "valid_correspondences": 444,
+      "inliers": 353,
+      "inlier_ratio": 0.795045045045045,
+      "median_reprojection_px": 0.6018081307411194,
+      "p95_reprojection_px": 1.8221304416656494,
+      "translation_norm_teacher_units": 0.15326227247714996,
+      "rotation_degrees": 0.37949177622795105,
+      "coverage": 0.9821574091911316,
+      "warp_rgb_l1_valid": 0.08439065515995026,
+      "copy_rgb_l1_same_valid": 0.08731713145971298,
+      "copy_psnr_full": 15.661674499511719,
+      "composite_psnr_full": 15.610116958618164,
+      "intrinsics_normalized": [
+        [
+          0.9571402668952942,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.9571402668952942,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_mid_right",
+        "source": "game3_mid_right__frames__frame_000120",
+        "target": "game3_mid_right__frames__frame_000128"
+      },
+      "camera_model": "scene_pair_median_k",
+      "source_keypoints": 1811,
+      "target_keypoints": 1693,
+      "ratio_matches": 445,
+      "valid_correspondences": 444,
+      "inliers": 354,
+      "inlier_ratio": 0.7972972972972973,
+      "median_reprojection_px": 0.6919281482696533,
+      "p95_reprojection_px": 1.8687373399734497,
+      "translation_norm_teacher_units": 0.008225232362747192,
+      "rotation_degrees": 0.25793036818504333,
+      "coverage": 0.9810248613357544,
+      "warp_rgb_l1_valid": 0.08730074018239975,
+      "copy_rgb_l1_same_valid": 0.0873492881655693,
+      "copy_psnr_full": 15.661674499511719,
+      "composite_psnr_full": 15.324789047241211,
+      "intrinsics_normalized": [
+        [
+          0.9123557806015015,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.9123557806015015,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_mid_right",
+        "source": "game3_mid_right__frames__frame_000180",
+        "target": "game3_mid_right__frames__frame_000188"
+      },
+      "camera_model": "source_frame_k",
+      "source_keypoints": 1723,
+      "target_keypoints": 1654,
+      "ratio_matches": 539,
+      "valid_correspondences": 538,
+      "inliers": 386,
+      "inlier_ratio": 0.7174721189591078,
+      "median_reprojection_px": 0.9107787609100342,
+      "p95_reprojection_px": 2.1791021823883057,
+      "translation_norm_teacher_units": 0.039303869009017944,
+      "rotation_degrees": 0.4387945830821991,
+      "coverage": 0.970384418964386,
+      "warp_rgb_l1_valid": 0.07738438248634338,
+      "copy_rgb_l1_same_valid": 0.0806199312210083,
+      "copy_psnr_full": 16.583171844482422,
+      "composite_psnr_full": 16.42343521118164,
+      "intrinsics_normalized": [
+        [
+          0.9036338329315186,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.9036338329315186,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_mid_right",
+        "source": "game3_mid_right__frames__frame_000180",
+        "target": "game3_mid_right__frames__frame_000188"
+      },
+      "camera_model": "target_frame_k_noncausal",
+      "source_keypoints": 1723,
+      "target_keypoints": 1654,
+      "ratio_matches": 539,
+      "valid_correspondences": 538,
+      "inliers": 382,
+      "inlier_ratio": 0.7100371747211895,
+      "median_reprojection_px": 0.8111538887023926,
+      "p95_reprojection_px": 2.4891247749328613,
+      "translation_norm_teacher_units": 0.3654972016811371,
+      "rotation_degrees": 1.22525155544281,
+      "coverage": 0.9610866904258728,
+      "warp_rgb_l1_valid": 0.08168777078390121,
+      "copy_rgb_l1_same_valid": 0.08063225448131561,
+      "copy_psnr_full": 16.583171844482422,
+      "composite_psnr_full": 16.06515884399414,
+      "intrinsics_normalized": [
+        [
+          1.0080994367599487,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.0080994367599487,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "pair": {
+        "scene": "game3_mid_right",
+        "source": "game3_mid_right__frames__frame_000180",
+        "target": "game3_mid_right__frames__frame_000188"
+      },
+      "camera_model": "scene_pair_median_k",
+      "source_keypoints": 1723,
+      "target_keypoints": 1654,
+      "ratio_matches": 539,
+      "valid_correspondences": 538,
+      "inliers": 387,
+      "inlier_ratio": 0.7193308550185874,
+      "median_reprojection_px": 0.897104799747467,
+      "p95_reprojection_px": 2.1892895698547363,
+      "translation_norm_teacher_units": 0.06445496529340744,
+      "rotation_degrees": 0.48537477850914,
+      "coverage": 0.9704318642616272,
+      "warp_rgb_l1_valid": 0.0774262472987175,
+      "copy_rgb_l1_same_valid": 0.0805877223610878,
+      "copy_psnr_full": 16.583171844482422,
+      "composite_psnr_full": 16.438966751098633,
+      "intrinsics_normalized": [
+        [
+          0.9123557806015015,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          0.9123557806015015,
+          0.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ]
+}

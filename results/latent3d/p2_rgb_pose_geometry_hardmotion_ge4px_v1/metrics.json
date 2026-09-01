@@ -1,0 +1,398 @@
+{
+  "schema_version": 1,
+  "stage": "RGB pose/geometry diagnostic",
+  "created_at": "2026-09-01T10:25:36.113070+00:00",
+  "repository": {
+    "commit": "b76162efb8fa07bf4d5f3023d66ead9fc2c14830",
+    "dirty": true
+  },
+  "pose_status": "MoGe-point-assisted SIFT + PnP-RANSAC; not ground truth",
+  "pair_count": 9,
+  "row_count": 18,
+  "panel_order": [
+    "source",
+    "target",
+    "warp_with_magenta_holes",
+    "warp_plus_source_copy"
+  ],
+  "rows": [
+    {
+      "pair": {
+        "scene": "game2_center",
+        "source": "game2_center__frames__frame_000164",
+        "target": "game2_center__frames__frame_000176",
+        "inliers": 316,
+        "inlier_ratio": 0.6370967741935484,
+        "median_reprojection_px": 0.5233587026596069
+      },
+      "splat_radius": 0,
+      "translation_norm_teacher_units": 0.33517128229141235,
+      "rotation_degrees": 0.37769689320722477,
+      "coverage": 0.7386000156402588,
+      "warp_rgb_l1_valid": 0.1249142438173294,
+      "copy_rgb_l1_same_valid": 0.19546735286712646,
+      "copy_psnr_full": 10.361978530883789,
+      "warp_zero_holes_psnr_full": 10.151531219482422,
+      "composite_psnr_full": 11.220831871032715,
+      "copy_global_ssim_full": 0.3331703543663025,
+      "composite_global_ssim_full": 0.45379915833473206
+    },
+    {
+      "pair": {
+        "scene": "game2_center",
+        "source": "game2_center__frames__frame_000164",
+        "target": "game2_center__frames__frame_000176",
+        "inliers": 316,
+        "inlier_ratio": 0.6370967741935484,
+        "median_reprojection_px": 0.5233587026596069
+      },
+      "splat_radius": 1,
+      "translation_norm_teacher_units": 0.33517128229141235,
+      "rotation_degrees": 0.37769689320722477,
+      "coverage": 0.7475993037223816,
+      "warp_rgb_l1_valid": 0.14993374049663544,
+      "copy_rgb_l1_same_valid": 0.1964615285396576,
+      "copy_psnr_full": 10.361978530883789,
+      "warp_zero_holes_psnr_full": 9.822152137756348,
+      "composite_psnr_full": 10.750874519348145,
+      "copy_global_ssim_full": 0.3331703543663025,
+      "composite_global_ssim_full": 0.39815154671669006
+    },
+    {
+      "pair": {
+        "scene": "game2_left",
+        "source": "game2_left__frames__frame_000122",
+        "target": "game2_left__frames__frame_000134",
+        "inliers": 370,
+        "inlier_ratio": 0.6303236797274276,
+        "median_reprojection_px": 0.5550289154052734
+      },
+      "splat_radius": 0,
+      "translation_norm_teacher_units": 0.16024622321128845,
+      "rotation_degrees": 0.5788682967153282,
+      "coverage": 0.8204481601715088,
+      "warp_rgb_l1_valid": 0.09000076353549957,
+      "copy_rgb_l1_same_valid": 0.1902010291814804,
+      "copy_psnr_full": 10.984434127807617,
+      "warp_zero_holes_psnr_full": 11.723967552185059,
+      "composite_psnr_full": 13.5241117477417,
+      "copy_global_ssim_full": 0.44359979033470154,
+      "composite_global_ssim_full": 0.6865835189819336
+    },
+    {
+      "pair": {
+        "scene": "game2_left",
+        "source": "game2_left__frames__frame_000122",
+        "target": "game2_left__frames__frame_000134",
+        "inliers": 370,
+        "inlier_ratio": 0.6303236797274276,
+        "median_reprojection_px": 0.5550289154052734
+      },
+      "splat_radius": 1,
+      "translation_norm_teacher_units": 0.16024622321128845,
+      "rotation_degrees": 0.5788682967153282,
+      "coverage": 0.8299289345741272,
+      "warp_rgb_l1_valid": 0.1120646595954895,
+      "copy_rgb_l1_same_valid": 0.19017983973026276,
+      "copy_psnr_full": 10.984434127807617,
+      "warp_zero_holes_psnr_full": 11.264816284179688,
+      "composite_psnr_full": 12.717952728271484,
+      "copy_global_ssim_full": 0.44359979033470154,
+      "composite_global_ssim_full": 0.6252409815788269
+    },
+    {
+      "pair": {
+        "scene": "game2_left",
+        "source": "game2_left__frames__frame_000164",
+        "target": "game2_left__frames__frame_000176",
+        "inliers": 349,
+        "inlier_ratio": 0.60801393728223,
+        "median_reprojection_px": 0.6240882277488708
+      },
+      "splat_radius": 0,
+      "translation_norm_teacher_units": 0.32136136293411255,
+      "rotation_degrees": 0.2114948158310933,
+      "coverage": 0.7396308183670044,
+      "warp_rgb_l1_valid": 0.10081030428409576,
+      "copy_rgb_l1_same_valid": 0.22210896015167236,
+      "copy_psnr_full": 10.089469909667969,
+      "warp_zero_holes_psnr_full": 10.515918731689453,
+      "composite_psnr_full": 12.406278610229492,
+      "copy_global_ssim_full": 0.26676902174949646,
+      "composite_global_ssim_full": 0.5617865324020386
+    },
+    {
+      "pair": {
+        "scene": "game2_left",
+        "source": "game2_left__frames__frame_000164",
+        "target": "game2_left__frames__frame_000176",
+        "inliers": 349,
+        "inlier_ratio": 0.60801393728223,
+        "median_reprojection_px": 0.6240882277488708
+      },
+      "splat_radius": 1,
+      "translation_norm_teacher_units": 0.32136136293411255,
+      "rotation_degrees": 0.2114948158310933,
+      "coverage": 0.7486640214920044,
+      "warp_rgb_l1_valid": 0.12221987545490265,
+      "copy_rgb_l1_same_valid": 0.2226060926914215,
+      "copy_psnr_full": 10.089469909667969,
+      "warp_zero_holes_psnr_full": 10.273042678833008,
+      "composite_psnr_full": 11.947970390319824,
+      "copy_global_ssim_full": 0.26676902174949646,
+      "composite_global_ssim_full": 0.5145986676216125
+    },
+    {
+      "pair": {
+        "scene": "game2_mid_right",
+        "source": "game2_mid_right__frames__frame_000164",
+        "target": "game2_mid_right__frames__frame_000176",
+        "inliers": 333,
+        "inlier_ratio": 0.6367112810707457,
+        "median_reprojection_px": 0.5295760631561279
+      },
+      "splat_radius": 0,
+      "translation_norm_teacher_units": 0.29351142048835754,
+      "rotation_degrees": 0.23715494382103375,
+      "coverage": 0.738525390625,
+      "warp_rgb_l1_valid": 0.12630575895309448,
+      "copy_rgb_l1_same_valid": 0.22228753566741943,
+      "copy_psnr_full": 9.888314247131348,
+      "warp_zero_holes_psnr_full": 10.530864715576172,
+      "composite_psnr_full": 11.386507987976074,
+      "copy_global_ssim_full": 0.2983998954296112,
+      "composite_global_ssim_full": 0.5106741786003113
+    },
+    {
+      "pair": {
+        "scene": "game2_mid_right",
+        "source": "game2_mid_right__frames__frame_000164",
+        "target": "game2_mid_right__frames__frame_000176",
+        "inliers": 333,
+        "inlier_ratio": 0.6367112810707457,
+        "median_reprojection_px": 0.5295760631561279
+      },
+      "splat_radius": 1,
+      "translation_norm_teacher_units": 0.29351142048835754,
+      "rotation_degrees": 0.23715494382103375,
+      "coverage": 0.7475043535232544,
+      "warp_rgb_l1_valid": 0.14901313185691833,
+      "copy_rgb_l1_same_valid": 0.2227032631635666,
+      "copy_psnr_full": 9.888314247131348,
+      "warp_zero_holes_psnr_full": 10.231401443481445,
+      "composite_psnr_full": 10.970064163208008,
+      "copy_global_ssim_full": 0.2983998954296112,
+      "composite_global_ssim_full": 0.4660414159297943
+    },
+    {
+      "pair": {
+        "scene": "game2_right",
+        "source": "game2_right__frames__frame_000082",
+        "target": "game2_right__frames__frame_000094",
+        "inliers": 420,
+        "inlier_ratio": 0.7082630691399663,
+        "median_reprojection_px": 0.9867034554481506
+      },
+      "splat_radius": 0,
+      "translation_norm_teacher_units": 0.056175876408815384,
+      "rotation_degrees": 1.337636584989094,
+      "coverage": 0.8765869140625,
+      "warp_rgb_l1_valid": 0.09731000661849976,
+      "copy_rgb_l1_same_valid": 0.12359349429607391,
+      "copy_psnr_full": 12.90103816986084,
+      "warp_zero_holes_psnr_full": 11.464203834533691,
+      "composite_psnr_full": 13.676348686218262,
+      "copy_global_ssim_full": 0.6576016545295715,
+      "composite_global_ssim_full": 0.7132830619812012
+    },
+    {
+      "pair": {
+        "scene": "game2_right",
+        "source": "game2_right__frames__frame_000082",
+        "target": "game2_right__frames__frame_000094",
+        "inliers": 420,
+        "inlier_ratio": 0.7082630691399663,
+        "median_reprojection_px": 0.9867034554481506
+      },
+      "splat_radius": 1,
+      "translation_norm_teacher_units": 0.056175876408815384,
+      "rotation_degrees": 1.337636584989094,
+      "coverage": 0.8958333134651184,
+      "warp_rgb_l1_valid": 0.10831943899393082,
+      "copy_rgb_l1_same_valid": 0.12552613019943237,
+      "copy_psnr_full": 12.90103816986084,
+      "warp_zero_holes_psnr_full": 11.574617385864258,
+      "composite_psnr_full": 13.33906364440918,
+      "copy_global_ssim_full": 0.6576016545295715,
+      "composite_global_ssim_full": 0.6917324662208557
+    },
+    {
+      "pair": {
+        "scene": "game2_right",
+        "source": "game2_right__frames__frame_000164",
+        "target": "game2_right__frames__frame_000176",
+        "inliers": 334,
+        "inlier_ratio": 0.6242990654205608,
+        "median_reprojection_px": 0.5955700874328613
+      },
+      "splat_radius": 0,
+      "translation_norm_teacher_units": 0.26067212224006653,
+      "rotation_degrees": 0.3265079673146775,
+      "coverage": 0.7392917275428772,
+      "warp_rgb_l1_valid": 0.11502940207719803,
+      "copy_rgb_l1_same_valid": 0.24010680615901947,
+      "copy_psnr_full": 9.52659797668457,
+      "warp_zero_holes_psnr_full": 10.836811065673828,
+      "composite_psnr_full": 11.778196334838867,
+      "copy_global_ssim_full": 0.22642964124679565,
+      "composite_global_ssim_full": 0.5396216511726379
+    },
+    {
+      "pair": {
+        "scene": "game2_right",
+        "source": "game2_right__frames__frame_000164",
+        "target": "game2_right__frames__frame_000176",
+        "inliers": 334,
+        "inlier_ratio": 0.6242990654205608,
+        "median_reprojection_px": 0.5955700874328613
+      },
+      "splat_radius": 1,
+      "translation_norm_teacher_units": 0.26067212224006653,
+      "rotation_degrees": 0.3265079673146775,
+      "coverage": 0.7483249306678772,
+      "warp_rgb_l1_valid": 0.13864341378211975,
+      "copy_rgb_l1_same_valid": 0.2405322939157486,
+      "copy_psnr_full": 9.52659797668457,
+      "warp_zero_holes_psnr_full": 10.515786170959473,
+      "composite_psnr_full": 11.318685531616211,
+      "copy_global_ssim_full": 0.22642964124679565,
+      "composite_global_ssim_full": 0.4901173412799835
+    },
+    {
+      "pair": {
+        "scene": "game3_mid_right",
+        "source": "game3_mid_right__frames__frame_000436",
+        "target": "game3_mid_right__frames__frame_000448",
+        "inliers": 297,
+        "inlier_ratio": 0.6161825726141079,
+        "median_reprojection_px": 1.1069941520690918
+      },
+      "splat_radius": 0,
+      "translation_norm_teacher_units": 0.10963746160268784,
+      "rotation_degrees": 1.0039283137211261,
+      "coverage": 0.9432033896446228,
+      "warp_rgb_l1_valid": 0.1329924762248993,
+      "copy_rgb_l1_same_valid": 0.14809705317020416,
+      "copy_psnr_full": 12.803407669067383,
+      "warp_zero_holes_psnr_full": 12.429311752319336,
+      "composite_psnr_full": 13.078761100769043,
+      "copy_global_ssim_full": 0.6717779040336609,
+      "composite_global_ssim_full": 0.6926159858703613
+    },
+    {
+      "pair": {
+        "scene": "game3_mid_right",
+        "source": "game3_mid_right__frames__frame_000436",
+        "target": "game3_mid_right__frames__frame_000448",
+        "inliers": 297,
+        "inlier_ratio": 0.6161825726141079,
+        "median_reprojection_px": 1.1069941520690918
+      },
+      "splat_radius": 1,
+      "translation_norm_teacher_units": 0.10963746160268784,
+      "rotation_degrees": 1.0039283137211261,
+      "coverage": 0.9552205204963684,
+      "warp_rgb_l1_valid": 0.15014663338661194,
+      "copy_rgb_l1_same_valid": 0.14759306609630585,
+      "copy_psnr_full": 12.803407669067383,
+      "warp_zero_holes_psnr_full": 11.846957206726074,
+      "composite_psnr_full": 12.223910331726074,
+      "copy_global_ssim_full": 0.6717779040336609,
+      "composite_global_ssim_full": 0.6328908801078796
+    },
+    {
+      "pair": {
+        "scene": "game3_right",
+        "source": "game3_right__frames__frame_000310",
+        "target": "game3_right__frames__frame_000322",
+        "inliers": 219,
+        "inlier_ratio": 0.7398648648648649,
+        "median_reprojection_px": 0.9949905276298523
+      },
+      "splat_radius": 0,
+      "translation_norm_teacher_units": 0.0797974243760109,
+      "rotation_degrees": 1.1838093952772466,
+      "coverage": 0.9085015058517456,
+      "warp_rgb_l1_valid": 0.11583242565393448,
+      "copy_rgb_l1_same_valid": 0.1261875033378601,
+      "copy_psnr_full": 13.360457420349121,
+      "warp_zero_holes_psnr_full": 11.611345291137695,
+      "composite_psnr_full": 13.364151954650879,
+      "copy_global_ssim_full": 0.7158131003379822,
+      "composite_global_ssim_full": 0.7121358513832092
+    },
+    {
+      "pair": {
+        "scene": "game3_right",
+        "source": "game3_right__frames__frame_000310",
+        "target": "game3_right__frames__frame_000322",
+        "inliers": 219,
+        "inlier_ratio": 0.7398648648648649,
+        "median_reprojection_px": 0.9949905276298523
+      },
+      "splat_radius": 1,
+      "translation_norm_teacher_units": 0.0797974243760109,
+      "rotation_degrees": 1.1838093952772466,
+      "coverage": 0.9252251386642456,
+      "warp_rgb_l1_valid": 0.1304842084646225,
+      "copy_rgb_l1_same_valid": 0.12833547592163086,
+      "copy_psnr_full": 13.360457420349121,
+      "warp_zero_holes_psnr_full": 11.470793724060059,
+      "composite_psnr_full": 12.792998313903809,
+      "copy_global_ssim_full": 0.7158131003379822,
+      "composite_global_ssim_full": 0.6742650270462036
+    },
+    {
+      "pair": {
+        "scene": "game3_right",
+        "source": "game3_right__frames__frame_000372",
+        "target": "game3_right__frames__frame_000384",
+        "inliers": 226,
+        "inlier_ratio": 0.6260387811634349,
+        "median_reprojection_px": 1.028273344039917
+      },
+      "splat_radius": 0,
+      "translation_norm_teacher_units": 0.13148950040340424,
+      "rotation_degrees": 0.5159961879358053,
+      "coverage": 0.9379340410232544,
+      "warp_rgb_l1_valid": 0.13865506649017334,
+      "copy_rgb_l1_same_valid": 0.15958069264888763,
+      "copy_psnr_full": 12.199607849121094,
+      "warp_zero_holes_psnr_full": 11.99272346496582,
+      "composite_psnr_full": 12.617666244506836,
+      "copy_global_ssim_full": 0.637854278087616,
+      "composite_global_ssim_full": 0.6722590327262878
+    },
+    {
+      "pair": {
+        "scene": "game3_right",
+        "source": "game3_right__frames__frame_000372",
+        "target": "game3_right__frames__frame_000384",
+        "inliers": 226,
+        "inlier_ratio": 0.6260387811634349,
+        "median_reprojection_px": 1.028273344039917
+      },
+      "splat_radius": 1,
+      "translation_norm_teacher_units": 0.13148950040340424,
+      "rotation_degrees": 0.5159961879358053,
+      "coverage": 0.9485880732536316,
+      "warp_rgb_l1_valid": 0.15673717856407166,
+      "copy_rgb_l1_same_valid": 0.15973082184791565,
+      "copy_psnr_full": 12.199607849121094,
+      "warp_zero_holes_psnr_full": 11.421890258789062,
+      "composite_psnr_full": 11.84765338897705,
+      "copy_global_ssim_full": 0.637854278087616,
+      "composite_global_ssim_full": 0.6118141412734985
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "source": "results/latent3d/p2p3_hardmotion_ge4px_teacher_v1/metrics.json",
+  "source_experiment_schema_version": 2,
+  "training_gate": {
+    "passed": true,
+    "criterion": "positive composite PSNR 95% CI, >=70% composite PSNR wins, and >=70% valid-L1 wins",
+    "best_method_by_mean_composite_psnr": "minimum",
+    "observed": {
+      "composite_psnr_delta_mean": 0.6195198959774442,
+      "composite_psnr_delta_bootstrap_95ci": [
+        0.26137685775756836,
+        0.9361218611399332
+      ],
+      "composite_psnr_win_rate": 0.8888888888888888,
+      "valid_l1_win_rate": 1.0
+    }
+  },
+  "evidence_status": "corrected_screening_passed_with_estimated_pose_limitations",
+  "dataset_and_grain": {
+    "declared_pair_count": 9,
+    "observed_pair_count": 9,
+    "method_count": 5,
+    "row_count": 45,
+    "expected_row_count": 45,
+    "duplicate_pair_method_rows": 0,
+    "complete_factorial": true
+  },
+  "copy_baseline_consistency": {
+    "pair_count": 9,
+    "inconsistent_pair_count": 0,
+    "definition": "full-frame Copy metrics only; same-valid metrics are method-mask dependent",
+    "details": {}
+  },
+  "aggregates": {
+    "average": {
+      "pair_count": 9,
+      "binary_coverage_mean": 0.8693576388888888,
+      "valid_l1_delta_mean": -0.058457972274886236,
+      "valid_l1_delta_median": -0.041797935962677,
+      "valid_l1_delta_bootstrap_95ci": [
+        -0.07968510356214312,
+        -0.03844840493467119
+      ],
+      "valid_l1_win_rate": 1.0,
+      "valid_cosine_delta_mean": 0.13787306017345852,
+      "valid_cosine_win_rate": 1.0,
+      "composite_full_l1_delta_mean": -0.048067127664883934,
+      "composite_full_l1_win_rate": 1.0,
+      "decoded_composite_psnr_delta_mean": 0.6161633332570394,
+      "decoded_composite_psnr_delta_median": 0.5806312561035156,
+      "decoded_composite_psnr_delta_bootstrap_95ci": [
+        0.2684228950076633,
+        0.9361928039126926
+      ],
+      "decoded_composite_psnr_win_rate": 0.8888888888888888,
+      "decoded_zero_hole_psnr_delta_mean": 1.2149971061282687,
+      "motion_bins": {
+        "medium": {
+          "pair_count": 1,
+          "translation_mean_teacher_units": 0.056175876227556175,
+          "valid_l1_delta_mean": -0.033265918493270874,
+          "decoded_composite_psnr_delta_mean": 1.172323226928711,
+          "decoded_composite_psnr_win_rate": 1.0
+        },
+        "large": {
+          "pair_count": 8,
+          "translation_mean_teacher_units": 0.2114858459523181,
+          "valid_l1_delta_mean": -0.06160697899758816,
+          "decoded_composite_psnr_delta_mean": 0.5466433465480804,
+          "decoded_composite_psnr_win_rate": 0.875
+        }
+      }
+    },
+    "center": {
+      "pair_count": 9,
+      "binary_coverage_mean": 0.8680555555555556,
+      "valid_l1_delta_mean": -0.05817533532778422,
+      "valid_l1_delta_median": -0.04177373647689819,
+      "valid_l1_delta_bootstrap_95ci": [
+        -0.0795137816005283,
+        -0.038059178325865
+      ],
+      "valid_l1_win_rate": 1.0,
+      "valid_cosine_delta_mean": 0.13821185297436184,
+      "valid_cosine_win_rate": 1.0,
+      "composite_full_l1_delta_mean": -0.04782928195264605,
+      "composite_full_l1_win_rate": 1.0,
+      "decoded_composite_psnr_delta_mean": 0.6045746008555094,
+      "decoded_composite_psnr_delta_median": 0.5802788734436035,
+      "decoded_composite_psnr_delta_bootstrap_95ci": [
+        0.2585434913635254,
+        0.9150548775990804
+      ],
+      "decoded_composite_psnr_win_rate": 0.8888888888888888,
+      "decoded_zero_hole_psnr_delta_mean": 1.178346077601115,
+      "motion_bins": {
+        "medium": {
+          "pair_count": 1,
+          "translation_mean_teacher_units": 0.056175876227556175,
+          "valid_l1_delta_mean": -0.030759215354919434,
+          "decoded_composite_psnr_delta_mean": 1.0715456008911133,
+          "decoded_composite_psnr_win_rate": 1.0
+        },
+        "large": {
+          "pair_count": 8,
+          "translation_mean_teacher_units": 0.2114858459523181,
+          "valid_l1_delta_mean": -0.06160235032439232,
+          "decoded_composite_psnr_delta_mean": 0.546203225851059,
+          "decoded_composite_psnr_win_rate": 0.875
+        }
+      }
+    },
+    "median": {
+      "pair_count": 9,
+      "binary_coverage_mean": 0.8693576388888888,
+      "valid_l1_delta_mean": -0.058453884389665395,
+      "valid_l1_delta_median": -0.041785165667533875,
+      "valid_l1_delta_bootstrap_95ci": [
+        -0.07930277619096968,
+        -0.038624275061819285
+      ],
+      "valid_l1_win_rate": 1.0,
+      "valid_cosine_delta_mean": 0.13786494069629246,
+      "valid_cosine_win_rate": 1.0,
+      "composite_full_l1_delta_mean": -0.04806413584285312,
+      "composite_full_l1_win_rate": 1.0,
+      "decoded_composite_psnr_delta_mean": 0.6158447000715468,
+      "decoded_composite_psnr_delta_median": 0.5793347358703613,
+      "decoded_composite_psnr_delta_bootstrap_95ci": [
+        0.2659592628479004,
+        0.9466008875105116
+      ],
+      "decoded_composite_psnr_win_rate": 0.8888888888888888,
+      "decoded_zero_hole_psnr_delta_mean": 1.2148150073157415,
+      "motion_bins": {
+        "medium": {
+          "pair_count": 1,
+          "translation_mean_teacher_units": 0.056175876227556175,
+          "valid_l1_delta_mean": -0.03326573967933655,
+          "decoded_composite_psnr_delta_mean": 1.1728782653808594,
+          "decoded_composite_psnr_win_rate": 1.0
+        },
+        "large": {
+          "pair_count": 8,
+          "translation_mean_teacher_units": 0.2114858459523181,
+          "valid_l1_delta_mean": -0.0616024024784565,
+          "decoded_composite_psnr_delta_mean": 0.5462155044078827,
+          "decoded_composite_psnr_win_rate": 0.875
+        }
+      }
+    },
+    "minimum": {
+      "pair_count": 9,
+      "binary_coverage_mean": 0.8689236111111112,
+      "valid_l1_delta_mean": -0.05841243598196241,
+      "valid_l1_delta_median": -0.04233880341053009,
+      "valid_l1_delta_bootstrap_95ci": [
+        -0.07880281574196285,
+        -0.0384523289071189
+      ],
+      "valid_l1_win_rate": 1.0,
+      "valid_cosine_delta_mean": 0.1386090119679769,
+      "valid_cosine_win_rate": 1.0,
+      "composite_full_l1_delta_mean": -0.048104690180884466,
+      "composite_full_l1_win_rate": 1.0,
+      "decoded_composite_psnr_delta_mean": 0.6195198959774442,
+      "decoded_composite_psnr_delta_median": 0.582244873046875,
+      "decoded_composite_psnr_delta_bootstrap_95ci": [
+        0.26137685775756836,
+        0.9361218611399332
+      ],
+      "decoded_composite_psnr_win_rate": 0.8888888888888888,
+      "decoded_zero_hole_psnr_delta_mean": 1.2173270384470622,
+      "motion_bins": {
+        "medium": {
+          "pair_count": 1,
+          "translation_mean_teacher_units": 0.056175876227556175,
+          "valid_l1_delta_mean": -0.03306359052658081,
+          "decoded_composite_psnr_delta_mean": 1.1715641021728516,
+          "decoded_composite_psnr_win_rate": 1.0
+        },
+        "large": {
+          "pair_count": 8,
+          "translation_mean_teacher_units": 0.2114858459523181,
+          "valid_l1_delta_mean": -0.06158104166388512,
+          "decoded_composite_psnr_delta_mean": 0.5505143702030182,
+          "decoded_composite_psnr_win_rate": 0.875
+        }
+      }
+    },
+    "native_point_average": {
+      "pair_count": 9,
+      "binary_coverage_mean": 0.8702256944444444,
+      "valid_l1_delta_mean": -0.05743800765938229,
+      "valid_l1_delta_median": -0.040343210101127625,
+      "valid_l1_delta_bootstrap_95ci": [
+        -0.07790046433607738,
+        -0.03815423448880514
+      ],
+      "valid_l1_win_rate": 1.0,
+      "valid_cosine_delta_mean": 0.13778013653225368,
+      "valid_cosine_win_rate": 1.0,
+      "composite_full_l1_delta_mean": -0.047882475786738925,
+      "composite_full_l1_win_rate": 1.0,
+      "decoded_composite_psnr_delta_mean": 0.6105656888749864,
+      "decoded_composite_psnr_delta_median": 0.5743017196655273,
+      "decoded_composite_psnr_delta_bootstrap_95ci": [
+        0.2621196375952827,
+        0.9325222704145644
+      ],
+      "decoded_composite_psnr_win_rate": 0.8888888888888888,
+      "decoded_zero_hole_psnr_delta_mean": 1.1950488885243733,
+      "motion_bins": {
+        "medium": {
+          "pair_count": 1,
+          "translation_mean_teacher_units": 0.056175876227556175,
+          "valid_l1_delta_mean": -0.03273478150367737,
+          "decoded_composite_psnr_delta_mean": 1.1574058532714844,
+          "decoded_composite_psnr_win_rate": 1.0
+        },
+        "large": {
+          "pair_count": 8,
+          "translation_mean_teacher_units": 0.2114858459523181,
+          "valid_l1_delta_mean": -0.060525910928845406,
+          "decoded_composite_psnr_delta_mean": 0.5422106683254242,
+          "decoded_composite_psnr_win_rate": 0.875
+        }
+      }
+    }
+  },
+  "findings": [
+    {
+      "severity": "high",
+      "finding": "poses remain MoGe-assisted estimates rather than ground truth",
+      "evidence": "estimated by MoGe-point-assisted SIFT + PnP-RANSAC; not ground truth",
+      "impact": "the negative result cannot distinguish VAE limits from pose error"
+    },
+    {
+      "severity": "medium",
+      "finding": "cosine gains do not transfer consistently to L1 or decoded quality",
+      "evidence": "see per-method valid cosine, valid L1, and composite PSNR win rates",
+      "impact": "cosine alone is not a sufficient feasibility criterion"
+    },
+    {
+      "severity": "medium",
+      "finding": "standard windowed SSIM and LPIPS are still unavailable",
+      "evidence": "decoded global SSIM is reported and decoded_lpips is null",
+      "impact": "decoded quality evidence is incomplete"
+    }
+  ],
+  "safe_to_cite": {
+    "decoded_full_frame_psnr_delta": true,
+    "coverage_or_hole_ratio": true,
+    "warp_vs_copy_same_mask_latent_delta": true
+  }
+}
