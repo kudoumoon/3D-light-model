@@ -12,6 +12,8 @@
 - P14 的 virtual 6DoF projective behavior distillation 在 seed 7 上改善 virtual feature L1 1.64%、coordinate L1 6.20%、held-out AbsRel 9.29%；但跨 seed 的 all-pair warp L1 平均仅改善 0.57%，hard-motion 均值接近零，valid IoU 为 0/3 seeds 获胜。因此该方案尚未晋升为默认配置。
 - P15 在真实 TUM `freiburg1_xyz` 上完成了 12 个 GT pose/depth pair；minimum pooling 的 warp latent L1 为 0.14997，Copy 为 0.24350，decoded composite PSNR 为 17.93 dB，Copy 为 14.24 dB；这是 MoGe-free feasibility gate 的正结果，不是泛化结论。
 - P15b 在真实 TUM `freiburg1_rpy` 纯旋转序列上，中等和 hard-motion 的 warp latent L1 胜率均为 100%，但 sub-cell decoded SSIM 低于 Copy，说明必须同时报告 latent 与 decoded 指标。
+- P15 扩展到 24 个 pair 后，`freiburg1_xyz` 的 minimum pooling warp latent L1 为 0.15554、Copy 为 0.24227，胜率 100%；hard-motion 的 warp L1 为 0.18759、Copy 为 0.34656，coverage 为 68.20%。
+- P15b 扩展到 24 个 pair 后，`freiburg1_rpy` 的 minimum pooling warp latent L1 为 0.15425、Copy 为 0.24823，胜率 100%；hard-motion coverage 为 69.79%.
 
 ## Negative Result
 

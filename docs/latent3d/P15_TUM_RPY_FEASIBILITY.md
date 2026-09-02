@@ -1,14 +1,14 @@
 # P15b：TUM RGB-D 纯旋转 Latent Warp 验证
 
-TUM `freiburg1_rpy` 提供固定位置、绕三个主轴旋转的真实 Kinect RGB-D 与 motion-capture trajectory。沿用 P15 完全相同的冻结 Wan VAE、640×352 crop、官方 K、四种 latent-grid pooling 和 Copy 对照。
+TUM `freiburg1_rpy` 提供固定位置、绕三个主轴旋转的真实 Kinect RGB-D 与 motion-capture trajectory。沿用 P15 完全相同的冻结 Wan VAE、640×352 crop、官方 K、四种 latent-grid pooling 和 Copy 对照。扩展实验为每个运动档 8 个 pair，共 24 个 pair。
 
 | Motion bin | Warp latent L1 ↓ | Copy L1 ↓ | Warp 胜率 ↑ | Coverage ↑ | Composite PSNR ↑ | Copy PSNR ↑ | Composite SSIM ↑ | Copy SSIM ↑ |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| sub-cell | 0.14528 | 0.17123 | 81.25% | 91.28% | 19.09 | 17.79 | 0.6750 | 0.7872 |
-| 1–4 cells | 0.16238 | 0.24015 | 100% | 87.68% | 17.21 | 13.54 | 0.7393 | 0.6451 |
-| ≥4 cells | 0.18390 | 0.34087 | 100% | 73.62% | 14.43 | 9.48 | 0.4301 | 0.1455 |
+| sub-cell | 0.13856 | 0.16000 | 87.5% | 89.10% | 20.18 | 18.77 | 0.8128 | 0.8661 |
+| 1–4 cells | 0.14472 | 0.22058 | 100% | 87.78% | 18.99 | 14.40 | 0.8047 | 0.7571 |
+| ≥4 cells | 0.18083 | 0.36409 | 100% | 69.79% | 13.33 | 9.19 | 0.3963 | 0.0886 |
 
-原始指标：[metrics.json](../../results/latent3d/p15_tum_freiburg1_rpy_gt_v1_standard_metrics/metrics.json)。
+原始指标：[12-pair metrics.json](../../results/latent3d/p15_tum_freiburg1_rpy_gt_v1_standard_metrics/metrics.json)；[24-pair metrics.json](../../results/latent3d/p15_tum_freiburg1_rpy_gt_v2_8pairs/metrics.json)。
 
 ## 结论边界
 
