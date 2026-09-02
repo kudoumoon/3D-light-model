@@ -14,6 +14,7 @@
 - P15b 在真实 TUM `freiburg1_rpy` 纯旋转序列上，中等和 hard-motion 的 warp latent L1 胜率均为 100%，但 sub-cell decoded SSIM 低于 Copy，说明必须同时报告 latent 与 decoded 指标。
 - P15 扩展到 24 个 pair 后，`freiburg1_xyz` 的 minimum pooling warp latent L1 为 0.15554、Copy 为 0.24227，胜率 100%；hard-motion 的 warp L1 为 0.18759、Copy 为 0.34656，coverage 为 68.20%。
 - P15b 扩展到 24 个 pair 后，`freiburg1_rpy` 的 minimum pooling warp latent L1 为 0.15425、Copy 为 0.24823，胜率 100%；hard-motion coverage 为 69.79%.
+- P15c 使用不同的 `candidate_stride=3` 独立采样，在 `freiburg1_xyz` 的 24 个 pair 上仍得到正收益：minimum pooling warp latent L1 0.15654 vs Copy 0.26142，胜率 91.7%，decoded PSNR 17.37 vs 13.54 dB；该结果不与主表合并，用于检验采样敏感性。
 
 ## Negative Result
 
