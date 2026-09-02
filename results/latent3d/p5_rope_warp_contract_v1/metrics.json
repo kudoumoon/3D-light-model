@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "stage": "Matrix-Game pre-RoPE warp contract audit",
+  "created_at": "2026-09-01T19:14:30.796161+00:00",
+  "repository_commit": "b28d049d66255aef0e861eed4e33a82b9b6f8a64",
+  "matrix_game_contract": {
+    "latent_grid": [
+      3,
+      44,
+      80
+    ],
+    "patch_size": [
+      1,
+      2,
+      2
+    ],
+    "token_grid": [
+      3,
+      22,
+      40
+    ],
+    "tokens_per_latent_frame": 880,
+    "tokens_per_chunk": 2640
+  },
+  "interpretation": "pre-RoPE latent warp is position-consistent; moving an already-rotated token requires explicit source-phase removal and target-phase application",
+  "rows": [
+    {
+      "axis": "time",
+      "displacement": 1,
+      "naive_l1": 0.11400473379696888,
+      "corrected_l1": 0.0,
+      "naive_cosine": 0.9627825789032012
+    },
+    {
+      "axis": "time",
+      "displacement": 2,
+      "naive_l1": 0.20531607778760622,
+      "corrected_l1": 0.0,
+      "naive_cosine": 0.8703597746184963
+    },
+    {
+      "axis": "time",
+      "displacement": 4,
+      "naive_l1": 0.37230279962894297,
+      "corrected_l1": 0.0,
+      "naive_cosine": 0.6938984561555772
+    },
+    {
+      "axis": "time",
+      "displacement": 8,
+      "naive_l1": 0.40460577820871213,
+      "corrected_l1": 0.0,
+      "naive_cosine": 0.6485484133552766
+    },
+    {
+      "axis": "time",
+      "displacement": 16,
+      "naive_l1": 0.499131384088783,
+      "corrected_l1": 0.0,
+      "naive_cosine": 0.6000793487625138
+    },
+    {
+      "axis": "height",
+      "displacement": 1,
+      "naive_l1": 0.11400473379696888,
+      "corrected_l1": 0.0,
+      "naive_cosine": 0.9627825789032012
+    },
+    {
+      "axis": "height",
+      "displacement": 2,
+      "naive_l1": 0.20531607778760622,
+      "corrected_l1": 0.0,
+      "naive_cosine": 0.8703597746184963
+    },
+    {
+      "axis": "height",
+      "displacement": 4,
+      "naive_l1": 0.37230279962894297,
+      "corrected_l1": 0.0,
+      "naive_cosine": 0.6938984561555772
+    },
+    {
+      "axis": "height",
+      "displacement": 8,
+      "naive_l1": 0.40460577820871213,
+      "corrected_l1": 0.0,
+      "naive_cosine": 0.6485484133552766
+    },
+    {
+      "axis": "height",
+      "displacement": 16,
+      "naive_l1": 0.499131384088783,
+      "corrected_l1": 0.0,
+      "naive_cosine": 0.6000793487625138
+    },
+    {
+      "axis": "width",
+      "displacement": 1,
+      "naive_l1": 0.11400473379696888,
+      "corrected_l1": 0.0,
+      "naive_cosine": 0.9627825789032012
+    },
+    {
+      "axis": "width",
+      "displacement": 2,
+      "naive_l1": 0.20531607778760622,
+      "corrected_l1": 0.0,
+      "naive_cosine": 0.8703597746184963
+    },
+    {
+      "axis": "width",
+      "displacement": 4,
+      "naive_l1": 0.37230279962894297,
+      "corrected_l1": 0.0,
+      "naive_cosine": 0.6938984561555772
+    },
+    {
+      "axis": "width",
+      "displacement": 8,
+      "naive_l1": 0.40460577820871213,
+      "corrected_l1": 0.0,
+      "naive_cosine": 0.6485484133552766
+    },
+    {
+      "axis": "width",
+      "displacement": 16,
+      "naive_l1": 0.499131384088783,
+      "corrected_l1": 0.0,
+      "naive_cosine": 0.6000793487625138
+    }
+  ]
+}

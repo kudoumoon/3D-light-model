@@ -1,0 +1,411 @@
+{
+  "schema_version": 1,
+  "stage": "scene-holdout latent geometry student",
+  "created_at": "2026-09-01T20:01:18.099921+00:00",
+  "repository": {
+    "commit": "b28d049d66255aef0e861eed4e33a82b9b6f8a64",
+    "dirty": true,
+    "status": "AM tools/train_surface_selector_controlled.py\n?? docs/GEOSPARSE_GOAL.md\n?? docs/GEOSPARSE_REPORT.md\n?? docs/SPECULATIVE_EXECUTION_GOAL.md\n?? docs/SPECULATIVE_EXECUTION_REPORT.md\n?? geosparse/\n?? latent_chunk_geometry.py\n?? latent_surface_alignment.py\n?? results/recorded/geosparse/\n?? results/recorded/m1_v11_completion_pack/gpu_queue.pid\n?? results/recorded/m1_v11_completion_pack/logs/\n?? speculative_execution/\n?? tests/test_geosparse.py\n?? tests/test_latent3d_chunk_alignment.py\n?? tests/test_speculative_statistics.py\n?? tools/decode_geosparse_token_candidates.py\n?? tools/evaluate_geosparse_geometry_oracle.py\n?? tools/evaluate_geosparse_hybrid_quality.py\n?? tools/evaluate_geosparse_hybrid_state.py\n?? tools/evaluate_geosparse_token_oracle.py\n?? tools/evaluate_matrix_game2_state_contamination.py\n?? tools/evaluate_speculative_causal_router.py\n?? tools/evaluate_speculative_oracle_candidates.py\n?? tools/extract_geosparse_geometry.py\n?? tools/extract_matrix_game2_gta_panels.py\n?? tools/finalize_geosparse_p2.py\n?? tools/finalize_geosparse_p3.py\n?? tools/generate_geosparse_rollouts.py\n?? tools/profile_geosparse_baseline.py\n?? tools/profile_matrix_game2.py\n?? tools/profile_matrix_game2_rgb_vae_encode.py\n?? tools/run_geosparse_gpu1_queue.sh\n?? tools/run_geosparse_p2_queue.sh\n?? tools/run_geosparse_p3_queue.sh\n?? tools/run_rope_warp_contract_audit.py\n?? tools/run_wan_temporal_attribution.py\n?? tools/train_latent_geometry_head.py"
+  },
+  "vae_checkpoint": "/root/wenbiao_zhao/minWM/ckpts/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth",
+  "vae_sha256": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+  "config": {
+    "teacher_root": "runs/teacher_moge3_video384_v6_2k",
+    "vae_checkpoint": "/root/wenbiao_zhao/minWM/ckpts/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth",
+    "cache": "results/latent3d/cache_wan_teacher1880_median_v1.pt",
+    "output": "results/latent3d/p10_latent_geometry_proj1000_3way_scene_split_seed17_e30_v1",
+    "epochs": 30,
+    "batch_size": 32,
+    "learning_rate": 0.002,
+    "seed": 17,
+    "projection_weight": 1000.0,
+    "tvod_weight": 0.0,
+    "edge_weight": 0.2,
+    "holdout_scenes": [
+      "game2_right",
+      "game3_right"
+    ],
+    "validation_scenes": [
+      "game2_mid_right",
+      "game3_mid_right"
+    ]
+  },
+  "data": {
+    "total": 1880,
+    "train": 1128,
+    "validation": 376,
+    "test": 376,
+    "validation_scenes": [
+      "game2_mid_right",
+      "game3_mid_right"
+    ],
+    "holdout_scenes": [
+      "game2_right",
+      "game3_right"
+    ]
+  },
+  "selection": {
+    "metric": "validation_projection_l1",
+    "best_epoch": 8,
+    "best_validation": {
+      "abs_rel": 0.23767196014523506,
+      "log_rmse": 0.261820325627923,
+      "delta1": 0.560882218182087,
+      "projection_l1": 0.0018661731082829647,
+      "occupancy_l1": 0.0067277485989810275,
+      "valid_iou": 0.9871323704719543
+    }
+  },
+  "parameters": 231746,
+  "history": [
+    {
+      "loss": 0.16538717618419063,
+      "depth": 0.10416116503377755,
+      "valid": 0.12738281312502092,
+      "edge": 0.0629129893042975,
+      "projection": 3.5905129379898426e-05,
+      "tvod": 0.0013512020183649536,
+      "epoch": 1,
+      "validation_projection_l1": 0.0019793168369991085,
+      "validation_abs_rel": 0.2695875937740008
+    },
+    {
+      "loss": 0.0769856736684839,
+      "depth": 0.055541465472843915,
+      "valid": 0.07229174073371622,
+      "edge": 0.02872085767901606,
+      "projection": 8.470862490462929e-06,
+      "tvod": 0.0006836682821611046,
+      "epoch": 2,
+      "validation_projection_l1": 0.002033735921334786,
+      "validation_abs_rel": 0.2814610271404187
+    },
+    {
+      "loss": 0.0691473830698265,
+      "depth": 0.05041754080189599,
+      "valid": 0.0697257709172037,
+      "edge": 0.02226195939713054,
+      "projection": 7.304872831860444e-06,
+      "tvod": 0.0006500748285260568,
+      "epoch": 3,
+      "validation_projection_l1": 0.0018965236376971006,
+      "validation_abs_rel": 0.227335628742973
+    },
+    {
+      "loss": 0.0598108885395858,
+      "depth": 0.04326791357662943,
+      "valid": 0.06263681335581674,
+      "edge": 0.021584778041061427,
+      "projection": 5.962338314525874e-06,
+      "tvod": 0.000591555315622827,
+      "epoch": 4,
+      "validation_projection_l1": 0.0019334441264315199,
+      "validation_abs_rel": 0.258023114874959
+    },
+    {
+      "loss": 0.05700344261195925,
+      "depth": 0.04113038701729642,
+      "valid": 0.061049917712807655,
+      "edge": 0.019352071996157367,
+      "projection": 5.897649777529699e-06,
+      "tvod": 0.0005640881144144158,
+      "epoch": 5,
+      "validation_projection_l1": 0.001890697589260526,
+      "validation_abs_rel": 0.2341472047070662
+    },
+    {
+      "loss": 0.059863758790824145,
+      "depth": 0.04363978100526664,
+      "valid": 0.05955593619081709,
+      "edge": 0.019126294698152278,
+      "projection": 6.443125376639121e-06,
+      "tvod": 0.0005923601153578298,
+      "epoch": 6,
+      "validation_projection_l1": 0.0019275286758784205,
+      "validation_abs_rel": 0.23125040469070277
+    },
+    {
+      "loss": 0.052218867672814265,
+      "depth": 0.03756169219397836,
+      "valid": 0.05743537274085813,
+      "edge": 0.018730233449281916,
+      "projection": 5.1675919697421096e-06,
+      "tvod": 0.0005296089738193485,
+      "epoch": 7,
+      "validation_projection_l1": 0.0019701634785936526,
+      "validation_abs_rel": 0.2643451429903507
+    },
+    {
+      "loss": 0.048430193370829024,
+      "depth": 0.03494518969414963,
+      "valid": 0.05350625659856531,
+      "edge": 0.015770749939191673,
+      "projection": 4.980228147309794e-06,
+      "tvod": 0.0004897050785075407,
+      "epoch": 8,
+      "validation_projection_l1": 0.0018661731082829647,
+      "validation_abs_rel": 0.23767196014523506
+    },
+    {
+      "loss": 0.05391923658963707,
+      "depth": 0.039521402368942894,
+      "valid": 0.051514292135834694,
+      "edge": 0.016856722973494068,
+      "projection": 5.875059558649001e-06,
+      "tvod": 0.0005497487808396625,
+      "epoch": 9,
+      "validation_projection_l1": 0.0021100297963130288,
+      "validation_abs_rel": 0.25759302576382953
+    },
+    {
+      "loss": 0.04617838002741337,
+      "depth": 0.03338559872160355,
+      "valid": 0.04937624755418963,
+      "edge": 0.015431922938053807,
+      "projection": 4.7687719554940286e-06,
+      "tvod": 0.000486918540749078,
+      "epoch": 10,
+      "validation_projection_l1": 0.002168328957244133,
+      "validation_abs_rel": 0.26375337193409604
+    },
+    {
+      "loss": 0.04463036467010776,
+      "depth": 0.03252684428460068,
+      "valid": 0.04628344521754318,
+      "edge": 0.013864305749949481,
+      "projection": 4.702314710256259e-06,
+      "tvod": 0.0004889125618016502,
+      "epoch": 11,
+      "validation_projection_l1": 0.0021604370970938667,
+      "validation_abs_rel": 0.26476466562598944
+    },
+    {
+      "loss": 0.04253631830215454,
+      "depth": 0.031106156297028065,
+      "valid": 0.042681862651887864,
+      "edge": 0.013142275753327541,
+      "projection": 4.533520116941266e-06,
+      "tvod": 0.00047798706064996723,
+      "epoch": 12,
+      "validation_projection_l1": 0.003278116734387974,
+      "validation_abs_rel": 0.3112678738931815
+    },
+    {
+      "loss": 0.04613390865011348,
+      "depth": 0.034013445333888136,
+      "valid": 0.04276869104554256,
+      "edge": 0.01365018560965028,
+      "projection": 5.113557139995666e-06,
+      "tvod": 0.0005277999047797897,
+      "epoch": 13,
+      "validation_projection_l1": 0.0023213361273519695,
+      "validation_abs_rel": 0.2678135211269061
+    },
+    {
+      "loss": 0.04032769680230154,
+      "depth": 0.02941474295221269,
+      "valid": 0.040270183597587876,
+      "edge": 0.013185558116270436,
+      "projection": 4.248823598926619e-06,
+      "tvod": 0.0004636566744819801,
+      "epoch": 14,
+      "validation_projection_l1": 0.002305476024048403,
+      "validation_abs_rel": 0.28772241435945034
+    },
+    {
+      "loss": 0.03860945932360159,
+      "depth": 0.02833475446742442,
+      "valid": 0.037317251683109336,
+      "edge": 0.012540276990168624,
+      "projection": 4.034923973803315e-06,
+      "tvod": 0.0004325687999274426,
+      "epoch": 15,
+      "validation_projection_l1": 0.0022302905951316157,
+      "validation_abs_rel": 0.27124229942758876
+    },
+    {
+      "loss": 0.03849912496904532,
+      "depth": 0.0282390965666208,
+      "valid": 0.036513110571023494,
+      "edge": 0.012602710760095052,
+      "projection": 4.08817515070344e-06,
+      "tvod": 0.00044407570183264196,
+      "epoch": 16,
+      "validation_projection_l1": 0.002611621040462827,
+      "validation_abs_rel": 0.2756894715130329
+    },
+    {
+      "loss": 0.03635519246260325,
+      "depth": 0.026525377865052886,
+      "valid": 0.0350175003728105,
+      "edge": 0.012350325472652912,
+      "projection": 3.8579995999852044e-06,
+      "tvod": 0.00043318140605050657,
+      "epoch": 17,
+      "validation_projection_l1": 0.002036084040203908,
+      "validation_abs_rel": 0.27337682619690895
+    },
+    {
+      "loss": 0.03819918161672023,
+      "depth": 0.027984473233421642,
+      "valid": 0.0355896147278448,
+      "edge": 0.012782593231855167,
+      "projection": 4.099228530347116e-06,
+      "tvod": 0.0004422205594083708,
+      "epoch": 18,
+      "validation_projection_l1": 0.002119108595555493,
+      "validation_abs_rel": 0.270366333425045
+    },
+    {
+      "loss": 0.03752924931339092,
+      "depth": 0.027416323363367055,
+      "valid": 0.03465031139138672,
+      "edge": 0.012428083638143208,
+      "projection": 4.162278161048663e-06,
+      "tvod": 0.0004478527528893513,
+      "epoch": 19,
+      "validation_projection_l1": 0.0021822852359036915,
+      "validation_abs_rel": 0.28460358393688995
+    },
+    {
+      "loss": 0.037540032580080956,
+      "depth": 0.027558168939625222,
+      "valid": 0.033582235065599285,
+      "edge": 0.012445113880352842,
+      "projection": 4.134617373412968e-06,
+      "tvod": 0.0004254009715320232,
+      "epoch": 20,
+      "validation_projection_l1": 0.0022123902065989873,
+      "validation_abs_rel": 0.2706564459949732
+    },
+    {
+      "loss": 0.03594389961411556,
+      "depth": 0.0259663560686426,
+      "valid": 0.03278103605326679,
+      "edge": 0.012959593725908134,
+      "projection": 4.107520901975982e-06,
+      "tvod": 0.0004406474609923963,
+      "epoch": 21,
+      "validation_projection_l1": 0.002197645439688737,
+      "validation_abs_rel": 0.2623048300544421
+    },
+    {
+      "loss": 0.03568969449649254,
+      "depth": 0.02595941499910421,
+      "valid": 0.03323865826759073,
+      "edge": 0.01206253230985668,
+      "projection": 3.9939070827838604e-06,
+      "tvod": 0.00042196192144830193,
+      "epoch": 22,
+      "validation_projection_l1": 0.0021526572187819206,
+      "validation_abs_rel": 0.2554570212960243
+    },
+    {
+      "loss": 0.030240069039993815,
+      "depth": 0.021198805550941162,
+      "valid": 0.03151893869249357,
+      "edge": 0.0119049491153823,
+      "projection": 3.5083798290240034e-06,
+      "tvod": 0.0003863083794486657,
+      "epoch": 23,
+      "validation_projection_l1": 0.0021829022055802247,
+      "validation_abs_rel": 0.27156405958036584
+    },
+    {
+      "loss": 0.03082312886706657,
+      "depth": 0.021562935862069327,
+      "valid": 0.0335329761211243,
+      "edge": 0.012397640048422746,
+      "projection": 3.4273671000543495e-06,
+      "tvod": 0.00037302114247318567,
+      "epoch": 24,
+      "validation_projection_l1": 0.002115361079631839,
+      "validation_abs_rel": 0.2718327905361851
+    },
+    {
+      "loss": 0.029961228422406647,
+      "depth": 0.021046247928299837,
+      "valid": 0.030689909679090813,
+      "edge": 0.011732870143734746,
+      "projection": 3.4994151765962065e-06,
+      "tvod": 0.00038758005292846874,
+      "epoch": 25,
+      "validation_projection_l1": 0.0028774885528643304,
+      "validation_abs_rel": 0.27519742026925087
+    },
+    {
+      "loss": 0.03290049493726757,
+      "depth": 0.023546852404251695,
+      "valid": 0.03184137177757091,
+      "edge": 0.012949577118787501,
+      "projection": 3.5795898472517565e-06,
+      "tvod": 0.0003935319800802972,
+      "epoch": 26,
+      "validation_projection_l1": 0.0019814296441230304,
+      "validation_abs_rel": 0.23940873021880785
+    },
+    {
+      "loss": 0.027562263266493876,
+      "depth": 0.019055278764830694,
+      "valid": 0.029927408426172204,
+      "edge": 0.01170649141487148,
+      "projection": 3.1729451563933253e-06,
+      "tvod": 0.00034839022272434604,
+      "epoch": 27,
+      "validation_projection_l1": 0.002261841441698683,
+      "validation_abs_rel": 0.2644981214155753
+    },
+    {
+      "loss": 0.026001352092458144,
+      "depth": 0.017745776244232223,
+      "valid": 0.029816687676227756,
+      "edge": 0.011997736343700025,
+      "projection": 2.8743600953223195e-06,
+      "tvod": 0.000326762813225893,
+      "epoch": 28,
+      "validation_projection_l1": 0.0019716800403936454,
+      "validation_abs_rel": 0.22623455710709095
+    },
+    {
+      "loss": 0.025157828763541248,
+      "depth": 0.017032265507926542,
+      "valid": 0.029069671200381383,
+      "edge": 0.011589216766878963,
+      "projection": 2.9007528073381964e-06,
+      "tvod": 0.0003307983259017217,
+      "epoch": 29,
+      "validation_projection_l1": 0.001924593770430268,
+      "validation_abs_rel": 0.24300780116269985
+    },
+    {
+      "loss": 0.030639142729341984,
+      "depth": 0.021669838060107496,
+      "valid": 0.03316207706100411,
+      "edge": 0.011713663400668237,
+      "projection": 3.3103641530690056e-06,
+      "tvod": 0.0003653386079855005,
+      "epoch": 30,
+      "validation_projection_l1": 0.002295266055928854,
+      "validation_abs_rel": 0.2653488889336586
+    }
+  ],
+  "test": {
+    "abs_rel": 0.3140310309827328,
+    "log_rmse": 0.3576004784554243,
+    "delta1": 0.431049682199955,
+    "projection_l1": 0.0025088324424965927,
+    "occupancy_l1": 0.007962914921032885,
+    "valid_iou": 0.9817160069942474
+  },
+  "latency": {
+    "mean_ms": 1.5669816756853834,
+    "median_ms": 1.445549016352743,
+    "p95_ms": 1.8003446864895511,
+    "peak_allocated_bytes": 551351808
+  },
+  "runtime": {
+    "training_seconds_excluding_cache": 972.2010780250421,
+    "gpu": "NVIDIA H100 80GB HBM3"
+  },
+  "evidence_boundary": "MoGe-3 pseudo-label scene holdout on Matrix-Game generated frames; not real-data or cross-VAE generalization evidence"
+}

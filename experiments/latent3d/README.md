@@ -9,3 +9,15 @@ P2 是训练前的硬门。每个样本必须包含 source RGB、target RGB、�
 当前仓库的 1880 个 MoGe-3 teacher frame 没有可靠的跨帧相对位姿。它们可用于单帧蒸馏，不能作为 P2 的真实 target-latent 证据。下一步需要引入带 calibrated pose 的帧对；数据清单、位姿来源、VAE 哈希和 GPU 信息必须与每次结果一起保存。
 
 P3 只比较可解释的 geometry alignment：center、average、median、minimum、confidence-weighted，以及一个独立训练的 learned pooling。选择标准是 target latent warp 和 decoded image 的质量，不是单独的 depth error。
+
+## 阶段索引
+
+| 阶段 | 问题 | 当前状态 |
+|---|---|---|
+| P0–P1 | 基线与冻结 VAE | 通过 |
+| P2–P3 | latent warp 与 alignment | 受控、估计位姿和 TUM GT 通过 |
+| P4–P12 | 轻量 head、confidence、capacity | 完成一轮，跨域待补 |
+| P13–P14 | transport-aware objective | 单 seed 正向，跨 seed 尚不稳定 |
+| P15 | TUM sensor depth + mocap pose + K | MoGe-free 硬门通过 |
+
+完整结论见 [LATENT3D_RESULTS.md](../../LATENT3D_RESULTS.md)。

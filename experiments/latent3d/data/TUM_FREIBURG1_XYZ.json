@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "dataset": "TUM RGB-D",
+  "sequence": "freiburg1_xyz",
+  "source_page": "https://cvg.cit.tum.de/data/datasets/rgbd-dataset/download",
+  "archive_url": "https://cvg.cit.tum.de/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_xyz.tgz",
+  "archive_size_reported_gb": 0.47,
+  "archive_sha256": "a0236d97b8c30cd93b653656d2b6c293ff7c982a4130ef2a1a8beecdb124ef98",
+  "local_data_tracked": false,
+  "assets_used": [
+    "rgb",
+    "registered_depth",
+    "groundtruth_camera_trajectory",
+    "freiburg1_intrinsics"
+  ],
+  "supervision": {
+    "depth": "Kinect sensor depth, uint16 / 5000 metres",
+    "pose": "motion-capture camera-to-world trajectory",
+    "intrinsics": [[517.3, 0.0, 318.6], [0.0, 516.5, 255.3], [0.0, 0.0, 1.0]]
+  },
+  "experiment": "results/latent3d/p15_tum_freiburg1_xyz_gt_v4_standard_metrics/metrics.json"
+}

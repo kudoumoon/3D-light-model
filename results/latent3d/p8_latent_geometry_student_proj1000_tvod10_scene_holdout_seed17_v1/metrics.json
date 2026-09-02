@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "stage": "scene-holdout latent geometry student",
+  "created_at": "2026-09-01T19:42:42.403665+00:00",
+  "repository": {
+    "commit": "b28d049d66255aef0e861eed4e33a82b9b6f8a64",
+    "dirty": true,
+    "status": "AM tools/train_surface_selector_controlled.py\n?? docs/GEOSPARSE_GOAL.md\n?? docs/GEOSPARSE_REPORT.md\n?? docs/SPECULATIVE_EXECUTION_GOAL.md\n?? docs/SPECULATIVE_EXECUTION_REPORT.md\n?? geosparse/\n?? latent_chunk_geometry.py\n?? latent_surface_alignment.py\n?? results/recorded/geosparse/\n?? results/recorded/m1_v11_completion_pack/gpu_queue.pid\n?? results/recorded/m1_v11_completion_pack/logs/\n?? speculative_execution/\n?? tests/test_geosparse.py\n?? tests/test_latent3d_chunk_alignment.py\n?? tests/test_speculative_statistics.py\n?? tools/decode_geosparse_token_candidates.py\n?? tools/evaluate_geosparse_geometry_oracle.py\n?? tools/evaluate_geosparse_hybrid_quality.py\n?? tools/evaluate_geosparse_hybrid_state.py\n?? tools/evaluate_geosparse_token_oracle.py\n?? tools/evaluate_matrix_game2_state_contamination.py\n?? tools/evaluate_speculative_causal_router.py\n?? tools/evaluate_speculative_oracle_candidates.py\n?? tools/extract_geosparse_geometry.py\n?? tools/extract_matrix_game2_gta_panels.py\n?? tools/finalize_geosparse_p2.py\n?? tools/finalize_geosparse_p3.py\n?? tools/generate_geosparse_rollouts.py\n?? tools/profile_geosparse_baseline.py\n?? tools/profile_matrix_game2.py\n?? tools/profile_matrix_game2_rgb_vae_encode.py\n?? tools/run_geosparse_gpu1_queue.sh\n?? tools/run_geosparse_p2_queue.sh\n?? tools/run_geosparse_p3_queue.sh\n?? tools/run_rope_warp_contract_audit.py\n?? tools/run_wan_temporal_attribution.py\n?? tools/train_latent_geometry_head.py"
+  },
+  "vae_checkpoint": "/root/wenbiao_zhao/minWM/ckpts/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth",
+  "vae_sha256": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+  "config": {
+    "teacher_root": "runs/teacher_moge3_video384_v6_2k",
+    "vae_checkpoint": "/root/wenbiao_zhao/minWM/ckpts/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth",
+    "cache": "results/latent3d/cache_wan_teacher1880_median_v1.pt",
+    "output": "results/latent3d/p8_latent_geometry_student_proj1000_tvod10_scene_holdout_seed17_v1",
+    "epochs": 12,
+    "batch_size": 32,
+    "learning_rate": 0.002,
+    "seed": 17,
+    "projection_weight": 1000.0,
+    "tvod_weight": 10.0,
+    "edge_weight": 0.2,
+    "holdout_scenes": [
+      "game2_right",
+      "game3_right"
+    ]
+  },
+  "data": {
+    "total": 1880,
+    "train": 1504,
+    "test": 376,
+    "holdout_scenes": [
+      "game2_right",
+      "game3_right"
+    ]
+  },
+  "parameters": 231746,
+  "history": [
+    {
+      "loss": 0.15734331761585904,
+      "depth": 0.09247738178423111,
+      "valid": 0.10762314197230846,
+      "edge": 0.057288168354871424,
+      "projection": 3.0852642329920585e-05,
+      "tvod": 0.0011793343484045027,
+      "epoch": 1
+    },
+    {
+      "loss": 0.08034529941196138,
+      "depth": 0.05254946847228294,
+      "valid": 0.06627993436252817,
+      "edge": 0.027058709056136457,
+      "projection": 8.924941292865155e-06,
+      "tvod": 0.0006831154621087332,
+      "epoch": 2
+    },
+    {
+      "loss": 0.07318176527289634,
+      "depth": 0.0481000377776775,
+      "valid": 0.06611680968644772,
+      "edge": 0.021199395602687875,
+      "projection": 7.772029806453266e-06,
+      "tvod": 0.0006458136776927859,
+      "epoch": 3
+    },
+    {
+      "loss": 0.06395196312285484,
+      "depth": 0.04182379942466604,
+      "valid": 0.05839239845567561,
+      "edge": 0.01891506948765922,
+      "projection": 6.5137014934542945e-06,
+      "tvod": 0.0005992208706571701,
+      "epoch": 4
+    },
+    {
+      "loss": 0.060412100337921305,
+      "depth": 0.039391542210223826,
+      "valid": 0.056600596280174054,
+      "edge": 0.01672891967315623,
+      "projection": 6.146606878285232e-06,
+      "tvod": 0.0005868107694736186,
+      "epoch": 5
+    },
+    {
+      "loss": 0.055443767775246434,
+      "depth": 0.035930998266694394,
+      "valid": 0.055003154626552093,
+      "edge": 0.01559426282790113,
+      "projection": 5.429728147685231e-06,
+      "tvod": 0.0005463873360682516,
+      "epoch": 6
+    },
+    {
+      "loss": 0.0534516859878885,
+      "depth": 0.035013455897569656,
+      "valid": 0.05110026206424896,
+      "edge": 0.014890031017204548,
+      "projection": 5.1821617983071695e-06,
+      "tvod": 0.0005168036162664995,
+      "epoch": 7
+    },
+    {
+      "loss": 0.05492316115092724,
+      "depth": 0.03614611251953435,
+      "valid": 0.04836687905357239,
+      "edge": 0.015329906221558439,
+      "projection": 5.470174804205717e-06,
+      "tvod": 0.0005404204613172469,
+      "epoch": 8
+    },
+    {
+      "loss": 0.052446356756573026,
+      "depth": 0.03472324270517268,
+      "valid": 0.04644753177590827,
+      "edge": 0.014220082973863216,
+      "projection": 5.095417996113959e-06,
+      "tvod": 0.0005138926211115408,
+      "epoch": 9
+    },
+    {
+      "loss": 0.04763584084650303,
+      "depth": 0.03141498946129007,
+      "valid": 0.042943460589393655,
+      "edge": 0.013443105081294445,
+      "projection": 4.4773512641729615e-06,
+      "tvod": 0.0004760532985451294,
+      "epoch": 10
+    },
+    {
+      "loss": 0.04908266112683935,
+      "depth": 0.03263822721039995,
+      "valid": 0.04039594665803808,
+      "edge": 0.013370330326576182,
+      "projection": 4.830444314838462e-06,
+      "tvod": 0.0004900329166706255,
+      "epoch": 11
+    },
+    {
+      "loss": 0.04597852513828176,
+      "depth": 0.030260262436213645,
+      "valid": 0.039064460770880924,
+      "edge": 0.013510683967553555,
+      "projection": 4.401369846589737e-06,
+      "tvod": 0.00047083104250982325,
+      "epoch": 12
+    }
+  ],
+  "test": {
+    "abs_rel": 0.2198821815351645,
+    "log_rmse": 0.28310584897796315,
+    "delta1": 0.5781956339875857,
+    "projection_l1": 0.0017989562960186352,
+    "occupancy_l1": 0.006552181691707422,
+    "valid_iou": 0.9854288051525751
+  },
+  "latency": {
+    "mean_ms": 1.1837631235830486,
+    "median_ms": 1.14568998105824,
+    "p95_ms": 1.5317170473281294,
+    "peak_allocated_bytes": 551351808
+  },
+  "runtime": {
+    "training_seconds_excluding_cache": 12.60607393400278,
+    "gpu": "NVIDIA H100 80GB HBM3"
+  },
+  "evidence_boundary": "MoGe-3 pseudo-label scene holdout on Matrix-Game generated frames; not real-data or cross-VAE generalization evidence"
+}

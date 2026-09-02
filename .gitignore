@@ -13,6 +13,7 @@ Thumbs.db
 
 # External source checkouts, weights and uncurated run output
 third_party/
+data/
 weights/
 checkpoints/
 models/

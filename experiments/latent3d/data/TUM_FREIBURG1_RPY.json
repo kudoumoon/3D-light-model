@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "dataset": "TUM RGB-D",
+  "sequence": "freiburg1_rpy",
+  "source_page": "https://cvg.cit.tum.de/data/datasets/rgbd-dataset/download",
+  "archive_url": "https://cvg.cit.tum.de/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_rpy.tgz",
+  "archive_sha256": "78103722a25873dbbb4de027eaa8c810a6382100691f02b6cf95c3adc91c4ac1",
+  "local_data_tracked": false,
+  "supervision": {
+    "depth": "Kinect sensor depth, uint16 / 5000 metres",
+    "pose": "motion-capture camera-to-world trajectory",
+    "intrinsics": [[517.3, 0.0, 318.6], [0.0, 516.5, 255.3], [0.0, 0.0, 1.0]]
+  },
+  "experiment": "results/latent3d/p15_tum_freiburg1_rpy_gt_v1_standard_metrics/metrics.json"
+}

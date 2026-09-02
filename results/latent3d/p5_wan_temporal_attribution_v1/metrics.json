@@ -1,0 +1,1103 @@
+{
+  "schema_version": 1,
+  "stage": "Frozen Wan VAE causal temporal attribution",
+  "created_at": "2026-09-01T19:16:11.407286+00:00",
+  "repository": {
+    "commit": "b28d049d66255aef0e861eed4e33a82b9b6f8a64",
+    "dirty": true,
+    "status": "?? docs/GEOSPARSE_GOAL.md\n?? docs/GEOSPARSE_REPORT.md\n?? docs/SPECULATIVE_EXECUTION_GOAL.md\n?? docs/SPECULATIVE_EXECUTION_REPORT.md\n?? geosparse/\n?? latent_chunk_geometry.py\n?? latent_surface_alignment.py\n?? results/recorded/geosparse/\n?? results/recorded/m1_v11_completion_pack/gpu_queue.pid\n?? results/recorded/m1_v11_completion_pack/logs/\n?? speculative_execution/\n?? tests/test_geosparse.py\n?? tests/test_latent3d_chunk_alignment.py\n?? tests/test_speculative_statistics.py\n?? tools/decode_geosparse_token_candidates.py\n?? tools/evaluate_geosparse_geometry_oracle.py\n?? tools/evaluate_geosparse_hybrid_quality.py\n?? tools/evaluate_geosparse_hybrid_state.py\n?? tools/evaluate_geosparse_token_oracle.py\n?? tools/evaluate_matrix_game2_state_contamination.py\n?? tools/evaluate_speculative_causal_router.py\n?? tools/evaluate_speculative_oracle_candidates.py\n?? tools/extract_geosparse_geometry.py\n?? tools/extract_matrix_game2_gta_panels.py\n?? tools/finalize_geosparse_p2.py\n?? tools/finalize_geosparse_p3.py\n?? tools/generate_geosparse_rollouts.py\n?? tools/profile_geosparse_baseline.py\n?? tools/profile_matrix_game2.py\n?? tools/profile_matrix_game2_rgb_vae_encode.py\n?? tools/run_geosparse_gpu1_queue.sh\n?? tools/run_geosparse_p2_queue.sh\n?? tools/run_geosparse_p3_queue.sh\n?? tools/run_rope_warp_contract_audit.py\n?? tools/run_wan_temporal_attribution.py"
+  },
+  "gpu": {
+    "name": "NVIDIA H100 80GB HBM3",
+    "visible_device_count": 1
+  },
+  "vae_checkpoint": "/root/wenbiao_zhao/minWM/ckpts/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth",
+  "vae_sha256": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+  "config": {
+    "samples": 2,
+    "rgb_frames": 13,
+    "causal_groups": [
+      [
+        0
+      ],
+      [
+        1,
+        2,
+        3,
+        4
+      ],
+      [
+        5,
+        6,
+        7,
+        8
+      ],
+      [
+        9,
+        10,
+        11,
+        12
+      ]
+    ],
+    "perturbations": [
+      "blackout",
+      "local_invert"
+    ],
+    "tiler": {
+      "tiled": true,
+      "tile_size": [
+        44,
+        80
+      ],
+      "tile_stride": [
+        23,
+        38
+      ]
+    }
+  },
+  "aggregate": {
+    "blackout": {
+      "mean_owner_fraction": 0.7991649741401557,
+      "max_earlier_fraction": 0.0,
+      "mean_future_fraction": 0.20083502585984425,
+      "dominant_owner_rate": 1.0,
+      "mean_matrix": [
+        [
+          0.6253944580410966,
+          0.216556889670012,
+          0.10013156814112778,
+          0.05791708414776367
+        ],
+        [
+          0.0,
+          0.6930938782664582,
+          0.1912409985247075,
+          0.11566512320883422
+        ],
+        [
+          0.0,
+          0.7246520552095242,
+          0.15898863386362078,
+          0.11635931092685495
+        ],
+        [
+          0.0,
+          0.6873119155853802,
+          0.19623597723250097,
+          0.11645210718211876
+        ],
+        [
+          0.0,
+          0.6823395002329165,
+          0.2077797461381789,
+          0.10988075362890475
+        ],
+        [
+          0.0,
+          0.0,
+          0.758747348635086,
+          0.24125265136491403
+        ],
+        [
+          0.0,
+          0.0,
+          0.7853655982933948,
+          0.21463440170660525
+        ],
+        [
+          0.0,
+          0.0,
+          0.741026741026741,
+          0.25897325897325896
+        ],
+        [
+          0.0,
+          0.0,
+          0.6912131685314276,
+          0.30878683146857244
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "local_invert": {
+      "mean_owner_fraction": 0.7969815465024789,
+      "max_earlier_fraction": 0.0,
+      "mean_future_fraction": 0.20301845349752118,
+      "dominant_owner_rate": 1.0,
+      "mean_matrix": [
+        [
+          0.5200029457250166,
+          0.324134816014925,
+          0.10337162775854875,
+          0.05249061050150969
+        ],
+        [
+          0.0,
+          0.7214778303416018,
+          0.16793984432294962,
+          0.11058232533544848
+        ],
+        [
+          0.0,
+          0.7463299336247369,
+          0.14812692245426584,
+          0.10554314392099726
+        ],
+        [
+          0.0,
+          0.6958626897172476,
+          0.18207367414622033,
+          0.12206363613653207
+        ],
+        [
+          0.0,
+          0.6396628568093649,
+          0.24007454431125716,
+          0.12026259887937801
+        ],
+        [
+          0.0,
+          0.0,
+          0.797357303694198,
+          0.202642696305802
+        ],
+        [
+          0.0,
+          0.0,
+          0.8043434947200638,
+          0.19565650527993622
+        ],
+        [
+          0.0,
+          0.0,
+          0.7656495204882302,
+          0.23435047951176985
+        ],
+        [
+          0.0,
+          0.0,
+          0.6700735294117648,
+          0.3299264705882353
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  },
+  "rows": [
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "perturbation": "blackout",
+      "rgb_frame": 0,
+      "owner_latent": 0,
+      "dominant_latent": 0,
+      "owner_fraction": 0.6191304347826087,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.3808695652173913,
+      "raw_l1_by_latent": [
+        0.6953125,
+        0.25390625,
+        0.1103515625,
+        0.0634765625
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "perturbation": "blackout",
+      "rgb_frame": 1,
+      "owner_latent": 1,
+      "dominant_latent": 1,
+      "owner_fraction": 0.6923766816143497,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.3076233183856502,
+      "raw_l1_by_latent": [
+        0.0,
+        0.376953125,
+        0.1044921875,
+        0.06298828125
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "perturbation": "blackout",
+      "rgb_frame": 2,
+      "owner_latent": 1,
+      "dominant_latent": 1,
+      "owner_fraction": 0.7262569832402235,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.2737430167597765,
+      "raw_l1_by_latent": [
+        0.0,
+        0.5078125,
+        0.11083984375,
+        0.08056640625
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "perturbation": "blackout",
+      "rgb_frame": 3,
+      "owner_latent": 1,
+      "dominant_latent": 1,
+      "owner_fraction": 0.6886446886446886,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.31135531135531136,
+      "raw_l1_by_latent": [
+        0.0,
+        0.55078125,
+        0.158203125,
+        0.0908203125
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "perturbation": "blackout",
+      "rgb_frame": 4,
+      "owner_latent": 1,
+      "dominant_latent": 1,
+      "owner_fraction": 0.671941570298235,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.328058429701765,
+      "raw_l1_by_latent": [
+        0.0,
+        0.5390625,
+        0.173828125,
+        0.08935546875
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "perturbation": "blackout",
+      "rgb_frame": 5,
+      "owner_latent": 2,
+      "dominant_latent": 2,
+      "owner_fraction": 0.7572815533980582,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.24271844660194175,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.380859375,
+        0.1220703125
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "perturbation": "blackout",
+      "rgb_frame": 6,
+      "owner_latent": 2,
+      "dominant_latent": 2,
+      "owner_fraction": 0.7889908256880734,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.21100917431192662,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.50390625,
+        0.134765625
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "perturbation": "blackout",
+      "rgb_frame": 7,
+      "owner_latent": 2,
+      "dominant_latent": 2,
+      "owner_fraction": 0.7407407407407407,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.25925925925925924,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.546875,
+        0.19140625
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "perturbation": "blackout",
+      "rgb_frame": 8,
+      "owner_latent": 2,
+      "dominant_latent": 2,
+      "owner_fraction": 0.6801007556675063,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.3198992443324937,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.52734375,
+        0.248046875
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "perturbation": "blackout",
+      "rgb_frame": 9,
+      "owner_latent": 3,
+      "dominant_latent": 3,
+      "owner_fraction": 1.0,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.0,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.0,
+        0.427734375
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "perturbation": "blackout",
+      "rgb_frame": 10,
+      "owner_latent": 3,
+      "dominant_latent": 3,
+      "owner_fraction": 1.0,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.0,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.0,
+        0.55859375
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "perturbation": "blackout",
+      "rgb_frame": 11,
+      "owner_latent": 3,
+      "dominant_latent": 3,
+      "owner_fraction": 1.0,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.0,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.0,
+        0.609375
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "perturbation": "blackout",
+      "rgb_frame": 12,
+      "owner_latent": 3,
+      "dominant_latent": 3,
+      "owner_fraction": 1.0,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.0,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.0,
+        0.59375
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "perturbation": "local_invert",
+      "rgb_frame": 0,
+      "owner_latent": 0,
+      "dominant_latent": 0,
+      "owner_fraction": 0.505945945945946,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.494054054054054,
+      "raw_l1_by_latent": [
+        0.1142578125,
+        0.07666015625,
+        0.02197265625,
+        0.012939453125
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "perturbation": "local_invert",
+      "rgb_frame": 1,
+      "owner_latent": 1,
+      "dominant_latent": 1,
+      "owner_fraction": 0.7233789411064843,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.2766210588935158,
+      "raw_l1_by_latent": [
+        0.0,
+        0.1484375,
+        0.0341796875,
+        0.0225830078125
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "perturbation": "local_invert",
+      "rgb_frame": 2,
+      "owner_latent": 1,
+      "dominant_latent": 1,
+      "owner_fraction": 0.7459932005828072,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.25400679941719284,
+      "raw_l1_by_latent": [
+        0.0,
+        0.1875,
+        0.03759765625,
+        0.0262451171875
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "perturbation": "local_invert",
+      "rgb_frame": 3,
+      "owner_latent": 1,
+      "dominant_latent": 1,
+      "owner_fraction": 0.7020702070207021,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.2979297929792979,
+      "raw_l1_by_latent": [
+        0.0,
+        0.1904296875,
+        0.048583984375,
+        0.0322265625
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "perturbation": "local_invert",
+      "rgb_frame": 4,
+      "owner_latent": 1,
+      "dominant_latent": 1,
+      "owner_fraction": 0.6231742940603701,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.37682570593962994,
+      "raw_l1_by_latent": [
+        0.0,
+        0.15625,
+        0.06298828125,
+        0.031494140625
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "perturbation": "local_invert",
+      "rgb_frame": 5,
+      "owner_latent": 2,
+      "dominant_latent": 2,
+      "owner_fraction": 0.7928388746803069,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.2071611253196931,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.1513671875,
+        0.03955078125
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "perturbation": "local_invert",
+      "rgb_frame": 6,
+      "owner_latent": 2,
+      "dominant_latent": 2,
+      "owner_fraction": 0.799163179916318,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.200836820083682,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.1865234375,
+        0.046875
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "perturbation": "local_invert",
+      "rgb_frame": 7,
+      "owner_latent": 2,
+      "dominant_latent": 2,
+      "owner_fraction": 0.7644787644787645,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.23552123552123552,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.193359375,
+        0.0595703125
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "perturbation": "local_invert",
+      "rgb_frame": 8,
+      "owner_latent": 2,
+      "dominant_latent": 2,
+      "owner_fraction": 0.66,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.34,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.1611328125,
+        0.0830078125
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "perturbation": "local_invert",
+      "rgb_frame": 9,
+      "owner_latent": 3,
+      "dominant_latent": 3,
+      "owner_fraction": 1.0,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.0,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.0,
+        0.1708984375
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "perturbation": "local_invert",
+      "rgb_frame": 10,
+      "owner_latent": 3,
+      "dominant_latent": 3,
+      "owner_fraction": 1.0,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.0,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.0,
+        0.208984375
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "perturbation": "local_invert",
+      "rgb_frame": 11,
+      "owner_latent": 3,
+      "dominant_latent": 3,
+      "owner_fraction": 1.0,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.0,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.0,
+        0.2109375
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "perturbation": "local_invert",
+      "rgb_frame": 12,
+      "owner_latent": 3,
+      "dominant_latent": 3,
+      "owner_fraction": 1.0,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.0,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.0,
+        0.173828125
+      ]
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000000",
+      "kind": "sequence_summary",
+      "latent_shape": [
+        1,
+        16,
+        4,
+        44,
+        80
+      ],
+      "roundtrip_psnr": 31.121387481689453,
+      "independent_anchor_l1_by_latent": [
+        0.0,
+        0.31640625,
+        0.33203125,
+        0.416015625
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "perturbation": "blackout",
+      "rgb_frame": 0,
+      "owner_latent": 0,
+      "dominant_latent": 0,
+      "owner_fraction": 0.6316584812995845,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.3683415187004156,
+      "raw_l1_by_latent": [
+        0.81640625,
+        0.267578125,
+        0.1318359375,
+        0.07666015625
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "perturbation": "blackout",
+      "rgb_frame": 1,
+      "owner_latent": 1,
+      "dominant_latent": 1,
+      "owner_fraction": 0.6938110749185668,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.30618892508143325,
+      "raw_l1_by_latent": [
+        0.0,
+        0.416015625,
+        0.1142578125,
+        0.0693359375
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "perturbation": "blackout",
+      "rgb_frame": 2,
+      "owner_latent": 1,
+      "dominant_latent": 1,
+      "owner_fraction": 0.723047127178825,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.276952872821175,
+      "raw_l1_by_latent": [
+        0.0,
+        0.546875,
+        0.12060546875,
+        0.0888671875
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "perturbation": "blackout",
+      "rgb_frame": 3,
+      "owner_latent": 1,
+      "dominant_latent": 1,
+      "owner_fraction": 0.6859791425260718,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.31402085747392816,
+      "raw_l1_by_latent": [
+        0.0,
+        0.578125,
+        0.1640625,
+        0.1005859375
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "perturbation": "blackout",
+      "rgb_frame": 4,
+      "owner_latent": 1,
+      "dominant_latent": 1,
+      "owner_fraction": 0.6927374301675978,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.30726256983240224,
+      "raw_l1_by_latent": [
+        0.0,
+        0.60546875,
+        0.173828125,
+        0.0947265625
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "perturbation": "blackout",
+      "rgb_frame": 5,
+      "owner_latent": 2,
+      "dominant_latent": 2,
+      "owner_fraction": 0.7602131438721137,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.23978685612788633,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.41796875,
+        0.1318359375
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "perturbation": "blackout",
+      "rgb_frame": 6,
+      "owner_latent": 2,
+      "dominant_latent": 2,
+      "owner_fraction": 0.7817403708987162,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.21825962910128388,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.53515625,
+        0.1494140625
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "perturbation": "blackout",
+      "rgb_frame": 7,
+      "owner_latent": 2,
+      "dominant_latent": 2,
+      "owner_fraction": 0.7413127413127413,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.25868725868725867,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.5625,
+        0.1962890625
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "perturbation": "blackout",
+      "rgb_frame": 8,
+      "owner_latent": 2,
+      "dominant_latent": 2,
+      "owner_fraction": 0.7023255813953488,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.29767441860465116,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.58984375,
+        0.25
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "perturbation": "blackout",
+      "rgb_frame": 9,
+      "owner_latent": 3,
+      "dominant_latent": 3,
+      "owner_fraction": 1.0,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.0,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.0,
+        0.470703125
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "perturbation": "blackout",
+      "rgb_frame": 10,
+      "owner_latent": 3,
+      "dominant_latent": 3,
+      "owner_fraction": 1.0,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.0,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.0,
+        0.6015625
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "perturbation": "blackout",
+      "rgb_frame": 11,
+      "owner_latent": 3,
+      "dominant_latent": 3,
+      "owner_fraction": 1.0,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.0,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.0,
+        0.6328125
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "perturbation": "blackout",
+      "rgb_frame": 12,
+      "owner_latent": 3,
+      "dominant_latent": 3,
+      "owner_fraction": 1.0,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.0,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.0,
+        0.6640625
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "perturbation": "local_invert",
+      "rgb_frame": 0,
+      "owner_latent": 0,
+      "dominant_latent": 0,
+      "owner_fraction": 0.5340599455040872,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.4659400544959128,
+      "raw_l1_by_latent": [
+        0.1435546875,
+        0.0830078125,
+        0.0294189453125,
+        0.0128173828125
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "perturbation": "local_invert",
+      "rgb_frame": 1,
+      "owner_latent": 1,
+      "dominant_latent": 1,
+      "owner_fraction": 0.7195767195767195,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.2804232804232804,
+      "raw_l1_by_latent": [
+        0.0,
+        0.166015625,
+        0.0390625,
+        0.025634765625
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "perturbation": "local_invert",
+      "rgb_frame": 2,
+      "owner_latent": 1,
+      "dominant_latent": 1,
+      "owner_fraction": 0.7466666666666667,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.25333333333333335,
+      "raw_l1_by_latent": [
+        0.0,
+        0.205078125,
+        0.040283203125,
+        0.029296875
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "perturbation": "local_invert",
+      "rgb_frame": 3,
+      "owner_latent": 1,
+      "dominant_latent": 1,
+      "owner_fraction": 0.6896551724137931,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.31034482758620685,
+      "raw_l1_by_latent": [
+        0.0,
+        0.2001953125,
+        0.0537109375,
+        0.036376953125
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "perturbation": "local_invert",
+      "rgb_frame": 4,
+      "owner_latent": 1,
+      "dominant_latent": 1,
+      "owner_fraction": 0.6561514195583596,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.34384858044164035,
+      "raw_l1_by_latent": [
+        0.0,
+        0.177734375,
+        0.06201171875,
+        0.0311279296875
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "perturbation": "local_invert",
+      "rgb_frame": 5,
+      "owner_latent": 2,
+      "dominant_latent": 2,
+      "owner_fraction": 0.8018757327080891,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.1981242672919109,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.1669921875,
+        0.041259765625
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "perturbation": "local_invert",
+      "rgb_frame": 6,
+      "owner_latent": 2,
+      "dominant_latent": 2,
+      "owner_fraction": 0.8095238095238095,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.19047619047619047,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.19921875,
+        0.046875
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "perturbation": "local_invert",
+      "rgb_frame": 7,
+      "owner_latent": 2,
+      "dominant_latent": 2,
+      "owner_fraction": 0.7668202764976959,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.23317972350230415,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.203125,
+        0.061767578125
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "perturbation": "local_invert",
+      "rgb_frame": 8,
+      "owner_latent": 2,
+      "dominant_latent": 2,
+      "owner_fraction": 0.6801470588235294,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.31985294117647056,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.1806640625,
+        0.0849609375
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "perturbation": "local_invert",
+      "rgb_frame": 9,
+      "owner_latent": 3,
+      "dominant_latent": 3,
+      "owner_fraction": 1.0,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.0,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.0,
+        0.1884765625
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "perturbation": "local_invert",
+      "rgb_frame": 10,
+      "owner_latent": 3,
+      "dominant_latent": 3,
+      "owner_fraction": 1.0,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.0,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.0,
+        0.2255859375
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "perturbation": "local_invert",
+      "rgb_frame": 11,
+      "owner_latent": 3,
+      "dominant_latent": 3,
+      "owner_fraction": 1.0,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.0,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.0,
+        0.220703125
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "perturbation": "local_invert",
+      "rgb_frame": 12,
+      "owner_latent": 3,
+      "dominant_latent": 3,
+      "owner_fraction": 1.0,
+      "earlier_fraction": 0.0,
+      "future_fraction": 0.0,
+      "raw_l1_by_latent": [
+        0.0,
+        0.0,
+        0.0,
+        0.1962890625
+      ]
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "kind": "sequence_summary",
+      "latent_shape": [
+        1,
+        16,
+        4,
+        44,
+        80
+      ],
+      "roundtrip_psnr": 29.622575759887695,
+      "independent_anchor_l1_by_latent": [
+        0.0,
+        0.322265625,
+        0.328125,
+        0.41796875
+      ]
+    }
+  ],
+  "evidence_boundary": "mechanism audit on repeated demo images; not a real-video temporal generalization result"
+}

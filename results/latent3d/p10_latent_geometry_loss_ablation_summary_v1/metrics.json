@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "protocol": "scene-disjoint train/validation/test; checkpoint selected only by validation projection_l1",
+  "source_metrics": {
+    "base": "results/latent3d/p10_latent_geometry_base_3way_scene_split_seed17_e30_v1/metrics.json",
+    "projection": "results/latent3d/p10_latent_geometry_proj1000_3way_scene_split_seed17_e30_v1/metrics.json",
+    "projection_tvod": "results/latent3d/p10_latent_geometry_proj1000_tvod10_3way_scene_split_seed17_e30_v1/metrics.json"
+  },
+  "test": {
+    "base": {
+      "abs_rel": 0.257524898275733,
+      "log_rmse": 0.33202920109033585,
+      "delta1": 0.5023275725543499,
+      "projection_l1": 0.0022620012702342742,
+      "occupancy_l1": 0.0075271413661539555,
+      "valid_iou": 0.9733952184518179
+    },
+    "projection": {
+      "abs_rel": 0.3140310309827328,
+      "log_rmse": 0.3576004784554243,
+      "delta1": 0.431049682199955,
+      "projection_l1": 0.0025088324424965927,
+      "occupancy_l1": 0.007962914921032885,
+      "valid_iou": 0.9817160069942474
+    },
+    "projection_tvod": {
+      "abs_rel": 0.27970816505451995,
+      "log_rmse": 0.3412898102154334,
+      "delta1": 0.45975115274389583,
+      "projection_l1": 0.0023661386609698334,
+      "occupancy_l1": 0.007644379589085777,
+      "valid_iou": 0.9913691878318787
+    }
+  },
+  "selection": {
+    "base": {
+      "metric": "validation_projection_l1",
+      "best_epoch": 3,
+      "best_validation": {
+        "abs_rel": 0.20815617591142654,
+        "log_rmse": 0.25416012356678647,
+        "delta1": 0.613986092309157,
+        "projection_l1": 0.0018218876187650797,
+        "occupancy_l1": 0.006720638484694064,
+        "valid_iou": 0.982712080081304
+      }
+    },
+    "projection": {
+      "metric": "validation_projection_l1",
+      "best_epoch": 8,
+      "best_validation": {
+        "abs_rel": 0.23767196014523506,
+        "log_rmse": 0.261820325627923,
+        "delta1": 0.560882218182087,
+        "projection_l1": 0.0018661731082829647,
+        "occupancy_l1": 0.0067277485989810275,
+        "valid_iou": 0.9871323704719543
+      }
+    },
+    "projection_tvod": {
+      "metric": "validation_projection_l1",
+      "best_epoch": 28,
+      "best_validation": {
+        "abs_rel": 0.20578614622354507,
+        "log_rmse": 0.25791048010190326,
+        "delta1": 0.5760788843035698,
+        "projection_l1": 0.0018041791045106947,
+        "occupancy_l1": 0.006581007114922007,
+        "valid_iou": 0.9909462928771973
+      }
+    }
+  },
+  "relative_to_base_percent": {
+    "projection": {
+      "abs_rel": 21.942007582699215,
+      "log_rmse": 7.701514590016808,
+      "delta1": -14.189523778665947,
+      "projection_l1": 10.912070453291756,
+      "occupancy_l1": 5.789363234738756,
+      "valid_iou": 0.8548211851362654
+    },
+    "projection_tvod": {
+      "abs_rel": 8.61402797450491,
+      "log_rmse": 2.789094782834484,
+      "delta1": -8.475827753979694,
+      "projection_l1": 4.603772425148714,
+      "occupancy_l1": 1.557539804672561,
+      "valid_iou": 1.8465232866716088
+    }
+  },
+  "fact": "Base has the lowest held-out AbsRel, log RMSE, projection L1 and occupancy L1; Projection/TVOD improve valid IoU but do not improve held-out geometry.",
+  "negative_result": "The 12-epoch gain of Projection+TVOD does not survive scene-disjoint validation selection and farther-view test extrapolation.",
+  "decision": "Retain Projection and TVOD as ablations; do not claim them as the primary innovation until multi-seed and real-data evidence reverses this result.",
+  "hypothesis": "The local 231,746-parameter head and generated-view shift dominate before reprojection-oriented losses can help; capacity ablation is next.",
+  "evidence_boundary": "Matrix-Game generated frames with MoGe-3 pseudo-labels; no real-data or cross-VAE claim."
+}

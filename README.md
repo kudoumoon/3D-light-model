@@ -4,7 +4,7 @@
 
 面向交互式视频世界模型的轻量 3D 几何与重投影加速实验。
 
-**当前状态：已跑通单帧 RGB → MoGe-2 几何 → CPU/CUDA 重投影；尚未实现或证明真实 AR-DiT / Matrix-Game 的端到端加速。**
+**当前主线：Geometry-Aligned Latent 3D。** 冻结 Matrix-Game/Wan VAE 后，M1 直接从 `[B,16,44,80]` 空间 latent 预测同网格的 depth/point map、valid mask、motion-conditioned confidence 和相机元数据，并以 latent reprojection 质量评价几何。MoGe-3 目前只作为离线伪标签来源和参照上界；真实 GT 跨场景证据与端到端加速仍在补齐。
 
 本仓库保存 2026-08-16 在 RTX 4060 Laptop 8 GB 上完成的实验，以及 2026-08-28 的结果整理和方法审计。目标是判断：在 Matrix-Game 类自回归游戏生成中，能否用几何复用减少昂贵的生成计算，同时控制画质和交互延迟。
 
@@ -104,6 +104,9 @@ python reproject_torch.py --geometry runs/gta/geometry.npz --output runs/gta_yaw
 | [组会速览](docs/GROUP_MEETING.md) | 可以直接用于汇报的结论与下一步 |
 | [第三方来源](THIRD_PARTY_NOTICES.md) | 代码、权重、展示视频与图像来源 |
 | [贡献说明](CONTRIBUTING.md) | 新实验的记录要求 |
+| [Latent 3D 审阅入口](docs/latent3d/README.md) | 当前方法、代码、协议和证据的统一索引 |
+| [Latent 3D 结果边界](LATENT3D_RESULTS.md) | Fact / Negative Result / Hypothesis |
+| [真实数据集计划](docs/latent3d/REAL_DATASETS.md) | GT depth、pose、K 数据集的适配度与实验顺序 |
 
 ## 目录
 

@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "p13_direct_target_latent_reprojection": {
+    "rows": [
+      {
+        "experiment": "p13_reprojection_control_seed7_v1",
+        "best_epoch": 0,
+        "validation_warp_l1": 0.17225842893123627,
+        "test_warp_l1": 0.18028051182627677,
+        "hard_motion_warp_l1": 0.21500733494758606,
+        "test_abs_rel": 0.2709499494509494
+      },
+      {
+        "experiment": "p13_reprojection_l1_seed7_v1",
+        "best_epoch": 0,
+        "validation_warp_l1": 0.17225842893123627,
+        "test_warp_l1": 0.18028051182627677,
+        "hard_motion_warp_l1": 0.21500733494758606,
+        "test_abs_rel": 0.2709499494509494
+      },
+      {
+        "experiment": "p13_reprojection_l1cos_seed7_v1",
+        "best_epoch": 0,
+        "validation_warp_l1": 0.17225842893123627,
+        "test_warp_l1": 0.18028051182627677,
+        "hard_motion_warp_l1": 0.21500733494758606,
+        "test_abs_rel": 0.2709499494509494
+      }
+    ],
+    "finding": "All variants selected epoch 0; direct estimated-pose target-latent fine-tuning produced no validated gain.",
+    "status": "Negative Result"
+  },
+  "p14_virtual_projective_distillation": {
+    "rows": [
+      {
+        "seed": 7,
+        "baseline": "p14_virtual_projective_evalonly_seed7_v1",
+        "candidate": "p14_virtual_projective_feature_coord_seed7_v1",
+        "best_epoch": 5,
+        "virtual_feature_l1": {
+          "baseline": 0.05983760766685009,
+          "candidate": 0.058857724691430725,
+          "relative_delta": -0.0163757044044095
+        },
+        "virtual_coordinate_l1": {
+          "baseline": 0.003967407043091953,
+          "candidate": 0.0037214667827356607,
+          "relative_delta": -0.061990175871801
+        },
+        "virtual_coverage_gap": {
+          "baseline": 0.007372553305079539,
+          "candidate": 0.006804371698914717,
+          "relative_delta": -0.07706714114543693
+        },
+        "geometry_abs_rel": {
+          "baseline": 0.26800275097290677,
+          "candidate": 0.24311306327581406,
+          "relative_delta": -0.09287101571434574
+        },
+        "geometry_projection_l1": {
+          "baseline": 0.0021201680259158215,
+          "candidate": 0.0019763352368803075,
+          "relative_delta": -0.06784027835406319
+        },
+        "geometry_valid_iou": {
+          "baseline": 0.9895273844401041,
+          "candidate": 0.9868667870759964,
+          "relative_delta": -0.0026887556685590403
+        },
+        "pair_warp_l1": {
+          "baseline": 0.18028051182627677,
+          "candidate": 0.17976047322154046,
+          "relative_delta": -0.0028846079893396375
+        },
+        "hard_motion_warp_l1": {
+          "baseline": 0.21500733494758606,
+          "candidate": 0.21282502760489783,
+          "relative_delta": -0.010149920435134135
+        }
+      },
+      {
+        "seed": 11,
+        "baseline": "p14_virtual_projective_evalonly_seed11_v1",
+        "candidate": "p14_virtual_projective_feature_coord_seed11_v1",
+        "best_epoch": 6,
+        "virtual_feature_l1": {
+          "baseline": 0.06687064158419768,
+          "candidate": 0.06854261178523302,
+          "relative_delta": 0.025003053080179242
+        },
+        "virtual_coordinate_l1": {
+          "baseline": 0.004344081738963723,
+          "candidate": 0.004453258579208826,
+          "relative_delta": 0.025132317208917572
+        },
+        "virtual_coverage_gap": {
+          "baseline": 0.009196703031193465,
+          "candidate": 0.008294369152281433,
+          "relative_delta": -0.09811493051928359
+        },
+        "geometry_abs_rel": {
+          "baseline": 0.276117788006862,
+          "candidate": 0.280928165341417,
+          "relative_delta": 0.017421468458364883
+        },
+        "geometry_projection_l1": {
+          "baseline": 0.0023616246714179092,
+          "candidate": 0.002405565076818069,
+          "relative_delta": 0.01860600709840066
+        },
+        "geometry_valid_iou": {
+          "baseline": 0.9883022606372833,
+          "candidate": 0.976302906870842,
+          "relative_delta": -0.012141380470691068
+        },
+        "pair_warp_l1": {
+          "baseline": 0.18259000182151794,
+          "candidate": 0.1800088182091713,
+          "relative_delta": -0.014136500282582527
+        },
+        "hard_motion_warp_l1": {
+          "baseline": 0.21197949598232904,
+          "candidate": 0.2140685518582662,
+          "relative_delta": 0.009854990296378994
+        }
+      },
+      {
+        "seed": 23,
+        "baseline": "p14_virtual_projective_feature_coord_seed23_v1",
+        "candidate": "p14_virtual_projective_feature_coord_seed23_v1",
+        "best_epoch": 0,
+        "virtual_feature_l1": {
+          "baseline": 0.06566411815583706,
+          "candidate": 0.06566411815583706,
+          "relative_delta": 0.0
+        },
+        "virtual_coordinate_l1": {
+          "baseline": 0.004285557903737451,
+          "candidate": 0.004285557903737451,
+          "relative_delta": 0.0
+        },
+        "virtual_coverage_gap": {
+          "baseline": 0.008022608642932028,
+          "candidate": 0.008022608642932028,
+          "relative_delta": 0.0
+        },
+        "geometry_abs_rel": {
+          "baseline": 0.2677336571117242,
+          "candidate": 0.2677336571117242,
+          "relative_delta": 0.0
+        },
+        "geometry_projection_l1": {
+          "baseline": 0.0022976825469716764,
+          "candidate": 0.0022976825469716764,
+          "relative_delta": 0.0
+        },
+        "geometry_valid_iou": {
+          "baseline": 0.99046990275383,
+          "candidate": 0.99046990275383,
+          "relative_delta": 0.0
+        },
+        "pair_warp_l1": {
+          "baseline": 0.18039157390594482,
+          "candidate": 0.18039157390594482,
+          "relative_delta": 0.0
+        },
+        "hard_motion_warp_l1": {
+          "baseline": 0.21575218935807547,
+          "candidate": 0.21575218935807547,
+          "relative_delta": 0.0
+        }
+      }
+    ],
+    "aggregate": {
+      "virtual_feature_l1": {
+        "mean_relative_delta": 0.0028757828919232474,
+        "std_relative_delta": 0.017014758068085306,
+        "wins": 1,
+        "seeds": 3
+      },
+      "virtual_coordinate_l1": {
+        "mean_relative_delta": -0.012285952887627809,
+        "std_relative_delta": 0.0366132096281995,
+        "wins": 1,
+        "seeds": 3
+      },
+      "virtual_coverage_gap": {
+        "mean_relative_delta": -0.05839402388824017,
+        "std_relative_delta": 0.04217541842334803,
+        "wins": 2,
+        "seeds": 3
+      },
+      "geometry_abs_rel": {
+        "mean_relative_delta": -0.025149849085326952,
+        "std_relative_delta": 0.04841139120777221,
+        "wins": 1,
+        "seeds": 3
+      },
+      "geometry_projection_l1": {
+        "mean_relative_delta": -0.01641142375188751,
+        "std_relative_delta": 0.03715051537825757,
+        "wins": 1,
+        "seeds": 3
+      },
+      "geometry_valid_iou": {
+        "mean_relative_delta": -0.004943378713083369,
+        "std_relative_delta": 0.005206775953069534,
+        "wins": 0,
+        "seeds": 3
+      },
+      "pair_warp_l1": {
+        "mean_relative_delta": -0.005673702757307389,
+        "std_relative_delta": 0.006098876797050025,
+        "wins": 2,
+        "seeds": 3
+      },
+      "hard_motion_warp_l1": {
+        "mean_relative_delta": -9.831004625171387e-05,
+        "std_relative_delta": 0.008167266453873364,
+        "wins": 1,
+        "seeds": 3
+      }
+    },
+    "finding": "One seed improved, one was mixed, and one reverted to initialization; the upgrade is not cross-seed stable.",
+    "status": "Hypothesis"
+  },
+  "decision": "Keep the existing 64x3 latent geometry head as the deliverable baseline. Do not promote P13/P14 until fresh GT-pose multi-view validation succeeds.",
+  "evidence_boundary": "Matrix-Game generated video frames; pair poses are MoGe-assisted PnP estimates; test scenes were inspected during method development."
+}
