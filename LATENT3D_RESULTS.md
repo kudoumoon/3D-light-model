@@ -15,6 +15,7 @@
 - P15 扩展到 24 个 pair 后，`freiburg1_xyz` 的 minimum pooling warp latent L1 为 0.15554、Copy 为 0.24227，胜率 100%；hard-motion 的 warp L1 为 0.18759、Copy 为 0.34656，coverage 为 68.20%。
 - P15b 扩展到 24 个 pair 后，`freiburg1_rpy` 的 minimum pooling warp latent L1 为 0.15425、Copy 为 0.24823，胜率 100%；hard-motion coverage 为 69.79%.
 - P16 三 seed 的 `Projection + TVOD` Student 已完成，但测试 AbsRel 均值约 0.3072；对应的 P17 基础几何损失对照均值约 0.2689，projection L1 约 0.002326 vs 0.002409。当前证据不支持把现有高权重 transport loss 作为默认训练配置。
+- P18 低权重消融（projection=10, tvod=0.1, seed=7）已完成：AbsRel 0.26144、projection L1 0.002303、valid IoU 0.99028、延迟 1.44 ms。相对同 seed 基础组仅为轻微改善，支持继续做低权重多 seed 验证，但尚不足以晋升默认配置。
 - P15c 使用不同的 `candidate_stride=3` 独立采样，在 `freiburg1_xyz` 的 24 个 pair 上仍得到正收益：minimum pooling warp latent L1 0.15654 vs Copy 0.26142，胜率 91.7%，decoded PSNR 17.37 vs 13.54 dB；该结果不与主表合并，用于检验采样敏感性。
 
 ## Negative Result
