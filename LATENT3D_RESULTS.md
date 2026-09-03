@@ -18,6 +18,7 @@
 - P18 低权重消融（projection=10, tvod=0.1, seed=7）已完成：AbsRel 0.26144、projection L1 0.002303、valid IoU 0.99028、延迟 1.44 ms。相对同 seed 基础组仅为轻微改善，支持继续做低权重多 seed 验证，但尚不足以晋升默认配置。
 - P15c 使用不同的 `candidate_stride=3` 独立采样，在 `freiburg1_xyz` 的 24 个 pair 上仍得到正收益：minimum pooling warp latent L1 0.15654 vs Copy 0.26142，胜率 91.7%，decoded PSNR 17.37 vs 13.54 dB；该结果不与主表合并，用于检验采样敏感性。
 
+- P20 权重扫描（seed=7）显示 projection=3、TVOD=0.03 是当前折中候选：AbsRel 0.2682、projection L1 0.002124、occupancy L1 0.006873；但相较基础组的深度优势并不成立，下一步必须进行多 seed 复验。
 ## Negative Result
 
 - 把 target latent 直接用于训练的 P13 L1 / L1+cos 条件均在 epoch 0 最优，没有证明相对 control 的稳定收益。
