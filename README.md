@@ -12,6 +12,21 @@
 
 English: A reproducible geometry/reprojection feasibility study for accelerating interactive video world models. The repository contains measured geometry and CUDA-warp components, offline target-frame diagnostics, and explicitly labeled DiT-like proxy accounting. It is **not** a complete game generator or a demonstrated end-to-end acceleration system.
 
+## 当前 M1 主线与证据状态
+
+本项目当前的 M1 是 Geometry-Aligned Latent 3D：冻结 Matrix-Game 2 的 Wan VAE，将输入 RGB 编码为 `[B,16,44,80]` latent，并在同一 latent grid 上预测 `latent_depth`、`latent_points`、`latent_valid`、`latent_confidence` 和相机元数据。M1 的输出 shape 已锁定，不再调整；M2 不在本仓库中修改。
+
+MoGe-3 只用于离线伪标签和参照上界，不作为论文中在线推理链路的必要模块。真实 TUM RGB-D 的 sensor depth、motion-capture pose 和官方 intrinsics 已证明 teacher geometry + frozen VAE latent + explicit 3D warp 能稳定优于 latent Copy；这证明 feasibility，不等于 Student 已获得跨域泛化。
+
+当前最可靠的事实：
+
+- TUM `freiburg1_xyz` 与 `freiburg1_rpy` 的中等及 hard-motion latent warp 多数稳定优于 Copy。
+- Student 的高权重 Projection/TVOD 会损害深度精度；低权重有弱信号，`projection=3, TVOD=0.03` 仍需多 seed 和真实数据验证。
+- Student head 为 231,746 参数，H100 上单帧推理约 1–2 ms；该数字不包含 VAE 编码，也不能直接等同于端到端世界模型加速。
+- 当前尚未达到 95/100 oral：真实 TUM Student 训练、Bonn 动态场景、跨域 scene-disjoint 和 M1→M2 闭环仍是主要缺口。
+
+实验事实、负结果和假设统一记录在 [LATENT3D_RESULTS.md](LATENT3D_RESULTS.md)，真实数据实验见 [Latent 3D 审阅入口](docs/latent3d/README.md)。
+
 ## 已完成什么
 
 - 单张 RGB 提取点图、深度、法线、有效区域和相机内参，无需先在线优化 3DGS。
