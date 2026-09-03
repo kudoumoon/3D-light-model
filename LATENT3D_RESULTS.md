@@ -20,6 +20,7 @@
 
 - P20 权重扫描（seed=7）显示 projection=3、TVOD=0.03 是当前折中候选：AbsRel 0.2682、projection L1 0.002124、occupancy L1 0.006873；但相较基础组的深度优势并不成立，下一步必须进行多 seed 复验。
 - P21 候选配置 projection=3、TVOD=0.03 的 seed=11 复验完成：AbsRel 0.27615、projection L1 0.002363、occupancy L1 0.007628、valid IoU 0.98830、延迟 1.12 ms。与 seed=7 的结果接近，但 projection 指标存在波动，仍需 seed=23 后再决定默认配置。
+- P24/P25 完成真实 TUM sensor-depth Student 训练与三 seed 对照：Projection=3、TVOD=0.03 的 AbsRel 均值约 0.2112，基础几何损失约 0.2090；Projection L1 均值约 0.002827 vs 0.002785，Valid IoU 约 0.866 vs 0.885。真实监督下 transport loss 没有稳定收益，当前降级为待重设计的辅助项。
 ## Negative Result
 
 - 把 target latent 直接用于训练的 P13 L1 / L1+cos 条件均在 epoch 0 最优，没有证明相对 control 的稳定收益。
