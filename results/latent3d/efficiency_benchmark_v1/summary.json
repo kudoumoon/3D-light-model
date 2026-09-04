@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "stage": "unified efficiency benchmark v1",
+  "protocol": {
+    "hardware": "NVIDIA H100 80GB HBM3",
+    "dtype": "bfloat16; renderer fp32 scatter",
+    "sync": "CUDA synchronize before/after timed region",
+    "warmup": "recorded per component",
+    "shape": "RGB 352x640; latent [B,16,44,80]; M1 output fixed"
+  },
+  "measured": {
+    "frozen_vae_encode_ms": {
+      "1": {
+        "mean": 12.164518109057099,
+        "p50": 12.18086399603635,
+        "p95": 12.254381086677313,
+        "latent_shape": [
+          1,
+          16,
+          1,
+          44,
+          80
+        ]
+      },
+      "4": {
+        "mean": 13.287268916610628,
+        "p50": 13.296939083375037,
+        "p95": 13.351895031519234,
+        "latent_shape": [
+          1,
+          16,
+          1,
+          44,
+          80
+        ]
+      },
+      "12": {
+        "mean": 91.53281269827858,
+        "p50": 88.85658404324204,
+        "p95": 119.57630596589297,
+        "latent_shape": [
+          1,
+          16,
+          3,
+          44,
+          80
+        ]
+      }
+    },
+    "m1_batch1_ms": {
+      "mean_ms": 0.8856971666666668,
+      "median_ms": 0.8710655,
+      "p95_ms": 0.960612,
+      "min_ms": 0.842202,
+      "max_ms": 1.093867
+    },
+    "renderer_batch1_ms": {
+      "shape": [
+        1,
+        16,
+        44,
+        80
+      ],
+      "mean_ms": 1.187674324028194,
+      "p50_ms": 1.1863070540130138,
+      "p95_ms": 1.215977012179792,
+      "coverage": 0.9835227131843567
+    },
+    "active_dit_proxy": {
+      "scope": "DiT-like active-query microbenchmark; not Matrix-Game end-to-end latency",
+      "rows": [
+        {
+          "active_ratio": 1.0,
+          "active_tokens": 3520,
+          "median_ms": 26.845,
+          "speedup_vs_full": 1.0
+        },
+        {
+          "active_ratio": 0.75,
+          "active_tokens": 2640,
+          "median_ms": 19.344,
+          "speedup_vs_full": 1.388
+        },
+        {
+          "active_ratio": 0.5,
+          "active_tokens": 1760,
+          "median_ms": 16.511,
+          "speedup_vs_full": 1.626
+        },
+        {
+          "active_ratio": 0.25,
+          "active_tokens": 880,
+          "median_ms": 8.91,
+          "speedup_vs_full": 3.013
+        },
+        {
+          "active_ratio": 0.125,
+          "active_tokens": 440,
+          "median_ms": 5.646,
+          "speedup_vs_full": 4.755
+        }
+      ]
+    }
+  },
+  "composable_single_frame_proxy_ms": {
+    "vae_1frame_plus_m1_plus_renderer": 14.23788959975196,
+    "warning": "excludes existing M2 and full DiT"
+  },
+  "not_measured_or_blocked": {
+    "existing_m2_full_runtime": "not yet unified on same runtime/input",
+    "full_matrix_game_dit": "blocked by dependency import error; see p61_full_dit_blocked.json",
+    "decoded_quality_speed_pareto": "pending full M2/DiT invocation",
+    "batch_resolution_chunk_sweep": "partial: VAE chunk 1/4/12 and M1 batch 1/4; resolution and full chunk pipeline pending"
+  },
+  "interpretation": "M1 head is sub-millisecond, but VAE encode and renderer dominate the measured M1-side path; active-query proxy shows token reduction can yield nonlinear savings when K/V is resident."
+}

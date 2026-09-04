@@ -1,0 +1,133 @@
+{
+  "scope": "DiT-like active-query microbenchmark; not Matrix-Game end-to-end latency",
+  "device": "NVIDIA H100 80GB HBM3",
+  "dtype": "torch.bfloat16",
+  "tokens": 3520,
+  "width": 1536,
+  "heads": 12,
+  "layers": 30,
+  "mlp_ratio": 4,
+  "inner_evaluations_per_sample": 2,
+  "preheat": 10,
+  "warmup_rounds": 4,
+  "repeat_rounds": 12,
+  "seed": 7,
+  "kv_policy": "full-scene K/V precomputed and resident; active Q packed",
+  "rows": [
+    {
+      "active_ratio": 1.0,
+      "active_tokens": 3520,
+      "times_ms": [
+        26.137,
+        26.139,
+        27.489,
+        26.865,
+        27.438,
+        27.78,
+        26.386,
+        26.499,
+        27.044,
+        26.824,
+        26.153,
+        27.355
+      ],
+      "mean_ms": 26.842,
+      "median_ms": 26.845,
+      "p95_ms": 27.62,
+      "relative_latency": 1.0,
+      "speedup_vs_full": 1.0
+    },
+    {
+      "active_ratio": 0.75,
+      "active_tokens": 2640,
+      "times_ms": [
+        19.502,
+        19.565,
+        18.809,
+        19.471,
+        19.146,
+        19.218,
+        19.897,
+        18.987,
+        19.534,
+        19.104,
+        19.652,
+        19.127
+      ],
+      "mean_ms": 19.334,
+      "median_ms": 19.344,
+      "p95_ms": 19.762,
+      "relative_latency": 0.7206,
+      "speedup_vs_full": 1.388
+    },
+    {
+      "active_ratio": 0.5,
+      "active_tokens": 1760,
+      "times_ms": [
+        16.892,
+        16.482,
+        16.805,
+        16.613,
+        16.43,
+        15.923,
+        17.191,
+        16.476,
+        16.45,
+        16.54,
+        15.952,
+        16.716
+      ],
+      "mean_ms": 16.539,
+      "median_ms": 16.511,
+      "p95_ms": 17.027,
+      "relative_latency": 0.615,
+      "speedup_vs_full": 1.626
+    },
+    {
+      "active_ratio": 0.25,
+      "active_tokens": 880,
+      "times_ms": [
+        8.6,
+        8.916,
+        9.161,
+        8.903,
+        8.98,
+        8.207,
+        9.355,
+        8.476,
+        9.026,
+        9.145,
+        8.418,
+        8.809
+      ],
+      "mean_ms": 8.833,
+      "median_ms": 8.91,
+      "p95_ms": 9.248,
+      "relative_latency": 0.3319,
+      "speedup_vs_full": 3.013
+    },
+    {
+      "active_ratio": 0.125,
+      "active_tokens": 440,
+      "times_ms": [
+        5.461,
+        5.636,
+        5.506,
+        5.795,
+        5.38,
+        5.189,
+        5.657,
+        5.783,
+        5.836,
+        5.661,
+        5.304,
+        5.77
+      ],
+      "mean_ms": 5.581,
+      "median_ms": 5.646,
+      "p95_ms": 5.813,
+      "relative_latency": 0.2103,
+      "speedup_vs_full": 4.755
+    }
+  ]
+}

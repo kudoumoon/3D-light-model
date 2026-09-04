@@ -1,0 +1,8 @@
+{
+  "stage": "full Matrix-Game DiT benchmark",
+  "status": "blocked",
+  "command": "tools/profile_matrix_game2.py",
+  "error": "ImportError: torchao.quantization.Int4WeightOnlyConfig is unavailable while importing diffusers/transformers",
+  "impact": "no full-DiT latency or end-to-end speed claim may be made",
+  "next_fix": "use a clean environment matching Matrix-Game dependency lock or isolate WanVAE/DiT imports without changing model code"
+}
