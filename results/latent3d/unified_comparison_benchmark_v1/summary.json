@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "title": "M1 unified comparison benchmark v1",
+  "created_at": "2026-09-04",
+  "status": "partial_but_audited",
+  "protocol": {
+    "hardware": "NVIDIA H100 80GB HBM3",
+    "latent_shape": "[B,16,44,80]",
+    "rgb_shape": "[B,3,T,352,640]",
+    "m1_output_shape": "depth/valid/confidence [B,1,44,80], points [B,3,44,80]",
+    "dtype": "bfloat16; renderer scatter in fp32",
+    "timing": "CUDA synchronize before and after each timed region",
+    "reproducibility": "Each row points to the original experiment artifact; historical RGB rows are explicitly marked"
+  },
+  "quality_and_transport": {
+    "copy_baseline_tum_real": {
+      "source": "results/latent3d/p43_tum_real_gt_pose_transport_student_v1/metrics.json",
+      "warp_l1": null,
+      "copy_l1": 0.3487189771,
+      "warp_win_rate": null,
+      "note": "Copy is the no-transport reference; warp metrics are recorded in the student row"
+    },
+    "latent_geometry_student_tum_gt_pose": {
+      "source": "results/latent3d/p43_tum_real_gt_pose_transport_student_v1/metrics.json",
+      "split": "TUM real test, 132 pairs",
+      "warp_l1": 0.1936209851,
+      "copy_l1": 0.3487189771,
+      "relative_l1_improvement_vs_copy": 0.4447,
+      "warp_win_rate": 0.8484848485,
+      "warp_cosine": 0.7462128627,
+      "copy_cosine": 0.5061706325,
+      "coverage": 0.4657993142,
+      "geometry_abs_rel": 0.2176752449
+    },
+    "latent_geometry_student_eth3d_zero_shot": {
+      "source": "results/latent3d/p60_tum_to_eth3d_zero_shot_v1/metrics.json",
+      "split": "ETH3D plant_scene_1, strict TUM-trained zero-shot",
+      "warp_l1": 0.16095,
+      "copy_l1": 0.16637,
+      "relative_l1_improvement_vs_copy": 0.0326,
+      "warp_win_rate": 0.5217,
+      "warp_cosine": 0.9059,
+      "copy_cosine": 0.8939,
+      "coverage": 0.5205,
+      "note": "Cross-domain evidence is positive but modest; this is not a claim of solved generalization"
+    },
+    "full_grid_confidence_routing": {
+      "source": "results/latent3d/p53_tum_fullgrid_confidence_routing_v2/metrics.json",
+      "full_copy_grid_l1": 0.41922,
+      "routing_at_40_percent_l1": 0.38743,
+      "relative_improvement_vs_full_copy": 0.0756,
+      "note": "Full-grid routing uses confidence to select warp versus copy; it is distinct from projected-cell top-k gating"
+    },
+    "bonn_dynamic_gt_geometry": {
+      "source": "results/latent3d/p30_p31_bonn_gt_pose_latent_warp*",
+      "scenes": {
+        "balloon2": {"warp_l1": 0.2384, "copy_l1": 0.2389, "warp_win_rate": 0.389, "coverage": 0.912},
+        "person_tracking": {"warp_l1": 0.2130, "copy_l1": 0.2000, "warp_win_rate": 0.278, "coverage": 0.907}
+      },
+      "note": "Dynamic-scene result is a hard negative for unconditional warp and motivates confidence/routing"
+    }
+  },
+  "latency_and_system": {
+    "frozen_vae_encode": {
+      "source": "results/latent3d/p54_vae_encode_h100_gpu2_frames1_v2/metrics.json",
+      "single_frame_mean_ms": 12.1645181091,
+      "single_frame_p95_ms": 12.2543810867,
+      "four_frame_chunk_mean_ms": 13.2872689166,
+      "twelve_frame_chunk_mean_ms": 91.5328126983,
+      "twelve_frame_latent_shape": "[1,16,3,44,80]"
+    },
+    "latent_m1_head_batch1": {
+      "source": "results/latent3d/p52_m1_confidence_latency_h100_gpu2_v1/latency.json",
+      "geometry_mean_ms": 0.6162527,
+      "confidence_mean_ms": 0.17466985,
+      "complete_m1_head_mean_ms": 0.7927035067,
+      "complete_m1_head_p95_ms": 0.801703,
+      "parameters": 263187
+    },
+    "latent_m1_head_batch4": {
+      "source": "results/latent3d/p56_m1_latency_h100_gpu6_b4_44x80_v1/latency.json",
+      "complete_m1_head_mean_ms": 0.9112609167,
+      "complete_m1_head_p95_ms": 0.967068,
+      "parameters": 263187
+    },
+    "latent_warp_renderer": {
+      "source": "results/latent3d/p57_renderer_latency_h100_gpu6_v1/metrics.json",
+      "batch1_mean_ms": 1.1876743240,
+      "batch4_mean_ms": 1.18892537197,
+      "batch1_coverage_synthetic": 0.9835227132,
+      "note": "Renderer-only measurement on synthetic aligned geometry"
+    },
+    "composable_single_frame_m1_side_proxy": {
+      "source": "results/latent3d/efficiency_benchmark_v1/summary.json",
+      "vae_plus_m1_plus_renderer_mean_ms": 14.2378895998,
+      "scope": "M1-side proxy; excludes M2 and full DiT"
+    },
+    "historical_rgb_v7_baseline": {
+      "source": "results/recorded/reprojection_student_tvod_v7_m1/summaries/occ075_width64_lr15_eval_summary.json",
+      "inference_median_mean_ms": 7.5936257616,
+      "inference_p95_mean_ms": 7.6319465148,
+      "point_loss": 0.0052808518,
+      "projection_loss": 0.0104213692,
+      "scope": "Historical RGB-space v7 measurement; old runtime/measurement context, not a same-run H100 comparison"
+    },
+    "active_dit_proxy": {
+      "source": "results/latent3d/p62_active_dit_proxy_h100_gpu3_v1/active_dit_benchmark.json",
+      "full_tokens": 3520,
+      "full_median_ms": 26.845,
+      "half_active_tokens_median_ms": 16.511,
+      "half_active_speedup": 1.626,
+      "quarter_active_tokens_median_ms": 8.910,
+      "quarter_active_speedup": 3.013,
+      "scope": "DiT-like active-query microbenchmark with resident K/V; not Matrix-Game end-to-end"
+    }
+  },
+  "baselines_and_benchmarks": {
+    "quality_baselines": [
+      "latent Copy",
+      "naive RGB-geometry to latent pooling",
+      "RGB-space M1 v7",
+      "MoGe-3 teacher",
+      "latent Geometry Head",
+      "latent Geometry Head plus confidence routing"
+    ],
+    "system_benchmarks": [
+      "Frozen VAE encode",
+      "latent M1 geometry/confidence head",
+      "latent warp renderer",
+      "M2 invocation",
+      "full Matrix-Game DiT pipeline",
+      "batch/resolution/chunk sweep",
+      "peak VRAM, parameters, throughput and p95 latency"
+    ]
+  },
+  "blocked_or_pending": {
+    "full_matrix_game_dit": {
+      "source": "results/latent3d/efficiency_benchmark_v1/p61_full_dit_blocked.json",
+      "status": "blocked",
+      "reason": "torchao.quantization.Int4WeightOnlyConfig unavailable while importing diffusers/transformers",
+      "consequence": "No full-DiT or end-to-end speedup claim is permitted"
+    },
+    "same_environment_moge_measurement": "Pending a genuinely idle GPU; local MoGe-2 and MoGe-3 checkpoints are available",
+    "unified_m2_runtime": "Pending a clean read-only M2 invocation on the same input/protocol",
+    "resolution_and_chunk_sweep": "Only partial VAE 1/4/12 and M1 batch 1/4 measurements are currently available"
+  },
+  "conclusion": {
+    "fact": "The latent M1 head and renderer are lightweight, and real TUM transport is substantially better than latent Copy.",
+    "negative_result": "Bonn dynamic scenes do not support unconditional warp superiority; cross-domain zero-shot gain on ETH3D is modest.",
+    "engineering_conclusion": "The current benchmark supports a promising M1-side efficiency path, but not yet a full end-to-end acceleration claim.",
+    "next_experiment": "When a GPU becomes genuinely idle: run local MoGe-2/MoGe-3 with the same image and repeat protocol, then isolate M2 and repair the Matrix-Game dependency environment without modifying M2 code."
+  }
+}
