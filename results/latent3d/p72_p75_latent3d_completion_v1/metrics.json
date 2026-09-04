@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "stage": "P2-P5 latent 3D completion suite",
+  "repository": "334fe258957eb08136887ba1b7828d17ebc6bcb3",
+  "splits": {
+    "train": 219,
+    "val": 18,
+    "test": 18
+  },
+  "p3_staged_transport": {
+    "history": [
+      {
+        "phase": "geometry",
+        "epoch": 1,
+        "loss": 0.4829151811344283,
+        "val": {
+          "count": 18,
+          "warp_l1": 0.23624241434865528,
+          "copy_l1": 0.4114583333333333,
+          "win_rate": 0.9444444444444444,
+          "coverage": 0.4801974826388889,
+          "abs_rel": 0.40302900969982147
+        }
+      },
+      {
+        "phase": "geometry",
+        "epoch": 2,
+        "loss": 0.28243713453412056,
+        "val": {
+          "count": 18,
+          "warp_l1": 0.22417080899079642,
+          "copy_l1": 0.4105902777777778,
+          "win_rate": 0.9444444444444444,
+          "coverage": 0.4698893229166667,
+          "abs_rel": 0.2097256196041902
+        }
+      },
+      {
+        "phase": "transport",
+        "epoch": 1,
+        "loss": 0.29287472101194517,
+        "val": {
+          "count": 18,
+          "warp_l1": 0.22340710626708138,
+          "copy_l1": 0.4096137152777778,
+          "win_rate": 0.9444444444444444,
+          "coverage": 0.4621853298611111,
+          "abs_rel": 0.1658918559551239
+        }
+      },
+      {
+        "phase": "transport",
+        "epoch": 2,
+        "loss": 0.24230021770511354,
+        "val": {
+          "count": 18,
+          "warp_l1": 0.21818122929996914,
+          "copy_l1": 0.4099392361111111,
+          "win_rate": 0.9444444444444444,
+          "coverage": 0.4587131076388889,
+          "abs_rel": 0.1567064809302489
+        }
+      },
+      {
+        "phase": "transport",
+        "epoch": 3,
+        "loss": 0.23075750576598303,
+        "val": {
+          "count": 18,
+          "warp_l1": 0.21784032384554544,
+          "copy_l1": 0.4115668402777778,
+          "win_rate": 0.9444444444444444,
+          "coverage": 0.4647894965277778,
+          "abs_rel": 0.16556286439299583
+        }
+      }
+    ],
+    "test": {
+      "count": 18,
+      "warp_l1": 0.25762303587463165,
+      "copy_l1": 0.4432508680555556,
+      "win_rate": 1.0,
+      "coverage": 0.40256521436903214,
+      "abs_rel": 0.20022845640778542
+    }
+  },
+  "p4_target_view_occupancy": {
+    "train_loss": [
+      0.6566815248557499,
+      0.6413947876010623,
+      0.6344107985496521
+    ],
+    "test": {
+      "auc": 0.571528104627754,
+      "brier": 0.24656797248115647,
+      "positive_rate": 0.40255681818181815
+    },
+    "label": "projected_valid under registered estimated pose; not full reuse correctness"
+  },
+  "p5_chunk_consistency": {
+    "1": {
+      "mean_adjacent_log_depth_change": 0.0,
+      "groups": 6
+    },
+    "3": {
+      "mean_adjacent_log_depth_change": 0.27417246624827385,
+      "groups": 6
+    },
+    "5": {
+      "mean_adjacent_log_depth_change": 0.3059186451137066,
+      "groups": 6
+    }
+  },
+  "output_contract": {
+    "latent_depth": "[B,1,44,80]",
+    "latent_points": "[B,3,44,80]",
+    "latent_valid": "[B,1,44,80]",
+    "latent_confidence": "[B,1,44,80]",
+    "shape_changed": false
+  }
+}

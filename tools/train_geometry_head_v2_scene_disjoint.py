@@ -12,12 +12,14 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from latent_geometry_head_v2 import LatentGeometryHeadV2
 
 def main():
-    p=argparse.ArgumentParser(); p.add_argument('--cache',type=Path,required=True); p.add_argument('--output',type=Path,required=True); p.add_argument('--epochs',type=int,default=20); p.add_argument('--batch-size',type=int,default=16); p.add_argument('--lr',type=float,default=1e-4); a=p.parse_args()
+    p=argparse.ArgumentParser(); p.add_argument('--cache',type=Path,required=True); p.add_argument('--output',type=Path,required=True); p.add_argument('--init-checkpoint',type=Path); p.add_argument('--epochs',type=int,default=20); p.add_argument('--batch-size',type=int,default=16); p.add_argument('--lr',type=float,default=1e-4); a=p.parse_args()
     if a.output.exists(): raise FileExistsError(a.output)
     if not torch.cuda.is_available() or torch.cuda.device_count()!=1: raise RuntimeError('expose exactly one approved GPU')
-    d=torch.load(a.cache,map_location='cpu',weights_only=False); train=[i for i,s in enumerate(d['scenes']) if s in {'tum_xyz_train','tum_rpy_train'}]; val=[i for i,s in enumerate(d['scenes']) if s in {'tum_xyz_val','tum_rpy_val'}]; test=[i for i,s in enumerate(d['scenes']) if s in {'tum_xyz_test','tum_rpy_test'}]
+    d=torch.load(a.cache,map_location='cpu',weights_only=False); train=[i for i,s in enumerate(d['scenes']) if s.endswith('_train')]; val=[i for i,s in enumerate(d['scenes']) if s.endswith('_val')]; test=[i for i,s in enumerate(d['scenes']) if s.endswith('_test')]
     def loader(ix,shuffle): return DataLoader(TensorDataset(d['latent'][ix],d['depth'][ix],d['valid'][ix],d['intrinsics'][ix]),batch_size=a.batch_size,shuffle=shuffle)
-    dev=torch.device('cuda:0'); m=LatentGeometryHeadV2().to(dev,dtype=torch.bfloat16); opt=torch.optim.AdamW(m.parameters(),lr=a.lr,weight_decay=1e-4)
+    dev=torch.device('cuda:0'); m=LatentGeometryHeadV2().to(dev,dtype=torch.bfloat16)
+    if a.init_checkpoint is not None: m.load_state_dict(torch.load(a.init_checkpoint,map_location='cpu',weights_only=False)['model'],strict=True)
+    opt=torch.optim.AdamW(m.parameters(),lr=a.lr,weight_decay=1e-4)
     def evaluate(ix):
         m.eval(); rows=[]
         with torch.inference_mode():

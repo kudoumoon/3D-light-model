@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "stage": "Geometry Head V2 ETH3D zero-shot evaluation",
+  "split": {
+    "train": 119,
+    "val": 26,
+    "test": 25
+  },
+  "epochs": 0,
+  "history": [],
+  "test": {
+    "abs_rel": 1.3046790063381195,
+    "log_rmse": 0.8370392024517059,
+    "valid_iou": 0.4457552805542946
+  },
+  "parameters": 677765,
+  "runtime_seconds": 0.40221282199490815,
+  "output_contract": {
+    "latent_depth": "[B,1,44,80]",
+    "latent_points": "[B,3,44,80]",
+    "latent_valid": "[B,1,44,80]",
+    "latent_confidence": "[B,1,44,80]",
+    "shape_changed": false
+  }
+}
