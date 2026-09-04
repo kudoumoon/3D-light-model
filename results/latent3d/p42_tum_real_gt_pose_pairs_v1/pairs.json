@@ -1,0 +1,5362 @@
+{
+  "schema_version": 1,
+  "stage": "real TUM GT-pose latent transport pairs",
+  "split": "train xyz, validation xyz heldout, test rpy cross-sequence",
+  "pairs": [
+    {
+      "source": "tum_xyz_000000",
+      "target": "tum_xyz_000002",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 48.50999896928454,
+      "rvec": [
+        0.06870034072982101,
+        0.040787377611264566,
+        -0.0033723658364694952
+      ],
+      "tvec": [
+        0.002664728998106103,
+        -0.010608593413250211,
+        -0.09640143653057742
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000000",
+      "target": "tum_xyz_000004",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 98.24685745610394,
+      "rvec": [
+        0.08296107281592519,
+        0.030758777937946676,
+        -0.003512247238314281
+      ],
+      "tvec": [
+        0.007439285800248441,
+        -0.018229312204295245,
+        -0.1955048060875757
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000000",
+      "target": "tum_xyz_000010",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 181.08769974793984,
+      "rvec": [
+        0.15158192748609353,
+        0.08459976750423809,
+        -0.01984740556800531
+      ],
+      "tvec": [
+        -0.007148132781991667,
+        -0.024275370382765588,
+        -0.36129023041110675
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000004",
+      "target": "tum_xyz_000006",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 48.57041280450478,
+      "rvec": [
+        0.008199558542537816,
+        -0.009330156949453392,
+        0.016639765259998093
+      ],
+      "tvec": [
+        0.005303360889221342,
+        -0.01622506091599485,
+        -0.09562929342806492
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000004",
+      "target": "tum_xyz_000010",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 83.03514316239855,
+      "rvec": [
+        0.06848918176424133,
+        0.054351955685611165,
+        -0.015133874768165086
+      ],
+      "tvec": [
+        -0.003755285970834077,
+        -0.019445024113015824,
+        -0.16488519904625032
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000004",
+      "target": "tum_xyz_000014",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 24.220755562120683,
+      "rvec": [
+        0.017043696794787757,
+        0.08872439935750921,
+        0.021736263242315073
+      ],
+      "tvec": [
+        0.0026906569522736623,
+        0.025264073696531164,
+        0.04124399284042979
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000010",
+      "target": "tum_xyz_000012",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 46.199864718416656,
+      "rvec": [
+        -0.04404270749667525,
+        0.024868224993964606,
+        0.007949480420975085
+      ],
+      "tvec": [
+        0.004928625644144202,
+        0.027943197606905723,
+        0.08793518270158596
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000010",
+      "target": "tum_xyz_000014",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 105.9099381550193,
+      "rvec": [
+        -0.05012164568699486,
+        0.03346422164940822,
+        0.03940153616119396
+      ],
+      "tvec": [
+        0.011009370286547693,
+        0.05318011975921791,
+        0.20473966061388538
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000010",
+      "target": "tum_xyz_000020",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 234.97895118499437,
+      "rvec": [
+        -0.31546199774572187,
+        -0.1490075753904615,
+        0.01475532225341425
+      ],
+      "tvec": [
+        -0.061174059854963825,
+        0.18994930542657074,
+        0.4254849301312851
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000014",
+      "target": "tum_xyz_000016",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 54.273312963186726,
+      "rvec": [
+        -0.05793833718897699,
+        -0.06180189062241229,
+        0.013079209283684494
+      ],
+      "tvec": [
+        -0.004044663028953233,
+        0.024050985365801525,
+        0.10577126643808454
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000014",
+      "target": "tum_xyz_000020",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 130.03550476696748,
+      "rvec": [
+        -0.26228168897569976,
+        -0.1877326164999855,
+        -0.015224273486660648
+      ],
+      "tvec": [
+        -0.036716781914689745,
+        0.08542346102604592,
+        0.24288194711044464
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000014",
+      "target": "tum_xyz_000024",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 54.796897722407714,
+      "rvec": [
+        -0.09167096759415537,
+        -0.09940993041866353,
+        -0.0021571817481363335
+      ],
+      "tvec": [
+        0.00047837129725858407,
+        0.02245289989417315,
+        0.10726806816217138
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000020",
+      "target": "tum_xyz_000022",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 20.327383009133214,
+      "rvec": [
+        0.03899772244159137,
+        0.00567476773140575,
+        -0.0011930920843130658
+      ],
+      "tvec": [
+        -0.0009002016771508803,
+        -0.011254887085816012,
+        -0.039055436927859066
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000020",
+      "target": "tum_xyz_000024",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 75.51696829190085,
+      "rvec": [
+        0.16984786448189654,
+        0.08899876937040752,
+        0.01743228093057558
+      ],
+      "tvec": [
+        0.01603958388560689,
+        -0.020005770829294,
+        -0.1488413614634796
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000020",
+      "target": "tum_xyz_000030",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 236.9939556191255,
+      "rvec": [
+        0.29759393078351964,
+        0.05062511941750319,
+        -0.026498166183582583
+      ],
+      "tvec": [
+        0.02517109310274257,
+        -0.03346969157070656,
+        -0.4721342349567281
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000024",
+      "target": "tum_xyz_000026",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 56.04433512853915,
+      "rvec": [
+        0.061771361981933004,
+        0.032818915941765725,
+        -0.008650423511566044
+      ],
+      "tvec": [
+        0.004639126076715017,
+        -0.008061294616024228,
+        -0.11170212190624684
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000024",
+      "target": "tum_xyz_000030",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 162.02478976996093,
+      "rvec": [
+        0.12593262691378462,
+        -0.03285390949109353,
+        -0.05241914053991112
+      ],
+      "tvec": [
+        0.00480162340933965,
+        -0.03133317479316061,
+        -0.3224954365103734
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000024",
+      "target": "tum_xyz_000034",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 137.1656115795792,
+      "rvec": [
+        0.15636330793549955,
+        0.020927547670238227,
+        -0.01413151593027769
+      ],
+      "tvec": [
+        -0.00094987956865622,
+        -0.019939023516601484,
+        -0.27360400777402627
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000030",
+      "target": "tum_xyz_000032",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 18.6597829569371,
+      "rvec": [
+        0.0485062973469759,
+        -0.0058610299095221115,
+        0.019110055522571983
+      ],
+      "tvec": [
+        0.005862627320857849,
+        -0.011132923571100961,
+        -0.03513456437266238
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000030",
+      "target": "tum_xyz_000034",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 25.239898969686926,
+      "rvec": [
+        0.03116675961248117,
+        0.05038698624483798,
+        0.042018263422436516
+      ],
+      "tvec": [
+        0.00941437185303895,
+        0.001444882285183302,
+        0.04957309671378907
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000030",
+      "target": "tum_xyz_000040",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 185.55235110340146,
+      "rvec": [
+        -0.15537305859032388,
+        -0.00959000485114772,
+        0.0862614587884073
+      ],
+      "tvec": [
+        -0.028647978189408452,
+        0.09490203650718126,
+        0.3576193462502395
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000034",
+      "target": "tum_xyz_000036",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 65.35830092650802,
+      "rvec": [
+        -0.03901088632681596,
+        0.02521968157617532,
+        0.0350965448451163
+      ],
+      "tvec": [
+        0.008730517658044779,
+        0.015460735593397917,
+        0.12950511077302518
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000034",
+      "target": "tum_xyz_000040",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 160.8884473789214,
+      "rvec": [
+        -0.1840405113533807,
+        -0.06445732024879793,
+        0.04808797704880036
+      ],
+      "tvec": [
+        -0.034578998233949276,
+        0.08399220000162,
+        0.3086907404183421
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000034",
+      "target": "tum_xyz_000044",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 147.49957627057793,
+      "rvec": [
+        -0.17236702928919775,
+        -0.11398496221297903,
+        0.038200685013824814
+      ],
+      "tvec": [
+        -0.08960469494179257,
+        0.06137101345884732,
+        0.2742792324464658
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000040",
+      "target": "tum_xyz_000042",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 9.728694670920687,
+      "rvec": [
+        0.025306918271280673,
+        -0.0006816355755937348,
+        -0.012911195024989115
+      ],
+      "tvec": [
+        -0.010316337818928156,
+        -0.01098622869524124,
+        -0.012307150485047824
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000040",
+      "target": "tum_xyz_000044",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 27.719172065557732,
+      "rvec": [
+        0.0130404284413132,
+        -0.049840495100588626,
+        -0.004888220482722466
+      ],
+      "tvec": [
+        -0.04006387912378906,
+        -0.01880716424685358,
+        -0.033385418412029466
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000040",
+      "target": "tum_xyz_000050",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 167.25270550876007,
+      "rvec": [
+        0.07261329876163101,
+        -0.17116403975972808,
+        -0.11857445979191306
+      ],
+      "tvec": [
+        -0.3017827376859674,
+        -0.009596206244594119,
+        -0.14397556063608108
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000044",
+      "target": "tum_xyz_000046",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 51.92865297694533,
+      "rvec": [
+        0.018826605763394597,
+        -0.048544485589364875,
+        -0.010697394230711869
+      ],
+      "tvec": [
+        -0.09543614261921607,
+        -0.005422901424136761,
+        -0.04060633967878413
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000044",
+      "target": "tum_xyz_000050",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 142.21411673951366,
+      "rvec": [
+        0.062094014136947005,
+        -0.12079047967751719,
+        -0.11289136393501321
+      ],
+      "tvec": [
+        -0.2643516265759229,
+        0.002570774200069015,
+        -0.10493344865521248
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000044",
+      "target": "tum_xyz_000054",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 61.20825107777548,
+      "rvec": [
+        0.08505268222656627,
+        0.04367128299095982,
+        -0.10256880575756384
+      ],
+      "tvec": [
+        -0.11670481090659646,
+        -0.016113378253795663,
+        -0.033258775571353816
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000050",
+      "target": "tum_xyz_000052",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 26.54020534961997,
+      "rvec": [
+        -0.017392903266580884,
+        0.0705221591760414,
+        0.015259890999790627
+      ],
+      "tvec": [
+        0.04717944815507913,
+        -0.002226204135178378,
+        0.024221347752152456
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000050",
+      "target": "tum_xyz_000054",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 82.16930692174529,
+      "rvec": [
+        0.031468523804690486,
+        0.16237667056816996,
+        0.01688056891545037
+      ],
+      "tvec": [
+        0.16115709349245855,
+        -0.01671023746734407,
+        0.027501621422160838
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000050",
+      "target": "tum_xyz_000060",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 242.20136766748436,
+      "rvec": [
+        0.10655107640551024,
+        0.25829015918473974,
+        0.14356641776778364
+      ],
+      "tvec": [
+        0.48350431138738814,
+        0.002008070066266493,
+        -0.02942037600739278
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000054",
+      "target": "tum_xyz_000056",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 54.87169124421085,
+      "rvec": [
+        0.012873787106210682,
+        0.023684732955864603,
+        0.023993225107556318
+      ],
+      "tvec": [
+        0.10863704708702193,
+        -0.009339017277526673,
+        0.012425166256524012
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000054",
+      "target": "tum_xyz_000060",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 161.0813226292856,
+      "rvec": [
+        0.0842360425359192,
+        0.09491747401448199,
+        0.12142295693678005
+      ],
+      "tvec": [
+        0.31956704603737174,
+        0.000572642099783971,
+        -0.04080864084938218
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000054",
+      "target": "tum_xyz_000064",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 241.66644885047646,
+      "rvec": [
+        0.1090647411883235,
+        0.2164151946678071,
+        0.2093516769034691
+      ],
+      "tvec": [
+        0.4693870917083628,
+        0.04044210711341344,
+        -0.1079392612064396
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000060",
+      "target": "tum_xyz_000062",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 47.54021981438453,
+      "rvec": [
+        -0.003094405973972242,
+        0.08211732185467331,
+        0.05430442193779545
+      ],
+      "tvec": [
+        0.09405212719716846,
+        0.002893627170720739,
+        -0.013642371182624569
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000060",
+      "target": "tum_xyz_000064",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 80.71647911052607,
+      "rvec": [
+        0.02196475237828517,
+        0.1190090059605627,
+        0.09194477482312623
+      ],
+      "tvec": [
+        0.15835766622019035,
+        0.009515551778182224,
+        -0.029881496342242908
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000060",
+      "target": "tum_xyz_000070",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 24.89497941352831,
+      "rvec": [
+        -0.01959545843936288,
+        0.022284130270833313,
+        0.03643523677720415
+      ],
+      "tvec": [
+        -0.048998140263416645,
+        -0.008246259551717955,
+        -0.003197100894911209
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000064",
+      "target": "tum_xyz_000066",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 9.496051811147586,
+      "rvec": [
+        0.006681627294534371,
+        -0.008482106985586704,
+        -0.0020774057958079795
+      ],
+      "tvec": [
+        -0.018211391907871452,
+        -0.005378460590583264,
+        -0.00034258787698115967
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000064",
+      "target": "tum_xyz_000070",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 105.12330854762891,
+      "rvec": [
+        -0.040356078812305844,
+        -0.09800135307202924,
+        -0.05412688410108428
+      ],
+      "tvec": [
+        -0.2097861000880375,
+        -0.008219523781022892,
+        0.011219253035076537
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000064",
+      "target": "tum_xyz_000074",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 221.98079871916852,
+      "rvec": [
+        -0.09861727362098188,
+        -0.2953167572507532,
+        -0.15770063165765377
+      ],
+      "tvec": [
+        -0.4388208262807207,
+        0.02743042812495361,
+        -0.061528481495867204
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000070",
+      "target": "tum_xyz_000072",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 61.48518114147511,
+      "rvec": [
+        -0.03214128261501724,
+        -0.12982856013670166,
+        -0.07187469453247709
+      ],
+      "tvec": [
+        -0.12257622315407912,
+        0.005245596483516135,
+        -0.008322453653433204
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000070",
+      "target": "tum_xyz_000074",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 116.86122111290817,
+      "rvec": [
+        -0.05861698995556928,
+        -0.19779139423383885,
+        -0.10245650595791633
+      ],
+      "tvec": [
+        -0.23116830463286353,
+        0.014734286557747667,
+        -0.031149570346985955
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000070",
+      "target": "tum_xyz_000080",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 213.99064231877063,
+      "rvec": [
+        -0.07383304191964761,
+        -0.24846277907246248,
+        -0.19447729925955026
+      ],
+      "tvec": [
+        -0.4165110988195646,
+        0.057226220831604724,
+        -0.08007274323670566
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000074",
+      "target": "tum_xyz_000076",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 55.340627029335295,
+      "rvec": [
+        -0.047093605275976495,
+        -0.06994436544434,
+        0.026582460123362916
+      ],
+      "tvec": [
+        -0.10846871613855358,
+        0.010823571288713418,
+        -0.019176233306152923
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000074",
+      "target": "tum_xyz_000080",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 97.17052022089837,
+      "rvec": [
+        -0.008844197861405053,
+        -0.05289839101683927,
+        -0.0915160621017689
+      ],
+      "tvec": [
+        -0.1896144748394657,
+        0.021842519694314444,
+        -0.03657451660319233
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000074",
+      "target": "tum_xyz_000084",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 12.005415444706605,
+      "rvec": [
+        -0.0027627365876984568,
+        0.10264589607191837,
+        -0.0525190506057729
+      ],
+      "tvec": [
+        0.014440660388454707,
+        0.01678467895681235,
+        0.00928772737875394
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000080",
+      "target": "tum_xyz_000082",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 39.440746696785524,
+      "rvec": [
+        0.017705221553649116,
+        0.04482477929008598,
+        0.029225582956976068
+      ],
+      "tvec": [
+        0.07645116922709061,
+        -0.002529476322663371,
+        0.019264227815924295
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000080",
+      "target": "tum_xyz_000084",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 104.36158296997988,
+      "rvec": [
+        0.012160809181276834,
+        0.15529123686385649,
+        0.038419716260870276
+      ],
+      "tvec": [
+        0.20811298248457522,
+        0.0020582388607882085,
+        0.01581487193014275
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000080",
+      "target": "tum_xyz_000090",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 281.06122998378845,
+      "rvec": [
+        -0.027774355345863547,
+        0.21146520534095511,
+        0.200951277851114
+      ],
+      "tvec": [
+        0.5580418311190314,
+        0.061143931415307884,
+        -0.028851245595272523
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000084",
+      "target": "tum_xyz_000086",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 66.58442009959988,
+      "rvec": [
+        0.03299437152478353,
+        0.034391308302385896,
+        0.06347226828506208
+      ],
+      "tvec": [
+        0.13309934913765864,
+        0.0013016745522089201,
+        -0.0040998661553492965
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000084",
+      "target": "tum_xyz_000090",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 177.47784368759955,
+      "rvec": [
+        -0.028153000357415216,
+        0.05489307573430904,
+        0.16526241698022606
+      ],
+      "tvec": [
+        0.3525892167902857,
+        0.02454529421745788,
+        -0.03274007842066684
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000084",
+      "target": "tum_xyz_000094",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 239.38818371005695,
+      "rvec": [
+        0.005206010659598187,
+        0.1750230590672048,
+        0.19618707977172575
+      ],
+      "tvec": [
+        0.4630541586383831,
+        0.05574476683441315,
+        -0.1081673570827908
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000090",
+      "target": "tum_xyz_000092",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 45.257264610225846,
+      "rvec": [
+        0.002723584222983513,
+        0.08371004798196933,
+        0.03367324669040337
+      ],
+      "tvec": [
+        0.08713747544675052,
+        0.010870977490783806,
+        -0.021949082467425107
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000090",
+      "target": "tum_xyz_000094",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 62.07710930769887,
+      "rvec": [
+        0.024021308847430325,
+        0.1227547804734532,
+        0.02866217148920102
+      ],
+      "tvec": [
+        0.11794715453332608,
+        0.019892436301413796,
+        -0.03327205607541961
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000090",
+      "target": "tum_xyz_000100",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 92.11887700140512,
+      "rvec": [
+        0.08364861961843605,
+        0.012906970295656838,
+        -0.08550522350578978
+      ],
+      "tvec": [
+        -0.17594470267585804,
+        -0.008386916306530101,
+        -0.05400621478284884
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000094",
+      "target": "tum_xyz_000096",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 22.24910110543793,
+      "rvec": [
+        0.025319942513563683,
+        -0.006091434750152963,
+        0.008986224733003227
+      ],
+      "tvec": [
+        -0.040179837889179226,
+        -0.019117058440816903,
+        0.00045684107703469756
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000094",
+      "target": "tum_xyz_000100",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 150.35727451639983,
+      "rvec": [
+        0.054103222818485,
+        -0.10748135709080928,
+        -0.11898313997950852
+      ],
+      "tvec": [
+        -0.2983431099300624,
+        -0.015380180807901878,
+        -0.034410446024063734
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000094",
+      "target": "tum_xyz_000104",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 277.5907554296433,
+      "rvec": [
+        0.0804475127227393,
+        -0.31652988582224034,
+        -0.31728505553843933
+      ],
+      "tvec": [
+        -0.5302724867330154,
+        0.08357935506460351,
+        -0.14160540675048083
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000100",
+      "target": "tum_xyz_000102",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 71.03045121636217,
+      "rvec": [
+        -0.002273282831345598,
+        -0.08652058399809427,
+        -0.12617652650823294
+      ],
+      "tvec": [
+        -0.1410542251597312,
+        0.016879980516559923,
+        0.0002679969187073805
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000100",
+      "target": "tum_xyz_000104",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 127.8209196493282,
+      "rvec": [
+        0.0251501120748849,
+        -0.20505149164278302,
+        -0.20255487480585158
+      ],
+      "tvec": [
+        -0.24824779699267052,
+        0.03814239086419957,
+        -0.047654373434644404
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000100",
+      "target": "tum_xyz_000110",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 83.85454668650944,
+      "rvec": [
+        0.03647948318884084,
+        -0.16338246214576374,
+        -0.09057889877270217
+      ],
+      "tvec": [
+        -0.16763868601969,
+        -0.0031486973738679147,
+        -0.0037008991393376878
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000104",
+      "target": "tum_xyz_000106",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 40.64228093992759,
+      "rvec": [
+        0.012266613091419661,
+        -0.08576600738584358,
+        -0.04752603259914758
+      ],
+      "tvec": [
+        -0.07727632523392303,
+        0.012522083641524573,
+        -0.021880287466475856
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000104",
+      "target": "tum_xyz_000110",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 46.24037737735275,
+      "rvec": [
+        0.0038731549631325873,
+        0.0394613072545245,
+        0.11318313787306351
+      ],
+      "tvec": [
+        0.08501813791446944,
+        -0.013075513695004926,
+        0.033965234684423695
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000104",
+      "target": "tum_xyz_000114",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 118.8037246890854,
+      "rvec": [
+        0.02939742111073208,
+        0.20561919659642539,
+        0.22999171271549107
+      ],
+      "tvec": [
+        0.23725082402695163,
+        -0.005818146384805531,
+        0.011640260786485834
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000110",
+      "target": "tum_xyz_000112",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 60.97895128648898,
+      "rvec": [
+        0.006003237608632497,
+        0.15700452175847113,
+        0.09945569418874678
+      ],
+      "tvec": [
+        0.12086228387232856,
+        -0.015755876491495846,
+        -0.004217901510156663
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000110",
+      "target": "tum_xyz_000114",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 73.51943620567283,
+      "rvec": [
+        0.018369065415052965,
+        0.16696803271409616,
+        0.1169236291628877
+      ],
+      "tvec": [
+        0.14682660612271103,
+        -0.0025460227741927743,
+        -0.007476329481741484
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000110",
+      "target": "tum_xyz_000120",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 136.21659223457337,
+      "rvec": [
+        -0.013755276239457699,
+        0.1611494325466534,
+        0.0970158063729972
+      ],
+      "tvec": [
+        0.14708888609274773,
+        0.2200157701243915,
+        -0.06463559765768179
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000114",
+      "target": "tum_xyz_000116",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 30.322021700407774,
+      "rvec": [
+        -0.021694444472536212,
+        0.02976618559441178,
+        -0.013505968583038448
+      ],
+      "tvec": [
+        0.0010113508794510895,
+        0.060440868964790284,
+        -0.004855772665568692
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000114",
+      "target": "tum_xyz_000120",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 116.38155996548603,
+      "rvec": [
+        -0.03323817686529266,
+        -0.00755750229242614,
+        -0.017216857653571872
+      ],
+      "tvec": [
+        0.0002780249462598361,
+        0.2253177742896018,
+        -0.058399428861157565
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000114",
+      "target": "tum_xyz_000124",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 116.28744558205776,
+      "rvec": [
+        -0.05785439757117269,
+        -0.0021448497835717044,
+        -0.004461279548897364
+      ],
+      "tvec": [
+        -0.01093675662863769,
+        0.21928731344946986,
+        -0.07671076531074417
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000120",
+      "target": "tum_xyz_000122",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 25.525918200918813,
+      "rvec": [
+        -0.04304050072631651,
+        0.0025383010194565485,
+        -0.007048498036407161
+      ],
+      "tvec": [
+        -0.005589674759707064,
+        0.04649317194483188,
+        -0.020332990399569484
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000120",
+      "target": "tum_xyz_000124",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 7.8820999739916395,
+      "rvec": [
+        -0.024615998876706548,
+        0.005833702502748058,
+        0.012566199286331818
+      ],
+      "tvec": [
+        -0.008035958477130234,
+        -0.00450837507105073,
+        -0.012790931380183501
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000120",
+      "target": "tum_xyz_000130",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 148.02773388794438,
+      "rvec": [
+        -0.027623496416780143,
+        0.022408586961699326,
+        0.01660591332423839
+      ],
+      "tvec": [
+        0.02095934438450986,
+        -0.28117285807616593,
+        0.09028493653014369
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000124",
+      "target": "tum_xyz_000126",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 54.098659872495986,
+      "rvec": [
+        0.0026489085031324773,
+        -0.007570121457012565,
+        0.026402104095378916
+      ],
+      "tvec": [
+        0.009161502972966362,
+        -0.0997849200623977,
+        0.04081294637020538
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000124",
+      "target": "tum_xyz_000130",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 148.28185155304763,
+      "rvec": [
+        -0.0031009168819957863,
+        0.016603557481055093,
+        0.0038446657280701655
+      ],
+      "tvec": [
+        0.02918897554364419,
+        -0.2765937809594105,
+        0.10292674113800748
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000124",
+      "target": "tum_xyz_000134",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 217.53676126117165,
+      "rvec": [
+        0.07441785937825779,
+        -0.018055923262257276,
+        -0.04606106792582484
+      ],
+      "tvec": [
+        0.023282478317001143,
+        -0.4262107125491373,
+        0.08421000363243647
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000130",
+      "target": "tum_xyz_000132",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 44.98672026276178,
+      "rvec": [
+        0.04389013579270389,
+        -0.018408149556203277,
+        -0.036259643829195165
+      ],
+      "tvec": [
+        0.006783629991192752,
+        -0.08969434459177822,
+        0.002031480345428438
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000130",
+      "target": "tum_xyz_000134",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 70.96206733177951,
+      "rvec": [
+        0.0771717232126399,
+        -0.03457837762039125,
+        -0.050494806433719605
+      ],
+      "tvec": [
+        0.011477023612640358,
+        -0.14144138650194432,
+        0.0022521352984523624
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000130",
+      "target": "tum_xyz_000140",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 45.941130808895,
+      "rvec": [
+        -0.04776163269489911,
+        0.013197972606124363,
+        -0.047943973211190954
+      ],
+      "tvec": [
+        -0.0074791215766873975,
+        0.07746633239639844,
+        -0.04884035304429979
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000134",
+      "target": "tum_xyz_000136",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 25.171710311379453,
+      "rvec": [
+        -0.03485497684189456,
+        -0.0032565307123946442,
+        0.00986087411928299
+      ],
+      "tvec": [
+        -0.004148910367382297,
+        0.05002808585315485,
+        -0.003799627433423103
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000134",
+      "target": "tum_xyz_000140",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 114.38834075201898,
+      "rvec": [
+        -0.12371977217211501,
+        0.05081508047271922,
+        0.002253410065018258
+      ],
+      "tvec": [
+        -0.019816830479771563,
+        0.21755878714615123,
+        -0.06792817799140272
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000134",
+      "target": "tum_xyz_000144",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 194.6149082162001,
+      "rvec": [
+        -0.16799167488664069,
+        0.05977241245889281,
+        0.013308923216932694
+      ],
+      "tvec": [
+        -0.023156707495464113,
+        0.36976391933578157,
+        -0.11932418386652
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000140",
+      "target": "tum_xyz_000142",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 39.81927925013215,
+      "rvec": [
+        -0.020988493201908626,
+        0.009428610787535431,
+        0.016563358380844342
+      ],
+      "tvec": [
+        0.00034550289630769226,
+        0.07762520259372874,
+        -0.017790687171417296
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000140",
+      "target": "tum_xyz_000144",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 80.62062391224717,
+      "rvec": [
+        -0.04399277447830219,
+        0.009618502234253834,
+        0.011589345632821548
+      ],
+      "tvec": [
+        -0.00013982901529863145,
+        0.15564667685881706,
+        -0.042105016692235875
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000140",
+      "target": "tum_xyz_000150",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 90.00070833054593,
+      "rvec": [
+        -0.008132330697567913,
+        -0.020139369653382526,
+        0.05116159919500501
+      ],
+      "tvec": [
+        -0.006454597369689896,
+        0.17387961640775956,
+        -0.0460947629420696
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000144",
+      "target": "tum_xyz_000146",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 37.609174412634914,
+      "rvec": [
+        0.008224849639400709,
+        -0.03157157251838046,
+        0.006178501977247799
+      ],
+      "tvec": [
+        0.002354059003120912,
+        0.07223720394972655,
+        -0.02083374118432424
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000144",
+      "target": "tum_xyz_000150",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 9.737171047075169,
+      "rvec": [
+        0.03621104814063685,
+        -0.028671711223747846,
+        0.04004559517789318
+      ],
+      "tvec": [
+        -0.0011810343735672024,
+        0.01691735703242453,
+        -0.009573828327577472
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000144",
+      "target": "tum_xyz_000154",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 90.9686759274863,
+      "rvec": [
+        0.09126648064714976,
+        0.032364359687972216,
+        0.050324298950886345
+      ],
+      "tvec": [
+        0.029004646100907472,
+        -0.17220765482244704,
+        0.051033852736337204
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000150",
+      "target": "tum_xyz_000152",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 51.57373362478221,
+      "rvec": [
+        0.0425542704545472,
+        0.04960742455526269,
+        0.018117729709546147
+      ],
+      "tvec": [
+        0.017196900672418913,
+        -0.09640300846453137,
+        0.03240565639283388
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000150",
+      "target": "tum_xyz_000154",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 100.56665699922621,
+      "rvec": [
+        0.053673831769422795,
+        0.06189112781163546,
+        0.012192674555170887
+      ],
+      "tvec": [
+        0.030956269703213635,
+        -0.18959272303725383,
+        0.059589585813136114
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000150",
+      "target": "tum_xyz_000160",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 214.40230292606472,
+      "rvec": [
+        0.16982654516793946,
+        -0.03621996691155128,
+        -0.06399980891156222
+      ],
+      "tvec": [
+        -0.0010538145749027228,
+        -0.4274908037035775,
+        0.033524501841357246
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000154",
+      "target": "tum_xyz_000156",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 39.32998220187739,
+      "rvec": [
+        0.02270004297210407,
+        -0.02771369541501296,
+        -0.018833048264671963
+      ],
+      "tvec": [
+        0.006867891213984012,
+        -0.07718420293062173,
+        0.013521127476562533
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000154",
+      "target": "tum_xyz_000160",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 115.437537222517,
+      "rvec": [
+        0.11439100027557945,
+        -0.0951123807424076,
+        -0.08230661327764364
+      ],
+      "tvec": [
+        -0.011344746802964711,
+        -0.23052149370634067,
+        -0.005868360876270851
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000154",
+      "target": "tum_xyz_000164",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 115.74888768364046,
+      "rvec": [
+        0.10795930753421343,
+        -0.07883965816746427,
+        -0.10361489595435679
+      ],
+      "tvec": [
+        -0.022511771428684435,
+        -0.23030907761507452,
+        -0.006493759715011649
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000160",
+      "target": "tum_xyz_000162",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 20.31046528270585,
+      "rvec": [
+        0.03500236320514556,
+        -0.016808158191949106,
+        -0.02186066373090025
+      ],
+      "tvec": [
+        -0.008279575732814237,
+        -0.0397305350785262,
+        -0.0017300890319840168
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000160",
+      "target": "tum_xyz_000164",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 3.3143626838353,
+      "rvec": [
+        -0.004724840034734478,
+        0.01767743875132148,
+        -0.020581277107032163
+      ],
+      "tvec": [
+        -0.006332989156562885,
+        -4.625444165715087e-05,
+        -0.001957321861494332
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000160",
+      "target": "tum_xyz_000170",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 140.84539396089593,
+      "rvec": [
+        -0.15591693848611815,
+        0.08416700810961716,
+        0.04621114635934619
+      ],
+      "tvec": [
+        -0.02343189091391984,
+        0.2729303508529298,
+        -0.0656480774394399
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000164",
+      "target": "tum_xyz_000166",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 38.74370916677976,
+      "rvec": [
+        -0.054005715709634194,
+        0.03790939416173599,
+        0.01970742967562014
+      ],
+      "tvec": [
+        -0.0014514838339688696,
+        0.07694387491127569,
+        -0.009046176447413679
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000164",
+      "target": "tum_xyz_000170",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 140.80413701308632,
+      "rvec": [
+        -0.14990494646847222,
+        0.06824007517398259,
+        0.06790401720004569
+      ],
+      "tvec": [
+        -0.01700860371388474,
+        0.273667824134914,
+        -0.06418605325898885
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000164",
+      "target": "tum_xyz_000174",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 222.42735330889496,
+      "rvec": [
+        -0.16450670138845067,
+        0.027444819875968605,
+        0.07836783223299305
+      ],
+      "tvec": [
+        -0.01785104466446974,
+        0.42571837393428297,
+        -0.1278315935093397
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000170",
+      "target": "tum_xyz_000172",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 46.004048734867055,
+      "rvec": [
+        -0.01585806173282054,
+        0.0013224135557404506,
+        -0.013313383221106716
+      ],
+      "tvec": [
+        -0.0035550126353227074,
+        0.08479685480324811,
+        -0.03552949902038649
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000170",
+      "target": "tum_xyz_000174",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 82.1377653701389,
+      "rvec": [
+        -0.012814670552061196,
+        -0.040279036459610146,
+        0.013967466648949637
+      ],
+      "tvec": [
+        0.0003024301691832987,
+        0.153145783495927,
+        -0.059436752379410596
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000170",
+      "target": "tum_xyz_000180",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 9.816440291673956,
+      "rvec": [
+        0.02520042140399735,
+        -0.0013078633890022558,
+        -3.36216295599294e-05
+      ],
+      "tvec": [
+        -0.0025750210239345317,
+        -0.01281895601408295,
+        -0.014645601163328914
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000174",
+      "target": "tum_xyz_000176",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 4.304358256465318,
+      "rvec": [
+        -0.02711771991608502,
+        -0.007083389101262727,
+        -0.00047876224376777873
+      ],
+      "tvec": [
+        -0.002374548870811677,
+        0.007192178444611397,
+        0.004091953919706182
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000174",
+      "target": "tum_xyz_000180",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 86.29119306163282,
+      "rvec": [
+        0.03802091872394583,
+        0.03914591230720332,
+        -0.01348474146631172
+      ],
+      "tvec": [
+        -0.002744926137487058,
+        -0.16811063775584423,
+        0.03893531627999214
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000174",
+      "target": "tum_xyz_000184",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 166.77892552717807,
+      "rvec": [
+        0.13764890656143527,
+        -0.006933642719101682,
+        -0.052278430582496364
+      ],
+      "tvec": [
+        -0.01913718124723085,
+        -0.3309405346737317,
+        0.037053620656762654
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000180",
+      "target": "tum_xyz_000182",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 49.80564727016388,
+      "rvec": [
+        0.056243443168623695,
+        -0.02427588921664025,
+        0.001297525874335677
+      ],
+      "tvec": [
+        0.004072281946850276,
+        -0.09892583295534771,
+        0.010931884276552228
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000180",
+      "target": "tum_xyz_000184",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 80.51558855277642,
+      "rvec": [
+        0.09854404514069857,
+        -0.04591936376506623,
+        -0.0416106906618842
+      ],
+      "tvec": [
+        -0.00793444884141603,
+        -0.1601197396860905,
+        0.015157621331907345
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000180",
+      "target": "tum_xyz_000190",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 69.68818048995104,
+      "rvec": [
+        0.06783711447704698,
+        -0.02151415941621116,
+        -0.03631639673434772
+      ],
+      "tvec": [
+        -0.007999879742608407,
+        -0.13833341230728702,
+        0.015021283684356401
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000184",
+      "target": "tum_xyz_000186",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 9.9219453737661,
+      "rvec": [
+        0.0009216435569053144,
+        -0.013885456227122728,
+        -0.010577199878817837
+      ],
+      "tvec": [
+        -0.006348981563370382,
+        -0.016429444824839802,
+        0.009140228435631226
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000184",
+      "target": "tum_xyz_000190",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 10.978273999131204,
+      "rvec": [
+        -0.030321703916907628,
+        0.024764119966876937,
+        0.005806202020702831
+      ],
+      "tvec": [
+        -0.001431483519122534,
+        0.021292534773920627,
+        -0.005164186076804578
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000184",
+      "target": "tum_xyz_000194",
+      "scene": "tum_xyz_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 21.018325337666646,
+      "rvec": [
+        -0.020977482081050595,
+        0.03387425784340448,
+        0.0020925918339695843
+      ],
+      "tvec": [
+        -0.000599599747633961,
+        0.03841006114382827,
+        -0.017070081519137803
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000008",
+      "target": "tum_xyz_000028",
+      "scene": "tum_xyz_val",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 55.012384969205,
+      "rvec": [
+        -0.06098861374271831,
+        -0.04273493771837467,
+        0.0020718876212137277
+      ],
+      "tvec": [
+        -0.012823210883706082,
+        0.05879815488537993,
+        0.09210750373724674
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000008",
+      "target": "tum_xyz_000048",
+      "scene": "tum_xyz_val",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 199.1036601873508,
+      "rvec": [
+        -0.09881806677684843,
+        -0.16916622476631948,
+        -0.015569033452337417
+      ],
+      "tvec": [
+        -0.2999840930848239,
+        0.08667342569420322,
+        0.24711602775722064
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000008",
+      "target": "tum_xyz_000088",
+      "scene": "tum_xyz_val",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 150.7595187707895,
+      "rvec": [
+        -0.06013024741771893,
+        -0.034201577362927026,
+        0.07674057156622827
+      ],
+      "tvec": [
+        0.10430339373737663,
+        0.0630173408627831,
+        0.2757958426181397
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000048",
+      "target": "tum_xyz_000068",
+      "scene": "tum_xyz_val",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 230.62563279045983,
+      "rvec": [
+        0.12584666268865066,
+        0.26641501226614756,
+        0.14941315140453484
+      ],
+      "tvec": [
+        0.455932780277791,
+        0.009885715752478347,
+        -0.06913973164704101
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000048",
+      "target": "tum_xyz_000088",
+      "scene": "tum_xyz_val",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 186.74416992238332,
+      "rvec": [
+        0.03200821882186582,
+        0.13906175955867142,
+        0.08857455356391182
+      ],
+      "tvec": [
+        0.37311577283548314,
+        0.010193964940914235,
+        -0.013200118945050576
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000048",
+      "target": "tum_xyz_000128",
+      "scene": "tum_xyz_val",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 154.6123378000604,
+      "rvec": [
+        0.07992649919126217,
+        0.22484406062221307,
+        0.08389541672638166
+      ],
+      "tvec": [
+        0.295357403799412,
+        -0.002105280971462009,
+        -0.0915394549519617
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000088",
+      "target": "tum_xyz_000108",
+      "scene": "tum_xyz_val",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 183.873767840875,
+      "rvec": [
+        0.09491193847719182,
+        -0.2130551298310823,
+        -0.2516954370787032
+      ],
+      "tvec": [
+        -0.3337126514818767,
+        0.05138243316894747,
+        -0.14571877642422804
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000088",
+      "target": "tum_xyz_000128",
+      "scene": "tum_xyz_val",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 44.46217493555614,
+      "rvec": [
+        0.04362640877388374,
+        0.08788994450156015,
+        -0.006340755794926987
+      ],
+      "tvec": [
+        -0.07523853835165079,
+        -0.01122069088751676,
+        -0.04605212745046594
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000088",
+      "target": "tum_xyz_000168",
+      "scene": "tum_xyz_val",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 62.249257023678496,
+      "rvec": [
+        0.03219854786176601,
+        0.11421580776641238,
+        -0.04743348765933569
+      ],
+      "tvec": [
+        -0.07646374346166612,
+        -0.0864795207895952,
+        -0.046631195779546886
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000009",
+      "target": "tum_xyz_000029",
+      "scene": "tum_xyz_test",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 36.32068969609472,
+      "rvec": [
+        -0.06312829530691728,
+        -0.0867845584528977,
+        -0.0010180989117584993
+      ],
+      "tvec": [
+        -0.014258462362764401,
+        0.04527703850715564,
+        0.054985962163730306
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000009",
+      "target": "tum_xyz_000049",
+      "scene": "tum_xyz_test",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 218.33427353487127,
+      "rvec": [
+        -0.11813255216961996,
+        -0.2449701488214981,
+        -0.03480346566246253
+      ],
+      "tvec": [
+        -0.36035211555910696,
+        0.09055365516043085,
+        0.22940315679859724
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000009",
+      "target": "tum_xyz_000089",
+      "scene": "tum_xyz_test",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 167.49517903509934,
+      "rvec": [
+        -0.11051056743525363,
+        -0.036138330542681646,
+        0.11388704433162297
+      ],
+      "tvec": [
+        0.1720430829205042,
+        0.07660018855565748,
+        0.2770417454688845
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000049",
+      "target": "tum_xyz_000069",
+      "scene": "tum_xyz_test",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 231.28718619932243,
+      "rvec": [
+        0.1073740422862464,
+        0.33656081628529494,
+        0.17516400214892938
+      ],
+      "tvec": [
+        0.4560878197663916,
+        0.01742245005059173,
+        -0.07520245271913861
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000049",
+      "target": "tum_xyz_000089",
+      "scene": "tum_xyz_test",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 242.70839499283915,
+      "rvec": [
+        -0.006514248742494188,
+        0.21684156487796682,
+        0.13629309818516688
+      ],
+      "tvec": [
+        0.4838112815978044,
+        0.030360280227786862,
+        -0.025186448403463402
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000049",
+      "target": "tum_xyz_000129",
+      "scene": "tum_xyz_test",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 180.98606299933704,
+      "rvec": [
+        0.06528881662508011,
+        0.27302390550685124,
+        0.10428989728982925
+      ],
+      "tvec": [
+        0.3514742817317913,
+        -0.038251581167768195,
+        -0.07763031507914286
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000089",
+      "target": "tum_xyz_000109",
+      "scene": "tum_xyz_test",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 182.84101017003817,
+      "rvec": [
+        0.12481731326129233,
+        -0.2078306083601316,
+        -0.19827253404536177
+      ],
+      "tvec": [
+        -0.3425424245763632,
+        0.027700220901668404,
+        -0.1249828993396509
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000089",
+      "target": "tum_xyz_000129",
+      "scene": "tum_xyz_test",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 71.47013362237408,
+      "rvec": [
+        0.06370925251901743,
+        0.06072827372898415,
+        -0.03928220206467975
+      ],
+      "tvec": [
+        -0.13082635548216037,
+        -0.052118470570515135,
+        -0.024495912651823826
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_xyz_000089",
+      "target": "tum_xyz_000169",
+      "scene": "tum_xyz_test",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 75.53623302760076,
+      "rvec": [
+        0.029924287060272302,
+        0.08965335222116573,
+        -0.06435627517652562
+      ],
+      "tvec": [
+        -0.13839140660321675,
+        -0.04009224654306831,
+        -0.045423786120412535
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000000",
+      "target": "tum_rpy_000002",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 11.513144661646475,
+      "rvec": [
+        0.01667460925091557,
+        0.29681385854485975,
+        -0.06134699867590062
+      ],
+      "tvec": [
+        0.0178289791280124,
+        -0.004494217125136563,
+        -0.013861439884983895
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000000",
+      "target": "tum_rpy_000004",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 21.841417078568764,
+      "rvec": [
+        0.0169791996815053,
+        0.6206355967765927,
+        -0.1271876575888026
+      ],
+      "tvec": [
+        0.03373527857439773,
+        -0.004754389892892286,
+        -0.02734075266436764
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000000",
+      "target": "tum_rpy_000010",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 59.66812381833384,
+      "rvec": [
+        0.04982535906506636,
+        1.5780991784572909,
+        -0.2320850155743313
+      ],
+      "tvec": [
+        0.04857328094404534,
+        -0.01337532103764974,
+        -0.10817983714847568
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000004",
+      "target": "tum_rpy_000006",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 12.492097502021045,
+      "rvec": [
+        0.00620554057346793,
+        0.22389907080096585,
+        -0.029939628674734355
+      ],
+      "tvec": [
+        0.02385636168449734,
+        -0.0006750227457528457,
+        -0.007391099476476093
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000004",
+      "target": "tum_rpy_000010",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 41.81450107319247,
+      "rvec": [
+        0.058041778636104414,
+        0.9547441187759993,
+        -0.11682866408709033
+      ],
+      "tvec": [
+        0.052029538762815575,
+        -0.008926829091120136,
+        -0.0648617670011129
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000004",
+      "target": "tum_rpy_000014",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 33.75533291200086,
+      "rvec": [
+        0.05332238528983379,
+        0.7180260923274882,
+        -0.09630648418683711
+      ],
+      "tvec": [
+        0.039611066977026765,
+        -0.005013561310076575,
+        -0.05443819960222451
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000010",
+      "target": "tum_rpy_000012",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 2.9774149861919006,
+      "rvec": [
+        -0.0016127947670565405,
+        0.10437621801351119,
+        -0.008986462668844146
+      ],
+      "tvec": [
+        0.0043610890064160746,
+        0.0021348328123065932,
+        -0.0034472295458261026
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000010",
+      "target": "tum_rpy_000014",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 13.40186554178187,
+      "rvec": [
+        -0.009775496548331488,
+        -0.2367984142458905,
+        0.017249043704185535
+      ],
+      "tvec": [
+        -0.026321598406680913,
+        0.0034588095985264994,
+        -0.003694603291092946
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000010",
+      "target": "tum_rpy_000020",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 43.594179657380856,
+      "rvec": [
+        0.005225609037290953,
+        -1.2492306240106918,
+        0.18370946977801728
+      ],
+      "tvec": [
+        -0.0693614797821771,
+        -0.02048787928572757,
+        -0.048693345795910226
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000014",
+      "target": "tum_rpy_000016",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 14.37828223398055,
+      "rvec": [
+        0.004169622852892107,
+        -0.30943018336749595,
+        0.028416704792105868
+      ],
+      "tvec": [
+        -0.027934488242035052,
+        -0.0061893124559887075,
+        -0.002880412813773603
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000014",
+      "target": "tum_rpy_000020",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 33.21328800344829,
+      "rvec": [
+        0.0025978698557890915,
+        -1.0118754827034013,
+        0.17028909073437304
+      ],
+      "tvec": [
+        -0.058343084982741544,
+        -0.020495683232027963,
+        -0.02425904786979438
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000014",
+      "target": "tum_rpy_000024",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 37.21924905206993,
+      "rvec": [
+        0.02136141454170157,
+        -1.4601944481225775,
+        0.27112546870360343
+      ],
+      "tvec": [
+        -0.05983632943365502,
+        -0.026158777160954994,
+        -0.03572704937929583
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000020",
+      "target": "tum_rpy_000022",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 6.189305292195618,
+      "rvec": [
+        0.004573548527714714,
+        -0.2357968628637564,
+        0.05075649083358059
+      ],
+      "tvec": [
+        -0.011029943702502987,
+        -0.0008206622391873919,
+        0.005558493987474433
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000020",
+      "target": "tum_rpy_000024",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 11.459930191759687,
+      "rvec": [
+        0.0039607913052114654,
+        -0.44794103234465016,
+        0.1037530397163999
+      ],
+      "tvec": [
+        -0.020105705917274674,
+        -0.0006268747564614208,
+        0.010985791624084196
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000020",
+      "target": "tum_rpy_000030",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 17.76583800443985,
+      "rvec": [
+        0.027129726133857203,
+        0.19256330894270474,
+        -0.07079305755667639
+      ],
+      "tvec": [
+        0.03500154466084748,
+        -0.0029184727795671314,
+        0.005373489368150075
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000024",
+      "target": "tum_rpy_000026",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 8.13172798364528,
+      "rvec": [
+        -0.005570030014695738,
+        -0.14190466498705118,
+        0.017380134227234906
+      ],
+      "tvec": [
+        -0.012721373474442466,
+        -0.0008424847257498813,
+        0.010097369776859155
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000024",
+      "target": "tum_rpy_000030",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 23.62170611958419,
+      "rvec": [
+        0.028794346196048096,
+        0.6420625799479757,
+        -0.16777673883412753
+      ],
+      "tvec": [
+        0.04442302586989799,
+        -0.004388007680150401,
+        -0.01546868323941375
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000024",
+      "target": "tum_rpy_000034",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 21.04904985979159,
+      "rvec": [
+        -0.04412417273217524,
+        0.8107640254629044,
+        -0.21153749906592573
+      ],
+      "tvec": [
+        0.033305924668996845,
+        -0.009007869631040999,
+        -0.024121021260577802
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000030",
+      "target": "tum_rpy_000032",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 3.730281490718857,
+      "rvec": [
+        0.008249511740992312,
+        0.2029992837608961,
+        -0.013018952300482878
+      ],
+      "tvec": [
+        0.005123096483773737,
+        -0.0012728240046373726,
+        -0.005271982688814791
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000030",
+      "target": "tum_rpy_000034",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 4.107614879708132,
+      "rvec": [
+        -0.0663157188928795,
+        0.17519926983140516,
+        -0.01913735549995476
+      ],
+      "tvec": [
+        -0.007667260405607057,
+        -0.002533947672930359,
+        -0.0015107041614623729
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000030",
+      "target": "tum_rpy_000040",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 9.488150504708582,
+      "rvec": [
+        -0.6987312217682118,
+        0.10568164896537714,
+        -0.024452837943432056
+      ],
+      "tvec": [
+        -0.013687213027854805,
+        0.013134197270802339,
+        -0.0005030522654525527
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000034",
+      "target": "tum_rpy_000036",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 4.060788100849514,
+      "rvec": [
+        -0.16652132594446314,
+        -0.035085930267779,
+        0.013942759751413252
+      ],
+      "tvec": [
+        -0.007042251838660807,
+        0.0009944832904790757,
+        -0.003921440044912128
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000034",
+      "target": "tum_rpy_000040",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 8.851129871378033,
+      "rvec": [
+        -0.6307745168758666,
+        -0.056281930277932636,
+        0.051372708722613264
+      ],
+      "tvec": [
+        -0.00622266488840717,
+        0.016565013880552204,
+        -0.0004987552743576096
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000034",
+      "target": "tum_rpy_000044",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 18.396059360634784,
+      "rvec": [
+        -0.2715579363330288,
+        -0.03399697877288933,
+        0.02258893809422142
+      ],
+      "tvec": [
+        -0.01575495581042141,
+        -0.009172299065142608,
+        -0.03195794576112876
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000040",
+      "target": "tum_rpy_000042",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 10.872557196906413,
+      "rvec": [
+        0.12173481383919803,
+        0.018746965121820516,
+        -0.017752909462664945
+      ],
+      "tvec": [
+        -0.002918362967982646,
+        -0.010985472682944142,
+        -0.018537867933486885
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000040",
+      "target": "tum_rpy_000044",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 23.070381444614178,
+      "rvec": [
+        0.3594028366462818,
+        0.022894852836684135,
+        -0.02576675337168244
+      ],
+      "tvec": [
+        -0.010012088211656889,
+        -0.02498067306767049,
+        -0.03747924842800554
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000040",
+      "target": "tum_rpy_000050",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 64.0882399508678,
+      "rvec": [
+        1.1110128755785524,
+        0.03047562651733587,
+        -0.12412816524515596
+      ],
+      "tvec": [
+        -0.030447325601657416,
+        -0.03638575962603141,
+        -0.11907244374809545
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000044",
+      "target": "tum_rpy_000046",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 15.777991000124361,
+      "rvec": [
+        0.3157119247888478,
+        0.0175213374044594,
+        -0.04646662487592352
+      ],
+      "tvec": [
+        -0.008059338646571934,
+        -0.020088589326303183,
+        -0.022962483303402337
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000044",
+      "target": "tum_rpy_000050",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 44.73281793046359,
+      "rvec": [
+        0.7507494759272376,
+        0.01708709737902849,
+        -0.10341356199014835
+      ],
+      "tvec": [
+        -0.018797738231544736,
+        -0.04467014440178507,
+        -0.07520188319784293
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000044",
+      "target": "tum_rpy_000054",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 14.46858666214504,
+      "rvec": [
+        0.37355222213058337,
+        0.003975290571948322,
+        -0.05667133778724357
+      ],
+      "tvec": [
+        -0.0039349696899654285,
+        -0.027397885930099942,
+        -0.008439896924743229
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000050",
+      "target": "tum_rpy_000052",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 9.19252413649272,
+      "rvec": [
+        -0.13984046526993404,
+        -0.010208360910230372,
+        0.006853692218994769
+      ],
+      "tvec": [
+        0.0012422483557884556,
+        0.010458642185694422,
+        0.015069294033038139
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000050",
+      "target": "tum_rpy_000054",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 31.541005056909725,
+      "rvec": [
+        -0.37742354008726514,
+        -0.01087840891539849,
+        0.045446726827276795
+      ],
+      "tvec": [
+        0.011515845596861807,
+        0.042640565945571716,
+        0.045038954650731045
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000050",
+      "target": "tum_rpy_000060",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 92.85370213405618,
+      "rvec": [
+        -1.0827481568136337,
+        -0.04023502909336831,
+        0.10735873876129867
+      ],
+      "tvec": [
+        0.026750062852648804,
+        0.1720495348275961,
+        0.06458042817283927
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000054",
+      "target": "tum_rpy_000056",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 25.928844941493242,
+      "rvec": [
+        -0.25174369767756566,
+        0.003777711789775643,
+        0.04103765906853956
+      ],
+      "tvec": [
+        0.01638164730841407,
+        0.03363570568684471,
+        0.03590962175254275
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000054",
+      "target": "tum_rpy_000060",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 62.79589954766168,
+      "rvec": [
+        -0.7049106009752244,
+        -0.0331335972883452,
+        0.0646040146445671
+      ],
+      "tvec": [
+        0.019669602328703517,
+        0.10972918710890744,
+        0.057843860872603514
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000054",
+      "target": "tum_rpy_000064",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 60.90751185198757,
+      "rvec": [
+        -0.6465055401822086,
+        0.012443304453793484,
+        0.05581206047360307
+      ],
+      "tvec": [
+        0.023277956979999792,
+        0.10446919405401878,
+        0.05816548987622361
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000060",
+      "target": "tum_rpy_000062",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 2.7739863013359383,
+      "rvec": [
+        -0.053362365046967626,
+        -0.005496989089896159,
+        -0.0036585050421266718
+      ],
+      "tvec": [
+        -0.0013995450466773862,
+        0.004135030365789882,
+        0.00342385711388693
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000060",
+      "target": "tum_rpy_000064",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 2.6391286440792703,
+      "rvec": [
+        0.057203045274438376,
+        0.0410609770888875,
+        -0.023057136625058053
+      ],
+      "tvec": [
+        -0.0013612037007775246,
+        -0.001288185560502919,
+        -0.004934339109414765
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000060",
+      "target": "tum_rpy_000070",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 47.11350655597632,
+      "rvec": [
+        0.8741573775648875,
+        0.09934677895833087,
+        -0.0009831636510721326
+      ],
+      "tvec": [
+        -0.0006139359154494484,
+        -0.035854659861797866,
+        -0.08713665387703728
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000064",
+      "target": "tum_rpy_000066",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 18.808841006292695,
+      "rvec": [
+        0.3771033839338012,
+        0.02300391714983595,
+        0.01669332346709119
+      ],
+      "tvec": [
+        0.002669073359775398,
+        -0.0203699393362462,
+        -0.031512404205927824
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000064",
+      "target": "tum_rpy_000070",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 45.70659142837061,
+      "rvec": [
+        0.8176756565467979,
+        0.05064223942921259,
+        0.005437356411976134
+      ],
+      "tvec": [
+        0.0009977893515619174,
+        -0.03853794697816176,
+        -0.08288667600476152
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000064",
+      "target": "tum_rpy_000074",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 44.44834080142906,
+      "rvec": [
+        0.7671220544891416,
+        0.043078654607782485,
+        0.0024343298216756445
+      ],
+      "tvec": [
+        0.003886979808408797,
+        -0.04526747265561393,
+        -0.07640920957150521
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000070",
+      "target": "tum_rpy_000072",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 4.950505024742367,
+      "rvec": [
+        0.06715997300743022,
+        -0.006377241597307954,
+        -0.0001583088355261722
+      ],
+      "tvec": [
+        0.0022412062837221525,
+        -0.008441345932216904,
+        -0.00466376170558136
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000070",
+      "target": "tum_rpy_000074",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 2.8613807855648843,
+      "rvec": [
+        -0.050635044709011985,
+        -0.006065508468366431,
+        -0.00444223238999138
+      ],
+      "tvec": [
+        0.002573044774494937,
+        -0.0025787674062154875,
+        0.004413547241514992
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000070",
+      "target": "tum_rpy_000080",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 40.460134700714974,
+      "rvec": [
+        -0.7805089740971798,
+        -0.031730309293442734,
+        0.0029001700558041474
+      ],
+      "tvec": [
+        0.007195767232800465,
+        0.07679412093402305,
+        0.024473943775002782
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000074",
+      "target": "tum_rpy_000076",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 8.982622111610578,
+      "rvec": [
+        -0.20130577986699255,
+        -0.019726064157018615,
+        0.00434982282031329
+      ],
+      "tvec": [
+        0.0018711372258615189,
+        0.015521813191492234,
+        0.008849980832204896
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000074",
+      "target": "tum_rpy_000080",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 39.16548225159488,
+      "rvec": [
+        -0.7299425263965669,
+        -0.02408191118580287,
+        0.005531285792986861
+      ],
+      "tvec": [
+        0.004737726941724141,
+        0.07573873971208234,
+        0.019414871883457696
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000074",
+      "target": "tum_rpy_000084",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 46.06859016727122,
+      "rvec": [
+        -0.9052719389870918,
+        -0.027613946450124605,
+        0.002257372631917014
+      ],
+      "tvec": [
+        5.5297578159807514e-06,
+        0.09130187812572754,
+        0.012378490220401162
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000080",
+      "target": "tum_rpy_000082",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 11.231206524679335,
+      "rvec": [
+        -0.2418414635986049,
+        -0.00951742013111428,
+        -0.007571898072613244
+      ],
+      "tvec": [
+        -0.002894392256915568,
+        0.018497204979093906,
+        0.012411120071310622
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000080",
+      "target": "tum_rpy_000084",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 7.813769896791164,
+      "rvec": [
+        -0.17527390743242163,
+        -0.005337984827160212,
+        -0.0036080767745430876
+      ],
+      "tvec": [
+        -0.004942329083576946,
+        0.013353142754396918,
+        0.006441037324090404
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000080",
+      "target": "tum_rpy_000090",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 38.402636628231555,
+      "rvec": [
+        0.6135900142839741,
+        -0.007042008938291513,
+        -0.05776666052893827
+      ],
+      "tvec": [
+        -0.016324058844217726,
+        -0.04939136575034211,
+        -0.05650723928990353
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000084",
+      "target": "tum_rpy_000086",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 13.113066003036812,
+      "rvec": [
+        0.2415942558695765,
+        -0.00943665048326295,
+        0.032093810346303125
+      ],
+      "tvec": [
+        0.00018848632176915459,
+        -0.019155227305011513,
+        -0.01791233485059518
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000084",
+      "target": "tum_rpy_000090",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 44.96445818643882,
+      "rvec": [
+        0.7889376363856426,
+        -0.008098235969168347,
+        -0.05234094099551935
+      ],
+      "tvec": [
+        -0.011803062901714845,
+        -0.054464034369289094,
+        -0.07058021441139917
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000084",
+      "target": "tum_rpy_000094",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 38.77502417794222,
+      "rvec": [
+        0.7421453943564881,
+        0.10187722871862134,
+        0.17538318967123656
+      ],
+      "tvec": [
+        0.008966468544269524,
+        -0.04893816915184664,
+        -0.05948670474912765
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000090",
+      "target": "tum_rpy_000092",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 3.8916577444579667,
+      "rvec": [
+        -0.05655970084853861,
+        0.0008842997758572236,
+        0.04755350098471313
+      ],
+      "tvec": [
+        -0.001925446724714286,
+        0.002978180774969419,
+        0.0069284265300202375
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000090",
+      "target": "tum_rpy_000094",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 7.586171630012052,
+      "rvec": [
+        -0.04250233425545271,
+        0.014865908495845641,
+        0.24684625071641847
+      ],
+      "tvec": [
+        0.007759746632934328,
+        0.009802909235201912,
+        0.008595888710253075
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000090",
+      "target": "tum_rpy_000100",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 30.15480890339057,
+      "rvec": [
+        0.05477706072186792,
+        -0.05136574276363332,
+        1.2827035431536407
+      ],
+      "tvec": [
+        0.004358500710527791,
+        0.053391074024276564,
+        0.027706437629016145
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000094",
+      "target": "tum_rpy_000096",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 6.173127246380152,
+      "rvec": [
+        0.039341355922889766,
+        -0.036884423139205355,
+        0.29209154375671675
+      ],
+      "tvec": [
+        0.002317155556287087,
+        0.011726674170664142,
+        0.0030896444816597146
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000094",
+      "target": "tum_rpy_000100",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 23.520894965965976,
+      "rvec": [
+        0.10403507914689762,
+        -0.02905204968522217,
+        1.036681856600082
+      ],
+      "tvec": [
+        0.008624606980772997,
+        0.042649092008500755,
+        0.017877390896818612
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000094",
+      "target": "tum_rpy_000104",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 24.599085348849844,
+      "rvec": [
+        0.08427036398448369,
+        -0.03002880882725428,
+        0.9791774010538785
+      ],
+      "tvec": [
+        0.02579020319869066,
+        0.040684281523916566,
+        0.010005731150342978
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000100",
+      "target": "tum_rpy_000102",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 14.114265832837317,
+      "rvec": [
+        0.0838502034470358,
+        0.02540349181602768,
+        0.25666420411744184
+      ],
+      "tvec": [
+        0.02719763325754347,
+        0.005676564552542174,
+        -0.004991528830827541
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000100",
+      "target": "tum_rpy_000104",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 8.294727240843995,
+      "rvec": [
+        -0.01621535204089552,
+        -0.007193385061003214,
+        -0.05801818857855753
+      ],
+      "tvec": [
+        0.014825051819991025,
+        -0.001681311884224268,
+        -0.007252656677559255
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000100",
+      "target": "tum_rpy_000110",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 20.822583893455626,
+      "rvec": [
+        -0.3844133926856821,
+        -0.1712550137302365,
+        -1.3109617058849563
+      ],
+      "tvec": [
+        -0.033827563063550836,
+        -0.018141912822128847,
+        -0.016151996048035633
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000104",
+      "target": "tum_rpy_000106",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 8.506174228171115,
+      "rvec": [
+        -0.09149353331036363,
+        -0.10806044007968732,
+        -0.3682286175832691
+      ],
+      "tvec": [
+        0.010734432390108961,
+        0.0012243318810128412,
+        -0.013141269828571556
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000104",
+      "target": "tum_rpy_000110",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 19.53976714293179,
+      "rvec": [
+        -0.3683269194877413,
+        -0.16348315959388998,
+        -1.2529812026448905
+      ],
+      "tvec": [
+        -0.03626366846273299,
+        -0.0018206630003719804,
+        -0.014451350658815532
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000104",
+      "target": "tum_rpy_000114",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 44.06262588634502,
+      "rvec": [
+        -0.3775556579522855,
+        -0.21806132681837104,
+        -1.9872023865378423
+      ],
+      "tvec": [
+        -0.08332727441256119,
+        -0.0016040234104124362,
+        -0.028636557891488668
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000110",
+      "target": "tum_rpy_000112",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 21.28315061263243,
+      "rvec": [
+        -0.05425887251173402,
+        -0.10532938172987705,
+        -0.4033709625822352
+      ],
+      "tvec": [
+        -0.036749738010598776,
+        -0.020529002375747285,
+        0.006317184310189017
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000110",
+      "target": "tum_rpy_000114",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 30.89291990084457,
+      "rvec": [
+        -0.05089360370876584,
+        -0.1687368940321056,
+        -0.7111221766052078
+      ],
+      "tvec": [
+        -0.05711014242726081,
+        -0.022118563533192637,
+        -0.008166442258786821
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000110",
+      "target": "tum_rpy_000120",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 12.014262357714745,
+      "rvec": [
+        -0.03744117040805963,
+        -0.05832406069859988,
+        -0.13197610377292252
+      ],
+      "tvec": [
+        0.003622611374242468,
+        -0.013120116033093598,
+        0.019801748460915647
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000114",
+      "target": "tum_rpy_000116",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 10.986013835782414,
+      "rvec": [
+        -0.027243348518542973,
+        0.055798621054653316,
+        -0.19496161331361098
+      ],
+      "tvec": [
+        -0.02190966155310012,
+        -0.0015103776225773302,
+        0.0006749000413650563
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000114",
+      "target": "tum_rpy_000120",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 29.36537076217483,
+      "rvec": [
+        0.005396881677529257,
+        0.1216045957683154,
+        0.5769752840589506
+      ],
+      "tvec": [
+        0.040009753643890256,
+        0.03675132516857915,
+        0.022312770148696037
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000114",
+      "target": "tum_rpy_000124",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 45.858314404260405,
+      "rvec": [
+        0.14647623934137854,
+        0.0617984666056439,
+        1.3245121666228197
+      ],
+      "tvec": [
+        0.021098668541651766,
+        0.07758390279507049,
+        0.04413076265888183
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000120",
+      "target": "tum_rpy_000122",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 6.585020880756542,
+      "rvec": [
+        0.11752634792589407,
+        -0.05007564335049702,
+        0.3679285364987639
+      ],
+      "tvec": [
+        0.00862327272989083,
+        0.008802624861414587,
+        0.004647898769887915
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000120",
+      "target": "tum_rpy_000124",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 17.16056525875532,
+      "rvec": [
+        0.18763744087597112,
+        -0.004057488774760554,
+        0.7384183442210348
+      ],
+      "tvec": [
+        0.014689980055174745,
+        0.02806513688540837,
+        0.013209563867965457
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000120",
+      "target": "tum_rpy_000130",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 40.27918196786025,
+      "rvec": [
+        0.22856925501250308,
+        0.2803526281732785,
+        2.00506473815546
+      ],
+      "tvec": [
+        0.007265279949826321,
+        0.07924258036944887,
+        0.01254907023018359
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000124",
+      "target": "tum_rpy_000126",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 12.412191587306385,
+      "rvec": [
+        0.0006669662556903868,
+        0.00012585943984609073,
+        0.4597170388686952
+      ],
+      "tvec": [
+        0.007372048020610422,
+        0.023559716840115097,
+        0.002615846019055512
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000124",
+      "target": "tum_rpy_000130",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 31.565289480693806,
+      "rvec": [
+        -0.006931416265833222,
+        0.14491699303923633,
+        1.2877878041950224
+      ],
+      "tvec": [
+        0.028761431836246732,
+        0.056188876289881784,
+        -0.0010296698545115834
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000124",
+      "target": "tum_rpy_000134",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 38.255914575395984,
+      "rvec": [
+        0.04568740108873186,
+        0.24791988602994963,
+        1.1720146087120544
+      ],
+      "tvec": [
+        0.04406567135296463,
+        0.06236819375529834,
+        0.004741836765859375
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000130",
+      "target": "tum_rpy_000132",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 8.942175350551006,
+      "rvec": [
+        0.0515230067367287,
+        0.11458839707964318,
+        0.19247412498824568
+      ],
+      "tvec": [
+        0.010451269591902512,
+        0.004844808974681647,
+        0.013680233547576082
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000130",
+      "target": "tum_rpy_000134",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 8.614667724294458,
+      "rvec": [
+        -0.025910216538262847,
+        0.10404733413535495,
+        -0.11469929402566933
+      ],
+      "tvec": [
+        0.009413836098212197,
+        0.00991149442065542,
+        0.010487705576784467
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000130",
+      "target": "tum_rpy_000140",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 30.30156761621432,
+      "rvec": [
+        -0.28537524366886585,
+        -0.29334076849489854,
+        -1.4680257011626676
+      ],
+      "tvec": [
+        -0.03790395151454096,
+        0.02708446811014742,
+        0.03876160531729522
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000134",
+      "target": "tum_rpy_000136",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 4.150602365922112,
+      "rvec": [
+        -0.09620203024774607,
+        -0.06861965473589263,
+        -0.5196418307023822
+      ],
+      "tvec": [
+        -0.003332460063028786,
+        -0.0042765101875889555,
+        -0.006286188872739906
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000134",
+      "target": "tum_rpy_000140",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 30.998749974797395,
+      "rvec": [
+        -0.35279724815207414,
+        -0.3737105995667578,
+        -1.337721860545581
+      ],
+      "tvec": [
+        -0.04877245455844481,
+        0.028565038468795212,
+        0.02547501233798899
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000134",
+      "target": "tum_rpy_000144",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 38.976499329724284,
+      "rvec": [
+        -0.48633448145831976,
+        -0.5437379029474991,
+        -1.9546397017677895
+      ],
+      "tvec": [
+        -0.05301894186891459,
+        0.04580036212295835,
+        0.034175848672805875
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000140",
+      "target": "tum_rpy_000142",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 7.582380892569342,
+      "rvec": [
+        -0.04693758601025147,
+        -0.0856899407226461,
+        -0.3180015133003312
+      ],
+      "tvec": [
+        -0.009483535363823292,
+        -0.002635183116553641,
+        0.011536393151472701
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000140",
+      "target": "tum_rpy_000144",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 18.055054693907778,
+      "rvec": [
+        -0.14228153506580107,
+        -0.1852281070279922,
+        -0.6104519093789739
+      ],
+      "tvec": [
+        -0.027085560732550473,
+        -0.009189859537094724,
+        0.022042206819912424
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000140",
+      "target": "tum_rpy_000150",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 27.201562455123693,
+      "rvec": [
+        -0.10381812798721027,
+        -0.25414826562546194,
+        -0.5540769646126859
+      ],
+      "tvec": [
+        -0.052038969311998806,
+        -0.015495541788655531,
+        -0.0033961533564985658
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000144",
+      "target": "tum_rpy_000146",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 21.623020140581602,
+      "rvec": [
+        -0.04208236583300585,
+        -0.14650852881452778,
+        -0.19068633923019446
+      ],
+      "tvec": [
+        -0.04165398077265037,
+        -0.002135650050947513,
+        -0.011428249413254488
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000144",
+      "target": "tum_rpy_000150",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 16.925129246183033,
+      "rvec": [
+        0.010991700438538358,
+        -0.07105855727275874,
+        0.06298718005899505
+      ],
+      "tvec": [
+        -0.02410069655076874,
+        -0.0043403734484359635,
+        -0.023370014636193037
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000144",
+      "target": "tum_rpy_000154",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 27.09986162326301,
+      "rvec": [
+        0.19609496479954902,
+        -0.18580229963590808,
+        1.0049926865672525
+      ],
+      "tvec": [
+        -0.012333446101603807,
+        0.03754717753886466,
+        -0.03709050506698208
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000150",
+      "target": "tum_rpy_000152",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 14.636000136649367,
+      "rvec": [
+        0.1277760834536731,
+        -0.08050989428685475,
+        0.5259707227803709
+      ],
+      "tvec": [
+        0.005755211401203164,
+        0.02868920862397839,
+        -0.0008104629894734039
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000150",
+      "target": "tum_rpy_000154",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 27.93192617776292,
+      "rvec": [
+        0.15507070108247786,
+        -0.11968007113316692,
+        0.9466363330035125
+      ],
+      "tvec": [
+        -0.0027064126811884304,
+        0.054948976180441214,
+        -0.009698213604597328
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000150",
+      "target": "tum_rpy_000160",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 44.63656012732179,
+      "rvec": [
+        0.2774018215121926,
+        0.18436219238559065,
+        1.717941854619896
+      ],
+      "tvec": [
+        -0.002138569739202789,
+        0.07732668723044966,
+        -0.0445611934471557
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000154",
+      "target": "tum_rpy_000156",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 15.785119575093528,
+      "rvec": [
+        -0.05030754379323842,
+        0.15118831359331972,
+        0.3945569493508989
+      ],
+      "tvec": [
+        0.01703051429215674,
+        0.021710327396281925,
+        -0.015339598015948752
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000154",
+      "target": "tum_rpy_000160",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 34.97785013404917,
+      "rvec": [
+        -0.04161110609749117,
+        0.22168067448389725,
+        0.7997562351654739
+      ],
+      "tvec": [
+        0.04074624469324328,
+        0.042089508328638114,
+        -0.03823632869473559
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000154",
+      "target": "tum_rpy_000164",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 11.552597110606849,
+      "rvec": [
+        -0.0890930725377825,
+        0.25094960142962264,
+        -0.055735630831084786
+      ],
+      "tvec": [
+        0.013253482293028696,
+        0.013434628769038365,
+        -0.013330639780089637
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000160",
+      "target": "tum_rpy_000162",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 11.731474758102518,
+      "rvec": [
+        -0.07258111761933414,
+        -0.0011570507005717891,
+        -0.2747009650246425
+      ],
+      "tvec": [
+        -0.01999039041452544,
+        0.0036333406738229823,
+        0.011734271456838696
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000160",
+      "target": "tum_rpy_000164",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 27.69426836007779,
+      "rvec": [
+        -0.148872344854121,
+        -0.020727794077855986,
+        -0.8414829584265432
+      ],
+      "tvec": [
+        -0.043682932692706844,
+        0.021340088494904624,
+        0.02653850060561269
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000160",
+      "target": "tum_rpy_000170",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 43.10176910522322,
+      "rvec": [
+        -0.36640891135621056,
+        0.08563761251375013,
+        -2.2386160714831855
+      ],
+      "tvec": [
+        -0.05058162048797091,
+        0.059815891126761445,
+        0.03598067311102171
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000164",
+      "target": "tum_rpy_000166",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 10.906534738403302,
+      "rvec": [
+        -0.06335015838602301,
+        0.028068329763581146,
+        -0.5357081031813328
+      ],
+      "tvec": [
+        -0.019834280605906307,
+        0.002073443917449014,
+        0.008838107442623366
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000164",
+      "target": "tum_rpy_000170",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 35.41383910281377,
+      "rvec": [
+        -0.17367950212972905,
+        0.06650200997520585,
+        -1.4052799964764018
+      ],
+      "tvec": [
+        -0.06812263988325692,
+        0.011340125323177075,
+        0.01572474142841962
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000164",
+      "target": "tum_rpy_000174",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 32.16496541269694,
+      "rvec": [
+        -0.1369144988166962,
+        -0.03563131042001722,
+        -1.273366133545418
+      ],
+      "tvec": [
+        -0.06323425048307324,
+        -0.011348476559484455,
+        0.0033138566086576837
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000170",
+      "target": "tum_rpy_000172",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 8.743140168154614,
+      "rvec": [
+        0.018212370576089213,
+        -0.04330260040711026,
+        -0.1700354120000712
+      ],
+      "tvec": [
+        -0.01416524804426772,
+        -0.009955720906102083,
+        -0.002449360954242197
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000170",
+      "target": "tum_rpy_000174",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 8.143402237394302,
+      "rvec": [
+        -0.026860439851721717,
+        -0.08662000295118485,
+        0.1394667720603932
+      ],
+      "tvec": [
+        0.006918728413683212,
+        -0.013364002748649018,
+        -0.006228533348372478
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000170",
+      "target": "tum_rpy_000180",
+      "scene": "tum_rpy_train",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 29.03941287285267,
+      "rvec": [
+        0.08329746617511079,
+        -0.02248898882996523,
+        0.7589209583580013
+      ],
+      "tvec": [
+        0.04961063685012068,
+        0.012173204838703766,
+        -0.02763598732233774
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000008",
+      "target": "tum_rpy_000028",
+      "scene": "tum_rpy_val",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 28.3766629468654,
+      "rvec": [
+        0.007943813896411779,
+        -1.2183522601793144,
+        0.18621209753073895
+      ],
+      "tvec": [
+        -0.04597345672014885,
+        -0.024290379329139446,
+        -0.02274552152066711
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000008",
+      "target": "tum_rpy_000048",
+      "scene": "tum_rpy_val",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 64.18434388540538,
+      "rvec": [
+        0.2675441326549559,
+        -0.5571399086679031,
+        -0.07915712468867157
+      ],
+      "tvec": [
+        -0.06308675141353703,
+        -0.03689927469850046,
+        -0.10553210564947091
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000008",
+      "target": "tum_rpy_000088",
+      "scene": "tum_rpy_val",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 16.157428632056725,
+      "rvec": [
+        -0.12782927152218532,
+        -0.5583844422704581,
+        0.132707978118691
+      ],
+      "tvec": [
+        -0.02447910965385869,
+        -0.02106617748910805,
+        0.0011132639182984683
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000048",
+      "target": "tum_rpy_000068",
+      "scene": "tum_rpy_val",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 49.11305834500628,
+      "rvec": [
+        -0.25182530525609426,
+        -0.00036964233332123584,
+        0.11658063334847749
+      ],
+      "tvec": [
+        0.03634920797330199,
+        0.041003436480111025,
+        0.08152191899443428
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000048",
+      "target": "tum_rpy_000088",
+      "scene": "tum_rpy_val",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 53.464217005395184,
+      "rvec": [
+        -0.43268060231652505,
+        -0.011634661857431797,
+        0.092831545534091
+      ],
+      "tvec": [
+        0.03183960359162874,
+        0.06223078455650077,
+        0.08091513515165305
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000048",
+      "target": "tum_rpy_000128",
+      "scene": "tum_rpy_val",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 80.33041142680638,
+      "rvec": [
+        -0.32222694526068596,
+        -0.3582540106861178,
+        1.476788164773218
+      ],
+      "tvec": [
+        -0.0017737719764260307,
+        0.12483203908997476,
+        0.10112228117291755
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000088",
+      "target": "tum_rpy_000108",
+      "scene": "tum_rpy_val",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 21.29160632737699,
+      "rvec": [
+        -0.103020303876732,
+        0.005565796959304552,
+        0.24734522050391966
+      ],
+      "tvec": [
+        0.04151714260102546,
+        -0.009182317183166033,
+        -0.0023112596984868894
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000088",
+      "target": "tum_rpy_000128",
+      "scene": "tum_rpy_val",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 52.69233815271437,
+      "rvec": [
+        0.03221910158914838,
+        -0.03768520415418694,
+        1.4182900368145799
+      ],
+      "tvec": [
+        0.05547903622692829,
+        0.08759443162222813,
+        0.01884733636644631
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000088",
+      "target": "tum_rpy_000168",
+      "scene": "tum_rpy_val",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 35.736465969650475,
+      "rvec": [
+        -0.30990153016543226,
+        0.1364577883818699,
+        -0.36588358666407206
+      ],
+      "tvec": [
+        0.03854798755637414,
+        -0.026414073551962902,
+        0.054080767133474206
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000009",
+      "target": "tum_rpy_000029",
+      "scene": "tum_rpy_test",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 25.467528344933832,
+      "rvec": [
+        0.0037679729369712992,
+        -1.0429034700066524,
+        0.10444204793134877
+      ],
+      "tvec": [
+        -0.04188380147376258,
+        -0.019336637605805257,
+        -0.021592165713708145
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000009",
+      "target": "tum_rpy_000049",
+      "scene": "tum_rpy_test",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 72.93563943642364,
+      "rvec": [
+        0.3268581387402084,
+        -0.7055077113113356,
+        -0.13501266942838813
+      ],
+      "tvec": [
+        -0.07857278215337793,
+        -0.032935624069824976,
+        -0.11840604955748235
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000009",
+      "target": "tum_rpy_000089",
+      "scene": "tum_rpy_test",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 27.835319290426707,
+      "rvec": [
+        -0.01701188412186713,
+        -0.7090694093945442,
+        0.0535845750196932
+      ],
+      "tvec": [
+        -0.042183672359792035,
+        -0.034719514584818215,
+        -0.010691730132972754
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000049",
+      "target": "tum_rpy_000069",
+      "scene": "tum_rpy_test",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 48.26660336091621,
+      "rvec": [
+        -0.2378619033043198,
+        -0.006720380405150292,
+        0.12597226769440492
+      ],
+      "tvec": [
+        0.036773311022048616,
+        0.033108900496940735,
+        0.08288657493442098
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000049",
+      "target": "tum_rpy_000089",
+      "scene": "tum_rpy_test",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 51.24229210330084,
+      "rvec": [
+        -0.37990667251065136,
+        -0.0038207174033994206,
+        0.05582007477503348
+      ],
+      "tvec": [
+        0.032816130394140997,
+        0.04402633494339927,
+        0.0865324991977372
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000049",
+      "target": "tum_rpy_000129",
+      "scene": "tum_rpy_test",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 83.97167677258804,
+      "rvec": [
+        -0.35806429911150084,
+        -0.41894683425200174,
+        1.6833423756268195
+      ],
+      "tvec": [
+        -0.021792639026147836,
+        0.13052819907536706,
+        0.10340425586220992
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000089",
+      "target": "tum_rpy_000109",
+      "scene": "tum_rpy_test",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 14.581323671052692,
+      "rvec": [
+        -0.3031683555307849,
+        -0.006152429473956978,
+        0.12766353438147482
+      ],
+      "tvec": [
+        0.029112948304879427,
+        0.0002480246026654864,
+        0.0016836640977038186
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000089",
+      "target": "tum_rpy_000129",
+      "scene": "tum_rpy_test",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 55.8048832988655,
+      "rvec": [
+        -0.06871224154582657,
+        -0.0990976293231149,
+        1.664811799952583
+      ],
+      "tvec": [
+        0.03396457510102513,
+        0.10410406709126496,
+        0.021575237038424788
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    },
+    {
+      "source": "tum_rpy_000089",
+      "target": "tum_rpy_000169",
+      "scene": "tum_rpy_test",
+      "ok": true,
+      "inliers": 10000,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 33.856203272073884,
+      "rvec": [
+        -0.47609970757885695,
+        0.19246602916131747,
+        -0.5435806056945041
+      ],
+      "tvec": [
+        0.023723201929008814,
+        -0.022108478470505233,
+        0.059442365951858145
+      ],
+      "pose_source": "TUM sensor groundtruth; no image/PnP estimation"
+    }
+  ]
+}
