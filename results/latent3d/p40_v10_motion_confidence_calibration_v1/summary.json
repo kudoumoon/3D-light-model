@@ -1,0 +1,2026 @@
+{
+  "teacher": "runs/teacher_moge3_video384_v6_2k",
+  "checkpoint": "runs/reprojection_student/student_video384_tvod_v10_frozengeom_motionconf_width64_lr1e3b/checkpoints/best.pt",
+  "checkpoint_epoch": 1,
+  "checkpoint_val_loss": 0.23810951240857442,
+  "num_samples": 50,
+  "num_cases": 200,
+  "num_pixels": 29271968,
+  "positive_rate": 0.7831212100259197,
+  "confidence_mean": 0.7872047424316406,
+  "auc_mean": 0.9532355004689557,
+  "auc_global": 0.9531477374683004,
+  "ece": 0.043360644159592676,
+  "by_motion": {
+    "yaw_m10_fwd10": {
+      "num_cases": 50,
+      "auc_mean": 0.9400212317615475,
+      "positive_rate_mean": 0.7281627027775773,
+      "confidence_mean": 0.7432328796386719
+    },
+    "yaw_m5_fwd10": {
+      "num_cases": 50,
+      "auc_mean": 0.9617845801836706,
+      "positive_rate_mean": 0.8372562558034491,
+      "confidence_mean": 0.8353083312511445
+    },
+    "yaw_p10_fwd10": {
+      "num_cases": 50,
+      "auc_mean": 0.9456043131248763,
+      "positive_rate_mean": 0.7294451257283993,
+      "confidence_mean": 0.7345519876480102
+    },
+    "yaw_p5_fwd10": {
+      "num_cases": 50,
+      "auc_mean": 0.965531876805728,
+      "positive_rate_mean": 0.8380728090843089,
+      "confidence_mean": 0.8358926773071289
+    }
+  },
+  "bins": [
+    {
+      "bin": 0,
+      "lo": 0.0,
+      "hi": 0.06666666666666667,
+      "count": 4037767,
+      "confidence": 0.011364671401679516,
+      "accuracy": 0.07237069308757782,
+      "gap": 0.061006021685898304
+    },
+    {
+      "bin": 1,
+      "lo": 0.06666666666666667,
+      "hi": 0.13333333333333333,
+      "count": 548611,
+      "confidence": 0.09698133170604706,
+      "accuracy": 0.2824150323867798,
+      "gap": 0.18543370068073273
+    },
+    {
+      "bin": 2,
+      "lo": 0.13333333333333333,
+      "hi": 0.2,
+      "count": 371395,
+      "confidence": 0.16518625617027283,
+      "accuracy": 0.3546789884567261,
+      "gap": 0.18949273228645325
+    },
+    {
+      "bin": 3,
+      "lo": 0.2,
+      "hi": 0.26666666666666666,
+      "count": 297197,
+      "confidence": 0.23242004215717316,
+      "accuracy": 0.40595296025276184,
+      "gap": 0.17353291809558868
+    },
+    {
+      "bin": 4,
+      "lo": 0.26666666666666666,
+      "hi": 0.3333333333333333,
+      "count": 262439,
+      "confidence": 0.2994353175163269,
+      "accuracy": 0.44935014843940735,
+      "gap": 0.14991483092308044
+    },
+    {
+      "bin": 5,
+      "lo": 0.3333333333333333,
+      "hi": 0.4,
+      "count": 241409,
+      "confidence": 0.3663189113140106,
+      "accuracy": 0.48678797483444214,
+      "gap": 0.12046906352043152
+    },
+    {
+      "bin": 6,
+      "lo": 0.4,
+      "hi": 0.4666666666666667,
+      "count": 230439,
+      "confidence": 0.4331786632537842,
+      "accuracy": 0.5189312696456909,
+      "gap": 0.08575260639190674
+    },
+    {
+      "bin": 7,
+      "lo": 0.4666666666666667,
+      "hi": 0.5333333333333333,
+      "count": 230280,
+      "confidence": 0.5000521540641785,
+      "accuracy": 0.551098644733429,
+      "gap": 0.05104649066925049
+    },
+    {
+      "bin": 8,
+      "lo": 0.5333333333333333,
+      "hi": 0.6,
+      "count": 238934,
+      "confidence": 0.5669910907745361,
+      "accuracy": 0.5874174237251282,
+      "gap": 0.02042633295059204
+    },
+    {
+      "bin": 9,
+      "lo": 0.6,
+      "hi": 0.6666666666666666,
+      "count": 256741,
+      "confidence": 0.6338254809379578,
+      "accuracy": 0.6211979985237122,
+      "gap": 0.012627482414245605
+    },
+    {
+      "bin": 10,
+      "lo": 0.6666666666666666,
+      "hi": 0.7333333333333333,
+      "count": 290084,
+      "confidence": 0.7008271217346191,
+      "accuracy": 0.6543001532554626,
+      "gap": 0.046526968479156494
+    },
+    {
+      "bin": 11,
+      "lo": 0.7333333333333333,
+      "hi": 0.8,
+      "count": 353206,
+      "confidence": 0.7679236531257629,
+      "accuracy": 0.6904922127723694,
+      "gap": 0.07743144035339355
+    },
+    {
+      "bin": 12,
+      "lo": 0.8,
+      "hi": 0.8666666666666667,
+      "count": 471772,
+      "confidence": 0.8353119492530823,
+      "accuracy": 0.732222318649292,
+      "gap": 0.10308963060379028
+    },
+    {
+      "bin": 13,
+      "lo": 0.8666666666666667,
+      "hi": 0.9333333333333333,
+      "count": 785278,
+      "confidence": 0.9038218259811401,
+      "accuracy": 0.7888671159744263,
+      "gap": 0.11495471000671387
+    },
+    {
+      "bin": 14,
+      "lo": 0.9333333333333333,
+      "hi": 1.0,
+      "count": 20656416,
+      "confidence": 0.9950899481773376,
+      "accuracy": 0.9703312516212463,
+      "gap": 0.02475869655609131
+    }
+  ],
+  "threshold_curve": [
+    {
+      "threshold": 0.1,
+      "kept_ratio": 0.851411391266894,
+      "projected_valid_rate": 0.9047678709030151
+    },
+    {
+      "threshold": 0.2,
+      "kept_ratio": 0.8306306907687245,
+      "projected_valid_rate": 0.9189937114715576
+    },
+    {
+      "threshold": 0.3,
+      "kept_ratio": 0.8158758235865795,
+      "projected_valid_rate": 0.9280772805213928
+    },
+    {
+      "threshold": 0.4,
+      "kept_ratio": 0.8032650896584747,
+      "projected_valid_rate": 0.9351604580879211
+    },
+    {
+      "threshold": 0.5,
+      "kept_ratio": 0.7914618859927696,
+      "projected_valid_rate": 0.9412528872489929
+    },
+    {
+      "threshold": 0.6,
+      "kept_ratio": 0.7793632802550208,
+      "projected_valid_rate": 0.9468815922737122
+    },
+    {
+      "threshold": 0.7,
+      "kept_ratio": 0.765815848117899,
+      "projected_valid_rate": 0.9524832963943481
+    },
+    {
+      "threshold": 0.8,
+      "kept_ratio": 0.748616082116515,
+      "projected_valid_rate": 0.9587031006813049
+    },
+    {
+      "threshold": 0.9,
+      "kept_ratio": 0.7213619528417085,
+      "projected_valid_rate": 0.9666810631752014
+    }
+  ],
+  "rows": [
+    {
+      "sample_id": "game2_center__frames__frame_000242",
+      "scene": "game2_center",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.8342217339409722,
+      "confidence_mean": 0.841566801071167,
+      "auc": 0.9981626924364193
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000242",
+      "scene": "game2_center",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.8342352973090278,
+      "confidence_mean": 0.8181555271148682,
+      "auc": 0.9924057766826379
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000242",
+      "scene": "game2_center",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.7205810546875,
+      "confidence_mean": 0.7482243776321411,
+      "auc": 0.9886770933691046
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000242",
+      "scene": "game2_center",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.7205674913194444,
+      "confidence_mean": 0.721548855304718,
+      "auc": 0.9854550303218674
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000256",
+      "scene": "game2_center",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.8369954427083334,
+      "confidence_mean": 0.8421838283538818,
+      "auc": 0.9963869177598049
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000256",
+      "scene": "game2_center",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.8370361328125,
+      "confidence_mean": 0.8195051550865173,
+      "auc": 0.9885527460661049
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000256",
+      "scene": "game2_center",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.7389187282986112,
+      "confidence_mean": 0.7415478825569153,
+      "auc": 0.9859139519325686
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000256",
+      "scene": "game2_center",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.7389594184027778,
+      "confidence_mean": 0.7290124297142029,
+      "auc": 0.9765790344823303
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000270",
+      "scene": "game2_center",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.8293524848090278,
+      "confidence_mean": 0.8360545635223389,
+      "auc": 0.9936475910766918
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000270",
+      "scene": "game2_center",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.8293660481770834,
+      "confidence_mean": 0.8207634091377258,
+      "auc": 0.9678114182653815
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000270",
+      "scene": "game2_center",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.7243381076388888,
+      "confidence_mean": 0.7484570145606995,
+      "auc": 0.9776691625698881
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000270",
+      "scene": "game2_center",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.7243245442708334,
+      "confidence_mean": 0.7321052551269531,
+      "auc": 0.9646917171547986
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000286",
+      "scene": "game2_center",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.8293321397569444,
+      "confidence_mean": 0.8404436111450195,
+      "auc": 0.9910047944824061
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000286",
+      "scene": "game2_center",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.8294474283854166,
+      "confidence_mean": 0.823279082775116,
+      "auc": 0.9701746797716351
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000286",
+      "scene": "game2_center",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.7141316731770834,
+      "confidence_mean": 0.7467496395111084,
+      "auc": 0.961925828244792
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000286",
+      "scene": "game2_center",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.7141316731770834,
+      "confidence_mean": 0.7253659963607788,
+      "auc": 0.9716075988356572
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000300",
+      "scene": "game2_center",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.8340725368923612,
+      "confidence_mean": 0.843545138835907,
+      "auc": 0.9912122131257612
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000300",
+      "scene": "game2_center",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.8341810438368056,
+      "confidence_mean": 0.8271117210388184,
+      "auc": 0.9730965149431319
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000300",
+      "scene": "game2_center",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.720458984375,
+      "confidence_mean": 0.7447466254234314,
+      "auc": 0.9705814550666073
+    },
+    {
+      "sample_id": "game2_center__frames__frame_000300",
+      "scene": "game2_center",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.7204996744791666,
+      "confidence_mean": 0.7267211675643921,
+      "auc": 0.9711704905676908
+    },
+    {
+      "sample_id": "game2_left__frames__frame_000242",
+      "scene": "game2_left",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147443,
+      "positive_rate": 0.7936965471402508,
+      "confidence_mean": 0.7937484979629517,
+      "auc": 0.9882905200289201
+    },
+    {
+      "sample_id": "game2_left__frames__frame_000242",
+      "scene": "game2_left",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147443,
+      "positive_rate": 0.7937033294222174,
+      "confidence_mean": 0.8220642805099487,
+      "auc": 0.9935990827537673
+    },
+    {
+      "sample_id": "game2_left__frames__frame_000242",
+      "scene": "game2_left",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147443,
+      "positive_rate": 0.6107444910914727,
+      "confidence_mean": 0.6826512813568115,
+      "auc": 0.9857901562285333
+    },
+    {
+      "sample_id": "game2_left__frames__frame_000242",
+      "scene": "game2_left",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147443,
+      "positive_rate": 0.6107580556554059,
+      "confidence_mean": 0.7307106256484985,
+      "auc": 0.9759750536603996
+    },
+    {
+      "sample_id": "game2_left__frames__frame_000256",
+      "scene": "game2_left",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147438,
+      "positive_rate": 0.8223320989161546,
+      "confidence_mean": 0.7911945581436157,
+      "auc": 0.9917304066121089
+    },
+    {
+      "sample_id": "game2_left__frames__frame_000256",
+      "scene": "game2_left",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147438,
+      "positive_rate": 0.8223253164041835,
+      "confidence_mean": 0.8227201700210571,
+      "auc": 0.9921736249469842
+    },
+    {
+      "sample_id": "game2_left__frames__frame_000256",
+      "scene": "game2_left",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147438,
+      "positive_rate": 0.6759112304833218,
+      "confidence_mean": 0.6879537105560303,
+      "auc": 0.9884853604026036
+    },
+    {
+      "sample_id": "game2_left__frames__frame_000256",
+      "scene": "game2_left",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147438,
+      "positive_rate": 0.6759315780192352,
+      "confidence_mean": 0.7285833358764648,
+      "auc": 0.9723129070445621
+    },
+    {
+      "sample_id": "game2_left__frames__frame_000270",
+      "scene": "game2_left",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147425,
+      "positive_rate": 0.8085602848906224,
+      "confidence_mean": 0.7940648198127747,
+      "auc": 0.9859863956249902
+    },
+    {
+      "sample_id": "game2_left__frames__frame_000270",
+      "scene": "game2_left",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147425,
+      "positive_rate": 0.8085670680006783,
+      "confidence_mean": 0.8276749849319458,
+      "auc": 0.9775358260155206
+    },
+    {
+      "sample_id": "game2_left__frames__frame_000270",
+      "scene": "game2_left",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147425,
+      "positive_rate": 0.6467424113956249,
+      "confidence_mean": 0.6893612742424011,
+      "auc": 0.978207105892314
+    },
+    {
+      "sample_id": "game2_left__frames__frame_000270",
+      "scene": "game2_left",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147425,
+      "positive_rate": 0.6467695438358487,
+      "confidence_mean": 0.7392735481262207,
+      "auc": 0.9421363834028862
+    },
+    {
+      "sample_id": "game2_left__frames__frame_000286",
+      "scene": "game2_left",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147419,
+      "positive_rate": 0.8433037803810907,
+      "confidence_mean": 0.7959024906158447,
+      "auc": 0.9787675247823737
+    },
+    {
+      "sample_id": "game2_left__frames__frame_000286",
+      "scene": "game2_left",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147419,
+      "positive_rate": 0.8432155963613917,
+      "confidence_mean": 0.8284834027290344,
+      "auc": 0.9731916524178287
+    },
+    {
+      "sample_id": "game2_left__frames__frame_000286",
+      "scene": "game2_left",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147419,
+      "positive_rate": 0.736146629674601,
+      "confidence_mean": 0.6867294907569885,
+      "auc": 0.9843898072701911
+    },
+    {
+      "sample_id": "game2_left__frames__frame_000286",
+      "scene": "game2_left",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147419,
+      "positive_rate": 0.7360652290410327,
+      "confidence_mean": 0.7343056797981262,
+      "auc": 0.9607913771346354
+    },
+    {
+      "sample_id": "game2_left__frames__frame_000300",
+      "scene": "game2_left",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147437,
+      "positive_rate": 0.8251388728745159,
+      "confidence_mean": 0.8043955564498901,
+      "auc": 0.973714513946959
+    },
+    {
+      "sample_id": "game2_left__frames__frame_000300",
+      "scene": "game2_left",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147437,
+      "positive_rate": 0.8250981775266724,
+      "confidence_mean": 0.834067165851593,
+      "auc": 0.9722440246076129
+    },
+    {
+      "sample_id": "game2_left__frames__frame_000300",
+      "scene": "game2_left",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147437,
+      "positive_rate": 0.6844482728216119,
+      "confidence_mean": 0.6952524185180664,
+      "auc": 0.9617831298942401
+    },
+    {
+      "sample_id": "game2_left__frames__frame_000300",
+      "scene": "game2_left",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147437,
+      "positive_rate": 0.6854588739597252,
+      "confidence_mean": 0.7401992678642273,
+      "auc": 0.9453411937194648
+    },
+    {
+      "sample_id": "game2_mid_left__frames__frame_000242",
+      "scene": "game2_mid_left",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.8339640299479166,
+      "confidence_mean": 0.8188971877098083,
+      "auc": 0.9948433989787852
+    },
+    {
+      "sample_id": "game2_mid_left__frames__frame_000242",
+      "scene": "game2_mid_left",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.8339572482638888,
+      "confidence_mean": 0.812174916267395,
+      "auc": 0.9901894060324394
+    },
+    {
+      "sample_id": "game2_mid_left__frames__frame_000242",
+      "scene": "game2_mid_left",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.7195977105034722,
+      "confidence_mean": 0.7239906787872314,
+      "auc": 0.9972928253691129
+    },
+    {
+      "sample_id": "game2_mid_left__frames__frame_000242",
+      "scene": "game2_mid_left",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.7196044921875,
+      "confidence_mean": 0.7266641855239868,
+      "auc": 0.9949880348714171
+    },
+    {
+      "sample_id": "game2_mid_left__frames__frame_000256",
+      "scene": "game2_mid_left",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147404,
+      "positive_rate": 0.8343667743073458,
+      "confidence_mean": 0.8192378282546997,
+      "auc": 0.982635847147242
+    },
+    {
+      "sample_id": "game2_mid_left__frames__frame_000256",
+      "scene": "game2_mid_left",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147404,
+      "positive_rate": 0.8346245692111476,
+      "confidence_mean": 0.8225018382072449,
+      "auc": 0.9794988700241652
+    },
+    {
+      "sample_id": "game2_mid_left__frames__frame_000256",
+      "scene": "game2_mid_left",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147404,
+      "positive_rate": 0.7260386420992646,
+      "confidence_mean": 0.7208659052848816,
+      "auc": 0.9774354922349482
+    },
+    {
+      "sample_id": "game2_mid_left__frames__frame_000256",
+      "scene": "game2_mid_left",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147404,
+      "positive_rate": 0.7263371414615615,
+      "confidence_mean": 0.7328646183013916,
+      "auc": 0.9802626911955039
+    },
+    {
+      "sample_id": "game2_mid_left__frames__frame_000270",
+      "scene": "game2_mid_left",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147389,
+      "positive_rate": 0.8206921819131685,
+      "confidence_mean": 0.8278376460075378,
+      "auc": 0.9761749414603982
+    },
+    {
+      "sample_id": "game2_mid_left__frames__frame_000270",
+      "scene": "game2_mid_left",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147389,
+      "positive_rate": 0.8209364335194621,
+      "confidence_mean": 0.8241599798202515,
+      "auc": 0.9794911487675939
+    },
+    {
+      "sample_id": "game2_mid_left__frames__frame_000270",
+      "scene": "game2_mid_left",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147389,
+      "positive_rate": 0.6916730556554423,
+      "confidence_mean": 0.7250435948371887,
+      "auc": 0.9660758376329791
+    },
+    {
+      "sample_id": "game2_mid_left__frames__frame_000270",
+      "scene": "game2_mid_left",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147389,
+      "positive_rate": 0.6920462178317243,
+      "confidence_mean": 0.7279160022735596,
+      "auc": 0.9665646368926738
+    },
+    {
+      "sample_id": "game2_mid_left__frames__frame_000286",
+      "scene": "game2_mid_left",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147408,
+      "positive_rate": 0.8064216324758493,
+      "confidence_mean": 0.8188197612762451,
+      "auc": 0.9632678461198637
+    },
+    {
+      "sample_id": "game2_mid_left__frames__frame_000286",
+      "scene": "game2_mid_left",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147408,
+      "positive_rate": 0.8066997720612178,
+      "confidence_mean": 0.8297694325447083,
+      "auc": 0.9664347555125647
+    },
+    {
+      "sample_id": "game2_mid_left__frames__frame_000286",
+      "scene": "game2_mid_left",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147408,
+      "positive_rate": 0.654353902094866,
+      "confidence_mean": 0.7180337309837341,
+      "auc": 0.9550070356593502
+    },
+    {
+      "sample_id": "game2_mid_left__frames__frame_000286",
+      "scene": "game2_mid_left",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147408,
+      "positive_rate": 0.6547066644958212,
+      "confidence_mean": 0.7428379654884338,
+      "auc": 0.9470151889473036
+    },
+    {
+      "sample_id": "game2_mid_left__frames__frame_000300",
+      "scene": "game2_mid_left",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147408,
+      "positive_rate": 0.8330416259633127,
+      "confidence_mean": 0.8201187252998352,
+      "auc": 0.9702179539372682
+    },
+    {
+      "sample_id": "game2_mid_left__frames__frame_000300",
+      "scene": "game2_mid_left",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147408,
+      "positive_rate": 0.8331230326712254,
+      "confidence_mean": 0.8329344987869263,
+      "auc": 0.9729739531278923
+    },
+    {
+      "sample_id": "game2_mid_left__frames__frame_000300",
+      "scene": "game2_mid_left",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147408,
+      "positive_rate": 0.7359166395310973,
+      "confidence_mean": 0.7174863219261169,
+      "auc": 0.9667409225806178
+    },
+    {
+      "sample_id": "game2_mid_left__frames__frame_000300",
+      "scene": "game2_mid_left",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147408,
+      "positive_rate": 0.736215130793444,
+      "confidence_mean": 0.7457903623580933,
+      "auc": 0.96535586349058
+    },
+    {
+      "sample_id": "game2_mid_right__frames__frame_000242",
+      "scene": "game2_mid_right",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.8295084635416666,
+      "confidence_mean": 0.8268358111381531,
+      "auc": 0.995059345288283
+    },
+    {
+      "sample_id": "game2_mid_right__frames__frame_000242",
+      "scene": "game2_mid_right",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.8295355902777778,
+      "confidence_mean": 0.8280150294303894,
+      "auc": 0.9921115069274943
+    },
+    {
+      "sample_id": "game2_mid_right__frames__frame_000242",
+      "scene": "game2_mid_right",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.71649169921875,
+      "confidence_mean": 0.7299439311027527,
+      "auc": 0.9939743252560513
+    },
+    {
+      "sample_id": "game2_mid_right__frames__frame_000242",
+      "scene": "game2_mid_right",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.7162407769097222,
+      "confidence_mean": 0.7353122234344482,
+      "auc": 0.9931674383359894
+    },
+    {
+      "sample_id": "game2_mid_right__frames__frame_000256",
+      "scene": "game2_mid_right",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.8363918728298612,
+      "confidence_mean": 0.8293786644935608,
+      "auc": 0.9911778132085932
+    },
+    {
+      "sample_id": "game2_mid_right__frames__frame_000256",
+      "scene": "game2_mid_right",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.8363918728298612,
+      "confidence_mean": 0.8298419117927551,
+      "auc": 0.9740566327196584
+    },
+    {
+      "sample_id": "game2_mid_right__frames__frame_000256",
+      "scene": "game2_mid_right",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.7391425238715278,
+      "confidence_mean": 0.741985559463501,
+      "auc": 0.994518632674015
+    },
+    {
+      "sample_id": "game2_mid_right__frames__frame_000256",
+      "scene": "game2_mid_right",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.7391493055555556,
+      "confidence_mean": 0.7396786212921143,
+      "auc": 0.9675665270781448
+    },
+    {
+      "sample_id": "game2_mid_right__frames__frame_000270",
+      "scene": "game2_mid_right",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147446,
+      "positive_rate": 0.8188624988131248,
+      "confidence_mean": 0.840296745300293,
+      "auc": 0.9852282790006256
+    },
+    {
+      "sample_id": "game2_mid_right__frames__frame_000270",
+      "scene": "game2_mid_right",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147446,
+      "positive_rate": 0.8189303202528383,
+      "confidence_mean": 0.8348164558410645,
+      "auc": 0.9444771524831099
+    },
+    {
+      "sample_id": "game2_mid_right__frames__frame_000270",
+      "scene": "game2_mid_right",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147446,
+      "positive_rate": 0.6907342349063386,
+      "confidence_mean": 0.7460601329803467,
+      "auc": 0.9681856645620098
+    },
+    {
+      "sample_id": "game2_mid_right__frames__frame_000270",
+      "scene": "game2_mid_right",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147446,
+      "positive_rate": 0.6907952742020808,
+      "confidence_mean": 0.7452980875968933,
+      "auc": 0.9218444170221044
+    },
+    {
+      "sample_id": "game2_mid_right__frames__frame_000286",
+      "scene": "game2_mid_right",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147453,
+      "positive_rate": 0.8222959180213356,
+      "confidence_mean": 0.8386507630348206,
+      "auc": 0.9722290194992231
+    },
+    {
+      "sample_id": "game2_mid_right__frames__frame_000286",
+      "scene": "game2_mid_right",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147453,
+      "positive_rate": 0.8223298271313572,
+      "confidence_mean": 0.8354734778404236,
+      "auc": 0.9359781021226624
+    },
+    {
+      "sample_id": "game2_mid_right__frames__frame_000286",
+      "scene": "game2_mid_right",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147453,
+      "positive_rate": 0.6980529389025656,
+      "confidence_mean": 0.7396235466003418,
+      "auc": 0.9629058226294439
+    },
+    {
+      "sample_id": "game2_mid_right__frames__frame_000286",
+      "scene": "game2_mid_right",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147453,
+      "positive_rate": 0.6979308661064881,
+      "confidence_mean": 0.7418800592422485,
+      "auc": 0.9224012699539448
+    },
+    {
+      "sample_id": "game2_mid_right__frames__frame_000300",
+      "scene": "game2_mid_right",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.8274943033854166,
+      "confidence_mean": 0.8391669392585754,
+      "auc": 0.9637663123518733
+    },
+    {
+      "sample_id": "game2_mid_right__frames__frame_000300",
+      "scene": "game2_mid_right",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.8275282118055556,
+      "confidence_mean": 0.8359416127204895,
+      "auc": 0.9089275547091463
+    },
+    {
+      "sample_id": "game2_mid_right__frames__frame_000300",
+      "scene": "game2_mid_right",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.7061564127604166,
+      "confidence_mean": 0.7453022003173828,
+      "auc": 0.9497813729318155
+    },
+    {
+      "sample_id": "game2_mid_right__frames__frame_000300",
+      "scene": "game2_mid_right",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.7061767578125,
+      "confidence_mean": 0.742707371711731,
+      "auc": 0.8761434770919435
+    },
+    {
+      "sample_id": "game2_right__frames__frame_000242",
+      "scene": "game2_right",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.8308987087673612,
+      "confidence_mean": 0.8190386295318604,
+      "auc": 0.9949938497711929
+    },
+    {
+      "sample_id": "game2_right__frames__frame_000242",
+      "scene": "game2_right",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.8308783637152778,
+      "confidence_mean": 0.8411921858787537,
+      "auc": 0.9928060752258182
+    },
+    {
+      "sample_id": "game2_right__frames__frame_000242",
+      "scene": "game2_right",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.7230156792534722,
+      "confidence_mean": 0.735835611820221,
+      "auc": 0.9904077399244362
+    },
+    {
+      "sample_id": "game2_right__frames__frame_000242",
+      "scene": "game2_right",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.7230224609375,
+      "confidence_mean": 0.7613751888275146,
+      "auc": 0.988441493020233
+    },
+    {
+      "sample_id": "game2_right__frames__frame_000256",
+      "scene": "game2_right",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.8349880642361112,
+      "confidence_mean": 0.8287068605422974,
+      "auc": 0.9902676411810046
+    },
+    {
+      "sample_id": "game2_right__frames__frame_000256",
+      "scene": "game2_right",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.8349541558159722,
+      "confidence_mean": 0.841478705406189,
+      "auc": 0.9904618760719058
+    },
+    {
+      "sample_id": "game2_right__frames__frame_000256",
+      "scene": "game2_right",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.7375149197048612,
+      "confidence_mean": 0.7338929176330566,
+      "auc": 0.9868430134194942
+    },
+    {
+      "sample_id": "game2_right__frames__frame_000256",
+      "scene": "game2_right",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147456,
+      "positive_rate": 0.7374606662326388,
+      "confidence_mean": 0.7630011439323425,
+      "auc": 0.9846664536631509
+    },
+    {
+      "sample_id": "game2_right__frames__frame_000270",
+      "scene": "game2_right",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147429,
+      "positive_rate": 0.8294229764835955,
+      "confidence_mean": 0.8469262719154358,
+      "auc": 0.9824874158805404
+    },
+    {
+      "sample_id": "game2_right__frames__frame_000270",
+      "scene": "game2_right",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147429,
+      "positive_rate": 0.829395844779521,
+      "confidence_mean": 0.8443200588226318,
+      "auc": 0.9762092489587058
+    },
+    {
+      "sample_id": "game2_right__frames__frame_000270",
+      "scene": "game2_right",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147429,
+      "positive_rate": 0.7076558885972231,
+      "confidence_mean": 0.7343631386756897,
+      "auc": 0.947790586352085
+    },
+    {
+      "sample_id": "game2_right__frames__frame_000270",
+      "scene": "game2_right",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147429,
+      "positive_rate": 0.7076491056712044,
+      "confidence_mean": 0.7603459358215332,
+      "auc": 0.9515537253699201
+    },
+    {
+      "sample_id": "game2_right__frames__frame_000286",
+      "scene": "game2_right",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147441,
+      "positive_rate": 0.8194599873847844,
+      "confidence_mean": 0.841271698474884,
+      "auc": 0.9832934672609397
+    },
+    {
+      "sample_id": "game2_right__frames__frame_000286",
+      "scene": "game2_right",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147441,
+      "positive_rate": 0.8194328578889183,
+      "confidence_mean": 0.8442469835281372,
+      "auc": 0.9585011720618418
+    },
+    {
+      "sample_id": "game2_right__frames__frame_000286",
+      "scene": "game2_right",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147441,
+      "positive_rate": 0.682849410950821,
+      "confidence_mean": 0.7380035519599915,
+      "auc": 0.929487230677759
+    },
+    {
+      "sample_id": "game2_right__frames__frame_000286",
+      "scene": "game2_right",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147441,
+      "positive_rate": 0.6840227616470317,
+      "confidence_mean": 0.7598104476928711,
+      "auc": 0.9384858330842822
+    },
+    {
+      "sample_id": "game2_right__frames__frame_000300",
+      "scene": "game2_right",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147413,
+      "positive_rate": 0.8358489414095094,
+      "confidence_mean": 0.8445069193840027,
+      "auc": 0.9741951456584304
+    },
+    {
+      "sample_id": "game2_right__frames__frame_000300",
+      "scene": "game2_right",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147413,
+      "positive_rate": 0.8358353740850536,
+      "confidence_mean": 0.847459077835083,
+      "auc": 0.9685848697944492
+    },
+    {
+      "sample_id": "game2_right__frames__frame_000300",
+      "scene": "game2_right",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147413,
+      "positive_rate": 0.7324794963809163,
+      "confidence_mean": 0.727989137172699,
+      "auc": 0.9442710407189335
+    },
+    {
+      "sample_id": "game2_right__frames__frame_000300",
+      "scene": "game2_right",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147413,
+      "positive_rate": 0.7326626552610692,
+      "confidence_mean": 0.7649058103561401,
+      "auc": 0.9616142994146613
+    },
+    {
+      "sample_id": "game3_center__frames__frame_000360",
+      "scene": "game3_center",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 131226,
+      "positive_rate": 0.8507231798576501,
+      "confidence_mean": 0.8509705066680908,
+      "auc": 0.9869969369325892
+    },
+    {
+      "sample_id": "game3_center__frames__frame_000360",
+      "scene": "game3_center",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 131226,
+      "positive_rate": 0.838621919436697,
+      "confidence_mean": 0.8432567119598389,
+      "auc": 0.9899046515604414
+    },
+    {
+      "sample_id": "game3_center__frames__frame_000360",
+      "scene": "game3_center",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 131226,
+      "positive_rate": 0.759056894213037,
+      "confidence_mean": 0.7672694325447083,
+      "auc": 0.9863534709422946
+    },
+    {
+      "sample_id": "game3_center__frames__frame_000360",
+      "scene": "game3_center",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 131226,
+      "positive_rate": 0.7347172054318504,
+      "confidence_mean": 0.7120727300643921,
+      "auc": 0.9810360849377295
+    },
+    {
+      "sample_id": "game3_center__frames__frame_000382",
+      "scene": "game3_center",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 146647,
+      "positive_rate": 0.8435699332410482,
+      "confidence_mean": 0.7967051863670349,
+      "auc": 0.9445533311482431
+    },
+    {
+      "sample_id": "game3_center__frames__frame_000382",
+      "scene": "game3_center",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 146647,
+      "positive_rate": 0.8454247274066296,
+      "confidence_mean": 0.804603099822998,
+      "auc": 0.940176319414671
+    },
+    {
+      "sample_id": "game3_center__frames__frame_000382",
+      "scene": "game3_center",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 146647,
+      "positive_rate": 0.7528827729172776,
+      "confidence_mean": 0.7090321183204651,
+      "auc": 0.9443264114031548
+    },
+    {
+      "sample_id": "game3_center__frames__frame_000382",
+      "scene": "game3_center",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 146647,
+      "positive_rate": 0.7526645618389739,
+      "confidence_mean": 0.729762613773346,
+      "auc": 0.9283991098556813
+    },
+    {
+      "sample_id": "game3_center__frames__frame_000404",
+      "scene": "game3_center",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 145854,
+      "positive_rate": 0.8480261083000808,
+      "confidence_mean": 0.8474072813987732,
+      "auc": 0.957134562578697
+    },
+    {
+      "sample_id": "game3_center__frames__frame_000404",
+      "scene": "game3_center",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 145854,
+      "positive_rate": 0.8478615601903273,
+      "confidence_mean": 0.858372151851654,
+      "auc": 0.943143658949156
+    },
+    {
+      "sample_id": "game3_center__frames__frame_000404",
+      "scene": "game3_center",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 145854,
+      "positive_rate": 0.7596980542186021,
+      "confidence_mean": 0.7546266913414001,
+      "auc": 0.9143009709888207
+    },
+    {
+      "sample_id": "game3_center__frames__frame_000404",
+      "scene": "game3_center",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 145854,
+      "positive_rate": 0.7576549151891617,
+      "confidence_mean": 0.7538514733314514,
+      "auc": 0.909981929404286
+    },
+    {
+      "sample_id": "game3_center__frames__frame_000426",
+      "scene": "game3_center",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147454,
+      "positive_rate": 0.8510043810273035,
+      "confidence_mean": 0.8500620722770691,
+      "auc": 0.949323558643835
+    },
+    {
+      "sample_id": "game3_center__frames__frame_000426",
+      "scene": "game3_center",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147454,
+      "positive_rate": 0.8517232492845226,
+      "confidence_mean": 0.847547709941864,
+      "auc": 0.9367645976996626
+    },
+    {
+      "sample_id": "game3_center__frames__frame_000426",
+      "scene": "game3_center",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147454,
+      "positive_rate": 0.7581347403257965,
+      "confidence_mean": 0.739443302154541,
+      "auc": 0.8890965123853685
+    },
+    {
+      "sample_id": "game3_center__frames__frame_000426",
+      "scene": "game3_center",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147454,
+      "positive_rate": 0.758087267893716,
+      "confidence_mean": 0.7512643337249756,
+      "auc": 0.876999145395179
+    },
+    {
+      "sample_id": "game3_center__frames__frame_000448",
+      "scene": "game3_center",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 145391,
+      "positive_rate": 0.8476590710566679,
+      "confidence_mean": 0.866353452205658,
+      "auc": 0.936694933767752
+    },
+    {
+      "sample_id": "game3_center__frames__frame_000448",
+      "scene": "game3_center",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 145391,
+      "positive_rate": 0.8444607988114807,
+      "confidence_mean": 0.8509035110473633,
+      "auc": 0.9275247493869284
+    },
+    {
+      "sample_id": "game3_center__frames__frame_000448",
+      "scene": "game3_center",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 145391,
+      "positive_rate": 0.7593248550460483,
+      "confidence_mean": 0.76596599817276,
+      "auc": 0.8858739550669127
+    },
+    {
+      "sample_id": "game3_center__frames__frame_000448",
+      "scene": "game3_center",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 145391,
+      "positive_rate": 0.750995591198905,
+      "confidence_mean": 0.7493563890457153,
+      "auc": 0.8703322407097496
+    },
+    {
+      "sample_id": "game3_left__frames__frame_000360",
+      "scene": "game3_left",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 146944,
+      "positive_rate": 0.8444101154181185,
+      "confidence_mean": 0.8447861671447754,
+      "auc": 0.9953066786228553
+    },
+    {
+      "sample_id": "game3_left__frames__frame_000360",
+      "scene": "game3_left",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 146944,
+      "positive_rate": 0.8429537783101045,
+      "confidence_mean": 0.8407581448554993,
+      "auc": 0.9968121844630436
+    },
+    {
+      "sample_id": "game3_left__frames__frame_000360",
+      "scene": "game3_left",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 146944,
+      "positive_rate": 0.7380498693379791,
+      "confidence_mean": 0.740837574005127,
+      "auc": 0.9924235761187589
+    },
+    {
+      "sample_id": "game3_left__frames__frame_000360",
+      "scene": "game3_left",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 146944,
+      "positive_rate": 0.7361511868466899,
+      "confidence_mean": 0.7542267441749573,
+      "auc": 0.9943901709353452
+    },
+    {
+      "sample_id": "game3_left__frames__frame_000382",
+      "scene": "game3_left",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147339,
+      "positive_rate": 0.8437073687211125,
+      "confidence_mean": 0.8454291224479675,
+      "auc": 0.9444076590884607
+    },
+    {
+      "sample_id": "game3_left__frames__frame_000382",
+      "scene": "game3_left",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147339,
+      "positive_rate": 0.8437480911367662,
+      "confidence_mean": 0.8510265350341797,
+      "auc": 0.9804936539684947
+    },
+    {
+      "sample_id": "game3_left__frames__frame_000382",
+      "scene": "game3_left",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147339,
+      "positive_rate": 0.7441410624478244,
+      "confidence_mean": 0.7225170731544495,
+      "auc": 0.9532993053210214
+    },
+    {
+      "sample_id": "game3_left__frames__frame_000382",
+      "scene": "game3_left",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147339,
+      "positive_rate": 0.7442564426255098,
+      "confidence_mean": 0.7734464406967163,
+      "auc": 0.9590008608417513
+    },
+    {
+      "sample_id": "game3_left__frames__frame_000404",
+      "scene": "game3_left",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147427,
+      "positive_rate": 0.8459440943653469,
+      "confidence_mean": 0.8476254343986511,
+      "auc": 0.8959518657099652
+    },
+    {
+      "sample_id": "game3_left__frames__frame_000404",
+      "scene": "game3_left",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147427,
+      "positive_rate": 0.8459440943653469,
+      "confidence_mean": 0.8542270064353943,
+      "auc": 0.9528708763483383
+    },
+    {
+      "sample_id": "game3_left__frames__frame_000404",
+      "scene": "game3_left",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147427,
+      "positive_rate": 0.7487773609990029,
+      "confidence_mean": 0.732792317867279,
+      "auc": 0.8994754708496895
+    },
+    {
+      "sample_id": "game3_left__frames__frame_000404",
+      "scene": "game3_left",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147427,
+      "positive_rate": 0.7486823987464982,
+      "confidence_mean": 0.7662327885627747,
+      "auc": 0.9215980203643266
+    },
+    {
+      "sample_id": "game3_left__frames__frame_000426",
+      "scene": "game3_left",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147448,
+      "positive_rate": 0.8478989202973252,
+      "confidence_mean": 0.8483612537384033,
+      "auc": 0.904166915314717
+    },
+    {
+      "sample_id": "game3_left__frames__frame_000426",
+      "scene": "game3_left",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147448,
+      "positive_rate": 0.8479057023493028,
+      "confidence_mean": 0.8553256392478943,
+      "auc": 0.9576372616031279
+    },
+    {
+      "sample_id": "game3_left__frames__frame_000426",
+      "scene": "game3_left",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147448,
+      "positive_rate": 0.7454899354348652,
+      "confidence_mean": 0.7294288873672485,
+      "auc": 0.8488670434255946
+    },
+    {
+      "sample_id": "game3_left__frames__frame_000426",
+      "scene": "game3_left",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147448,
+      "positive_rate": 0.7454424610710216,
+      "confidence_mean": 0.7808700203895569,
+      "auc": 0.9263966612129243
+    },
+    {
+      "sample_id": "game3_left__frames__frame_000448",
+      "scene": "game3_left",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147218,
+      "positive_rate": 0.8497534268907335,
+      "confidence_mean": 0.8516370058059692,
+      "auc": 0.9114659068764317
+    },
+    {
+      "sample_id": "game3_left__frames__frame_000448",
+      "scene": "game3_left",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147218,
+      "positive_rate": 0.8489722724123409,
+      "confidence_mean": 0.8522508144378662,
+      "auc": 0.9537570075858259
+    },
+    {
+      "sample_id": "game3_left__frames__frame_000448",
+      "scene": "game3_left",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147218,
+      "positive_rate": 0.7553899659009089,
+      "confidence_mean": 0.7304733395576477,
+      "auc": 0.817876638041332
+    },
+    {
+      "sample_id": "game3_left__frames__frame_000448",
+      "scene": "game3_left",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147218,
+      "positive_rate": 0.7551046747001046,
+      "confidence_mean": 0.7780686020851135,
+      "auc": 0.9143237119601187
+    },
+    {
+      "sample_id": "game3_mid_left__frames__frame_000360",
+      "scene": "game3_mid_left",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 141156,
+      "positive_rate": 0.8413599138541755,
+      "confidence_mean": 0.8518007397651672,
+      "auc": 0.9916444540703255
+    },
+    {
+      "sample_id": "game3_mid_left__frames__frame_000360",
+      "scene": "game3_mid_left",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 141156,
+      "positive_rate": 0.8396171611550342,
+      "confidence_mean": 0.8274739980697632,
+      "auc": 0.9850004239284047
+    },
+    {
+      "sample_id": "game3_mid_left__frames__frame_000360",
+      "scene": "game3_mid_left",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 141156,
+      "positive_rate": 0.7379778401201508,
+      "confidence_mean": 0.7521812915802002,
+      "auc": 0.9946495652981585
+    },
+    {
+      "sample_id": "game3_mid_left__frames__frame_000360",
+      "scene": "game3_mid_left",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 141156,
+      "positive_rate": 0.7316444217744906,
+      "confidence_mean": 0.7177730202674866,
+      "auc": 0.989388690900053
+    },
+    {
+      "sample_id": "game3_mid_left__frames__frame_000382",
+      "scene": "game3_mid_left",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147444,
+      "positive_rate": 0.850817937657687,
+      "confidence_mean": 0.8531012535095215,
+      "auc": 0.9803922719152408
+    },
+    {
+      "sample_id": "game3_mid_left__frames__frame_000382",
+      "scene": "game3_mid_left",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147444,
+      "positive_rate": 0.8506755107023684,
+      "confidence_mean": 0.854807436466217,
+      "auc": 0.960885227997392
+    },
+    {
+      "sample_id": "game3_mid_left__frames__frame_000382",
+      "scene": "game3_mid_left",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147444,
+      "positive_rate": 0.7505900545291772,
+      "confidence_mean": 0.7458372712135315,
+      "auc": 0.9780558646509954
+    },
+    {
+      "sample_id": "game3_mid_left__frames__frame_000382",
+      "scene": "game3_mid_left",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147444,
+      "positive_rate": 0.7508613439678793,
+      "confidence_mean": 0.7428543567657471,
+      "auc": 0.9634487370152699
+    },
+    {
+      "sample_id": "game3_mid_left__frames__frame_000404",
+      "scene": "game3_mid_left",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 144403,
+      "positive_rate": 0.8511042014362582,
+      "confidence_mean": 0.8506112098693848,
+      "auc": 0.9615554548136831
+    },
+    {
+      "sample_id": "game3_mid_left__frames__frame_000404",
+      "scene": "game3_mid_left",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 144403,
+      "positive_rate": 0.8484588270326794,
+      "confidence_mean": 0.8513472080230713,
+      "auc": 0.9233298308970469
+    },
+    {
+      "sample_id": "game3_mid_left__frames__frame_000404",
+      "scene": "game3_mid_left",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 144403,
+      "positive_rate": 0.7526990436486777,
+      "confidence_mean": 0.7478147745132446,
+      "auc": 0.947069754124736
+    },
+    {
+      "sample_id": "game3_mid_left__frames__frame_000404",
+      "scene": "game3_mid_left",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 144403,
+      "positive_rate": 0.7487656073627279,
+      "confidence_mean": 0.7453551292419434,
+      "auc": 0.8955759955021776
+    },
+    {
+      "sample_id": "game3_mid_left__frames__frame_000426",
+      "scene": "game3_mid_left",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 145925,
+      "positive_rate": 0.8531505910570498,
+      "confidence_mean": 0.8499874472618103,
+      "auc": 0.9573296092446827
+    },
+    {
+      "sample_id": "game3_mid_left__frames__frame_000426",
+      "scene": "game3_mid_left",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 145925,
+      "positive_rate": 0.8516361144423505,
+      "confidence_mean": 0.840811550617218,
+      "auc": 0.928207617855618
+    },
+    {
+      "sample_id": "game3_mid_left__frames__frame_000426",
+      "scene": "game3_mid_left",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 145925,
+      "positive_rate": 0.755586774027754,
+      "confidence_mean": 0.7507544755935669,
+      "auc": 0.9396203048158891
+    },
+    {
+      "sample_id": "game3_mid_left__frames__frame_000426",
+      "scene": "game3_mid_left",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 145925,
+      "positive_rate": 0.7527565530238136,
+      "confidence_mean": 0.7471783757209778,
+      "auc": 0.8791500711151609
+    },
+    {
+      "sample_id": "game3_mid_left__frames__frame_000448",
+      "scene": "game3_mid_left",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 144473,
+      "positive_rate": 0.8485668602437826,
+      "confidence_mean": 0.8544209599494934,
+      "auc": 0.9521588529035921
+    },
+    {
+      "sample_id": "game3_mid_left__frames__frame_000448",
+      "scene": "game3_mid_left",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 144473,
+      "positive_rate": 0.8449606500868675,
+      "confidence_mean": 0.8396056294441223,
+      "auc": 0.9369510821328516
+    },
+    {
+      "sample_id": "game3_mid_left__frames__frame_000448",
+      "scene": "game3_mid_left",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 144473,
+      "positive_rate": 0.7578163393852139,
+      "confidence_mean": 0.7488528490066528,
+      "auc": 0.9455849020578574
+    },
+    {
+      "sample_id": "game3_mid_left__frames__frame_000448",
+      "scene": "game3_mid_left",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 144473,
+      "positive_rate": 0.7507769617852471,
+      "confidence_mean": 0.7465863227844238,
+      "auc": 0.9164023101608331
+    },
+    {
+      "sample_id": "game3_mid_right__frames__frame_000360",
+      "scene": "game3_mid_right",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 143236,
+      "positive_rate": 0.8471403837024212,
+      "confidence_mean": 0.8120097517967224,
+      "auc": 0.9790832517786756
+    },
+    {
+      "sample_id": "game3_mid_right__frames__frame_000360",
+      "scene": "game3_mid_right",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 143236,
+      "positive_rate": 0.848997458739423,
+      "confidence_mean": 0.812518298625946,
+      "auc": 0.9804205783441856
+    },
+    {
+      "sample_id": "game3_mid_right__frames__frame_000360",
+      "scene": "game3_mid_right",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 143236,
+      "positive_rate": 0.7602278756737133,
+      "confidence_mean": 0.7244636416435242,
+      "auc": 0.9840125786762487
+    },
+    {
+      "sample_id": "game3_mid_right__frames__frame_000360",
+      "scene": "game3_mid_right",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 143236,
+      "positive_rate": 0.7664902678097685,
+      "confidence_mean": 0.7420376539230347,
+      "auc": 0.99209183554349
+    },
+    {
+      "sample_id": "game3_mid_right__frames__frame_000382",
+      "scene": "game3_mid_right",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 140269,
+      "positive_rate": 0.8477496809701359,
+      "confidence_mean": 0.8500569462776184,
+      "auc": 0.9519553552325728
+    },
+    {
+      "sample_id": "game3_mid_right__frames__frame_000382",
+      "scene": "game3_mid_right",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 140269,
+      "positive_rate": 0.8380041206538864,
+      "confidence_mean": 0.8313481211662292,
+      "auc": 0.9784341743352373
+    },
+    {
+      "sample_id": "game3_mid_right__frames__frame_000382",
+      "scene": "game3_mid_right",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 140269,
+      "positive_rate": 0.7599968631700519,
+      "confidence_mean": 0.7473016977310181,
+      "auc": 0.9607531976090461
+    },
+    {
+      "sample_id": "game3_mid_right__frames__frame_000382",
+      "scene": "game3_mid_right",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 140269,
+      "positive_rate": 0.752318758956006,
+      "confidence_mean": 0.7594927549362183,
+      "auc": 0.9878444870350864
+    },
+    {
+      "sample_id": "game3_mid_right__frames__frame_000404",
+      "scene": "game3_mid_right",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 145234,
+      "positive_rate": 0.8522246856796618,
+      "confidence_mean": 0.8508067727088928,
+      "auc": 0.9483476401833338
+    },
+    {
+      "sample_id": "game3_mid_right__frames__frame_000404",
+      "scene": "game3_mid_right",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 145234,
+      "positive_rate": 0.8514810581544267,
+      "confidence_mean": 0.8403171896934509,
+      "auc": 0.9650118795134414
+    },
+    {
+      "sample_id": "game3_mid_right__frames__frame_000404",
+      "scene": "game3_mid_right",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 145234,
+      "positive_rate": 0.7584243358993074,
+      "confidence_mean": 0.7421874403953552,
+      "auc": 0.9141406713067054
+    },
+    {
+      "sample_id": "game3_mid_right__frames__frame_000404",
+      "scene": "game3_mid_right",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 145234,
+      "positive_rate": 0.7604693115937039,
+      "confidence_mean": 0.7667410969734192,
+      "auc": 0.9579591165555927
+    },
+    {
+      "sample_id": "game3_mid_right__frames__frame_000426",
+      "scene": "game3_mid_right",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 145573,
+      "positive_rate": 0.8588817981356432,
+      "confidence_mean": 0.845835268497467,
+      "auc": 0.9434671892541243
+    },
+    {
+      "sample_id": "game3_mid_right__frames__frame_000426",
+      "scene": "game3_mid_right",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 145573,
+      "positive_rate": 0.8515864892528148,
+      "confidence_mean": 0.8313106894493103,
+      "auc": 0.955423686915434
+    },
+    {
+      "sample_id": "game3_mid_right__frames__frame_000426",
+      "scene": "game3_mid_right",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 145573,
+      "positive_rate": 0.7538142375303113,
+      "confidence_mean": 0.7446012496948242,
+      "auc": 0.8939447442308806
+    },
+    {
+      "sample_id": "game3_mid_right__frames__frame_000426",
+      "scene": "game3_mid_right",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 145573,
+      "positive_rate": 0.7450351370102972,
+      "confidence_mean": 0.7343542575836182,
+      "auc": 0.9382803650588216
+    },
+    {
+      "sample_id": "game3_mid_right__frames__frame_000448",
+      "scene": "game3_mid_right",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 145442,
+      "positive_rate": 0.8604667152541907,
+      "confidence_mean": 0.8585188388824463,
+      "auc": 0.9547999609184121
+    },
+    {
+      "sample_id": "game3_mid_right__frames__frame_000448",
+      "scene": "game3_mid_right",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 145442,
+      "positive_rate": 0.8548081021988146,
+      "confidence_mean": 0.8344639539718628,
+      "auc": 0.946797324389607
+    },
+    {
+      "sample_id": "game3_mid_right__frames__frame_000448",
+      "scene": "game3_mid_right",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 145442,
+      "positive_rate": 0.7620976059185105,
+      "confidence_mean": 0.7539975047111511,
+      "auc": 0.9151757396813313
+    },
+    {
+      "sample_id": "game3_mid_right__frames__frame_000448",
+      "scene": "game3_mid_right",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 145442,
+      "positive_rate": 0.7542181763177074,
+      "confidence_mean": 0.7354863882064819,
+      "auc": 0.9135602705101579
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000360",
+      "scene": "game3_right",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147451,
+      "positive_rate": 0.8431275474564431,
+      "confidence_mean": 0.8612693548202515,
+      "auc": 0.992863436747456
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000360",
+      "scene": "game3_right",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147451,
+      "positive_rate": 0.8431275474564431,
+      "confidence_mean": 0.838783860206604,
+      "auc": 0.9677284427284427
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000360",
+      "scene": "game3_right",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147451,
+      "positive_rate": 0.7469125336552482,
+      "confidence_mean": 0.7672331929206848,
+      "auc": 0.9838846418886869
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000360",
+      "scene": "game3_right",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147451,
+      "positive_rate": 0.7469057517412564,
+      "confidence_mean": 0.7215595841407776,
+      "auc": 0.9628615856996539
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000382",
+      "scene": "game3_right",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147385,
+      "positive_rate": 0.8493673033212336,
+      "confidence_mean": 0.8518522381782532,
+      "auc": 0.9646195877367717
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000382",
+      "scene": "game3_right",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147385,
+      "positive_rate": 0.8493876581741697,
+      "confidence_mean": 0.841222882270813,
+      "auc": 0.9308352520648571
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000382",
+      "scene": "game3_right",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147385,
+      "positive_rate": 0.756983410794857,
+      "confidence_mean": 0.7641151547431946,
+      "auc": 0.9331291163018429
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000382",
+      "scene": "game3_right",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147385,
+      "positive_rate": 0.756983410794857,
+      "confidence_mean": 0.7320303916931152,
+      "auc": 0.8881587585939923
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000404",
+      "scene": "game3_right",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147448,
+      "positive_rate": 0.846827356084857,
+      "confidence_mean": 0.8367087244987488,
+      "auc": 0.9092297630197383
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000404",
+      "scene": "game3_right",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147448,
+      "positive_rate": 0.8466984970972817,
+      "confidence_mean": 0.8358334302902222,
+      "auc": 0.9079195929423832
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000404",
+      "scene": "game3_right",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147448,
+      "positive_rate": 0.7500610384677988,
+      "confidence_mean": 0.727715253829956,
+      "auc": 0.8434843008883746
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000404",
+      "scene": "game3_right",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147448,
+      "positive_rate": 0.7500678205197765,
+      "confidence_mean": 0.7444107532501221,
+      "auc": 0.8059713546590074
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000426",
+      "scene": "game3_right",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 147214,
+      "positive_rate": 0.85394731479343,
+      "confidence_mean": 0.8318801522254944,
+      "auc": 0.8649284670925844
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000426",
+      "scene": "game3_right",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 147214,
+      "positive_rate": 0.8554553235425979,
+      "confidence_mean": 0.8392855525016785,
+      "auc": 0.9066631321853706
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000426",
+      "scene": "game3_right",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 147214,
+      "positive_rate": 0.7575502329941446,
+      "confidence_mean": 0.7237597703933716,
+      "auc": 0.8001442080109419
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000426",
+      "scene": "game3_right",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 147214,
+      "positive_rate": 0.7592688195416197,
+      "confidence_mean": 0.735888659954071,
+      "auc": 0.79804108797518
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "scene": "game3_right",
+      "motion": "yaw_p5_fwd10",
+      "num_pixels": 146422,
+      "positive_rate": 0.8555476636024641,
+      "confidence_mean": 0.8436464071273804,
+      "auc": 0.8894743500709629
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "scene": "game3_right",
+      "motion": "yaw_m5_fwd10",
+      "num_pixels": 146422,
+      "positive_rate": 0.8585731652347325,
+      "confidence_mean": 0.8398643732070923,
+      "auc": 0.9050481309635161
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "scene": "game3_right",
+      "motion": "yaw_p10_fwd10",
+      "num_pixels": 146422,
+      "positive_rate": 0.7564778516889539,
+      "confidence_mean": 0.7443034052848816,
+      "auc": 0.8005321186652717
+    },
+    {
+      "sample_id": "game3_right__frames__frame_000448",
+      "scene": "game3_right",
+      "motion": "yaw_m10_fwd10",
+      "num_pixels": 146422,
+      "positive_rate": 0.7603297318708937,
+      "confidence_mean": 0.7425289154052734,
+      "auc": 0.8037368503796648
+    }
+  ]
+}
