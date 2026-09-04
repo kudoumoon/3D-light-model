@@ -1,0 +1,50 @@
+{
+  "stage": "real TUM GT-pose transport-safe confidence head",
+  "data": {
+    "train_pairs": 114,
+    "test_pairs": 132,
+    "pose": "sensor GT pose"
+  },
+  "label": "projected-valid and target latent warp error < 0.15",
+  "test": {
+    "auc": 0.5786430586768091,
+    "positive_rate": 0.331958286123893,
+    "thresholds": [
+      {
+        "threshold": 0.3,
+        "warp_l1": 0.11902157697036411,
+        "copy_l1": 0.23350267879890674,
+        "warp_win": 0.5681818181818182,
+        "kept_ratio": 0.18846418169789214
+      },
+      {
+        "threshold": 0.5,
+        "warp_l1": 0.06526092022205844,
+        "copy_l1": 0.12566127210403932,
+        "warp_win": 0.3333333333333333,
+        "kept_ratio": 0.05334882722430242
+      },
+      {
+        "threshold": 0.7,
+        "warp_l1": 0.0,
+        "copy_l1": 0.0,
+        "warp_win": 0.0,
+        "kept_ratio": 0.0
+      },
+      {
+        "threshold": 0.9,
+        "warp_l1": 0.0,
+        "copy_l1": 0.0,
+        "warp_win": 0.0,
+        "kept_ratio": 0.0
+      }
+    ]
+  },
+  "output_contract": {
+    "latent_depth": "[B,1,44,80]",
+    "latent_points": "[B,3,44,80]",
+    "latent_valid": "[B,1,44,80]",
+    "latent_confidence": "[B,1,44,80]",
+    "shape_changed": false
+  }
+}
