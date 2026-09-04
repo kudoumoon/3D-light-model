@@ -1,0 +1,3167 @@
+{
+  "dataset": "ETH3D plant_scene_1",
+  "pairs": [
+    {
+      "source": "eth3d_plant_000000",
+      "target": "eth3d_plant_000002",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 121.27850562623739,
+      "rvec": [
+        0.03915761145380349,
+        0.04335572101620228,
+        -0.026028855535120736
+      ],
+      "tvec": [
+        -0.1664077212519104,
+        0.008957064090837186,
+        -0.010580998992551383
+      ]
+    },
+    {
+      "source": "eth3d_plant_000001",
+      "target": "eth3d_plant_000003",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 119.6401588878846,
+      "rvec": [
+        0.023857877934859578,
+        -0.049170311461321115,
+        -0.010077734244416754
+      ],
+      "tvec": [
+        -0.1629171631385301,
+        0.00839708550022178,
+        -0.0228676969381012
+      ]
+    },
+    {
+      "source": "eth3d_plant_000002",
+      "target": "eth3d_plant_000004",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 105.9375669580691,
+      "rvec": [
+        -0.014125467289113272,
+        -0.06360105341787951,
+        0.010934158152802078
+      ],
+      "tvec": [
+        -0.14127670425507988,
+        0.01334757556011057,
+        -0.03374005805088087
+      ]
+    },
+    {
+      "source": "eth3d_plant_000003",
+      "target": "eth3d_plant_000005",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 96.97309328831275,
+      "rvec": [
+        -0.021509418037954593,
+        -0.015312450460604195,
+        0.009528806486810636
+      ],
+      "tvec": [
+        -0.11871697733734593,
+        0.031819312729783555,
+        -0.052164228698811765
+      ]
+    },
+    {
+      "source": "eth3d_plant_000004",
+      "target": "eth3d_plant_000006",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 110.73146808850058,
+      "rvec": [
+        -0.005506673417735499,
+        0.032664949951010505,
+        0.00016868241017614652
+      ],
+      "tvec": [
+        -0.1178809790920472,
+        0.05047935740477827,
+        -0.08246617988094673
+      ]
+    },
+    {
+      "source": "eth3d_plant_000005",
+      "target": "eth3d_plant_000007",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 129.2088521661541,
+      "rvec": [
+        -0.007550043081945575,
+        0.022524204307648482,
+        0.0010120423321951164
+      ],
+      "tvec": [
+        -0.1328309908526285,
+        0.06386492719665293,
+        -0.09963306334209454
+      ]
+    },
+    {
+      "source": "eth3d_plant_000006",
+      "target": "eth3d_plant_000008",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 131.58025645971003,
+      "rvec": [
+        -0.021976180858065603,
+        -0.02715851875197562,
+        0.02244552732216543
+      ],
+      "tvec": [
+        -0.1336555350490939,
+        0.06827179252898663,
+        -0.10147469961740496
+      ]
+    },
+    {
+      "source": "eth3d_plant_000007",
+      "target": "eth3d_plant_000009",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 118.24194975143803,
+      "rvec": [
+        -0.026379990459598206,
+        -0.05153424981388202,
+        0.016287874900061138
+      ],
+      "tvec": [
+        -0.10952031889642752,
+        0.06101441672406405,
+        -0.10386259759426575
+      ]
+    },
+    {
+      "source": "eth3d_plant_000008",
+      "target": "eth3d_plant_000010",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 109.46090754050536,
+      "rvec": [
+        -0.02465721104971371,
+        0.011118513368811554,
+        -0.00022911506019883407
+      ],
+      "tvec": [
+        -0.0957107098098848,
+        0.04941629777459866,
+        -0.10541289806748355
+      ]
+    },
+    {
+      "source": "eth3d_plant_000009",
+      "target": "eth3d_plant_000011",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 111.03835334824014,
+      "rvec": [
+        -0.05018760408267755,
+        0.05099646443535261,
+        0.029692069258883104
+      ],
+      "tvec": [
+        -0.0932847373345281,
+        0.042368986548193543,
+        -0.11347514993075913
+      ]
+    },
+    {
+      "source": "eth3d_plant_000010",
+      "target": "eth3d_plant_000012",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 117.24037411101084,
+      "rvec": [
+        -0.0697627611467584,
+        0.04894015355610189,
+        0.07352714155014088
+      ],
+      "tvec": [
+        -0.10088821999261191,
+        0.03517939175173668,
+        -0.12100311964139454
+      ]
+    },
+    {
+      "source": "eth3d_plant_000011",
+      "target": "eth3d_plant_000013",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 119.10323986428955,
+      "rvec": [
+        -0.04684214932423841,
+        0.10309037815591846,
+        0.09196640254016696
+      ],
+      "tvec": [
+        -0.10475915909700413,
+        0.03410508786096367,
+        -0.12146932444359737
+      ]
+    },
+    {
+      "source": "eth3d_plant_000012",
+      "target": "eth3d_plant_000014",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 115.96659156713056,
+      "rvec": [
+        0.012199432907436147,
+        0.16246177114165056,
+        0.07643786879577405
+      ],
+      "tvec": [
+        -0.10268665632973643,
+        0.03508417302003686,
+        -0.11712892250606743
+      ]
+    },
+    {
+      "source": "eth3d_plant_000013",
+      "target": "eth3d_plant_000015",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 117.02486305539477,
+      "rvec": [
+        0.04269906957464086,
+        0.1489981439572907,
+        0.04418948789275553
+      ],
+      "tvec": [
+        -0.10189744081921559,
+        0.022887738487627818,
+        -0.12269934721067877
+      ]
+    },
+    {
+      "source": "eth3d_plant_000014",
+      "target": "eth3d_plant_000016",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 119.24929398533592,
+      "rvec": [
+        0.019808517784449985,
+        0.08655766074927233,
+        0.046618602053997975
+      ],
+      "tvec": [
+        -0.10676465559431347,
+        0.007064347930994197,
+        -0.12453848545265123
+      ]
+    },
+    {
+      "source": "eth3d_plant_000015",
+      "target": "eth3d_plant_000017",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 123.72624973572289,
+      "rvec": [
+        0.01622336065191307,
+        0.12168262894889781,
+        0.06108936292911578
+      ],
+      "tvec": [
+        -0.11910487920039398,
+        0.0073882885762908135,
+        -0.121573271824446
+      ]
+    },
+    {
+      "source": "eth3d_plant_000016",
+      "target": "eth3d_plant_000018",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 125.25829726052503,
+      "rvec": [
+        0.058134143163097694,
+        0.1026801621724975,
+        0.06861050103957493
+      ],
+      "tvec": [
+        -0.131930360899053,
+        0.008229179884249094,
+        -0.11077196691405278
+      ]
+    },
+    {
+      "source": "eth3d_plant_000017",
+      "target": "eth3d_plant_000019",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 120.09287074710537,
+      "rvec": [
+        0.0508261818506332,
+        -0.016797423645028828,
+        0.07505091802994034
+      ],
+      "tvec": [
+        -0.13640161204195209,
+        0.00208873547097288,
+        -0.09344211415305237
+      ]
+    },
+    {
+      "source": "eth3d_plant_000018",
+      "target": "eth3d_plant_000020",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 106.15377521266258,
+      "rvec": [
+        -0.0017923404614822991,
+        0.023993177755988568,
+        0.05072532502059557
+      ],
+      "tvec": [
+        -0.12694471054626272,
+        -0.0011850829642616745,
+        -0.07243082356477448
+      ]
+    },
+    {
+      "source": "eth3d_plant_000019",
+      "target": "eth3d_plant_000021",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 101.12080088739337,
+      "rvec": [
+        -0.033365795959740575,
+        0.12413976856345826,
+        0.06103048000476201
+      ],
+      "tvec": [
+        -0.126194094660242,
+        -0.01136287546258652,
+        -0.05771355235365572
+      ]
+    },
+    {
+      "source": "eth3d_plant_000020",
+      "target": "eth3d_plant_000022",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 104.503727374378,
+      "rvec": [
+        -0.04848736148061405,
+        0.1350265440766677,
+        0.09408249660539113
+      ],
+      "tvec": [
+        -0.13593326722295868,
+        -0.027646072571595237,
+        -0.038229225040603554
+      ]
+    },
+    {
+      "source": "eth3d_plant_000021",
+      "target": "eth3d_plant_000023",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 99.74069620396355,
+      "rvec": [
+        0.015373628635186855,
+        0.17644282941894684,
+        0.05202287787242647
+      ],
+      "tvec": [
+        -0.1325470331419103,
+        -0.03408605109022034,
+        -0.0113499226934336
+      ]
+    },
+    {
+      "source": "eth3d_plant_000022",
+      "target": "eth3d_plant_000024",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 92.04902919751129,
+      "rvec": [
+        0.0552585900960546,
+        0.19126506137250127,
+        -0.026390583180240883
+      ],
+      "tvec": [
+        -0.12003901417246104,
+        -0.036926377025890744,
+        0.017025963421529178
+      ]
+    },
+    {
+      "source": "eth3d_plant_000023",
+      "target": "eth3d_plant_000025",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 102.27103358481561,
+      "rvec": [
+        0.02616606969536046,
+        0.0793166748665893,
+        -0.057593043087722354
+      ],
+      "tvec": [
+        -0.12327843197252863,
+        -0.047101915323355614,
+        0.04911481583906685
+      ]
+    },
+    {
+      "source": "eth3d_plant_000024",
+      "target": "eth3d_plant_000026",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 126.91294352230535,
+      "rvec": [
+        0.004453127147468817,
+        -0.010527082422383087,
+        -0.020170603925262886
+      ],
+      "tvec": [
+        -0.13623661384091862,
+        -0.0680690098191048,
+        0.08567949739759828
+      ]
+    },
+    {
+      "source": "eth3d_plant_000025",
+      "target": "eth3d_plant_000027",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 145.43140368464663,
+      "rvec": [
+        -0.007685333356930162,
+        -0.005993280655556359,
+        0.014473645935543948
+      ],
+      "tvec": [
+        -0.1431173652945571,
+        -0.08093891116799656,
+        0.1142897963861711
+      ]
+    },
+    {
+      "source": "eth3d_plant_000026",
+      "target": "eth3d_plant_000028",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 145.25143674671048,
+      "rvec": [
+        -0.005183802872548352,
+        0.006583095812339311,
+        0.010084951596730249
+      ],
+      "tvec": [
+        -0.14225408741664924,
+        -0.0687715652678278,
+        0.12260064516360702
+      ]
+    },
+    {
+      "source": "eth3d_plant_000027",
+      "target": "eth3d_plant_000029",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 139.90995317034285,
+      "rvec": [
+        -0.033196348945310365,
+        0.03769569052411297,
+        -0.000684760506039101
+      ],
+      "tvec": [
+        -0.14793844011767565,
+        -0.04417307799372372,
+        0.11520433330475766
+      ]
+    },
+    {
+      "source": "eth3d_plant_000028",
+      "target": "eth3d_plant_000030",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 139.9169257115694,
+      "rvec": [
+        -0.06786309577116478,
+        0.05434186098912601,
+        -0.010311645497959305
+      ],
+      "tvec": [
+        -0.16485737644502407,
+        -0.03278962878385183,
+        0.09412579770997898
+      ]
+    },
+    {
+      "source": "eth3d_plant_000029",
+      "target": "eth3d_plant_000031",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 138.4806012831354,
+      "rvec": [
+        -0.05693617999884249,
+        0.07431790400813773,
+        0.029493663187287897
+      ],
+      "tvec": [
+        -0.17167962237901813,
+        -0.0344416802853722,
+        0.07546259150792767
+      ]
+    },
+    {
+      "source": "eth3d_plant_000030",
+      "target": "eth3d_plant_000032",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 128.51928816716315,
+      "rvec": [
+        0.009005243348778816,
+        0.08393495991731817,
+        0.0628099217372797
+      ],
+      "tvec": [
+        -0.15942552227948148,
+        -0.04188254129123581,
+        0.06435829148751093
+      ]
+    },
+    {
+      "source": "eth3d_plant_000031",
+      "target": "eth3d_plant_000033",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 118.28094858004505,
+      "rvec": [
+        0.03222617451130668,
+        0.07255556424208519,
+        0.04540335999844977
+      ],
+      "tvec": [
+        -0.13815519412658206,
+        -0.04833404690225862,
+        0.0714097151602362
+      ]
+    },
+    {
+      "source": "eth3d_plant_000032",
+      "target": "eth3d_plant_000034",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 121.42056955509388,
+      "rvec": [
+        0.01516076862081933,
+        0.0701201291660893,
+        0.008986930584218815
+      ],
+      "tvec": [
+        -0.12756795169104196,
+        -0.06253752342231711,
+        0.0881167154288931
+      ]
+    },
+    {
+      "source": "eth3d_plant_000033",
+      "target": "eth3d_plant_000035",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 132.23863698930413,
+      "rvec": [
+        0.017015300988455648,
+        0.057959812296748445,
+        -0.0013550898437376469
+      ],
+      "tvec": [
+        -0.12622215602298392,
+        -0.07641340498439197,
+        0.10667799029754432
+      ]
+    },
+    {
+      "source": "eth3d_plant_000034",
+      "target": "eth3d_plant_000036",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 135.2256563656282,
+      "rvec": [
+        0.032718355224904384,
+        0.045565938379916016,
+        0.0077081462018674446
+      ],
+      "tvec": [
+        -0.13018539168369192,
+        -0.0745346632539825,
+        0.11028210974134711
+      ]
+    },
+    {
+      "source": "eth3d_plant_000035",
+      "target": "eth3d_plant_000037",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 134.56740581275778,
+      "rvec": [
+        0.03836284479849353,
+        0.021494945941237,
+        5.587473034111139e-05
+      ],
+      "tvec": [
+        -0.1406895353503954,
+        -0.05678393018258965,
+        0.10635396295519639
+      ]
+    },
+    {
+      "source": "eth3d_plant_000036",
+      "target": "eth3d_plant_000038",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 133.13732622624332,
+      "rvec": [
+        -0.018837237554950877,
+        -0.007083578157472588,
+        -0.013699792819887124
+      ],
+      "tvec": [
+        -0.15298279630322198,
+        -0.03280094789756449,
+        0.09551815010605291
+      ]
+    },
+    {
+      "source": "eth3d_plant_000037",
+      "target": "eth3d_plant_000039",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 125.82947175137413,
+      "rvec": [
+        -0.05689617041007597,
+        0.040276441471868464,
+        0.0037658831054627577
+      ],
+      "tvec": [
+        -0.1542143791338253,
+        -0.0189992169495784,
+        0.07663291235728287
+      ]
+    },
+    {
+      "source": "eth3d_plant_000038",
+      "target": "eth3d_plant_000040",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 126.7538249816771,
+      "rvec": [
+        -0.053863823969945705,
+        0.08664145414018395,
+        0.031078651987426965
+      ],
+      "tvec": [
+        -0.1646183142900668,
+        -0.010477018006097683,
+        0.05700267852548113
+      ]
+    },
+    {
+      "source": "eth3d_plant_000039",
+      "target": "eth3d_plant_000041",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 132.40634074875734,
+      "rvec": [
+        -0.009127343442255275,
+        0.06091343655171859,
+        0.02911753038555103
+      ],
+      "tvec": [
+        -0.17876420935231496,
+        -0.008174759256513564,
+        0.03481239692213123
+      ]
+    },
+    {
+      "source": "eth3d_plant_000040",
+      "target": "eth3d_plant_000042",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 129.1262257698479,
+      "rvec": [
+        0.02422009254957406,
+        0.03932929814870182,
+        0.004711817725504776
+      ],
+      "tvec": [
+        -0.17766120638577543,
+        -0.005577824348172777,
+        0.003803480559190442
+      ]
+    },
+    {
+      "source": "eth3d_plant_000041",
+      "target": "eth3d_plant_000043",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 119.17054070977125,
+      "rvec": [
+        0.010185738683494473,
+        0.029057747958278143,
+        -0.020240179579402943
+      ],
+      "tvec": [
+        -0.16311962538317148,
+        -0.0026691779924704617,
+        -0.01754134969902421
+      ]
+    },
+    {
+      "source": "eth3d_plant_000042",
+      "target": "eth3d_plant_000044",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 115.71798643543222,
+      "rvec": [
+        0.019092840947434606,
+        0.018296118704866516,
+        -0.015212089284751725
+      ],
+      "tvec": [
+        -0.15476698272971134,
+        0.0036606301351241877,
+        -0.03767256393031948
+      ]
+    },
+    {
+      "source": "eth3d_plant_000043",
+      "target": "eth3d_plant_000045",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 129.78205925780006,
+      "rvec": [
+        0.03857716819855319,
+        -0.005360821823583535,
+        -0.0006840610318977896
+      ],
+      "tvec": [
+        -0.165096180775252,
+        0.018786019697218714,
+        -0.06573675183873773
+      ]
+    },
+    {
+      "source": "eth3d_plant_000044",
+      "target": "eth3d_plant_000046",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 141.20491164329545,
+      "rvec": [
+        0.04870207524908202,
+        -0.013488803807772952,
+        -0.018676583897226783
+      ],
+      "tvec": [
+        -0.1738054875223427,
+        0.035623200021877355,
+        -0.07950998852721436
+      ]
+    },
+    {
+      "source": "eth3d_plant_000045",
+      "target": "eth3d_plant_000047",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 133.00633661266812,
+      "rvec": [
+        0.04121196993755529,
+        0.01860983642010375,
+        -0.03919889831502277
+      ],
+      "tvec": [
+        -0.16534379849718395,
+        0.03817264253566954,
+        -0.06885886126315266
+      ]
+    },
+    {
+      "source": "eth3d_plant_000046",
+      "target": "eth3d_plant_000048",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 119.30363234273955,
+      "rvec": [
+        0.030044756228828535,
+        0.017368888448294196,
+        -0.027768945734389167
+      ],
+      "tvec": [
+        -0.1528391755146128,
+        0.024772313236966714,
+        -0.054859127663325014
+      ]
+    },
+    {
+      "source": "eth3d_plant_000047",
+      "target": "eth3d_plant_000049",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 119.57445184162081,
+      "rvec": [
+        0.02050266283442695,
+        0.004804576749768154,
+        0.005533310116510979
+      ],
+      "tvec": [
+        -0.15920373369627128,
+        0.012002893307810236,
+        -0.04019637658616726
+      ]
+    },
+    {
+      "source": "eth3d_plant_000048",
+      "target": "eth3d_plant_000050",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 134.22948114185544,
+      "rvec": [
+        -0.006303068428020662,
+        0.022799137308342737,
+        0.04297917542737409
+      ],
+      "tvec": [
+        -0.18369347587934803,
+        0.007870573366875133,
+        -0.018753370538996172
+      ]
+    },
+    {
+      "source": "eth3d_plant_000049",
+      "target": "eth3d_plant_000051",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 145.12010920254565,
+      "rvec": [
+        -0.006827326927816415,
+        0.007749316942377332,
+        0.06377373337156311
+      ],
+      "tvec": [
+        -0.19962684179058154,
+        0.0072981639952616195,
+        0.004498908038174765
+      ]
+    },
+    {
+      "source": "eth3d_plant_000050",
+      "target": "eth3d_plant_000052",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 136.8414924371137,
+      "rvec": [
+        0.002136021476223861,
+        -0.007573739761682095,
+        0.05954880392215865
+      ],
+      "tvec": [
+        -0.18809453744801052,
+        0.00809879778885536,
+        0.007352276023004478
+      ]
+    },
+    {
+      "source": "eth3d_plant_000051",
+      "target": "eth3d_plant_000053",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 124.11767665494502,
+      "rvec": [
+        -0.012195087499215588,
+        -0.012490936919038985,
+        0.029624339643214575
+      ],
+      "tvec": [
+        -0.17047338024981018,
+        0.010182449202396637,
+        -0.006298938918718244
+      ]
+    },
+    {
+      "source": "eth3d_plant_000052",
+      "target": "eth3d_plant_000054",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 122.81770604608514,
+      "rvec": [
+        -0.017116324152225686,
+        -0.007515553292491989,
+        -0.00020734834899784776
+      ],
+      "tvec": [
+        -0.1662811760894316,
+        0.013222089971946294,
+        -0.027779922415926528
+      ]
+    },
+    {
+      "source": "eth3d_plant_000053",
+      "target": "eth3d_plant_000055",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 128.33078162829145,
+      "rvec": [
+        -0.005625539109035469,
+        0.018729522834056777,
+        -0.002734484737558386
+      ],
+      "tvec": [
+        -0.16715149915899596,
+        0.019238558004338602,
+        -0.05395460726223722
+      ]
+    },
+    {
+      "source": "eth3d_plant_000054",
+      "target": "eth3d_plant_000056",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 128.91989653350487,
+      "rvec": [
+        0.018607541463137166,
+        0.006920320992007256,
+        0.015641583630594907
+      ],
+      "tvec": [
+        -0.16392921456651832,
+        0.024605820158401293,
+        -0.06348160545919912
+      ]
+    },
+    {
+      "source": "eth3d_plant_000055",
+      "target": "eth3d_plant_000057",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 121.85555153488296,
+      "rvec": [
+        0.03922155453880504,
+        -0.030528874683130917,
+        0.03798349998650345
+      ],
+      "tvec": [
+        -0.1568710307038219,
+        0.019203344354704777,
+        -0.05632407562841579
+      ]
+    },
+    {
+      "source": "eth3d_plant_000056",
+      "target": "eth3d_plant_000058",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 114.29240584297585,
+      "rvec": [
+        0.029748999278279196,
+        0.03261563295106655,
+        0.035928918828198486
+      ],
+      "tvec": [
+        -0.14953382316889696,
+        0.007744014587046655,
+        -0.04840961840978775
+      ]
+    },
+    {
+      "source": "eth3d_plant_000057",
+      "target": "eth3d_plant_000059",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 108.90960925817981,
+      "rvec": [
+        -0.007239793873909796,
+        0.08289674511807768,
+        0.05462361630796925
+      ],
+      "tvec": [
+        -0.14413697776481182,
+        -0.005705441748325435,
+        -0.04096515469381612
+      ]
+    },
+    {
+      "source": "eth3d_plant_000058",
+      "target": "eth3d_plant_000060",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 107.50290043127642,
+      "rvec": [
+        -0.022774346589923677,
+        0.07087443044961869,
+        0.09313050288724924
+      ],
+      "tvec": [
+        -0.1465013924094296,
+        -0.008952665812192423,
+        -0.019137177523123494
+      ]
+    },
+    {
+      "source": "eth3d_plant_000059",
+      "target": "eth3d_plant_000061",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 108.17650935900699,
+      "rvec": [
+        -0.011933967082677589,
+        0.10346562904274689,
+        0.07977099449979058
+      ],
+      "tvec": [
+        -0.14882521691839168,
+        -0.005943186416175,
+        -0.00044234035479817635
+      ]
+    },
+    {
+      "source": "eth3d_plant_000060",
+      "target": "eth3d_plant_000062",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 103.37562977240577,
+      "rvec": [
+        -0.0001277222720430271,
+        0.1242367768998534,
+        0.036869248783806444
+      ],
+      "tvec": [
+        -0.14214684558704427,
+        0.005597062178088821,
+        -0.004691312092442779
+      ]
+    },
+    {
+      "source": "eth3d_plant_000061",
+      "target": "eth3d_plant_000063",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 96.31577988865769,
+      "rvec": [
+        -0.01745307588136956,
+        0.11621098313837229,
+        0.009532135555497112
+      ],
+      "tvec": [
+        -0.12885167276036524,
+        0.020394698025464342,
+        -0.02382729853812693
+      ]
+    },
+    {
+      "source": "eth3d_plant_000062",
+      "target": "eth3d_plant_000064",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 94.91923226122664,
+      "rvec": [
+        -0.03884718004457458,
+        0.08672173421617144,
+        0.023283565611540016
+      ],
+      "tvec": [
+        -0.11789418049712364,
+        0.029679711493865862,
+        -0.047960571841195065
+      ]
+    },
+    {
+      "source": "eth3d_plant_000063",
+      "target": "eth3d_plant_000065",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 104.67800420008135,
+      "rvec": [
+        -0.015846072954355233,
+        0.07974918618943368,
+        0.05103884726189932
+      ],
+      "tvec": [
+        -0.11966537670757882,
+        0.04205124280523723,
+        -0.06844438313030654
+      ]
+    },
+    {
+      "source": "eth3d_plant_000064",
+      "target": "eth3d_plant_000066",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 110.81692239900589,
+      "rvec": [
+        0.0124046507331271,
+        0.08971875824525131,
+        0.0737161339631708
+      ],
+      "tvec": [
+        -0.12582745466332135,
+        0.04969126317729054,
+        -0.07056119752558176
+      ]
+    },
+    {
+      "source": "eth3d_plant_000065",
+      "target": "eth3d_plant_000067",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 103.087332497444,
+      "rvec": [
+        0.007727545968421062,
+        0.06981087601750022,
+        0.0474360865051402
+      ],
+      "tvec": [
+        -0.11968831701875837,
+        0.04619891282865287,
+        -0.060717277385569535
+      ]
+    },
+    {
+      "source": "eth3d_plant_000066",
+      "target": "eth3d_plant_000068",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 95.48233792526577,
+      "rvec": [
+        -0.009036830837037694,
+        0.07946295449381327,
+        0.022629947372750037
+      ],
+      "tvec": [
+        -0.11642449202172145,
+        0.03215442519177854,
+        -0.05191171478083989
+      ]
+    },
+    {
+      "source": "eth3d_plant_000067",
+      "target": "eth3d_plant_000069",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 97.33998664009633,
+      "rvec": [
+        -0.027142897138028872,
+        0.09228878887343989,
+        0.052908616716143414
+      ],
+      "tvec": [
+        -0.12617264795577654,
+        0.01777200582683316,
+        -0.04155800264952347
+      ]
+    },
+    {
+      "source": "eth3d_plant_000068",
+      "target": "eth3d_plant_000070",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 103.26326398255428,
+      "rvec": [
+        -0.02466772117722447,
+        0.1012795459736991,
+        0.07679870256111793
+      ],
+      "tvec": [
+        -0.13994346929020995,
+        0.012583000911541097,
+        -0.0217379123199688
+      ]
+    },
+    {
+      "source": "eth3d_plant_000082",
+      "target": "eth3d_plant_000084",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 117.54191530086234,
+      "rvec": [
+        0.027587890385761718,
+        0.08635354279825123,
+        0.01624451173091481
+      ],
+      "tvec": [
+        -0.10382883255848263,
+        0.04003295612935304,
+        -0.11751138910247594
+      ]
+    },
+    {
+      "source": "eth3d_plant_000083",
+      "target": "eth3d_plant_000085",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 131.01646874433118,
+      "rvec": [
+        0.026527149411186134,
+        0.07144818545960185,
+        0.020885530240283844
+      ],
+      "tvec": [
+        -0.10391731599909915,
+        0.04966744654593294,
+        -0.1388366874809348
+      ]
+    },
+    {
+      "source": "eth3d_plant_000084",
+      "target": "eth3d_plant_000086",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 127.60171204921531,
+      "rvec": [
+        0.027391263720187103,
+        0.06052646678853909,
+        0.02180013601763824
+      ],
+      "tvec": [
+        -0.09563347627240693,
+        0.06289941668462173,
+        -0.13328545514695733
+      ]
+    },
+    {
+      "source": "eth3d_plant_000085",
+      "target": "eth3d_plant_000087",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 111.23817593096149,
+      "rvec": [
+        0.016767712460281907,
+        0.03127057041362604,
+        0.029019346692149554
+      ],
+      "tvec": [
+        -0.08756741472194096,
+        0.06078984085437067,
+        -0.10997512344876537
+      ]
+    },
+    {
+      "source": "eth3d_plant_000086",
+      "target": "eth3d_plant_000088",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 107.00825071852219,
+      "rvec": [
+        0.008723666228262672,
+        0.026797204846319086,
+        0.03325913326127149
+      ],
+      "tvec": [
+        -0.09719918478025247,
+        0.05294600785064285,
+        -0.09724671510076544
+      ]
+    },
+    {
+      "source": "eth3d_plant_000087",
+      "target": "eth3d_plant_000089",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 117.31110320115488,
+      "rvec": [
+        0.004692826982560467,
+        0.07341640260249394,
+        0.02849986049065532
+      ],
+      "tvec": [
+        -0.1222867432225172,
+        0.050305464514502796,
+        -0.09276066013689688
+      ]
+    },
+    {
+      "source": "eth3d_plant_000088",
+      "target": "eth3d_plant_000090",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 121.89396257309598,
+      "rvec": [
+        -0.011105073965292811,
+        0.102528572056768,
+        0.03696339581006036
+      ],
+      "tvec": [
+        -0.14154993389901738,
+        0.05146321517201896,
+        -0.0740445356847359
+      ]
+    },
+    {
+      "source": "eth3d_plant_000089",
+      "target": "eth3d_plant_000091",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 110.51979350183545,
+      "rvec": [
+        -0.011360297815381086,
+        0.08082850365250233,
+        0.04404385130201608
+      ],
+      "tvec": [
+        -0.1361621709870735,
+        0.046463834102620394,
+        -0.049567654074499146
+      ]
+    },
+    {
+      "source": "eth3d_plant_000090",
+      "target": "eth3d_plant_000092",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 100.8798835152331,
+      "rvec": [
+        -0.013674580017015193,
+        0.05094781016308781,
+        0.051413066734382167
+      ],
+      "tvec": [
+        -0.12072792372926378,
+        0.04449614034488472,
+        -0.05232133922423987
+      ]
+    },
+    {
+      "source": "eth3d_plant_000091",
+      "target": "eth3d_plant_000093",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 80.48256469439643,
+      "rvec": [
+        -0.012488117028693908,
+        0.023107739014369515,
+        0.03252042626873073
+      ],
+      "tvec": [
+        -0.08577167819366038,
+        0.04148432620834211,
+        -0.05658566113802932
+      ]
+    },
+    {
+      "source": "eth3d_plant_000092",
+      "target": "eth3d_plant_000094",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 77.0412306955962,
+      "rvec": [
+        -0.01457966871573513,
+        -0.010395143929842079,
+        0.010644400537690472
+      ],
+      "tvec": [
+        -0.05918516948438479,
+        0.047601770489845985,
+        -0.07404849005089931
+      ]
+    },
+    {
+      "source": "eth3d_plant_000098",
+      "target": "eth3d_plant_000100",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 72.90750118335725,
+      "rvec": [
+        0.06069885940768585,
+        -0.013714522660009934,
+        0.010517415771636533
+      ],
+      "tvec": [
+        0.029926443197412667,
+        0.020475142115682354,
+        -0.0936060211439309
+      ]
+    },
+    {
+      "source": "eth3d_plant_000099",
+      "target": "eth3d_plant_000101",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 66.7353261743409,
+      "rvec": [
+        0.09000478709218702,
+        0.021016834042888614,
+        -0.01169371510748755
+      ],
+      "tvec": [
+        0.041214031915377536,
+        0.006379959192650553,
+        -0.08187585884589099
+      ]
+    },
+    {
+      "source": "eth3d_plant_000100",
+      "target": "eth3d_plant_000102",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 47.28247694664394,
+      "rvec": [
+        0.08151363344554942,
+        -0.015205698784770917,
+        -0.03978087576191355
+      ],
+      "tvec": [
+        0.05059263868368857,
+        -0.014634065960086429,
+        -0.038268110349701345
+      ]
+    },
+    {
+      "source": "eth3d_plant_000101",
+      "target": "eth3d_plant_000103",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 46.642553987314166,
+      "rvec": [
+        0.06534176329010563,
+        -0.07754256339983273,
+        -0.04735882960236606
+      ],
+      "tvec": [
+        0.05579729777488285,
+        -0.03148877218303425,
+        0.004403849030255369
+      ]
+    },
+    {
+      "source": "eth3d_plant_000102",
+      "target": "eth3d_plant_000104",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 74.62373364794068,
+      "rvec": [
+        0.04242555694890076,
+        -0.07083220514283019,
+        -0.04276430008730142
+      ],
+      "tvec": [
+        0.08029897167769118,
+        -0.04580612924218208,
+        0.04484179232652785
+      ]
+    },
+    {
+      "source": "eth3d_plant_000103",
+      "target": "eth3d_plant_000105",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 98.24773076878834,
+      "rvec": [
+        0.001888182394130634,
+        -0.05639982454125834,
+        -0.06891575248953849
+      ],
+      "tvec": [
+        0.09131863223748637,
+        -0.044320375476183504,
+        0.08941834464888165
+      ]
+    },
+    {
+      "source": "eth3d_plant_000104",
+      "target": "eth3d_plant_000106",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 98.44602150115263,
+      "rvec": [
+        -0.033653542936010215,
+        -0.032990068850168086,
+        -0.07584208536299737
+      ],
+      "tvec": [
+        0.08026259437986849,
+        -0.027141600554837386,
+        0.1058027291964625
+      ]
+    },
+    {
+      "source": "eth3d_plant_000105",
+      "target": "eth3d_plant_000107",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 89.28065059229739,
+      "rvec": [
+        -0.023073384025239726,
+        -0.020684972670021853,
+        -0.032030175481684464
+      ],
+      "tvec": [
+        0.07771598243547007,
+        -0.01556513990955033,
+        0.0939633329175944
+      ]
+    },
+    {
+      "source": "eth3d_plant_000106",
+      "target": "eth3d_plant_000108",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 84.38798682708322,
+      "rvec": [
+        -0.014508142856051589,
+        -0.041973238669888537,
+        -0.017028201346228684
+      ],
+      "tvec": [
+        0.08595808667467297,
+        -0.015740115982114666,
+        0.0765753313990718
+      ]
+    },
+    {
+      "source": "eth3d_plant_000107",
+      "target": "eth3d_plant_000109",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 92.8946382825414,
+      "rvec": [
+        -0.02445075592381753,
+        -0.04698685814938445,
+        -0.044524753021325594
+      ],
+      "tvec": [
+        0.10412392736650866,
+        -0.027934350851812395,
+        0.06882705284120405
+      ]
+    },
+    {
+      "source": "eth3d_plant_000111",
+      "target": "eth3d_plant_000113",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 102.9637346844555,
+      "rvec": [
+        -0.05430471238912897,
+        -0.057933271934015776,
+        -0.01619034252474722
+      ],
+      "tvec": [
+        0.10474888532803361,
+        -0.008021114866572449,
+        0.09519071980306748
+      ]
+    },
+    {
+      "source": "eth3d_plant_000112",
+      "target": "eth3d_plant_000114",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 117.61443316495915,
+      "rvec": [
+        -0.04458857702613223,
+        -0.08671523629334528,
+        -0.0521080288117368
+      ],
+      "tvec": [
+        0.11079623280664475,
+        -0.03319758696037295,
+        0.11334211074172318
+      ]
+    },
+    {
+      "source": "eth3d_plant_000113",
+      "target": "eth3d_plant_000115",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 128.9851142767078,
+      "rvec": [
+        -0.03035211376190933,
+        -0.05532476182865703,
+        -0.0902044939099469
+      ],
+      "tvec": [
+        0.10992540065114276,
+        -0.05271124026824145,
+        0.12914319985885836
+      ]
+    },
+    {
+      "source": "eth3d_plant_000114",
+      "target": "eth3d_plant_000116",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 144.1431614169573,
+      "rvec": [
+        0.00020424847408786779,
+        -0.05168281511968052,
+        -0.10865890736609726
+      ],
+      "tvec": [
+        0.1050846373853822,
+        -0.06253535084703504,
+        0.15631761311041803
+      ]
+    },
+    {
+      "source": "eth3d_plant_000115",
+      "target": "eth3d_plant_000117",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 148.84213524975408,
+      "rvec": [
+        0.010643540196662743,
+        -0.10572760097549765,
+        -0.062398118723365516
+      ],
+      "tvec": [
+        0.10485925201318924,
+        -0.05619870297651458,
+        0.1668677266839138
+      ]
+    },
+    {
+      "source": "eth3d_plant_000116",
+      "target": "eth3d_plant_000118",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 136.111783208696,
+      "rvec": [
+        -0.0048653663304031045,
+        -0.09863634479668133,
+        0.0003629523668755725
+      ],
+      "tvec": [
+        0.11647774302918301,
+        -0.04364098844034586,
+        0.14017849496881984
+      ]
+    },
+    {
+      "source": "eth3d_plant_000117",
+      "target": "eth3d_plant_000119",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 123.9111561048896,
+      "rvec": [
+        -0.01731945092162799,
+        -0.04680802025949443,
+        -0.015744224346225636
+      ],
+      "tvec": [
+        0.1258830895106844,
+        -0.04685245526286727,
+        0.10519373061615278
+      ]
+    },
+    {
+      "source": "eth3d_plant_000118",
+      "target": "eth3d_plant_000120",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 125.56438551883635,
+      "rvec": [
+        -0.02105475053935456,
+        -0.046033296972006886,
+        -0.05103435566002429
+      ],
+      "tvec": [
+        0.13649712208863374,
+        -0.0550753962740137,
+        0.09068930086137561
+      ]
+    },
+    {
+      "source": "eth3d_plant_000119",
+      "target": "eth3d_plant_000121",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 133.72411409231984,
+      "rvec": [
+        0.0033932447263190883,
+        -0.06706014072264739,
+        -0.050374861271426374
+      ],
+      "tvec": [
+        0.14857202150884752,
+        -0.05328558826753896,
+        0.0948009201288591
+      ]
+    },
+    {
+      "source": "eth3d_plant_000120",
+      "target": "eth3d_plant_000122",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 132.98270966025635,
+      "rvec": [
+        0.013653659360942615,
+        -0.04244935673811744,
+        -0.02746936671453388
+      ],
+      "tvec": [
+        0.14982511249140518,
+        -0.04511009310962119,
+        0.09509398701951222
+      ]
+    },
+    {
+      "source": "eth3d_plant_000121",
+      "target": "eth3d_plant_000123",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 124.9412032030663,
+      "rvec": [
+        -0.0035910546596644105,
+        -0.033182980196607134,
+        -0.022051391228416338
+      ],
+      "tvec": [
+        0.13591633952598636,
+        -0.04494007788606913,
+        0.09539655590111051
+      ]
+    },
+    {
+      "source": "eth3d_plant_000122",
+      "target": "eth3d_plant_000124",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 127.5813433172577,
+      "rvec": [
+        -0.01537343931326189,
+        -0.07179237463067534,
+        -0.03992551771735947
+      ],
+      "tvec": [
+        0.12726535521830984,
+        -0.05448556330771581,
+        0.10813006067302977
+      ]
+    },
+    {
+      "source": "eth3d_plant_000123",
+      "target": "eth3d_plant_000125",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 138.53493204730265,
+      "rvec": [
+        -0.01652179338431551,
+        -0.08231792320703955,
+        -0.06001891926020911
+      ],
+      "tvec": [
+        0.12469613797808643,
+        -0.06312819334513026,
+        0.12980354857452303
+      ]
+    },
+    {
+      "source": "eth3d_plant_000124",
+      "target": "eth3d_plant_000126",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 138.33968242529934,
+      "rvec": [
+        0.0197535052477297,
+        -0.08923596891162891,
+        -0.07479382488612021
+      ],
+      "tvec": [
+        0.10810521755278946,
+        -0.06761094233484277,
+        0.14150192648491933
+      ]
+    },
+    {
+      "source": "eth3d_plant_000125",
+      "target": "eth3d_plant_000127",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 131.82279517578885,
+      "rvec": [
+        0.03131452950005387,
+        -0.11158744976392826,
+        -0.05804564730562355
+      ],
+      "tvec": [
+        0.09930516132003553,
+        -0.06360917751612999,
+        0.13796892110526926
+      ]
+    },
+    {
+      "source": "eth3d_plant_000126",
+      "target": "eth3d_plant_000128",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 118.85540283495311,
+      "rvec": [
+        0.008748891458253315,
+        -0.09837227283174207,
+        -0.02772615410421352
+      ],
+      "tvec": [
+        0.10213774152915978,
+        -0.05653825709014315,
+        0.11468190866292005
+      ]
+    },
+    {
+      "source": "eth3d_plant_000127",
+      "target": "eth3d_plant_000129",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 106.30669677808964,
+      "rvec": [
+        -0.016138850866372404,
+        -0.0716933408099551,
+        -0.028474942505057388
+      ],
+      "tvec": [
+        0.1062032043672545,
+        -0.05563070013314858,
+        0.08396597841755638
+      ]
+    },
+    {
+      "source": "eth3d_plant_000128",
+      "target": "eth3d_plant_000130",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 102.5129609480892,
+      "rvec": [
+        -0.038074273336998254,
+        -0.08525999878453218,
+        -0.04937881220714981
+      ],
+      "tvec": [
+        0.11186628458038061,
+        -0.05558481363159762,
+        0.06571614333635756
+      ]
+    },
+    {
+      "source": "eth3d_plant_000129",
+      "target": "eth3d_plant_000131",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 106.0909671625517,
+      "rvec": [
+        -0.015407175458353822,
+        -0.09996210917566267,
+        -0.06096917394180993
+      ],
+      "tvec": [
+        0.12460173024784904,
+        -0.04638464262512182,
+        0.06049950547141281
+      ]
+    },
+    {
+      "source": "eth3d_plant_000130",
+      "target": "eth3d_plant_000132",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 111.4981762742477,
+      "rvec": [
+        -0.00945660776396618,
+        -0.06544910795829775,
+        -0.06082947497260363
+      ],
+      "tvec": [
+        0.13664013230096428,
+        -0.03403289521575015,
+        0.061147421869504726
+      ]
+    },
+    {
+      "source": "eth3d_plant_000131",
+      "target": "eth3d_plant_000133",
+      "scene": "eth3d_train",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 116.28618377920931,
+      "rvec": [
+        -0.015477981745814872,
+        -0.042236270790068996,
+        -0.04021765260659967
+      ],
+      "tvec": [
+        0.14413505741334642,
+        -0.019014859572758724,
+        0.06707360367575133
+      ]
+    },
+    {
+      "source": "eth3d_plant_000134",
+      "target": "eth3d_plant_000136",
+      "scene": "eth3d_val",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 161.22646919086642,
+      "rvec": [
+        0.021008327734488935,
+        -0.03807656260092265,
+        -0.022668164787794348
+      ],
+      "tvec": [
+        0.19852541880265617,
+        -0.04580767751093473,
+        0.08813404016930715
+      ]
+    },
+    {
+      "source": "eth3d_plant_000135",
+      "target": "eth3d_plant_000137",
+      "scene": "eth3d_val",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 159.0195169510564,
+      "rvec": [
+        -0.0029008070783469258,
+        -0.0172412403560791,
+        -0.008754491814285371
+      ],
+      "tvec": [
+        0.1984500543534633,
+        -0.02723100618793073,
+        0.08839955833931157
+      ]
+    },
+    {
+      "source": "eth3d_plant_000136",
+      "target": "eth3d_plant_000138",
+      "scene": "eth3d_val",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 140.8772186848311,
+      "rvec": [
+        -0.007375911983891931,
+        0.024942847787242754,
+        -0.002890835129940529
+      ],
+      "tvec": [
+        0.18456292294391452,
+        -0.012898273964463858,
+        0.05825910409550339
+      ]
+    },
+    {
+      "source": "eth3d_plant_000137",
+      "target": "eth3d_plant_000139",
+      "scene": "eth3d_val",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 130.3134532204634,
+      "rvec": [
+        -0.008604684494057598,
+        0.001982379963484821,
+        -0.01227684826853887
+      ],
+      "tvec": [
+        0.17782330397939194,
+        -0.008669183789383306,
+        0.022287229538472175
+      ]
+    },
+    {
+      "source": "eth3d_plant_000138",
+      "target": "eth3d_plant_000140",
+      "scene": "eth3d_val",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 133.06206642333996,
+      "rvec": [
+        -0.03710452513430933,
+        -0.02481575240890945,
+        -0.01877278334486289
+      ],
+      "tvec": [
+        0.18286549777947814,
+        -0.01024029872193788,
+        -0.0045520668447478485
+      ]
+    },
+    {
+      "source": "eth3d_plant_000139",
+      "target": "eth3d_plant_000141",
+      "scene": "eth3d_val",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 137.31196726511212,
+      "rvec": [
+        -0.03327473186784399,
+        -0.049400607597867394,
+        -0.03142544822435918
+      ],
+      "tvec": [
+        0.18796232770169197,
+        -0.0037806411529290873,
+        -0.019989769901841203
+      ]
+    },
+    {
+      "source": "eth3d_plant_000140",
+      "target": "eth3d_plant_000142",
+      "scene": "eth3d_val",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 136.74035648616203,
+      "rvec": [
+        -0.018862837745603475,
+        -0.0243583514505092,
+        -0.04686554005493275
+      ],
+      "tvec": [
+        0.18635766068738624,
+        0.004066982409761222,
+        -0.026476967352449865
+      ]
+    },
+    {
+      "source": "eth3d_plant_000141",
+      "target": "eth3d_plant_000143",
+      "scene": "eth3d_val",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 137.411971580229,
+      "rvec": [
+        -0.021857916405666734,
+        0.028587838579000196,
+        -0.03255668977641591
+      ],
+      "tvec": [
+        0.18670593398693858,
+        0.0033240684122202158,
+        -0.030424477552364326
+      ]
+    },
+    {
+      "source": "eth3d_plant_000142",
+      "target": "eth3d_plant_000144",
+      "scene": "eth3d_val",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 143.14480761304958,
+      "rvec": [
+        -0.011280797103738688,
+        0.006063561062676858,
+        -0.010408218529064359
+      ],
+      "tvec": [
+        0.19550663317071026,
+        -0.012729998814278276,
+        -0.0214480488815334
+      ]
+    },
+    {
+      "source": "eth3d_plant_000143",
+      "target": "eth3d_plant_000145",
+      "scene": "eth3d_val",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 146.96889337110386,
+      "rvec": [
+        -0.012807190629025883,
+        -0.04320952540513567,
+        -0.00804713371961188
+      ],
+      "tvec": [
+        0.20019684084823808,
+        -0.02907718513251556,
+        -0.004883556476063866
+      ]
+    },
+    {
+      "source": "eth3d_plant_000144",
+      "target": "eth3d_plant_000146",
+      "scene": "eth3d_val",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 141.87939037666226,
+      "rvec": [
+        -0.010890832590514973,
+        -0.05438577209371022,
+        -0.04024943255997985
+      ],
+      "tvec": [
+        0.19178432154660618,
+        -0.03095070744235129,
+        0.020542425377739093
+      ]
+    },
+    {
+      "source": "eth3d_plant_000145",
+      "target": "eth3d_plant_000147",
+      "scene": "eth3d_val",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 126.69559684907792,
+      "rvec": [
+        -0.005272066092486028,
+        -0.08958790819670454,
+        -0.058175406159168296
+      ],
+      "tvec": [
+        0.1683821717549876,
+        -0.023448974073127404,
+        0.03908804329023674
+      ]
+    },
+    {
+      "source": "eth3d_plant_000146",
+      "target": "eth3d_plant_000148",
+      "scene": "eth3d_val",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 111.13932348718646,
+      "rvec": [
+        -0.012660924408485251,
+        -0.12420444129352229,
+        -0.016860037945896855
+      ],
+      "tvec": [
+        0.1492845046780784,
+        -0.010760848275901513,
+        0.03185360005760751
+      ]
+    },
+    {
+      "source": "eth3d_plant_000147",
+      "target": "eth3d_plant_000149",
+      "scene": "eth3d_val",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 107.8237751946771,
+      "rvec": [
+        -0.024721361897616242,
+        -0.0975974233404282,
+        0.01135826925654376
+      ],
+      "tvec": [
+        0.14834973147344033,
+        -0.00478235418983286,
+        0.0030837416037514664
+      ]
+    },
+    {
+      "source": "eth3d_plant_000148",
+      "target": "eth3d_plant_000150",
+      "scene": "eth3d_val",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 116.77782785820688,
+      "rvec": [
+        -0.04339071513379177,
+        -0.04071345908291669,
+        -0.01101178746225877
+      ],
+      "tvec": [
+        0.15798415262739718,
+        -0.008684841884108674,
+        -0.028603384635886187
+      ]
+    },
+    {
+      "source": "eth3d_plant_000149",
+      "target": "eth3d_plant_000151",
+      "scene": "eth3d_val",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 132.41518518362736,
+      "rvec": [
+        -0.04522632199207395,
+        -0.02828422170918453,
+        -0.020452241034588894
+      ],
+      "tvec": [
+        0.1747226002128789,
+        -0.0013045182032227487,
+        -0.05205884804607197
+      ]
+    },
+    {
+      "source": "eth3d_plant_000150",
+      "target": "eth3d_plant_000152",
+      "scene": "eth3d_val",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 142.9501500356054,
+      "rvec": [
+        -0.03448853010303642,
+        -0.0238845319720327,
+        -0.02057673995018848
+      ],
+      "tvec": [
+        0.18580768259070024,
+        0.01519063777992291,
+        -0.06311964092141786
+      ]
+    },
+    {
+      "source": "eth3d_plant_000151",
+      "target": "eth3d_plant_000153",
+      "scene": "eth3d_val",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 142.20621679231186,
+      "rvec": [
+        -0.016109644946677253,
+        -0.001084269345007436,
+        -0.02533022406282109
+      ],
+      "tvec": [
+        0.18223646935589144,
+        0.022666550517620232,
+        -0.0679210947966098
+      ]
+    },
+    {
+      "source": "eth3d_plant_000152",
+      "target": "eth3d_plant_000154",
+      "scene": "eth3d_val",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 136.49472254690187,
+      "rvec": [
+        0.002674131785737512,
+        -0.03597339441117835,
+        0.0011130886513783715
+      ],
+      "tvec": [
+        0.17640018498525956,
+        0.020684409700678863,
+        -0.06143811862125359
+      ]
+    },
+    {
+      "source": "eth3d_plant_000153",
+      "target": "eth3d_plant_000155",
+      "scene": "eth3d_val",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 135.51369182215404,
+      "rvec": [
+        0.00018352580309623613,
+        -0.06310149941175872,
+        0.005151540845757034
+      ],
+      "tvec": [
+        0.17818385243593038,
+        0.005378455262227799,
+        -0.05509282121983983
+      ]
+    },
+    {
+      "source": "eth3d_plant_000154",
+      "target": "eth3d_plant_000156",
+      "scene": "eth3d_val",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 135.77805792644213,
+      "rvec": [
+        -0.009465086624134261,
+        -0.042846600144294034,
+        -0.02750332418494464
+      ],
+      "tvec": [
+        0.18239051379194837,
+        -0.00611123093511412,
+        -0.04057030656794547
+      ]
+    },
+    {
+      "source": "eth3d_plant_000155",
+      "target": "eth3d_plant_000157",
+      "scene": "eth3d_val",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 126.02172868437844,
+      "rvec": [
+        -0.003563213164151474,
+        -0.088575520072179,
+        -0.03542100442224285
+      ],
+      "tvec": [
+        0.17290861331087126,
+        0.0004167960459662279,
+        -0.014487195751692328
+      ]
+    },
+    {
+      "source": "eth3d_plant_000156",
+      "target": "eth3d_plant_000158",
+      "scene": "eth3d_val",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 113.016938759461,
+      "rvec": [
+        -0.0111497598360643,
+        -0.10892283668409172,
+        -0.025123350032346572
+      ],
+      "tvec": [
+        0.1549387041972401,
+        0.010031345153717952,
+        -0.010371421723634588
+      ]
+    },
+    {
+      "source": "eth3d_plant_000157",
+      "target": "eth3d_plant_000159",
+      "scene": "eth3d_val",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 113.94399830623449,
+      "rvec": [
+        -0.023119479127183613,
+        -0.05171764023439177,
+        -0.028846107854999727
+      ],
+      "tvec": [
+        0.15259256430078905,
+        0.010203372146031287,
+        -0.03499251860902208
+      ]
+    },
+    {
+      "source": "eth3d_plant_000160",
+      "target": "eth3d_plant_000162",
+      "scene": "eth3d_test",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 152.87528548078265,
+      "rvec": [
+        -0.011283605005281937,
+        -0.006394711338305101,
+        -0.023401544966934792
+      ],
+      "tvec": [
+        0.16688718883915762,
+        0.015996333849084277,
+        -0.12727243745144934
+      ]
+    },
+    {
+      "source": "eth3d_plant_000161",
+      "target": "eth3d_plant_000163",
+      "scene": "eth3d_test",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 143.0209921945327,
+      "rvec": [
+        0.03878185805235355,
+        0.006935658950675714,
+        -0.024208278448577526
+      ],
+      "tvec": [
+        0.15125985085336796,
+        0.022593577517400654,
+        -0.1240473016436332
+      ]
+    },
+    {
+      "source": "eth3d_plant_000162",
+      "target": "eth3d_plant_000164",
+      "scene": "eth3d_test",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 127.01039973630095,
+      "rvec": [
+        0.05047497457753277,
+        -0.0077277275187753285,
+        -0.00375590540281778
+      ],
+      "tvec": [
+        0.14053371682704538,
+        0.014707831740069954,
+        -0.10303226995686288
+      ]
+    },
+    {
+      "source": "eth3d_plant_000163",
+      "target": "eth3d_plant_000165",
+      "scene": "eth3d_test",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 111.78051792731024,
+      "rvec": [
+        0.01021601306401963,
+        -0.06748637523429035,
+        -0.007279856705783516
+      ],
+      "tvec": [
+        0.139779833557014,
+        -0.0011907919719200688,
+        -0.06440078668477778
+      ]
+    },
+    {
+      "source": "eth3d_plant_000164",
+      "target": "eth3d_plant_000166",
+      "scene": "eth3d_test",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 110.97583194434905,
+      "rvec": [
+        -0.024187010795181207,
+        -0.06488772359748746,
+        -0.020071494784887782
+      ],
+      "tvec": [
+        0.1491346411863703,
+        -0.00867605570611385,
+        -0.03211002042201261
+      ]
+    },
+    {
+      "source": "eth3d_plant_000165",
+      "target": "eth3d_plant_000167",
+      "scene": "eth3d_test",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 120.53179433053322,
+      "rvec": [
+        -0.04787557727960911,
+        -0.06679367394291194,
+        -0.029173653164067333
+      ],
+      "tvec": [
+        0.16591288846992916,
+        -0.0032210637917642337,
+        -0.0019878583530736904
+      ]
+    },
+    {
+      "source": "eth3d_plant_000166",
+      "target": "eth3d_plant_000168",
+      "scene": "eth3d_test",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 129.29467164199892,
+      "rvec": [
+        -0.04587449000954813,
+        -0.09063082399665959,
+        -0.015910455960781878
+      ],
+      "tvec": [
+        0.1775445582822613,
+        0.011581808349167,
+        0.005949505720295845
+      ]
+    },
+    {
+      "source": "eth3d_plant_000167",
+      "target": "eth3d_plant_000169",
+      "scene": "eth3d_test",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 128.72095021750874,
+      "rvec": [
+        -0.02167532253780446,
+        -0.0632830620724349,
+        0.012294246857386067
+      ],
+      "tvec": [
+        0.1756657261462824,
+        0.015541310239481687,
+        -0.01763513614208123
+      ]
+    },
+    {
+      "source": "eth3d_plant_000168",
+      "target": "eth3d_plant_000170",
+      "scene": "eth3d_test",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 126.74409688147601,
+      "rvec": [
+        -0.034128643668927205,
+        -0.02239192152662677,
+        0.016379797551266388
+      ],
+      "tvec": [
+        0.16752839257188162,
+        0.0054577951653254075,
+        -0.04855963115955331
+      ]
+    },
+    {
+      "source": "eth3d_plant_000169",
+      "target": "eth3d_plant_000171",
+      "scene": "eth3d_test",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 134.53077369908942,
+      "rvec": [
+        -0.033411192902867794,
+        -0.01099387633004538,
+        -0.0034302564941147127
+      ],
+      "tvec": [
+        0.16865013134109502,
+        0.005376137068592746,
+        -0.07641117833830902
+      ]
+    },
+    {
+      "source": "eth3d_plant_000170",
+      "target": "eth3d_plant_000172",
+      "scene": "eth3d_test",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 144.47662341674143,
+      "rvec": [
+        -0.023675949047810542,
+        -0.02284977331350558,
+        -0.030856632122486873
+      ],
+      "tvec": [
+        0.1701075589430414,
+        0.010379454869976046,
+        -0.10260013378488364
+      ]
+    },
+    {
+      "source": "eth3d_plant_000171",
+      "target": "eth3d_plant_000173",
+      "scene": "eth3d_test",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 141.90230309592712,
+      "rvec": [
+        -0.017628181454279097,
+        -0.02790625418557124,
+        -0.03928953877136925
+      ],
+      "tvec": [
+        0.1594976366526053,
+        0.016158878599464854,
+        -0.11168206967465699
+      ]
+    },
+    {
+      "source": "eth3d_plant_000172",
+      "target": "eth3d_plant_000174",
+      "scene": "eth3d_test",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 129.71769481427242,
+      "rvec": [
+        0.009756043899079693,
+        -0.03410251503761885,
+        -0.00011393329125300236
+      ],
+      "tvec": [
+        0.14873598321379117,
+        0.01738912756580091,
+        -0.0973372770950125
+      ]
+    },
+    {
+      "source": "eth3d_plant_000173",
+      "target": "eth3d_plant_000175",
+      "scene": "eth3d_test",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 124.52781839767772,
+      "rvec": [
+        0.00892440165234607,
+        -0.05260840522626575,
+        0.029966013374300753
+      ],
+      "tvec": [
+        0.15667554900951236,
+        -0.0009442186723733759,
+        -0.06964009127340454
+      ]
+    },
+    {
+      "source": "eth3d_plant_000174",
+      "target": "eth3d_plant_000176",
+      "scene": "eth3d_test",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 134.00480403486966,
+      "rvec": [
+        -0.00039494433152352455,
+        -0.05782766086725446,
+        0.026488270271701635
+      ],
+      "tvec": [
+        0.17816879024380738,
+        -0.01863426622923292,
+        -0.044173795947738514
+      ]
+    },
+    {
+      "source": "eth3d_plant_000175",
+      "target": "eth3d_plant_000177",
+      "scene": "eth3d_test",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 135.2575191747144,
+      "rvec": [
+        0.009777675260536446,
+        -0.08484908411160216,
+        0.014664652975451869
+      ],
+      "tvec": [
+        0.18491847295866093,
+        -0.016842525655777818,
+        -0.0142696169410792
+      ]
+    },
+    {
+      "source": "eth3d_plant_000176",
+      "target": "eth3d_plant_000178",
+      "scene": "eth3d_test",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 121.23088940783407,
+      "rvec": [
+        -0.005008221327336046,
+        -0.10459534727128701,
+        0.01769240405318867
+      ],
+      "tvec": [
+        0.16670892777068202,
+        0.008203499514031876,
+        0.0016313134391717776
+      ]
+    },
+    {
+      "source": "eth3d_plant_000177",
+      "target": "eth3d_plant_000179",
+      "scene": "eth3d_test",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 108.43042346225396,
+      "rvec": [
+        -0.01765997717889065,
+        -0.05596082062872056,
+        0.028267503770687236
+      ],
+      "tvec": [
+        0.14585312508511283,
+        0.03072662204673615,
+        -0.008453921431250233
+      ]
+    },
+    {
+      "source": "eth3d_plant_000178",
+      "target": "eth3d_plant_000180",
+      "scene": "eth3d_test",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 98.44292841673969,
+      "rvec": [
+        -0.002352835658715418,
+        0.003605612762406123,
+        0.013973028470595127
+      ],
+      "tvec": [
+        0.1262262738580121,
+        0.028579310484879716,
+        -0.040273618375798126
+      ]
+    },
+    {
+      "source": "eth3d_plant_000179",
+      "target": "eth3d_plant_000181",
+      "scene": "eth3d_test",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 85.42099777803496,
+      "rvec": [
+        0.004390358713329469,
+        -0.003989878790455801,
+        -0.009074213520710899
+      ],
+      "tvec": [
+        0.09450944383323812,
+        0.003266569687594645,
+        -0.06992970345892036
+      ]
+    },
+    {
+      "source": "eth3d_plant_000180",
+      "target": "eth3d_plant_000182",
+      "scene": "eth3d_test",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 88.83726694366709,
+      "rvec": [
+        0.04223476155200224,
+        -0.02882910430740245,
+        -0.02322799492044577
+      ],
+      "tvec": [
+        0.06725228520032056,
+        -0.025428404013120298,
+        -0.09895435886519532
+      ]
+    },
+    {
+      "source": "eth3d_plant_000181",
+      "target": "eth3d_plant_000183",
+      "scene": "eth3d_test",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 96.48872020685884,
+      "rvec": [
+        0.09781576509268582,
+        0.0020658461040269317,
+        -0.02506916896273163
+      ],
+      "tvec": [
+        0.04959961293725412,
+        -0.04625831609136721,
+        -0.1142352641237857
+      ]
+    },
+    {
+      "source": "eth3d_plant_000182",
+      "target": "eth3d_plant_000184",
+      "scene": "eth3d_test",
+      "ok": true,
+      "inliers": 999,
+      "inlier_ratio": 1.0,
+      "median_reprojection_px": 0.0,
+      "dense_projected_displacement_px_median": 86.09157583314021,
+      "rvec": [
+        0.14379243251047993,
+        -0.038322866364399764,
+        -0.0016424706654531941
+      ],
+      "tvec": [
+        0.04144415220868081,
+        -0.05619162193633187,
+        -0.09579033764682565
+      ]
+    }
+  ],
+  "pose_source": "groundtruth.txt",
+  "split_protocol": "scene labels assigned by temporal segment"
+}
