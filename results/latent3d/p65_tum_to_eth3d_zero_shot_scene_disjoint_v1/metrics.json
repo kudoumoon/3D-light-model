@@ -1,0 +1,313 @@
+{
+  "schema_version": 1,
+  "stage": "scene-disjoint estimated-pose latent-reprojection fine-tuning",
+  "created_at": "2026-09-04T13:47:50.853985+00:00",
+  "repository": {
+    "commit": "2b3e0a0bb78d0ddab9ed423ca214c3c8c96a3281",
+    "dirty": true,
+    "status": "?? docs/GEOSPARSE_GOAL.md\n?? docs/GEOSPARSE_REPORT.md\n?? docs/SPECULATIVE_EXECUTION_GOAL.md\n?? docs/SPECULATIVE_EXECUTION_REPORT.md\n?? geosparse/\n?? results/recorded/geosparse/\n?? results/recorded/m1_v11_completion_pack/gpu_queue.pid\n?? results/recorded/m1_v11_completion_pack/logs/\n?? speculative_execution/\n?? tests/test_geosparse.py\n?? tests/test_speculative_statistics.py\n?? tools/decode_geosparse_token_candidates.py\n?? tools/evaluate_geosparse_geometry_oracle.py\n?? tools/evaluate_geosparse_hybrid_quality.py\n?? tools/evaluate_geosparse_hybrid_state.py\n?? tools/evaluate_geosparse_token_oracle.py\n?? tools/evaluate_matrix_game2_state_contamination.py\n?? tools/evaluate_speculative_causal_router.py\n?? tools/evaluate_speculative_oracle_candidates.py\n?? tools/evaluate_tum_topk_confidence_gating.py\n?? tools/extract_geosparse_geometry.py\n?? tools/extract_matrix_game2_gta_panels.py\n?? tools/finalize_geosparse_p2.py\n?? tools/finalize_geosparse_p3.py\n?? tools/generate_geosparse_rollouts.py\n?? tools/profile_geosparse_baseline.py\n?? tools/profile_matrix_game2.py\n?? tools/profile_matrix_game2_rgb_vae_encode.py\n?? tools/run_geosparse_gpu1_queue.sh\n?? tools/run_geosparse_p2_queue.sh\n?? tools/run_geosparse_p3_queue.sh"
+  },
+  "config": {
+    "cache": "results/latent3d/eth3d_plant_scene_1_cache_v2.pt",
+    "pairs": "data/eth3d_student_plant_scene_1_v2/pairs.json",
+    "init_checkpoint": "results/latent3d/p43_tum_real_gt_pose_transport_student_v1/checkpoint.pt",
+    "output": "results/latent3d/p65_tum_to_eth3d_zero_shot_scene_disjoint_v1",
+    "epochs": 0,
+    "batch_size": 8,
+    "learning_rate": 0.0002,
+    "seed": 7,
+    "warp_weight": 1.0,
+    "warp_mode": "l1",
+    "geometry_weight": 1.0,
+    "edge_weight": 0.2,
+    "min_inliers": 200,
+    "min_inlier_ratio": 0.6,
+    "max_median_reprojection_px": 1.5,
+    "hard_motion_px": 4.0,
+    "validation_scenes": [
+      "eth3d_val"
+    ],
+    "holdout_scenes": [
+      "eth3d_test"
+    ]
+  },
+  "data": {
+    "train_pairs": 111,
+    "validation_pairs": 24,
+    "test_pairs": 23,
+    "validation_scenes": [
+      "eth3d_val"
+    ],
+    "test_scenes": [
+      "eth3d_test"
+    ],
+    "pose_status": "MoGe-point-assisted SIFT + PnP-RANSAC; not ground truth"
+  },
+  "selection": {
+    "metric": "validation pair warp_l1",
+    "best_epoch": 0,
+    "initial_validation_warp_l1": 0.15690770527968803,
+    "best_validation_warp_l1": 0.15690770527968803
+  },
+  "history": [],
+  "test_pairs": {
+    "all": {
+      "motion_px": 120.88325600002123,
+      "abs_rel": 0.36798242058442987,
+      "warp_l1": 0.1596139319564985,
+      "copy_l1": 0.16544442656247513,
+      "warp_cosine": 0.9078102837438169,
+      "copy_cosine": 0.8946298308994459,
+      "coverage": 0.5142662849115289,
+      "count": 23,
+      "warp_win_rate_l1": 0.6086956521739131
+    },
+    "hard_motion": {
+      "motion_px": 120.88325600002123,
+      "abs_rel": 0.36798242058442987,
+      "warp_l1": 0.1596139319564985,
+      "copy_l1": 0.16544442656247513,
+      "warp_cosine": 0.9078102837438169,
+      "copy_cosine": 0.8946298308994459,
+      "coverage": 0.5142662849115289,
+      "count": 23,
+      "warp_win_rate_l1": 0.6086956521739131
+    },
+    "rows": [
+      {
+        "motion_px": 152.8752899169922,
+        "abs_rel": 0.4230806231498718,
+        "warp_l1": 0.18858343362808228,
+        "copy_l1": 0.17170454561710358,
+        "warp_cosine": 0.871167778968811,
+        "copy_cosine": 0.8815830945968628,
+        "coverage": 0.48721590638160706
+      },
+      {
+        "motion_px": 143.02099609375,
+        "abs_rel": 0.38995668292045593,
+        "warp_l1": 0.16406431794166565,
+        "copy_l1": 0.15407690405845642,
+        "warp_cosine": 0.9018394351005554,
+        "copy_cosine": 0.8927102088928223,
+        "coverage": 0.47159090638160706
+      },
+      {
+        "motion_px": 127.0103988647461,
+        "abs_rel": 0.39762312173843384,
+        "warp_l1": 0.15354135632514954,
+        "copy_l1": 0.1813705563545227,
+        "warp_cosine": 0.9138479232788086,
+        "copy_cosine": 0.868272602558136,
+        "coverage": 0.5150567889213562
+      },
+      {
+        "motion_px": 111.780517578125,
+        "abs_rel": 0.3888038992881775,
+        "warp_l1": 0.13697923719882965,
+        "copy_l1": 0.12755867838859558,
+        "warp_cosine": 0.9298259615898132,
+        "copy_cosine": 0.9332014918327332,
+        "coverage": 0.5588067770004272
+      },
+      {
+        "motion_px": 110.975830078125,
+        "abs_rel": 0.36249813437461853,
+        "warp_l1": 0.14331388473510742,
+        "copy_l1": 0.14408738911151886,
+        "warp_cosine": 0.924447774887085,
+        "copy_cosine": 0.9210684299468994,
+        "coverage": 0.49687498807907104
+      },
+      {
+        "motion_px": 120.53179168701172,
+        "abs_rel": 0.3878229558467865,
+        "warp_l1": 0.15948598086833954,
+        "copy_l1": 0.17560018599033356,
+        "warp_cosine": 0.9046504497528076,
+        "copy_cosine": 0.8781521320343018,
+        "coverage": 0.49176135659217834
+      },
+      {
+        "motion_px": 129.294677734375,
+        "abs_rel": 0.39371782541275024,
+        "warp_l1": 0.169854536652565,
+        "copy_l1": 0.176092728972435,
+        "warp_cosine": 0.8912469744682312,
+        "copy_cosine": 0.8807191848754883,
+        "coverage": 0.45965906977653503
+      },
+      {
+        "motion_px": 128.720947265625,
+        "abs_rel": 0.42305484414100647,
+        "warp_l1": 0.16059380769729614,
+        "copy_l1": 0.16174311935901642,
+        "warp_cosine": 0.899363100528717,
+        "copy_cosine": 0.8922423124313354,
+        "coverage": 0.519318163394928
+      },
+      {
+        "motion_px": 126.74409484863281,
+        "abs_rel": 0.4268779754638672,
+        "warp_l1": 0.16187991201877594,
+        "copy_l1": 0.17709815502166748,
+        "warp_cosine": 0.9026839137077332,
+        "copy_cosine": 0.8734850883483887,
+        "coverage": 0.48607954382896423
+      },
+      {
+        "motion_px": 134.53077697753906,
+        "abs_rel": 0.4385982155799866,
+        "warp_l1": 0.17093688249588013,
+        "copy_l1": 0.1803547739982605,
+        "warp_cosine": 0.8937344551086426,
+        "copy_cosine": 0.8696585297584534,
+        "coverage": 0.4886363446712494
+      },
+      {
+        "motion_px": 144.47662353515625,
+        "abs_rel": 0.440244197845459,
+        "warp_l1": 0.1682007610797882,
+        "copy_l1": 0.15943056344985962,
+        "warp_cosine": 0.8972322940826416,
+        "copy_cosine": 0.8946773409843445,
+        "coverage": 0.4931817948818207
+      },
+      {
+        "motion_px": 141.9022979736328,
+        "abs_rel": 0.47554174065589905,
+        "warp_l1": 0.17237888276576996,
+        "copy_l1": 0.15945225954055786,
+        "warp_cosine": 0.8920567631721497,
+        "copy_cosine": 0.8966559171676636,
+        "coverage": 0.5409090518951416
+      },
+      {
+        "motion_px": 129.7176971435547,
+        "abs_rel": 0.4701586961746216,
+        "warp_l1": 0.17081475257873535,
+        "copy_l1": 0.13706953823566437,
+        "warp_cosine": 0.8932484984397888,
+        "copy_cosine": 0.9237272143363953,
+        "coverage": 0.5147727131843567
+      },
+      {
+        "motion_px": 124.52781677246094,
+        "abs_rel": 0.4448034167289734,
+        "warp_l1": 0.16034120321273804,
+        "copy_l1": 0.13763968646526337,
+        "warp_cosine": 0.9017087817192078,
+        "copy_cosine": 0.9265850782394409,
+        "coverage": 0.5252840518951416
+      },
+      {
+        "motion_px": 134.0048065185547,
+        "abs_rel": 0.4245169460773468,
+        "warp_l1": 0.16883529722690582,
+        "copy_l1": 0.14457935094833374,
+        "warp_cosine": 0.8963280320167542,
+        "copy_cosine": 0.9228067994117737,
+        "coverage": 0.5440340638160706
+      },
+      {
+        "motion_px": 135.2575225830078,
+        "abs_rel": 0.3959502577781677,
+        "warp_l1": 0.1604711413383484,
+        "copy_l1": 0.1639852076768875,
+        "warp_cosine": 0.908218264579773,
+        "copy_cosine": 0.9005013704299927,
+        "coverage": 0.578125
+      },
+      {
+        "motion_px": 121.23088836669922,
+        "abs_rel": 0.36297231912612915,
+        "warp_l1": 0.16174012422561646,
+        "copy_l1": 0.15364286303520203,
+        "warp_cosine": 0.9082245826721191,
+        "copy_cosine": 0.9168387651443481,
+        "coverage": 0.5596590638160706
+      },
+      {
+        "motion_px": 108.430419921875,
+        "abs_rel": 0.3225466310977936,
+        "warp_l1": 0.16065773367881775,
+        "copy_l1": 0.1731288582086563,
+        "warp_cosine": 0.9074175953865051,
+        "copy_cosine": 0.889485239982605,
+        "coverage": 0.5448863506317139
+      },
+      {
+        "motion_px": 98.44293212890625,
+        "abs_rel": 0.29867151379585266,
+        "warp_l1": 0.15833817422389984,
+        "copy_l1": 0.17909935116767883,
+        "warp_cosine": 0.9160693287849426,
+        "copy_cosine": 0.8856036067008972,
+        "coverage": 0.5650568008422852
+      },
+      {
+        "motion_px": 85.4209976196289,
+        "abs_rel": 0.2568173408508301,
+        "warp_l1": 0.15195010602474213,
+        "copy_l1": 0.16959698498249054,
+        "warp_cosine": 0.9240633845329285,
+        "copy_cosine": 0.9021759033203125,
+        "coverage": 0.648011326789856
+      },
+      {
+        "motion_px": 88.83726501464844,
+        "abs_rel": 0.20442315936088562,
+        "warp_l1": 0.13573582470417023,
+        "copy_l1": 0.17206096649169922,
+        "warp_cosine": 0.9369121789932251,
+        "copy_cosine": 0.8994654417037964,
+        "coverage": 0.5275567770004272
+      },
+      {
+        "motion_px": 96.48872375488281,
+        "abs_rel": 0.16099406778812408,
+        "warp_l1": 0.14461027085781097,
+        "copy_l1": 0.1929781585931778,
+        "warp_cosine": 0.9348786473274231,
+        "copy_cosine": 0.8821093440055847,
+        "coverage": 0.44090908765792847
+      },
+      {
+        "motion_px": 86.0915756225586,
+        "abs_rel": 0.1739211082458496,
+        "warp_l1": 0.14781281352043152,
+        "copy_l1": 0.2128709852695465,
+        "warp_cosine": 0.9304704070091248,
+        "copy_cosine": 0.8447610139846802,
+        "coverage": 0.3707386255264282
+      }
+    ]
+  },
+  "test_geometry": {
+    "abs_rel": 0.3295992836356163,
+    "log_rmse": 0.6611479073762894,
+    "delta1": 0.4417576491832733,
+    "projection_l1": 0.0061133288545534015,
+    "occupancy_l1": 0.10239429213106632,
+    "valid_iou": 0.4116380661725998
+  },
+  "runtime": {
+    "seconds": 0.6723567669978365,
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "peak_allocated_bytes": 70001152
+  },
+  "artifacts": {
+    "cache_sha256": "2801770fc9d38ce976a6f1860eb7a804e6ca7b7af5221f96761775a6d34c3b66",
+    "init_checkpoint_sha256": "5928f96b8fa5fe445e27f2783323e3149fae60e355e3a9155e2ade34c80e5063",
+    "pairs_sha256": "4c252d7c33f76b361d5fe4c1dcabeb883f523e40777f83096db6e2d62138c50c"
+  },
+  "output_contract": {
+    "depth": "[B,1,H_l,W_l]",
+    "points": "[B,3,H_l,W_l]",
+    "valid": "[B,1,H_l,W_l]",
+    "confidence": "[B,1,H_l,W_l] after frozen-geometry confidence head",
+    "intrinsics": "[B,3,3]",
+    "shape_changed": false
+  },
+  "evidence_boundary": "Mechanism evidence on Matrix-Game generated frames with estimated poses; not real-data, GT-pose, or cross-VAE generalization evidence."
+}
