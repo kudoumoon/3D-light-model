@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "stage": "M1 incremental head benchmark",
+  "created_at": "2026-09-04T07:55:20.491055+00:00",
+  "repository": {
+    "commit": "8bfeba4b92dce896fe79fd367f9b4faa95e6ebd4",
+    "dirty": true
+  },
+  "config": {
+    "output": "results/latent3d/p55_m1_latency_h100_gpu4_b1_44x80_v1/latency.json",
+    "device": "cuda",
+    "dtype": "bfloat16",
+    "batch_size": 1,
+    "height": 44,
+    "width": 80,
+    "warmup": 50,
+    "repeats": 300,
+    "seed": 20260901
+  },
+  "parameters": {
+    "geometry_head": 231746,
+    "motion_confidence_head": 31441,
+    "complete_m1_incremental": 263187
+  },
+  "runtime": {
+    "device": "cuda",
+    "dtype": "torch.bfloat16",
+    "python": "3.10.20",
+    "torch": "2.5.1+cu121",
+    "cpu_threads": 1,
+    "peak_allocated_bytes": 3472384,
+    "gpu": {
+      "name": "NVIDIA H100 80GB HBM3",
+      "total_memory_bytes": 85019328512,
+      "capability": [
+        9,
+        0
+      ]
+    }
+  },
+  "latency": {
+    "geometry_head": {
+      "mean_ms": 0.6843894866666667,
+      "median_ms": 0.6712279999999999,
+      "p95_ms": 0.738482,
+      "min_ms": 0.65351,
+      "max_ms": 0.824183
+    },
+    "motion_confidence_head": {
+      "mean_ms": 0.19014943666666667,
+      "median_ms": 0.189026,
+      "p95_ms": 0.195954,
+      "min_ms": 0.184291,
+      "max_ms": 0.234136
+    },
+    "complete_m1_incremental": {
+      "mean_ms": 0.8856971666666668,
+      "median_ms": 0.8710655,
+      "p95_ms": 0.960612,
+      "min_ms": 0.842202,
+      "max_ms": 1.093867
+    }
+  },
+  "interpretation": "CPU numbers are diagnostic only; paper latency requires an idle H100 and the same protocol."
+}

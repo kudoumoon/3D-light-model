@@ -1,0 +1,33 @@
+{
+  "stage": "latent forward-splat renderer profile",
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "physical_gpu_index": 6,
+  "dtype": "mixed bf16 input/fp32 scatter",
+  "results": {
+    "1": {
+      "shape": [
+        1,
+        16,
+        44,
+        80
+      ],
+      "mean_ms": 1.187674324028194,
+      "p50_ms": 1.1863070540130138,
+      "p95_ms": 1.215977012179792,
+      "coverage": 0.9835227131843567
+    },
+    "4": {
+      "shape": [
+        4,
+        16,
+        44,
+        80
+      ],
+      "mean_ms": 1.1889253719709814,
+      "p50_ms": 1.1836449848487973,
+      "p95_ms": 1.2368179159238935,
+      "coverage": 0.9828124642372131
+    }
+  },
+  "note": "synthetic aligned geometry; measures renderer only"
+}
