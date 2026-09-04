@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "stage": "M1 to M2 latency, memory, batch and chunk benchmark",
+  "m2_commit": "49fc1bb804a9c166170dc5fda126e2ac7377870d",
+  "m2_dirty_after": false,
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "dtype": "bfloat16",
+  "latent_shape": "[B,16,T,44,80]",
+  "geometry_checkpoint": "results/latent3d/p43_tum_real_gt_pose_transport_student_v1/checkpoint.pt",
+  "confidence_checkpoint": "results/latent3d/p50_tum_transport_safe_confidence_v1/checkpoint.pt",
+  "batch_rows": [
+    {
+      "batch": 1,
+      "m1_geometry": {
+        "mean_ms": 0.9192050201818347,
+        "p50_ms": 0.9149280376732349,
+        "p95_ms": 0.9558268706314266
+      },
+      "m1_confidence": {
+        "mean_ms": 1.1865154770202935,
+        "p50_ms": 1.1842360254377127,
+        "p95_ms": 1.2142566207330674
+      },
+      "m1_complete": {
+        "mean_ms": 1.2068030168302357,
+        "p50_ms": 1.1987269390374422,
+        "p95_ms": 1.2514349829871207
+      },
+      "bridge_export": {
+        "mean_ms": 0.22415754618123174,
+        "p50_ms": 0.222954957280308,
+        "p95_ms": 0.23100742837414145
+      },
+      "m2_candidate_renderer": {
+        "mean_ms": 2.8452877793461084,
+        "p50_ms": 2.8360370197333395,
+        "p95_ms": 2.8821701474953443
+      },
+      "peak_allocated_mib": 22.16943359375,
+      "peak_reserved_mib": 24.0
+    },
+    {
+      "batch": 4,
+      "m1_geometry": {
+        "mean_ms": 0.9754667710512877,
+        "p50_ms": 0.9718814981169999,
+        "p95_ms": 0.9991707745939493
+      },
+      "m1_confidence": {
+        "mean_ms": 1.2602205201983452,
+        "p50_ms": 1.2542090262286365,
+        "p95_ms": 1.2916541483718902
+      },
+      "m1_complete": {
+        "mean_ms": 1.302183293737471,
+        "p50_ms": 1.2634064769372344,
+        "p95_ms": 1.5029792906716466
+      },
+      "bridge_export": {
+        "mean_ms": 0.6976273329928517,
+        "p50_ms": 0.6975459982641041,
+        "p95_ms": 0.7055601105093956
+      },
+      "m2_candidate_renderer": {
+        "mean_ms": 12.624342164490372,
+        "p50_ms": 12.546528538223356,
+        "p95_ms": 12.988666765158996
+      },
+      "peak_allocated_mib": 97.375,
+      "peak_reserved_mib": 124.0
+    }
+  ],
+  "chunk_rows": [
+    {
+      "chunk_frames": 1,
+      "m1_per_chunk": {
+        "mean_ms": 0.9317673463374376,
+        "p50_ms": 0.9267934947274625,
+        "p95_ms": 0.9702578245196491
+      },
+      "m1_m2_bridge_per_chunk": {
+        "mean_ms": 1.3258413528092206,
+        "p50_ms": 1.3246290036477149,
+        "p95_ms": 1.357570494292304
+      },
+      "peak_allocated_mib": 62.40283203125,
+      "peak_reserved_mib": 124.0
+    },
+    {
+      "chunk_frames": 3,
+      "m1_per_chunk": {
+        "mean_ms": 2.770127772819251,
+        "p50_ms": 2.7727035339921713,
+        "p95_ms": 2.819807780906558
+      },
+      "m1_m2_bridge_per_chunk": {
+        "mean_ms": 3.5841982858255506,
+        "p50_ms": 3.5795459989458323,
+        "p95_ms": 3.6508496792521328
+      },
+      "peak_allocated_mib": 79.92626953125,
+      "peak_reserved_mib": 144.0
+    },
+    {
+      "chunk_frames": 5,
+      "m1_per_chunk": {
+        "mean_ms": 4.547627633437514,
+        "p50_ms": 4.554584447760135,
+        "p95_ms": 4.606703546596691
+      },
+      "m1_m2_bridge_per_chunk": {
+        "mean_ms": 5.712608420290053,
+        "p50_ms": 5.7095985393971205,
+        "p95_ms": 5.75711855199188
+      },
+      "peak_allocated_mib": 97.44970703125,
+      "peak_reserved_mib": 164.0
+    }
+  ],
+  "scope": "M1 and existing M2 candidate/renderer interface; excludes Frozen VAE, DiT and causal video rollout"
+}
