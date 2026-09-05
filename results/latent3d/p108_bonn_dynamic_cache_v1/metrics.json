@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "stage": "Bonn dynamic RGB-D frozen-VAE zero-shot evaluation cache",
+  "created_at": "2026-09-05T11:33:45.248335+00:00",
+  "repository_commit": "0e546777b9789b11e25628f8c33e025177261d61",
+  "config": {
+    "sequence_roots": [
+      "data/bonn/rgbd_bonn_balloon",
+      "data/bonn/rgbd_bonn_balloon2",
+      "data/bonn/rgbd_bonn_person_tracking"
+    ],
+    "scenes": [
+      "balloon",
+      "balloon2",
+      "person_tracking"
+    ],
+    "frame_stride": 4,
+    "pair_deltas_on_sampled_frames": [
+      1,
+      2,
+      4
+    ],
+    "pair_stride": 1,
+    "max_time_offset": 0.03,
+    "rgb_shape": [
+      3,
+      1,
+      352,
+      640
+    ],
+    "latent_shape": [
+      16,
+      44,
+      80
+    ],
+    "depth_scale": 5000.0,
+    "bonn_intrinsics": [
+      [
+        542.8228149414062,
+        0.0,
+        315.593505859375
+      ],
+      [
+        0.0,
+        542.5768432617188,
+        237.756103515625
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "geometry_alignment": "valid-aware median 8x8 pooling",
+    "split": "all test; no Bonn training, calibration, or adaptation"
+  },
+  "sequences": [
+    {
+      "scene": "balloon",
+      "synchronized_frames": 438,
+      "sampled_frames": 110,
+      "pairs": 323
+    },
+    {
+      "scene": "balloon2",
+      "synchronized_frames": 468,
+      "sampled_frames": 117,
+      "pairs": 344
+    },
+    {
+      "scene": "person_tracking",
+      "synchronized_frames": 580,
+      "sampled_frames": 145,
+      "pairs": 428
+    }
+  ],
+  "totals": {
+    "frames": 372,
+    "pairs": 1095
+  },
+  "vae": {
+    "checkpoint": "/root/wenbiao_zhao/minWM/ckpts/Wan2.1-T2V-1.3B/Wan2.1_VAE.pth",
+    "sha256": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+    "frozen": true
+  },
+  "runtime": {
+    "seconds": 14.915093577001244,
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "peak_allocated_bytes": 872218112
+  },
+  "evidence_boundary": "Dynamic sequence-level zero-shot benchmark; no dynamic-object segmentation mask."
+}

@@ -101,7 +101,7 @@ def close_micro_holes(
 def aggregate(rows: list[dict[str, float]]) -> dict[str, float]:
     if not rows:
         return {}
-    keys = rows[0].keys()
+    keys = [key for key, value in rows[0].items() if isinstance(value, (int, float))]
     return {key: float(np.nanmean([row[key] for row in rows])) for key in keys}
 
 
@@ -154,8 +154,24 @@ def main() -> None:
             args.depth_consistency_relative,
         )
         student_mask = student_pred_valid.projected_valid
+        if "dense_projected_displacement_px_median" in pair:
+            motion_px = float(pair["dense_projected_displacement_px_median"])
+        else:
+            translation = float(np.linalg.norm(np.asarray(pair["tvec"], dtype=np.float32)))
+            rotation, _ = cv2.Rodrigues(np.asarray(pair["rvec"], dtype=np.float32))
+            angle = float(np.arccos(np.clip((np.trace(rotation) - 1) / 2, -1.0, 1.0)))
+            median_depth = float(source_depth[source_valid.bool()].median().clamp_min(1e-3))
+            focal_px = float(intrinsics[0, 0, 0] * source_depth.shape[-1])
+            motion_px = focal_px * (translation / median_depth + angle)
         row = {
-            "motion_px": float(pair["dense_projected_displacement_px_median"]),
+            "scene": pair["scene"],
+            "source": pair["source"],
+            "target": pair["target"],
+            "frame_delta": abs(
+                int(str(pair["target"]).rsplit("_", 1)[1])
+                - int(str(pair["source"]).rsplit("_", 1)[1])
+            ),
+            "motion_px": motion_px,
             "source_depth_valid": float(source_valid.mean()),
             "target_depth_valid": float(target_valid.mean()),
             "target_in_source_fov": float(fov.float().mean()),
@@ -167,8 +183,16 @@ def main() -> None:
             "student_reconstructable_precision": overlap_ratio(student_mask, reconstructable, student_mask),
             "student_outside_fov_fraction": overlap_ratio(student_mask, ~fov, student_mask),
             "teacher_warp_l1": masked_l1(teacher.latent, target, teacher.projected_valid.float()),
+            "teacher_copy_l1_same_support": masked_l1(source, target, teacher.projected_valid.float()),
             "student_warp_l1": masked_l1(student_pred_valid.latent, target, student_pred_valid.projected_valid.float()),
+            "student_copy_l1_same_support": masked_l1(source, target, student_pred_valid.projected_valid.float()),
         }
+        row["teacher_warp_beats_copy"] = float(
+            row["teacher_warp_l1"] < row["teacher_copy_l1_same_support"]
+        )
+        row["student_warp_beats_copy"] = float(
+            row["student_warp_l1"] < row["student_copy_l1_same_support"]
+        )
         for minimum_neighbors in (1, 3, 5, 7):
             closed, closed_valid, added = close_micro_holes(
                 student_pred_valid.latent, student_mask, minimum_neighbors
@@ -197,6 +221,14 @@ def main() -> None:
         },
         "pair_count": len(rows),
         "aggregate": aggregate(rows),
+        "by_scene": {
+            scene: aggregate([row for row in rows if row["scene"] == scene])
+            for scene in sorted({row["scene"] for row in rows})
+        },
+        "by_frame_delta": {
+            str(delta): aggregate([row for row in rows if row["frame_delta"] == delta])
+            for delta in sorted({row["frame_delta"] for row in rows})
+        },
         "motion_groups": {
             "lt50": aggregate([row for row in rows if row["motion_px"] < 50]),
             "50to100": aggregate([row for row in rows if 50 <= row["motion_px"] < 100]),

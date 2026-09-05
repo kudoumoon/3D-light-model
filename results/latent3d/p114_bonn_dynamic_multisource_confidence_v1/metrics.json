@@ -1,0 +1,3121 @@
+{
+  "schema_version": 1,
+  "stage": "multi-source priority-fill reuse confidence",
+  "repository_commit": "0e546777b9789b11e25628f8c33e025177261d61",
+  "config": {
+    "cache": "results/latent3d/p108_bonn_dynamic_cache_v1/cache.pt",
+    "pairs": "results/latent3d/p108_bonn_dynamic_cache_v1/pairs.json",
+    "geometry": "results/latent3d/p72_p75_latent3d_completion_v1/checkpoint.pt",
+    "confidence": "results/latent3d/p105_joint_confidence_domain_balanced_v1/checkpoint.pt",
+    "output": "results/latent3d/p114_bonn_dynamic_multisource_confidence_v1",
+    "scenes": [
+      "bonn_balloon_test",
+      "bonn_balloon2_test",
+      "bonn_person_tracking_test"
+    ],
+    "compose_max_hops": 3,
+    "reuse_error_threshold": 0.2,
+    "probability": "raw BCE probability; no target-domain calibration"
+  },
+  "target_groups": 366,
+  "metrics": {
+    "auc": 0.7052569498040326,
+    "pr_auc": 0.6697467164408424,
+    "ece": 0.17391168630548698,
+    "brier": 0.24798107125573043,
+    "nll": 0.7369135989602208,
+    "positive_rate": 0.5136009854697701,
+    "mean_probability": 0.6875125169754028,
+    "bins": [
+      {
+        "lo": 0.0,
+        "hi": 0.06666666666666667,
+        "count": 107,
+        "confidence": 0.059486858546733856,
+        "accuracy": 0.018691588785046728
+      },
+      {
+        "lo": 0.06666666666666667,
+        "hi": 0.13333333333333333,
+        "count": 2713,
+        "confidence": 0.11072184890508652,
+        "accuracy": 0.0807224474751198
+      },
+      {
+        "lo": 0.13333333333333333,
+        "hi": 0.2,
+        "count": 14089,
+        "confidence": 0.1732962727546692,
+        "accuracy": 0.14294839946057208
+      },
+      {
+        "lo": 0.2,
+        "hi": 0.26666666666666666,
+        "count": 33021,
+        "confidence": 0.23643867671489716,
+        "accuracy": 0.17467672087459496
+      },
+      {
+        "lo": 0.26666666666666666,
+        "hi": 0.3333333333333333,
+        "count": 51052,
+        "confidence": 0.3016471266746521,
+        "accuracy": 0.20404685418788687
+      },
+      {
+        "lo": 0.3333333333333333,
+        "hi": 0.4,
+        "count": 62749,
+        "confidence": 0.3673855662345886,
+        "accuracy": 0.23554160225660967
+      },
+      {
+        "lo": 0.4,
+        "hi": 0.4666666666666667,
+        "count": 69436,
+        "confidence": 0.4338170289993286,
+        "accuracy": 0.2698600149778213
+      },
+      {
+        "lo": 0.4666666666666667,
+        "hi": 0.5333333333333333,
+        "count": 75465,
+        "confidence": 0.5003727078437805,
+        "accuracy": 0.3205857019810508
+      },
+      {
+        "lo": 0.5333333333333333,
+        "hi": 0.6,
+        "count": 82975,
+        "confidence": 0.5671216249465942,
+        "accuracy": 0.3806206688761675
+      },
+      {
+        "lo": 0.6,
+        "hi": 0.6666666666666666,
+        "count": 93285,
+        "confidence": 0.6341293454170227,
+        "accuracy": 0.4544031730717693
+      },
+      {
+        "lo": 0.6666666666666666,
+        "hi": 0.7333333333333333,
+        "count": 109007,
+        "confidence": 0.7008264064788818,
+        "accuracy": 0.5256818369462511
+      },
+      {
+        "lo": 0.7333333333333333,
+        "hi": 0.8,
+        "count": 132928,
+        "confidence": 0.768109142780304,
+        "accuracy": 0.5948709075589793
+      },
+      {
+        "lo": 0.8,
+        "hi": 0.8666666666666667,
+        "count": 179280,
+        "confidence": 0.8349829912185669,
+        "accuracy": 0.6778335564480142
+      },
+      {
+        "lo": 0.8666666666666667,
+        "hi": 0.9333333333333333,
+        "count": 195966,
+        "confidence": 0.898560106754303,
+        "accuracy": 0.7190839227212884
+      },
+      {
+        "lo": 0.9333333333333333,
+        "hi": 1.0,
+        "count": 109126,
+        "confidence": 0.9652157425880432,
+        "accuracy": 0.670371863717171
+      }
+    ]
+  },
+  "risk_coverage": [
+    {
+      "projected_kept_fraction": 0.1,
+      "kept_cells": 121119,
+      "precision": 0.6733130216598511,
+      "selected_l1": 0.19493387639522552,
+      "safe_coverage_full_grid": 0.06330026686191559,
+      "selected_coverage_full_grid": 0.09401313338301043
+    },
+    {
+      "projected_kept_fraction": 0.25,
+      "kept_cells": 302799,
+      "precision": 0.7015644311904907,
+      "selected_l1": 0.18515262007713318,
+      "safe_coverage_full_grid": 0.16489148139953613,
+      "selected_coverage_full_grid": 0.23503399776453054
+    },
+    {
+      "projected_kept_fraction": 0.5,
+      "kept_cells": 605599,
+      "precision": 0.6740764379501343,
+      "selected_l1": 0.19309361279010773,
+      "safe_coverage_full_grid": 0.3168622851371765,
+      "selected_coverage_full_grid": 0.47006877173373074
+    },
+    {
+      "projected_kept_fraction": 0.75,
+      "kept_cells": 908399,
+      "precision": 0.6032536625862122,
+      "selected_l1": 0.2088654339313507,
+      "safe_coverage_full_grid": 0.42535626888275146,
+      "selected_coverage_full_grid": 0.705103545702931
+    },
+    {
+      "projected_kept_fraction": 1.0,
+      "kept_cells": 1211199,
+      "precision": 0.5136010050773621,
+      "selected_l1": 0.2295829951763153,
+      "safe_coverage_full_grid": 0.48285597562789917,
+      "selected_coverage_full_grid": 0.9401383196721311
+    }
+  ],
+  "aggregate": {
+    "coverage": 0.9401382895115294,
+    "safe_coverage": 0.48285595124047964,
+    "l1": 0.23001790240081282
+  },
+  "rows": [
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000002",
+      "sources": 2,
+      "coverage": 0.9553977251052856,
+      "safe_coverage": 0.5025568008422852,
+      "l1": 0.21046975255012512
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000003",
+      "sources": 3,
+      "coverage": 0.9772726893424988,
+      "safe_coverage": 0.7744317650794983,
+      "l1": 0.14850834012031555
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000004",
+      "sources": 4,
+      "coverage": 0.9809658527374268,
+      "safe_coverage": 0.7465909123420715,
+      "l1": 0.16015933454036713
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000005",
+      "sources": 5,
+      "coverage": 0.9735795259475708,
+      "safe_coverage": 0.597443163394928,
+      "l1": 0.1872025430202484
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000006",
+      "sources": 6,
+      "coverage": 0.9434658885002136,
+      "safe_coverage": 0.4582386314868927,
+      "l1": 0.2257087677717209
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000007",
+      "sources": 7,
+      "coverage": 0.9775567650794983,
+      "safe_coverage": 0.5562499761581421,
+      "l1": 0.2019663006067276
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000008",
+      "sources": 8,
+      "coverage": 0.991761326789856,
+      "safe_coverage": 0.5519886016845703,
+      "l1": 0.20364712178707123
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000009",
+      "sources": 9,
+      "coverage": 0.9931817650794983,
+      "safe_coverage": 0.4312499761581421,
+      "l1": 0.24902522563934326
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000010",
+      "sources": 10,
+      "coverage": 0.9894886016845703,
+      "safe_coverage": 0.4051136374473572,
+      "l1": 0.25997689366340637
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000011",
+      "sources": 10,
+      "coverage": 0.9786931276321411,
+      "safe_coverage": 0.6312499642372131,
+      "l1": 0.18842332065105438
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000012",
+      "sources": 11,
+      "coverage": 0.9846590757369995,
+      "safe_coverage": 0.7789772748947144,
+      "l1": 0.15694864094257355
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000013",
+      "sources": 11,
+      "coverage": 0.9764204025268555,
+      "safe_coverage": 0.5244318246841431,
+      "l1": 0.21747015416622162
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000014",
+      "sources": 11,
+      "coverage": 0.9494317770004272,
+      "safe_coverage": 0.6380681395530701,
+      "l1": 0.18683449923992157
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000015",
+      "sources": 11,
+      "coverage": 0.9562499523162842,
+      "safe_coverage": 0.4622159004211426,
+      "l1": 0.23320792615413666
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000016",
+      "sources": 11,
+      "coverage": 0.9838067889213562,
+      "safe_coverage": 0.5051136016845703,
+      "l1": 0.22156313061714172
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000017",
+      "sources": 11,
+      "coverage": 0.9999999403953552,
+      "safe_coverage": 0.5718749761581421,
+      "l1": 0.20181284844875336
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000018",
+      "sources": 11,
+      "coverage": 0.9874999523162842,
+      "safe_coverage": 0.46505680680274963,
+      "l1": 0.23197400569915771
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000019",
+      "sources": 11,
+      "coverage": 0.9894886016845703,
+      "safe_coverage": 0.44431817531585693,
+      "l1": 0.2338571846485138
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000020",
+      "sources": 11,
+      "coverage": 0.9999999403953552,
+      "safe_coverage": 0.5715909004211426,
+      "l1": 0.20033589005470276
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000021",
+      "sources": 11,
+      "coverage": 0.9991477131843567,
+      "safe_coverage": 0.46619316935539246,
+      "l1": 0.23591336607933044
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000022",
+      "sources": 11,
+      "coverage": 0.9999999403953552,
+      "safe_coverage": 0.4437499940395355,
+      "l1": 0.24234500527381897
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000023",
+      "sources": 11,
+      "coverage": 0.9999999403953552,
+      "safe_coverage": 0.6201704144477844,
+      "l1": 0.1917889267206192
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000024",
+      "sources": 11,
+      "coverage": 0.9999999403953552,
+      "safe_coverage": 0.621874988079071,
+      "l1": 0.19964659214019775
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000025",
+      "sources": 11,
+      "coverage": 0.9982954263687134,
+      "safe_coverage": 0.6312499642372131,
+      "l1": 0.19205553829669952
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000026",
+      "sources": 11,
+      "coverage": 0.9857954382896423,
+      "safe_coverage": 0.6832386255264282,
+      "l1": 0.1756361424922943
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000027",
+      "sources": 11,
+      "coverage": 0.9596590399742126,
+      "safe_coverage": 0.45056816935539246,
+      "l1": 0.23156598210334778
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000028",
+      "sources": 11,
+      "coverage": 0.9531249403953552,
+      "safe_coverage": 0.46676135063171387,
+      "l1": 0.22543230652809143
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000029",
+      "sources": 11,
+      "coverage": 0.9534090757369995,
+      "safe_coverage": 0.5670454502105713,
+      "l1": 0.19522003829479218
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000030",
+      "sources": 11,
+      "coverage": 0.9144886136054993,
+      "safe_coverage": 0.46676135063171387,
+      "l1": 0.22073805332183838
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000031",
+      "sources": 11,
+      "coverage": 0.8838067650794983,
+      "safe_coverage": 0.46164771914482117,
+      "l1": 0.2241860181093216
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000032",
+      "sources": 11,
+      "coverage": 0.847443163394928,
+      "safe_coverage": 0.33551135659217834,
+      "l1": 0.26137229800224304
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000033",
+      "sources": 11,
+      "coverage": 0.8502840399742126,
+      "safe_coverage": 0.269318163394928,
+      "l1": 0.2829068601131439
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000034",
+      "sources": 11,
+      "coverage": 0.8656249642372131,
+      "safe_coverage": 0.2710227072238922,
+      "l1": 0.2892383337020874
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000035",
+      "sources": 11,
+      "coverage": 0.8894886374473572,
+      "safe_coverage": 0.22017045319080353,
+      "l1": 0.29679369926452637
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000036",
+      "sources": 11,
+      "coverage": 0.9323863387107849,
+      "safe_coverage": 0.3494318127632141,
+      "l1": 0.271386981010437
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000037",
+      "sources": 11,
+      "coverage": 0.9318181276321411,
+      "safe_coverage": 0.33636361360549927,
+      "l1": 0.27436137199401855
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000038",
+      "sources": 11,
+      "coverage": 0.9409090876579285,
+      "safe_coverage": 0.363068163394928,
+      "l1": 0.26685553789138794
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000039",
+      "sources": 11,
+      "coverage": 0.9488636255264282,
+      "safe_coverage": 0.45994317531585693,
+      "l1": 0.23172663152217865
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000040",
+      "sources": 11,
+      "coverage": 0.9355113506317139,
+      "safe_coverage": 0.46051135659217834,
+      "l1": 0.2335238754749298
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000041",
+      "sources": 11,
+      "coverage": 0.9269886016845703,
+      "safe_coverage": 0.4116477072238922,
+      "l1": 0.2519978880882263
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000042",
+      "sources": 11,
+      "coverage": 0.909943163394928,
+      "safe_coverage": 0.3809658885002136,
+      "l1": 0.2579047679901123
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000043",
+      "sources": 11,
+      "coverage": 0.9213067889213562,
+      "safe_coverage": 0.38693180680274963,
+      "l1": 0.2652061879634857
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000044",
+      "sources": 11,
+      "coverage": 0.9434658885002136,
+      "safe_coverage": 0.4732954502105713,
+      "l1": 0.2413564920425415
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000045",
+      "sources": 11,
+      "coverage": 0.9431818127632141,
+      "safe_coverage": 0.4693181812763214,
+      "l1": 0.24526362121105194
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000046",
+      "sources": 11,
+      "coverage": 0.9721590876579285,
+      "safe_coverage": 0.4670454263687134,
+      "l1": 0.2482631504535675
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000047",
+      "sources": 11,
+      "coverage": 0.9874999523162842,
+      "safe_coverage": 0.4536931812763214,
+      "l1": 0.25020134449005127
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000048",
+      "sources": 11,
+      "coverage": 0.9735795259475708,
+      "safe_coverage": 0.40227270126342773,
+      "l1": 0.26103103160858154
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000049",
+      "sources": 11,
+      "coverage": 0.9920454025268555,
+      "safe_coverage": 0.42329543828964233,
+      "l1": 0.2588181495666504
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000050",
+      "sources": 11,
+      "coverage": 0.9877840876579285,
+      "safe_coverage": 0.3289772570133209,
+      "l1": 0.29527029395103455
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000051",
+      "sources": 11,
+      "coverage": 0.981249988079071,
+      "safe_coverage": 0.3440340757369995,
+      "l1": 0.28183794021606445
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000052",
+      "sources": 11,
+      "coverage": 0.9897726774215698,
+      "safe_coverage": 0.4676136076450348,
+      "l1": 0.24649880826473236
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000053",
+      "sources": 11,
+      "coverage": 0.9971590638160706,
+      "safe_coverage": 0.5284090638160706,
+      "l1": 0.22107788920402527
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000054",
+      "sources": 11,
+      "coverage": 0.9991477131843567,
+      "safe_coverage": 0.5019886493682861,
+      "l1": 0.23160675168037415
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000055",
+      "sources": 11,
+      "coverage": 0.9943181276321411,
+      "safe_coverage": 0.4278408885002136,
+      "l1": 0.25356996059417725
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000056",
+      "sources": 11,
+      "coverage": 0.9835227131843567,
+      "safe_coverage": 0.44488635659217834,
+      "l1": 0.250663697719574
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000057",
+      "sources": 11,
+      "coverage": 0.9843749403953552,
+      "safe_coverage": 0.4630681574344635,
+      "l1": 0.2445085644721985
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000058",
+      "sources": 11,
+      "coverage": 0.9781249761581421,
+      "safe_coverage": 0.5434659123420715,
+      "l1": 0.21710525453090668
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000059",
+      "sources": 11,
+      "coverage": 0.972443163394928,
+      "safe_coverage": 0.4423295259475708,
+      "l1": 0.25741276144981384
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000060",
+      "sources": 11,
+      "coverage": 0.9934659004211426,
+      "safe_coverage": 0.5767045021057129,
+      "l1": 0.22398272156715393
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000061",
+      "sources": 11,
+      "coverage": 0.9999999403953552,
+      "safe_coverage": 0.6380681395530701,
+      "l1": 0.204770028591156
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000062",
+      "sources": 11,
+      "coverage": 0.9948863387107849,
+      "safe_coverage": 0.5545454621315002,
+      "l1": 0.22219879925251007
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000063",
+      "sources": 11,
+      "coverage": 0.9892045259475708,
+      "safe_coverage": 0.4747158885002136,
+      "l1": 0.23841938376426697
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000064",
+      "sources": 11,
+      "coverage": 0.9775567650794983,
+      "safe_coverage": 0.5201704502105713,
+      "l1": 0.23578841984272003
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000065",
+      "sources": 11,
+      "coverage": 0.9579545259475708,
+      "safe_coverage": 0.5957385897636414,
+      "l1": 0.20237517356872559
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000066",
+      "sources": 11,
+      "coverage": 0.913636326789856,
+      "safe_coverage": 0.6846590638160706,
+      "l1": 0.16347850859165192
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000067",
+      "sources": 11,
+      "coverage": 0.8951704502105713,
+      "safe_coverage": 0.6644886136054993,
+      "l1": 0.15881718695163727
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000068",
+      "sources": 11,
+      "coverage": 0.8960226774215698,
+      "safe_coverage": 0.6573863625526428,
+      "l1": 0.16088023781776428
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000069",
+      "sources": 11,
+      "coverage": 0.9036931395530701,
+      "safe_coverage": 0.5454545021057129,
+      "l1": 0.20364168286323547
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000070",
+      "sources": 11,
+      "coverage": 0.7494317889213562,
+      "safe_coverage": 0.26249998807907104,
+      "l1": 0.26431378722190857
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000071",
+      "sources": 11,
+      "coverage": 0.9298295378684998,
+      "safe_coverage": 0.2607954442501068,
+      "l1": 0.31732848286628723
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000072",
+      "sources": 11,
+      "coverage": 0.9178977012634277,
+      "safe_coverage": 0.409943163394928,
+      "l1": 0.25555619597435
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000073",
+      "sources": 11,
+      "coverage": 0.9190340638160706,
+      "safe_coverage": 0.35085225105285645,
+      "l1": 0.2749671936035156
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000074",
+      "sources": 11,
+      "coverage": 0.8963068127632141,
+      "safe_coverage": 0.31051135063171387,
+      "l1": 0.2885861098766327
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000075",
+      "sources": 11,
+      "coverage": 0.8849431276321411,
+      "safe_coverage": 0.34375,
+      "l1": 0.271160751581192
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000076",
+      "sources": 11,
+      "coverage": 0.9014204144477844,
+      "safe_coverage": 0.49801135063171387,
+      "l1": 0.21997229754924774
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000077",
+      "sources": 11,
+      "coverage": 0.9315340518951416,
+      "safe_coverage": 0.4227272570133209,
+      "l1": 0.24387362599372864
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000078",
+      "sources": 11,
+      "coverage": 0.941193163394928,
+      "safe_coverage": 0.5477272272109985,
+      "l1": 0.2073363959789276
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000079",
+      "sources": 11,
+      "coverage": 0.9269886016845703,
+      "safe_coverage": 0.5252840518951416,
+      "l1": 0.20838528871536255
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000080",
+      "sources": 11,
+      "coverage": 0.9295454025268555,
+      "safe_coverage": 0.4585227072238922,
+      "l1": 0.227385476231575
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000081",
+      "sources": 11,
+      "coverage": 0.9474431276321411,
+      "safe_coverage": 0.4426136314868927,
+      "l1": 0.23921124637126923
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000082",
+      "sources": 11,
+      "coverage": 0.9579545259475708,
+      "safe_coverage": 0.44403406977653503,
+      "l1": 0.23674264550209045
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000083",
+      "sources": 11,
+      "coverage": 0.9769886136054993,
+      "safe_coverage": 0.42840906977653503,
+      "l1": 0.24190355837345123
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000084",
+      "sources": 11,
+      "coverage": 0.9838067889213562,
+      "safe_coverage": 0.4434658885002136,
+      "l1": 0.24462808668613434
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000085",
+      "sources": 11,
+      "coverage": 0.9920454025268555,
+      "safe_coverage": 0.4855113625526428,
+      "l1": 0.23512732982635498
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000086",
+      "sources": 11,
+      "coverage": 0.9829545021057129,
+      "safe_coverage": 0.49090906977653503,
+      "l1": 0.23198048770427704
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000087",
+      "sources": 11,
+      "coverage": 0.9798294901847839,
+      "safe_coverage": 0.5113636255264282,
+      "l1": 0.2256956249475479
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000088",
+      "sources": 11,
+      "coverage": 0.9931817650794983,
+      "safe_coverage": 0.5886363387107849,
+      "l1": 0.19869300723075867
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000089",
+      "sources": 11,
+      "coverage": 0.9997158646583557,
+      "safe_coverage": 0.6914772391319275,
+      "l1": 0.16751651465892792
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000090",
+      "sources": 11,
+      "coverage": 0.9931817650794983,
+      "safe_coverage": 0.6116477251052856,
+      "l1": 0.1922685205936432
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000091",
+      "sources": 11,
+      "coverage": 0.9897726774215698,
+      "safe_coverage": 0.8062499761581421,
+      "l1": 0.1435055434703827
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000092",
+      "sources": 11,
+      "coverage": 0.9721590876579285,
+      "safe_coverage": 0.6022726893424988,
+      "l1": 0.1867576390504837
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000093",
+      "sources": 11,
+      "coverage": 0.9553977251052856,
+      "safe_coverage": 0.5517045259475708,
+      "l1": 0.2097422033548355
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000094",
+      "sources": 11,
+      "coverage": 0.9553977251052856,
+      "safe_coverage": 0.500568151473999,
+      "l1": 0.2245422899723053
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000095",
+      "sources": 11,
+      "coverage": 0.9650567770004272,
+      "safe_coverage": 0.5644885897636414,
+      "l1": 0.19857607781887054
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000096",
+      "sources": 11,
+      "coverage": 0.9423295259475708,
+      "safe_coverage": 0.6582385897636414,
+      "l1": 0.16713891923427582
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000097",
+      "sources": 11,
+      "coverage": 0.934374988079071,
+      "safe_coverage": 0.5724431872367859,
+      "l1": 0.19094079732894897
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000098",
+      "sources": 11,
+      "coverage": 0.9221590757369995,
+      "safe_coverage": 0.5485795140266418,
+      "l1": 0.1986074596643448
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000099",
+      "sources": 11,
+      "coverage": 0.8923295140266418,
+      "safe_coverage": 0.37642043828964233,
+      "l1": 0.2531311810016632
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000100",
+      "sources": 11,
+      "coverage": 0.9403408765792847,
+      "safe_coverage": 0.6749999523162842,
+      "l1": 0.1726241558790207
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000101",
+      "sources": 11,
+      "coverage": 0.9502840638160706,
+      "safe_coverage": 0.5880681872367859,
+      "l1": 0.19320690631866455
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000102",
+      "sources": 11,
+      "coverage": 0.9579545259475708,
+      "safe_coverage": 0.6522727012634277,
+      "l1": 0.17796696722507477
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000103",
+      "sources": 11,
+      "coverage": 0.9559658765792847,
+      "safe_coverage": 0.9275568127632141,
+      "l1": 0.09059502184391022
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000104",
+      "sources": 11,
+      "coverage": 0.9576704502105713,
+      "safe_coverage": 0.7181817889213562,
+      "l1": 0.15824423730373383
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000105",
+      "sources": 11,
+      "coverage": 0.9616476893424988,
+      "safe_coverage": 0.8607954382896423,
+      "l1": 0.1304614096879959
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000106",
+      "sources": 11,
+      "coverage": 0.9704545140266418,
+      "safe_coverage": 0.8650568127632141,
+      "l1": 0.1282457858324051
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000107",
+      "sources": 11,
+      "coverage": 0.9639204144477844,
+      "safe_coverage": 0.922443151473999,
+      "l1": 0.1066197007894516
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000108",
+      "sources": 11,
+      "coverage": 0.9633522629737854,
+      "safe_coverage": 0.8431817889213562,
+      "l1": 0.13515038788318634
+    },
+    {
+      "scene": "bonn_balloon_test",
+      "target": "bonn_balloon_000109",
+      "sources": 11,
+      "coverage": 0.9630681276321411,
+      "safe_coverage": 0.629261314868927,
+      "l1": 0.18321307003498077
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000002",
+      "sources": 2,
+      "coverage": 0.9167613387107849,
+      "safe_coverage": 0.5272727012634277,
+      "l1": 0.2036922425031662
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000003",
+      "sources": 3,
+      "coverage": 0.9281249642372131,
+      "safe_coverage": 0.5838068127632141,
+      "l1": 0.18896137177944183
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000004",
+      "sources": 4,
+      "coverage": 0.9346590638160706,
+      "safe_coverage": 0.6301136016845703,
+      "l1": 0.18081806600093842
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000005",
+      "sources": 5,
+      "coverage": 0.9508522152900696,
+      "safe_coverage": 0.6352272629737854,
+      "l1": 0.18054057657718658
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000006",
+      "sources": 6,
+      "coverage": 0.9803977012634277,
+      "safe_coverage": 0.4380681812763214,
+      "l1": 0.2368154674768448
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000007",
+      "sources": 7,
+      "coverage": 0.9622159004211426,
+      "safe_coverage": 0.32954543828964233,
+      "l1": 0.2810012698173523
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000008",
+      "sources": 8,
+      "coverage": 0.9718749523162842,
+      "safe_coverage": 0.28948861360549927,
+      "l1": 0.3054247498512268
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000009",
+      "sources": 9,
+      "coverage": 0.9835227131843567,
+      "safe_coverage": 0.328125,
+      "l1": 0.29466697573661804
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000010",
+      "sources": 10,
+      "coverage": 0.9999999403953552,
+      "safe_coverage": 0.41363635659217834,
+      "l1": 0.2621538043022156
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000011",
+      "sources": 10,
+      "coverage": 0.9926136136054993,
+      "safe_coverage": 0.36278408765792847,
+      "l1": 0.27962377667427063
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000012",
+      "sources": 11,
+      "coverage": 0.9946022629737854,
+      "safe_coverage": 0.18977272510528564,
+      "l1": 0.32082870602607727
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000013",
+      "sources": 11,
+      "coverage": 0.9954544901847839,
+      "safe_coverage": 0.39289772510528564,
+      "l1": 0.30123406648635864
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000014",
+      "sources": 11,
+      "coverage": 0.9999999403953552,
+      "safe_coverage": 0.42499998211860657,
+      "l1": 0.2888408303260803
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000015",
+      "sources": 11,
+      "coverage": 0.9980113506317139,
+      "safe_coverage": 0.353409081697464,
+      "l1": 0.32005199790000916
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000016",
+      "sources": 11,
+      "coverage": 0.988068163394928,
+      "safe_coverage": 0.26704543828964233,
+      "l1": 0.30497145652770996
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000017",
+      "sources": 11,
+      "coverage": 0.9971590638160706,
+      "safe_coverage": 0.35568180680274963,
+      "l1": 0.27950170636177063
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000018",
+      "sources": 11,
+      "coverage": 0.9951704144477844,
+      "safe_coverage": 0.4056818187236786,
+      "l1": 0.25957760214805603
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000019",
+      "sources": 11,
+      "coverage": 0.9713068008422852,
+      "safe_coverage": 0.3752840757369995,
+      "l1": 0.2703082263469696
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000020",
+      "sources": 11,
+      "coverage": 0.9482954144477844,
+      "safe_coverage": 0.3542613387107849,
+      "l1": 0.2793348431587219
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000021",
+      "sources": 11,
+      "coverage": 0.925568163394928,
+      "safe_coverage": 0.37698861956596375,
+      "l1": 0.2672744393348694
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000022",
+      "sources": 11,
+      "coverage": 0.910511314868927,
+      "safe_coverage": 0.3642045259475708,
+      "l1": 0.26517435908317566
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000023",
+      "sources": 11,
+      "coverage": 0.8903408646583557,
+      "safe_coverage": 0.34602272510528564,
+      "l1": 0.26882511377334595
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000024",
+      "sources": 11,
+      "coverage": 0.8883522152900696,
+      "safe_coverage": 0.4053977131843567,
+      "l1": 0.24459657073020935
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000025",
+      "sources": 11,
+      "coverage": 0.9059658646583557,
+      "safe_coverage": 0.41789770126342773,
+      "l1": 0.2506747245788574
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000026",
+      "sources": 11,
+      "coverage": 0.8769885897636414,
+      "safe_coverage": 0.31534090638160706,
+      "l1": 0.291972279548645
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000027",
+      "sources": 11,
+      "coverage": 0.9465909004211426,
+      "safe_coverage": 0.5588067770004272,
+      "l1": 0.21316468715667725
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000028",
+      "sources": 11,
+      "coverage": 0.9815340638160706,
+      "safe_coverage": 0.4585227072238922,
+      "l1": 0.2427905797958374
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000029",
+      "sources": 11,
+      "coverage": 0.9838067889213562,
+      "safe_coverage": 0.40340906381607056,
+      "l1": 0.2557477056980133
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000030",
+      "sources": 11,
+      "coverage": 0.984943151473999,
+      "safe_coverage": 0.4414772689342499,
+      "l1": 0.24535484611988068
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000031",
+      "sources": 11,
+      "coverage": 0.988068163394928,
+      "safe_coverage": 0.4693181812763214,
+      "l1": 0.23701442778110504
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000032",
+      "sources": 11,
+      "coverage": 0.9951704144477844,
+      "safe_coverage": 0.3789772689342499,
+      "l1": 0.265562504529953
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000033",
+      "sources": 11,
+      "coverage": 0.9997158646583557,
+      "safe_coverage": 0.3911931812763214,
+      "l1": 0.2764199376106262
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000034",
+      "sources": 11,
+      "coverage": 0.9999999403953552,
+      "safe_coverage": 0.35113635659217834,
+      "l1": 0.31145405769348145
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000035",
+      "sources": 11,
+      "coverage": 0.9971590638160706,
+      "safe_coverage": 0.32954543828964233,
+      "l1": 0.3142772912979126
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000036",
+      "sources": 11,
+      "coverage": 0.9999999403953552,
+      "safe_coverage": 0.3752840757369995,
+      "l1": 0.2750537097454071
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000037",
+      "sources": 11,
+      "coverage": 0.9980113506317139,
+      "safe_coverage": 0.4221590757369995,
+      "l1": 0.261554479598999
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000038",
+      "sources": 11,
+      "coverage": 0.9818181395530701,
+      "safe_coverage": 0.40852272510528564,
+      "l1": 0.2651216685771942
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000039",
+      "sources": 11,
+      "coverage": 0.9684658646583557,
+      "safe_coverage": 0.44971588253974915,
+      "l1": 0.2458329200744629
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000040",
+      "sources": 11,
+      "coverage": 0.9599431753158569,
+      "safe_coverage": 0.4372158944606781,
+      "l1": 0.2506774365901947
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000041",
+      "sources": 11,
+      "coverage": 0.9678977131843567,
+      "safe_coverage": 0.46590906381607056,
+      "l1": 0.23813843727111816
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000042",
+      "sources": 11,
+      "coverage": 0.9451704025268555,
+      "safe_coverage": 0.37727272510528564,
+      "l1": 0.25794216990470886
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000043",
+      "sources": 11,
+      "coverage": 0.925568163394928,
+      "safe_coverage": 0.35710227489471436,
+      "l1": 0.2645267844200134
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000044",
+      "sources": 11,
+      "coverage": 0.9409090876579285,
+      "safe_coverage": 0.5789772272109985,
+      "l1": 0.19368794560432434
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000045",
+      "sources": 11,
+      "coverage": 0.9428976774215698,
+      "safe_coverage": 0.5707386136054993,
+      "l1": 0.19493146240711212
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000046",
+      "sources": 11,
+      "coverage": 0.9303976893424988,
+      "safe_coverage": 0.5485795140266418,
+      "l1": 0.19983810186386108
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000047",
+      "sources": 11,
+      "coverage": 0.9340908527374268,
+      "safe_coverage": 0.6161931753158569,
+      "l1": 0.1923322081565857
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000048",
+      "sources": 11,
+      "coverage": 0.9244318008422852,
+      "safe_coverage": 0.23835226893424988,
+      "l1": 0.3110388517379761
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000049",
+      "sources": 11,
+      "coverage": 0.9372158646583557,
+      "safe_coverage": 0.25710225105285645,
+      "l1": 0.30454397201538086
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000050",
+      "sources": 11,
+      "coverage": 0.9505681395530701,
+      "safe_coverage": 0.3860795199871063,
+      "l1": 0.26368317008018494
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000051",
+      "sources": 11,
+      "coverage": 0.9948863387107849,
+      "safe_coverage": 0.6644886136054993,
+      "l1": 0.19860565662384033
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000052",
+      "sources": 11,
+      "coverage": 0.9852272272109985,
+      "safe_coverage": 0.4465909004211426,
+      "l1": 0.23806339502334595
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000053",
+      "sources": 11,
+      "coverage": 0.9329544901847839,
+      "safe_coverage": 0.32443180680274963,
+      "l1": 0.2612282335758209
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000054",
+      "sources": 11,
+      "coverage": 0.9264204502105713,
+      "safe_coverage": 0.2815340757369995,
+      "l1": 0.2830534875392914
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000055",
+      "sources": 11,
+      "coverage": 0.9710227251052856,
+      "safe_coverage": 0.33636361360549927,
+      "l1": 0.28680866956710815
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000056",
+      "sources": 11,
+      "coverage": 0.9769886136054993,
+      "safe_coverage": 0.46051135659217834,
+      "l1": 0.24718575179576874
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000057",
+      "sources": 11,
+      "coverage": 0.973011314868927,
+      "safe_coverage": 0.5738636255264282,
+      "l1": 0.21389272809028625
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000058",
+      "sources": 11,
+      "coverage": 0.9840908646583557,
+      "safe_coverage": 0.4480113387107849,
+      "l1": 0.2534477114677429
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000059",
+      "sources": 11,
+      "coverage": 0.9974431395530701,
+      "safe_coverage": 0.6872158646583557,
+      "l1": 0.17367102205753326
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000060",
+      "sources": 11,
+      "coverage": 0.9965908527374268,
+      "safe_coverage": 0.7278409004211426,
+      "l1": 0.1718224138021469
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000061",
+      "sources": 11,
+      "coverage": 0.9974431395530701,
+      "safe_coverage": 0.42926135659217834,
+      "l1": 0.2470904439687729
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000062",
+      "sources": 11,
+      "coverage": 0.9965908527374268,
+      "safe_coverage": 0.40937498211860657,
+      "l1": 0.26402953267097473
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000063",
+      "sources": 11,
+      "coverage": 0.9963067770004272,
+      "safe_coverage": 0.4673295319080353,
+      "l1": 0.2380368858575821
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000064",
+      "sources": 11,
+      "coverage": 0.9951704144477844,
+      "safe_coverage": 0.4420454502105713,
+      "l1": 0.24685263633728027
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000065",
+      "sources": 11,
+      "coverage": 0.9999999403953552,
+      "safe_coverage": 0.6826704144477844,
+      "l1": 0.17328254878520966
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000066",
+      "sources": 11,
+      "coverage": 0.9957386255264282,
+      "safe_coverage": 0.7352272272109985,
+      "l1": 0.16492325067520142
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000067",
+      "sources": 11,
+      "coverage": 0.9852272272109985,
+      "safe_coverage": 0.6732954382896423,
+      "l1": 0.17937183380126953
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000068",
+      "sources": 11,
+      "coverage": 0.9426136016845703,
+      "safe_coverage": 0.5934658646583557,
+      "l1": 0.194800466299057
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000069",
+      "sources": 11,
+      "coverage": 0.9213067889213562,
+      "safe_coverage": 0.5869318246841431,
+      "l1": 0.1881539672613144
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000070",
+      "sources": 11,
+      "coverage": 0.9053977131843567,
+      "safe_coverage": 0.4906249940395355,
+      "l1": 0.21861779689788818
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000071",
+      "sources": 11,
+      "coverage": 0.9039772152900696,
+      "safe_coverage": 0.5877840518951416,
+      "l1": 0.18923026323318481
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000072",
+      "sources": 11,
+      "coverage": 0.9153409004211426,
+      "safe_coverage": 0.547443151473999,
+      "l1": 0.1954263150691986
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000073",
+      "sources": 11,
+      "coverage": 0.9286931753158569,
+      "safe_coverage": 0.4525568187236786,
+      "l1": 0.2308357208967209
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000074",
+      "sources": 11,
+      "coverage": 0.9488636255264282,
+      "safe_coverage": 0.6980113387107849,
+      "l1": 0.16549307107925415
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000075",
+      "sources": 11,
+      "coverage": 0.9275568127632141,
+      "safe_coverage": 0.6355113387107849,
+      "l1": 0.1712518334388733
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000076",
+      "sources": 11,
+      "coverage": 0.9088068008422852,
+      "safe_coverage": 0.5707386136054993,
+      "l1": 0.18670065701007843
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000077",
+      "sources": 11,
+      "coverage": 0.9124999642372131,
+      "safe_coverage": 0.40625,
+      "l1": 0.2589260935783386
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000078",
+      "sources": 11,
+      "coverage": 0.8954545259475708,
+      "safe_coverage": 0.3372159004211426,
+      "l1": 0.2876485586166382
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000079",
+      "sources": 11,
+      "coverage": 0.894318163394928,
+      "safe_coverage": 0.33011361956596375,
+      "l1": 0.291535347700119
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000080",
+      "sources": 11,
+      "coverage": 0.8840909004211426,
+      "safe_coverage": 0.21136362850666046,
+      "l1": 0.3339150547981262
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000081",
+      "sources": 11,
+      "coverage": 0.875568151473999,
+      "safe_coverage": 0.20738635957241058,
+      "l1": 0.32183340191841125
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000082",
+      "sources": 11,
+      "coverage": 0.9144886136054993,
+      "safe_coverage": 0.3184658885002136,
+      "l1": 0.2782788872718811
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000083",
+      "sources": 11,
+      "coverage": 0.9193181395530701,
+      "safe_coverage": 0.3397727310657501,
+      "l1": 0.2705448865890503
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000084",
+      "sources": 11,
+      "coverage": 0.9238635897636414,
+      "safe_coverage": 0.37727272510528564,
+      "l1": 0.2529333531856537
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000085",
+      "sources": 11,
+      "coverage": 0.9173294901847839,
+      "safe_coverage": 0.409943163394928,
+      "l1": 0.24170072376728058
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000086",
+      "sources": 11,
+      "coverage": 0.9210227131843567,
+      "safe_coverage": 0.31534090638160706,
+      "l1": 0.27108028531074524
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000087",
+      "sources": 11,
+      "coverage": 0.894318163394928,
+      "safe_coverage": 0.26278409361839294,
+      "l1": 0.2942532002925873
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000088",
+      "sources": 11,
+      "coverage": 0.8795454502105713,
+      "safe_coverage": 0.2497158944606781,
+      "l1": 0.2874893844127655
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000089",
+      "sources": 11,
+      "coverage": 0.9076704382896423,
+      "safe_coverage": 0.5576704144477844,
+      "l1": 0.19369041919708252
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000090",
+      "sources": 11,
+      "coverage": 0.8605113625526428,
+      "safe_coverage": 0.316193163394928,
+      "l1": 0.2615690231323242
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000091",
+      "sources": 11,
+      "coverage": 0.9085227251052856,
+      "safe_coverage": 0.5167613625526428,
+      "l1": 0.2023497074842453
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000092",
+      "sources": 11,
+      "coverage": 0.9375,
+      "safe_coverage": 0.7292613387107849,
+      "l1": 0.15913596749305725
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000093",
+      "sources": 11,
+      "coverage": 0.9539772272109985,
+      "safe_coverage": 0.7278409004211426,
+      "l1": 0.16724610328674316
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000094",
+      "sources": 11,
+      "coverage": 0.9616476893424988,
+      "safe_coverage": 0.5812499523162842,
+      "l1": 0.19764895737171173
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000095",
+      "sources": 11,
+      "coverage": 0.9892045259475708,
+      "safe_coverage": 0.5545454621315002,
+      "l1": 0.20295767486095428
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000096",
+      "sources": 11,
+      "coverage": 0.9897726774215698,
+      "safe_coverage": 0.7249999642372131,
+      "l1": 0.17132043838500977
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000097",
+      "sources": 11,
+      "coverage": 0.9994317889213562,
+      "safe_coverage": 0.35085225105285645,
+      "l1": 0.2774457633495331
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000098",
+      "sources": 11,
+      "coverage": 0.9980113506317139,
+      "safe_coverage": 0.2761363685131073,
+      "l1": 0.31504499912261963
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000099",
+      "sources": 11,
+      "coverage": 0.9985795021057129,
+      "safe_coverage": 0.32642045617103577,
+      "l1": 0.29039135575294495
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000100",
+      "sources": 11,
+      "coverage": 0.9999999403953552,
+      "safe_coverage": 0.4321022629737854,
+      "l1": 0.25051409006118774
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000101",
+      "sources": 11,
+      "coverage": 0.996874988079071,
+      "safe_coverage": 0.34715908765792847,
+      "l1": 0.268856942653656
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000102",
+      "sources": 11,
+      "coverage": 0.9940340518951416,
+      "safe_coverage": 0.331818163394928,
+      "l1": 0.278134286403656
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000103",
+      "sources": 11,
+      "coverage": 0.9934659004211426,
+      "safe_coverage": 0.4900568127632141,
+      "l1": 0.22491063177585602
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000104",
+      "sources": 11,
+      "coverage": 0.9999999403953552,
+      "safe_coverage": 0.5463067889213562,
+      "l1": 0.20657649636268616
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000105",
+      "sources": 11,
+      "coverage": 0.9943181276321411,
+      "safe_coverage": 0.5948863625526428,
+      "l1": 0.1982492357492447
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000106",
+      "sources": 11,
+      "coverage": 0.9997158646583557,
+      "safe_coverage": 0.5451704263687134,
+      "l1": 0.20960000157356262
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000107",
+      "sources": 11,
+      "coverage": 0.9914772510528564,
+      "safe_coverage": 0.4590908885002136,
+      "l1": 0.2356567680835724
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000108",
+      "sources": 11,
+      "coverage": 0.9826704263687134,
+      "safe_coverage": 0.699999988079071,
+      "l1": 0.17646683752536774
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000109",
+      "sources": 11,
+      "coverage": 0.9372158646583557,
+      "safe_coverage": 0.4576704502105713,
+      "l1": 0.22560425102710724
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000110",
+      "sources": 11,
+      "coverage": 0.9372158646583557,
+      "safe_coverage": 0.5588067770004272,
+      "l1": 0.19619952142238617
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000111",
+      "sources": 11,
+      "coverage": 0.9647727012634277,
+      "safe_coverage": 0.6110795140266418,
+      "l1": 0.19154126942157745
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000112",
+      "sources": 11,
+      "coverage": 0.9477272629737854,
+      "safe_coverage": 0.4690340757369995,
+      "l1": 0.2295629233121872
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000113",
+      "sources": 11,
+      "coverage": 0.9443181753158569,
+      "safe_coverage": 0.4678977131843567,
+      "l1": 0.22081245481967926
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000114",
+      "sources": 11,
+      "coverage": 0.9400568008422852,
+      "safe_coverage": 0.507386326789856,
+      "l1": 0.20827366411685944
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000115",
+      "sources": 11,
+      "coverage": 0.9198863506317139,
+      "safe_coverage": 0.4366477131843567,
+      "l1": 0.22146408259868622
+    },
+    {
+      "scene": "bonn_balloon2_test",
+      "target": "bonn_balloon2_000116",
+      "sources": 11,
+      "coverage": 0.9474431276321411,
+      "safe_coverage": 0.6377840638160706,
+      "l1": 0.1801803559064865
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000002",
+      "sources": 2,
+      "coverage": 0.921875,
+      "safe_coverage": 0.4465909004211426,
+      "l1": 0.22689858078956604
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000003",
+      "sources": 3,
+      "coverage": 0.9653408527374268,
+      "safe_coverage": 0.3707386255264282,
+      "l1": 0.26245349645614624
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000004",
+      "sources": 4,
+      "coverage": 0.9914772510528564,
+      "safe_coverage": 0.4525568187236786,
+      "l1": 0.23683574795722961
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000005",
+      "sources": 5,
+      "coverage": 0.9539772272109985,
+      "safe_coverage": 0.49630680680274963,
+      "l1": 0.21526969969272614
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000006",
+      "sources": 6,
+      "coverage": 0.981249988079071,
+      "safe_coverage": 0.750568151473999,
+      "l1": 0.15964987874031067
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000007",
+      "sources": 7,
+      "coverage": 0.9923295378684998,
+      "safe_coverage": 0.6985795497894287,
+      "l1": 0.16851168870925903
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000008",
+      "sources": 8,
+      "coverage": 0.9710227251052856,
+      "safe_coverage": 0.42840906977653503,
+      "l1": 0.24342228472232819
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000009",
+      "sources": 9,
+      "coverage": 0.9588068127632141,
+      "safe_coverage": 0.41448861360549927,
+      "l1": 0.24475981295108795
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000010",
+      "sources": 10,
+      "coverage": 0.9460226893424988,
+      "safe_coverage": 0.3647727072238922,
+      "l1": 0.27137237787246704
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000011",
+      "sources": 10,
+      "coverage": 0.9806817770004272,
+      "safe_coverage": 0.4673295319080353,
+      "l1": 0.2338331937789917
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000012",
+      "sources": 11,
+      "coverage": 0.9542613625526428,
+      "safe_coverage": 0.4323863387107849,
+      "l1": 0.24411679804325104
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000013",
+      "sources": 11,
+      "coverage": 0.9571022391319275,
+      "safe_coverage": 0.5880681872367859,
+      "l1": 0.19686877727508545
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000014",
+      "sources": 11,
+      "coverage": 0.941761314868927,
+      "safe_coverage": 0.5874999761581421,
+      "l1": 0.19952186942100525
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000015",
+      "sources": 11,
+      "coverage": 0.8880681395530701,
+      "safe_coverage": 0.5110795497894287,
+      "l1": 0.2167617827653885
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000016",
+      "sources": 11,
+      "coverage": 0.9059658646583557,
+      "safe_coverage": 0.46164771914482117,
+      "l1": 0.22040553390979767
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000017",
+      "sources": 11,
+      "coverage": 0.9178977012634277,
+      "safe_coverage": 0.37301135063171387,
+      "l1": 0.26183757185935974
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000018",
+      "sources": 11,
+      "coverage": 0.9215908646583557,
+      "safe_coverage": 0.3693181574344635,
+      "l1": 0.26729443669319153
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000019",
+      "sources": 11,
+      "coverage": 0.910511314868927,
+      "safe_coverage": 0.5303977131843567,
+      "l1": 0.20672689378261566
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000020",
+      "sources": 11,
+      "coverage": 0.8997159004211426,
+      "safe_coverage": 0.5480113625526428,
+      "l1": 0.2015961855649948
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000021",
+      "sources": 11,
+      "coverage": 0.9207385778427124,
+      "safe_coverage": 0.4167613387107849,
+      "l1": 0.2312081754207611
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000022",
+      "sources": 11,
+      "coverage": 0.9142045378684998,
+      "safe_coverage": 0.5369318127632141,
+      "l1": 0.20643670856952667
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000023",
+      "sources": 11,
+      "coverage": 0.9116476774215698,
+      "safe_coverage": 0.5823863744735718,
+      "l1": 0.19051623344421387
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000024",
+      "sources": 11,
+      "coverage": 0.9198863506317139,
+      "safe_coverage": 0.6474431753158569,
+      "l1": 0.17924374341964722
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000025",
+      "sources": 11,
+      "coverage": 0.9127840399742126,
+      "safe_coverage": 0.613636314868927,
+      "l1": 0.18897874653339386
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000026",
+      "sources": 11,
+      "coverage": 0.9375,
+      "safe_coverage": 0.6042613387107849,
+      "l1": 0.19459626078605652
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000027",
+      "sources": 11,
+      "coverage": 0.9392045140266418,
+      "safe_coverage": 0.6468749642372131,
+      "l1": 0.176977276802063
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000028",
+      "sources": 11,
+      "coverage": 0.9494317770004272,
+      "safe_coverage": 0.6573863625526428,
+      "l1": 0.17361041903495789
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000029",
+      "sources": 11,
+      "coverage": 0.9397727251052856,
+      "safe_coverage": 0.5585227012634277,
+      "l1": 0.20469164848327637
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000030",
+      "sources": 11,
+      "coverage": 0.9207385778427124,
+      "safe_coverage": 0.523011326789856,
+      "l1": 0.2104049175977707
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000031",
+      "sources": 11,
+      "coverage": 0.922443151473999,
+      "safe_coverage": 0.516193151473999,
+      "l1": 0.21090316772460938
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000032",
+      "sources": 11,
+      "coverage": 0.9017044901847839,
+      "safe_coverage": 0.5397726893424988,
+      "l1": 0.20558759570121765
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000033",
+      "sources": 11,
+      "coverage": 0.9014204144477844,
+      "safe_coverage": 0.6045454144477844,
+      "l1": 0.18840530514717102
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000034",
+      "sources": 11,
+      "coverage": 0.8494318127632141,
+      "safe_coverage": 0.4210227131843567,
+      "l1": 0.24240432679653168
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000035",
+      "sources": 11,
+      "coverage": 0.8730113506317139,
+      "safe_coverage": 0.38664770126342773,
+      "l1": 0.2577389180660248
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000036",
+      "sources": 11,
+      "coverage": 0.9420454502105713,
+      "safe_coverage": 0.5585227012634277,
+      "l1": 0.20689859986305237
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000037",
+      "sources": 11,
+      "coverage": 0.9269886016845703,
+      "safe_coverage": 0.5267045497894287,
+      "l1": 0.22294418513774872
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000038",
+      "sources": 11,
+      "coverage": 0.9130681753158569,
+      "safe_coverage": 0.46505680680274963,
+      "l1": 0.23780670762062073
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000039",
+      "sources": 11,
+      "coverage": 0.9278408885002136,
+      "safe_coverage": 0.6957386136054993,
+      "l1": 0.17711646854877472
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000040",
+      "sources": 11,
+      "coverage": 0.9167613387107849,
+      "safe_coverage": 0.6127840876579285,
+      "l1": 0.19399665296077728
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000041",
+      "sources": 11,
+      "coverage": 0.9048295021057129,
+      "safe_coverage": 0.5139204263687134,
+      "l1": 0.21548551321029663
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000042",
+      "sources": 11,
+      "coverage": 0.8926135897636414,
+      "safe_coverage": 0.5321022272109985,
+      "l1": 0.220861554145813
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000043",
+      "sources": 11,
+      "coverage": 0.875,
+      "safe_coverage": 0.5249999761581421,
+      "l1": 0.22635851800441742
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000044",
+      "sources": 11,
+      "coverage": 0.8670454025268555,
+      "safe_coverage": 0.38863635063171387,
+      "l1": 0.2729716897010803
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000045",
+      "sources": 11,
+      "coverage": 0.9210227131843567,
+      "safe_coverage": 0.5767045021057129,
+      "l1": 0.20396588742733002
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000046",
+      "sources": 11,
+      "coverage": 0.879261314868927,
+      "safe_coverage": 0.5443181395530701,
+      "l1": 0.21173453330993652
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000047",
+      "sources": 11,
+      "coverage": 0.8394886255264282,
+      "safe_coverage": 0.5088068246841431,
+      "l1": 0.22265507280826569
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000048",
+      "sources": 11,
+      "coverage": 0.8508522510528564,
+      "safe_coverage": 0.49659088253974915,
+      "l1": 0.21665655076503754
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000049",
+      "sources": 11,
+      "coverage": 0.8843749761581421,
+      "safe_coverage": 0.5491477251052856,
+      "l1": 0.2001367211341858
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000050",
+      "sources": 11,
+      "coverage": 0.8514204025268555,
+      "safe_coverage": 0.49090906977653503,
+      "l1": 0.2084932029247284
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000051",
+      "sources": 11,
+      "coverage": 0.9034090638160706,
+      "safe_coverage": 0.4838067889213562,
+      "l1": 0.21651354432106018
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000052",
+      "sources": 11,
+      "coverage": 0.9207385778427124,
+      "safe_coverage": 0.4482954442501068,
+      "l1": 0.22766736149787903
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000053",
+      "sources": 11,
+      "coverage": 0.9096590876579285,
+      "safe_coverage": 0.5454545021057129,
+      "l1": 0.22177881002426147
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000054",
+      "sources": 11,
+      "coverage": 0.8411931395530701,
+      "safe_coverage": 0.3025568127632141,
+      "l1": 0.32313138246536255
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000055",
+      "sources": 11,
+      "coverage": 0.8659090399742126,
+      "safe_coverage": 0.3323863446712494,
+      "l1": 0.2804633677005768
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000056",
+      "sources": 11,
+      "coverage": 0.9059658646583557,
+      "safe_coverage": 0.24772725999355316,
+      "l1": 0.2788105010986328
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000057",
+      "sources": 11,
+      "coverage": 0.8684659004211426,
+      "safe_coverage": 0.38181817531585693,
+      "l1": 0.2459159791469574
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000058",
+      "sources": 11,
+      "coverage": 0.7883522510528564,
+      "safe_coverage": 0.3392045199871063,
+      "l1": 0.24902726709842682
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000059",
+      "sources": 11,
+      "coverage": 0.8059659004211426,
+      "safe_coverage": 0.30397725105285645,
+      "l1": 0.2628336250782013
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000060",
+      "sources": 11,
+      "coverage": 0.8303977251052856,
+      "safe_coverage": 0.44062498211860657,
+      "l1": 0.22177006304264069
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000061",
+      "sources": 11,
+      "coverage": 0.804261326789856,
+      "safe_coverage": 0.25653406977653503,
+      "l1": 0.29020315408706665
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000062",
+      "sources": 11,
+      "coverage": 0.8386363387107849,
+      "safe_coverage": 0.35624998807907104,
+      "l1": 0.2546384930610657
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000063",
+      "sources": 11,
+      "coverage": 0.831818163394928,
+      "safe_coverage": 0.2977272570133209,
+      "l1": 0.27214086055755615
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000064",
+      "sources": 11,
+      "coverage": 0.8974431753158569,
+      "safe_coverage": 0.2926136255264282,
+      "l1": 0.2835857570171356
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000065",
+      "sources": 11,
+      "coverage": 0.898011326789856,
+      "safe_coverage": 0.2903409004211426,
+      "l1": 0.2862975001335144
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000066",
+      "sources": 11,
+      "coverage": 0.9352272152900696,
+      "safe_coverage": 0.4306817948818207,
+      "l1": 0.22753340005874634
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000067",
+      "sources": 11,
+      "coverage": 0.887499988079071,
+      "safe_coverage": 0.39857953786849976,
+      "l1": 0.2373790442943573
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000068",
+      "sources": 11,
+      "coverage": 0.9394885897636414,
+      "safe_coverage": 0.47045454382896423,
+      "l1": 0.22043077647686005
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000069",
+      "sources": 11,
+      "coverage": 0.8937499523162842,
+      "safe_coverage": 0.28295454382896423,
+      "l1": 0.2838135361671448
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000070",
+      "sources": 11,
+      "coverage": 0.8963068127632141,
+      "safe_coverage": 0.2767045497894287,
+      "l1": 0.2848525941371918
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000071",
+      "sources": 11,
+      "coverage": 0.8607954382896423,
+      "safe_coverage": 0.228409081697464,
+      "l1": 0.321371465921402
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000072",
+      "sources": 11,
+      "coverage": 0.8224431276321411,
+      "safe_coverage": 0.22471590340137482,
+      "l1": 0.3009416460990906
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000073",
+      "sources": 11,
+      "coverage": 0.8784090876579285,
+      "safe_coverage": 0.2906249761581421,
+      "l1": 0.2668687105178833
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000074",
+      "sources": 11,
+      "coverage": 0.8894886374473572,
+      "safe_coverage": 0.30397725105285645,
+      "l1": 0.2606062889099121
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000075",
+      "sources": 11,
+      "coverage": 0.9051136374473572,
+      "safe_coverage": 0.2647727131843567,
+      "l1": 0.27702516317367554
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000076",
+      "sources": 11,
+      "coverage": 0.8730113506317139,
+      "safe_coverage": 0.22017045319080353,
+      "l1": 0.30001622438430786
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000077",
+      "sources": 11,
+      "coverage": 0.8579545021057129,
+      "safe_coverage": 0.24147726595401764,
+      "l1": 0.292833536863327
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000078",
+      "sources": 11,
+      "coverage": 0.8767045140266418,
+      "safe_coverage": 0.25227272510528564,
+      "l1": 0.2831054627895355
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000079",
+      "sources": 11,
+      "coverage": 0.8414772748947144,
+      "safe_coverage": 0.24346590042114258,
+      "l1": 0.29818329215049744
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000080",
+      "sources": 11,
+      "coverage": 0.8085227012634277,
+      "safe_coverage": 0.23835226893424988,
+      "l1": 0.29982006549835205
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000081",
+      "sources": 11,
+      "coverage": 0.8917613625526428,
+      "safe_coverage": 0.3289772570133209,
+      "l1": 0.2732048034667969
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000082",
+      "sources": 11,
+      "coverage": 0.878693163394928,
+      "safe_coverage": 0.3758522570133209,
+      "l1": 0.2613357603549957
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000083",
+      "sources": 11,
+      "coverage": 0.9159090518951416,
+      "safe_coverage": 0.4210227131843567,
+      "l1": 0.25590863823890686
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000084",
+      "sources": 11,
+      "coverage": 0.9170454144477844,
+      "safe_coverage": 0.38892045617103577,
+      "l1": 0.27519887685775757
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000085",
+      "sources": 11,
+      "coverage": 0.9264204502105713,
+      "safe_coverage": 0.3380681574344635,
+      "l1": 0.28371182084083557
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000086",
+      "sources": 11,
+      "coverage": 0.9241477251052856,
+      "safe_coverage": 0.3551136255264282,
+      "l1": 0.2755441963672638
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000087",
+      "sources": 11,
+      "coverage": 0.9400568008422852,
+      "safe_coverage": 0.400284081697464,
+      "l1": 0.25343963503837585
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000088",
+      "sources": 11,
+      "coverage": 0.9508522152900696,
+      "safe_coverage": 0.48096588253974915,
+      "l1": 0.22414347529411316
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000089",
+      "sources": 11,
+      "coverage": 0.9372158646583557,
+      "safe_coverage": 0.4019886255264282,
+      "l1": 0.2539106607437134
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000090",
+      "sources": 11,
+      "coverage": 0.9366477131843567,
+      "safe_coverage": 0.4321022629737854,
+      "l1": 0.24425795674324036
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000091",
+      "sources": 11,
+      "coverage": 0.9502840638160706,
+      "safe_coverage": 0.45568180084228516,
+      "l1": 0.2360423505306244
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000092",
+      "sources": 11,
+      "coverage": 0.9488636255264282,
+      "safe_coverage": 0.43494316935539246,
+      "l1": 0.24637186527252197
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000093",
+      "sources": 11,
+      "coverage": 0.9519885778427124,
+      "safe_coverage": 0.36761361360549927,
+      "l1": 0.2539350986480713
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000094",
+      "sources": 11,
+      "coverage": 0.9676135778427124,
+      "safe_coverage": 0.5232954621315002,
+      "l1": 0.21439963579177856
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000095",
+      "sources": 11,
+      "coverage": 0.9738636016845703,
+      "safe_coverage": 0.53125,
+      "l1": 0.21347656846046448
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000096",
+      "sources": 11,
+      "coverage": 0.9809658527374268,
+      "safe_coverage": 0.5678977370262146,
+      "l1": 0.20410922169685364
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000097",
+      "sources": 11,
+      "coverage": 0.9664772152900696,
+      "safe_coverage": 0.5576704144477844,
+      "l1": 0.2009000927209854
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000098",
+      "sources": 11,
+      "coverage": 0.9471590518951416,
+      "safe_coverage": 0.5366477370262146,
+      "l1": 0.20255473256111145
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000099",
+      "sources": 11,
+      "coverage": 0.9940340518951416,
+      "safe_coverage": 0.6863636374473572,
+      "l1": 0.16731373965740204
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000100",
+      "sources": 11,
+      "coverage": 0.9920454025268555,
+      "safe_coverage": 0.6428977251052856,
+      "l1": 0.18106010556221008
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000101",
+      "sources": 11,
+      "coverage": 0.9903408885002136,
+      "safe_coverage": 0.7142045497894287,
+      "l1": 0.16951577365398407
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000102",
+      "sources": 11,
+      "coverage": 0.9946022629737854,
+      "safe_coverage": 0.6139204502105713,
+      "l1": 0.20265407860279083
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000103",
+      "sources": 11,
+      "coverage": 0.9829545021057129,
+      "safe_coverage": 0.512499988079071,
+      "l1": 0.23930591344833374
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000104",
+      "sources": 11,
+      "coverage": 0.9687499403953552,
+      "safe_coverage": 0.48607954382896423,
+      "l1": 0.24851074814796448
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000105",
+      "sources": 11,
+      "coverage": 0.9201704263687134,
+      "safe_coverage": 0.49630680680274963,
+      "l1": 0.24270372092723846
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000106",
+      "sources": 11,
+      "coverage": 0.8985795378684998,
+      "safe_coverage": 0.431534081697464,
+      "l1": 0.25722774863243103
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000107",
+      "sources": 11,
+      "coverage": 0.8914772272109985,
+      "safe_coverage": 0.4727272689342499,
+      "l1": 0.23405547440052032
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000108",
+      "sources": 11,
+      "coverage": 0.9144886136054993,
+      "safe_coverage": 0.5249999761581421,
+      "l1": 0.21244458854198456
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000109",
+      "sources": 11,
+      "coverage": 0.9161931276321411,
+      "safe_coverage": 0.16249999403953552,
+      "l1": 0.27108457684516907
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000110",
+      "sources": 11,
+      "coverage": 0.9315340518951416,
+      "safe_coverage": 0.590624988079071,
+      "l1": 0.19939756393432617
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000111",
+      "sources": 11,
+      "coverage": 0.9269886016845703,
+      "safe_coverage": 0.5829545259475708,
+      "l1": 0.18840867280960083
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000112",
+      "sources": 11,
+      "coverage": 0.934374988079071,
+      "safe_coverage": 0.6536931395530701,
+      "l1": 0.17383809387683868
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000113",
+      "sources": 11,
+      "coverage": 0.941193163394928,
+      "safe_coverage": 0.6252840757369995,
+      "l1": 0.18882979452610016
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000114",
+      "sources": 11,
+      "coverage": 0.9488636255264282,
+      "safe_coverage": 0.6082386374473572,
+      "l1": 0.19414132833480835
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000115",
+      "sources": 11,
+      "coverage": 0.9315340518951416,
+      "safe_coverage": 0.5531249642372131,
+      "l1": 0.2141503542661667
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000116",
+      "sources": 11,
+      "coverage": 0.9190340638160706,
+      "safe_coverage": 0.5420454144477844,
+      "l1": 0.20501434803009033
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000117",
+      "sources": 11,
+      "coverage": 0.910511314868927,
+      "safe_coverage": 0.5224431753158569,
+      "l1": 0.21332569420337677
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000118",
+      "sources": 11,
+      "coverage": 0.910511314868927,
+      "safe_coverage": 0.5130681395530701,
+      "l1": 0.21921946108341217
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000119",
+      "sources": 11,
+      "coverage": 0.9267045259475708,
+      "safe_coverage": 0.4946022629737854,
+      "l1": 0.2291913479566574
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000120",
+      "sources": 11,
+      "coverage": 0.8991476893424988,
+      "safe_coverage": 0.3431818187236786,
+      "l1": 0.2665211260318756
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000121",
+      "sources": 11,
+      "coverage": 0.8965908885002136,
+      "safe_coverage": 0.36079543828964233,
+      "l1": 0.2585163712501526
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000122",
+      "sources": 11,
+      "coverage": 0.9176136255264282,
+      "safe_coverage": 0.4832386076450348,
+      "l1": 0.2268553525209427
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000123",
+      "sources": 11,
+      "coverage": 0.9610795378684998,
+      "safe_coverage": 0.43039771914482117,
+      "l1": 0.25796157121658325
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000124",
+      "sources": 11,
+      "coverage": 0.9522727131843567,
+      "safe_coverage": 0.33465906977653503,
+      "l1": 0.2938028872013092
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000125",
+      "sources": 11,
+      "coverage": 0.9045454263687134,
+      "safe_coverage": 0.2497158944606781,
+      "l1": 0.3187142312526703
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000126",
+      "sources": 11,
+      "coverage": 0.9332386255264282,
+      "safe_coverage": 0.3499999940395355,
+      "l1": 0.27810966968536377
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000127",
+      "sources": 11,
+      "coverage": 0.9556818008422852,
+      "safe_coverage": 0.441193163394928,
+      "l1": 0.250259131193161
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000128",
+      "sources": 11,
+      "coverage": 0.9511363506317139,
+      "safe_coverage": 0.44943180680274963,
+      "l1": 0.24404305219650269
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000129",
+      "sources": 11,
+      "coverage": 0.9241477251052856,
+      "safe_coverage": 0.39829543232917786,
+      "l1": 0.2527656853199005
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000130",
+      "sources": 11,
+      "coverage": 0.9139204025268555,
+      "safe_coverage": 0.43409088253974915,
+      "l1": 0.2389109879732132
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000131",
+      "sources": 11,
+      "coverage": 0.9085227251052856,
+      "safe_coverage": 0.38749998807907104,
+      "l1": 0.24927577376365662
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000132",
+      "sources": 11,
+      "coverage": 0.8937499523162842,
+      "safe_coverage": 0.4363636374473572,
+      "l1": 0.23083646595478058
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000133",
+      "sources": 11,
+      "coverage": 0.9176136255264282,
+      "safe_coverage": 0.6857954263687134,
+      "l1": 0.15996921062469482
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000134",
+      "sources": 11,
+      "coverage": 0.9053977131843567,
+      "safe_coverage": 0.48181816935539246,
+      "l1": 0.21631866693496704
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000135",
+      "sources": 11,
+      "coverage": 0.9142045378684998,
+      "safe_coverage": 0.4789772629737854,
+      "l1": 0.2133541703224182
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000136",
+      "sources": 11,
+      "coverage": 0.9329544901847839,
+      "safe_coverage": 0.9011363387107849,
+      "l1": 0.1039929911494255
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000137",
+      "sources": 11,
+      "coverage": 0.9284090399742126,
+      "safe_coverage": 0.9079545140266418,
+      "l1": 0.09690944105386734
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000138",
+      "sources": 11,
+      "coverage": 0.929261326789856,
+      "safe_coverage": 0.8971590399742126,
+      "l1": 0.10106121748685837
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000139",
+      "sources": 11,
+      "coverage": 0.9386363625526428,
+      "safe_coverage": 0.7778409123420715,
+      "l1": 0.14599013328552246
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000140",
+      "sources": 11,
+      "coverage": 0.9431818127632141,
+      "safe_coverage": 0.5394886136054993,
+      "l1": 0.19570070505142212
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000141",
+      "sources": 11,
+      "coverage": 0.9340908527374268,
+      "safe_coverage": 0.7119318246841431,
+      "l1": 0.15853339433670044
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000142",
+      "sources": 11,
+      "coverage": 0.9323863387107849,
+      "safe_coverage": 0.8301135897636414,
+      "l1": 0.13415612280368805
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000143",
+      "sources": 11,
+      "coverage": 0.9423295259475708,
+      "safe_coverage": 0.9073863625526428,
+      "l1": 0.09562908113002777
+    },
+    {
+      "scene": "bonn_person_tracking_test",
+      "target": "bonn_person_tracking_000144",
+      "sources": 11,
+      "coverage": 0.9528408646583557,
+      "safe_coverage": 0.6053977012634277,
+      "l1": 0.18843674659729004
+    }
+  ],
+  "runtime": {
+    "seconds": 25.486263568978757,
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "peak_allocated_bytes": 47815168
+  },
+  "new_trainable_parameters": 0,
+  "public_shape_changed": false
+}

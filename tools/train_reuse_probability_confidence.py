@@ -5,7 +5,7 @@ import argparse, json, subprocess, sys, time
 from pathlib import Path
 import cv2, numpy as np, torch
 import torch.nn.functional as F
-from torch.utils.data import DataLoader, Dataset
+from torch.utils.data import DataLoader, Dataset, WeightedRandomSampler
 ROOT=Path(__file__).resolve().parents[1]; sys.path.insert(0,str(ROOT))
 from latent_geometry_head_v2 import LatentGeometryHeadV2
 from latent_motion_confidence import LatentMotionConfidence
@@ -63,15 +63,22 @@ def risk_coverage(probability,label,error,total_cells):
     return result
 
 def main():
-    parser=argparse.ArgumentParser(); parser.add_argument("--cache",type=Path,required=True); parser.add_argument("--pairs",type=Path,required=True); parser.add_argument("--geometry",type=Path,required=True); parser.add_argument("--output",type=Path,required=True); parser.add_argument("--epochs",type=int,default=20); parser.add_argument("--batch-size",type=int,default=8); parser.add_argument("--learning-rate",type=float,default=3e-4); parser.add_argument("--reuse-error-threshold",type=float,default=.2); parser.add_argument("--seed",type=int,default=23); args=parser.parse_args()
+    parser=argparse.ArgumentParser(); parser.add_argument("--cache",type=Path,required=True); parser.add_argument("--pairs",type=Path,required=True); parser.add_argument("--geometry",type=Path,required=True); parser.add_argument("--output",type=Path,required=True); parser.add_argument("--epochs",type=int,default=20); parser.add_argument("--batch-size",type=int,default=8); parser.add_argument("--learning-rate",type=float,default=3e-4); parser.add_argument("--reuse-error-threshold",type=float,default=.2); parser.add_argument("--motion-normalization",choices=("dataset","physical"),default="dataset"); parser.add_argument("--domain-balanced-sampling",action="store_true"); parser.add_argument("--seed",type=int,default=23); args=parser.parse_args()
     if not torch.cuda.is_available() or torch.cuda.device_count()!=1: raise RuntimeError("expose exactly one checked idle GPU")
     if args.output.exists(): raise FileExistsError(args.output)
     torch.manual_seed(args.seed); np.random.seed(args.seed); device=torch.device("cuda:0"); started=time.perf_counter()
     cache=torch.load(args.cache,map_location="cpu",weights_only=False); rows=[r for r in json.loads(args.pairs.read_text())["pairs"] if r.get("ok")]
     train=[r for r in rows if r["scene"].endswith("_train")]; val=[r for r in rows if r["scene"].endswith("_val")]; test=[r for r in rows if r["scene"].endswith("_test")]
     if not train or not val or not test: raise RuntimeError("scene-disjoint split is empty")
-    motions=torch.stack([pose_and_motion(row)[1] for row in train]); mean=motions.mean(0); std=motions.std(0).clamp_min(1e-4)
-    loaders={name:DataLoader(Pairs(cache,data,mean,std),batch_size=args.batch_size,shuffle=name=="train") for name,data in (("train",train),("val",val),("test",test))}
+    motions=torch.stack([pose_and_motion(row)[1] for row in train])
+    if args.motion_normalization=="dataset": mean=motions.mean(0); std=motions.std(0).clamp_min(1e-4)
+    else: mean=torch.zeros(6); std=torch.tensor([.25,.25,.50,.10,.10,.10])
+    train_dataset=Pairs(cache,train,mean,std)
+    if args.domain_balanced_sampling:
+        domains=[row["scene"].split("_",1)[0] for row in train]; counts={domain:domains.count(domain) for domain in set(domains)}; weights=torch.tensor([1/counts[domain] for domain in domains],dtype=torch.double); sampler=WeightedRandomSampler(weights,len(train),replacement=True)
+        train_loader=DataLoader(train_dataset,batch_size=args.batch_size,sampler=sampler)
+    else: train_loader=DataLoader(train_dataset,batch_size=args.batch_size,shuffle=True)
+    loaders={"train":train_loader,"val":DataLoader(Pairs(cache,val,mean,std),batch_size=args.batch_size),"test":DataLoader(Pairs(cache,test,mean,std),batch_size=args.batch_size)}
     geometry=LatentGeometryHeadV2().to(device).eval(); geometry.load_state_dict(torch.load(args.geometry,map_location="cpu",weights_only=False)["model"])
     for parameter in geometry.parameters(): parameter.requires_grad_(False)
     confidence=LatentMotionConfidence().to(device); optimizer=torch.optim.AdamW(confidence.parameters(),lr=args.learning_rate,weight_decay=1e-4); history=[]; best=None; best_nll=float("inf")
