@@ -110,6 +110,10 @@ def main():
     bench_start=torch.cuda.Event(enable_timing=True); bench_end=torch.cuda.Event(enable_timing=True); bench_start.record()
     for _ in range(200): merge_nearest(student)
     bench_end.record(); torch.cuda.synchronize(); warm_merge_ms=bench_start.elapsed_time(bench_end)/200
-    args.output.mkdir(parents=True); report={"schema_version":1,"stage":"zero-parameter multi-source chunk coverage","repository_commit":subprocess.run(["git","rev-parse","HEAD"],cwd=ROOT,check=True,capture_output=True,text=True).stdout.strip(),"config":{"test_scenes":args.test_scenes,"valid_threshold":args.valid_threshold,"compose_max_hops":args.compose_max_hops,"merge":"nearest projected depth z-buffer"},"target_groups":len(rows),"aggregate":aggregate,"rows":rows,"runtime":{"seconds":time.perf_counter()-started,"gpu":torch.cuda.get_device_name(0),"peak_allocated_bytes":torch.cuda.max_memory_allocated(),"warm_merge_ms":warm_merge_ms},"new_trainable_parameters":0,"public_shape_changed":False}
+    for _ in range(30): merge_priority_fill(student,source_rows)
+    priority_start=torch.cuda.Event(enable_timing=True); priority_end=torch.cuda.Event(enable_timing=True); priority_start.record()
+    for _ in range(200): merge_priority_fill(student,source_rows)
+    priority_end.record(); torch.cuda.synchronize(); warm_priority_fill_ms=priority_start.elapsed_time(priority_end)/200
+    args.output.mkdir(parents=True); report={"schema_version":1,"stage":"zero-parameter multi-source chunk coverage","repository_commit":subprocess.run(["git","rev-parse","HEAD"],cwd=ROOT,check=True,capture_output=True,text=True).stdout.strip(),"config":{"test_scenes":args.test_scenes,"valid_threshold":args.valid_threshold,"compose_max_hops":args.compose_max_hops,"merge":"nearest/support/temporal-priority-fill ablation"},"target_groups":len(rows),"aggregate":aggregate,"rows":rows,"runtime":{"seconds":time.perf_counter()-started,"gpu":torch.cuda.get_device_name(0),"peak_allocated_bytes":torch.cuda.max_memory_allocated(),"warm_nearest_merge_ms":warm_merge_ms,"warm_priority_fill_ms":warm_priority_fill_ms},"new_trainable_parameters":0,"public_shape_changed":False}
     (args.output/"metrics.json").write_text(json.dumps(report,indent=2)); print(json.dumps(aggregate,indent=2)); print("实验已完成")
 if __name__=="__main__": main()
