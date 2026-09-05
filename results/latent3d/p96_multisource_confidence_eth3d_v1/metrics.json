@@ -1,0 +1,359 @@
+{
+  "schema_version": 1,
+  "stage": "multi-source priority-fill reuse confidence",
+  "repository_commit": "412be843ef6fc44ea8db7ed1ef83185fa7f4c9d3",
+  "config": {
+    "cache": "results/latent3d/eth3d_plant_scene_1_cache_v2.pt",
+    "pairs": "data/eth3d_student_plant_scene_1_v2/pairs.json",
+    "geometry": "results/latent3d/p72_p75_latent3d_completion_v1/checkpoint.pt",
+    "confidence": "results/latent3d/p92_reuse_probability_confidence_joint_real_v1/checkpoint.pt",
+    "output": "results/latent3d/p96_multisource_confidence_eth3d_v1",
+    "scenes": [
+      "eth3d_test"
+    ],
+    "compose_max_hops": 3,
+    "reuse_error_threshold": 0.2,
+    "probability": "raw BCE probability; no target-domain calibration"
+  },
+  "target_groups": 21,
+  "metrics": {
+    "auc": 0.7423108476110634,
+    "pr_auc": 0.9340951444176725,
+    "ece": 0.03575389937921025,
+    "brier": 0.12039580815086391,
+    "nll": 0.3914542310570223,
+    "positive_rate": 0.8426063805784938,
+    "mean_probability": 0.838549792766571,
+    "bins": [
+      {
+        "lo": 0.0,
+        "hi": 0.06666666666666667,
+        "count": 1,
+        "confidence": 0.04539870098233223,
+        "accuracy": 0.0
+      },
+      {
+        "lo": 0.06666666666666667,
+        "hi": 0.13333333333333333,
+        "count": 57,
+        "confidence": 0.10717775672674179,
+        "accuracy": 0.2631578947368421
+      },
+      {
+        "lo": 0.13333333333333333,
+        "hi": 0.2,
+        "count": 227,
+        "confidence": 0.17169778048992157,
+        "accuracy": 0.3876651982378855
+      },
+      {
+        "lo": 0.2,
+        "hi": 0.26666666666666666,
+        "count": 422,
+        "confidence": 0.23674124479293823,
+        "accuracy": 0.37203791469194314
+      },
+      {
+        "lo": 0.26666666666666666,
+        "hi": 0.3333333333333333,
+        "count": 610,
+        "confidence": 0.30154386162757874,
+        "accuracy": 0.48688524590163934
+      },
+      {
+        "lo": 0.3333333333333333,
+        "hi": 0.4,
+        "count": 882,
+        "confidence": 0.3675669729709625,
+        "accuracy": 0.5238095238095238
+      },
+      {
+        "lo": 0.4,
+        "hi": 0.4666666666666667,
+        "count": 1146,
+        "confidence": 0.4351772367954254,
+        "accuracy": 0.5767888307155323
+      },
+      {
+        "lo": 0.4666666666666667,
+        "hi": 0.5333333333333333,
+        "count": 1612,
+        "confidence": 0.5017764568328857,
+        "accuracy": 0.6321339950372209
+      },
+      {
+        "lo": 0.5333333333333333,
+        "hi": 0.6,
+        "count": 2170,
+        "confidence": 0.5671990513801575,
+        "accuracy": 0.6571428571428571
+      },
+      {
+        "lo": 0.6,
+        "hi": 0.6666666666666666,
+        "count": 2891,
+        "confidence": 0.634183943271637,
+        "accuracy": 0.6966447595987547
+      },
+      {
+        "lo": 0.6666666666666666,
+        "hi": 0.7333333333333333,
+        "count": 3749,
+        "confidence": 0.7013584971427917,
+        "accuracy": 0.7361963190184049
+      },
+      {
+        "lo": 0.7333333333333333,
+        "hi": 0.8,
+        "count": 5169,
+        "confidence": 0.7684846520423889,
+        "accuracy": 0.783710582317663
+      },
+      {
+        "lo": 0.8,
+        "hi": 0.8666666666666667,
+        "count": 7522,
+        "confidence": 0.8363847732543945,
+        "accuracy": 0.8300983780909332
+      },
+      {
+        "lo": 0.8666666666666667,
+        "hi": 0.9333333333333333,
+        "count": 13496,
+        "confidence": 0.9038897752761841,
+        "accuracy": 0.8749259039715471
+      },
+      {
+        "lo": 0.9333333333333333,
+        "hi": 1.0,
+        "count": 26529,
+        "confidence": 0.9662044644355774,
+        "accuracy": 0.9430057672735497
+      }
+    ]
+  },
+  "risk_coverage": [
+    {
+      "projected_kept_fraction": 0.1,
+      "kept_cells": 6648,
+      "precision": 0.9774368405342102,
+      "selected_l1": 0.10002148151397705,
+      "safe_coverage_full_grid": 0.08790584653615952,
+      "selected_coverage_full_grid": 0.08993506493506494
+    },
+    {
+      "projected_kept_fraction": 0.25,
+      "kept_cells": 16620,
+      "precision": 0.9603489637374878,
+      "selected_l1": 0.10836291313171387,
+      "safe_coverage_full_grid": 0.21592262387275696,
+      "selected_coverage_full_grid": 0.22483766233766234
+    },
+    {
+      "projected_kept_fraction": 0.5,
+      "kept_cells": 33241,
+      "precision": 0.9323726892471313,
+      "selected_l1": 0.12014536559581757,
+      "safe_coverage_full_grid": 0.4192776083946228,
+      "selected_coverage_full_grid": 0.4496888528138528
+    },
+    {
+      "projected_kept_fraction": 0.75,
+      "kept_cells": 49862,
+      "precision": 0.901147186756134,
+      "selected_l1": 0.12979133427143097,
+      "safe_coverage_full_grid": 0.6078598499298096,
+      "selected_coverage_full_grid": 0.6745400432900432
+    },
+    {
+      "projected_kept_fraction": 1.0,
+      "kept_cells": 66483,
+      "precision": 0.8426063656806946,
+      "selected_l1": 0.1421668827533722,
+      "safe_coverage_full_grid": 0.7578327655792236,
+      "selected_coverage_full_grid": 0.8993912337662338
+    }
+  ],
+  "aggregate": {
+    "coverage": 0.8993912055378869,
+    "safe_coverage": 0.7578327726750147,
+    "l1": 0.14247100126175655
+  },
+  "rows": [
+    {
+      "scene": "eth3d_test",
+      "target": "eth3d_plant_000164",
+      "sources": 2,
+      "coverage": 0.909943163394928,
+      "safe_coverage": 0.8224431276321411,
+      "l1": 0.1266506463289261
+    },
+    {
+      "scene": "eth3d_test",
+      "target": "eth3d_plant_000165",
+      "sources": 2,
+      "coverage": 0.9156249761581421,
+      "safe_coverage": 0.8056817650794983,
+      "l1": 0.12995865941047668
+    },
+    {
+      "scene": "eth3d_test",
+      "target": "eth3d_plant_000166",
+      "sources": 3,
+      "coverage": 0.9576704502105713,
+      "safe_coverage": 0.8571022748947144,
+      "l1": 0.12843655049800873
+    },
+    {
+      "scene": "eth3d_test",
+      "target": "eth3d_plant_000167",
+      "sources": 3,
+      "coverage": 0.9267045259475708,
+      "safe_coverage": 0.7894886136054993,
+      "l1": 0.13903772830963135
+    },
+    {
+      "scene": "eth3d_test",
+      "target": "eth3d_plant_000168",
+      "sources": 3,
+      "coverage": 0.8821022510528564,
+      "safe_coverage": 0.7460227012634277,
+      "l1": 0.13916683197021484
+    },
+    {
+      "scene": "eth3d_test",
+      "target": "eth3d_plant_000169",
+      "sources": 3,
+      "coverage": 0.8457385897636414,
+      "safe_coverage": 0.7363635897636414,
+      "l1": 0.13648617267608643
+    },
+    {
+      "scene": "eth3d_test",
+      "target": "eth3d_plant_000170",
+      "sources": 3,
+      "coverage": 0.8852272629737854,
+      "safe_coverage": 0.7838068008422852,
+      "l1": 0.1338673233985901
+    },
+    {
+      "scene": "eth3d_test",
+      "target": "eth3d_plant_000171",
+      "sources": 3,
+      "coverage": 0.9014204144477844,
+      "safe_coverage": 0.7772727012634277,
+      "l1": 0.1387604922056198
+    },
+    {
+      "scene": "eth3d_test",
+      "target": "eth3d_plant_000172",
+      "sources": 3,
+      "coverage": 0.9258522391319275,
+      "safe_coverage": 0.8170454502105713,
+      "l1": 0.13581375777721405
+    },
+    {
+      "scene": "eth3d_test",
+      "target": "eth3d_plant_000173",
+      "sources": 3,
+      "coverage": 0.9465909004211426,
+      "safe_coverage": 0.8062499761581421,
+      "l1": 0.1414283812046051
+    },
+    {
+      "scene": "eth3d_test",
+      "target": "eth3d_plant_000174",
+      "sources": 3,
+      "coverage": 0.9715908765792847,
+      "safe_coverage": 0.8306818008422852,
+      "l1": 0.14048689603805542
+    },
+    {
+      "scene": "eth3d_test",
+      "target": "eth3d_plant_000175",
+      "sources": 3,
+      "coverage": 0.9607954025268555,
+      "safe_coverage": 0.8193181753158569,
+      "l1": 0.1396247297525406
+    },
+    {
+      "scene": "eth3d_test",
+      "target": "eth3d_plant_000176",
+      "sources": 3,
+      "coverage": 0.9551135897636414,
+      "safe_coverage": 0.7860795259475708,
+      "l1": 0.14625293016433716
+    },
+    {
+      "scene": "eth3d_test",
+      "target": "eth3d_plant_000177",
+      "sources": 3,
+      "coverage": 0.9164772629737854,
+      "safe_coverage": 0.7482954263687134,
+      "l1": 0.14908599853515625
+    },
+    {
+      "scene": "eth3d_test",
+      "target": "eth3d_plant_000178",
+      "sources": 3,
+      "coverage": 0.8775568008422852,
+      "safe_coverage": 0.7008522748947144,
+      "l1": 0.15231655538082123
+    },
+    {
+      "scene": "eth3d_test",
+      "target": "eth3d_plant_000179",
+      "sources": 3,
+      "coverage": 0.8843749761581421,
+      "safe_coverage": 0.7096590399742126,
+      "l1": 0.15141338109970093
+    },
+    {
+      "scene": "eth3d_test",
+      "target": "eth3d_plant_000180",
+      "sources": 3,
+      "coverage": 0.910511314868927,
+      "safe_coverage": 0.7443181872367859,
+      "l1": 0.15089674293994904
+    },
+    {
+      "scene": "eth3d_test",
+      "target": "eth3d_plant_000181",
+      "sources": 3,
+      "coverage": 0.9176136255264282,
+      "safe_coverage": 0.7076704502105713,
+      "l1": 0.1548817902803421
+    },
+    {
+      "scene": "eth3d_test",
+      "target": "eth3d_plant_000182",
+      "sources": 3,
+      "coverage": 0.9247158765792847,
+      "safe_coverage": 0.7599431872367859,
+      "l1": 0.14570122957229614
+    },
+    {
+      "scene": "eth3d_test",
+      "target": "eth3d_plant_000183",
+      "sources": 3,
+      "coverage": 0.8548294901847839,
+      "safe_coverage": 0.6852272748947144,
+      "l1": 0.15403693914413452
+    },
+    {
+      "scene": "eth3d_test",
+      "target": "eth3d_plant_000184",
+      "sources": 3,
+      "coverage": 0.616761326789856,
+      "safe_coverage": 0.48096588253974915,
+      "l1": 0.15758728981018066
+    }
+  ],
+  "runtime": {
+    "seconds": 0.9207712749484926,
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "peak_allocated_bytes": 45152768
+  },
+  "new_trainable_parameters": 0,
+  "public_shape_changed": false
+}

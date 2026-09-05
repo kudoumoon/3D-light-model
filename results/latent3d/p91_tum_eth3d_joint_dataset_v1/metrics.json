@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "stage": "merge compatible real latent3d training sets",
+  "repository_commit": "412be843ef6fc44ea8db7ed1ef83185fa7f4c9d3",
+  "inputs": [
+    {
+      "cache": "results/latent3d/cache_tum_real_v1.pt",
+      "cache_sha256": "e6dd1c15c2f77fe91b33c8659f0eaebd80024595d6974d0e764a1dee7bb0c8b6",
+      "pairs": "results/latent3d/p42_tum_real_gt_pose_pairs_v1/pairs.json",
+      "pairs_sha256": "52029946d310f0ddb338b2208b375fc9d745b562f75c62ba4a7b1519a60eacd8"
+    },
+    {
+      "cache": "results/latent3d/eth3d_plant_scene_1_cache_v2.pt",
+      "cache_sha256": "2801770fc9d38ce976a6f1860eb7a804e6ca7b7af5221f96761775a6d34c3b66",
+      "pairs": "data/eth3d_student_plant_scene_1_v2/pairs.json",
+      "pairs_sha256": "4c252d7c33f76b361d5fe4c1dcabeb883f523e40777f83096db6e2d62138c50c"
+    }
+  ],
+  "frames": 550,
+  "pairs": 413,
+  "latent_shape": [
+    550,
+    16,
+    44,
+    80
+  ],
+  "scenes": [
+    "eth3d_test",
+    "eth3d_train",
+    "eth3d_val",
+    "tum_rpy_test",
+    "tum_rpy_train",
+    "tum_rpy_val",
+    "tum_xyz_test",
+    "tum_xyz_train",
+    "tum_xyz_val"
+  ]
+}

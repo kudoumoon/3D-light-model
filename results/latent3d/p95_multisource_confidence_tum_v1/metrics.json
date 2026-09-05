@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "stage": "multi-source priority-fill reuse confidence",
+  "repository_commit": "412be843ef6fc44ea8db7ed1ef83185fa7f4c9d3",
+  "config": {
+    "cache": "results/latent3d/cache_tum_real_v1.pt",
+    "pairs": "results/latent3d/p42_tum_real_gt_pose_pairs_v1/pairs.json",
+    "geometry": "results/latent3d/p72_p75_latent3d_completion_v1/checkpoint.pt",
+    "confidence": "results/latent3d/p92_reuse_probability_confidence_joint_real_v1/checkpoint.pt",
+    "output": "results/latent3d/p95_multisource_confidence_tum_v1",
+    "scenes": [
+      "tum_xyz_test",
+      "tum_rpy_test"
+    ],
+    "compose_max_hops": 3,
+    "reuse_error_threshold": 0.2,
+    "probability": "raw BCE probability; no target-domain calibration"
+  },
+  "target_groups": 10,
+  "metrics": {
+    "auc": 0.7866734665810422,
+    "pr_auc": 0.7615744067061989,
+    "ece": 0.055390934298649025,
+    "brier": 0.18955679494551386,
+    "nll": 0.5619254162240523,
+    "positive_rate": 0.45362763131003475,
+    "mean_probability": 0.5084922313690186,
+    "bins": [
+      {
+        "lo": 0.0,
+        "hi": 0.06666666666666667,
+        "count": 3,
+        "confidence": 0.05943995714187622,
+        "accuracy": 0.0
+      },
+      {
+        "lo": 0.06666666666666667,
+        "hi": 0.13333333333333333,
+        "count": 1059,
+        "confidence": 0.10912315547466278,
+        "accuracy": 0.11520302171860246
+      },
+      {
+        "lo": 0.13333333333333333,
+        "hi": 0.2,
+        "count": 2108,
+        "confidence": 0.16705797612667084,
+        "accuracy": 0.13946869070208728
+      },
+      {
+        "lo": 0.2,
+        "hi": 0.26666666666666666,
+        "count": 2218,
+        "confidence": 0.2341109663248062,
+        "accuracy": 0.19161406672678089
+      },
+      {
+        "lo": 0.26666666666666666,
+        "hi": 0.3333333333333333,
+        "count": 2172,
+        "confidence": 0.3000521957874298,
+        "accuracy": 0.22559852670349909
+      },
+      {
+        "lo": 0.3333333333333333,
+        "hi": 0.4,
+        "count": 2107,
+        "confidence": 0.36734241247177124,
+        "accuracy": 0.28144280968201235
+      },
+      {
+        "lo": 0.4,
+        "hi": 0.4666666666666667,
+        "count": 1967,
+        "confidence": 0.433552622795105,
+        "accuracy": 0.3777325876970005
+      },
+      {
+        "lo": 0.4666666666666667,
+        "hi": 0.5333333333333333,
+        "count": 2075,
+        "confidence": 0.500416100025177,
+        "accuracy": 0.4563855421686747
+      },
+      {
+        "lo": 0.5333333333333333,
+        "hi": 0.6,
+        "count": 1859,
+        "confidence": 0.5660659670829773,
+        "accuracy": 0.5110274341043571
+      },
+      {
+        "lo": 0.6,
+        "hi": 0.6666666666666666,
+        "count": 1707,
+        "confidence": 0.633414626121521,
+        "accuracy": 0.5852372583479789
+      },
+      {
+        "lo": 0.6666666666666666,
+        "hi": 0.7333333333333333,
+        "count": 1435,
+        "confidence": 0.7003602385520935,
+        "accuracy": 0.5958188153310104
+      },
+      {
+        "lo": 0.7333333333333333,
+        "hi": 0.8,
+        "count": 1451,
+        "confidence": 0.7669933438301086,
+        "accuracy": 0.7477601654031703
+      },
+      {
+        "lo": 0.8,
+        "hi": 0.8666666666666667,
+        "count": 1298,
+        "confidence": 0.833354115486145,
+        "accuracy": 0.7611710323574731
+      },
+      {
+        "lo": 0.8666666666666667,
+        "hi": 0.9333333333333333,
+        "count": 1549,
+        "confidence": 0.8990301489830017,
+        "accuracy": 0.7959974176888315
+      },
+      {
+        "lo": 0.9333333333333333,
+        "hi": 1.0,
+        "count": 1457,
+        "confidence": 0.9680643081665039,
+        "accuracy": 0.9430336307481125
+      }
+    ]
+  },
+  "risk_coverage": [
+    {
+      "projected_kept_fraction": 0.1,
+      "kept_cells": 2446,
+      "precision": 0.8928863406181335,
+      "selected_l1": 0.143118754029274,
+      "safe_coverage_full_grid": 0.06204545497894287,
+      "selected_coverage_full_grid": 0.06948863636363636
+    },
+    {
+      "projected_kept_fraction": 0.25,
+      "kept_cells": 6116,
+      "precision": 0.8016677498817444,
+      "selected_l1": 0.15932920575141907,
+      "safe_coverage_full_grid": 0.1392897665500641,
+      "selected_coverage_full_grid": 0.17375
+    },
+    {
+      "projected_kept_fraction": 0.5,
+      "kept_cells": 12232,
+      "precision": 0.6681654453277588,
+      "selected_l1": 0.19065091013908386,
+      "safe_coverage_full_grid": 0.23218749463558197,
+      "selected_coverage_full_grid": 0.3475
+    },
+    {
+      "projected_kept_fraction": 0.75,
+      "kept_cells": 18348,
+      "precision": 0.5504687428474426,
+      "selected_l1": 0.21722543239593506,
+      "safe_coverage_full_grid": 0.2869318127632141,
+      "selected_coverage_full_grid": 0.52125
+    },
+    {
+      "projected_kept_fraction": 1.0,
+      "kept_cells": 24465,
+      "precision": 0.45362764596939087,
+      "selected_l1": 0.24000650644302368,
+      "safe_coverage_full_grid": 0.3152841031551361,
+      "selected_coverage_full_grid": 0.6950284090909091
+    }
+  ],
+  "aggregate": {
+    "coverage": 0.6950283855199814,
+    "safe_coverage": 0.3152840852737427,
+    "l1": 0.24734650999307634
+  },
+  "rows": [
+    {
+      "scene": "tum_xyz_test",
+      "target": "tum_xyz_000089",
+      "sources": 2,
+      "coverage": 0.7832385897636414,
+      "safe_coverage": 0.2397727221250534,
+      "l1": 0.2946002185344696
+    },
+    {
+      "scene": "tum_xyz_test",
+      "target": "tum_xyz_000069",
+      "sources": 2,
+      "coverage": 0.6815340518951416,
+      "safe_coverage": 0.18124999105930328,
+      "l1": 0.2958228588104248
+    },
+    {
+      "scene": "tum_xyz_test",
+      "target": "tum_xyz_000129",
+      "sources": 3,
+      "coverage": 0.9403408765792847,
+      "safe_coverage": 0.5883522629737854,
+      "l1": 0.19033166766166687
+    },
+    {
+      "scene": "tum_xyz_test",
+      "target": "tum_xyz_000109",
+      "sources": 3,
+      "coverage": 0.8664772510528564,
+      "safe_coverage": 0.518750011920929,
+      "l1": 0.20052750408649445
+    },
+    {
+      "scene": "tum_xyz_test",
+      "target": "tum_xyz_000169",
+      "sources": 3,
+      "coverage": 0.9636363387107849,
+      "safe_coverage": 0.3997159004211426,
+      "l1": 0.22547687590122223
+    },
+    {
+      "scene": "tum_rpy_test",
+      "target": "tum_rpy_000089",
+      "sources": 2,
+      "coverage": 0.5448863506317139,
+      "safe_coverage": 0.2758522629737854,
+      "l1": 0.2445310801267624
+    },
+    {
+      "scene": "tum_rpy_test",
+      "target": "tum_rpy_000069",
+      "sources": 2,
+      "coverage": 0.6624999642372131,
+      "safe_coverage": 0.4210227131843567,
+      "l1": 0.2096938192844391
+    },
+    {
+      "scene": "tum_rpy_test",
+      "target": "tum_rpy_000129",
+      "sources": 3,
+      "coverage": 0.7392045259475708,
+      "safe_coverage": 0.33039772510528564,
+      "l1": 0.23967227339744568
+    },
+    {
+      "scene": "tum_rpy_test",
+      "target": "tum_rpy_000109",
+      "sources": 3,
+      "coverage": 0.5099431872367859,
+      "safe_coverage": 0.13267044723033905,
+      "l1": 0.2718006372451782
+    },
+    {
+      "scene": "tum_rpy_test",
+      "target": "tum_rpy_000169",
+      "sources": 3,
+      "coverage": 0.25852271914482117,
+      "safe_coverage": 0.06505681574344635,
+      "l1": 0.3010081648826599
+    }
+  ],
+  "runtime": {
+    "seconds": 0.7734541068784893,
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "peak_allocated_bytes": 45152768
+  },
+  "new_trainable_parameters": 0,
+  "public_shape_changed": false
+}
