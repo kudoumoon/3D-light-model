@@ -8,6 +8,7 @@ many-to-one conflicts through its coverage map.
 from __future__ import annotations
 
 from dataclasses import dataclass
+from collections.abc import Sequence
 
 import torch
 import torch.nn.functional as F
@@ -23,6 +24,38 @@ class LatentWarpResult:
     projected_valid: torch.Tensor
     support_mass: torch.Tensor
     target_depth: torch.Tensor
+
+
+def merge_latent_warps_priority(
+    warps: Sequence[LatentWarpResult], priority_order: Sequence[int] | None = None
+) -> LatentWarpResult:
+    """Merge multiple source warps without overwriting higher-priority support.
+
+    The operation has no trainable parameters.  Callers should order sources
+    by temporal distance to the target; later sources only fill existing holes.
+    """
+    if not warps:
+        raise ValueError("warps must contain at least one result")
+    order = list(range(len(warps))) if priority_order is None else list(priority_order)
+    if sorted(order) != list(range(len(warps))):
+        raise ValueError("priority_order must be a permutation of warp indices")
+    reference = warps[0]
+    for warp in warps[1:]:
+        if warp.latent.shape != reference.latent.shape or warp.projected_valid.shape != reference.projected_valid.shape:
+            raise ValueError("all warps must have identical latent-grid shapes")
+    first = warps[order[0]]
+    latent = first.latent.clone()
+    valid = first.projected_valid.clone()
+    support_mass = first.support_mass.clone()
+    target_depth = first.target_depth.clone()
+    for index in order[1:]:
+        current = warps[index]
+        added = (~valid) & current.projected_valid
+        latent = torch.where(added.expand_as(latent), current.latent, latent)
+        support_mass = torch.where(added, current.support_mass, support_mass)
+        target_depth = torch.where(added, current.target_depth, target_depth)
+        valid = valid | added
+    return LatentWarpResult(latent, valid.to(latent.dtype), valid, support_mass, target_depth)
 
 
 def _validate(points: torch.Tensor, features: torch.Tensor, intrinsics: torch.Tensor, transform: torch.Tensor) -> None:

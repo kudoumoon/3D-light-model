@@ -5,7 +5,7 @@ import torch
 from latent_geometry_alignment import align_depth_to_latent
 from latent_geometry_head import LatentGeometryHead, points_from_depth
 from latent_motion_confidence import LatentMotionConfidence
-from latent_reprojection_loss import compare_warp_to_copy, forward_splat_latent, latent_reprojection_loss
+from latent_reprojection_loss import LatentWarpResult, compare_warp_to_copy, forward_splat_latent, latent_reprojection_loss, merge_latent_warps_priority
 
 
 def intrinsics(batch: int = 1) -> torch.Tensor:
@@ -13,6 +13,17 @@ def intrinsics(batch: int = 1) -> torch.Tensor:
 
 
 class Latent3DTests(unittest.TestCase):
+    def test_priority_merge_only_fills_holes(self):
+        first_valid = torch.tensor([[[[True, False, True]]]])
+        second_valid = torch.tensor([[[[True, True, False]]]])
+        first = LatentWarpResult(torch.tensor([[[[1.0, 0.0, 3.0]]]]), first_valid.float(), first_valid, first_valid.float(), torch.ones(1, 1, 1, 3))
+        second = LatentWarpResult(torch.tensor([[[[9.0, 2.0, 0.0]]]]), second_valid.float(), second_valid, second_valid.float() * 2, torch.ones(1, 1, 1, 3) * 2)
+        merged = merge_latent_warps_priority((first, second))
+        self.assertTrue(torch.equal(merged.projected_valid, torch.tensor([[[[True, True, True]]]])))
+        self.assertTrue(torch.equal(merged.latent, torch.tensor([[[[1.0, 2.0, 3.0]]]])))
+        self.assertEqual(float(merged.support_mass[0, 0, 0, 0]), 1.0)
+        self.assertEqual(float(merged.support_mass[0, 0, 0, 1]), 2.0)
+
     def test_points_from_depth_identity_camera(self):
         depth = torch.ones(1, 1, 2, 2)
         points = points_from_depth(depth, intrinsics())

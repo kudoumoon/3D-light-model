@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "stage": "zero-parameter latent-valid threshold calibration",
+  "repository_commit": "38d46a9bbc807168b269990335b83dc30c047dd1",
+  "validation_scenes": [
+    "tum_xyz_val",
+    "tum_rpy_val"
+  ],
+  "validation_frames": 38,
+  "selection_metric": "source-depth valid IoU",
+  "selected": {
+    "threshold": 0.44999999999999996,
+    "iou": 0.8957597317298043,
+    "precision": 0.9121476225687722,
+    "recall": 0.9803373545616088,
+    "predicted_valid_rate": 0.8998280763626099
+  },
+  "sweep": [
+    {
+      "threshold": 0.05,
+      "iou": 0.8549570528726856,
+      "precision": 0.8550288628936196,
+      "recall": 0.9999017760672924,
+      "predicted_valid_rate": 0.9790968894958496
+    },
+    {
+      "threshold": 0.1,
+      "iou": 0.8680338935704641,
+      "precision": 0.8688564061140798,
+      "recall": 0.9989106072917876,
+      "predicted_valid_rate": 0.9625598192214966
+    },
+    {
+      "threshold": 0.15,
+      "iou": 0.8761775525731632,
+      "precision": 0.8781475279671077,
+      "recall": 0.9974461777496004,
+      "predicted_valid_rate": 0.9509793519973755
+    },
+    {
+      "threshold": 0.2,
+      "iou": 0.8813663810818501,
+      "precision": 0.8846877008147626,
+      "recall": 0.995758511996714,
+      "predicted_valid_rate": 0.9423519968986511
+    },
+    {
+      "threshold": 0.25,
+      "iou": 0.8860315186246418,
+      "precision": 0.8907675319271516,
+      "recall": 0.9940351284501157,
+      "predicted_valid_rate": 0.9343002438545227
+    },
+    {
+      "threshold": 0.3,
+      "iou": 0.8899270774901835,
+      "precision": 0.8966452706794236,
+      "recall": 0.9916509657198475,
+      "predicted_valid_rate": 0.9259494543075562
+    },
+    {
+      "threshold": 0.35,
+      "iou": 0.8931599454667194,
+      "precision": 0.9024199398479081,
+      "recall": 0.9886417415996214,
+      "predicted_valid_rate": 0.9172323346138
+    },
+    {
+      "threshold": 0.39999999999999997,
+      "iou": 0.8955060373928849,
+      "precision": 0.9075395976907515,
+      "recall": 0.985409281268696,
+      "predicted_valid_rate": 0.9090759754180908
+    },
+    {
+      "threshold": 0.44999999999999996,
+      "iou": 0.8957597317298043,
+      "precision": 0.9121476225687722,
+      "recall": 0.9803373545616088,
+      "predicted_valid_rate": 0.8998280763626099
+    },
+    {
+      "threshold": 0.49999999999999994,
+      "iou": 0.8952854657080009,
+      "precision": 0.9171999159133908,
+      "recall": 0.9740063756261775,
+      "predicted_valid_rate": 0.8890923857688904
+    },
+    {
+      "threshold": 0.5499999999999999,
+      "iou": 0.8952873088052914,
+      "precision": 0.9235709533800727,
+      "recall": 0.9669253230227969,
+      "predicted_valid_rate": 0.8765400648117065
+    },
+    {
+      "threshold": 0.6,
+      "iou": 0.8938328194016169,
+      "precision": 0.9305782112241002,
+      "recall": 0.9576922733482752,
+      "predicted_valid_rate": 0.861632764339447
+    },
+    {
+      "threshold": 0.65,
+      "iou": 0.8890747965292258,
+      "precision": 0.9383530038157778,
+      "recall": 0.9442266651188956,
+      "predicted_valid_rate": 0.8424790501594543
+    },
+    {
+      "threshold": 0.7,
+      "iou": 0.8754982613858028,
+      "precision": 0.9457540471456972,
+      "recall": 0.9217869612194055,
+      "predicted_valid_rate": 0.816021203994751
+    },
+    {
+      "threshold": 0.75,
+      "iou": 0.8524569087433895,
+      "precision": 0.9550408588521111,
+      "recall": 0.8880961523006724,
+      "predicted_valid_rate": 0.7785511612892151
+    },
+    {
+      "threshold": 0.7999999999999999,
+      "iou": 0.8129054048202579,
+      "precision": 0.9642317846100114,
+      "recall": 0.8381805355883167,
+      "predicted_valid_rate": 0.7277885675430298
+    },
+    {
+      "threshold": 0.85,
+      "iou": 0.753251072022403,
+      "precision": 0.9741836907928244,
+      "recall": 0.7685933439891418,
+      "predicted_valid_rate": 0.660548746585846
+    },
+    {
+      "threshold": 0.9,
+      "iou": 0.6656896673493891,
+      "precision": 0.9832696545698749,
+      "recall": 0.6733161292626955,
+      "predicted_valid_rate": 0.5733178853988647
+    },
+    {
+      "threshold": 0.95,
+      "iou": 0.49739671257219015,
+      "precision": 0.9900783474523813,
+      "recall": 0.49988838189465035,
+      "predicted_valid_rate": 0.422719806432724
+    }
+  ],
+  "runtime": {
+    "seconds": 0.45566970901563764,
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "peak_allocated_bytes": 122158592
+  },
+  "new_trainable_parameters": 0,
+  "public_shape_changed": false
+}

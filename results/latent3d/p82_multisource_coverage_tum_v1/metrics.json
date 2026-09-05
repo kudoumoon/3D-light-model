@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "stage": "zero-parameter multi-source chunk coverage",
+  "repository_commit": "38d46a9bbc807168b269990335b83dc30c047dd1",
+  "config": {
+    "test_scenes": [
+      "tum_xyz_test",
+      "tum_rpy_test"
+    ],
+    "valid_threshold": 0.5,
+    "merge": "nearest projected depth z-buffer"
+  },
+  "target_groups": 4,
+  "aggregate": {
+    "sources": 2.0,
+    "single_mean_coverage": 0.47791191190481186,
+    "single_best_coverage": 0.5284800827503204,
+    "single_mean_l1": 0.2502063028514385,
+    "union_coverage": 0.7277698516845703,
+    "union_l1": 0.24084706977009773,
+    "coverage_gain_over_best": 0.19928976893424988,
+    "teacher_union_coverage": 0.6641334891319275,
+    "teacher_union_l1": 0.21958927065134048
+  },
+  "rows": [
+    {
+      "scene": "tum_xyz_test",
+      "target": "tum_xyz_000089",
+      "sources": 2,
+      "single_mean_coverage": 0.5237215757369995,
+      "single_best_coverage": 0.5275567770004272,
+      "single_mean_l1": 0.2795204669237137,
+      "union_coverage": 0.7832385897636414,
+      "union_l1": 0.280833899974823,
+      "coverage_gain_over_best": 0.2556818127632141,
+      "teacher_union_coverage": 0.6335226893424988,
+      "teacher_union_l1": 0.20249570906162262
+    },
+    {
+      "scene": "tum_xyz_test",
+      "target": "tum_xyz_000129",
+      "sources": 2,
+      "single_mean_coverage": 0.586505651473999,
+      "single_best_coverage": 0.710511326789856,
+      "single_mean_l1": 0.22534194588661194,
+      "union_coverage": 0.8457385897636414,
+      "union_l1": 0.19632288813591003,
+      "coverage_gain_over_best": 0.1352272629737854,
+      "teacher_union_coverage": 0.813068151473999,
+      "teacher_union_l1": 0.18113669753074646
+    },
+    {
+      "scene": "tum_rpy_test",
+      "target": "tum_rpy_000089",
+      "sources": 2,
+      "single_mean_coverage": 0.32499998807907104,
+      "single_best_coverage": 0.3338068127632141,
+      "single_mean_l1": 0.264387771487236,
+      "union_coverage": 0.5448863506317139,
+      "union_l1": 0.24640434980392456,
+      "coverage_gain_over_best": 0.21107953786849976,
+      "teacher_union_coverage": 0.5150567889213562,
+      "teacher_union_l1": 0.24717599153518677
+    },
+    {
+      "scene": "tum_rpy_test",
+      "target": "tum_rpy_000129",
+      "sources": 2,
+      "single_mean_coverage": 0.47642043232917786,
+      "single_best_coverage": 0.5420454144477844,
+      "single_mean_l1": 0.23157502710819244,
+      "union_coverage": 0.7372158765792847,
+      "union_l1": 0.23982714116573334,
+      "coverage_gain_over_best": 0.19517046213150024,
+      "teacher_union_coverage": 0.694886326789856,
+      "teacher_union_l1": 0.2475486844778061
+    }
+  ],
+  "runtime": {
+    "seconds": 0.3467779702041298,
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "peak_allocated_bytes": 45022208
+  },
+  "new_trainable_parameters": 0,
+  "public_shape_changed": false
+}
